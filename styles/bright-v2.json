@@ -50,18 +50,15 @@
     },
     "aeroway_fill": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "aeroway"},
-      "fill": true,
-      "min-zoom": 12
+      "fill": true
     },
     "aeroway_runway": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "aeroway", "type": "runway"},
-      "line": true,
-      "min-zoom": 12
+      "line": true
     },
     "aeroway_taxiway": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "aeroway", "type": "taxiway"},
-      "line": true,
-      "min-zoom": 12
+      "line": true
     },
     "building": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "building"},
@@ -89,7 +86,6 @@
     "tunnel_service": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "tunnel", "class": "service"},
       "line": true,
-      "min-zoom": 15,
       "line-cap": "round",
       "line-join": "round"
     },
@@ -102,7 +98,6 @@
     "tunnel_street": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "tunnel", "class": ["street", "street_limited"]},
       "line": true,
-      "min-zoom": 12,
       "line-join": "round"
     },
     "road_motorway_link": {
@@ -114,7 +109,6 @@
     "road_service": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "road", "class": "service"},
       "line": true,
-      "min-zoom": 15,
       "line-cap": "round",
       "line-join": "round"
     },
@@ -127,7 +121,6 @@
     "road_street": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "road", "class": ["street", "street_limited"]},
       "line": true,
-      "min-zoom": 12,
       "line-cap": "round",
       "line-join": "round"
     },
@@ -140,7 +133,6 @@
     "bridge_service": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "bridge", "class": "service"},
       "line": true,
-      "min-zoom": 15,
       "line-join": "round"
     },
     "bridge_main": {
@@ -151,7 +143,6 @@
     "bridge_street": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "bridge", "class": ["street", "street_limited"]},
       "line": true,
-      "min-zoom": 12,
       "line-join": "round"
     },
     "bridge_motorway_link": {
@@ -166,8 +157,7 @@
     },
     "road_path": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "road", "class": "path"},
-      "line": true,
-      "min-zoom": 15
+      "line": true
     },
     "road_major_rail": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "road", "class": "major_rail"},
@@ -175,8 +165,7 @@
     },
     "bridge_path": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "bridge", "class": "path"},
-      "line": true,
-      "min-zoom": 15
+      "line": true
     },
     "bridge_major_rail": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "bridge", "class": "major_rail"},
@@ -200,13 +189,11 @@
     },
     "country_label_line": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "country_label_line"},
-      "line": true,
-      "min-zoom": 3
+      "line": true
     },
     "country_label": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "country_label", "feature_type": "point"},
       "text": true,
-      "min-zoom": 3,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-field": "{{name}}",
       "text-max-size": 13,
