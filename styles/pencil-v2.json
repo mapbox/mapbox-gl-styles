@@ -9,6 +9,9 @@
         }
     },
     "buckets": {
+        "background": {
+            "fill": true
+        },
         "park": {
             "filter": {
                 "source": "mapbox.mapbox-streets-v5",
@@ -318,11 +321,7 @@
                 }
             },
             "roads": {
-                "opacity": 1,
-                "transition-opacity": {
-                    "duration": 500,
-                    "delay": 0
-                }
+                "opacity": 1
             },
             "road_large_casing": {
                 "line-color": [
@@ -432,10 +431,6 @@
                     "slope": 1,
                     "min": 0,
                     "max": 1
-                },
-                "transition-opacity": {
-                    "duration": 500,
-                    "delay": 500
                 }
             },
             "building_outline": {
