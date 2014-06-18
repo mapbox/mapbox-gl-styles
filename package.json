@@ -4,6 +4,11 @@
   "description": "mapbox gl example styles",
   "main": "index.js",
   "bin": {},
-  "scripts": {},
+  "scripts": {
+    "test": "gl-style-validate styles/*"
+  },
+  "devDependencies": {
+    "mapbox-gl-style-lint": "https://github.com/mapbox/mapbox-gl-style-lint/tarball/master"
+  },
   "license": "ISC"
 }
