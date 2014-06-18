@@ -175,12 +175,7 @@
     },
     "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/pencil",
     "constants": {
-        "land": [
-            0,
-            0,
-            0,
-            0
-        ],
+        "land": "rgba(0,0,0,0)",
         "water": "#73b6e6",
         "park": "#c8df9f",
         "road": "#fefefe",
@@ -325,12 +320,7 @@
                 "opacity": 1
             },
             "road_large_casing": {
-                "line-color": [
-                    0.6,
-                    0.6,
-                    0.6,
-                    1
-                ],
+                "line-color": "rgba(152,152,152,1)",
                 "line-width": 0,
                 "line-opacity": {
                     "fn": "linear",
@@ -342,12 +332,7 @@
                 }
             },
             "road_regular_casing": {
-                "line-color": [
-                    0.6,
-                    0.6,
-                    0.6,
-                    1
-                ],
+                "line-color": "rgba(152,152,152,1)",
                 "line-opacity": {
                     "fn": "linear",
                     "z": 14.5,
@@ -407,12 +392,7 @@
                 }
             },
             "path": {
-                "line-color": [
-                    1,
-                    1,
-                    1,
-                    1
-                ],
+                "line-color": "rgba(255,255,255,1)",
                 "line-dasharray": [
                     2,
                     2
@@ -448,21 +428,11 @@
                 "line-image": "line_solid_7"
             },
             "borders": {
-                "line-color": [
-                    0,
-                    0,
-                    0,
-                    0.3
-                ],
+                "line-color": "rgba(0,0,0,0.3)",
                 "line-width": 1
             },
             "bridge_large_casing": {
-                "line-color": [
-                    0.6,
-                    0.6,
-                    0.6,
-                    1
-                ],
+                "line-color": "rgba(152,152,152,1)",
                 "line-width": 0,
                 "line-opacity": {
                     "fn": "linear",
@@ -486,12 +456,7 @@
                 }
             },
             "bridge_regular_casing": {
-                "line-color": [
-                    0.6,
-                    0.6,
-                    0.6,
-                    1
-                ],
+                "line-color": "rgba(152,152,152,1)",
                 "line-opacity": {
                     "fn": "linear",
                     "z": 14.5,

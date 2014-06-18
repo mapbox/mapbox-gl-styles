@@ -933,7 +933,7 @@
       },
       "country_label": {
         "text-color": "text",
-        "text-halo-color": [1, 1, 1, 0.8]
+        "text-halo-color": "rgba(255,255,255,0.8)"
       },
       "country_label_line": {
         "line-color": "text",
@@ -942,15 +942,15 @@
       },
       "marin_label_1": {
         "text-color": "marine_text",
-        "text-halo-color": [1, 1, 1, 0.8]
+        "text-halo-color": "rgba(255,255,255,0.8)"
       },
       "marin_label_2": {
         "text-color": "marine_text",
-        "text-halo-color": [1, 1, 1, 0.8]
+        "text-halo-color": "rgba(255,255,255,0.8)"
       },
       "marin_label_3": {
         "text-color": "marine_text",
-        "text-halo-color": [1, 1, 1, 0.8]
+        "text-halo-color": "rgba(255,255,255,0.8)"
       },
       "place_label_city_point": {
         "point-color": "#333",
@@ -958,7 +958,7 @@
       },
       "place_label_city": {
         "text-color": "#333",
-        "text-halo-color": [1, 1, 1, 0.8],
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-size": {
           "fn": "stops",
           "stops": [[0, 10], [10, 18], [12, 24]]
@@ -967,7 +967,7 @@
       },
       "place_label_town": {
         "text-color": "#333",
-        "text-halo-color": [1, 1, 1, 0.8],
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-size": {
           "fn": "stops",
           "stops": [[0, 14], [12, 16], [14, 20], [16, 24]]
@@ -975,7 +975,7 @@
       },
       "place_label_village": {
         "text-color": "#333",
-        "text-halo-color": [1, 1, 1, 0.8],
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-size": {
           "fn": "stops",
           "stops": [[0, 12], [12, 14], [14, 28], [16, 22]]
@@ -983,7 +983,7 @@
       },
       "place_label_other": {
         "text-color": "#633",
-        "text-halo-color": [1, 1, 1, 0.8],
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-size": {
           "fn": "stops",
           "stops": [[0, 10], [14, 11], [15, 12], [16, 14]]
@@ -991,11 +991,11 @@
       },
       "poi_label": {
         "text-color": "#666",
-        "text-halo-color": [1, 1, 1, 0.5]
+        "text-halo-color": "rgba(255,255,255,0.5)"
       },
       "road_label": {
         "text-color": "#765",
-        "text-halo-color": [1, 1, 1, 0.5],
+        "text-halo-color": "rgba(255,255,255,0.5)",
         "text-size": {
           "fn": "stops",
           "stops": [[0, 12], [14, 12], [15, 13]]
@@ -1003,7 +1003,7 @@
       },
       "water_label": {
         "text-color": "marine_text",
-        "text-halo-color": [1, 1, 1, 0.75]
+        "text-halo-color": "rgba(255,255,255,0.75)"
       },
       "poi": {
         "point-color": "maki",
