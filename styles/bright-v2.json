@@ -1024,5 +1024,5 @@
       }
     }
   },
-  "sprite": "img/osm-bright-sprite"
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/osm-bright"
 }

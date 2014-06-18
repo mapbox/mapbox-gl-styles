@@ -172,7 +172,7 @@
             "line-join": "bevel"
         }
     },
-    "sprite": "img/sprite",
+    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/pencil",
     "constants": {
         "land": [
             0,
