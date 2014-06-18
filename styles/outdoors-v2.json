@@ -1648,8 +1648,7 @@
           "fn": "stops",
           "stops": [[3, 13], [4, 14], [5, 20], [6, 24], [22, 24]]
         },
-        "text-halo-color": "water",
-        "text-letter-spacing": 0.2
+        "text-halo-color": "water"
       },
       "marine_label_line_3": {
         "text-color": "marine_text",
@@ -1657,8 +1656,7 @@
           "fn": "stops",
           "stops": [[3, 12], [4, 13], [5, 15], [6, 18], [22, 18]]
         },
-        "text-halo-color": "water",
-        "text-letter-spacing": 0.1
+        "text-halo-color": "water"
       },
       "marine_label_line_other": {
         "text-color": "marine_text",
@@ -1666,8 +1664,7 @@
           "fn": "stops",
           "stops": [[4, 12], [5, 14], [6, 16], [22, 16]]
         },
-        "text-halo-color": "water",
-        "text-letter-spacing": 0.1
+        "text-halo-color": "water"
       },
       "marine_label_point_1": {
         "text-color": "marine_text",
@@ -2312,8 +2309,7 @@
           "fn": "stops",
           "stops": [[3, 13], [4, 14], [5, 20], [6, 24], [22, 24]]
         },
-        "text-halo-color": "water_night",
-        "text-letter-spacing": 0.2
+        "text-halo-color": "water_night"
       },
       "marine_label_line_3": {
         "text-color": "water_dark_night",
@@ -2321,8 +2317,7 @@
           "fn": "stops",
           "stops": [[3, 12], [4, 13], [5, 15], [6, 18], [22, 18]]
         },
-        "text-halo-color": "water_night",
-        "text-letter-spacing": 0.1
+        "text-halo-color": "water_night"
       },
       "marine_label_line_other": {
         "text-color": "water_dark_night",
@@ -2330,8 +2325,7 @@
           "fn": "stops",
           "stops": [[4, 12], [5, 14], [6, 16], [22, 16]]
         },
-        "text-halo-color": "water_night",
-        "text-letter-spacing": 0.1
+        "text-halo-color": "water_night"
       },
       "marine_label_point_1": {
         "text-color": "water_dark_night",
