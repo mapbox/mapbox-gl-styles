@@ -10,7 +10,8 @@
     },
     "buckets": {
         "background": {
-            "fill": true
+            "fill": true,
+            "filter": {}
         },
         "park": {
             "filter": {
