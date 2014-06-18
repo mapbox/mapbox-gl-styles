@@ -544,7 +544,7 @@
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 12,
       "text-max-width": 10,
-      "text-alignment": "top"
+      "text-alignment": "center"
     },
     "poi_3": {
       "filter": {"source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5", "layer": "poi_label", "scalerank": 3},
@@ -561,7 +561,7 @@
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 11,
       "text-max-width": 10,
-      "text-alignment": "top"
+      "text-alignment": "center"
     },
     "poi_4": {
       "filter": {"source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5", "layer": "poi_label", "scalerank": 4},
@@ -578,7 +578,7 @@
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 10,
       "text-max-width": 10,
-      "text-alignment": "top"
+      "text-alignment": "center"
     },
     "poi_aerodrome": {
       "filter": {"source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5", "layer": "poi_label", "maki": "airport"},
