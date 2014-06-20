@@ -37,9 +37,12 @@
   },
   "layers": [{
     "id": "background",
+    "render": {
+      "type": "background"
+    },
     "style": {
-      "fill-color": "@land",
-      "transition-fill-color": {
+      "background-color": "@land",
+      "transition-background-color": {
         "duration": 500,
         "delay": 0
       }
@@ -294,7 +297,10 @@
     "id": "tunnel_path",
     "source": "mapbox.mapbox-streets-v5",
     "source-layer": "tunnel",
-    "filter": { "class": "path" }
+    "filter": { "class": "path" },
+    "render": {
+      "type": "line"
+    }
   }, {
     "id": "tunnel_major_rail",
     "source": "mapbox.mapbox-streets-v5",
@@ -909,8 +915,7 @@
       "text-size": {
         "fn": "stops",
         "stops": [[0, 10], [10, 18], [12, 24]]
-      },
-      "text-translate": [0, 30]
+      }
     }
   }, {
     "id": "place_label_town",
@@ -1035,8 +1040,6 @@
       "icon-size": 12,
       "icon-image": "{{maki}}-12"
     },
-    "style": {
-      "icon-translate": "@point_translate"
-    }
+    "style": {}
   }]
 }

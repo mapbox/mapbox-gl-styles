@@ -186,11 +186,14 @@
   },
   "layers": [{
     "id": "background",
+    "render": {
+      "type": "background"
+    },
     "style": {
-      "fill-color": "@land"
+      "background-color": "@land"
     },
     "style.night": {
-      "fill-color": "@land_night"
+      "background-color": "@land_night"
     }
   }, {
     "id": "landcover_snow",
@@ -699,25 +702,6 @@
       "type": "line",
       "line-join": "round"
     },
-    "style": {
-      "line-color": "#008",
-      "line-width": 0.9,
-      "line-opacity": {
-        "fn": "stops",
-        "stops": [[12, 0.05], [13, 0.11]]
-      }
-    },
-    "style.night": {
-      "line-color": "@contour_night",
-      "line-width": 0.9,
-      "line-opacity": {
-        "fn": "stops",
-        "stops": [[12, 0.1], [13, 0.2]]
-      }
-    }
-  }, {
-    "id": "contour_line_loud",
-    "ref": "contour_line_loud",
     "style": {
       "line-color": "#008",
       "line-width": 0.9,
@@ -1439,119 +1423,6 @@
       }
     }
   }, {
-    "id": "road_path_case",
-    "ref": "road_path_case",
-    "style": {
-      "line-color": "#ffd",
-      "line-opacity": 0.4,
-      "line-width": {
-        "fn": "stops",
-        "stops": [[15, 3], [16, 4]]
-      }
-    },
-    "style.night": {
-      "line-color": "@land_night",
-      "line-opacity": 0.2
-    }
-  }, {
-    "id": "road_path_footway",
-    "ref": "road_path_footway",
-    "style": {
-      "line-color": "#bba",
-      "line-dasharray": [10, 4],
-      "line-width": "@path_width"
-    },
-    "style.night": {
-      "line-color": "#fff",
-      "line-dasharray": [10, 4],
-      "line-width": "@path_width"
-    }
-  }, {
-    "id": "road_path_path",
-    "ref": "road_path_path",
-    "style": {
-      "line-color": "#987",
-      "line-dasharray": [10, 4],
-      "line-opacity": 0.8,
-      "line-width": {
-        "fn": "stops",
-        "stops": [[14, 0.8], [15, 0.9], [16, 1.2]]
-      }
-    },
-    "style.night": {
-      "line-color": "#fff",
-      "line-dasharray": [10, 4],
-      "line-opacity": 0.8,
-      "line-width": {
-        "fn": "stops",
-        "stops": [[14, 0.8], [15, 0.9], [16, 1.2]]
-      }
-    }
-  }, {
-    "id": "road_path_cycleway",
-    "ref": "road_path_cycleway",
-    "style": {
-      "line-color": "#488",
-      "line-dasharray": [10, 4],
-      "line-width": "@path_width"
-    },
-    "style.night": {
-      "line-color": "#94e6ff",
-      "line-dasharray": [10, 4],
-      "line-width": "@path_width"
-    }
-  }, {
-    "id": "road_path_mtb",
-    "ref": "road_path_mtb",
-    "style": {
-      "line-color": "#488",
-      "line-dasharray": [12, 4],
-      "line-width": "@path_width"
-    },
-    "style.night": {
-      "line-color": "#94e6ff",
-      "line-dasharray": [12, 4],
-      "line-width": "@path_width"
-    }
-  }, {
-    "id": "road_path_piste",
-    "ref": "road_path_piste",
-    "style": {
-      "line-color": "#87b",
-      "line-dasharray": [8, 4],
-      "line-width": "@path_width"
-    },
-    "style.night": {
-      "line-color": "#715dae",
-      "line-dasharray": [8, 4],
-      "line-width": "@path_width"
-    }
-  }, {
-    "id": "road_path_steps",
-    "ref": "road_path_steps",
-    "style": {
-      "line-color": "#bba",
-      "line-dasharray": [10, 4],
-      "line-width": 4
-    },
-    "style.night": {
-      "line-color": "#016684",
-      "line-dasharray": [10, 4],
-      "line-opacity": 0.3,
-      "line-width": 6
-    }
-  }, {
-    "id": "road_major_rail",
-    "ref": "road_major_rail",
-    "style": {
-      "line-color": "#c8c4c0",
-      "line-width": 0.8
-    },
-    "style.night": {
-      "line-color": "#c8c4c0",
-      "line-width": 0.8
-    }
-  }, {
     "id": "road_major_rail_hatching",
     "ref": "road_major_rail",
     "style": {
@@ -1736,93 +1607,6 @@
       }
     }
   }, {
-    "id": "road_path_footway",
-    "ref": "road_path_footway",
-    "style": {
-      "line-color": "#bba",
-      "line-dasharray": [10, 4],
-      "line-width": "@path_width"
-    },
-    "style.night": {
-      "line-color": "#fff",
-      "line-dasharray": [10, 4],
-      "line-width": "@path_width"
-    }
-  }, {
-    "id": "road_path_path",
-    "ref": "road_path_path",
-    "style": {
-      "line-color": "#987",
-      "line-dasharray": [10, 4],
-      "line-opacity": 0.8,
-      "line-width": {
-        "fn": "stops",
-        "stops": [[14, 0.8], [15, 0.9], [16, 1.2]]
-      }
-    },
-    "style.night": {
-      "line-color": "#fff",
-      "line-dasharray": [10, 4],
-      "line-opacity": 0.8,
-      "line-width": {
-        "fn": "stops",
-        "stops": [[14, 0.8], [15, 0.9], [16, 1.2]]
-      }
-    }
-  }, {
-    "id": "road_path_cycleway",
-    "ref": "road_path_cycleway",
-    "style": {
-      "line-color": "#488",
-      "line-dasharray": [10, 4],
-      "line-width": "@path_width"
-    },
-    "style.night": {
-      "line-color": "#94e6ff",
-      "line-dasharray": [10, 4],
-      "line-width": "@path_width"
-    }
-  }, {
-    "id": "road_path_mtb",
-    "ref": "road_path_mtb",
-    "style": {
-      "line-color": "#488",
-      "line-dasharray": [12, 4],
-      "line-width": "@path_width"
-    },
-    "style.night": {
-      "line-color": "#94e6ff",
-      "line-dasharray": [12, 4],
-      "line-width": "@path_width"
-    }
-  }, {
-    "id": "road_path_piste",
-    "ref": "road_path_piste",
-    "style": {
-      "line-color": "#87b",
-      "line-dasharray": [8, 4],
-      "line-width": "@path_width"
-    },
-    "style.night": {
-      "line-color": "#715dae",
-      "line-dasharray": [8, 4],
-      "line-width": "@path_width"
-    }
-  }, {
-    "id": "road_path_steps",
-    "ref": "road_path_steps",
-    "style": {
-      "line-color": "#bba",
-      "line-dasharray": [10, 4],
-      "line-width": 4
-    },
-    "style.night": {
-      "line-color": "#016684",
-      "line-dasharray": [10, 4],
-      "line-opacity": 0.3,
-      "line-width": 6
-    }
-  }, {
     "id": "bridge_aerialway_casing",
     "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5",
     "source-layer": "bridge",
@@ -1852,17 +1636,6 @@
       "line-color": "#876",
       "line-opacity": 0.5,
       "line-width": "@aerialway_width"
-    }
-  }, {
-    "id": "road_major_rail",
-    "ref": "road_major_rail",
-    "style": {
-      "line-color": "#c8c4c0",
-      "line-width": 0.8
-    },
-    "style.night": {
-      "line-color": "#c8c4c0",
-      "line-width": 0.8
     }
   }, {
     "id": "road_major_rail_hatching",
@@ -2571,15 +2344,13 @@
       "text-color": "#444",
       "text-size": "@poi_label_1-2_size",
       "text-halo-color": "@land",
-      "text-halo-width": 0.3,
-      "text-translate": [0, -1]
+      "text-halo-width": 0.3
     },
     "style.night": {
       "text-color": "#fff",
       "text-size": "@poi_label_1-2_size",
       "text-halo-color": "@text2_stroke_night",
-      "text-halo-width": 0.3,
-      "text-translate": [0, -1]
+      "text-halo-width": 0.3
     }
   }, {
     "id": "poi_3",
@@ -2626,8 +2397,7 @@
       "text-opacity": {
         "fn": "stops",
         "stops": [[16.5, 0], [16.75, 1]]
-      },
-      "text-translate": [0, -1]
+      }
     },
     "style.night": {
       "text-color": "#fff",
@@ -2637,8 +2407,7 @@
       "text-opacity": {
         "fn": "stops",
         "stops": [[16.5, 0], [16.75, 1]]
-      },
-      "text-translate": [0, -1]
+      }
     }
   }, {
     "id": "poi_4",
@@ -2685,8 +2454,7 @@
         "stops": [[18.5, 0], [18.75, 1]]
       },
       "text-halo-color": "@land",
-      "text-halo-width": 0.3,
-      "text-translate": [0, -1]
+      "text-halo-width": 0.3
     },
     "style.night": {
       "text-color": "#fff",
@@ -2696,8 +2464,7 @@
         "stops": [[18.5, 0], [18.75, 1]]
       },
       "text-halo-color": "@text2_stroke_night",
-      "text-halo-width": 0.3,
-      "text-translate": [0, -1]
+      "text-halo-width": 0.3
     }
   }, {
     "id": "poi_aerodrome",

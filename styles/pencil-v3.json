@@ -27,11 +27,10 @@
   "layers": [{
     "id": "background",
     "render": {
-      "type": "fill"
+      "type": "background"
     },
     "style": {
-      "fill-color": "@land",
-      "fill-image": "natural_paper"
+      "background-color": "@land"
     }
   }, {
     "id": "park",
