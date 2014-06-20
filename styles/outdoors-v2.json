@@ -680,9 +680,6 @@
     "id": "contour_line_loud",
     "bucket": "contour_line_loud"
   }, {
-    "id": "contour_line_loud",
-    "bucket": "contour_line_loud"
-  }, {
     "id": "contour_line_regular",
     "bucket": "contour_line_regular"
   }, {
@@ -803,30 +800,6 @@
     "id": "road_motorway",
     "bucket": "road_motorway"
   }, {
-    "id": "road_path_case",
-    "bucket": "road_path_case"
-  }, {
-    "id": "road_path_footway",
-    "bucket": "road_path_footway"
-  }, {
-    "id": "road_path_path",
-    "bucket": "road_path_path"
-  }, {
-    "id": "road_path_cycleway",
-    "bucket": "road_path_cycleway"
-  }, {
-    "id": "road_path_mtb",
-    "bucket": "road_path_mtb"
-  }, {
-    "id": "road_path_piste",
-    "bucket": "road_path_piste"
-  }, {
-    "id": "road_path_steps",
-    "bucket": "road_path_steps"
-  }, {
-    "id": "road_major_rail",
-    "bucket": "road_major_rail"
-  }, {
     "id": "road_major_rail_hatching",
     "bucket": "road_major_rail"
   }, {
@@ -860,32 +833,11 @@
     "id": "bridge_motorway",
     "bucket": "bridge_motorway"
   }, {
-    "id": "road_path_footway",
-    "bucket": "road_path_footway"
-  }, {
-    "id": "road_path_path",
-    "bucket": "road_path_path"
-  }, {
-    "id": "road_path_cycleway",
-    "bucket": "road_path_cycleway"
-  }, {
-    "id": "road_path_mtb",
-    "bucket": "road_path_mtb"
-  }, {
-    "id": "road_path_piste",
-    "bucket": "road_path_piste"
-  }, {
-    "id": "road_path_steps",
-    "bucket": "road_path_steps"
-  }, {
     "id": "bridge_aerialway_casing",
     "bucket": "bridge_aerialway"
   }, {
     "id": "bridge_aerialway",
     "bucket": "bridge_aerialway"
-  }, {
-    "id": "road_major_rail",
-    "bucket": "road_major_rail"
   }, {
     "id": "road_major_rail_hatching",
     "bucket": "road_major_rail"
