@@ -77,7 +77,8 @@
       "line-join": "round"
     },
     "tunnel_path": {
-      "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "tunnel", "class": "path"}
+      "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "tunnel", "class": "path"},
+      "line": true
     },
     "tunnel_major_rail": {
       "filter": {"source": "mapbox.mapbox-streets-v5", "layer": "tunnel", "class": "major_rail"},
