@@ -30,7 +30,8 @@
       "type": "background"
     },
     "style": {
-      "background-color": "@land"
+      "background-color": "@land",
+      "background-image": "natural_paper"
     }
   }, {
     "id": "park",
