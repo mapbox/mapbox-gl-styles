@@ -852,9 +852,10 @@
       "fill-outline-color": "@water_dark_night"
     }
   }, {
-    "id": "aeroway_fill",
+    "id": "aeroway_apron",
     "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5",
     "source-layer": "aeroway",
+    "filter": { "type": "apron" },
     "render": {
       "type": "fill"
     },
