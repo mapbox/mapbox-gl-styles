@@ -177,7 +177,7 @@
     }
   },
   "sources": {
-    "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev": {
+    "mapbox": {
       "type": "vector",
       "url": "mapbox://mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
       "glyphs": "https://mapbox.s3.amazonaws.com/gl-glyphs-256/{fontstack}/{range}.pbf",
@@ -197,7 +197,7 @@
     }
   }, {
     "id": "landcover_snow",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landcover",
     "filter": { "class": "snow" },
     "render": {
@@ -211,7 +211,7 @@
     }
   }, {
     "id": "landcover_crop",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landcover",
     "filter": { "class": "crop" },
     "render": {
@@ -225,7 +225,7 @@
     }
   }, {
     "id": "landcover_grass",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landcover",
     "filter": { "class": "grass" },
     "render": {
@@ -247,7 +247,7 @@
     }
   }, {
     "id": "landcover_scrub",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landcover",
     "filter": { "class": "scrub" },
     "render": {
@@ -269,7 +269,7 @@
     }
   }, {
     "id": "landcover_wood",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landcover",
     "filter": { "class": "wood" },
     "render": {
@@ -291,7 +291,7 @@
     }
   }, {
     "id": "landuse_wood",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "wood" },
     "render": {
@@ -306,7 +306,7 @@
     }
   }, {
     "id": "landuse_school",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "school" },
     "render": {
@@ -320,7 +320,7 @@
     }
   }, {
     "id": "landuse_sand",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "sand" },
     "render": {
@@ -335,7 +335,7 @@
     }
   }, {
     "id": "landuse_pitch",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "pitch" },
     "render": {
@@ -351,7 +351,7 @@
     }
   }, {
     "id": "landuse_park",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "park" },
     "render": {
@@ -365,7 +365,7 @@
     }
   }, {
     "id": "landuse_industrial",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "industrial" },
     "render": {
@@ -379,7 +379,7 @@
     }
   }, {
     "id": "landuse_scrub",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "scrub" },
     "render": {
@@ -394,7 +394,7 @@
     }
   }, {
     "id": "landuse_grass",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "grass" },
     "render": {
@@ -409,7 +409,7 @@
     }
   }, {
     "id": "landuse_crop",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "crop" },
     "render": {
@@ -424,7 +424,7 @@
     }
   }, {
     "id": "landuse_rock",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "rock" },
     "render": {
@@ -439,7 +439,7 @@
     }
   }, {
     "id": "landuse_snow",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "snow" },
     "render": {
@@ -454,7 +454,7 @@
     }
   }, {
     "id": "landuse_hospital",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "hospital" },
     "render": {
@@ -468,7 +468,7 @@
     }
   }, {
     "id": "landuse_cemetery",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse",
     "filter": { "class": "cemetery" },
     "render": {
@@ -482,7 +482,7 @@
     }
   }, {
     "id": "overlay_wetland",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse_overlay",
     "filter": { "class": ["wetland", "wetland_noveg"] },
     "render": {
@@ -498,7 +498,7 @@
     }
   }, {
     "id": "overlay_breakwater_pier",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "landuse_overlay",
     "filter": { "class": ["breakwater", "pier"] },
     "render": {
@@ -512,7 +512,7 @@
     }
   }, {
     "id": "waterway_river_canal",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "waterway",
     "filter": { "type": ["river", "canal"] },
     "render": {
@@ -529,7 +529,7 @@
     }
   }, {
     "id": "waterway_stream",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "waterway",
     "filter": { "type": "stream" },
     "render": {
@@ -546,7 +546,7 @@
     }
   }, {
     "id": "building_shadow",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "building",
     "render": {
       "type": "fill"
@@ -599,7 +599,7 @@
     }
   }, {
     "id": "hillshade_full_highlight",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "hillshade",
     "filter": { "class": "full_highlight" },
     "render": {
@@ -623,7 +623,7 @@
     }
   }, {
     "id": "hillshade_medium_highlight",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "hillshade",
     "filter": { "class": "medium_highlight" },
     "render": {
@@ -647,7 +647,7 @@
     }
   }, {
     "id": "hillshade_medium_shadow",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "hillshade",
     "filter": { "class": "medium_shadow" },
     "render": {
@@ -671,7 +671,7 @@
     }
   }, {
     "id": "hillshade_full_shadow",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "hillshade",
     "filter": { "class": "full_shadow" },
     "render": {
@@ -695,7 +695,7 @@
     }
   }, {
     "id": "contour_line_loud",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "contour",
     "filter": { "index": 5 },
     "render": {
@@ -720,7 +720,7 @@
     }
   }, {
     "id": "contour_line_regular",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "contour",
     "render": {
       "type": "line",
@@ -744,7 +744,7 @@
     }
   }, {
     "id": "barrier_line_gate",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "barrier_line",
     "filter": { "class": "gate" },
     "render": {
@@ -760,7 +760,7 @@
     }
   }, {
     "id": "barrier_line_fence",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "barrier_line",
     "filter": { "class": "fence" },
     "render": {
@@ -776,7 +776,7 @@
     }
   }, {
     "id": "barrier_line_hedge",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "barrier_line",
     "filter": { "class": "hedge" },
     "render": {
@@ -792,7 +792,7 @@
     }
   }, {
     "id": "barrier_line_land",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "barrier_line",
     "filter": { "class": "land" },
     "render": {
@@ -808,7 +808,7 @@
     }
   }, {
     "id": "barrier_line_land_fill",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "barrier_line",
     "filter": { "class": "land" },
     "render": {
@@ -822,7 +822,7 @@
     }
   }, {
     "id": "barrier_line_cliff",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "barrier_line",
     "filter": { "class": "cliff" },
     "render": {
@@ -838,7 +838,7 @@
     }
   }, {
     "id": "water",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "water",
     "render": {
       "type": "fill"
@@ -853,7 +853,7 @@
     }
   }, {
     "id": "aeroway_fill",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "aeroway",
     "render": {
       "type": "fill"
@@ -866,7 +866,7 @@
     }
   }, {
     "id": "aeroway_runway",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "aeroway",
     "filter": { "type": "runway" },
     "render": {
@@ -882,7 +882,7 @@
     }
   }, {
     "id": "aeroway_taxiway",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "aeroway",
     "filter": { "type": "taxiway" },
     "render": {
@@ -898,7 +898,7 @@
     }
   }, {
     "id": "tunnel_motorway_link_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "tunnel",
     "filter": { "class": "motorway_link" },
     "render": {
@@ -916,7 +916,7 @@
     }
   }, {
     "id": "tunnel_service_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "tunnel",
     "filter": { "class": "service" },
     "render": {
@@ -936,7 +936,7 @@
     }
   }, {
     "id": "tunnel_main_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "tunnel",
     "filter": { "class": "main" },
     "render": {
@@ -962,7 +962,7 @@
     }
   }, {
     "id": "tunnel_street_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "tunnel",
     "filter": { "class": ["street", "street_limited"] },
     "render": {
@@ -1032,7 +1032,7 @@
     }
   }, {
     "id": "tunnel_motorway_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "tunnel",
     "filter": { "class": "motorway" },
     "render": {
@@ -1077,7 +1077,7 @@
     }
   }, {
     "id": "road_path_case",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "road",
     "filter": { "class": "path" },
     "render": {
@@ -1097,7 +1097,7 @@
     }
   }, {
     "id": "road_path_footway",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "type": "footway" },
     "render": {
@@ -1115,7 +1115,7 @@
     }
   }, {
     "id": "road_path_path",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "type": "path" },
     "render": {
@@ -1141,7 +1141,7 @@
     }
   }, {
     "id": "road_path_cycleway",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "type": "cycleway" },
     "render": {
@@ -1159,7 +1159,7 @@
     }
   }, {
     "id": "road_path_mtb",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "type": "mtb" },
     "render": {
@@ -1177,7 +1177,7 @@
     }
   }, {
     "id": "road_path_piste",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "type": "piste" },
     "render": {
@@ -1195,7 +1195,7 @@
     }
   }, {
     "id": "road_path_steps",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "type": "steps" },
     "render": {
@@ -1214,7 +1214,7 @@
     }
   }, {
     "id": "road_major_rail",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "class": "major_rail" },
     "render": {
@@ -1243,7 +1243,7 @@
     }
   }, {
     "id": "road_motorway_link_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "road",
     "filter": { "class": "motorway_link" },
     "render": {
@@ -1261,7 +1261,7 @@
     }
   }, {
     "id": "road_service_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "road",
     "filter": { "class": "service" },
     "render": {
@@ -1281,7 +1281,7 @@
     }
   }, {
     "id": "road_main_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "road",
     "filter": { "class": "main" },
     "render": {
@@ -1307,7 +1307,7 @@
     }
   }, {
     "id": "road_street_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "road",
     "filter": { "class": ["street", "street_limited"] },
     "render": {
@@ -1379,7 +1379,7 @@
     }
   }, {
     "id": "road_motorway_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "road",
     "filter": { "class": "motorway" },
     "render": {
@@ -1437,7 +1437,7 @@
     }
   }, {
     "id": "bridge_motorway_link_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "class": "motorway_link" },
     "render": {
@@ -1453,7 +1453,7 @@
     }
   }, {
     "id": "bridge_service_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "class": "service" },
     "render": {
@@ -1471,7 +1471,7 @@
     }
   }, {
     "id": "bridge_main_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "class": "main" },
     "render": {
@@ -1495,7 +1495,7 @@
     }
   }, {
     "id": "bridge_street_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "class": ["street", "street_limited"] },
     "render": {
@@ -1565,7 +1565,7 @@
     }
   }, {
     "id": "bridge_motorway_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "class": "motorway" },
     "render": {
@@ -1608,7 +1608,7 @@
     }
   }, {
     "id": "bridge_aerialway_casing",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "bridge",
     "filter": { "class": "aerialway" },
     "render": {
@@ -1652,7 +1652,7 @@
     }
   }, {
     "id": "admin_l3",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "admin",
     "filter": { "admin_level": [3, 4, 5] },
     "render": {
@@ -1679,7 +1679,7 @@
     }
   }, {
     "id": "admin_l2",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "admin",
     "filter": { "admin_level": 2 },
     "render": {
@@ -1697,7 +1697,7 @@
     }
   }, {
     "id": "admin_maritime_cover",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "admin",
     "filter": { "maritime": 1 },
     "render": {
@@ -1732,7 +1732,7 @@
     }
   }, {
     "id": "country_label_line",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "country_label_line",
     "render": {
       "text-max-width": 5,
@@ -1750,7 +1750,7 @@
     }
   }, {
     "id": "country_label",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "country_label",
     "filter": { "$type": "point" },
     "render": {
@@ -1775,7 +1775,7 @@
     }
   }, {
     "id": "marine_label_line_1",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "marine_label",
     "filter": { "$type": "line", "labelrank": 1 },
     "render": {
@@ -1805,7 +1805,7 @@
     }
   }, {
     "id": "marine_label_line_2",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "marine_label",
     "filter": { "$type": "line", "labelrank": 2 },
     "render": {
@@ -1834,7 +1834,7 @@
     }
   }, {
     "id": "marine_label_line_3",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "marine_label",
     "filter": { "$type": "line", "labelrank": 3 },
     "render": {
@@ -1863,7 +1863,7 @@
     }
   }, {
     "id": "marine_label_line_other",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "marine_label",
     "filter": { "$type": "line", "labelrank": [4, 5, 6] },
     "render": {
@@ -1892,7 +1892,7 @@
     }
   }, {
     "id": "marine_label_point_1",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "marine_label",
     "filter": { "$type": "point", "labelrank": 1 },
     "render": {
@@ -1923,7 +1923,7 @@
     }
   }, {
     "id": "marine_label_point_2",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "marine_label",
     "filter": { "$type": "point", "labelrank": 2 },
     "render": {
@@ -1954,7 +1954,7 @@
     }
   }, {
     "id": "marine_label_point_3",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "marine_label",
     "filter": { "$type": "point", "labelrank": 3 },
     "render": {
@@ -1985,7 +1985,7 @@
     }
   }, {
     "id": "marine_label_point_other",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "marine_label",
     "filter": { "$type": "point", "labelrank": [4, 5, 6] },
     "render": {
@@ -2016,7 +2016,7 @@
     }
   }, {
     "id": "state_label",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "state_label",
     "filter": { "$type": "point" },
     "render": {
@@ -2047,7 +2047,7 @@
     }
   }, {
     "id": "place_label_city",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "place_label",
     "filter": { "type": "city", "$type": "point" },
     "render": {
@@ -2078,7 +2078,7 @@
     }
   }, {
     "id": "place_label_town",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "place_label",
     "filter": { "type": "town", "$type": "point" },
     "render": {
@@ -2109,7 +2109,7 @@
     }
   }, {
     "id": "place_label_village",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "place_label",
     "filter": { "type": "village", "$type": "point" },
     "render": {
@@ -2140,7 +2140,7 @@
     }
   }, {
     "id": "place_label_other",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "place_label",
     "filter": { "type": ["hamlet", "suburb", "neighbourhood"], "$type": "point" },
     "render": {
@@ -2170,7 +2170,7 @@
     }
   }, {
     "id": "road_label_1",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "road_label",
     "filter": { "class": ["motorway", "main"], "$type": "line" },
     "render": {
@@ -2196,7 +2196,7 @@
     }
   }, {
     "id": "road_label_2",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "road_label",
     "filter": { "class": ["street", "street_limited"], "$type": "line" },
     "render": {
@@ -2222,7 +2222,7 @@
     }
   }, {
     "id": "road_label_3",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "road_label",
     "filter": { "class": ["service", "driveway", "path"], "$type": "line" },
     "render": {
@@ -2248,7 +2248,7 @@
     }
   }, {
     "id": "contour_label",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "contour",
     "filter": { "index": [5, 10], "$type": "line" },
     "render": {
@@ -2273,7 +2273,7 @@
     }
   }, {
     "id": "water_label",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "water_label",
     "filter": { "$type": "point" },
     "render": {
@@ -2294,7 +2294,7 @@
     }
   }, {
     "id": "waterway_label",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "waterway_label",
     "filter": { "$type": "line" },
     "render": {
@@ -2316,7 +2316,7 @@
     }
   }, {
     "id": "poi",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "poi_label",
     "filter": { "scalerank": [1, 2] },
     "render": {
@@ -2327,7 +2327,7 @@
     "style.night": {}
   }, {
     "id": "poi_label_1-2",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "poi_label",
     "filter": { "scalerank": [1, 2], "$type": "point" },
     "render": {
@@ -2354,7 +2354,7 @@
     }
   }, {
     "id": "poi_3",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "poi_label",
     "filter": { "scalerank": 3 },
     "render": {
@@ -2376,7 +2376,7 @@
     }
   }, {
     "id": "poi_label_3",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "poi_label",
     "filter": { "scalerank": 3, "$type": "point" },
     "render": {
@@ -2411,7 +2411,7 @@
     }
   }, {
     "id": "poi_4",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "poi_label",
     "filter": { "scalerank": 4 },
     "render": {
@@ -2433,7 +2433,7 @@
     }
   }, {
     "id": "poi_label_4",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "poi_label",
     "filter": { "scalerank": 4, "$type": "point" },
     "render": {
@@ -2468,7 +2468,7 @@
     }
   }, {
     "id": "poi_aerodrome",
-    "source": "mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+    "source": "mapbox",
     "source-layer": "poi_label",
     "filter": { "maki": "airport" },
     "render": {
