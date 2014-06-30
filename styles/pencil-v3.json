@@ -17,9 +17,9 @@
     "@satellite_spin": 0
   },
   "sources": {
-    "mapbox.mapbox-streets-v5": {
+    "mapbox.mapbox-streets-v6-dev": {
       "type": "vector",
-      "url": "mapbox://mapbox.mapbox-streets-v5",
+      "url": "mapbox://mapbox.mapbox-streets-v6-dev",
       "glyphs": "https://mapbox.s3.amazonaws.com/gl-glyphs-256/{fontstack}/{range}.pbf",
       "tileSize": 512
     }
@@ -35,7 +35,7 @@
     }
   }, {
     "id": "park",
-    "source": "mapbox.mapbox-streets-v5",
+    "source": "mapbox.mapbox-streets-v6-dev",
     "source-layer": "landuse",
     "filter": { "class": "park" },
     "render": {
@@ -48,7 +48,7 @@
     }
   }, {
     "id": "park_outline",
-    "source": "mapbox.mapbox-streets-v5",
+    "source": "mapbox.mapbox-streets-v6-dev",
     "source-layer": "landuse",
     "filter": { "class": "park", "$type": "polygon" },
     "render": {
@@ -69,7 +69,7 @@
     }
   }, {
     "id": "wood",
-    "source": "mapbox.mapbox-streets-v5",
+    "source": "mapbox.mapbox-streets-v6-dev",
     "source-layer": "landuse",
     "filter": { "class": "wood" },
     "render": {
@@ -82,7 +82,7 @@
     }
   }, {
     "id": "waterway",
-    "source": "mapbox.mapbox-streets-v5",
+    "source": "mapbox.mapbox-streets-v6-dev",
     "source-layer": "waterway",
     "render": {
       "type": "line"
@@ -99,7 +99,7 @@
     }
   }, {
     "id": "water",
-    "source": "mapbox.mapbox-streets-v5",
+    "source": "mapbox.mapbox-streets-v6-dev",
     "source-layer": "water",
     "render": {
       "type": "fill"
@@ -113,7 +113,7 @@
     "id": "roads",
     "layers": [{
       "id": "road_large_casing",
-      "source": "mapbox.mapbox-streets-v5",
+      "source": "mapbox.mapbox-streets-v6-dev",
       "source-layer": "road",
       "filter": { "class": ["motorway", "main"] },
       "render": {
@@ -135,7 +135,7 @@
       }
     }, {
       "id": "road_regular_casing",
-      "source": "mapbox.mapbox-streets-v5",
+      "source": "mapbox.mapbox-streets-v6-dev",
       "source-layer": "road",
       "filter": { "class": ["street"] },
       "render": {
@@ -164,7 +164,7 @@
       }
     }, {
       "id": "road_limited",
-      "source": "mapbox.mapbox-streets-v5",
+      "source": "mapbox.mapbox-streets-v6-dev",
       "source-layer": "road",
       "filter": { "class": ["street_limited"] },
       "render": {
@@ -219,7 +219,7 @@
       }
     }, {
       "id": "path",
-      "source": "mapbox.mapbox-streets-v5",
+      "source": "mapbox.mapbox-streets-v6-dev",
       "source-layer": "road",
       "filter": { "class": ["path"] },
       "render": {
@@ -236,7 +236,7 @@
       }
     }, {
       "id": "bridge_large_casing",
-      "source": "mapbox.mapbox-streets-v5",
+      "source": "mapbox.mapbox-streets-v6-dev",
       "source-layer": "bridge",
       "filter": { "class": ["motorway", "main"] },
       "render": {
@@ -271,7 +271,7 @@
       }
     }, {
       "id": "bridge_regular_casing",
-      "source": "mapbox.mapbox-streets-v5",
+      "source": "mapbox.mapbox-streets-v6-dev",
       "source-layer": "bridge",
       "filter": { "class": ["street", "street_limited"] },
       "render": {
@@ -320,7 +320,7 @@
     }
   }, {
     "id": "building",
-    "source": "mapbox.mapbox-streets-v5",
+    "source": "mapbox.mapbox-streets-v6-dev",
     "source-layer": "building",
     "render": {
       "type": "fill"
@@ -340,7 +340,7 @@
     }
   }, {
     "id": "building_outline",
-    "source": "mapbox.mapbox-streets-v5",
+    "source": "mapbox.mapbox-streets-v6-dev",
     "source-layer": "building",
     "filter": { "$type": "polygon" },
     "render": {
@@ -363,7 +363,7 @@
     }
   }, {
     "id": "borders",
-    "source": "mapbox.mapbox-streets-v5",
+    "source": "mapbox.mapbox-streets-v6-dev",
     "source-layer": "admin",
     "render": {
       "type": "line"
