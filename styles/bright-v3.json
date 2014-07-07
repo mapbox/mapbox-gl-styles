@@ -1,6 +1,7 @@
 {
   "version": 3,
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
+  "glyphs": "https://mapbox.s3.amazonaws.com/gl-glyphs-256/{fontstack}/{range}.pbf",
   "constants": {
     "@land": "#f8f4f0",
     "@water": "#a0c8f0",
@@ -31,7 +32,6 @@
     "mapbox": {
       "type": "vector",
       "url": "mapbox://mapbox.mapbox-streets-v6-dev",
-      "glyphs": "https://mapbox.s3.amazonaws.com/gl-glyphs-256/{fontstack}/{range}.pbf",
       "tileSize": 512
     }
   },
