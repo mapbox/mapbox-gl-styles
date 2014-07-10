@@ -794,7 +794,7 @@
     "filter": { "$type": "Point" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 13
     },
     "style": {
@@ -809,7 +809,7 @@
     "filter": { "labelrank": 1, "$type": "LineString" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 22,
       "symbol-placement": "line"
     },
@@ -825,7 +825,7 @@
     "filter": { "labelrank": 2, "$type": "LineString" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 16,
       "symbol-placement": "line"
     },
@@ -840,7 +840,7 @@
     "source-layer": "marin_label",
     "filter": { "labelrank": 3, "$type": "LineString" },
     "render": {
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 14,
       "symbol-placement": "line"
     },
@@ -863,7 +863,7 @@
     "filter": { "type": "city", "$type": "Point" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 24
     },
     "style": {
@@ -882,7 +882,7 @@
     "filter": { "type": "town", "$type": "Point" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 24
     },
     "style": {
@@ -901,7 +901,7 @@
     "filter": { "type": "village", "$type": "Point" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 22
     },
     "style": {
@@ -920,7 +920,7 @@
     "filter": { "type": ["hamlet", "suburb", "neighbourhood"], "$type": "Point" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 14
     },
     "style": {
@@ -939,7 +939,7 @@
     "filter": { "$type": "LineString" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 13,
       "text-padding": 2,
       "symbol-placement": "line"
@@ -960,7 +960,7 @@
     "filter": { "$type": "Point" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 12,
       "text-padding": 2
     },
@@ -976,7 +976,7 @@
     "filter": { "$type": "Point" },
     "render": {
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "text-field": "{{name}}",
+      "text-field": "{name}",
       "text-max-size": 12
     },
     "style": {
@@ -989,7 +989,7 @@
     "source": "mapbox",
     "source-layer": "poi_label",
     "render": {
-      "icon-image": "{{maki}}-12"
+      "icon-image": "{maki}-12"
     },
     "style": {},
     "type": "symbol"
