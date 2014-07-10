@@ -8,7 +8,8 @@
     "test": "gl-style-validate styles/*"
   },
   "devDependencies": {
-    "mapbox-gl-style-lint": "https://github.com/mapbox/mapbox-gl-style-lint/tarball/master"
+    "mapbox-gl-style-lint": "https://github.com/mapbox/mapbox-gl-style-lint/tarball/master",
+    "mapbox-gl-style-spec": "https://github.com/mapbox/mapbox-gl-style-spec/tarball/master"
   },
   "license": "ISC"
 }
