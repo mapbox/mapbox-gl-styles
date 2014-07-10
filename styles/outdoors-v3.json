@@ -186,9 +186,6 @@
   },
   "layers": [{
     "id": "background",
-    "render": {
-      "type": "background"
-    },
     "style": {
       "background-color": "@land"
     },
@@ -1735,7 +1732,6 @@
     "source": "mapbox",
     "source-layer": "country_label_line",
     "render": {
-      "text-max-width": 5,
       "type": "line"
     },
     "style": {

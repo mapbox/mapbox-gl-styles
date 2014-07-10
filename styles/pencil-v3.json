@@ -26,9 +26,6 @@
   },
   "layers": [{
     "id": "background",
-    "render": {
-      "type": "background"
-    },
     "style": {
       "background-color": "@land",
       "background-image": "natural_paper"

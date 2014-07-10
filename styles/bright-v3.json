@@ -37,9 +37,6 @@
   },
   "layers": [{
     "id": "background",
-    "render": {
-      "type": "background"
-    },
     "style": {
       "background-color": "@land",
       "transition-background-color": {
