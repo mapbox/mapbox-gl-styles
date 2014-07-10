@@ -1644,7 +1644,7 @@
     "source-layer": "country_label",
     "filter": { "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 24,
       "text-max-width": 5
@@ -1674,7 +1674,7 @@
     "source-layer": "marine_label",
     "filter": { "$type": "LineString", "labelrank": 1 },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 30,
       "text-max-angle": 0.5,
@@ -1704,7 +1704,7 @@
     "source-layer": "marine_label",
     "filter": { "$type": "LineString", "labelrank": 2 },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 24,
       "text-max-angle": 0.5,
@@ -1733,7 +1733,7 @@
     "source-layer": "marine_label",
     "filter": { "$type": "LineString", "labelrank": 3 },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 18,
       "text-max-angle": 0.5,
@@ -1762,7 +1762,7 @@
     "source-layer": "marine_label",
     "filter": { "$type": "LineString", "labelrank": [4, 5, 6] },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 16,
       "text-max-angle": 0.5,
@@ -1791,7 +1791,7 @@
     "source-layer": "marine_label",
     "filter": { "$type": "Point", "labelrank": 1 },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 30,
       "text-max-width": 8,
@@ -1821,7 +1821,7 @@
     "source-layer": "marine_label",
     "filter": { "$type": "Point", "labelrank": 2 },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 24,
       "text-max-width": 8,
@@ -1851,7 +1851,7 @@
     "source-layer": "marine_label",
     "filter": { "$type": "Point", "labelrank": 3 },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 18,
       "text-max-width": 8,
@@ -1881,7 +1881,7 @@
     "source-layer": "marine_label",
     "filter": { "$type": "Point", "labelrank": [4, 5, 6] },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 16,
       "text-max-width": 8,
@@ -1911,7 +1911,7 @@
     "source-layer": "state_label",
     "filter": { "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 16,
       "text-max-width": 8
@@ -1947,7 +1947,7 @@
     "source-layer": "place_label",
     "filter": { "type": "city", "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 20,
       "text-max-width": 8
@@ -1983,7 +1983,7 @@
     "source-layer": "place_label",
     "filter": { "type": "town", "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 24,
       "text-max-width": 8
@@ -2019,7 +2019,7 @@
     "source-layer": "place_label",
     "filter": { "type": "village", "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 22,
       "text-max-width": 8
@@ -2055,7 +2055,7 @@
     "source-layer": "place_label",
     "filter": { "type": ["hamlet", "suburb", "neighbourhood"], "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 18,
       "text-max-width": 6
@@ -2087,7 +2087,7 @@
     "source-layer": "road_label",
     "filter": { "class": ["motorway", "main"], "$type": "LineString" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-padding": 2,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 18,
@@ -2119,7 +2119,7 @@
     "source-layer": "road_label",
     "filter": { "class": ["street", "street_limited"], "$type": "LineString" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-padding": 2,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 16,
@@ -2151,7 +2151,7 @@
     "source-layer": "road_label",
     "filter": { "class": ["service", "driveway", "path"], "$type": "LineString" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-padding": 2,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 14,
@@ -2183,7 +2183,7 @@
     "source-layer": "contour",
     "filter": { "index": [5, 10], "$type": "LineString" },
     "render": {
-      "text-field": "{{ele}} m",
+      "text-field": "{ele} m",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 10,
       "text-max-angle": 0.5,
@@ -2208,7 +2208,7 @@
     "source-layer": "water_label",
     "filter": { "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 12,
       "text-max-width": 8
@@ -2228,7 +2228,7 @@
     "source-layer": "waterway_label",
     "filter": { "$type": "LineString" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 12,
       "text-max-angle": 0.5,
@@ -2250,7 +2250,7 @@
     "source-layer": "poi_label",
     "filter": { "scalerank": [1, 2] },
     "render": {
-      "icon-image": "{{maki}}-12"
+      "icon-image": "{maki}-12"
     },
     "style.night": {},
     "type": "symbol"
@@ -2260,7 +2260,7 @@
     "source-layer": "poi_label",
     "filter": { "scalerank": [1, 2], "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-padding": 2,
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 12,
@@ -2292,7 +2292,7 @@
     "source-layer": "poi_label",
     "filter": { "scalerank": 3 },
     "render": {
-      "icon-image": "{{maki}}-12"
+      "icon-image": "{maki}-12"
     },
     "style": {
       "icon-opacity": {
@@ -2313,7 +2313,7 @@
     "source-layer": "poi_label",
     "filter": { "scalerank": 3, "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-padding": 2,
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 11,
@@ -2353,7 +2353,7 @@
     "source-layer": "poi_label",
     "filter": { "scalerank": 4 },
     "render": {
-      "icon-image": "{{maki}}-12"
+      "icon-image": "{maki}-12"
     },
     "style": {
       "icon-opacity": {
@@ -2374,7 +2374,7 @@
     "source-layer": "poi_label",
     "filter": { "scalerank": 4, "$type": "Point" },
     "render": {
-      "text-field": "{{name_en}}",
+      "text-field": "{name_en}",
       "text-padding": 2,
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 10,
@@ -2408,7 +2408,7 @@
     "source-layer": "poi_label",
     "filter": { "maki": "airport" },
     "render": {
-      "icon-image": "{{maki}}-12"
+      "icon-image": "{maki}-12"
     },
     "style": {
       "icon-opacity": {
