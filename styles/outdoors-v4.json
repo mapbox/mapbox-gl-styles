@@ -2245,27 +2245,19 @@
     },
     "type": "symbol"
   }, {
-    "id": "poi",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": { "scalerank": [1, 2] },
-    "render": {
-      "icon-image": "{maki}-12"
-    },
-    "style.night": {},
-    "type": "symbol"
-  }, {
     "id": "poi_label_1-2",
     "source": "mapbox",
     "source-layer": "poi_label",
     "filter": { "scalerank": [1, 2], "$type": "Point" },
     "render": {
+      "icon-image": "{maki}-12",
       "text-field": "{name_en}",
       "text-padding": 2,
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 12,
       "text-max-width": 10,
-      "text-horizontal-align": "center"
+      "text-offset": [0, 0.6],
+      "text-vertical-align": "top"
     },
     "style": {
       "text-color": "#444",
@@ -2283,27 +2275,6 @@
       "text-halo-width": {
         "fn": "stops",
         "stops": [[15, 1.5], [16, 1.65], [17, 1.8]]
-      }
-    },
-    "type": "symbol"
-  }, {
-    "id": "poi_3",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": { "scalerank": 3 },
-    "render": {
-      "icon-image": "{maki}-12"
-    },
-    "style": {
-      "icon-opacity": {
-        "fn": "stops",
-        "stops": [[16.5, 0], [16.75, 1]]
-      }
-    },
-    "style.night": {
-      "icon-opacity": {
-        "fn": "stops",
-        "stops": [[16.5, 0], [16.75, 1]]
       }
     },
     "type": "symbol"
@@ -2313,14 +2284,20 @@
     "source-layer": "poi_label",
     "filter": { "scalerank": 3, "$type": "Point" },
     "render": {
+      "icon-image": "{maki}-12",
       "text-field": "{name_en}",
       "text-padding": 2,
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 11,
       "text-max-width": 10,
-      "text-horizontal-align": "center"
+      "text-offset": [0, 0.6],
+      "text-vertical-align": "top"
     },
     "style": {
+      "icon-opacity": {
+        "fn": "stops",
+        "stops": [[16.5, 0], [16.75, 1]]
+      },
       "text-color": "#444",
       "text-size": "@poi_label_3_size",
       "text-halo-color": "@land",
@@ -2344,27 +2321,6 @@
       "text-opacity": {
         "fn": "stops",
         "stops": [[16.5, 0], [16.75, 1]]
-      }
-    },
-    "type": "symbol"
-  }, {
-    "id": "poi_4",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": { "scalerank": 4 },
-    "render": {
-      "icon-image": "{maki}-12"
-    },
-    "style": {
-      "icon-opacity": {
-        "fn": "stops",
-        "stops": [[18.5, 0], [18.75, 1]]
-      }
-    },
-    "style.night": {
-      "icon-opacity": {
-        "fn": "stops",
-        "stops": [[18.5, 0], [18.75, 1]]
       }
     },
     "type": "symbol"
@@ -2374,14 +2330,20 @@
     "source-layer": "poi_label",
     "filter": { "scalerank": 4, "$type": "Point" },
     "render": {
+      "icon-image": "{maki}-12",
       "text-field": "{name_en}",
       "text-padding": 2,
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 10,
       "text-max-width": 10,
-      "text-horizontal-align": "center"
+      "text-offset": [0, 0.6],
+      "text-vertical-align": "top"
     },
     "style": {
+      "icon-opacity": {
+        "fn": "stops",
+        "stops": [[18.5, 0], [18.75, 1]]
+      },
       "text-color": "#444",
       "text-size": 10,
       "text-opacity": {
@@ -2400,27 +2362,6 @@
       },
       "text-halo-color": "@text2_stroke_night",
       "text-halo-width": 1.5
-    },
-    "type": "symbol"
-  }, {
-    "id": "poi_aerodrome",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "filter": { "maki": "airport" },
-    "render": {
-      "icon-image": "{maki}-12"
-    },
-    "style": {
-      "icon-opacity": {
-        "fn": "stops",
-        "stops": [[13, 0], [13.25, 1]]
-      }
-    },
-    "style.night": {
-      "icon-opacity": {
-        "fn": "stops",
-        "stops": [[13, 0], [13.25, 1]]
-      }
     },
     "type": "symbol"
   }]
