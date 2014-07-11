@@ -959,10 +959,13 @@
     "source-layer": "poi_label",
     "filter": { "$type": "Point" },
     "render": {
+      "icon-image": "{maki}-12",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-field": "{name}",
       "text-max-size": 12,
-      "text-padding": 2
+      "text-padding": 2,
+      "text-offset": [0,0.3],
+      "text-vertical-align": "top"
     },
     "style": {
       "text-color": "#666",
@@ -982,16 +985,6 @@
     "style": {
       "text-color": "@marine_text",
       "text-halo-color": "rgba(255,255,255,0.75)"
-    },
-    "type": "symbol"
-  }, {
-    "id": "poi",
-    "source": "mapbox",
-    "source-layer": "poi_label",
-    "render": {
-      "icon-image": "{maki}-12"
-    },
-    "style": {},
-    "type": "symbol"
+    }
   }]
 }
