@@ -225,15 +225,13 @@
     "style": {
       "fill-color": "@grass",
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[13, 1], [14, 0.8], [17, 0.2]]
+        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
       }
     },
     "style.night": {
       "fill-color": "@grass_night",
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[13, 1], [14, 0.8], [17, 0.2]]
+        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
       }
     },
     "type": "fill"
@@ -245,15 +243,13 @@
     "style": {
       "fill-color": "@scrub",
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[13, 1], [14, 0.8], [17, 0.2]]
+        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
       }
     },
     "style.night": {
       "fill-color": "@scrub_night",
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[13, 1], [14, 0.8], [17, 0.2]]
+        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
       }
     },
     "type": "fill"
@@ -265,15 +261,13 @@
     "style": {
       "fill-color": "@wood",
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[13, 1], [14, 0.8], [17, 0.2]]
+        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
       }
     },
     "style.night": {
       "fill-color": "@wood_night",
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[13, 1], [14, 0.8], [17, 0.2]]
+        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
       }
     },
     "type": "fill"
@@ -510,8 +504,7 @@
       "fill-color": "#d5d1c6",
       "fill-translate": [1, 1],
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[16.5, 0], [17, 1]]
+        "stops": [[15.5, 0], [16, 1]]
       },
       "fill-outline-color": "#d5d1c6"
     },
@@ -519,8 +512,7 @@
       "fill-color": "#026688",
       "fill-translate": [1, 1],
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[16.5, 0], [17, 1]]
+        "stops": [[15.5, 0], [16, 1]]
       },
       "fill-outline-color": "#026688"
     },
@@ -540,16 +532,14 @@
     "style": {
       "fill-color": "#ebe7db",
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[16.5, 0], [17, 0.7]]
+        "stops": [[15.5, 0], [16, 0.7]]
       },
       "fill-outline-color": "#d5d1c6"
     },
     "style.night": {
       "fill-color": "#027797",
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[16.5, 0], [17, 0.7]]
+        "stops": [[15.5, 0], [16, 0.7]]
       },
       "fill-outline-color": "#026688"
     }
@@ -562,16 +552,14 @@
       "fill-color": "#fffff3",
       "fill-antialias": false,
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[15, 0.3], [16, 0.3], [17, 0.2], [18, 0.2], [19, 0.1]]
+        "stops": [[14, 0.3], [15, 0.3], [16, 0.2], [17, 0.2], [18, 0.1]]
       }
     },
     "style.night": {
       "fill-color": "#fdfdad",
       "fill-antialias": false,
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[14, 0.4], [15, 0.3], [17, 0.2], [18, 0.1], [19, 0.05]]
+        "stops": [[13, 0.4], [14, 0.3], [16, 0.2], [17, 0.1], [18, 0.05]]
       }
     },
     "type": "fill"
@@ -584,16 +572,14 @@
       "fill-color": "#ffd",
       "fill-antialias": false,
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[15, 0.3], [16, 0.3], [17, 0.2], [18, 0.2], [19, 0.1]]
+        "stops": [[14, 0.3], [15, 0.3], [16, 0.2], [17, 0.2], [18, 0.1]]
       }
     },
     "style.night": {
       "fill-color": "#ffe1b7",
       "fill-antialias": false,
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[15, 0.3], [17, 0.2], [18, 0.15], [19, 0.05]]
+        "stops": [[14, 0.3], [16, 0.2], [17, 0.15], [18, 0.05]]
       }
     },
     "type": "fill"
@@ -606,16 +592,14 @@
       "fill-color": "#206",
       "fill-antialias": false,
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[15, 0.08], [16, 0.075], [17, 0.05], [18, 0.05], [19, 0.025]]
+        "stops": [[14, 0.08], [15, 0.075], [16, 0.05], [17, 0.05], [18, 0.025]]
       }
     },
     "style.night": {
       "fill-color": "#206",
       "fill-antialias": false,
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[16, 0.3], [17, 0.2], [18, 0.1], [19, 0.05]]
+        "stops": [[15, 0.3], [16, 0.2], [17, 0.1], [18, 0.05]]
       }
     },
     "type": "fill"
@@ -628,16 +612,14 @@
       "fill-color": "#103",
       "fill-antialias": false,
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[15, 0.08], [16, 0.075], [17, 0.05], [18, 0.05], [19, 0.025]]
+        "stops": [[14, 0.08], [15, 0.075], [16, 0.05], [17, 0.05], [18, 0.025]]
       }
     },
     "style.night": {
       "fill-color": "#103",
       "fill-antialias": false,
       "fill-opacity": {
-        "fn": "stops",
-        "stops": [[16, 0.3], [17, 0.2], [18, 0.1], [19, 0.05]]
+        "stops": [[15, 0.3], [16, 0.2], [17, 0.1], [18, 0.05]]
       }
     },
     "type": "fill"
@@ -653,16 +635,14 @@
       "line-color": "#008",
       "line-width": 0.9,
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[12, 0.05], [13, 0.11]]
+        "stops": [[11, 0.05], [12, 0.11]]
       }
     },
     "style.night": {
       "line-color": "@contour_night",
       "line-width": 0.9,
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[12, 0.1], [13, 0.2]]
+        "stops": [[11, 0.1], [12, 0.2]]
       }
     },
     "type": "line"
@@ -677,16 +657,14 @@
       "line-color": "#008",
       "line-width": 0.5,
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[12, 0.05], [13, 0.11]]
+        "stops": [[11, 0.05], [12, 0.11]]
       }
     },
     "style.night": {
       "line-color": "@contour_night",
       "line-width": 0.5,
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[12, 0.1], [13, 0.4]]
+        "stops": [[11, 0.1], [12, 0.4]]
       }
     },
     "type": "line"
@@ -868,8 +846,7 @@
       "line-dasharray": [6, 6],
       "line-width": "@main_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9, 0], [10, 1]]
+        "stops": [[8, 0], [9, 1]]
       }
     },
     "style.night": {
@@ -877,8 +854,7 @@
       "line-dasharray": [6, 6],
       "line-width": "@main_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9, 0], [10, 1]]
+        "stops": [[8, 0], [9, 1]]
       }
     },
     "type": "line"
@@ -938,16 +914,14 @@
       "line-color": "#e6cec7",
       "line-width": "@main_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     },
     "style.night": {
       "line-color": "#78b0c1",
       "line-width": "@main_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     }
   }, {
@@ -960,8 +934,7 @@
       "line-dasharray": [6, 6],
       "line-width": "@motorway_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9.5, 0], [10, 1]]
+        "stops": [[8.5, 0], [9, 1]]
       }
     },
     "style.night": {
@@ -969,8 +942,7 @@
       "line-dasharray": [6, 6],
       "line-width": "@motorway_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9.5, 0], [10, 1]]
+        "stops": [[8.5, 0], [9, 1]]
       }
     },
     "type": "line"
@@ -981,16 +953,14 @@
       "line-color": "#e6cec7",
       "line-width": "@motorway_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     },
     "style.night": {
       "line-color": "#78b0c1",
       "line-width": "@motorway_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     }
   }, {
@@ -1002,8 +972,7 @@
       "line-color": "#ffd",
       "line-opacity": 0.4,
       "line-width": {
-        "fn": "stops",
-        "stops": [[15, 3], [16, 4]]
+        "stops": [[14, 3], [15, 4]]
       }
     },
     "style.night": {
@@ -1037,8 +1006,7 @@
       "line-dasharray": [10, 4],
       "line-opacity": 0.8,
       "line-width": {
-        "fn": "stops",
-        "stops": [[14, 0.8], [15, 0.9], [16, 1.2]]
+        "stops": [[13, 0.8], [14, 0.9], [15, 1.2]]
       }
     },
     "style.night": {
@@ -1046,8 +1014,7 @@
       "line-dasharray": [10, 4],
       "line-opacity": 0.8,
       "line-width": {
-        "fn": "stops",
-        "stops": [[14, 0.8], [15, 0.9], [16, 1.2]]
+        "stops": [[13, 0.8], [14, 0.9], [15, 1.2]]
       }
     },
     "type": "line"
@@ -1194,16 +1161,14 @@
       "line-color": "@case",
       "line-width": "@main_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9, 0], [10, 1]]
+        "stops": [[8, 0], [9, 1]]
       }
     },
     "style.night": {
       "line-color": "@case_night",
       "line-width": "@main_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9, 0], [10, 1]]
+        "stops": [[8, 0], [9, 1]]
       }
     },
     "type": "line"
@@ -1267,16 +1232,14 @@
       "line-color": "@main",
       "line-width": "@main_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     },
     "style.night": {
       "line-color": "@main_night",
       "line-width": "@main_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     }
   }, {
@@ -1292,16 +1255,14 @@
       "line-color": "@case",
       "line-width": "@motorway_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9.5, 0], [10, 1]]
+        "stops": [[8.5, 0], [9, 1]]
       }
     },
     "style.night": {
       "line-color": "@case_night",
       "line-width": "@motorway_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9.5, 0], [10, 1]]
+        "stops": [[8.5, 0], [9, 1]]
       }
     },
     "type": "line"
@@ -1312,16 +1273,14 @@
       "line-color": "@motorway",
       "line-width": "@motorway_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     },
     "style.night": {
       "line-color": "@motorway_night",
       "line-width": "@motorway_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     }
   }, {
@@ -1376,16 +1335,14 @@
       "line-color": "@case",
       "line-width": "@main_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9, 0], [10, 1]]
+        "stops": [[8, 0], [9, 1]]
       }
     },
     "style.night": {
       "line-color": "@case_night",
       "line-width": "@main_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9, 0], [10, 1]]
+        "stops": [[8, 0], [9, 1]]
       }
     },
     "type": "line"
@@ -1445,16 +1402,14 @@
       "line-color": "@main",
       "line-width": "@main_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     },
     "style.night": {
       "line-color": "@main_night",
       "line-width": "@main_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     }
   }, {
@@ -1466,16 +1421,14 @@
       "line-color": "@case",
       "line-width": "@motorway_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9.5, 0], [10, 1]]
+        "stops": [[8.5, 0], [9, 1]]
       }
     },
     "style.night": {
       "line-color": "@case_night",
       "line-width": "@motorway_casing_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[9.5, 0], [10, 1]]
+        "stops": [[8.5, 0], [9, 1]]
       }
     },
     "type": "line"
@@ -1486,16 +1439,14 @@
       "line-color": "@motorway",
       "line-width": "@motorway_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     },
     "style.night": {
       "line-color": "@motorway_night",
       "line-width": "@motorway_width",
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[6.5, 0], [7, 1]]
+        "stops": [[5.5, 0], [6, 1]]
       }
     }
   }, {
@@ -1552,8 +1503,7 @@
       "line-color": "#88a",
       "line-dasharray": [60, 20],
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[4, 0], [6, 1]]
+        "stops": [[3, 0], [5, 1]]
       },
       "line-width": "@admin_l3_width"
     },
@@ -1561,8 +1511,7 @@
       "line-color": "@admin_night",
       "line-dasharray": [60, 20],
       "line-opacity": {
-        "fn": "stops",
-        "stops": [[4, 0], [6, 1]]
+        "stops": [[3, 0], [5, 1]]
       },
       "line-width": "@admin_l3_width"
     },
@@ -1609,15 +1558,13 @@
     "style": {
       "line-color": "#c0d6d6",
       "line-width": {
-        "fn": "stops",
-        "stops": [[6, 1], [8, 2], [12, 3]]
+        "stops": [[5, 1], [7, 2], [11, 3]]
       }
     },
     "style.night": {
       "line-color": "#0a1347",
       "line-width": {
-        "fn": "stops",
-        "stops": [[6, 1], [8, 2], [12, 3]]
+        "stops": [[5, 1], [7, 2], [11, 3]]
       }
     }
   }, {
@@ -1653,8 +1600,7 @@
       "text-color": "@country_text",
       "text-halo-color": "rgba(255,255,255,0.5)",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[1, 1.17], [12, 2]]
+        "stops": [[0, 1.17], [11, 2]]
       },
       "text-size": "@country_label_size"
     },
@@ -1662,8 +1608,7 @@
       "text-color": "@text_night",
       "text-halo-color": "@text2_stroke_night",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[1, 1.63], [12, 2.8]]
+        "stops": [[0, 1.63], [11, 2.8]]
       },
       "text-size": "@country_label_size"
     },
@@ -1677,23 +1622,21 @@
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 30,
-      "text-max-angle": 0.5,
+      "text-max-angle": 28.65,
       "text-letter-spacing": 0.4,
       "symbol-placement": "line"
     },
     "style": {
       "text-color": "@marine_text",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 20], [4, 25], [5, 30], [22, 30]]
+        "stops": [[2, 20], [3, 25], [4, 30], [21, 30]]
       },
       "text-halo-color": "@water"
     },
     "style.night": {
       "text-color": "@water_dark_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 20], [4, 25], [5, 30], [22, 30]]
+        "stops": [[2, 20], [3, 25], [4, 30], [21, 30]]
       },
       "text-halo-color": "@water_night"
     },
@@ -1707,22 +1650,20 @@
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 24,
-      "text-max-angle": 0.5,
+      "text-max-angle": 28.65,
       "symbol-placement": "line"
     },
     "style": {
       "text-color": "@marine_text",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 13], [4, 14], [5, 20], [6, 24], [22, 24]]
+        "stops": [[2, 13], [3, 14], [4, 20], [5, 24], [21, 24]]
       },
       "text-halo-color": "@water"
     },
     "style.night": {
       "text-color": "@water_dark_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 13], [4, 14], [5, 20], [6, 24], [22, 24]]
+        "stops": [[2, 13], [3, 14], [4, 20], [5, 24], [21, 24]]
       },
       "text-halo-color": "@water_night"
     },
@@ -1736,22 +1677,20 @@
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 18,
-      "text-max-angle": 0.5,
+      "text-max-angle": 28.65,
       "symbol-placement": "line"
     },
     "style": {
       "text-color": "@marine_text",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 12], [4, 13], [5, 15], [6, 18], [22, 18]]
+        "stops": [[2, 12], [3, 13], [4, 15], [5, 18], [21, 18]]
       },
       "text-halo-color": "@water"
     },
     "style.night": {
       "text-color": "@water_dark_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 12], [4, 13], [5, 15], [6, 18], [22, 18]]
+        "stops": [[2, 12], [3, 13], [4, 15], [5, 18], [21, 18]]
       },
       "text-halo-color": "@water_night"
     },
@@ -1765,22 +1704,20 @@
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 16,
-      "text-max-angle": 0.5,
+      "text-max-angle": 28.65,
       "symbol-placement": "line"
     },
     "style": {
       "text-color": "@marine_text",
       "text-size": {
-        "fn": "stops",
-        "stops": [[4, 12], [5, 14], [6, 16], [22, 16]]
+        "stops": [[3, 12], [4, 14], [5, 16], [21, 16]]
       },
       "text-halo-color": "@water"
     },
     "style.night": {
       "text-color": "@water_dark_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[4, 12], [5, 14], [6, 16], [22, 16]]
+        "stops": [[3, 12], [4, 14], [5, 16], [21, 16]]
       },
       "text-halo-color": "@water_night"
     },
@@ -1801,16 +1738,14 @@
     "style": {
       "text-color": "@marine_text",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 20], [4, 25], [5, 30], [22, 30]]
+        "stops": [[2, 20], [3, 25], [4, 30], [21, 30]]
       },
       "text-halo-color": "@water"
     },
     "style.night": {
       "text-color": "@water_dark_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 20], [4, 25], [5, 30], [22, 30]]
+        "stops": [[2, 20], [3, 25], [4, 30], [21, 30]]
       },
       "text-halo-color": "@water_night"
     },
@@ -1831,16 +1766,14 @@
     "style": {
       "text-color": "@marine_text",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 13], [4, 14], [5, 20], [6, 24], [22, 24]]
+        "stops": [[2, 13], [3, 14], [4, 20], [5, 24], [21, 24]]
       },
       "text-halo-color": "@water"
     },
     "style.night": {
       "text-color": "@water_dark_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 13], [4, 14], [5, 20], [6, 24], [22, 24]]
+        "stops": [[2, 13], [3, 14], [4, 20], [5, 24], [21, 24]]
       },
       "text-halo-color": "@water_night"
     },
@@ -1861,16 +1794,14 @@
     "style": {
       "text-color": "@marine_text",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 12], [4, 13], [5, 15], [6, 18], [22, 18]]
+        "stops": [[2, 12], [3, 13], [4, 15], [5, 18], [21, 18]]
       },
       "text-halo-color": "@water"
     },
     "style.night": {
       "text-color": "@water_dark_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3, 12], [4, 13], [5, 15], [6, 18], [22, 18]]
+        "stops": [[2, 12], [3, 13], [4, 15], [5, 18], [21, 18]]
       },
       "text-halo-color": "@water_night"
     },
@@ -1891,16 +1822,14 @@
     "style": {
       "text-color": "@marine_text",
       "text-size": {
-        "fn": "stops",
-        "stops": [[4, 12], [5, 14], [6, 16], [22, 16]]
+        "stops": [[3, 12], [4, 14], [5, 16], [21, 16]]
       },
       "text-halo-color": "@water"
     },
     "style.night": {
       "text-color": "@water_dark_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[4, 12], [5, 14], [6, 16], [22, 16]]
+        "stops": [[3, 12], [4, 14], [5, 16], [21, 16]]
       },
       "text-halo-color": "@water_night"
     },
@@ -1919,25 +1848,21 @@
     "style": {
       "text-color": "#333",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[3.99, 0], [4, 1.17], [9.99, 1.87], [10, 0]]
+        "stops": [[2.99, 0], [3, 1.17], [8.99, 1.87], [9, 0]]
       },
       "text-halo-color": "rgba(244,239,225,0.8)",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3.99, 0], [4, 10], [9.99, 16], [10, 0]]
+        "stops": [[2.99, 0], [3, 10], [8.99, 16], [9, 0]]
       }
     },
     "style.night": {
       "text-color": "#fff",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[3.99, 0], [4, 1.17], [9.99, 1.87], [10, 0]]
+        "stops": [[2.99, 0], [3, 1.17], [8.99, 1.87], [9, 0]]
       },
       "text-halo-color": "@land_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3.99, 0], [4, 10], [9.99, 16], [10, 0]]
+        "stops": [[2.99, 0], [3, 10], [8.99, 16], [9, 0]]
       }
     },
     "type": "symbol"
@@ -1955,25 +1880,21 @@
     "style": {
       "text-color": "#444",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[3.99, 0], [4, 1.17], [7, 1.63], [14.99, 2.33], [15, 0]]
+        "stops": [[2.99, 0], [3, 1.17], [6, 1.63], [13.99, 2.33], [14, 0]]
       },
       "text-halo-color": "@text_stroke",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3.99, 0], [4, 10], [7, 14], [14.99, 20], [15, 0]]
+        "stops": [[2.99, 0], [3, 10], [6, 14], [13.99, 20], [14, 0]]
       }
     },
     "style.night": {
       "text-color": "#fff",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[3.99, 0], [4, 1.17], [7, 1.63], [14.99, 2.33], [15, 0]]
+        "stops": [[2.99, 0], [3, 1.17], [6, 1.63], [13.99, 2.33], [14, 0]]
       },
       "text-halo-color": "@text2_stroke_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[3.99, 0], [4, 10], [7, 14], [14.99, 20], [15, 0]]
+        "stops": [[2.99, 0], [3, 10], [6, 14], [13.99, 20], [14, 0]]
       }
     },
     "type": "symbol"
@@ -1991,25 +1912,21 @@
     "style": {
       "text-color": "#716656",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[9, 1.5], [12, 1.95], [14, 2.55], [16, 3.3]]
+        "stops": [[8, 1.5], [11, 1.95], [13, 2.55], [15, 3.3]]
       },
       "text-halo-color": "@text_stroke",
       "text-size": {
-        "fn": "stops",
-        "stops": [[9, 10], [12, 13], [14, 17], [16, 22]]
+        "stops": [[8, 10], [11, 13], [13, 17], [15, 22]]
       }
     },
     "style.night": {
       "text-color": "@text_night",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[9, 1.5], [12, 1.95], [14, 2.55], [16, 3.3]]
+        "stops": [[8, 1.5], [11, 1.95], [13, 2.55], [15, 3.3]]
       },
       "text-halo-color": "@text2_stroke_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[9, 10], [12, 13], [14, 17], [16, 22]]
+        "stops": [[8, 10], [11, 13], [13, 17], [15, 22]]
       }
     },
     "type": "symbol"
@@ -2027,25 +1944,21 @@
     "style": {
       "text-color": "#635644",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[9, 1.2], [12, 1.5], [14, 2.1], [16, 2.4], [17, 3]]
+        "stops": [[8, 1.2], [11, 1.5], [13, 2.1], [15, 2.4], [16, 3]]
       },
       "text-halo-color": "@text_stroke",
       "text-size": {
-        "fn": "stops",
-        "stops": [[9, 8], [12, 10], [14, 14], [16, 16], [17, 20]]
+        "stops": [[8, 8], [11, 10], [13, 14], [15, 16], [16, 20]]
       }
     },
     "style.night": {
       "text-color": "@text_night",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[9, 1.2], [12, 1.5], [14, 2.1], [16, 2.4], [17, 3]]
+        "stops": [[8, 1.2], [11, 1.5], [13, 2.1], [15, 2.4], [16, 3]]
       },
       "text-halo-color": "@text2_stroke_night",
       "text-size": {
-        "fn": "stops",
-        "stops": [[9, 8], [12, 10], [14, 14], [16, 16], [17, 20]]
+        "stops": [[8, 8], [11, 10], [13, 14], [15, 16], [16, 20]]
       }
     },
     "type": "symbol"
@@ -2064,20 +1977,17 @@
       "text-color": "#7d6c55",
       "text-halo-color": "@text_stroke",
       "text-size": {
-        "fn": "stops",
-        "stops": [[13, 11], [14, 12], [16, 14], [18, 18]]
+        "stops": [[12, 11], [13, 12], [15, 14], [17, 18]]
       }
     },
     "style.night": {
       "text-color": "@text_night",
       "text-halo-color": "@text2_stroke_night",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[13, 1.65], [14, 1.8], [16, 2.1], [18, 2.7]]
+        "stops": [[12, 1.65], [13, 1.8], [15, 2.1], [17, 2.7]]
       },
       "text-size": {
-        "fn": "stops",
-        "stops": [[13, 11], [14, 12], [16, 14], [18, 18]]
+        "stops": [[12, 11], [13, 12], [15, 14], [17, 18]]
       }
     },
     "type": "symbol"
@@ -2091,15 +2001,14 @@
       "text-padding": 2,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 18,
-      "text-max-angle": 0.5,
+      "text-max-angle": 28.65,
       "symbol-placement": "line"
     },
     "style": {
       "text-color": "#585042",
       "text-halo-color": "@land",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[13, 0.55], [14, 0.6], [15, 0.65], [16, 0.7], [17, 0.8], [18, 0.9]]
+        "stops": [[12, 0.55], [13, 0.6], [14, 0.65], [15, 0.7], [16, 0.8], [17, 0.9]]
       },
       "text-size": "@road_label_1_size"
     },
@@ -2107,8 +2016,7 @@
       "text-color": "@text_night",
       "text-halo-color": "@text2_stroke_night",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[13, 0.92], [14, 1], [15, 1.08], [16, 1.17], [17, 1.33], [18, 1.5]]
+        "stops": [[12, 0.92], [13, 1], [14, 1.08], [15, 1.17], [16, 1.33], [17, 1.5]]
       },
       "text-size": "@road_label_1_size"
     },
@@ -2123,15 +2031,14 @@
       "text-padding": 2,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 16,
-      "text-max-angle": 0.5,
+      "text-max-angle": 28.65,
       "symbol-placement": "line"
     },
     "style": {
       "text-color": "#585042",
       "text-halo-color": "@land",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[13, 0.55], [14, 0.6], [16, 0.7], [18, 0.8]]
+        "stops": [[12, 0.55], [13, 0.6], [15, 0.7], [17, 0.8]]
       },
       "text-size": "@road_label_2_size"
     },
@@ -2139,8 +2046,7 @@
       "text-color": "@text_night",
       "text-halo-color": "@text2_stroke_night",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[13, 0.92], [14, 1], [16, 1.17], [18, 1.33]]
+        "stops": [[12, 0.92], [13, 1], [15, 1.17], [17, 1.33]]
       },
       "text-size": "@road_label_2_size"
     },
@@ -2155,15 +2061,14 @@
       "text-padding": 2,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 14,
-      "text-max-angle": 0.5,
+      "text-max-angle": 28.65,
       "symbol-placement": "line"
     },
     "style": {
       "text-color": "#585042",
       "text-halo-color": "@land",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[15, 0.5], [16, 0.6], [18, 0.7]]
+        "stops": [[14, 0.5], [15, 0.6], [17, 0.7]]
       },
       "text-size": "@road_label_3_size"
     },
@@ -2171,8 +2076,7 @@
       "text-color": "@text_night",
       "text-halo-color": "@text2_stroke_night",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[15, 0.83], [16, 1], [18, 1.17]]
+        "stops": [[14, 0.83], [15, 1], [17, 1.17]]
       },
       "text-size": "@road_label_3_size"
     },
@@ -2186,7 +2090,7 @@
       "text-field": "{ele} m",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 10,
-      "text-max-angle": 0.5,
+      "text-max-angle": 28.65,
       "symbol-placement": "line"
     },
     "style": {
@@ -2231,7 +2135,7 @@
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 12,
-      "text-max-angle": 0.5,
+      "text-max-angle": 28.65,
       "symbol-placement": "line"
     },
     "style": {
@@ -2264,8 +2168,7 @@
       "text-size": "@poi_label_1-2_size",
       "text-halo-color": "@land",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[15, 1.5], [16, 1.65], [17, 1.8]]
+        "stops": [[14, 1.5], [15, 1.65], [16, 1.8]]
       }
     },
     "style.night": {
@@ -2273,8 +2176,7 @@
       "text-size": "@poi_label_1-2_size",
       "text-halo-color": "@text2_stroke_night",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[15, 1.5], [16, 1.65], [17, 1.8]]
+        "stops": [[14, 1.5], [15, 1.65], [16, 1.8]]
       }
     },
     "type": "symbol"
@@ -2295,19 +2197,16 @@
     },
     "style": {
       "icon-opacity": {
-        "fn": "stops",
-        "stops": [[16.5, 0], [16.75, 1]]
+        "stops": [[15.5, 0], [15.75, 1]]
       },
       "text-color": "#444",
       "text-size": "@poi_label_3_size",
       "text-halo-color": "@land",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[16, 1.5], [17, 1.65]]
+        "stops": [[15, 1.5], [16, 1.65]]
       },
       "text-opacity": {
-        "fn": "stops",
-        "stops": [[16.5, 0], [16.75, 1]]
+        "stops": [[15.5, 0], [15.75, 1]]
       }
     },
     "style.night": {
@@ -2315,12 +2214,10 @@
       "text-size": "@poi_label_3_size",
       "text-halo-color": "@text2_stroke_night",
       "text-halo-width": {
-        "fn": "stops",
-        "stops": [[16, 1.5], [17, 1.65]]
+        "stops": [[15, 1.5], [16, 1.65]]
       },
       "text-opacity": {
-        "fn": "stops",
-        "stops": [[16.5, 0], [16.75, 1]]
+        "stops": [[15.5, 0], [15.75, 1]]
       }
     },
     "type": "symbol"
@@ -2341,14 +2238,12 @@
     },
     "style": {
       "icon-opacity": {
-        "fn": "stops",
-        "stops": [[18.5, 0], [18.75, 1]]
+        "stops": [[17.5, 0], [17.75, 1]]
       },
       "text-color": "#444",
       "text-size": 10,
       "text-opacity": {
-        "fn": "stops",
-        "stops": [[18.5, 0], [18.75, 1]]
+        "stops": [[17.5, 0], [17.75, 1]]
       },
       "text-halo-color": "@land",
       "text-halo-width": 1.5
@@ -2357,8 +2252,7 @@
       "text-color": "#fff",
       "text-size": 10,
       "text-opacity": {
-        "fn": "stops",
-        "stops": [[18.5, 0], [18.75, 1]]
+        "stops": [[17.5, 0], [17.75, 1]]
       },
       "text-halo-color": "@text2_stroke_night",
       "text-halo-width": 1.5
