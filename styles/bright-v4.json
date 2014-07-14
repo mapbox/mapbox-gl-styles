@@ -31,8 +31,7 @@
   "sources": {
     "mapbox": {
       "type": "vector",
-      "url": "mapbox://mapbox.mapbox-streets-v6-dev",
-      "tileSize": 512
+      "url": "mapbox://mapbox.mapbox-streets-v6-dev"
     }
   },
   "layers": [{
