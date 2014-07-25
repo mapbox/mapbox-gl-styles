@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "mapbox-gl-style-lint": "https://github.com/mapbox/mapbox-gl-style-lint/tarball/master",
-    "mapbox-gl-style-spec": "https://github.com/mapbox/mapbox-gl-style-spec/tarball/dev-pages"
+    "mapbox-gl-style-spec": "https://github.com/mapbox/mapbox-gl-style-spec/tarball/mb-pages"
   },
   "license": "ISC"
 }
