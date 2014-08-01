@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Testing Bright</title>
+		<meta charset='utf-8'>
+		<style>
+		body {margin:0;padding:0;}
+		#map {width: 100%; height: 100%;top:0; left:0;overflow:hidden;-webkit-user-select: none;}
+		#map canvas {z-index:0;}
+		</style>
+	</head>
+	<body>
+		<div id='map'></div>
+		<script src='https://mapbox.s3.amazonaws.com/mapbox-gl-js/dev-pages/mapbox-gl-dev.js'></script>
+		<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiNmJYeV92dyJ9.vfhXLy3DvaA9TK6nctd6Qw';
+		mapboxgl.util.getJSON('styles/bright-v4.json', function(err, style) {
+		    if (err) throw err;
+		    window.map =  new mapboxgl.Map({
+		        container: 'map',
+		        style: style,
+		        zoom: 0,
+        		center: [0, 0],
+        		rotation: 0,
+		        maxZoom: 20,
+		        hash: true
+		    });
+		});
+		</script>
+	</body>
+</html>
