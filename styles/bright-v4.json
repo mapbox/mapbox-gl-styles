@@ -42,15 +42,15 @@
 
     "@point_translate": [0, -30],
     "@building_opacity": {"base": 1, "stops": [[15, 0], [16, 1]]},
-    "@main_width": {"stops": [[7, 0.5], [9, 1], [12, 1.5], [13, 2.5], [14, 3.5], [15, 6]]},
-    "@main_casing_width": {"stops": [[5, 0.2], [6, 0.4], [7, 1.5], [9, 2.4], [13, 2.5], [13, 4], [14, 5], [15, 8]]},
+    "@main_width": {"base": 1.5, "stops": [[6.5, 0], [7, 0.5], [20, 14]]},
+    "@main_casing_width": {"base": 1.5, "stops": [[5, 0.2], [6, 0.4], [7, 1.5], [20, 18]]},
     "@street_width": {"stops": [[13.5, 0], [14, 2.5], [15, 4]]},
     "@street_casing_width": {"stops": [[13, 0.4], [14, 4], [15, 6.5], [21, 6.5]]},
     "@street_casing_opacity": {"stops": [[12, 0], [12.5, 1]]},
-    "@motorway_width": {"stops": [[6, 0], [7, 1], [21, 1]]},
-    "@motorway_casing_width": {"stops": [[5, 0.4], [6, 0.6], [7, 1.5], [9, 3], [12, 3.5], [13, 5], [14, 7], [15, 9]]},
-    "@motorway_link_width": {"stops": [[12, 1.5], [13, 1.5], [14, 3], [15, 4.5]]},
-    "@motorway_link_casing_width": {"stops": [[12, 1], [13, 3], [14, 5], [15, 6.5]]},
+    "@motorway_width": {"base": 1.5, "stops": [[6.5, 0], [7, 0.5], [20, 18]]},
+    "@motorway_casing_width": {"base": 1.5, "stops": [[5, 0.4], [6, 0.6], [7, 1.5], [20, 22]]},
+    "@motorway_link_width": {"base": 1.5, "stops": [[12.5, 0], [13, 1.5], [20, 8]]},
+    "@motorway_link_casing_width": {"base": 1.5, "stops": [[12, 1], [13, 3], [20, 11]]},
     "@service_casing_width": {"stops": [[14, 0.2], [15, 4], [21, 4]]},
     "@path_width": {"stops": [[14, 1], [15, 1.2], [16, 1.5]]},
     "@rail_width": {"stops": [[14, 0.4], [15, 0.75]]}
@@ -389,9 +389,25 @@
       "line-width": "@main_width"
     }
   }, {
+    "id": "road_motorway_casing",
+    "source": "mapbox",
+    "source-layer": "road",
+    "min-zoom": 5,
+    "filter": { "class": "motorway" },
+    "render": {
+      "line-cap": "round",
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@motorway_casing",
+      "line-width": "@motorway_casing_width"
+    },
+    "type": "line"    
+  }, {
     "id": "road_motorway_link_casing",
     "source": "mapbox",
     "source-layer": "road",
+    "min-zoom": 12,
     "filter": { "class": "motorway_link" },
     "render": {
       "line-cap": "round",
@@ -474,27 +490,13 @@
       "line-width": "@main_width"
     }
   }, {
-    "id": "road_motorway_casing",
-    "source": "mapbox",
-    "source-layer": "road",
-    "filter": { "class": "motorway" },
-    "render": {
-      "line-cap": "round",
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@motorway_casing",
-      "line-width": "@motorway_casing_width"
-    },
-    "type": "line"
-  }, {
     "id": "road_motorway",
     "ref": "road_motorway_casing",
     "style": {
       "line-color": "@motorway",
-      "line-width": "@motorway_casing_width",
-      "line-opacity": "@motorway_width"
-    }
+      "line-width": "@motorway_width"
+    },
+    "type": "line"
   }, {
     "id": "bridge_service_casing",
     "source": "mapbox",
