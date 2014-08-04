@@ -172,7 +172,9 @@
     "type": "fill"
   }, {
     "id": "water_offset",
-    "ref": "water",
+    "source": "mapbox",
+    "source-layer": "water",
+    "type": "fill",
     "style": {
       "fill-color": "white",
       "fill-opacity": 0.4,
@@ -189,6 +191,10 @@
     "id": "aeroway_fill",
     "source": "mapbox",
     "source-layer": "aeroway",
+    "min-zoom": 11,
+    "filter": {
+      "$type": "Polygon"
+    },
     "style": {
       "fill-color": "@aeroway",
       "fill-opacity": 0.7
@@ -198,20 +204,32 @@
     "id": "aeroway_runway",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "filter": { "type": "runway" },
+    "min-zoom": 11,
+    "filter": { 
+      "$type": "LineString",
+      "type": "runway" },
     "style": {
       "line-color": "@aeroway",
-      "line-width": 5
+      "line-width": {
+        "base": 1.2,
+        "stops": [[11, 3], [20, 16]]
+      }
     },
     "type": "line"
   }, {
     "id": "aeroway_taxiway",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "filter": { "type": "taxiway" },
+    "min-zoom": 11,
+    "filter": { 
+      "$type": "LineString",
+      "type": "taxiway" },
     "style": {
       "line-color": "@aeroway",
-      "line-width": 1.5
+      "line-width": {
+        "base": 1.2,
+        "stops": [[11, 0.5], [20, 6]]
+      }
     },
     "type": "line"
   }, {
