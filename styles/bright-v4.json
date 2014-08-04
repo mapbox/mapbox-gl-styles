@@ -14,8 +14,10 @@
     "@building": "#f2eae2",
     "@building_shadow": "#dfdbd7",
     "@building_color_transition": {
-      "stops": [[15, "#f2eae2"], [16, "#dfdbd7"]]
+      "base": 1,
+      "stops": [[15.5, "#f2eae2"], [16, "#dfdbd7"]]
     },
+    "@building_opacity": {"base": 1, "stops": [[15, 0], [16, 1]]},
     "@aeroway": "#f0ede9",
     "@motorway": "#fc8",
     "@motorway_casing": "#e9ac77",
@@ -41,9 +43,8 @@
     "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
 
     "@point_translate": [0, -30],
-    "@building_opacity": {"base": 1, "stops": [[15, 0], [16, 1]]},
     "@main_width": {"base": 1.5, "stops": [[6.5, 0], [7, 0.5], [20, 14]]},
-    "@main_casing_width": {"base": 1.5, "stops": [[5, 0.2], [6, 0.4], [7, 1.5], [20, 18]]},
+    "@main_casing_width": {"base": 1.5, "stops": [[5, 0.1], [6, 0.2], [7, 1.5], [20, 18]]},
     "@street_width": {"stops": [[13.5, 0], [14, 2.5], [15, 4]]},
     "@street_casing_width": {"stops": [[13, 0.4], [14, 4], [15, 6.5], [21, 6.5]]},
     "@street_casing_opacity": {"stops": [[12, 0], [12.5, 1]]},
@@ -249,7 +250,13 @@
     "style": {
       "fill-color": "@building",
       "fill-opacity": "@building_opacity",
-      "fill-translate": [-2, -2],
+      "fill-translate": [{
+        "base": 1,
+        "stops": [[15, 0], [16, -2] ]
+      }, {
+        "base": 1,
+        "stops": [[15, 0], [16, -2] ]
+      }],
       "fill-outline-color": "@building_shadow"
     }
   }, {
