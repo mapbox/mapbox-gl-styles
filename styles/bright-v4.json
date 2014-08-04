@@ -13,6 +13,9 @@
     "@wood": "#6a4",
     "@building": "#f2eae2",
     "@building_shadow": "#dfdbd7",
+    "@building_color_transition": {
+      "stops": [[15, "#f2eae2"], [16, "#dfdbd7"]]
+    },
     "@aeroway": "#f0ede9",
     "@motorway": "#fc8",
     "@motorway_casing": "#e9ac77",
@@ -38,7 +41,7 @@
     "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
 
     "@point_translate": [0, -30],
-    "@building_opacity": {"stops": [[15, 0], [16, 1]]},
+    "@building_opacity": {"base": 1, "stops": [[15, 0], [16, 1]]},
     "@main_width": {"stops": [[7, 0.5], [9, 1], [12, 1.5], [13, 2.5], [14, 3.5], [15, 6]]},
     "@main_casing_width": {"stops": [[5, 0.2], [6, 0.4], [7, 1.5], [9, 2.4], [13, 2.5], [13, 4], [14, 5], [15, 8]]},
     "@street_width": {"stops": [[13.5, 0], [14, 2.5], [15, 4]]},
@@ -233,27 +236,20 @@
     },
     "type": "line"
   }, {
-    "id": "building_shadow",
+    "id": "building",
     "source": "mapbox",
     "source-layer": "building",
     "style": {
-      "fill-color": "@building_shadow",
-      "fill-translate": [2, 2],
-      "fill-opacity": "@building_opacity"
+      "fill-color": "@building_color_transition"
     },
     "type": "fill"
   }, {
-    "id": "building",
-    "ref": "building_shadow",
-    "style": {
-      "fill-color": "@building"
-    }
-  }, {
-    "id": "building_wall",
-    "ref": "building_shadow",
+    "id": "building_top",
+    "ref": "building",
     "style": {
       "fill-color": "@building",
       "fill-opacity": "@building_opacity",
+      "fill-translate": [-2, -2],
       "fill-outline-color": "@building_shadow"
     }
   }, {
