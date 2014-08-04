@@ -67,7 +67,15 @@
         }],
     "@rail_width": {"base": 1.4, "stops": [[14, 0.4], [15, 0.75], [20, 2]]},
     "@rail_hatch_width": {"base": 1.4, "stops": [[14.5, 0], [15, 3], [20, 8]]},
-    "@rail_hatch_line_dasharray": [2, 30]
+    "@rail_hatch_line_dasharray": [2, 30],
+    "@admin_level_3_width": {
+          "base": 1,
+          "stops": [[4, 0.4], [5, 1], [12, 3]]
+        },
+    "@admin_level_2_width": {
+          "base": 1,
+          "stops": [[4, 1.4], [5, 2], [12, 8]]
+        }    
   },
   "sources": {
     "mapbox": {
@@ -700,9 +708,7 @@
       "style": {
         "line-color": "@admin",
         "line-dasharray": [10, 3],
-        "line-width": {
-          "stops": [[5, 0.4], [6, 1], [8, 1.5], [12, 2]]
-        }
+        "line-width": "@admin_level_3_width"
       },
       "type": "line"
     }, {
@@ -711,6 +717,7 @@
       "source-layer": "admin",
       "filter": {
         "admin_level": 2,
+        "disputed": 0,
         "maritime": 0
       },
       "render": {
@@ -718,9 +725,7 @@
       },
       "style": {
         "line-color": "@admin",
-        "line-width": {
-          "stops": [[5, 1.4], [6, 2], [8, 4]]
-        }
+        "line-width": "@admin_level_2_width"
       },
       "type": "line"
     }, {
@@ -738,9 +743,7 @@
       "style": {
         "line-color": "@admin",
         "line-dasharray": [4, 4],
-        "line-width": {
-          "stops": [[5, 1.4], [6, 2], [8, 4]]
-        }
+        "line-width": "@admin_level_2_width"
       },
       "type": "line"
     }, {
@@ -757,9 +760,7 @@
       "style": {
         "line-color": "@water",
         "line-dasharray": [10, 3],
-        "line-width": {
-          "stops": [[5, 0.4], [6, 1], [8, 1.5], [12, 2]]
-        }
+        "line-width": "@admin_level_3_width"
       },
       "type": "line"
     }, {
@@ -775,9 +776,7 @@
       },
       "style": {
         "line-color": "@water",
-        "line-width": {
-          "stops": [[5, 1.4], [6, 2], [8, 4]]
-        }
+        "line-width": "@admin_level_2_width"
       },
       "type": "line"
     }]
