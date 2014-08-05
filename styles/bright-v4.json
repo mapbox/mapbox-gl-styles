@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "sprite": "/sprites/bright",
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
   "glyphs": "https://mapbox.s3.amazonaws.com/gl-glyphs-256/{fontstack}/{range}.pbf",
   "constants": {
     "@name": "{name_en}",
