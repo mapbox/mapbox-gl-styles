@@ -3,8 +3,13 @@
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
   "glyphs": "https://mapbox.s3.amazonaws.com/gl-glyphs-256/{fontstack}/{range}.pbf",
   "constants": {
+    "@name": "{name_en}",
+    "@sans": "Open Sans Regular, Arial Unicode MS Regular",
+    "@sans_it": "Open Sans Italic, Arial Unicode MS Regular",
+    "@sans_md": "Open Sans Semibold, Arial Unicode MS Bold",
+    "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
     "@land": "#f8f4f0",
-    "@water": "#a0c8f0",
+    "@water": "#bfd9ef",
     "@admin": "#446",
     "@park": "#d8e8c8",
     "@cemetary": "#e0e4dd",
@@ -13,6 +18,11 @@
     "@wood": "#6a4",
     "@building": "#f2eae2",
     "@building_shadow": "#dfdbd7",
+    "@building_color_transition": {
+      "base": 1,
+      "stops": [[15.5, "#f2eae2"], [16, "#dfdbd7"]]
+    },
+    "@building_opacity": {"base": 1, "stops": [[15, 0], [16, 1]]},
     "@aeroway": "#f0ede9",
     "@motorway": "#fc8",
     "@motorway_casing": "#e9ac77",
@@ -29,28 +39,42 @@
     "@marine_text": "#74aee9",
     "@marine_text_halo": "rgba(255,255,255,0.7)",
     "@poi_text": "#666",
-    "@poi_text_halo": "rgba(255,255,255,0.5)",
+    "@poi_text_halo": "#ffffff",
     "@maki": "#666",
-
-    "@sans": "Open Sans Regular, Arial Unicode MS Regular",
-    "@sans_it": "Open Sans Italic, Arial Unicode MS Regular",
-    "@sans_md": "Open Sans Semibold, Arial Unicode MS Bold",
-    "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
-
     "@point_translate": [0, -30],
-    "@building_opacity": {"stops": [[15, 0], [16, 1]]},
-    "@main_width": {"stops": [[7, 0.5], [9, 1], [12, 1.5], [13, 2.5], [14, 3.5], [15, 6]]},
-    "@main_casing_width": {"stops": [[5, 0.2], [6, 0.4], [7, 1.5], [9, 2.4], [13, 2.5], [13, 4], [14, 5], [15, 8]]},
-    "@street_width": {"stops": [[13.5, 0], [14, 2.5], [15, 4]]},
-    "@street_casing_width": {"stops": [[13, 0.4], [14, 4], [15, 6.5], [21, 6.5]]},
-    "@street_casing_opacity": {"stops": [[12, 0], [12.5, 1]]},
-    "@motorway_width": {"stops": [[6, 0], [7, 1], [21, 1]]},
-    "@motorway_casing_width": {"stops": [[5, 0.4], [6, 0.6], [7, 1.5], [9, 3], [12, 3.5], [13, 5], [14, 7], [15, 9]]},
-    "@motorway_link_width": {"stops": [[12, 1.5], [13, 1.5], [14, 3], [15, 4.5]]},
-    "@motorway_link_casing_width": {"stops": [[12, 1], [13, 3], [14, 5], [15, 6.5]]},
-    "@service_casing_width": {"stops": [[14, 0.2], [15, 4], [21, 4]]},
-    "@path_width": {"stops": [[14, 1], [15, 1.2], [16, 1.5]]},
-    "@rail_width": {"stops": [[14, 0.4], [15, 0.75]]}
+    "@tunnel_line_dasharray": [{
+      "base": 1.5, "stops": [[12, 6], [20, 9]]
+      }, {
+      "base": 1.5, "stops": [[12, 2], [20, 3]]  
+        }],
+    "@motorway_width": {"base": 1.2, "stops": [[6.5, 0], [7, 0.5], [20, 18]]},
+    "@motorway_casing_width": {"base": 1.2, "stops": [[5, 0.4], [6, 0.6], [7, 1.5], [20, 22]]},
+    "@motorway_link_width": {"base": 1.2, "stops": [[12.5, 0], [13, 1.5], [20, 10]]},
+    "@motorway_link_casing_width": {"base": 1.2, "stops": [[12, 1], [13, 3], [20, 13]]},
+    "@main_width": {"base": 1.2, "stops": [[6.5, 0], [7, 0.5], [20, 14]]},
+    "@main_casing_width": {"base": 1.2, "stops": [[5, 0.1], [6, 0.2], [7, 1.5], [20, 18]]},
+    "@street_width": {"base": 1.2, "stops": [[13.5, 0], [14, 2.5], [20, 11.5]]},
+    "@street_casing_width": {"base": 1.2, "stops": [[12, 0.5], [13, 1], [14, 4], [20, 15]]},
+    "@street_casing_opacity": {"stops": [[12, 0], [12.5, 1]]},    
+    "@service_casing_width": {"base": 1.2, "stops": [[15, 1], [16, 4], [20, 11]]},
+    "@service_width": {"base": 1.2, "stops": [[15.5, 0], [16, 2], [20, 7.5]]},
+    "@path_width": {"base": 1.2, "stops": [[15, 1.2], [20, 4]]},
+    "@path_line_dasharray": [{
+      "base": 1.2, "stops": [[15, 2], [20, 4]]
+      },{
+      "base": 1.2, "stops": [[15, 1], [20, 2]]  
+        }],
+    "@rail_width": {"base": 1.4, "stops": [[14, 0.4], [15, 0.75], [20, 2]]},
+    "@rail_hatch_width": {"base": 1.4, "stops": [[14.5, 0], [15, 3], [20, 8]]},
+    "@rail_hatch_line_dasharray": [2, 30],
+    "@admin_level_3_width": {
+          "base": 1,
+          "stops": [[4, 0.4], [5, 1], [12, 3]]
+        },
+    "@admin_level_2_width": {
+          "base": 1,
+          "stops": [[4, 1.4], [5, 2], [12, 8]]
+        }    
   },
   "sources": {
     "mapbox": {
@@ -64,53 +88,6 @@
       "background-color": "@land"
     },
     "type": "background"
-  }, {
-    "id": "waterway",
-    "source": "mapbox",
-    "source-layer": "waterway",
-    "filter": {
-      "type": {
-        "!=": ["river", "stream", "canal"]
-      }
-    },
-    "render": {
-      "line-cap": "round"
-    },
-    "style": {
-      "line-color": "@water",
-      "line-width": 0.5
-    },
-    "type": "line"
-  }, {
-    "id": "waterway_river",
-    "source": "mapbox",
-    "source-layer": "waterway",
-    "filter": { "type": "river" },
-    "render": {
-      "line-cap": "round"
-    },
-    "style": {
-      "line-color": "@water",
-      "line-width": {
-        "stops": [[11, 0.5], [12, 1], [14, 2], [16, 3]]
-      }
-    },
-    "type": "line"
-  }, {
-    "id": "waterway_stream_canal",
-    "source": "mapbox",
-    "source-layer": "waterway",
-    "filter": { "type": ["stream", "canal"] },
-    "render": {
-      "line-cap": "round"
-    },
-    "style": {
-      "line-color": "@water",
-      "line-width": {
-        "stops": [[13, 0.5], [14, 1], [16, 2], [18, 3]]
-      }
-    },
-    "type": "line"
   }, {
     "id": "landuse_park",
     "source": "mapbox",
@@ -158,6 +135,58 @@
     },
     "type": "fill"
   }, {
+    "id": "waterway",
+    "source": "mapbox",
+    "source-layer": "waterway",
+    "filter": {
+      "class": {
+        "!=": ["river", "stream", "canal"]
+      }
+    },
+    "render": {
+      "line-cap": "round"
+    },
+    "style": {
+      "line-color": "@water",
+      "line-width": {
+        "base": 1.3,
+        "stops": [[13, 0.5], [20, 2]]
+      }
+    },
+    "type": "line"
+  }, {
+    "id": "waterway_river",
+    "source": "mapbox",
+    "source-layer": "waterway",
+    "filter": { "class": "river" },
+    "render": {
+      "line-cap": "round"
+    },
+    "style": {
+      "line-color": "@water",
+      "line-width": {
+        "base": 1.2,
+        "stops": [[11, 0.5], [20, 6]]
+      }
+    },
+    "type": "line"
+  }, {
+    "id": "waterway_stream_canal",
+    "source": "mapbox",
+    "source-layer": "waterway",
+    "filter": { "class": ["stream", "canal"] },
+    "render": {
+      "line-cap": "round"
+    },
+    "style": {
+      "line-color": "@water",
+      "line-width": {
+        "base": 1.3,
+        "stops": [[13, 0.5], [20, 6]]
+      }
+    },
+    "type": "line"  
+  }, {
     "id": "water",
     "source": "mapbox",
     "source-layer": "water",
@@ -166,24 +195,21 @@
     },
     "type": "fill"
   }, {
-    "id": "water_offset",
-    "ref": "water",
-    "style": {
-      "fill-color": "white",
-      "fill-opacity": 0.4,
-      "fill-translate": [0, 2.5]
-    }
-  }, {
     "id": "water_pattern",
     "ref": "water",
     "style": {
       "fill-image": "wave",
+      "fill-opacity": 0.75,
       "fill-translate": [0, 2.5]
     }
   }, {
     "id": "aeroway_fill",
     "source": "mapbox",
     "source-layer": "aeroway",
+    "min-zoom": 11,
+    "filter": {
+      "$type": "Polygon"
+    },
     "style": {
       "fill-color": "@aeroway",
       "fill-opacity": 0.7
@@ -193,44 +219,55 @@
     "id": "aeroway_runway",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "filter": { "type": "runway" },
+    "min-zoom": 11,
+    "filter": { 
+      "$type": "LineString",
+      "type": "runway" },
     "style": {
       "line-color": "@aeroway",
-      "line-width": 5
+      "line-width": {
+        "base": 1.2,
+        "stops": [[11, 3], [20, 16]]
+      }
     },
     "type": "line"
   }, {
     "id": "aeroway_taxiway",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "filter": { "type": "taxiway" },
+    "min-zoom": 11,
+    "filter": { 
+      "$type": "LineString",
+      "type": "taxiway" },
     "style": {
       "line-color": "@aeroway",
-      "line-width": 1.5
+      "line-width": {
+        "base": 1.2,
+        "stops": [[11, 0.5], [20, 6]]
+      }
     },
     "type": "line"
   }, {
-    "id": "building_shadow",
+    "id": "building",
     "source": "mapbox",
     "source-layer": "building",
     "style": {
-      "fill-color": "@building_shadow",
-      "fill-translate": [2, 2],
-      "fill-opacity": "@building_opacity"
+      "fill-color": "@building_color_transition"
     },
     "type": "fill"
   }, {
-    "id": "building",
-    "ref": "building_shadow",
-    "style": {
-      "fill-color": "@building"
-    }
-  }, {
-    "id": "building_wall",
-    "ref": "building_shadow",
+    "id": "building_top",
+    "ref": "building",
     "style": {
       "fill-color": "@building",
       "fill-opacity": "@building_opacity",
+      "fill-translate": [{
+        "base": 1,
+        "stops": [[15, 0], [16, -2] ]
+      }, {
+        "base": 1,
+        "stops": [[15, 0], [16, -2] ]
+      }],
       "fill-outline-color": "@building_shadow"
     }
   }, {
@@ -244,9 +281,55 @@
     },
     "style": {
       "line-color": "@motorway_casing",
+      "line-dasharray": "@tunnel_line_dasharray",
       "line-width": "@motorway_link_casing_width"
     },
-    "type": "line"
+    "type": "line"  
+  }, {
+    "id": "tunnel_service_casing",
+    "source": "mapbox",
+    "source-layer": "tunnel",
+    "filter": { "class": "service" },
+    "render": {
+      "line-cap": "round",
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@street_casing",
+      "line-dasharray": "@tunnel_line_dasharray",
+      "line-width": "@service_casing_width"
+    },
+    "type": "line"  
+   }, {
+    "id": "tunnel_street_casing",
+    "source": "mapbox",
+    "source-layer": "tunnel",
+    "filter": { "class": ["street", "street_limited"] },
+    "render": {
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@street_casing",
+      "line-dasharray": [7, 2],
+      "line-width": "@street_casing_width",
+      "line-opacity": "@street_casing_opacity"
+    },
+    "type": "line"   
+  }, {
+    "id": "tunnel_main_casing",
+    "source": "mapbox",
+    "source-layer": "tunnel",
+    "filter": { "class": "main" },
+    "render": {
+      "line-cap": "round",
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@motorway_casing",
+      "line-dasharray": "@tunnel_line_dasharray",
+      "line-width": "@main_casing_width"
+    },
+    "type": "line"                
   }, {
     "id": "tunnel_motorway_casing",
     "source": "mapbox",
@@ -258,33 +341,56 @@
     },
     "style": {
       "line-color": "@motorway_casing",
-      "line-dasharray": [7, 2],
+      "line-dasharray": "@tunnel_line_dasharray",
       "line-width": "@motorway_casing_width"
     },
     "type": "line"
+  }, {
+    "id": "tunnel_path",
+    "source": "mapbox",
+    "source-layer": "tunnel",
+    "filter": { "class": "path" },
+    "type": "line",
+    "style": {
+      "line-color": "@path",
+      "line-dasharray": "@path_line_dasharray",
+      "line-width": "@path_width"
+    }  
   }, {
     "id": "tunnel_motorway_link",
     "ref": "tunnel_motorway_link_casing",
     "style": {
       "line-color": "@motorway",
       "line-width": "@motorway_link_width"
-    }
+    }    
+  }, {
+    "id": "tunnel_service",
+    "ref": "tunnel_service_casing",
+    "style": {
+      "line-color": "@street",
+      "line-width": "@service_width"
+    }  
+  }, {
+    "id": "tunnel_street",
+    "ref": "tunnel_street_casing",
+    "style": {
+      "line-color": "@street",
+      "line-width": "@street_width"
+    }  
+  }, {
+    "id": "tunnel_main",
+    "ref": "tunnel_main_casing",
+    "style": {
+      "line-color": "@main_tunnel",
+      "line-width": "@main_width"
+    }        
   }, {
     "id": "tunnel_motorway",
     "ref": "tunnel_motorway_casing",
     "style": {
       "line-color": "@motorway_tunnel",
-      "line-width": "@motorway_casing_width",
-      "line-opacity": {
-        "stops": [[6, 0], [7, 1]]
-      }
-    }
-  }, {
-    "id": "tunnel_path",
-    "source": "mapbox",
-    "source-layer": "tunnel",
-    "filter": { "class": "path" },
-    "type": "line"
+      "line-width": "@motorway_width"
+    } 
   }, {
     "id": "tunnel_major_rail",
     "source": "mapbox",
@@ -300,79 +406,14 @@
     "ref": "tunnel_major_rail",
     "style": {
       "line-color": "@rail",
-      "line-dasharray": [2, 31],
-      "line-width": 4
-    }
-  }, {
-    "id": "tunnel_service_casing",
-    "source": "mapbox",
-    "source-layer": "tunnel",
-    "filter": { "class": "service" },
-    "render": {
-      "line-cap": "round",
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@street_casing",
-      "line-dasharray": [7, 2],
-      "line-width": "@service_casing_width"
-    },
-    "type": "line"
-  }, {
-    "id": "tunnel_service",
-    "ref": "tunnel_service_casing",
-    "style": {
-      "line-color": "@street",
-      "line-width": 2
-    }
-  }, {
-    "id": "tunnel_main_casing",
-    "source": "mapbox",
-    "source-layer": "tunnel",
-    "filter": { "class": "main" },
-    "render": {
-      "line-cap": "round",
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@motorway_casing",
-      "line-dasharray": [7, 2],
-      "line-width": "@motorway_casing_width"
-    },
-    "type": "line"
-  }, {
-    "id": "tunnel_street_casing",
-    "source": "mapbox",
-    "source-layer": "tunnel",
-    "filter": { "class": ["street", "street_limited"] },
-    "render": {
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@street_casing",
-      "line-dasharray": [7, 2],
-      "line-width": "@street_casing_width",
-      "line-opacity": "@street_casing_opacity"
-    },
-    "type": "line"
-  }, {
-    "id": "tunnel_street",
-    "ref": "tunnel_street_casing",
-    "style": {
-      "line-color": "@street",
-      "line-width": "@street_width"
-    }
-  }, {
-    "id": "tunnel_main",
-    "ref": "tunnel_main_casing",
-    "style": {
-      "line-color": "@main_tunnel",
-      "line-width": "@main_width"
-    }
+      "line-dasharray": "@rail_hatch_line_dasharray",
+      "line-width": "@rail_hatch_width"
+    }    
   }, {
     "id": "road_motorway_link_casing",
     "source": "mapbox",
     "source-layer": "road",
+    "min-zoom": 12,
     "filter": { "class": "motorway_link" },
     "render": {
       "line-cap": "round",
@@ -382,7 +423,7 @@
       "line-color": "@motorway_casing",
       "line-width": "@motorway_link_casing_width"
     },
-    "type": "line"
+    "type": "line"    
   }, {
     "id": "road_service_casing",
     "source": "mapbox",
@@ -396,7 +437,22 @@
       "line-color": "@street_casing",
       "line-width": "@service_casing_width"
     },
-    "type": "line"
+    "type": "line" 
+  }, {
+    "id": "road_street_casing",
+    "source": "mapbox",
+    "source-layer": "road",
+    "filter": { "class": ["street", "street_limited"], "$type": "LineString" },
+    "render": {
+      "line-cap": "round",
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@street_casing",
+      "line-width": "@street_casing_width",
+      "line-opacity": "@street_casing_opacity"
+    },
+    "type": "line"         
   }, {
     "id": "road_main_casing",
     "source": "mapbox",
@@ -410,54 +466,12 @@
       "line-color": "@motorway_casing",
       "line-width": "@main_casing_width"
     },
-    "type": "line"
-  }, {
-    "id": "road_street_casing",
-    "source": "mapbox",
-    "source-layer": "road",
-    "filter": { "class": ["street", "street_limited"] },
-    "render": {
-      "line-cap": "round",
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@street_casing",
-      "line-width": "@street_casing_width",
-      "line-opacity": "@street_casing_opacity"
-    },
-    "type": "line"
-  }, {
-    "id": "road_motorway_link",
-    "ref": "road_motorway_link_casing",
-    "style": {
-      "line-color": "@motorway",
-      "line-width": "@motorway_link_width"
-    }
-  }, {
-    "id": "road_service",
-    "ref": "road_service_casing",
-    "style": {
-      "line-color": "@street",
-      "line-width": 2
-    }
-  }, {
-    "id": "road_street",
-    "ref": "road_street_casing",
-    "style": {
-      "line-color": "@street",
-      "line-width": "@street_width"
-    }
-  }, {
-    "id": "road_main",
-    "ref": "road_main_casing",
-    "style": {
-      "line-color": "@main",
-      "line-width": "@main_width"
-    }
-  }, {
+    "type": "line"   
+   }, {
     "id": "road_motorway_casing",
     "source": "mapbox",
     "source-layer": "road",
+    "min-zoom": 5,
     "filter": { "class": "motorway" },
     "render": {
       "line-cap": "round",
@@ -467,130 +481,54 @@
       "line-color": "@motorway_casing",
       "line-width": "@motorway_casing_width"
     },
-    "type": "line"
-  }, {
-    "id": "road_motorway",
-    "ref": "road_motorway_casing",
-    "style": {
-      "line-color": "@motorway",
-      "line-width": "@motorway_casing_width",
-      "line-opacity": "@motorway_width"
-    }
-  }, {
-    "id": "bridge_service_casing",
-    "source": "mapbox",
-    "source-layer": "bridge",
-    "filter": { "class": "service" },
-    "render": {
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@street_casing",
-      "line-width": "@service_casing_width"
-    },
-    "type": "line"
-  }, {
-    "id": "bridge_service",
-    "ref": "bridge_service_casing",
-    "style": {
-      "line-color": "@street",
-      "line-width": 2
-    }
-  }, {
-    "id": "bridge_main_casing",
-    "source": "mapbox",
-    "source-layer": "bridge",
-    "filter": { "class": "main" },
-    "render": {
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@motorway_casing",
-      "line-width": "@main_casing_width"
-    },
-    "type": "line"
-  }, {
-    "id": "bridge_main",
-    "ref": "bridge_main_casing",
-    "style": {
-      "line-color": "@main",
-      "line-width": "@main_width"
-    }
-  }, {
-    "id": "bridge_street_casing",
-    "source": "mapbox",
-    "source-layer": "bridge",
-    "filter": { "class": ["street", "street_limited"] },
-    "render": {
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@street_casing",
-      "line-width": "@street_casing_width",
-      "line-opacity": "@street_casing_opacity"
-    },
-    "type": "line"
-  }, {
-    "id": "bridge_street",
-    "ref": "bridge_street_casing",
-    "style": {
-      "line-color": "@street",
-      "line-width": "@street_width"
-    }
-  }, {
-    "id": "bridge_motorway_link_casing",
-    "source": "mapbox",
-    "source-layer": "bridge",
-    "filter": { "class": "motorway_link" },
-    "render": {
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@motorway_casing",
-      "line-width": "@motorway_link_casing_width"
-    },
-    "type": "line"
-  }, {
-    "id": "bridge_motorway_link",
-    "ref": "bridge_motorway_link_casing",
-    "style": {
-      "line-color": "@motorway",
-      "line-width": "@motorway_link_width"
-    }
-  }, {
-    "id": "bridge_motorway_casing",
-    "source": "mapbox",
-    "source-layer": "bridge",
-    "filter": { "class": "motorway" },
-    "render": {
-      "line-join": "round"
-    },
-    "style": {
-      "line-color": "@motorway_casing",
-      "line-width": "@motorway_casing_width"
-    },
-    "type": "line"
-  }, {
-    "id": "bridge_motorway",
-    "ref": "bridge_motorway_casing",
-    "style": {
-      "line-color": "@motorway",
-      "line-width": "@motorway_width",
-      "line-opacity": {
-        "stops": [[6, 0], [7, 1]]
-      }
-    }
-  }, {
+    "type": "line"         
+   }, {
     "id": "road_path",
     "source": "mapbox",
     "source-layer": "road",
     "filter": { "class": "path" },
     "style": {
       "line-color": "@path",
-      "line-dasharray": [2, 1],
+      "line-dasharray": "@path_line_dasharray",
       "line-width": "@path_width"
     },
-    "type": "line"
+    "type": "line"  
+  }, {
+    "id": "road_motorway_link",
+    "ref": "road_motorway_link_casing",
+    "style": {
+      "line-color": "@motorway",
+      "line-width": "@motorway_link_width"
+    }   
+  }, {
+    "id": "road_service",
+    "ref": "road_service_casing",
+    "style": {
+      "line-color": "@street",
+      "line-width": "@service_width"
+    }  
+  }, {
+    "id": "road_street",
+    "ref": "road_street_casing",
+    "style": {
+      "line-color": "@street",
+      "line-width": "@street_width"
+    }     
+  }, {
+    "id": "road_main",
+    "ref": "road_main_casing",
+    "style": {
+      "line-color": "@main",
+      "line-width": "@main_width"
+    }          
+  }, {
+    "id": "road_motorway",
+    "ref": "road_motorway_casing",
+    "style": {
+      "line-color": "@motorway",
+      "line-width": "@motorway_width"
+    },
+    "type": "line" 
   }, {
     "id": "road_major_rail",
     "source": "mapbox",
@@ -606,9 +544,75 @@
     "ref": "road_major_rail",
     "style": {
       "line-color": "@rail",
-      "line-dasharray": [2, 31],
-      "line-width": 4
-    }
+      "line-dasharray": "@rail_hatch_line_dasharray",
+      "line-width": "@rail_hatch_width"
+    }  
+  }, {
+    "id": "bridge_motorway_link_casing",
+    "source": "mapbox",
+    "source-layer": "bridge",
+    "filter": { "class": "motorway_link" },
+    "render": {
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@motorway_casing",
+      "line-width": "@motorway_link_casing_width"
+    },
+    "type": "line"     
+  }, {
+    "id": "bridge_motorway_casing",
+    "source": "mapbox",
+    "source-layer": "bridge",
+    "filter": { "class": "motorway" },
+    "render": {
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@motorway_casing",
+      "line-width": "@motorway_casing_width"
+    },
+    "type": "line"  
+  }, {
+    "id": "bridge_service_casing",
+    "source": "mapbox",
+    "source-layer": "bridge",
+    "filter": { "class": "service" },
+    "render": {
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@street_casing",
+      "line-width": "@service_casing_width"
+    },
+    "type": "line"    
+  }, {
+    "id": "bridge_street_casing",
+    "source": "mapbox",
+    "source-layer": "bridge",
+    "filter": { "class": ["street", "street_limited"] },
+    "render": {
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@street_casing",
+      "line-width": "@street_casing_width",
+      "line-opacity": "@street_casing_opacity"
+    },
+    "type": "line"          
+  }, {
+    "id": "bridge_main_casing",
+    "source": "mapbox",
+    "source-layer": "bridge",
+    "filter": { "class": "main" },
+    "render": {
+      "line-join": "round"
+    },
+    "style": {
+      "line-color": "@motorway_casing",
+      "line-width": "@main_casing_width"
+    },
+    "type": "line"    
   }, {
     "id": "bridge_path",
     "source": "mapbox",
@@ -616,10 +620,45 @@
     "filter": { "class": "path" },
     "style": {
       "line-color": "@path",
-      "line-dasharray": [2, 1],
+      "line-dasharray": "@path_line_dasharray",
       "line-width": "@path_width"
     },
-    "type": "line"
+    "type": "line"  
+  }, {
+    "id": "bridge_motorway_link",
+    "ref": "bridge_motorway_link_casing",
+    "style": {
+      "line-color": "@motorway",
+      "line-width": "@motorway_link_width"
+    }    
+  }, {
+    "id": "bridge_service",
+    "ref": "bridge_service_casing",
+    "style": {
+      "line-color": "@street",
+      "line-width": "@service_width"
+    }  
+  }, {
+    "id": "bridge_street",
+    "ref": "bridge_street_casing",
+    "style": {
+      "line-color": "@street",
+      "line-width": "@street_width"
+    }      
+  }, {
+    "id": "bridge_main",
+    "ref": "bridge_main_casing",
+    "style": {
+      "line-color": "@main",
+      "line-width": "@main_width"
+    }       
+  }, {
+    "id": "bridge_motorway",
+    "ref": "bridge_motorway_casing",
+    "style": {
+      "line-color": "@motorway",
+      "line-width": "@motorway_width"
+    }     
   }, {
     "id": "bridge_major_rail",
     "source": "mapbox",
@@ -635,8 +674,8 @@
     "ref": "bridge_major_rail",
     "style": {
       "line-color": "@rail",
-      "line-dasharray": [2, 31],
-      "line-width": 4
+      "line-dasharray": "@rail_hatch_line_dasharray",
+      "line-width": "@rail_hatch_width"
     }
   }, {
     "id": "admin",
@@ -658,9 +697,7 @@
       "style": {
         "line-color": "@admin",
         "line-dasharray": [10, 3],
-        "line-width": {
-          "stops": [[5, 0.4], [6, 1], [8, 1.5], [12, 2]]
-        }
+        "line-width": "@admin_level_3_width"
       },
       "type": "line"
     }, {
@@ -669,6 +706,7 @@
       "source-layer": "admin",
       "filter": {
         "admin_level": 2,
+        "disputed": 0,
         "maritime": 0
       },
       "render": {
@@ -676,9 +714,7 @@
       },
       "style": {
         "line-color": "@admin",
-        "line-width": {
-          "stops": [[5, 1.4], [6, 2], [8, 4]]
-        }
+        "line-width": "@admin_level_2_width"
       },
       "type": "line"
     }, {
@@ -696,9 +732,7 @@
       "style": {
         "line-color": "@admin",
         "line-dasharray": [4, 4],
-        "line-width": {
-          "stops": [[5, 1.4], [6, 2], [8, 4]]
-        }
+        "line-width": "@admin_level_2_width"
       },
       "type": "line"
     }, {
@@ -715,9 +749,7 @@
       "style": {
         "line-color": "@water",
         "line-dasharray": [10, 3],
-        "line-width": {
-          "stops": [[5, 0.4], [6, 1], [8, 1.5], [12, 2]]
-        }
+        "line-width": "@admin_level_3_width"
       },
       "type": "line"
     }, {
@@ -733,9 +765,7 @@
       },
       "style": {
         "line-color": "@water",
-        "line-width": {
-          "stops": [[5, 1.4], [6, 2], [8, 4]]
-        }
+        "line-width": "@admin_level_2_width"
       },
       "type": "line"
     }]
@@ -757,20 +787,20 @@
     },
     "render": {
       "text-font": "@sans_bd",
-      "text-field": "{name_en}",
+      "text-field": "@name",
       "text-max-width": 6.25,
       "text-transform": "uppercase",
-      "text-max-size": 15
+      "text-max-size": 17
     },
     "style": {
       "text-color": "@text",
       "text-halo-color": "@text_halo",
       "text-halo-width": 2,
+      "text-halo-blur": 1,
       "text-size": {
-        "stops": [[3, 13], [4, 15]]
+        "stops": [[2, 13], [4, 17]]
       }
     },
-    "min-zoom": 3,
     "type": "symbol"
   }, {
     "id": "country_label_2",
@@ -784,28 +814,52 @@
       "text-field": "{name_en}",
       "text-max-width": 6.25,
       "text-transform": "uppercase",
-      "text-max-size": 15
+      "text-max-size": 17
     },
     "style": {
       "text-color": "@text",
       "text-halo-color": "@text_halo",
       "text-halo-width": 2,
+      "text-halo-blur": 1,
       "text-size": {
-        "stops": [[4, 13], [5, 15]]
+        "stops": [[3, 13], [5, 17]]
       }
     },
-    "min-zoom": 3,
     "type": "symbol"
   }, {
     "id": "country_label_3",
     "source": "mapbox",
     "source-layer": "country_label",
     "filter": {
-      "scalerank": {">=": 3}
+      "scalerank": 3
     },
     "render": {
       "text-font": "@sans_bd",
-      "text-field": "{name_en}",
+      "text-field": "@name",
+      "text-max-width": 6.25,
+      "text-transform": "uppercase",
+      "text-max-size": 17
+    },
+    "style": {
+      "text-color": "@text",
+      "text-halo-color": "@text_halo",
+      "text-halo-width": 2,
+      "text-halo-blur": 1,
+      "text-size": {
+        "stops": [[4, 13], [7, 17]]
+      }
+    },
+    "type": "symbol"  
+  }, {
+    "id": "country_label_4",
+    "source": "mapbox",
+    "source-layer": "country_label",
+    "filter": {
+      "scalerank": {">=": 4}
+    },
+    "render": {
+      "text-font": "@sans_bd",
+      "text-field": "@name",
       "text-max-width": 6.25,
       "text-transform": "uppercase",
       "text-max-size": 15
@@ -814,42 +868,67 @@
       "text-color": "@text",
       "text-halo-color": "@text_halo",
       "text-halo-width": 2,
+      "text-halo-blur": 1,
       "text-size": {
-        "stops": [[5, 13], [7, 15]]
+        "stops": [[5, 13], [6, 15]]
       }
     },
-    "min-zoom": 3,
     "type": "symbol"
   }, {
-    "id": "marine_label_1",
+    "id": "marine_label_point_1",
     "source": "mapbox",
     "source-layer": "marine_label",
     "filter": {"labelrank": 1, "$type": "Point"},
     "render": {
       "text-font": "@sans_it",
-      "text-field": "{name_en}",
+      "text-field": "@name",
       "text-max-size": 22,
       "text-max-width": 5,
       "text-letter-spacing": 0.2,
-      "symbol-placement": "point"
+      "text-line-height": 1.6,
+      "symbol-placement": "point",
+      "text-offset": [0, 2.4]
     },
     "style": {
       "text-color": "@marine_text",
       "text-halo-color": "@marine_text_halo",
-      "text-halo-width": 0.9,
+      "text-halo-width": 0.75,
+      "text-halo-blur": 0.75,
       "text-size": {
         "stops": [[3, 18], [4, 22]]
       }
     },
     "type": "symbol"
   }, {
-    "id": "marine_label_2",
+    "id": "marine_label_line_1",
+    "source": "mapbox",
+    "source-layer": "marine_label",
+    "filter": {"labelrank": 1, "$type": "LineString"},
+    "render": {
+      "text-font": "@sans_it",
+      "text-field": "@name",
+      "text-max-size": 14,
+      "text-letter-spacing": 0.2,
+      "symbol-placement": "line"
+    },
+    "style": {
+      "text-color": "@marine_text",
+      "text-halo-color": "@marine_text_halo",
+      "text-halo-width": 0.75,
+      "text-halo-blur": 0.75,
+      "text-size": {
+        "stops": [[3, 18], [4, 22]]
+      }
+    },
+    "type": "symbol"   
+  }, {
+    "id": "marine_label_point_2",
     "source": "mapbox",
     "source-layer": "marine_label",
     "filter": {"labelrank": 2, "$type": "Point"},
     "render": {
       "text-font": "@sans_it",
-      "text-field": "{name_en}",
+      "text-field": "@name",
       "text-max-size": 16,
       "text-max-width": 5,
       "text-letter-spacing": 0.2,
@@ -858,12 +937,35 @@
     "style": {
       "text-color": "@marine_text",
       "text-halo-color": "@marine_text_halo",
-      "text-halo-width": 0.9,
+      "text-halo-width": 0.75,
+      "text-halo-blur": 0.75,
       "text-size": {
         "stops": [[3, 14], [4, 16]]
       }
     },
     "type": "symbol"
+  }, {
+    "id": "marine_label_line_2",
+    "source": "mapbox",
+    "source-layer": "marine_label",
+    "filter": {"labelrank": 2, "$type": "LineString"},
+    "render": {
+      "text-font": "@sans_it",
+      "text-field": "@name",
+      "text-max-size": 16,
+      "text-letter-spacing": 0.2,
+      "symbol-placement": "line"
+    },
+    "style": {
+      "text-color": "@marine_text",
+      "text-halo-color": "@marine_text_halo",
+      "text-halo-width": 0.75,
+      "text-halo-blur": 0.75,
+      "text-size": {
+        "stops": [[3, 14], [4, 16]]
+      }
+    },
+    "type": "symbol"  
   }, {
     "id": "marine_label_3",
     "source": "mapbox",
@@ -871,7 +973,7 @@
     "filter": {"labelrank": 3, "$type": "Point"},
     "render": {
       "text-font": "@sans_it",
-      "text-field": "{name_en}",
+      "text-field": "@name",
       "text-max-size": 14,
       "text-max-width": 5,
       "text-letter-spacing": 0.2,
@@ -880,32 +982,80 @@
     "style": {
       "text-color": "@marine_text",
       "text-halo-color": "@marine_text_halo",
-      "text-halo-width": 0.9,
+      "text-halo-width": 0.75,
+      "text-halo-blur": 0.75,
       "text-size": {
         "stops": [[3, 11], [4, 14]]
       }
     },
     "type": "symbol"
   }, {
-    "id": "marine_label_line",
+    "id": "marine_label_line_3",
     "source": "mapbox",
     "source-layer": "marine_label",
-    "filter": {"$type": "LineString"},
+    "filter": {"labelrank": 3, "$type": "LineString"},
     "render": {
       "text-font": "@sans_it",
-      "text-field": "{name_en}",
+      "text-field": "@name",
       "text-max-size": 14,
-      "text-max-width": 4,
       "text-letter-spacing": 0.2,
       "symbol-placement": "line"
     },
     "style": {
       "text-color": "@marine_text",
       "text-halo-color": "@marine_text_halo",
-      "text-halo-width": 0.9,
-      "text-size": 14
+      "text-halo-width": 0.75,
+      "text-halo-blur": 0.75,
+      "text-size": {
+        "stops": [[3, 11], [4, 14]]
+      }
+    },
+    "type": "symbol"  
+  }, {
+    "id": "marine_label_4",
+    "source": "mapbox",
+    "source-layer": "marine_label",
+    "filter": {"labelrank": {">=": 4}, "$type": "Point"},
+    "render": {
+      "text-font": "@sans_it",
+      "text-field": "@name",
+      "text-max-size": 12,
+      "text-max-width": 6,
+      "text-letter-spacing": 0.2,
+      "symbol-placement": "point"
+    },
+    "style": {
+      "text-color": "@marine_text",
+      "text-halo-color": "@marine_text_halo",
+      "text-halo-width": 0.75,
+      "text-halo-blur": 0.75,
+      "text-size": {
+        "stops": [[3, 11], [4, 12]]
+      }
     },
     "type": "symbol"
+  }, {
+    "id": "marine_label_line_4",
+    "source": "mapbox",
+    "source-layer": "marine_label",
+    "filter": {"labelrank": {">=": 4}, "$type": "LineString"},
+    "render": {
+      "text-font": "@sans_it",
+      "text-field": "@name",
+      "text-max-size": 12,
+      "text-letter-spacing": 0.2,
+      "symbol-placement": "line"
+    },
+    "style": {
+      "text-color": "@marine_text",
+      "text-halo-color": "@marine_text_halo",
+      "text-halo-width": 0.75,
+      "text-halo-blur": 0.75,
+      "text-size": {
+        "stops": [[3, 11], [4, 12]]
+      }
+    },
+    "type": "symbol"       
   }, {
     "id": "place_label_city",
     "source": "mapbox",
@@ -913,7 +1063,7 @@
     "filter": { "type": "city" },
     "render": {
       "text-font": "@sans_md",
-      "text-field": "{name_en}",
+      "text-field": "@name",
       "text-max-size": 24,
       "text-max-width": 8
     },
@@ -922,7 +1072,8 @@
       "text-halo-color": "@text_halo",
       "text-halo-width": 1.2,
       "text-size": {
-        "stops": [[8, 16], [10, 18], [12, 24]]
+        "base": 1.2,
+        "stops": [[7, 14], [11, 24]]
       }
     },
     "type": "symbol"
@@ -933,15 +1084,17 @@
     "filter": { "type": "town" },
     "render": {
       "text-font": "@sans",
-      "text-field": "{name}",
-      "text-max-size": 24
+      "text-field": "@name",
+      "text-max-size": 24,
+      "text-max-width": 8
     },
     "style": {
       "text-color": "#333",
       "text-halo-color": "@text_halo",
       "text-halo-width": 1.2,
       "text-size": {
-        "stops": [[10, 14], [11, 16], [13, 20], [15, 24]]
+        "base": 1.2,
+        "stops": [[10, 14], [15, 24]]
       }
     },
     "type": "symbol"
@@ -952,17 +1105,62 @@
     "filter": { "type": "village" },
     "render": {
       "text-font": "@sans",
-      "text-field": "{name}",
-      "text-max-size": 22
+      "text-field": "@name",
+      "text-max-size": 22,
+      "text-max-width": 8
     },
     "style": {
       "text-color": "#333",
       "text-halo-color": "@text_halo",
+      "text-halo-width": 1.2,
       "text-size": {
-        "stops": [[10, 12], [11, 14], [13, 18], [15, 22]]
+        "base": 1.2,
+        "stops": [[10, 12], [15, 22]]
       }
     },
     "type": "symbol"
+  }, {
+    "id": "road_label_highway_shields",
+    "source": "mapbox",
+    "source-layer": "road_label",
+    "filter": {"class": "motorway", "reflen": [1,2,3,4,5,6]},
+    "render": {
+      "symbol-placement": "line",
+      "symbol-min-distance": 500,
+      "icon-image": "motorway_{reflen}",
+      "icon-max-size": 1,
+      "text-field": "{ref}",
+      "text-font": "@sans_bd",
+      "text-max-size": 11,
+      "text-rotation-alignment": "viewport",
+      "icon-rotation-alignment": "viewport"
+    },
+    "style": {
+      "text-color": "#765",
+      "text-size": 11
+    },
+    "type": "symbol"  
+  }, {
+    "id": "road_label",
+    "source": "mapbox",
+    "source-layer": "road_label",
+    "filter": { "$type": "LineString" },
+    "render": {
+      "text-font": "@sans",
+      "text-field": "@name",
+      "text-max-size": 13,
+      "symbol-placement": "line"
+    },
+    "style": {
+      "text-color": "#765",
+      "text-halo-color": "#fff",
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5,
+      "text-size": {
+        "stops": [[13, 12], [14, 13]]
+      }
+    },
+    "type": "symbol"    
   }, {
     "id": "place_label_other",
     "source": "mapbox",
@@ -972,35 +1170,17 @@
       "text-font": "@sans_bd",
       "text-transform": "uppercase",
       "text-letter-spacing": 0.1,
-      "text-field": "{name}",
-      "text-max-size": 14
+      "text-field": "@name",
+      "text-max-size": 14,
+      "text-max-width": 9
     },
     "style": {
       "text-color": "#633",
       "text-halo-color": "@text_halo",
       "text-halo-width": 1.2,
       "text-size": {
-        "stops": [[8, 10], [13, 11], [14, 12], [15, 14]]
-      }
-    },
-    "type": "symbol"
-  }, {
-    "id": "road_label",
-    "source": "mapbox",
-    "source-layer": "road_label",
-    "filter": { "$type": "LineString" },
-    "render": {
-      "text-font": "@sans",
-      "text-field": "{name}",
-      "text-max-size": 13,
-      "symbol-placement": "line"
-    },
-    "style": {
-      "text-color": "#765",
-      "text-halo-color": "rgba(255,255,255,0.5)",
-      "text-halo-width": 1.4,
-      "text-size": {
-        "stops": [[13, 12], [14, 13]]
+        "base": 1.2,
+        "stops": [[12, 10], [15, 14]]
       }
     },
     "type": "symbol"
@@ -1012,10 +1192,9 @@
     "render": {
       "icon-image": "{maki}-12",
       "text-font": "@sans_md",
-      "text-field": "{name}",
+      "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1024,7 +1203,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 13,
     "type": "symbol"
@@ -1036,10 +1216,9 @@
     "render": {
       "icon-image": "{maki}-12",
       "text-font": "@sans_md",
-      "text-field": "{name}",
+      "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1048,7 +1227,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 14,
     "type": "symbol"
@@ -1060,10 +1240,9 @@
     "render": {
       "icon-image": "{maki}-12",
       "text-font": "@sans_md",
-      "text-field": "{name}",
+      "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1072,7 +1251,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 15,
     "type": "symbol"
@@ -1084,10 +1264,9 @@
     "render": {
       "icon-image": "{maki}-12",
       "text-font": "@sans_md",
-      "text-field": "{name}",
+      "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1096,7 +1275,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 16,
     "type": "symbol"
@@ -1108,10 +1288,9 @@
     "render": {
       "icon-image": "{maki}-12",
       "text-font": "@sans_md",
-      "text-field": "{name}",
+      "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1120,7 +1299,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 17,
     "type": "symbol"
@@ -1131,7 +1311,7 @@
     "filter": { "$type": "Point" },
     "render": {
       "text-font": "@sans_it",
-      "text-field": "{name}",
+      "text-field": "@name",
       "text-max-size": 12,
       "text-max-width": 5
     },
