@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
+  "sprite": "/sprites/bright",
   "glyphs": "https://mapbox.s3.amazonaws.com/gl-glyphs-256/{fontstack}/{range}.pbf",
   "constants": {
     "@land": "#f8f4f0",
@@ -1033,7 +1033,7 @@
     "render": {
       "symbol-placement": "line",
       "symbol-min-distance": 500,
-      "icon-image": "motorway_6",
+      "icon-image": "motorway_{reflen}",
       "icon-max-size": 1,
       "text-field": "{ref}",
       "text-font": "@sans_bd",
