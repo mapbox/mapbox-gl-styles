@@ -1026,6 +1026,27 @@
     },
     "type": "symbol"
   }, {
+    "id": "road_label_highway_shields",
+    "source": "mapbox",
+    "source-layer": "road_label",
+    "filter": {"class": "motorway", "reflen": [1,2,3,4,5,6]},
+    "render": {
+      "symbol-placement": "line",
+      "symbol-min-distance": 500,
+      "icon-image": "motorway_6",
+      "icon-max-size": 1,
+      "text-field": "{ref}",
+      "text-font": "@sans_bd",
+      "text-max-size": 11,
+      "text-rotation-alignment": "viewport",
+      "icon-rotation-alignment": "viewport"
+    },
+    "style": {
+      "text-color": "#765",
+      "text-size": 11
+    },
+    "type": "symbol"  
+  }, {
     "id": "road_label",
     "source": "mapbox",
     "source-layer": "road_label",
