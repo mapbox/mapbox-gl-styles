@@ -9,7 +9,7 @@
     "@sans_md": "Open Sans Semibold, Arial Unicode MS Bold",
     "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
     "@land": "#f8f4f0",
-    "@water": "#a0c8f0",
+    "@water": "#bfd9ef",
     "@admin": "#446",
     "@park": "#d8e8c8",
     "@cemetary": "#e0e4dd",
@@ -39,7 +39,7 @@
     "@marine_text": "#74aee9",
     "@marine_text_halo": "rgba(255,255,255,0.7)",
     "@poi_text": "#666",
-    "@poi_text_halo": "rgba(255,255,255,0.5)",
+    "@poi_text_halo": "#ffffff",
     "@maki": "#666",
     "@point_translate": [0, -30],
     "@tunnel_line_dasharray": [{
@@ -195,20 +195,11 @@
     },
     "type": "fill"
   }, {
-    "id": "water_offset",
-    "source": "mapbox",
-    "source-layer": "water",
-    "type": "fill",
-    "style": {
-      "fill-color": "white",
-      "fill-opacity": 0.4,
-      "fill-translate": [0, 2.5]
-    }
-  }, {
     "id": "water_pattern",
     "ref": "water",
     "style": {
       "fill-image": "wave",
+      "fill-opacity": 0.75,
       "fill-translate": [0, 2.5]
     }
   }, {
@@ -1181,7 +1172,7 @@
       "text-letter-spacing": 0.1,
       "text-field": "@name",
       "text-max-size": 14,
-      "text-max-width": 8
+      "text-max-width": 9
     },
     "style": {
       "text-color": "#633",
@@ -1203,8 +1194,7 @@
       "text-font": "@sans_md",
       "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1213,7 +1203,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 13,
     "type": "symbol"
@@ -1227,8 +1218,7 @@
       "text-font": "@sans_md",
       "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1237,7 +1227,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 14,
     "type": "symbol"
@@ -1251,8 +1242,7 @@
       "text-font": "@sans_md",
       "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1261,7 +1251,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 15,
     "type": "symbol"
@@ -1275,8 +1266,7 @@
       "text-font": "@sans_md",
       "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1285,7 +1275,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 16,
     "type": "symbol"
@@ -1299,8 +1290,7 @@
       "text-font": "@sans_md",
       "text-field": "@name",
       "text-max-size": 12,
-      "text-max-width": 6,
-      "text-letter-spacing": -0.04,
+      "text-max-width": 9,
       "text-padding": 2,
       "text-offset": [0, 0.6],
       "text-vertical-align": "top"
@@ -1309,7 +1299,8 @@
       "text-color": "@poi_text",
       "text-size": 12,
       "text-halo-color": "@poi_text_halo",
-      "text-halo-width": 1.1
+      "text-halo-width": 1,
+      "text-halo-blur": 0.5
     },
     "min-zoom": 17,
     "type": "symbol"
