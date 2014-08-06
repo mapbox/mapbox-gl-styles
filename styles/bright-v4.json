@@ -9,7 +9,7 @@
     "@sans_md": "Open Sans Semibold, Arial Unicode MS Bold",
     "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
     "@land": "#f8f4f0",
-    "@water": "#9fcded",
+    "@water": "#a0c8f0",
     "@admin": "#446",
     "@park": "#d8e8c8",
     "@cemetary": "#e0e4dd",
@@ -195,11 +195,20 @@
     },
     "type": "fill"
   }, {
+    "id": "water_offset",
+    "source": "mapbox",
+    "source-layer": "water",
+    "type": "fill",
+    "style": {
+      "fill-color": "white",
+      "fill-opacity": 0.3,
+      "fill-translate": [0, 2.5]
+    }   
+  }, {
     "id": "water_pattern",
     "ref": "water",
     "style": {
       "fill-image": "wave",
-      "fill-opacity": 0.75,
       "fill-translate": [0, 2.5]
     }
   }, {
