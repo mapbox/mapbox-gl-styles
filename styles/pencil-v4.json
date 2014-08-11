@@ -90,8 +90,6 @@
     },
     "type": "fill"
   }, {
-    "id": "roads",
-    "layers": [{
       "id": "road_large_casing",
       "source": "mapbox",
       "source-layer": "road",
@@ -236,11 +234,6 @@
           "stops": [[13.353194706328917, 1], [15.459380810709622, 9.999999999999998]]
         }
       }
-    }],
-    "style": {
-      "composite-opacity": 1
-    },
-    "type": "composite"
   }, {
     "id": "building",
     "source": "mapbox",
