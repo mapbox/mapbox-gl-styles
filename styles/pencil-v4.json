@@ -20,7 +20,8 @@
   "sources": {
     "mapbox": {
       "type": "vector",
-      "url": "mapbox://mapbox.mapbox-streets-v6-dev"
+      "url": "mapbox://mapbox.mapbox-streets-v6-dev",
+      "maxZoom": 15
     }
   },
   "layers": [{
