@@ -10,7 +10,7 @@
     "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
     "@land": "#f8f4f0",
     "@water": "#a0c8f0",
-    "@admin": "#446",
+    "@admin": "#9e9cab",
     "@admin-opacity": 0.5,
     "@park": "#d8e8c8",
     "@cemetary": "#e0e4dd",
@@ -701,7 +701,6 @@
       },
       "style": {
         "line-color": "@admin",
-        "line-opacity": "@admin-opacity",
         "line-dasharray": [10, 3],
         "line-width": "@admin_level_3_width"
       },
@@ -716,11 +715,11 @@
         "maritime": 0
       },
       "render": {
+        "line-join": "round",
         "line-cap": "round"
       },
       "style": {
         "line-color": "@admin",
-        "line-opacity": "@admin-opacity",
         "line-width": "@admin_level_2_width"
       },
       "type": "line"
@@ -738,7 +737,6 @@
       },
       "style": {
         "line-color": "@admin",
-        "line-opacity": "@admin-opacity",
         "line-dasharray": [4, 4],
         "line-width": "@admin_level_2_width"
       },
