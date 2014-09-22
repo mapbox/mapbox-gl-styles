@@ -5,11 +5,12 @@
   "main": "index.js",
   "bin": {},
   "scripts": {
-    "test": "gl-style-validate styles/*"
+    "test": "gl-style-validate styles/*",
+    "migrate": "for style in styles/*-v5.json; do gl-style-migrate $style | sponge $style; done"
   },
   "devDependencies": {
-    "mapbox-gl-style-lint": "https://github.com/mapbox/mapbox-gl-style-lint/tarball/master",
-    "mapbox-gl-style-spec": "~0.0.2"
+    "mapbox-gl-style-lint": "git+https://github.com/mapbox/mapbox-gl-style-lint.git#2d3a93e2a8286253bccceeeb064a332b90d1ea68",
+    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#039c38751f340eebdd6342b24b25e9908c89f9fe"
   },
   "license": "ISC"
 }
