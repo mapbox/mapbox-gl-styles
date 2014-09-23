@@ -1,7 +1,7 @@
 {
   "version": 5,
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/pencil",
-  "glyphs": "https://mapbox.s3.amazonaws.com/gl-glyphs-256/{fontstack}/{range}.pbf",
+  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "constants": {
     "@land": "rgba(0,0,0,0)",
     "@water": "#73b6e6",
