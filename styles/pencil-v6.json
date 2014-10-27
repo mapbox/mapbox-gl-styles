@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/pencil",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "constants": {
@@ -35,7 +35,7 @@
     "id": "park",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "park" },
+    "filter": ["==", "class", "park"],
     "style": {
       "fill-color": "@park",
       "fill-image": "shade_medium",
@@ -46,7 +46,7 @@
     "id": "park_outline",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "park", "$type": "Polygon" },
+    "filter": ["all", ["==", "class", "park"], ["==", "$type", "Polygon"]],
     "style": {
       "line-image": "line_shade_22_1",
       "line-opacity": 0.7,
@@ -60,7 +60,7 @@
     "id": "wood",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "wood" },
+    "filter": ["==", "class", "wood"],
     "style": {
       "fill-color": "@wood",
       "fill-opacity": 0.08,
@@ -93,7 +93,7 @@
     "id": "road_large_casing",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": ["motorway", "main"] },
+    "filter": ["in", "class", "motorway", "main"],
     "render": {
       "line-cap": "butt",
       "line-join": "bevel"
@@ -111,7 +111,7 @@
     "id": "road_regular_casing",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": ["street"] },
+    "filter": ["in", "class", "street"],
     "render": {
       "line-cap": "butt",
       "line-join": "bevel"
@@ -131,7 +131,7 @@
     "id": "road_limited",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": ["street_limited"] },
+    "filter": ["in", "class", "street_limited"],
     "render": {
       "line-cap": "round",
       "line-join": "bevel",
@@ -171,7 +171,7 @@
     "id": "path",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": ["path"] },
+    "filter": ["in", "class", "path"],
     "render": {
       "line-cap": "round",
       "line-join": "bevel"
@@ -188,7 +188,7 @@
     "id": "bridge_large_casing",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "class": ["motorway", "main"] },
+    "filter": ["in", "class", "motorway", "main"],
     "style": {
       "line-color": "rgba(152,152,152,1)",
       "line-width": 0,
@@ -212,7 +212,7 @@
     "id": "bridge_regular_casing",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "class": ["street", "street_limited"] },
+    "filter": ["in", "class", "street", "street_limited"],
     "style": {
       "line-color": "rgba(152,152,152,1)",
       "line-opacity": {
@@ -252,7 +252,7 @@
     "id": "building_outline",
     "source": "mapbox",
     "source-layer": "building",
-    "filter": { "$type": "Polygon" },
+    "filter": ["==", "$type", "Polygon"],
     "render": {
       "line-cap": "butt",
       "line-join": "bevel"

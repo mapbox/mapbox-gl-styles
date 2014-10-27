@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/outdoors",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "constants": {
@@ -167,7 +167,7 @@
     "id": "landcover_snow",
     "source": "mapbox",
     "source-layer": "landcover",
-    "filter": { "class": "snow" },
+    "filter": ["==", "class", "snow"],
     "style": {
       "fill-color": "@snow"
     },
@@ -179,7 +179,7 @@
     "id": "landcover_crop",
     "source": "mapbox",
     "source-layer": "landcover",
-    "filter": { "class": "crop" },
+    "filter": ["==", "class", "crop"],
     "style": {
       "fill-color": "@crop"
     },
@@ -191,7 +191,7 @@
     "id": "landcover_grass",
     "source": "mapbox",
     "source-layer": "landcover",
-    "filter": { "class": "grass" },
+    "filter": ["==", "class", "grass"],
     "style": {
       "fill-color": "@grass",
       "fill-opacity": {
@@ -209,7 +209,7 @@
     "id": "landcover_scrub",
     "source": "mapbox",
     "source-layer": "landcover",
-    "filter": { "class": "scrub" },
+    "filter": ["==", "class", "scrub"],
     "style": {
       "fill-color": "@scrub",
       "fill-opacity": {
@@ -227,7 +227,7 @@
     "id": "landcover_wood",
     "source": "mapbox",
     "source-layer": "landcover",
-    "filter": { "class": "wood" },
+    "filter": ["==", "class", "wood"],
     "style": {
       "fill-color": "@wood",
       "fill-opacity": {
@@ -245,7 +245,7 @@
     "id": "landuse_wood",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "wood" },
+    "filter": ["==", "class", "wood"],
     "style": {
       "fill-color": "@wood"
     },
@@ -258,7 +258,7 @@
     "id": "landuse_school",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "school" },
+    "filter": ["==", "class", "school"],
     "style": {
       "fill-color": "@school"
     },
@@ -270,7 +270,7 @@
     "id": "landuse_sand",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "sand" },
+    "filter": ["==", "class", "sand"],
     "style": {
       "fill-color": "@sand"
     },
@@ -283,7 +283,7 @@
     "id": "landuse_pitch",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "pitch" },
+    "filter": ["==", "class", "pitch"],
     "style": {
       "fill-color": "rgba(255,255,255,0.5)",
       "fill-outline-color": "@pitch"
@@ -297,7 +297,7 @@
     "id": "landuse_park",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "park" },
+    "filter": ["==", "class", "park"],
     "style": {
       "fill-color": "@park"
     },
@@ -309,7 +309,7 @@
     "id": "landuse_industrial",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "industrial" },
+    "filter": ["==", "class", "industrial"],
     "style": {
       "fill-color": "rgba(246,250,255,0.5)"
     },
@@ -321,7 +321,7 @@
     "id": "landuse_scrub",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "scrub" },
+    "filter": ["==", "class", "scrub"],
     "style": {
       "fill-color": "@scrub"
     },
@@ -334,7 +334,7 @@
     "id": "landuse_grass",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "grass" },
+    "filter": ["==", "class", "grass"],
     "style": {
       "fill-color": "@grass"
     },
@@ -347,7 +347,7 @@
     "id": "landuse_crop",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "crop" },
+    "filter": ["==", "class", "crop"],
     "style": {
       "fill-color": "@crop"
     },
@@ -360,7 +360,7 @@
     "id": "landuse_rock",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "rock" },
+    "filter": ["==", "class", "rock"],
     "style": {
       "fill-color": "@rock"
     },
@@ -373,7 +373,7 @@
     "id": "landuse_snow",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "snow" },
+    "filter": ["==", "class", "snow"],
     "style": {
       "fill-color": "@snow"
     },
@@ -386,7 +386,7 @@
     "id": "landuse_hospital",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "hospital" },
+    "filter": ["==", "class", "hospital"],
     "style": {
       "fill-color": "@hospital"
     },
@@ -398,7 +398,7 @@
     "id": "landuse_cemetery",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": { "class": "cemetery" },
+    "filter": ["==", "class", "cemetery"],
     "style": {
       "fill-color": "@cemetery"
     },
@@ -410,7 +410,7 @@
     "id": "overlay_wetland",
     "source": "mapbox",
     "source-layer": "landuse_overlay",
-    "filter": { "class": ["wetland", "wetland_noveg"] },
+    "filter": ["in", "class", "wetland", "wetland_noveg"],
     "style": {
       "fill-color": "rgba(210,225,225,0.2)",
       "fill-image": "wetland_noveg_64"
@@ -424,7 +424,7 @@
     "id": "overlay_breakwater_pier",
     "source": "mapbox",
     "source-layer": "landuse_overlay",
-    "filter": { "class": ["breakwater", "pier"] },
+    "filter": ["in", "class", "breakwater", "pier"],
     "style": {
       "fill-color": "@land"
     },
@@ -436,7 +436,7 @@
     "id": "waterway_river_canal",
     "source": "mapbox",
     "source-layer": "waterway",
-    "filter": { "type": ["river", "canal"] },
+    "filter": ["in", "type", "river", "canal"],
     "render": {
       "line-cap": "round"
     },
@@ -453,7 +453,7 @@
     "id": "waterway_stream",
     "source": "mapbox",
     "source-layer": "waterway",
-    "filter": { "type": "stream" },
+    "filter": ["==", "type", "stream"],
     "render": {
       "line-cap": "round"
     },
@@ -606,7 +606,7 @@
     "id": "contour_line_loud",
     "source": "mapbox",
     "source-layer": "contour",
-    "filter": { "index": 5 },
+    "filter": ["==", "index", 5],
     "render": {
       "line-join": "round"
     },
@@ -651,7 +651,7 @@
     "id": "barrier_line_gate",
     "source": "mapbox",
     "source-layer": "barrier_line",
-    "filter": { "class": "gate" },
+    "filter": ["==", "class", "gate"],
     "style": {
       "line-width": 2.5,
       "line-color": "#aab"
@@ -665,7 +665,7 @@
     "id": "barrier_line_fence",
     "source": "mapbox",
     "source-layer": "barrier_line",
-    "filter": { "class": "fence" },
+    "filter": ["==", "class", "fence"],
     "style": {
       "line-color": "#aeada3",
       "line-width": "@fence_width"
@@ -679,7 +679,7 @@
     "id": "barrier_line_hedge",
     "source": "mapbox",
     "source-layer": "barrier_line",
-    "filter": { "class": "hedge" },
+    "filter": ["==", "class", "hedge"],
     "style": {
       "line-color": "#8de99b",
       "line-width": "@hedge_width"
@@ -693,7 +693,7 @@
     "id": "barrier_line_land",
     "source": "mapbox",
     "source-layer": "barrier_line",
-    "filter": { "class": "land" },
+    "filter": ["==", "class", "land"],
     "style": {
       "line-color": "@land",
       "line-width": "@barrier_line_land_width"
@@ -707,7 +707,7 @@
     "id": "barrier_line_land_fill",
     "source": "mapbox",
     "source-layer": "barrier_line",
-    "filter": { "class": "land" },
+    "filter": ["==", "class", "land"],
     "style": {
       "fill-color": "@land"
     },
@@ -719,7 +719,7 @@
     "id": "barrier_line_cliff",
     "source": "mapbox",
     "source-layer": "barrier_line",
-    "filter": { "class": "cliff" },
+    "filter": ["==", "class", "cliff"],
     "style": {
       "line-color": "#987",
       "line-width": 4
@@ -757,7 +757,7 @@
     "id": "aeroway_runway",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "filter": { "type": "runway" },
+    "filter": ["==", "type", "runway"],
     "style": {
       "line-color": "#ddd",
       "line-width": "@runway_width"
@@ -771,7 +771,7 @@
     "id": "aeroway_taxiway",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "filter": { "type": "taxiway" },
+    "filter": ["==", "type", "taxiway"],
     "style": {
       "line-color": "#ddd",
       "line-width": "@taxiway_width"
@@ -785,7 +785,7 @@
     "id": "tunnel_motorway_link_casing",
     "source": "mapbox",
     "source-layer": "tunnel",
-    "filter": { "class": "motorway_link" },
+    "filter": ["==", "class", "motorway_link"],
     "style": {
       "line-color": "@case",
       "line-dasharray": [6, 6],
@@ -801,7 +801,7 @@
     "id": "tunnel_service_casing",
     "source": "mapbox",
     "source-layer": "tunnel",
-    "filter": { "class": "service" },
+    "filter": ["==", "class", "service"],
     "style": {
       "line-color": "#000",
       "line-opacity": 0.04,
@@ -819,7 +819,7 @@
     "id": "tunnel_main_casing",
     "source": "mapbox",
     "source-layer": "tunnel",
-    "filter": { "class": "main" },
+    "filter": ["==", "class", "main"],
     "style": {
       "line-color": "@case",
       "line-dasharray": [6, 6],
@@ -841,7 +841,7 @@
     "id": "tunnel_street_casing",
     "source": "mapbox",
     "source-layer": "tunnel",
-    "filter": { "class": ["street", "street_limited"] },
+    "filter": ["in", "class", "street", "street_limited"],
     "style": {
       "line-color": "#d9d5c6",
       "line-width": "@street_casing_width",
@@ -907,7 +907,7 @@
     "id": "tunnel_motorway_casing",
     "source": "mapbox",
     "source-layer": "tunnel",
-    "filter": { "class": "motorway" },
+    "filter": ["==", "class", "motorway"],
     "style": {
       "line-color": "@case",
       "line-dasharray": [6, 6],
@@ -946,7 +946,7 @@
     "id": "road_path_case",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": "path" },
+    "filter": ["==", "class", "path"],
     "style": {
       "line-color": "#ffd",
       "line-opacity": 0.4,
@@ -963,7 +963,7 @@
     "id": "road_path_footway",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "type": "footway" },
+    "filter": ["==", "type", "footway"],
     "style": {
       "line-color": "#bba",
       "line-dasharray": [10, 4],
@@ -979,7 +979,7 @@
     "id": "road_path_path",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "type": "path" },
+    "filter": ["==", "type", "path"],
     "style": {
       "line-color": "#987",
       "line-dasharray": [10, 4],
@@ -1001,7 +1001,7 @@
     "id": "road_path_cycleway",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "type": "cycleway" },
+    "filter": ["==", "type", "cycleway"],
     "style": {
       "line-color": "#488",
       "line-dasharray": [10, 4],
@@ -1017,7 +1017,7 @@
     "id": "road_path_mtb",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "type": "mtb" },
+    "filter": ["==", "type", "mtb"],
     "style": {
       "line-color": "#488",
       "line-dasharray": [12, 4],
@@ -1033,7 +1033,7 @@
     "id": "road_path_piste",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "type": "piste" },
+    "filter": ["==", "type", "piste"],
     "style": {
       "line-color": "#87b",
       "line-dasharray": [8, 4],
@@ -1049,7 +1049,7 @@
     "id": "road_path_steps",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "type": "steps" },
+    "filter": ["==", "type", "steps"],
     "style": {
       "line-color": "#bba",
       "line-dasharray": [10, 4],
@@ -1066,7 +1066,7 @@
     "id": "road_major_rail",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "class": "major_rail" },
+    "filter": ["==", "class", "major_rail"],
     "style": {
       "line-color": "#c8c4c0",
       "line-width": 0.8
@@ -1093,7 +1093,7 @@
     "id": "road_motorway_link_casing",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": "motorway_link" },
+    "filter": ["==", "class", "motorway_link"],
     "render": {
       "line-join": "round",
       "line-cap": "round"
@@ -1111,7 +1111,7 @@
     "id": "road_service_casing",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": "service" },
+    "filter": ["==", "class", "service"],
     "render": {
       "line-join": "round",
       "line-cap": "round"
@@ -1131,7 +1131,7 @@
     "id": "road_main_casing",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": "main" },
+    "filter": ["==", "class", "main"],
     "render": {
       "line-join": "round",
       "line-cap": "round"
@@ -1155,7 +1155,7 @@
     "id": "road_street_casing",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": ["street", "street_limited"] },
+    "filter": ["in", "class", "street", "street_limited"],
     "render": {
       "line-join": "round",
       "line-cap": "round"
@@ -1225,7 +1225,7 @@
     "id": "road_motorway_casing",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": { "class": "motorway" },
+    "filter": ["==", "class", "motorway"],
     "render": {
       "line-join": "round",
       "line-cap": "round"
@@ -1279,7 +1279,7 @@
     "id": "bridge_motorway_link_casing",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "class": "motorway_link" },
+    "filter": ["==", "class", "motorway_link"],
     "style": {
       "line-color": "@case",
       "line-width": "@motorway_link_casing_width"
@@ -1293,7 +1293,7 @@
     "id": "bridge_service_casing",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "class": "service" },
+    "filter": ["==", "class", "service"],
     "style": {
       "line-color": "#000",
       "line-opacity": 0.04,
@@ -1309,7 +1309,7 @@
     "id": "bridge_main_casing",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "class": "main" },
+    "filter": ["==", "class", "main"],
     "style": {
       "line-color": "@case",
       "line-width": "@main_casing_width",
@@ -1329,7 +1329,7 @@
     "id": "bridge_street_casing",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "class": ["street", "street_limited"] },
+    "filter": ["in", "class", "street", "street_limited"],
     "style": {
       "line-color": "#d9d5c6",
       "line-width": "@street_casing_width",
@@ -1395,7 +1395,7 @@
     "id": "bridge_motorway_casing",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "class": "motorway" },
+    "filter": ["==", "class", "motorway"],
     "style": {
       "line-color": "@case",
       "line-width": "@motorway_casing_width",
@@ -1432,7 +1432,7 @@
     "id": "bridge_aerialway_casing",
     "source": "mapbox",
     "source-layer": "bridge",
-    "filter": { "class": "aerialway" },
+    "filter": ["==", "class", "aerialway"],
     "style": {
       "line-color": "white",
       "line-opacity": 0.5,
@@ -1474,7 +1474,7 @@
     "id": "admin_l3",
     "source": "mapbox",
     "source-layer": "admin",
-    "filter": { "admin_level": [3, 4, 5] },
+    "filter": ["in", "admin_level", 3, 4, 5],
     "render": {
       "line-join": "round"
     },
@@ -1499,7 +1499,7 @@
     "id": "admin_l2",
     "source": "mapbox",
     "source-layer": "admin",
-    "filter": { "admin_level": 2 },
+    "filter": ["==", "admin_level", 2],
     "render": {
       "line-join": "round",
       "line-cap": "round"
@@ -1517,7 +1517,7 @@
     "id": "admin_maritime_cover",
     "source": "mapbox",
     "source-layer": "admin",
-    "filter": { "maritime": 1 },
+    "filter": ["==", "maritime", 1],
     "render": {
       "line-join": "round",
       "line-cap": "round"
@@ -1568,7 +1568,7 @@
     "id": "country_label",
     "source": "mapbox",
     "source-layer": "country_label",
-    "filter": { "$type": "Point" },
+    "filter": ["==", "$type", "Point"],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
@@ -1596,7 +1596,7 @@
     "id": "marine_label_line_1",
     "source": "mapbox",
     "source-layer": "marine_label",
-    "filter": { "$type": "LineString", "labelrank": 1 },
+    "filter": ["all", ["==", "$type", "LineString"], ["==", "labelrank", 1]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -1624,7 +1624,7 @@
     "id": "marine_label_line_2",
     "source": "mapbox",
     "source-layer": "marine_label",
-    "filter": { "$type": "LineString", "labelrank": 2 },
+    "filter": ["all", ["==", "$type", "LineString"], ["==", "labelrank", 2]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -1651,7 +1651,7 @@
     "id": "marine_label_line_3",
     "source": "mapbox",
     "source-layer": "marine_label",
-    "filter": { "$type": "LineString", "labelrank": 3 },
+    "filter": ["all", ["==", "$type", "LineString"], ["==", "labelrank", 3]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -1678,7 +1678,7 @@
     "id": "marine_label_line_other",
     "source": "mapbox",
     "source-layer": "marine_label",
-    "filter": { "$type": "LineString", "labelrank": [4, 5, 6] },
+    "filter": ["all", ["==", "$type", "LineString"], ["in", "labelrank", 4, 5, 6]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -1705,7 +1705,7 @@
     "id": "marine_label_point_1",
     "source": "mapbox",
     "source-layer": "marine_label",
-    "filter": { "$type": "Point", "labelrank": 1 },
+    "filter": ["all", ["==", "$type", "Point"], ["==", "labelrank", 1]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -1733,7 +1733,7 @@
     "id": "marine_label_point_2",
     "source": "mapbox",
     "source-layer": "marine_label",
-    "filter": { "$type": "Point", "labelrank": 2 },
+    "filter": ["all", ["==", "$type", "Point"], ["==", "labelrank", 2]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -1761,7 +1761,7 @@
     "id": "marine_label_point_3",
     "source": "mapbox",
     "source-layer": "marine_label",
-    "filter": { "$type": "Point", "labelrank": 3 },
+    "filter": ["all", ["==", "$type", "Point"], ["==", "labelrank", 3]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -1789,7 +1789,7 @@
     "id": "marine_label_point_other",
     "source": "mapbox",
     "source-layer": "marine_label",
-    "filter": { "$type": "Point", "labelrank": [4, 5, 6] },
+    "filter": ["all", ["==", "$type", "Point"], ["in", "labelrank", 4, 5, 6]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -1817,7 +1817,7 @@
     "id": "state_label",
     "source": "mapbox",
     "source-layer": "state_label",
-    "filter": { "$type": "Point" },
+    "filter": ["==", "$type", "Point"],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
@@ -1849,7 +1849,7 @@
     "id": "place_label_city",
     "source": "mapbox",
     "source-layer": "place_label",
-    "filter": { "type": "city", "$type": "Point" },
+    "filter": ["all", ["==", "type", "city"], ["==", "$type", "Point"]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
@@ -1881,7 +1881,7 @@
     "id": "place_label_town",
     "source": "mapbox",
     "source-layer": "place_label",
-    "filter": { "type": "town", "$type": "Point" },
+    "filter": ["all", ["==", "type", "town"], ["==", "$type", "Point"]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
@@ -1913,7 +1913,7 @@
     "id": "place_label_village",
     "source": "mapbox",
     "source-layer": "place_label",
-    "filter": { "type": "village", "$type": "Point" },
+    "filter": ["all", ["==", "type", "village"], ["==", "$type", "Point"]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
@@ -1945,7 +1945,7 @@
     "id": "place_label_other",
     "source": "mapbox",
     "source-layer": "place_label",
-    "filter": { "type": ["hamlet", "suburb", "neighbourhood"], "$type": "Point" },
+    "filter": ["all", ["in", "type", "hamlet", "suburb", "neighbourhood"], ["==", "$type", "Point"]],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
@@ -1974,7 +1974,7 @@
     "id": "road_label_1",
     "source": "mapbox",
     "source-layer": "road_label",
-    "filter": { "class": ["motorway", "main"], "$type": "LineString" },
+    "filter": ["all", ["in", "class", "motorway", "main"], ["==", "$type", "LineString"]],
     "render": {
       "text-field": "{name_en}",
       "text-padding": 2,
@@ -2004,7 +2004,7 @@
     "id": "road_label_2",
     "source": "mapbox",
     "source-layer": "road_label",
-    "filter": { "class": ["street", "street_limited"], "$type": "LineString" },
+    "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"]],
     "render": {
       "text-field": "{name_en}",
       "text-padding": 2,
@@ -2034,7 +2034,7 @@
     "id": "road_label_3",
     "source": "mapbox",
     "source-layer": "road_label",
-    "filter": { "class": ["service", "driveway", "path"], "$type": "LineString" },
+    "filter": ["all", ["in", "class", "service", "driveway", "path"], ["==", "$type", "LineString"]],
     "render": {
       "text-field": "{name_en}",
       "text-padding": 2,
@@ -2064,7 +2064,7 @@
     "id": "contour_label",
     "source": "mapbox",
     "source-layer": "contour",
-    "filter": { "index": [5, 10], "$type": "LineString" },
+    "filter": ["all", ["in", "index", 5, 10], ["==", "$type", "LineString"]],
     "render": {
       "text-field": "{ele} m",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
@@ -2089,7 +2089,7 @@
     "id": "water_label",
     "source": "mapbox",
     "source-layer": "water_label",
-    "filter": { "$type": "Point" },
+    "filter": ["==", "$type", "Point"],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -2109,7 +2109,7 @@
     "id": "waterway_label",
     "source": "mapbox",
     "source-layer": "waterway_label",
-    "filter": { "$type": "LineString" },
+    "filter": ["==", "$type", "LineString"],
     "render": {
       "text-field": "{name_en}",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
@@ -2131,7 +2131,7 @@
     "id": "poi_label_1-2",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "filter": { "scalerank": [1, 2], "$type": "Point" },
+    "filter": ["all", ["in", "scalerank", 1, 2], ["==", "$type", "Point"]],
     "render": {
       "icon-image": "{maki}-12",
       "text-field": "{name_en}",
@@ -2163,7 +2163,7 @@
     "id": "poi_label_3",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "filter": { "scalerank": 3, "$type": "Point" },
+    "filter": ["all", ["==", "scalerank", 3], ["==", "$type", "Point"]],
     "render": {
       "icon-image": "{maki}-12",
       "text-field": "{name_en}",
@@ -2204,7 +2204,7 @@
     "id": "poi_label_4",
     "source": "mapbox",
     "source-layer": "poi_label",
-    "filter": { "scalerank": 4, "$type": "Point" },
+    "filter": ["all", ["==", "scalerank", 4], ["==", "$type", "Point"]],
     "render": {
       "icon-image": "{maki}-12",
       "text-field": "{name_en}",
