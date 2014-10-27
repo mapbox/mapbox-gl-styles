@@ -261,7 +261,7 @@
     "id": "aeroway_fill",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "min-zoom": 11,
+    "minzoom": 11,
     "filter": ["==", "$type", "Polygon"],
     "style": {
       "fill-color": "@aeroway",
@@ -272,7 +272,7 @@
     "id": "aeroway_runway",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "min-zoom": 11,
+    "minzoom": 11,
     "filter": ["all", ["==", "$type", "LineString"], ["==", "type", "runway"]],
     "style": {
       "line-color": "@aeroway",
@@ -286,7 +286,7 @@
     "id": "aeroway_taxiway",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "min-zoom": 11,
+    "minzoom": 11,
     "filter": ["all", ["==", "$type", "LineString"], ["==", "type", "taxiway"]],
     "style": {
       "line-color": "@aeroway",
@@ -462,7 +462,7 @@
     "id": "road_motorway_link_casing",
     "source": "mapbox",
     "source-layer": "road",
-    "min-zoom": 12,
+    "minzoom": 12,
     "filter": ["==", "class", "motorway_link"],
     "render": {
       "line-cap": "round",
@@ -520,7 +520,7 @@
     "id": "road_motorway_casing",
     "source": "mapbox",
     "source-layer": "road",
-    "min-zoom": 5,
+    "minzoom": 5,
     "filter": ["==", "class", "motorway"],
     "render": {
       "line-cap": "round",
@@ -1225,7 +1225,7 @@
       "text-halo-width": 1,
       "text-halo-blur": 0.5
     },
-    "min-zoom": 13,
+    "minzoom": 13,
     "type": "symbol"
   }, {
     "id": "poi_label_2",
@@ -1249,7 +1249,7 @@
       "text-halo-width": 1,
       "text-halo-blur": 0.5
     },
-    "min-zoom": 14,
+    "minzoom": 14,
     "type": "symbol"
   }, {
     "id": "poi_label_3",
@@ -1273,7 +1273,7 @@
       "text-halo-width": 1,
       "text-halo-blur": 0.5
     },
-    "min-zoom": 15,
+    "minzoom": 15,
     "type": "symbol"
   }, {
     "id": "poi_label_4",
@@ -1297,7 +1297,7 @@
       "text-halo-width": 1,
       "text-halo-blur": 0.5
     },
-    "min-zoom": 16,
+    "minzoom": 16,
     "type": "symbol"
   }, {
     "id": "poi_label_other",
@@ -1321,7 +1321,7 @@
       "text-halo-width": 1,
       "text-halo-blur": 0.5
     },
-    "min-zoom": 17,
+    "minzoom": 17,
     "type": "symbol"
   }, {
     "id": "water_label",

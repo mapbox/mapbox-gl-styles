@@ -212,7 +212,7 @@
     "source": "mapbox",
     "source-layer": "country_label",
     "filter": ["==", "$type", "Point"],
-    "max-zoom": 12,
+    "maxzoom": 12,
     "type": "symbol",
     "render": {
       "text-field": "@name",
@@ -234,7 +234,7 @@
     "source": "mapbox",
     "source-layer": "place_label",
     "filter": ["all", ["==", "$type", "Point"], ["==", "type", "city"]],
-    "max-zoom": 16,
+    "maxzoom": 16,
     "type": "symbol",
     "render": {
       "text-field": "@name",
@@ -255,7 +255,7 @@
     "source": "mapbox",
     "source-layer": "place_label",
     "filter": ["all", ["==", "$type", "Point"], ["in", "type", "town", "village", "hamlet", "suburb", "neighbourhood"]],
-    "min-zoom": 8,
+    "minzoom": 8,
     "type": "symbol",
     "render": {
       "text-field": "@name",
@@ -299,7 +299,7 @@
     "source": "mapbox",
     "source-layer": "poi_label",
     "filter": ["all", ["==", "scalerank", 1], ["==", "localrank", 1], ["==", "$type", "Point"]],
-    "min-zoom": 5,
+    "minzoom": 5,
     "type": "symbol",
     "render": {
       "icon-image": "{maki}-12",
