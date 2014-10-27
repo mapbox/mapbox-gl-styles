@@ -6,11 +6,11 @@
   "bin": {},
   "scripts": {
     "test": "gl-style-validate styles/*",
-    "migrate": "for style in styles/*-v5.json; do gl-style-migrate $style | sponge $style; done"
+    "migrate": "for style in styles/*-v6.json; do gl-style-migrate $style | sponge $style; done"
   },
   "devDependencies": {
-    "mapbox-gl-style-lint": "git+https://github.com/mapbox/mapbox-gl-style-lint.git#2d3a93e2a8286253bccceeeb064a332b90d1ea68",
-    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#039c38751f340eebdd6342b24b25e9908c89f9fe"
+    "mapbox-gl-style-lint": "git+https://github.com/mapbox/mapbox-gl-style-lint.git#9bcd041d5b326c71dd29744e44f5a6694de2bc75",
+    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#6412b447f07cc14ab881697e565cce9e4b9878c9"
   },
   "license": "ISC"
 }

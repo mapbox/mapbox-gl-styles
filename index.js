@@ -6,4 +6,4 @@
     'outdoors',
     'pencil',
     'satellite'
-].forEach(function(style) { exports[style] = require('./styles/' + style + '-v5.json'); });
+].forEach(function(style) { exports[style] = require('./styles/' + style + '-v6.json'); });
