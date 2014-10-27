@@ -576,8 +576,7 @@
     "style": {
       "line-color": "@motorway",
       "line-width": "@motorway_width"
-    },
-    "type": "line"
+    }
   }, {
     "id": "road_major_rail",
     "source": "mapbox",

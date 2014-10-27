@@ -525,7 +525,7 @@
       "id": "hillshade_full_highlight",
       "source": "mapbox",
       "source-layer": "hillshade",
-      "filter": { "class": "full_highlight" },
+      "filter": ["==", "class", "full_highlight"],
       "style": {
         "fill-color": "#fffff3",
         "fill-antialias": false,
@@ -545,7 +545,7 @@
       "id": "hillshade_medium_highlight",
       "source": "mapbox",
       "source-layer": "hillshade",
-      "filter": { "class": "medium_highlight" },
+      "filter": ["==", "class", "medium_highlight"],
       "style": {
         "fill-color": "#ffd",
         "fill-antialias": false,
@@ -565,7 +565,7 @@
       "id": "hillshade_medium_shadow",
       "source": "mapbox",
       "source-layer": "hillshade",
-      "filter": { "class": "medium_shadow" },
+      "filter": ["==", "class", "medium_shadow"],
       "style": {
         "fill-color": "#206",
         "fill-antialias": false,
@@ -585,7 +585,7 @@
       "id": "hillshade_full_shadow",
       "source": "mapbox",
       "source-layer": "hillshade",
-      "filter": { "class": "full_shadow" },
+      "filter": ["==", "class", "full_shadow"],
       "style": {
         "fill-color": "#103",
         "fill-antialias": false,
@@ -1263,19 +1263,6 @@
       }
     }
   }, {
-    "id": "road_major_rail_hatching",
-    "ref": "road_major_rail",
-    "style": {
-      "line-color": "#c8c4c0",
-      "line-dasharray": [2, 31],
-      "line-width": 5
-    },
-    "style.night": {
-      "line-color": "#c8c4c0",
-      "line-dasharray": [2, 31],
-      "line-width": 5
-    }
-  }, {
     "id": "bridge_motorway_link_casing",
     "source": "mapbox",
     "source-layer": "bridge",
@@ -1458,19 +1445,6 @@
       "line-width": "@aerialway_width"
     }
   }, {
-    "id": "road_major_rail_hatching",
-    "ref": "road_major_rail",
-    "style": {
-      "line-color": "#c8c4c0",
-      "line-dasharray": [2, 31],
-      "line-width": 5
-    },
-    "style.night": {
-      "line-color": "#c8c4c0",
-      "line-dasharray": [2, 31],
-      "line-width": 5
-    }
-  }, {
     "id": "admin_l3",
     "source": "mapbox",
     "source-layer": "admin",
@@ -1550,9 +1524,6 @@
     "id": "country_label_line",
     "source": "mapbox",
     "source-layer": "country_label_line",
-    "render": {
-      "text-max-width": 5
-    },
     "style": {
       "line-color": "@country_text",
       "line-width": 0.5,
