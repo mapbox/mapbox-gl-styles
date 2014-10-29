@@ -9,14 +9,14 @@
   },
   "layers": [{
     "id": "background",
-    "style": {
+    "type": "background",
+    "paint": {
       "background-color": "rgb(4,7,14)"
-    },
-    "type": "background"
+    }
   }, {
     "id": "satellite",
+    "type": "raster",
     "source": "mapbox",
-    "source-layer": "mapbox_satellite_full",
-    "type": "raster"
+    "source-layer": "mapbox_satellite_full"
   }]
 }
