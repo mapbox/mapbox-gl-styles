@@ -305,11 +305,11 @@
       "icon-image": "{maki}-12",
       "icon-max-size": 1,
       "text-offset": [0, 0.5],
-      "text-vertical-align": "top",
       "text-field": "@name",
       "text-font": "@sans_md",
       "text-max-size": 11,
-      "text-max-width": 8
+      "text-max-width": 8,
+      "text-anchor": "top"
     },
     "paint": {
       "icon-size": 1,

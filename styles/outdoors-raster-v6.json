@@ -2115,7 +2115,7 @@
       "text-max-size": 12,
       "text-max-width": 10,
       "text-offset": [0, 0.6],
-      "text-vertical-align": "top"
+      "text-anchor": "top"
     },
     "paint": {
       "text-color": "#444",
@@ -2147,7 +2147,7 @@
       "text-max-size": 11,
       "text-max-width": 10,
       "text-offset": [0, 0.6],
-      "text-vertical-align": "top"
+      "text-anchor": "top"
     },
     "paint": {
       "icon-opacity": {
@@ -2188,7 +2188,7 @@
       "text-max-size": 10,
       "text-max-width": 10,
       "text-offset": [0, 0.6],
-      "text-vertical-align": "top"
+      "text-anchor": "top"
     },
     "paint": {
       "icon-opacity": {
