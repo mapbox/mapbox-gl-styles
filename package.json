@@ -9,8 +9,8 @@
     "migrate": "for style in styles/*-v6.json; do gl-style-migrate $style | sponge $style; done"
   },
   "devDependencies": {
-    "mapbox-gl-style-lint": "git+https://github.com/mapbox/mapbox-gl-style-lint.git#f4fa1f24b79a8929cc7196fab98838f34f03d5e7",
-    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec.git#eddc802ce273186a8629723fa002ece1a167c8cd"
+    "mapbox-gl-style-lint": "^6.0.0",
+    "mapbox-gl-style-spec": "^6.0.0"
   },
   "license": "ISC"
 }
