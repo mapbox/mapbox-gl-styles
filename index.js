@@ -2,7 +2,6 @@
     'basic',
     'bright',
     'empty',
-    'outdoors-raster',
     'outdoors',
     'pencil',
     'satellite'
