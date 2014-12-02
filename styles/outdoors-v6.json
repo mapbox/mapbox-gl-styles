@@ -61,22 +61,24 @@
       "stops": [[12, 0.25], [13, 0.5], [15, 1.5], [17, 2]]
     },
     "@motorway_width": {
-      "stops": [[4, 0], [5, 0.5], [7, 0.8], [9, 1], [10, 1.2], [11, 2], [12, 3], [13, 4], [14, 6], [15, 9], [16, 12], [17, 14]]
+      "base": 1.25,
+      "stops": [[9, 1], [20, 30]]
     },
     "@motorway_casing_width": {
-      "stops": [[6.5, 0.6], [7, 0.8], [9, 2.8], [10, 3], [11, 4], [12, 5], [13, 6.5], [14, 9], [15, 12], [16, 15], [17, 17]]
+      "stops": [[9, 0.9], [11, 1], [20, 1.5]]
     },
     "@motorway_link_width": {
-      "stops": [[11, 1.2], [13, 2], [15, 3], [17, 4]]
+      "stops": [[9, 1], [20, 6]]
     },
     "@motorway_link_casing_width": {
-      "stops": [[11, 2.8], [13, 3.5], [15, 5], [17, 6]]
+      "stops": [[11, 0.8], [16, 1]]
     },
     "@main_width": {
-      "stops": [[4, 1], [11, 1], [12, 1.5], [13, 2], [14, 3], [15, 6], [16, 10], [17, 12]]
+      "base": 1.3,
+      "stops": [[11, 1], [20, 28]]
     },
     "@main_casing_width": {
-      "stops": [[8, 2.9], [11, 2.9], [12, 3.5], [13, 4], [14, 5.5], [15, 9], [16, 12], [17, 14]]
+      "stops": [[11, 1], [20, 3]]
     },
     "@street_width": {
       "stops": [[13.5, 0], [14, 1.5], [15, 3], [16, 8]]
@@ -600,7 +602,7 @@
     }],
     "layout": {
       "raster-size": 512,
-      "raster-blur": 0.1
+      "raster-blur": 0
     }
   }, {
     "id": "contour_line_loud",
@@ -790,12 +792,14 @@
     "paint": {
       "line-color": "@case",
       "line-dasharray": [6, 6],
-      "line-width": "@motorway_link_casing_width"
+      "line-width": "@motorway_link_casing_width",
+      "line-gap-width":"@motorway_link_width"
     },
     "paint.night": {
       "line-color": "@case_night",
       "line-dasharray": [6, 6],
-      "line-width": "@motorway_link_casing_width"
+      "line-width": "@motorway_link_casing_width",
+      "line-gap-width":"@motorway_link_width"
     }
   }, {
     "id": "tunnel_service_casing",
@@ -825,6 +829,7 @@
       "line-color": "@case",
       "line-dasharray": [6, 6],
       "line-width": "@main_casing_width",
+      "line-gap-width": "@main_width",
       "line-opacity": {
         "stops": [[8, 0], [9, 1]]
       }
@@ -833,6 +838,7 @@
       "line-color": "@case_night",
       "line-dasharray": [6, 6],
       "line-width": "@main_casing_width",
+      "line-gap-width": "@main_width",
       "line-opacity": {
         "stops": [[8, 0], [9, 1]]
       }
@@ -913,6 +919,7 @@
       "line-color": "@case",
       "line-dasharray": [6, 6],
       "line-width": "@motorway_casing_width",
+      "line-gap-width": "@motorway_width",
       "line-opacity": {
         "stops": [[8.5, 0], [9, 1]]
       }
@@ -921,6 +928,7 @@
       "line-color": "@case_night",
       "line-dasharray": [6, 6],
       "line-width": "@motorway_casing_width",
+      "line-gap-width": "@motorway_width",
       "line-opacity": {
         "stops": [[8.5, 0], [9, 1]]
       }
@@ -1101,11 +1109,13 @@
     },
     "paint": {
       "line-color": "@case",
-      "line-width": "@motorway_link_casing_width"
+      "line-width": "@motorway_link_casing_width",
+      "line-gap-width":"@motorway_link_width"
     },
     "paint.night": {
       "line-color": "@case_night",
-      "line-width": "@motorway_link_casing_width"
+      "line-width": "@motorway_link_casing_width",
+      "line-gap-width":"@motorway_link_width"
     }
   }, {
     "id": "road_service_casing",
@@ -1140,6 +1150,7 @@
     "paint": {
       "line-color": "@case",
       "line-width": "@main_casing_width",
+      "line-gap-width": "@main_width",
       "line-opacity": {
         "stops": [[8, 0], [9, 1]]
       }
@@ -1147,6 +1158,7 @@
     "paint.night": {
       "line-color": "@case_night",
       "line-width": "@main_casing_width",
+      "line-gap-width": "@main_width",
       "line-opacity": {
         "stops": [[8, 0], [9, 1]]
       }
@@ -1234,6 +1246,7 @@
     "paint": {
       "line-color": "@case",
       "line-width": "@motorway_casing_width",
+      "line-gap-width": "@motorway_width",
       "line-opacity": {
         "stops": [[8.5, 0], [9, 1]]
       }
@@ -1241,6 +1254,7 @@
     "paint.night": {
       "line-color": "@case_night",
       "line-width": "@motorway_casing_width",
+      "line-gap-width": "@motorway_width",
       "line-opacity": {
         "stops": [[8.5, 0], [9, 1]]
       }
@@ -1270,11 +1284,13 @@
     "filter": ["==", "class", "motorway_link"],
     "paint": {
       "line-color": "@case",
-      "line-width": "@motorway_link_casing_width"
+      "line-width": "@motorway_link_casing_width",
+      "line-gap-width":"@motorway_link_width"
     },
     "paint.night": {
       "line-color": "@case_night",
-      "line-width": "@motorway_link_casing_width"
+      "line-width": "@motorway_link_casing_width",
+      "line-gap-width":"@motorway_link_width"
     }
   }, {
     "id": "bridge_service_casing",
@@ -1301,6 +1317,7 @@
     "paint": {
       "line-color": "@case",
       "line-width": "@main_casing_width",
+      "line-gap-width": "@main_width",
       "line-opacity": {
         "stops": [[8, 0], [9, 1]]
       }
@@ -1308,6 +1325,7 @@
     "paint.night": {
       "line-color": "@case_night",
       "line-width": "@main_casing_width",
+      "line-gap-width": "@main_width",
       "line-opacity": {
         "stops": [[8, 0], [9, 1]]
       }
@@ -1387,6 +1405,7 @@
     "paint": {
       "line-color": "@case",
       "line-width": "@motorway_casing_width",
+      "line-gap-width": "@motorway_width",
       "line-opacity": {
         "stops": [[8.5, 0], [9, 1]]
       }
@@ -1394,6 +1413,7 @@
     "paint.night": {
       "line-color": "@case_night",
       "line-width": "@motorway_casing_width",
+      "line-gap-width": "@motorway_width",
       "line-opacity": {
         "stops": [[8.5, 0], [9, 1]]
       }
