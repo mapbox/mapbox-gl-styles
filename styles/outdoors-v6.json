@@ -58,10 +58,10 @@
     "@street_night": "#0186ac",
     "@contour_night": "#ffff80",
     "@river_canal_width": {
-      "stops": [[10, 0.5], [11, 1], [13, 2], [15, 3]]
+      "stops": [[10, 0.5], [20, 6]]
     },
     "@stream_width": {
-      "stops": [[12, 0.25], [13, 0.5], [15, 1.5], [17, 2]]
+      "stops": [[13, 0.75], [20, 4]]
     },
     "@motorway_width": {
       "base": 1.25,
@@ -100,22 +100,25 @@
       "base": 1.3,
       "stops": [[15, 1.5], [20, 2]]
     },
-    "@path_casing_width": {
+    "@path_bg_width": {
       "base": 1.3,
       "stops": [[15, 4],[20, 5]]
     },
     "@tunnel_dasharray": [6, 2],
     "@aerialway_width": {
-      "stops": [[12.5, 0.8], [13, 1.4], [14, 1.6], [15, 2], [16, 2.4], [17, 3]]
+      "base": 1.2,
+      "stops": [[12, 0.8], [13, 1.4], [20, 5]]
     },
     "@aerialway_casing_width": {
-      "stops": [[12.5, 2], [13, 2.5], [14, 3], [15, 3.5], [16, 4], [21, 5]]
+      "stops": [[12, 0.6], [17, 1]]
     },
     "@runway_width": {
-      "stops": [[9, 1], [10, 2], [11, 3], [12, 5], [13, 7], [14, 11], [15, 15], [16, 19], [17, 23]]
+      "base": 1.15,
+      "stops": [[10, 2], [20, 32]]
     },
     "@taxiway_width": {
-      "stops": [[9, 0.2], [11, 0.2], [12, 1], [13, 1.5], [14, 2], [15, 3], [16, 4], [17, 5]]
+      "base": 1.15,
+      "stops": [[11, 0.2], [20, 8]]
     },
     "@admin_l2_width": {
       "stops": [[2, 0.6], [20, 8]]
@@ -133,13 +136,15 @@
       "stops": [[14, 10], [15, 12], [17, 14]]
     },
     "@fence_width": {
-      "stops": [[16, 0.6], [18, 1]]
+      "stops": [[16, 0.6], [20, 1.4]]
     },
     "@hedge_width": {
-      "stops": [[15, 0.6], [16, 1.2], [18, 1.6]]
+      "base": 0.9,
+      "stops": [[15, 0.6], [20, 2]]
     },
     "@barrier_line_land_width": {
-      "stops": [[13, 0.4], [14, 0.75], [15, 1.5], [16, 3], [17, 6], [18, 12], [19, 24], [20, 48]]
+      "base": 1.9,
+      "stops": [[13, 0.4], [20, 48]]
     },
     "@country_label_size": {
       "stops": [[0, 14], [11, 24]]
@@ -679,6 +684,7 @@
     "source": "mapbox",
     "source-layer": "barrier_line",
     "filter": ["==", "class", "fence"],
+    "minzoom": 16,
     "paint": {
       "line-color": "#aeada3",
       "line-width": "@fence_width"
@@ -693,6 +699,7 @@
     "source": "mapbox",
     "source-layer": "barrier_line",
     "filter": ["==", "class", "hedge"],
+    "minzoom": 15,
     "paint": {
       "line-color": "#8de99b",
       "line-width": "@hedge_width"
@@ -700,46 +707,6 @@
     "paint.night": {
       "line-color": "#2e7a57",
       "line-width": "@hedge_width"
-    }
-  }, {
-    "id": "barrier_line_land",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "barrier_line",
-    "filter": ["==", "class", "land"],
-    "paint": {
-      "line-color": "@land",
-      "line-width": "@barrier_line_land_width"
-    },
-    "paint.night": {
-      "line-color": "@land_night",
-      "line-width": "@barrier_line_land_width"
-    }
-  }, {
-    "id": "barrier_line_land_fill",
-    "type": "fill",
-    "source": "mapbox",
-    "source-layer": "barrier_line",
-    "filter": ["==", "class", "land"],
-    "paint": {
-      "fill-color": "@land"
-    },
-    "paint.night": {
-      "fill-color": "@land_night"
-    }
-  }, {
-    "id": "barrier_line_cliff",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "barrier_line",
-    "filter": ["==", "class", "cliff"],
-    "paint": {
-      "line-color": "#987",
-      "line-width": 4
-    },
-    "paint.night": {
-      "line-color": "#63574b",
-      "line-width": 4
     }
   }, {
     "id": "water",
@@ -755,16 +722,45 @@
       "fill-outline-color": "@water_dark_night"
     }
   }, {
-    "id": "aeroway_fill",
+    "id": "barrier_line_land_fill",
     "type": "fill",
     "source": "mapbox",
-    "source-layer": "aeroway",
+    "source-layer": "barrier_line",
+    "filter": ["all", ["==", "class", "land"], ["==", "$type", "Polygon"]],
     "paint": {
-      "fill-color": "#ddd"
+      "fill-color": "@land"
     },
     "paint.night": {
-      "fill-color": "#367"
+      "fill-color": "@land_night"
     }
+  }, {
+    "id": "barrier_line_land",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "barrier_line",
+    "filter": ["all", ["==", "class", "land"], ["==", "$type", "LineString"]],
+    "paint": {
+      "line-color": "@land",
+      "line-width": "@barrier_line_land_width"
+    },
+    "paint.night": {
+      "line-color": "@land_night",
+      "line-width": "@barrier_line_land_width"
+    }  
+  }, {
+    "id": "barrier_line_cliff",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "barrier_line",
+    "filter": ["==", "class", "cliff"],
+    "paint": {
+      "line-color": "#987",
+      "line-width": 4
+    },
+    "paint.night": {
+      "line-color": "#63574b",
+      "line-width": 4
+    }  
   }, {
     "id": "aeroway_runway",
     "type": "line",
@@ -790,11 +786,23 @@
       "line-width": "@taxiway_width"
     },
     "paint.night": {
-      "line-color": "#367",
-      "line-width": "@taxiway_width"
+      "line-color": "#367"
     }
   }, {
-    "id": "tunnel_path_case",
+    "id": "aeroway_fill",
+    "type": "fill",
+    "source": "mapbox",
+    "source-layer": "aeroway",
+    "filter": ["==", "$type", "Polygon"],
+    "paint": {
+      "fill-color": "#ddd",
+      "fill-opacity": 0.5
+    },
+    "paint.night": {
+      "fill-color": "#367"
+    }  
+  }, {
+    "id": "tunnel_path_bg",
     "type": "line",
     "source": "mapbox",
     "source-layer": "tunnel",
@@ -802,7 +810,7 @@
     "paint": {
       "line-color": "#ffd",
       "line-opacity": 0.4,
-      "line-width": "@path_casing_width"
+      "line-width": "@path_bg_width"
     },
     "paint.night": {
       "line-color": "@land_night",
@@ -810,20 +818,17 @@
     }  
   }, {
     "id": "tunnel_path_all",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "tunnel",
-    "filter": ["==", "class", "path"],
+    "ref": "tunnel_path_bg",
     "paint": {
       "line-color": "#bba",
       "line-opacity": 0.4,
-      "line-dasharray": [3, 1],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     },
     "paint.night": {
       "line-color": "#fff",
       "line-opacity": 0.4,
-      "line-dasharray": [3, 1],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     }  
   }, {
@@ -996,7 +1001,7 @@
       }
     }
   }, {
-    "id": "road_path_case",
+    "id": "road_path_bg",
     "type": "line",
     "source": "mapbox",
     "source-layer": "road",
@@ -1004,50 +1009,56 @@
     "paint": {
       "line-color": "#ffd",
       "line-opacity": 0.4,
-      "line-width": "@path_casing_width"
+      "line-width": "@path_bg_width"
     },
     "paint.night": {
       "line-color": "@land_night",
       "line-opacity": 0.2
     }
   }, {
-    "id": "road_path_footway",
+    "id": "road_path_bg_piste",
+    "ref": "road_path_piste",
+    "paint": {
+      "line-color": "#cce",
+      "line-opacity": 0.4,
+      "line-width": "@path_bg_width"
+    },
+    "paint.night": {
+      "line-color": "@land_night",
+      "line-opacity": 0.2
+    }  
+  }, {
+    "id": "road_path_walk",
     "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": ["all", ["==", "class", "path"], ["==", "type", "footway"]],
+    "filter": ["in", "type", "footway", "path", "other"],
     "paint": {
       "line-color": "#bba",
-      "line-dasharray": [3, 1],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     },
     "paint.night": {
       "line-color": "#fff",
-      "line-dasharray": [3, 1],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     }
   }, {
-    "id": "road_path_path",
+    "id": "road_path_hike",
     "type": "line",
     "source": "mapbox",
     "source-layer": "road",
-    "filter": ["==", "type", "path"],
+    "filter": ["in", "type", "hiking", "trail"],
     "paint": {
-      "line-color": "#987",
+      "line-color": "#c97",
       "line-dasharray": [6, 2],
-      "line-opacity": 0.8,
-      "line-width": {
-        "stops": [[13, 0.8], [14, 0.9], [15, 1.2]]
-      }
+      "line-width": "@path_width"
     },
     "paint.night": {
       "line-color": "#fff",
       "line-dasharray": [6, 2],
-      "line-opacity": 0.8,
-      "line-width": {
-        "stops": [[13, 0.8], [14, 0.9], [15, 1.2]]
-      }
-    }
+      "line-width": "@path_width"
+    }  
   }, {
     "id": "road_path_cycleway",
     "type": "line",
@@ -1056,12 +1067,12 @@
     "filter": ["==", "type", "cycleway"],
     "paint": {
       "line-color": "#488",
-      "line-dasharray": [3, 1],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     },
     "paint.night": {
       "line-color": "#94e6ff",
-      "line-dasharray": [3, 1],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     }
   }, {
@@ -1088,12 +1099,12 @@
     "filter": ["==", "type", "piste"],
     "paint": {
       "line-color": "#87b",
-      "line-dasharray": [4, 2],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     },
     "paint.night": {
       "line-color": "#715dae",
-      "line-dasharray": [4, 2],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     }
   }, {
@@ -1105,13 +1116,12 @@
     "paint": {
       "line-color": "#bba",
       "line-dasharray": [3, 1],
-      "line-width": 4
+      "line-width": "@path_bg_width"
     },
     "paint.night": {
-      "line-color": "#016684",
+      "line-color": "#fff",
       "line-dasharray": [3, 1],
-      "line-opacity": 0.3,
-      "line-width": 6
+      "line-width": "@path_bg_width"
     }
   }, {
     "id": "road_major_rail",
@@ -1322,32 +1332,29 @@
       }
     }
   }, {
-    "id": "bridge_path_case",
+    "id": "bridge_path_bg",
     "type": "line",
     "source": "mapbox",
     "source-layer": "bridge",
     "filter": ["==", "class", "path"],
     "paint": {
       "line-color": "#ffd",
-      "line-width": "@path_casing_width"
+      "line-width": "@path_bg_width"
     },
     "paint.night": {
       "line-color": "@land_night"
     }   
   }, {
     "id": "bridge_path_all",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "bridge",
-    "filter": ["==", "class", "path"],
+    "ref": "bridge_path_bg",
     "paint": {
       "line-color": "#bba",
-      "line-dasharray": [3, 1],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     },
     "paint.night": {
       "line-color": "#fff",
-      "line-dasharray": [3, 1],
+      "line-dasharray": [4, 1],
       "line-width": "@path_width"
     }     
   }, {
@@ -1520,24 +1527,24 @@
     "paint": {
       "line-color": "white",
       "line-opacity": 0.5,
-      "line-width": "@aerialway_casing_width"
+      "line-width": "@aerialway_casing_width",
+      "line-gap-width": "@aerialway_width"
     },
     "paint.night": {
       "line-color": "white",
       "line-opacity": 0.5,
-      "line-width": "@aerialway_casing_width"
+      "line-width": "@aerialway_casing_width",
+      "line-gap-width": "@aerialway_width"
     }
   }, {
     "id": "bridge_aerialway",
     "ref": "bridge_aerialway_casing",
     "paint": {
       "line-color": "#876",
-      "line-opacity": 0.5,
       "line-width": "@aerialway_width"
     },
     "paint.night": {
       "line-color": "#876",
-      "line-opacity": 0.5,
       "line-width": "@aerialway_width"
     }
   }, {
@@ -2054,17 +2061,15 @@
     "paint": {
       "text-color": "#585042",
       "text-halo-color": "@land",
-      "text-halo-width": {
-        "stops": [[12, 0.55], [13, 0.6], [14, 0.65], [15, 0.7], [16, 0.8], [17, 0.9]]
-      },
+      "text-halo-width": 1.5,
+      "text-halo-blur": 1.5,
       "text-size": "@road_label_1_size"
     },
     "paint.night": {
       "text-color": "@text_night",
       "text-halo-color": "@text2_stroke_night",
-      "text-halo-width": {
-        "stops": [[12, 0.92], [13, 1], [14, 1.08], [15, 1.17], [16, 1.33], [17, 1.5]]
-      },
+      "text-halo-width": 1.5,
+      "text-halo-blur": 1.5,
       "text-size": "@road_label_1_size"
     }
   }, {
@@ -2084,17 +2089,15 @@
     "paint": {
       "text-color": "#585042",
       "text-halo-color": "@land",
-      "text-halo-width": {
-        "stops": [[12, 0.55], [13, 0.6], [15, 0.7], [17, 0.8]]
-      },
+      "text-halo-width": 1.5,
+      "text-halo-blur": 1.5,
       "text-size": "@road_label_2_size"
     },
     "paint.night": {
       "text-color": "@text_night",
       "text-halo-color": "@text2_stroke_night",
-      "text-halo-width": {
-        "stops": [[12, 0.92], [13, 1], [15, 1.17], [17, 1.33]]
-      },
+      "text-halo-width": 1.5,
+      "text-halo-blur": 1.5,
       "text-size": "@road_label_2_size"
     }
   }, {
@@ -2114,17 +2117,15 @@
     "paint": {
       "text-color": "#585042",
       "text-halo-color": "@land",
-      "text-halo-width": {
-        "stops": [[14, 0.5], [15, 0.6], [17, 0.7]]
-      },
+      "text-halo-width": 1.5,
+      "text-halo-blur": 1.5,
       "text-size": "@road_label_3_size"
     },
     "paint.night": {
       "text-color": "@text_night",
       "text-halo-color": "@text2_stroke_night",
-      "text-halo-width": {
-        "stops": [[14, 0.83], [15, 1], [17, 1.17]]
-      },
+      "text-halo-width": 1.5,
+      "text-halo-blur": 1.5,
       "text-size": "@road_label_3_size"
     }
   }, {
