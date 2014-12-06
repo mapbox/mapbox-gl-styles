@@ -165,7 +165,7 @@
   "sources": {
     "mapbox": {
       "type": "vector",
-      "url": "mapbox://mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6-dev",
+      "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6-dev",
       "maxzoom": 15
     }
   },
@@ -213,13 +213,13 @@
     "paint": {
       "fill-color": "@grass",
       "fill-opacity": {
-        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
+        "stops": [[12, 1], [16, 0.2]]
       }
     },
     "paint.night": {
       "fill-color": "@grass_night",
       "fill-opacity": {
-        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
+        "stops": [[12, 1], [16, 0.2]]
       }
     }
   }, {
@@ -231,13 +231,13 @@
     "paint": {
       "fill-color": "@scrub",
       "fill-opacity": {
-        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
+        "stops": [[12, 1], [16, 0.2]]
       }
     },
     "paint.night": {
       "fill-color": "@scrub_night",
       "fill-opacity": {
-        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
+        "stops": [[12, 1], [16, 0.2]]
       }
     }
   }, {
@@ -249,13 +249,13 @@
     "paint": {
       "fill-color": "@wood",
       "fill-opacity": {
-        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
+        "stops": [[12, 1], [16, 0.2]]
       }
     },
     "paint.night": {
       "fill-color": "@wood_night",
       "fill-opacity": {
-        "stops": [[12, 1], [13, 0.8], [16, 0.2]]
+        "stops": [[12, 1], [16, 0.2]]
       }
     }
   }, {
@@ -531,93 +531,112 @@
       "fill-outline-color": "#026688"
     }
   }, {
-    "id": "hillshade_raster",
-    "type": "raster",
+    "id": "hillshade_highlight_bright",
     "source": "mapbox",
-    "layers": [{
-      "id": "hillshade_full_highlight",
-      "source": "mapbox",
-      "source-layer": "hillshade",
-      "filter": ["==", "class", "full_highlight"],
-      "type": "fill",
-      "paint": {
-        "fill-color": "#fffff3",
-        "fill-antialias": false,
-        "fill-opacity": {
-          "stops": [[14, 0.3], [15, 0.3], [16, 0.2], [17, 0.2], [18, 0.1]]
-        }
-      },
-      "paint.night": {
-        "fill-color": "#fdfdad",
-        "fill-antialias": false,
-        "fill-opacity": {
-          "stops": [[13, 0.4], [14, 0.3], [16, 0.2], [17, 0.1], [18, 0.05]]
-        }
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 94],
+    "type": "fill",
+    "paint": {
+      "fill-color": "#ffd",
+      "fill-opacity": {
+        "stops": [[15, 0.15], [17, 0.05]]
       }
-    }, {
-      "id": "hillshade_medium_highlight",
-      "source": "mapbox",
-      "source-layer": "hillshade",
-      "filter": ["==", "class", "medium_highlight"],
-      "type": "fill",
-      "paint": {
-        "fill-color": "#ffd",
-        "fill-antialias": false,
-        "fill-opacity": {
-          "stops": [[14, 0.3], [15, 0.3], [16, 0.2], [17, 0.2], [18, 0.1]]
-        }
-      },
-      "paint.night": {
-        "fill-color": "#ffe1b7",
-        "fill-antialias": false,
-        "fill-opacity": {
-          "stops": [[14, 0.3], [16, 0.2], [17, 0.15], [18, 0.05]]
-        }
+    },
+    "paint.night": {
+      "fill-color": "#fdfdad",
+      "fill-opacity": {
+        "stops": [[15, 0.25], [17, 0.05]]
       }
-    }, {
-      "id": "hillshade_medium_shadow",
-      "source": "mapbox",
-      "source-layer": "hillshade",
-      "filter": ["==", "class", "medium_shadow"],
-      "type": "fill",
-      "paint": {
-        "fill-color": "#206",
-        "fill-antialias": false,
-        "fill-opacity": {
-          "stops": [[14, 0.08], [15, 0.075], [16, 0.05], [17, 0.05], [18, 0.025]]
-        }
-      },
-      "paint.night": {
-        "fill-color": "#206",
-        "fill-antialias": false,
-        "fill-opacity": {
-          "stops": [[15, 0.3], [16, 0.2], [17, 0.1], [18, 0.05]]
-        }
+    }
+  }, {
+    "id": "hillshade_highlight_med",
+    "source": "mapbox",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 90],
+    "type": "fill",
+    "paint": {
+      "fill-color": "#ffd",
+      "fill-opacity": {
+        "stops": [[15, 0.15], [17, 0.05]]
       }
-    }, {
-      "id": "hillshade_full_shadow",
-      "source": "mapbox",
-      "source-layer": "hillshade",
-      "filter": ["==", "class", "full_shadow"],
-      "type": "fill",
-      "paint": {
-        "fill-color": "#103",
-        "fill-antialias": false,
-        "fill-opacity": {
-          "stops": [[14, 0.08], [15, 0.075], [16, 0.05], [17, 0.05], [18, 0.025]]
-        }
-      },
-      "paint.night": {
-        "fill-color": "#103",
-        "fill-antialias": false,
-        "fill-opacity": {
-          "stops": [[15, 0.3], [16, 0.2], [17, 0.1], [18, 0.05]]
-        }
+    },
+    "paint.night": {
+      "fill-color": "#fdfdad",
+      "fill-opacity": {
+        "stops": [[15, 0.25], [17, 0.05]]
       }
-    }],
-    "layout": {
-      "raster-size": 512,
-      "raster-blur": 0
+    }
+  }, {
+    "id": "hillshade_shadow_faint",
+    "source": "mapbox",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 89],
+    "type": "fill",
+    "paint": {
+      "fill-color": "#216",
+      "fill-opacity": {
+        "stops": [[3, 0.1], [6, 0.06], [14, 0.06],  [17, 0.01]]
+      }
+    },
+    "paint.night": {
+      "fill-color": "#216",
+      "fill-opacity": {
+        "stops": [[3, 0.2], [6, 0.15], [13, 0.2], [17, 0.01]]
+      }
+    }
+  }, {
+    "id": "hillshade_shadow_med",
+    "source": "mapbox",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 78],
+    "type": "fill",
+    "paint": {
+      "fill-color": "#216",
+      "fill-opacity": {
+        "stops": [[3, 0.1], [6, 0.06], [14, 0.06],  [17, 0.01]]
+      }
+    },
+    "paint.night": {
+      "fill-color": "#216",
+      "fill-opacity": {
+        "stops": [[3, 0.2], [6, 0.15], [13, 0.2], [17, 0.01]]
+      }
+    }
+  }, {
+    "id": "hillshade_shadow_dark",
+    "source": "mapbox",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 67],
+    "type": "fill",
+    "paint": {
+      "fill-color": "#216",
+      "fill-opacity": {
+        "stops": [[3, 0.1], [6, 0.06], [14, 0.06],  [17, 0.01]]
+      }
+    },
+    "paint.night": {
+      "fill-color": "#216",
+      "fill-opacity": {
+        "stops": [[3, 0.2], [6, 0.15], [13, 0.2], [17, 0.01]]
+      }
+    }
+  }, {
+    "id": "hillshade_shadow_extreme",
+    "source": "mapbox",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 56],
+    "type": "fill",
+    "paint": {
+      "fill-color": "#216",
+      "fill-opacity": {
+        "stops": [[3, 0.1], [6, 0.06], [14, 0.06],  [17, 0.01]]
+      }
+    },
+    "paint.night": {
+      "fill-color": "#216",
+      "fill-opacity": {
+        "stops": [[3, 0.2], [6, 0.15], [13, 0.2], [17, 0.01]]
+      }
     }
   }, {
     "id": "contour_line_loud",
@@ -625,21 +644,17 @@
     "source": "mapbox",
     "source-layer": "contour",
     "filter": ["==", "index", 5],
-    "layout": {
-      "line-join": "round"
-    },
     "paint": {
-      "line-color": "#008",
-      "line-width": 0.9,
+      "line-color": "#000",
+      "line-width": 1.2,
       "line-opacity": {
-        "stops": [[11, 0.05], [12, 0.11]]
+        "stops": [[11, 0.1], [12, 0.2]]
       }
     },
     "paint.night": {
       "line-color": "@contour_night",
-      "line-width": 0.9,
       "line-opacity": {
-        "stops": [[11, 0.1], [12, 0.2]]
+        "stops": [[11, 0.1], [12, 0.4]]
       }
     }
   }, {
@@ -647,21 +662,18 @@
     "type": "line",
     "source": "mapbox",
     "source-layer": "contour",
-    "layout": {
-      "line-join": "round"
-    },
+    "filter": ["!=", "index", 5],
     "paint": {
-      "line-color": "#008",
-      "line-width": 0.5,
+      "line-color": "#000",
+      "line-width": 1.2,
       "line-opacity": {
-        "stops": [[11, 0.05], [12, 0.11]]
+        "stops": [[11, 0.05], [12, 0.1]]
       }
     },
     "paint.night": {
       "line-color": "@contour_night",
-      "line-width": 0.5,
       "line-opacity": {
-        "stops": [[11, 0.1], [12, 0.4]]
+        "stops": [[11, 0.1], [12, 0.2]]
       }
     }
   }, {
@@ -2133,7 +2145,7 @@
     "type": "symbol",
     "source": "mapbox",
     "source-layer": "contour",
-    "filter": ["all", ["in", "index", 5, 10], ["==", "$type", "LineString"]],
+    "filter": ["in", "index", 5, 10],
     "layout": {
       "text-field": "{ele} m",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
@@ -2144,14 +2156,13 @@
     "paint": {
       "text-color": "@text",
       "text-halo-color": "@land",
-      "text-halo-width": 1.5,
+      "text-halo-width": 1,
+      "text-halo-blur": 1,
       "text-size": 10
     },
     "paint.night": {
       "text-color": "@contour_night",
-      "text-halo-color": "@land_night",
-      "text-halo-width": 1.5,
-      "text-size": 10
+      "text-halo-color": "@land_night"
     }
   }, {
     "id": "water_label",
