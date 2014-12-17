@@ -491,46 +491,32 @@
     "source": "mapbox",
     "source-layer": "building",
     "paint": {
-      "fill-color": "#d5d1c6",
-      "fill-translate": [1, 1],
-      "fill-opacity": {
-        "stops": [[15.5, 0], [16, 1]]
-      },
-      "fill-outline-color": "#d5d1c6"
+      "fill-color": "#bfbfbf"
     },
     "paint.night": {
-      "fill-color": "#026688",
-      "fill-translate": [1, 1],
-      "fill-opacity": {
-        "stops": [[15.5, 0], [16, 1]]
-      },
-      "fill-outline-color": "#026688"
+      "fill-color": "#026688"
     }
   }, {
     "id": "building",
     "ref": "building_shadow",
     "paint": {
-      "fill-color": "#ebe7db"
-    },
-    "paint.night": {
-      "fill-color": "#027797"
-    }
-  }, {
-    "id": "building_wall",
-    "ref": "building_shadow",
-    "paint": {
       "fill-color": "#ebe7db",
-      "fill-opacity": {
-        "stops": [[15.5, 0], [16, 0.7]]
-      },
-      "fill-outline-color": "#d5d1c6"
+      "fill-outline-color": {
+        "stops": [[15, "#ebe7db"],[20, "#cecdc9"]]
+        },
+      "fill-translate": [{
+        "base": 0.5,
+        "stops":[[15, 0], [20, -1.5]]
+        },{
+          "base": 0.5,
+          "stops":[[15, 0],[20, -2.5]]
+        }]
     },
     "paint.night": {
       "fill-color": "#027797",
-      "fill-opacity": {
-        "stops": [[15.5, 0], [16, 0.7]]
-      },
-      "fill-outline-color": "#026688"
+      "fill-outline-color": {
+        "stops": [[15, "#027797"],[20, "#026688"]]
+      }
     }
   }, {
     "id": "hillshade_highlight_bright",
@@ -577,13 +563,13 @@
     "paint": {
       "fill-color": "#216",
       "fill-opacity": {
-        "stops": [[14, 0.06],  [17, 0.01]]
+        "stops": [[14, 0.06], [17, 0.01]]
       }
     },
     "paint.night": {
       "fill-color": "#216",
       "fill-opacity": {
-        "stops": [[2, 0.2], [6, 0.15], [13, 0.2], [17, 0.01]]
+        "stops": [[6, 0.15], [13, 0.2], [17, 0.01]]
       }
     }
   }, {
@@ -601,7 +587,7 @@
     "paint.night": {
       "fill-color": "#216",
       "fill-opacity": {
-        "stops": [[2, 0.2], [6, 0.15], [13, 0.2], [17, 0.01]]
+        "stops": [[6, 0.15], [13, 0.2], [17, 0.01]]
       }
     }
   }, {
@@ -619,7 +605,7 @@
     "paint.night": {
       "fill-color": "#216",
       "fill-opacity": {
-        "stops": [[2, 0.2], [6, 0.15], [13, 0.2], [17, 0.01]]
+        "stops": [[6, 0.15], [13, 0.2], [17, 0.01]]
       }
     }
   }, {
@@ -637,7 +623,7 @@
     "paint.night": {
       "fill-color": "#216",
       "fill-opacity": {
-        "stops": [[2, 0.2], [6, 0.15], [13, 0.2], [17, 0.01]]
+        "stops": [[6, 0.15], [13, 0.2], [17, 0.01]]
       }
     }
   }, {
@@ -780,7 +766,7 @@
     "type": "line",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "filter": ["==", "type", "runway"],
+    "filter": ["all", ["==", "type", "runway"], ["==", "$type", "LineString"]],
     "paint": {
       "line-color": "#ddd",
       "line-width": "@runway_width"
@@ -794,7 +780,7 @@
     "type": "line",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "filter": ["==", "type", "taxiway"],
+    "filter": ["all", ["==", "type", "taxiway"], ["==", "$type", "LineString"]],
     "paint": {
       "line-color": "#ddd",
       "line-width": "@taxiway_width"
@@ -807,10 +793,9 @@
     "type": "fill",
     "source": "mapbox",
     "source-layer": "aeroway",
-    "filter": ["==", "$type", "Polygon"],
+    "filter": ["all", ["==", "$type", "Polygon"], ["!=", "type", "apron"]],
     "paint": {
-      "fill-color": "#ddd",
-      "fill-opacity": 0.5
+      "fill-color": "#ddd"
     },
     "paint.night": {
       "fill-color": "#367"
@@ -914,11 +899,11 @@
     "id": "tunnel_service",
     "ref": "tunnel_service_casing",
     "paint": {
-      "line-color": "#e6cec7",
+      "line-color": "@street",
       "line-width": "@service_width"
     },
     "paint.night": {
-      "line-color": "#017ca0",
+      "line-color": "@street_night",
       "line-width": "@service_width"
     }
   }, {
@@ -1693,15 +1678,12 @@
     "paint": {
       "text-color": "@marine_text",
       "text-size": {
-        "stops": [[2, 20], [3, 25], [4, 30], [21, 30]]
+        "stops": [[3, 25], [4, 30]]
       },
       "text-halo-color": "@water"
     },
     "paint.night": {
       "text-color": "@water_dark_night",
-      "text-size": {
-        "stops": [[2, 20], [3, 25], [4, 30], [21, 30]]
-      },
       "text-halo-color": "@water_night"
     }
   }, {
@@ -1720,15 +1702,13 @@
     "paint": {
       "text-color": "@marine_text",
       "text-size": {
-        "stops": [[2, 13], [3, 14], [4, 20], [5, 24], [21, 24]]
+        "base": 0.8,
+        "stops": [[3, 14], [5, 24]]
       },
       "text-halo-color": "@water"
     },
     "paint.night": {
       "text-color": "@water_dark_night",
-      "text-size": {
-        "stops": [[2, 13], [3, 14], [4, 20], [5, 24], [21, 24]]
-      },
       "text-halo-color": "@water_night"
     }
   }, {
@@ -1747,15 +1727,13 @@
     "paint": {
       "text-color": "@marine_text",
       "text-size": {
-        "stops": [[2, 12], [3, 13], [4, 15], [5, 18], [21, 18]]
+        "base": 1.2,
+        "stops": [[3, 13], [5, 18]]
       },
       "text-halo-color": "@water"
     },
     "paint.night": {
       "text-color": "@water_dark_night",
-      "text-size": {
-        "stops": [[2, 12], [3, 13], [4, 15], [5, 18], [21, 18]]
-      },
       "text-halo-color": "@water_night"
     }
   }, {
@@ -1774,15 +1752,12 @@
     "paint": {
       "text-color": "@marine_text",
       "text-size": {
-        "stops": [[3, 12], [4, 14], [5, 16], [21, 16]]
+        "stops": [[4, 12], [6, 16]]
       },
       "text-halo-color": "@water"
     },
     "paint.night": {
       "text-color": "@water_dark_night",
-      "text-size": {
-        "stops": [[3, 12], [4, 14], [5, 16], [21, 16]]
-      },
       "text-halo-color": "@water_night"
     }
   }, {
@@ -1802,15 +1777,12 @@
     "paint": {
       "text-color": "@marine_text",
       "text-size": {
-        "stops": [[2, 20], [3, 25], [4, 30], [21, 30]]
+        "stops": [[3, 25], [4, 30]]
       },
       "text-halo-color": "@water"
     },
     "paint.night": {
       "text-color": "@water_dark_night",
-      "text-size": {
-        "stops": [[2, 20], [3, 25], [4, 30], [21, 30]]
-      },
       "text-halo-color": "@water_night"
     }
   }, {
@@ -1830,15 +1802,13 @@
     "paint": {
       "text-color": "@marine_text",
       "text-size": {
-        "stops": [[2, 13], [3, 14], [4, 20], [5, 24], [21, 24]]
+        "base": 0.8,
+        "stops": [[3, 14], [5, 24]]
       },
       "text-halo-color": "@water"
     },
     "paint.night": {
       "text-color": "@water_dark_night",
-      "text-size": {
-        "stops": [[2, 13], [3, 14], [4, 20], [5, 24], [21, 24]]
-      },
       "text-halo-color": "@water_night"
     }
   }, {
@@ -1858,15 +1828,13 @@
     "paint": {
       "text-color": "@marine_text",
       "text-size": {
-        "stops": [[2, 12], [3, 13], [4, 15], [5, 18], [21, 18]]
+        "base": 1.2,
+        "stops": [[3, 13], [5, 18]]
       },
       "text-halo-color": "@water"
     },
     "paint.night": {
       "text-color": "@water_dark_night",
-      "text-size": {
-        "stops": [[2, 12], [3, 13], [4, 15], [5, 18], [21, 18]]
-      },
       "text-halo-color": "@water_night"
     }
   }, {
@@ -1886,15 +1854,12 @@
     "paint": {
       "text-color": "@marine_text",
       "text-size": {
-        "stops": [[3, 12], [4, 14], [5, 16], [21, 16]]
+        "stops": [[4, 12], [6, 16]]
       },
       "text-halo-color": "@water"
     },
     "paint.night": {
       "text-color": "@water_dark_night",
-      "text-size": {
-        "stops": [[3, 12], [4, 14], [5, 16], [21, 16]]
-      },
       "text-halo-color": "@water_night"
     }
   }, {
@@ -2225,7 +2190,6 @@
     "layout": {
       "icon-image": "{maki}-12",
       "text-field": "@name",
-      "text-padding": 2,
       "text-font": "@sans",
       "text-max-size": 12,
       "text-max-width": 10,
@@ -2240,7 +2204,6 @@
     },
     "paint.night": {
       "text-color": "#fff",
-      "text-size": "@poi_label_1-2_size",
       "text-halo-color": "@text2_stroke_night"
     }
   }, {
@@ -2249,10 +2212,10 @@
     "source": "mapbox",
     "source-layer": "poi_label",
     "filter": ["all", ["==", "scalerank", 3], ["==", "$type", "Point"]],
+    "minzoom": 15,
     "layout": {
       "icon-image": "{maki}-12",
       "text-field": "@name",
-      "text-padding": 2,
       "text-font": "@sans",
       "text-max-size": 11,
       "text-max-width": 10,
@@ -2260,29 +2223,14 @@
       "text-anchor": "top"
     },
     "paint": {
-      "icon-opacity": {
-        "stops": [[15.5, 0], [15.75, 1]]
-      },
       "text-color": "#444",
       "text-size": "@poi_label_3_size",
       "text-halo-color": "@land",
-      "text-halo-width": {
-        "stops": [[15, 1.5], [16, 1.65]]
-      },
-      "text-opacity": {
-        "stops": [[15.5, 0], [15.75, 1]]
-      }
+      "text-halo-width": 1.5
     },
     "paint.night": {
       "text-color": "#fff",
-      "text-size": "@poi_label_3_size",
-      "text-halo-color": "@text2_stroke_night",
-      "text-halo-width": {
-        "stops": [[15, 1.5], [16, 1.65]]
-      },
-      "text-opacity": {
-        "stops": [[15.5, 0], [15.75, 1]]
-      }
+      "text-halo-color": "@text2_stroke_night"
     }
   }, {
     "id": "poi_label_4",
@@ -2290,10 +2238,10 @@
     "source": "mapbox",
     "source-layer": "poi_label",
     "filter": ["all", ["==", "scalerank", 4], ["==", "$type", "Point"]],
+    "minzoom": 16,
     "layout": {
       "icon-image": "{maki}-12",
       "text-field": "@name",
-      "text-padding": 2,
       "text-font": "@sans",
       "text-max-size": 10,
       "text-max-width": 10,
@@ -2301,25 +2249,14 @@
       "text-anchor": "top"
     },
     "paint": {
-      "icon-opacity": {
-        "stops": [[17.5, 0], [17.75, 1]]
-      },
       "text-color": "#444",
       "text-size": 10,
-      "text-opacity": {
-        "stops": [[17.5, 0], [17.75, 1]]
-      },
       "text-halo-color": "@land",
       "text-halo-width": 1.5
     },
     "paint.night": {
       "text-color": "#fff",
-      "text-size": 10,
-      "text-opacity": {
-        "stops": [[17.5, 0], [17.75, 1]]
-      },
-      "text-halo-color": "@text2_stroke_night",
-      "text-halo-width": 1.5
+      "text-halo-color": "@text2_stroke_night"
     }
   }]
 }
