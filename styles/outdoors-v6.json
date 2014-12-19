@@ -819,19 +819,7 @@
     "paint.night": {
       "line-color": "@land_night",
       "line-opacity": 0.2
-    }  
-  }, {
-    "id": "tunnel_path_all",
-    "ref": "tunnel_path_bg",
-    "paint": {
-      "line-color": "#bba",
-      "line-opacity": 0.4,
-      "line-dasharray": [4, 1],
-      "line-width": "@path_width"
-    },
-    "paint.night": {
-      "line-color": "#fff"
-    }  
+    }    
   }, {
     "id": "tunnel_motorway_link_casing",
     "type": "line",
@@ -874,9 +862,44 @@
       "line-gap-width": "@street_width"
     },
     "paint.night": {
-      "line-color": "@street_case_night",
-      "line-width": "@street_casing_width"
+      "line-color": "@street_case_night"
     }
+  }, {
+    "id": "tunnel_main_casing",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "tunnel",
+    "filter": ["==", "class", "main"],
+    "paint": {
+      "line-color": "@case",
+      "line-dasharray": "@tunnel_dasharray",
+      "line-width": "@main_casing_width",
+      "line-gap-width": "@main_width",
+      "line-opacity": {
+        "stops": [[8, 0], [9, 1]]
+      }
+    },
+    "paint.night": {
+      "line-color": "@case_night"
+    }    
+  }, {
+    "id": "tunnel_motorway_casing",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "tunnel",
+    "filter": ["==", "class", "motorway"],
+    "paint": {
+      "line-color": "@case",
+      "line-dasharray": "@tunnel_dasharray",
+      "line-width": "@motorway_casing_width",
+      "line-gap-width": "@motorway_width",
+      "line-opacity": {
+        "stops": [[8.5, 0], [9, 1]]
+      }
+    },
+    "paint.night": {
+      "line-color": "@case_night"
+    }  
   }, {
     "id": "tunnel_motorway_link",
     "ref": "tunnel_motorway_link_casing",
@@ -908,25 +931,6 @@
       "line-color": "@street_night"
     }
   }, {
-    "id": "tunnel_main_casing",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "tunnel",
-    "filter": ["==", "class", "main"],
-    "paint": {
-      "line-color": "@case",
-      "line-dasharray": "@tunnel_dasharray",
-      "line-width": "@main_casing_width",
-      "line-gap-width": "@main_width",
-      "line-opacity": {
-        "stops": [[8, 0], [9, 1]]
-      }
-    },
-    "paint.night": {
-      "line-color": "@case_night",
-      "line-dasharray": "@tunnel_dasharray"
-    }  
-  }, {
     "id": "tunnel_main",
     "ref": "tunnel_main_casing",
     "paint": {
@@ -938,24 +942,6 @@
     },
     "paint.night": {
       "line-color": "#78b0c1"
-    }
-  }, {
-    "id": "tunnel_motorway_casing",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "tunnel",
-    "filter": ["==", "class", "motorway"],
-    "paint": {
-      "line-color": "@case",
-      "line-dasharray": "@tunnel_dasharray",
-      "line-width": "@motorway_casing_width",
-      "line-gap-width": "@motorway_width",
-      "line-opacity": {
-        "stops": [[8.5, 0], [9, 1]]
-      }
-    },
-    "paint.night": {
-      "line-color": "@case_night"
     }
   }, {
     "id": "tunnel_motorway",
@@ -991,7 +977,19 @@
       "line-width": 5
     },
     "paint.night": {
-    }  
+    }      
+  }, {
+    "id": "tunnel_path_all",
+    "ref": "tunnel_path_bg",
+    "paint": {
+      "line-color": "#bba",
+      "line-opacity": 0.4,
+      "line-dasharray": [4, 1],
+      "line-width": "@path_width"
+    },
+    "paint.night": {
+      "line-color": "#fff"
+    }     
   }, {
     "id": "road_pedestrian",
     "type": "fill",
@@ -1020,7 +1018,7 @@
     "paint.night": {
       "line-color": "@land_night",
       "line-opacity": 0.2
-    }
+    } 
   }, {
     "id": "road_path_bg_piste",
     "ref": "road_path_piste",
@@ -1032,6 +1030,181 @@
     "paint.night": {
       "line-color": "@land_night",
       "line-opacity": 0.2
+    }     
+  }, {
+    "id": "road_motorway_link_casing",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "road",
+    "filter": ["==", "class", "motorway_link"],
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "@case",
+      "line-width": "@motorway_link_casing_width",
+      "line-gap-width":"@motorway_link_width"
+    },
+    "paint.night": {
+      "line-color": "@case_night"
+    }
+  }, {
+    "id": "road_service_casing",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "road",
+    "filter": ["==", "class", "service"],
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#000",
+      "line-opacity": 0.04,
+      "line-width": "@service_casing_width",
+      "line-gap-width": "@service_width"
+    },
+    "paint.night": {
+    }
+  }, {
+    "id": "road_street_casing",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "road",
+    "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"]],
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "@street_case",
+      "line-width": "@street_casing_width",
+      "line-gap-width": "@street_width"
+    },
+    "paint.night": {
+      "line-color": "@street_case_night"
+    }
+  }, {
+    "id": "road_main_casing",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "road",
+    "filter": ["==", "class", "main"],
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "@case",
+      "line-width": "@main_casing_width",
+      "line-gap-width": "@main_width",
+      "line-opacity": {
+        "stops": [[8, 0], [9, 1]]
+      }
+    },
+    "paint.night": {
+      "line-color": "@case_night"
+    }  
+  }, {
+    "id": "road_motorway_casing",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "road",
+    "filter": ["==", "class", "motorway"],
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "@case",
+      "line-width": "@motorway_casing_width",
+      "line-gap-width": "@motorway_width",
+      "line-opacity": {
+        "stops": [[8.5, 0], [9, 1]]
+      }
+    },
+    "paint.night": {
+      "line-color": "@case_night"
+    }    
+  }, {
+    "id": "road_motorway_link",
+    "ref": "road_motorway_link_casing",
+    "paint": {
+      "line-color": "@motorway",
+      "line-width": "@motorway_link_width"
+    },
+    "paint.night": {
+      "line-color": "@motorway_night"
+    }
+  }, {
+    "id": "road_service",
+    "ref": "road_service_casing",
+    "paint": {
+      "line-color": "@street",
+      "line-width": "@service_width"
+    },
+    "paint.night": {
+      "line-color": "@street_night",
+      "line-width": "@service_width"
+    }
+  }, {
+    "id": "road_street",
+    "ref": "road_street_casing",
+    "paint": {
+      "line-color": "@street",
+      "line-width": "@street_width"
+    },
+    "paint.night": {
+      "line-color": "@street_night"
+    }
+  }, {
+    "id": "road_main",
+    "ref": "road_main_casing",
+    "paint": {
+      "line-color": "@main",
+      "line-width": "@main_width",
+      "line-opacity": {
+        "stops": [[5.5, 0], [6, 1]]
+      }
+    },
+    "paint.night": {
+      "line-color": "@main_night"
+    }
+  }, {
+    "id": "road_motorway",
+    "ref": "road_motorway_casing",
+    "paint": {
+      "line-color": "@motorway",
+      "line-width": "@motorway_width",
+      "line-opacity": {
+        "stops": [[5.5, 0], [6, 1]]
+      }
+    },
+    "paint.night": {
+      "line-color": "@motorway_night"
+    }
+  }, {
+    "id": "road_major_rail",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "road",
+    "filter": ["==", "class", "major_rail"],
+    "paint": {
+      "line-color": "#c8c4c0",
+      "line-width": 0.8
+    },
+    "paint.night": {
+    }
+  }, {
+    "id": "road_major_rail_hatching",
+    "ref": "road_major_rail",
+    "paint": {
+      "line-color": "#c8c4c0",
+      "line-dasharray": [2, 31],
+      "line-width": 5
+    },
+    "paint.night": {
     }  
   }, {
     "id": "road_path_walk",
@@ -1116,182 +1289,7 @@
     },
     "paint.night": {
       "line-color": "#fff"
-    }
-  }, {
-    "id": "road_major_rail",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "filter": ["==", "class", "major_rail"],
-    "paint": {
-      "line-color": "#c8c4c0",
-      "line-width": 0.8
-    },
-    "paint.night": {
-    }
-  }, {
-    "id": "road_major_rail_hatching",
-    "ref": "road_major_rail",
-    "paint": {
-      "line-color": "#c8c4c0",
-      "line-dasharray": [2, 31],
-      "line-width": 5
-    },
-    "paint.night": {
-    }
-  }, {
-    "id": "road_motorway_link_casing",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "filter": ["==", "class", "motorway_link"],
-    "layout": {
-      "line-join": "round",
-      "line-cap": "round"
-    },
-    "paint": {
-      "line-color": "@case",
-      "line-width": "@motorway_link_casing_width",
-      "line-gap-width":"@motorway_link_width"
-    },
-    "paint.night": {
-      "line-color": "@case_night"
-    }
-  }, {
-    "id": "road_service_casing",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "filter": ["==", "class", "service"],
-    "layout": {
-      "line-join": "round",
-      "line-cap": "round"
-    },
-    "paint": {
-      "line-color": "#000",
-      "line-opacity": 0.04,
-      "line-width": "@service_casing_width",
-      "line-gap-width": "@service_width"
-    },
-    "paint.night": {
-    }
-  }, {
-    "id": "road_street_casing",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"]],
-    "layout": {
-      "line-join": "round",
-      "line-cap": "round"
-    },
-    "paint": {
-      "line-color": "@street_case",
-      "line-width": "@street_casing_width",
-      "line-gap-width": "@street_width"
-    },
-    "paint.night": {
-      "line-color": "@street_case_night"
-    }
-  }, {
-    "id": "road_motorway_link",
-    "ref": "road_motorway_link_casing",
-    "paint": {
-      "line-color": "@motorway",
-      "line-width": "@motorway_link_width"
-    },
-    "paint.night": {
-      "line-color": "@motorway_night"
-    }
-  }, {
-    "id": "road_service",
-    "ref": "road_service_casing",
-    "paint": {
-      "line-color": "@street",
-      "line-width": "@service_width"
-    },
-    "paint.night": {
-      "line-color": "@street_night",
-      "line-width": "@service_width"
-    }
-  }, {
-    "id": "road_street",
-    "ref": "road_street_casing",
-    "paint": {
-      "line-color": "@street",
-      "line-width": "@street_width"
-    },
-    "paint.night": {
-      "line-color": "@street_night"
-    }
-  }, {
-    "id": "road_main_casing",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "filter": ["==", "class", "main"],
-    "layout": {
-      "line-join": "round",
-      "line-cap": "round"
-    },
-    "paint": {
-      "line-color": "@case",
-      "line-width": "@main_casing_width",
-      "line-gap-width": "@main_width",
-      "line-opacity": {
-        "stops": [[8, 0], [9, 1]]
-      }
-    },
-    "paint.night": {
-      "line-color": "@case_night"
     }  
-  }, {
-    "id": "road_main",
-    "ref": "road_main_casing",
-    "paint": {
-      "line-color": "@main",
-      "line-width": "@main_width",
-      "line-opacity": {
-        "stops": [[5.5, 0], [6, 1]]
-      }
-    },
-    "paint.night": {
-      "line-color": "@main_night"
-    }
-  }, {
-    "id": "road_motorway_casing",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "road",
-    "filter": ["==", "class", "motorway"],
-    "layout": {
-      "line-join": "round",
-      "line-cap": "round"
-    },
-    "paint": {
-      "line-color": "@case",
-      "line-width": "@motorway_casing_width",
-      "line-gap-width": "@motorway_width",
-      "line-opacity": {
-        "stops": [[8.5, 0], [9, 1]]
-      }
-    },
-    "paint.night": {
-      "line-color": "@case_night"
-    }
-  }, {
-    "id": "road_motorway",
-    "ref": "road_motorway_casing",
-    "paint": {
-      "line-color": "@motorway",
-      "line-width": "@motorway_width",
-      "line-opacity": {
-        "stops": [[5.5, 0], [6, 1]]
-      }
-    },
-    "paint.night": {
-      "line-color": "@motorway_night"
-    }
   }, {
     "id": "bridge_path_bg",
     "type": "line",
@@ -1304,18 +1302,7 @@
     },
     "paint.night": {
       "line-color": "@land_night"
-    }   
-  }, {
-    "id": "bridge_path_all",
-    "ref": "bridge_path_bg",
-    "paint": {
-      "line-color": "#bba",
-      "line-dasharray": [4, 1],
-      "line-width": "@path_width"
-    },
-    "paint.night": {
-      "line-color": "#fff"
-    }     
+    }       
   }, {
     "id": "bridge_motorway_link_casing",
     "type": "line",
@@ -1359,6 +1346,40 @@
       "line-color": "@street_case_night"
     }
   }, {
+    "id": "bridge_main_casing",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "bridge",
+    "filter": ["==", "class", "main"],
+    "paint": {
+      "line-color": "@case",
+      "line-width": "@main_casing_width",
+      "line-gap-width": "@main_width",
+      "line-opacity": {
+        "stops": [[8, 0], [9, 1]]
+      }
+    },
+    "paint.night": {
+      "line-color": "@case_night"
+    } 
+  }, {
+    "id": "bridge_motorway_casing",
+    "type": "line",
+    "source": "mapbox",
+    "source-layer": "bridge",
+    "filter": ["==", "class", "motorway"],
+    "paint": {
+      "line-color": "@case",
+      "line-width": "@motorway_casing_width",
+      "line-gap-width": "@motorway_width",
+      "line-opacity": {
+        "stops": [[8.5, 0], [9, 1]]
+      }
+    },
+    "paint.night": {
+      "line-color": "@case_night"
+    }     
+  }, {
     "id": "bridge_motorway_link",
     "ref": "bridge_motorway_link_casing",
     "paint": {
@@ -1389,23 +1410,6 @@
       "line-color": "@street_night"
     }
   }, {
-    "id": "bridge_main_casing",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "bridge",
-    "filter": ["==", "class", "main"],
-    "paint": {
-      "line-color": "@case",
-      "line-width": "@main_casing_width",
-      "line-gap-width": "@main_width",
-      "line-opacity": {
-        "stops": [[8, 0], [9, 1]]
-      }
-    },
-    "paint.night": {
-      "line-color": "@case_night"
-    }  
-  }, {
     "id": "bridge_main",
     "ref": "bridge_main_casing",
     "paint": {
@@ -1417,23 +1421,6 @@
     },
     "paint.night": {
       "line-color": "@main_night"
-    }
-  }, {
-    "id": "bridge_motorway_casing",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "bridge",
-    "filter": ["==", "class", "motorway"],
-    "paint": {
-      "line-color": "@case",
-      "line-width": "@motorway_casing_width",
-      "line-gap-width": "@motorway_width",
-      "line-opacity": {
-        "stops": [[8.5, 0], [9, 1]]
-      }
-    },
-    "paint.night": {
-      "line-color": "@case_night"
     }
   }, {
     "id": "bridge_motorway",
@@ -1469,7 +1456,18 @@
       "line-width": 5
     },
     "paint.night": {
-    }    
+    }   
+  }, {
+    "id": "bridge_path_all",
+    "ref": "bridge_path_bg",
+    "paint": {
+      "line-color": "#bba",
+      "line-dasharray": [4, 1],
+      "line-width": "@path_width"
+    },
+    "paint.night": {
+      "line-color": "#fff"
+    }      
   }, {
     "id": "bridge_aerialway_casing",
     "type": "line",
