@@ -435,30 +435,6 @@
       "fill-color": "@cemetery_night"
     }
   }, {
-    "id": "overlay_wetland",
-    "type": "fill",
-    "source": "mapbox",
-    "source-layer": "landuse_overlay",
-    "filter": ["in", "class", "wetland", "wetland_noveg"],
-    "paint": {
-      "fill-color": "rgba(210,225,225,0.2)",
-      "fill-image": "wetland_noveg_64"
-    },
-    "paint.night": {
-    }
-  }, {
-    "id": "overlay_breakwater_pier",
-    "type": "fill",
-    "source": "mapbox",
-    "source-layer": "landuse_overlay",
-    "filter": ["in", "class", "breakwater", "pier"],
-    "paint": {
-      "fill-color": "@land"
-    },
-    "paint.night": {
-      "fill-color": "@land_night"
-    }
-  }, {
     "id": "waterway_river_canal",
     "type": "line",
     "source": "mapbox",
@@ -853,6 +829,30 @@
       "fill-color": "@water_night",
       "fill-outline-color": "@water_dark_night"
     }
+  }, {
+    "id": "overlay_wetland",
+    "type": "fill",
+    "source": "mapbox",
+    "source-layer": "landuse_overlay",
+    "filter": ["in", "class", "wetland", "wetland_noveg"],
+    "paint": {
+      "fill-color": "rgba(210,225,225,0.2)",
+      "fill-image": "wetland_noveg_64"
+    },
+    "paint.night": {
+    }
+  }, {
+    "id": "overlay_breakwater_pier",
+    "type": "fill",
+    "source": "mapbox",
+    "source-layer": "landuse_overlay",
+    "filter": ["in", "class", "breakwater", "pier"],
+    "paint": {
+      "fill-color": "@land"
+    },
+    "paint.night": {
+      "fill-color": "@land_night"
+    }  
   }, {
     "id": "barrier_line_land_fill",
     "type": "fill",
