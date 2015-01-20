@@ -1,0 +1,8 @@
+{
+  "version": 7,
+  "constants": {},
+  "sources": {},
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/sprite",
+  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "layers": []
+}
