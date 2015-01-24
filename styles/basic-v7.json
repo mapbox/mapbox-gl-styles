@@ -84,7 +84,7 @@
     "paint": {
       "line-color": "@road-minor",
       "line-width": "@road-minor-width",
-      "line-dasharray": [0.2433277387482371, 0.12166386937411855]
+      "line-dasharray": [0.36, 0.18]
     }
   }, {
     "id": "tunnel_major",
@@ -95,7 +95,7 @@
     "paint": {
       "line-color": "@road-major",
       "line-width": "@road-major-width",
-      "line-dasharray": [0.1804978109649898, 0.0902489054824949]
+      "line-dasharray": [0.28, 0.14]
     }
   }, {
     "id": "road_minor",
