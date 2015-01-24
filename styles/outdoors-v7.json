@@ -112,7 +112,9 @@
       "base": 1.3,
       "stops": [[15, 4], [20, 5]]
     },
-    "@tunnel_dasharray": [6, 2],
+    "@path_dasharray_primary": [3, 1],
+    "@path_dasharray_secondary": [5, 1.5],
+    "@tunnel_dasharray": [4, 1.5],
     "@aerialway_width": {
       "base": 1.2,
       "stops": [[12, 0.8], [20, 5]]
@@ -860,6 +862,7 @@
     "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"]],
     "paint": {
       "line-color": "@street_case",
+      "line-dasharray": "@tunnel_dasharray",
       "line-width": "@street_casing_width",
       "line-gap-width": "@street_width"
     },
@@ -916,7 +919,7 @@
     "id": "tunnel_service",
     "ref": "tunnel_service_casing",
     "paint": {
-      "line-color": "@service",
+      "line-color": "#eeeeee",
       "line-width": "@service_width"
     },
     "paint.night": {
@@ -926,7 +929,7 @@
     "id": "tunnel_street",
     "ref": "tunnel_street_casing",
     "paint": {
-      "line-color": "@street_case",
+      "line-color": "#eeeeee",
       "line-width": "@street_width"
     },
     "paint.night": {
@@ -974,7 +977,7 @@
     "ref": "tunnel_major_rail",
     "paint": {
       "line-color": "#c8c4c0",
-      "line-dasharray": [0.4, 6.2],
+      "line-dasharray": [0.16, 10],
       "line-width": 5
     },
     "paint.night": {}
@@ -984,7 +987,7 @@
     "paint": {
       "line-color": "#bba",
       "line-opacity": 0.4,
-      "line-dasharray": [2.458257586826734, 0.6145643967066835],
+      "line-dasharray": "@path_dasharray_primary",
       "line-width": "@path_width"
     },
     "paint.night": {
@@ -1233,7 +1236,7 @@
     "filter": ["in", "type", "footway", "path", "other"],
     "paint": {
       "line-color": "#bba",
-      "line-dasharray": [2.458257586826734, 0.6145643967066835],
+      "line-dasharray": "@path_dasharray_primary",
       "line-width": "@path_width"
     },
     "paint.night": {
@@ -1247,7 +1250,7 @@
     "filter": ["in", "type", "hiking", "trail"],
     "paint": {
       "line-color": "#c97",
-      "line-dasharray": [3.6873863802401012, 1.229128793413367],
+      "line-dasharray": "@path_dasharray_secondary",
       "line-width": "@path_width"
     },
     "paint.night": {
@@ -1261,7 +1264,7 @@
     "filter": ["==", "type", "cycleway"],
     "paint": {
       "line-color": "#488",
-      "line-dasharray": [2.458257586826734, 0.6145643967066835],
+      "line-dasharray": "@path_dasharray_primary",
       "line-width": "@path_width"
     },
     "paint.night": {
@@ -1275,7 +1278,7 @@
     "filter": ["==", "type", "mtb"],
     "paint": {
       "line-color": "#488",
-      "line-dasharray": [3.6873863802401012, 1.229128793413367],
+      "line-dasharray": "@path_dasharray_secondary",
       "line-width": "@path_width"
     },
     "paint.night": {
@@ -1289,7 +1292,7 @@
     "filter": ["==", "type", "piste"],
     "paint": {
       "line-color": "#87b",
-      "line-dasharray": [2.458257586826734, 0.6145643967066835],
+      "line-dasharray": "@path_dasharray_primary",
       "line-width": "@path_width"
     },
     "paint.night": {
@@ -1303,7 +1306,7 @@
     "filter": ["==", "type", "steps"],
     "paint": {
       "line-color": "#bba",
-      "line-dasharray": [0.7051626620642331, 0.2350542206880777],
+      "line-dasharray": [0.5, 0.25],
       "line-width": "@path_bg_width"
     },
     "paint.night": {
@@ -1478,7 +1481,7 @@
     "ref": "bridge_path_bg",
     "paint": {
       "line-color": "#bba",
-      "line-dasharray": [2.458257586826734, 0.6145643967066835],
+      "line-dasharray": "@path_dasharray_primary",
       "line-width": "@path_width"
     },
     "paint.night": {
@@ -1514,7 +1517,9 @@
     "ref": "bridge_aerialway_casing",
     "paint": {
       "line-color": "#876",
-      "line-dasharray": [0.2833062546166174, 8.41192279282355],
+      "line-dasharray": {
+        "stops": [[12,[0.1, 6]],[20, [0.15, 20]]]
+        },
       "line-width": "@aerialway_hatching_width"
     },
     "paint.night": {
@@ -1531,7 +1536,7 @@
     },
     "paint": {
       "line-color": "#88a",
-      "line-dasharray": [2.0325203252032518, 0.6097560975609755],
+      "line-dasharray": [3, 1],
       "line-opacity": {
         "stops": [[3, 0], [4, 1]]
       },
