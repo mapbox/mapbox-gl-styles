@@ -1089,9 +1089,6 @@
   ],
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
-  "created": "2015-01-22T22:41:58.775Z",
-  "modified": "2015-01-26T23:28:31.136Z",
-  "name": "satellite",
   "constants": {
     "@state_dash": [
       4,
@@ -1276,8 +1273,7 @@
       ]
     }
   },
-  "owner": "peterqliu",
-  "version": 6,
+  "version": 7,
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -1289,6 +1285,5 @@
       "url": "mapbox://mapbox.satellite",
       "tileSize": 256
     }
-  },
-  "id": "peterqliu.597754eb"
+  }
 }
