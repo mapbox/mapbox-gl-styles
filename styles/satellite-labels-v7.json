@@ -13,9 +13,6 @@
       "type": "raster",
       "source": "satellite",
       "source-layer": "mapbox_satellite_full",
-      "layout": {
-        "raster-size": 512
-      },
       "paint": {
         "raster-fade-duration": 100
       }
