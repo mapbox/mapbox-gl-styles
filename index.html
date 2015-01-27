@@ -3,20 +3,20 @@
     <meta charset='utf-8' />
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.5.2/mapbox-gl.js'></script>
+    <script src='https://mapbox.s3.amazonaws.com/mapbox-gl-js/master/mapbox-gl-dev.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.5.2/mapbox-gl.css' rel='stylesheet' />
-    <script src='index.js'></script>
     
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
+        #dropdown {position:absolute;}
     </style>
 </head>
 <body>
 
 <div id='map'></div>
-  <select id="dropdown" onchange="swapStyle()>
-    <option>Choose a number</option>
+  <select id="dropdown">
+    <option>styles</option>
   </select>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoicGV0ZXJxbGl1IiwiYSI6ImpvZmV0UEEifQ._D4bRmVcGfJvo1wjuOpA1g';
@@ -27,19 +27,29 @@
 	  zoom: 9 // starting zoom
 	});
 
-	styles.forEach(function(style){
-		console.log(style)
+	var glStyles;
+	mapboxgl.util.getJSON('index.json', function (err, styles) {
+	    if (err) throw err;
+	    glStyles = styles;
+
+		var select = document.getElementById("dropdown"); 
+		select.setAttribute('onchange', 'swapStyle()');
+	    for(var stylesheet in styles) {
+		    var opt = stylesheet;
+		    var el = document.createElement("option");
+		    el.textContent = opt;
+		    el.value = opt;
+		    select.appendChild(el);
+		}
 	});
 
-	var select = document.getElementById("dropdown"); 
-	
-	for(var i = 0; i < styles.length; i++) {
-	    var opt = styles[i];
-	    var el = document.createElement("option");
-	    el.textContent = opt;
-	    el.value = opt;
-	    select.appendChild(el);
+	function swapStyle() {
+		var path= glStyles[document.getElementById("dropdown").value];
+		map.setStyle(path);
 	}
+
+
+
 </script>
 
 </body>
