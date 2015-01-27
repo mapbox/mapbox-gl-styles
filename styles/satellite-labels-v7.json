@@ -1,4 +1,5 @@
 {
+  "name": "Mapbox Satellite (Labeled)",
   "layers": [
     {
       "id": "background",

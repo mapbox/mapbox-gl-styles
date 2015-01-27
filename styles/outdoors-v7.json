@@ -1,5 +1,6 @@
 {
   "version": 7,
+  "name": "Mapbox Outdoors",
   "constants": {
     "@name": "{name_en}",
     "@sans_lt": "Open Sans Regular, Arial Unicode MS Regular, Arial Unicode MS Bold",

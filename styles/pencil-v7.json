@@ -1,5 +1,6 @@
 {
   "version": 7,
+  "name": "Pencil",
   "constants": {
     "@land": "rgba(0,0,0,0)",
     "@water": "#73b6e6",
