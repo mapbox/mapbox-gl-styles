@@ -1396,7 +1396,6 @@
           "motorway_link"
         ],
         "layout": {
-          "line-cap": "round",
           "line-join": "round"
         },
         "paint": {

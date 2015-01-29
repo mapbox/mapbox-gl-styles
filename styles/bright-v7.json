@@ -316,7 +316,6 @@
     "source-layer": "tunnel",
     "filter": ["==", "class", "motorway_link"],
     "layout": {
-      "line-cap": "round",
       "line-join": "round"
     },
     "paint": {
