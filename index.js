@@ -4,6 +4,5 @@
     'empty',
     'outdoors',
     'pencil',
-    'satellite',
-    'satellite-labels'
+    'satellite'
 ].forEach(function(style) { exports[style] = require('./styles/' + style + '-v7.json'); });

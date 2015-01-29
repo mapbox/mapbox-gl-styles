@@ -18,14 +18,13 @@
 <div class='pin-topleft pad2 fill-denim dark col3' id='box' style='margin:10px'>
   	<h2>Mapbox GL Styles</h2>
  	<select id="dropdown">
-    	<option>styles</option>
   	</select>
  </div>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoicGV0ZXJxbGl1IiwiYSI6ImpvZmV0UEEifQ._D4bRmVcGfJvo1wjuOpA1g';
 	var map = new mapboxgl.Map({
 	  container: 'map', // container id
-	  style: 'https://www.mapbox.com/mapbox-gl-styles/styles/outdoors-v6.json', //stylesheet location
+	  style: 'styles/basic-v7.json', //stylesheet location
 	  center: [40, -74.50], // starting position
 	  zoom: 9 // starting zoom
 	});

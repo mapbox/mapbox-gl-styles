@@ -7374,38 +7374,11 @@
     ]
   },
   "satellite": {
-    "version": 7,
-    "name": "Mapbox Satellite",
-    "sources": {
-      "mapbox": {
-        "type": "raster",
-        "url": "mapbox://mapbox.satellite",
-        "tileSize": 256
-      }
-    },
     "layers": [
       {
         "id": "background",
         "type": "background",
-        "paint": {
-          "background-color": "rgb(4,7,14)"
-        }
-      },
-      {
-        "id": "satellite",
-        "type": "raster",
-        "source": "mapbox",
-        "source-layer": "mapbox_satellite_full"
-      }
-    ]
-  },
-  "satellite-labels": {
-    "name": "Mapbox Satellite (Labeled)",
-    "layers": [
-      {
-        "id": "background",
-        "type": "background",
-        "paint": {
+        "paint.labels": {
           "background-color": "rgb(4,7,14)"
         }
       },
@@ -7414,8 +7387,26 @@
         "type": "raster",
         "source": "satellite",
         "source-layer": "mapbox_satellite_full",
+        "layout": {
+          "raster-size": 512
+        },
         "paint": {
           "raster-fade-duration": 100
+        },
+        "paint.contours": {
+          "raster-opacity": {
+            "base": 1,
+            "stops": [
+              [
+                11,
+                1
+              ],
+              [
+                12,
+                0.5
+              ]
+            ]
+          }
         }
       },
       {
@@ -7440,6 +7431,9 @@
         "source": "mapbox",
         "id": "province_border",
         "paint": {
+          "line-opacity": 0
+        },
+        "paint.labels": {
           "line-color": "@offwhite",
           "line-dasharray": "@state_dash",
           "line-width": {
@@ -7450,12 +7444,8 @@
                 1
               ],
               [
-                6,
-                2
-              ],
-              [
                 12,
-                5
+                3
               ]
             ]
           },
@@ -7501,6 +7491,9 @@
         "source": "mapbox",
         "id": "country_border",
         "paint": {
+          "line-opacity": 0
+        },
+        "paint.labels": {
           "line-color": "white",
           "line-width": {
             "base": 1,
@@ -7536,6 +7529,9 @@
         "source": "mapbox",
         "id": "admin_level_maritime",
         "paint": {
+          "line-opacity": 0
+        },
+        "paint.labels": {
           "line-color": "@water",
           "line-opacity": "@admin-opacity",
           "line-dasharray": "@state_dash",
@@ -7566,6 +7562,9 @@
         "source": "mapbox",
         "id": "street",
         "paint": {
+          "line-opacity": 0
+        },
+        "paint.labels": {
           "line-color": "white",
           "line-width": {
             "base": 1,
@@ -7602,6 +7601,9 @@
         "source": "mapbox",
         "id": "motorway_link",
         "paint": {
+          "line-opacity": 0
+        },
+        "paint.labels": {
           "line-color": "white",
           "line-width": {
             "stops": [
@@ -7634,6 +7636,9 @@
           ]
         ],
         "paint": {
+          "line-opacity": 0
+        },
+        "paint.labels": {
           "line-color": "white",
           "line-width": 5,
           "line-opacity": "@highway-opacity"
@@ -7658,6 +7663,9 @@
         "source": "mapbox",
         "id": "motorway_line",
         "paint": {
+          "line-opacity": 0
+        },
+        "paint.labels": {
           "line-color": "white",
           "line-width": {
             "base": 1,
@@ -7699,6 +7707,9 @@
         "source": "mapbox",
         "id": "street_bridge",
         "paint": {
+          "line-opacity": 0
+        },
+        "paint.labels": {
           "line-color": "white",
           "line-width": {
             "base": 1,
@@ -7734,6 +7745,9 @@
         "source": "mapbox",
         "id": "bridge_street",
         "paint": {
+          "line-opacity": 0
+        },
+        "paint.labels": {
           "line-color": "white",
           "line-width": {
             "stops": [
@@ -7750,6 +7764,65 @@
           "line-opacity": "@road-opacity"
         },
         "source-layer": "bridge"
+      },
+      {
+        "minzoom": 0,
+        "layout": {},
+        "maxzoom": 22,
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ]
+        ],
+        "type": "line",
+        "source": "Mapbox Terrain V2",
+        "id": "contour",
+        "paint": {
+          "line-opacity": 0
+        },
+        "paint.contours": {
+          "line-color": "#00fcdc",
+          "line-opacity": 0.5,
+          "line-dasharray": [
+            1,
+            1
+          ],
+          "line-width": 1.75
+        },
+        "source-layer": "contour"
+      },
+      {
+        "minzoom": 0,
+        "layout": {},
+        "maxzoom": 22,
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ],
+          [
+            "==",
+            "index",
+            5
+          ]
+        ],
+        "type": "line",
+        "source": "Mapbox Terrain V2",
+        "id": "contour_fifth",
+        "paint": {
+          "line-opacity": 0
+        },
+        "paint.contours": {
+          "line-color": "#00fcdc",
+          "line-opacity": 0.75,
+          "line-width": 1
+        },
+        "source-layer": "contour"
       },
       {
         "layout": {
@@ -7776,6 +7849,9 @@
         "source": "mapbox",
         "id": "marine_label_1arge",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "@water_label",
           "text-size": 20,
           "text-opacity": 0.4
@@ -7811,6 +7887,9 @@
         "source": "mapbox",
         "id": "marine_label_medium",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "@water_label",
           "text-size": {
             "base": 1,
@@ -7855,6 +7934,9 @@
         "source": "mapbox",
         "id": "marine_label_small",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "@water_label",
           "text-size": 22,
           "text-opacity": 0.3
@@ -7883,6 +7965,9 @@
           "text-letter-spacing": 0.2
         },
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "white",
           "text-opacity": 0.7,
           "text-halo-color": "black",
@@ -7923,6 +8008,9 @@
           "text-letter-spacing": 0.2
         },
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "white",
           "text-opacity": 0.5,
           "text-size": {
@@ -7973,6 +8061,9 @@
         "source": "mapbox",
         "id": "place_label_city_big",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-size": {
             "base": 1,
             "stops": [
@@ -8073,6 +8164,9 @@
         "source": "mapbox",
         "id": "place_label_city_medium",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-size": {
             "base": 1,
             "stops": [
@@ -8135,6 +8229,9 @@
         "source": "mapbox",
         "id": "place_label_city_small",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "white",
           "text-halo-color": "@halo",
           "text-size": {
@@ -8187,6 +8284,9 @@
           "text-max-width": 18
         },
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "white",
           "text-halo-color": "@halo",
           "text-size": {
@@ -8233,6 +8333,9 @@
           "text-padding": 50
         },
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "white",
           "text-halo-color": "@halo",
           "text-size": {
@@ -8274,6 +8377,10 @@
         "source": "mapbox",
         "id": "street_label",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
+          "text-opacity": 1,
           "text-color": "white",
           "text-halo-color": "black",
           "text-halo-width": 1,
@@ -8330,6 +8437,9 @@
         "source": "mapbox",
         "id": "poi_label_big",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "white",
           "text-size": {
             "stops": [
@@ -8397,6 +8507,9 @@
         "source": "mapbox",
         "id": "poi_label_dot",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-size": {
             "stops": [
               [
@@ -8446,7 +8559,10 @@
         "type": "symbol",
         "source": "mapbox",
         "id": "food/retail_label",
-        "paint": {},
+        "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {},
         "source-layer": "poi_label"
       },
       {
@@ -8464,6 +8580,9 @@
         "source": "mapbox",
         "id": "waterway_label",
         "paint": {
+          "text-opacity": 0
+        },
+        "paint.labels": {
           "text-color": "@water_label",
           "text-halo-width": 1,
           "text-halo-color": "black",
@@ -8483,14 +8602,58 @@
           "text-opacity": 0.75
         },
         "source-layer": "waterway_label"
+      },
+      {
+        "minzoom": 0,
+        "layout": {
+          "symbol-placement": "line",
+          "text-field": "{ele}",
+          "text-font": "Open Sans Regular,   Arial Unicode MS Regular",
+          "text-letter-spacing": 0,
+          "text-line-height": 1.6,
+          "text-max-angle": 10,
+          "text-rotation-alignment": "map"
+        },
+        "maxzoom": 22,
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ],
+          [
+            "==",
+            "index",
+            5
+          ]
+        ],
+        "type": "symbol",
+        "source": "Mapbox Terrain V2",
+        "id": "contour_label",
+        "paint": {
+          "text-size": 0
+        },
+        "paint.contours": {
+          "text-opacity": 1,
+          "text-halo-blur": 0,
+          "text-size": 12,
+          "text-halo-width": 1,
+          "text-halo-color": "#333",
+          "text-color": "#00fcdc"
+        },
+        "source-layer": "contour"
       }
     ],
     "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
     "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+    "created": "2015-01-22T22:41:58.775Z",
+    "modified": "2015-01-27T23:15:14.316Z",
+    "name": "satellite",
     "constants": {
       "@state_dash": [
-        4,
-        4
+        0,
+        2.5
       ],
       "@sans_ital": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "@road-width-major": {
@@ -8671,6 +8834,7 @@
         ]
       }
     },
+    "owner": "peterqliu",
     "version": 7,
     "sources": {
       "mapbox": {
@@ -8682,7 +8846,67 @@
         "type": "raster",
         "url": "mapbox://mapbox.satellite",
         "tileSize": 256
+      },
+      "Mapbox Terrain V2": {
+        "private": true,
+        "minzoom": 0,
+        "scheme": "xyz",
+        "tiles": [
+          "http://a.tiles.mapbox.com/v4/mapbox.mapbox-terrain-v2/{z}/{x}/{y}.vector.pbf?access_token=pk.eyJ1IjoiZWRlbmhhbHBlcmluIiwiYSI6IlFRZG0zMWMifQ.QUNKx4tIMjZfwmrE8SE6Bg",
+          "http://b.tiles.mapbox.com/v4/mapbox.mapbox-terrain-v2/{z}/{x}/{y}.vector.pbf?access_token=pk.eyJ1IjoiZWRlbmhhbHBlcmluIiwiYSI6IlFRZG0zMWMifQ.QUNKx4tIMjZfwmrE8SE6Bg"
+        ],
+        "name": "Mapbox Terrain V2",
+        "url": "mapbox://mapbox.mapbox-terrain-v2",
+        "center": [
+          0,
+          0,
+          3
+        ],
+        "bounds": [
+          -180,
+          -85.0511,
+          180,
+          85.0511
+        ],
+        "tilejson": "2.0.0",
+        "maxzoom": 14,
+        "format": "pbf",
+        "maskLevel": 9,
+        "type": "vector",
+        "id": "mapbox.mapbox-terrain-v2",
+        "description": "",
+        "filesize": 0,
+        "vector_layers": [
+          {
+            "description": "Generalized landcover classification",
+            "fields": {},
+            "id": "landcover",
+            "maxzoom": 22,
+            "minzoom": 0
+          },
+          {
+            "description": "",
+            "fields": {
+              "level": "Brightness %. One of: 94, 90, 89, 78, 67, 56"
+            },
+            "id": "hillshade",
+            "maxzoom": 22,
+            "minzoom": 0
+          },
+          {
+            "description": "Elevation contour polygons",
+            "fields": {
+              "ele": "Integer. The elevation of the contour in meters.",
+              "index": "Indicator for every 2nd, 5th, or 10th contour. Coastlines are given -1. One of: 2, 5, 10, -1, null"
+            },
+            "id": "contour",
+            "maxzoom": 22,
+            "minzoom": 0
+          }
+        ],
+        "attribution": "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
       }
-    }
+    },
+    "id": "peterqliu.597754eb"
   }
 }
