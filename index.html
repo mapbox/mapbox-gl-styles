@@ -15,7 +15,7 @@
 <body>
 
 <div id='map'></div>
-<div class='pin-topleft pad2 fill-denim dark col3' style='margin:10px'>
+<div class='pin-topleft pad2 fill-denim dark col3' id='box' style='margin:10px'>
   	<h2>Mapbox GL Styles</h2>
  	<select id="dropdown">
     	<option>styles</option>
@@ -43,7 +43,8 @@
 		    el.textContent = opt;
 		    el.value = opt;
 		    select.appendChild(el);
-		}
+		};
+
 	});
 
 	function swapStyle() {

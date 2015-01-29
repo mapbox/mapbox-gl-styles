@@ -8296,7 +8296,6 @@
       {
         "minzoom": 6,
         "layout": {
-          "icon-image": "bus-18",
           "text-field": "{name}",
           "text-padding": 60,
           "text-font": "@sans_ital",
