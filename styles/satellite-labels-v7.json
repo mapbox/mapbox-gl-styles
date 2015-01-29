@@ -1,5 +1,4 @@
 {
-  "name": "Mapbox Satellite (Labeled)",
   "layers": [
     {
       "id": "background",
@@ -13,6 +12,9 @@
       "type": "raster",
       "source": "satellite",
       "source-layer": "mapbox_satellite_full",
+      "layout": {
+        "raster-size": 512
+      },
       "paint": {
         "raster-fade-duration": 100
       }
@@ -349,6 +351,59 @@
         "line-opacity": "@road-opacity"
       },
       "source-layer": "bridge"
+    },
+    {
+      "minzoom": 0,
+      "layout": {},
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "type": "line",
+      "source": "Mapbox Terrain V2",
+      "id": "contour",
+      "paint.contour": {
+        "line-color": "#00fcdc",
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          2,
+          1
+        ],
+        "line-width": 1.75
+      },
+      "source-layer": "contour"
+    },
+    {
+      "minzoom": 0,
+      "layout": {},
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "==",
+          "index",
+          5
+        ]
+      ],
+      "type": "line",
+      "source": "Mapbox Terrain V2",
+      "id": "contour_fifth",
+      "paint.contour": {
+        "line-color": "#00fcdc",
+        "line-opacity": 0.75,
+        "line-width": 1
+      },
+      "source-layer": "contour"
     },
     {
       "layout": {
@@ -895,7 +950,6 @@
     {
       "minzoom": 6,
       "layout": {
-        "icon-image": "bus-18",
         "text-field": "{name}",
         "text-padding": 60,
         "text-font": "@sans_ital",
@@ -1083,10 +1137,50 @@
         "text-opacity": 0.75
       },
       "source-layer": "waterway_label"
+    },
+    {
+      "minzoom": 0,
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": "{ele}",
+        "text-font": "Open Sans Regular,   Arial Unicode MS Regular",
+        "text-letter-spacing": 0,
+        "text-line-height": 1.6,
+        "text-max-angle": 10,
+        "text-rotation-alignment": "map"
+      },
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "==",
+          "index",
+          5
+        ]
+      ],
+      "type": "symbol",
+      "source": "Mapbox Terrain V2",
+      "id": "contour_label",
+      "paint.contour": {
+        "text-halo-blur": 0,
+        "text-size": 12,
+        "text-halo-width": 1.75,
+        "text-halo-color": "#00fcdc",
+        "text-color": "#333"
+      },
+      "source-layer": "contour"
     }
   ],
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "created": "2015-01-22T22:41:58.775Z",
+  "modified": "2015-01-27T23:15:14.316Z",
+  "name": "satellite",
   "constants": {
     "@state_dash": [
       4,
@@ -1271,6 +1365,7 @@
       ]
     }
   },
+  "owner": "peterqliu",
   "version": 7,
   "sources": {
     "mapbox": {
@@ -1282,6 +1377,66 @@
       "type": "raster",
       "url": "mapbox://mapbox.satellite",
       "tileSize": 256
+    },
+    "Mapbox Terrain V2": {
+      "private": true,
+      "minzoom": 0,
+      "scheme": "xyz",
+      "tiles": [
+        "http://a.tiles.mapbox.com/v4/mapbox.mapbox-terrain-v2/{z}/{x}/{y}.vector.pbf?access_token=pk.eyJ1IjoiZWRlbmhhbHBlcmluIiwiYSI6IlFRZG0zMWMifQ.QUNKx4tIMjZfwmrE8SE6Bg",
+        "http://b.tiles.mapbox.com/v4/mapbox.mapbox-terrain-v2/{z}/{x}/{y}.vector.pbf?access_token=pk.eyJ1IjoiZWRlbmhhbHBlcmluIiwiYSI6IlFRZG0zMWMifQ.QUNKx4tIMjZfwmrE8SE6Bg"
+      ],
+      "name": "Mapbox Terrain V2",
+      "url": "mapbox://mapbox.mapbox-terrain-v2",
+      "center": [
+        0,
+        0,
+        3
+      ],
+      "bounds": [
+        -180,
+        -85.0511,
+        180,
+        85.0511
+      ],
+      "tilejson": "2.0.0",
+      "maxzoom": 14,
+      "format": "pbf",
+      "maskLevel": 9,
+      "type": "vector",
+      "id": "mapbox.mapbox-terrain-v2",
+      "description": "",
+      "filesize": 0,
+      "vector_layers": [
+        {
+          "description": "Generalized landcover classification",
+          "fields": {},
+          "id": "landcover",
+          "maxzoom": 22,
+          "minzoom": 0
+        },
+        {
+          "description": "",
+          "fields": {
+            "level": "Brightness %. One of: 94, 90, 89, 78, 67, 56"
+          },
+          "id": "hillshade",
+          "maxzoom": 22,
+          "minzoom": 0
+        },
+        {
+          "description": "Elevation contour polygons",
+          "fields": {
+            "ele": "Integer. The elevation of the contour in meters.",
+            "index": "Indicator for every 2nd, 5th, or 10th contour. Coastlines are given -1. One of: 2, 5, 10, -1, null"
+          },
+          "id": "contour",
+          "maxzoom": 22,
+          "minzoom": 0
+        }
+      ],
+      "attribution": "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap<\/a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map<\/a>"
     }
-  }
+  },
+  "id": "peterqliu.597754eb"
 }

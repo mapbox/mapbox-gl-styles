@@ -1,23 +1,26 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title></title>
+    <title>Mapbox GL Styles</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://mapbox.s3.amazonaws.com/mapbox-gl-js/master/mapbox-gl-dev.js'></script>
+    <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.5.2/mapbox-gl.css' rel='stylesheet' />
-    
+
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
-        #dropdown {position:absolute;}
     </style>
 </head>
 <body>
 
 <div id='map'></div>
-  <select id="dropdown">
-    <option>styles</option>
-  </select>
+<div class='pin-topleft pad2 fill-denim dark col3' style='margin:10px'>
+  	<h2>Mapbox GL Styles</h2>
+ 	<select id="dropdown">
+    	<option>styles</option>
+  	</select>
+ </div>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoicGV0ZXJxbGl1IiwiYSI6ImpvZmV0UEEifQ._D4bRmVcGfJvo1wjuOpA1g';
 	var map = new mapboxgl.Map({
