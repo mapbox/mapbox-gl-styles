@@ -1,5 +1,6 @@
 {
   "version": 7,
+  "name": "Basic",
   "constants": {
     "@name": "{name_en}",
     "@sans": "Open Sans Regular, Arial Unicode MS Regular",
