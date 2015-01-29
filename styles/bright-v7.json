@@ -44,7 +44,7 @@
     "@poi_text_halo": "#ffffff",
     "@maki": "#666",
     "@point_translate": [0, -30],
-    "@tunnel_line_dasharray": [-0.04932064580709783, 1.3168931180643006],
+    "@tunnel_line_dasharray": [0.5, 0.25],
     "@motorway_width": {
       "base": 1.2,
       "stops": [[6.5, 0], [7, 0.5], [20, 18]]
@@ -92,7 +92,7 @@
       "base": 1.2,
       "stops": [[15, 1.2], [20, 4]]
     },
-    "@path_line_dasharray": [1.2778861650691322, 0.6389430825345661],
+    "@path_line_dasharray": [1.5, 0.75],
     "@rail_width": {
       "base": 1.4,
       "stops": [[14, 0.4], [15, 0.75], [20, 2]]
@@ -101,7 +101,7 @@
       "base": 1.4,
       "stops": [[14.5, 0], [15, 3], [20, 8]]
     },
-    "@rail_hatch_line_dasharray": [0.48824180137743994, 7.3236270206616],
+    "@rail_hatch_line_dasharray": [0.2, 8],
     "@admin_level_3_width": {
       "base": 1,
       "stops": [[4, 0.4], [5, 1], [12, 3]]
@@ -109,7 +109,8 @@
     "@admin_level_2_width": {
       "base": 1,
       "stops": [[4, 1.4], [5, 2], [12, 8]]
-    }
+    },
+    "@admin_level_3_dasharray": [3, 1, 1, 1]
   },
   "sources": {
     "mapbox": {
@@ -329,7 +330,6 @@
     "source-layer": "tunnel",
     "filter": ["==", "class", "service"],
     "layout": {
-      "line-cap": "round",
       "line-join": "round"
     },
     "paint": {
@@ -348,7 +348,7 @@
     },
     "paint": {
       "line-color": "@street_casing",
-      "line-dasharray": [0.8714859437751004, 0.24899598393574293],
+      "line-dasharray": "@tunnel_line_dasharray",
       "line-width": "@street_casing_width",
       "line-opacity": "@street_casing_opacity"
     }
@@ -359,7 +359,6 @@
     "source-layer": "tunnel",
     "filter": ["==", "class", "main"],
     "layout": {
-      "line-cap": "round",
       "line-join": "round"
     },
     "paint": {
@@ -374,7 +373,6 @@
     "source-layer": "tunnel",
     "filter": ["==", "class", "motorway"],
     "layout": {
-      "line-cap": "round",
       "line-join": "round"
     },
     "paint": {
@@ -724,7 +722,7 @@
     },
     "paint": {
       "line-color": "@admin",
-      "line-dasharray": [3.3333333333333335, 1],
+      "line-dasharray": "@admin_level_3_dasharray",
       "line-width": "@admin_level_3_width"
     }
   }, {
@@ -752,7 +750,7 @@
     },
     "paint": {
       "line-color": "@admin",
-      "line-dasharray": [-0.5, 1.5],
+      "line-dasharray": [2, 2],
       "line-width": "@admin_level_2_width"
     }
   }, {
@@ -767,7 +765,7 @@
     "paint": {
       "line-color": "@water",
       "line-opacity": "@admin-opacity",
-      "line-dasharray": [3.3333333333333335, 1],
+      "line-dasharray": "@admin_level_3_dasharray",
       "line-width": "@admin_level_3_width"
     }
   }, {
