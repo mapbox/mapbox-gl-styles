@@ -23,7 +23,7 @@
       "maxzoom": 15
     }
   },
-  "sprite": "/sprites/pencil",
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/pencil",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
