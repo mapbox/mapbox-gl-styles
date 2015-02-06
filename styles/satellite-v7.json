@@ -447,10 +447,10 @@
       "icon-halo-color": "black",
       "icon-halo-width": 1,
       "text-opacity": 0.9,
-      "text-translate": [0, {
-        "base": 1,
-        "stops": [[5.99, 13], [6, 0]]
-      }],
+      "text-translate": {
+        "stops": [[5.99, [0, 13]], [6, [0, 0]]],
+        "base": 1
+      },
       "icon-color": "#fff",
       "text-halo-color": "@halo",
       "icon-size": 0.5,

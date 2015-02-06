@@ -300,13 +300,10 @@
     "paint": {
       "fill-color": "@building",
       "fill-opacity": "@building_opacity",
-      "fill-translate": [{
-        "base": 1,
-        "stops": [[15, 0], [16, -2]]
-      }, {
-        "base": 1,
-        "stops": [[15, 0], [16, -2]]
-      }],
+      "fill-translate": {
+        "stops": [[15, [0, 0]], [16, [-2, -2]]],
+        "base": 1
+      },
       "fill-outline-color": "@building_shadow"
     }
   }, {

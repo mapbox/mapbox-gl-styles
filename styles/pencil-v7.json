@@ -46,8 +46,8 @@
     "type": "line",
     "source": "mapbox",
     "source-layer": "landuse",
-    "filter": ["all", ["in", "class", "park", "cemetery"], ["==", "$type", "Polygon"]],
     "minzoom": 11,
+    "filter": ["all", ["in", "class", "park", "cemetery"], ["==", "$type", "Polygon"]],
     "paint": {
       "line-image": "line_shade_22_1",
       "line-width": {
@@ -157,11 +157,11 @@
     "minzoom": 2,
     "paint": {
       "line-width": {
-        "stops": [[14, 1],[20, 3]]
-        },
+        "stops": [[14, 1], [20, 3]]
+      },
       "line-color": "#888888",
       "line-opacity": 0.5
-    }  
+    }
   }, {
     "id": "tunnel_path",
     "type": "line",
@@ -172,7 +172,7 @@
       "line-image": "line_dotted_4",
       "line-width": 2,
       "line-opacity": 0.25
-    }     
+    }
   }, {
     "id": "tunnel_service",
     "type": "line",
@@ -185,7 +185,7 @@
       "line-opacity": {
         "stops": [[15, 0], [15.25, 0.25]]
       }
-    }          
+    }
   }, {
     "id": "tunnel_motorway_casing",
     "type": "line",
@@ -209,7 +209,7 @@
       "line-image": "line_double_18",
       "line-width": 9,
       "line-opacity": 0.25
-    }  
+    }
   }, {
     "id": "tunnel_street_casing",
     "type": "line",
@@ -237,9 +237,9 @@
       },
       "line-opacity": {
         "stops": [[7, 0.2], [8, 0.1], [10, 0.1], [11, 0]]
-        },
-      "line-dasharray": [2,1]
-    }    
+      },
+      "line-dasharray": [2, 1]
+    }
   }, {
     "id": "road_motorway_low_dash2",
     "type": "line",
@@ -255,9 +255,9 @@
       },
       "line-opacity": {
         "stops": [[7, 0.2], [8, 0.1], [10, 0.1], [11, 0]]
-        },
-      "line-dasharray": [12,1]
-    }      
+      },
+      "line-dasharray": [12, 1]
+    }
   }, {
     "id": "road_main_motorwaylink_low",
     "type": "line",
@@ -274,7 +274,7 @@
       "line-opacity": {
         "stops": [[7, 0.25], [10, 0.25], [11, 0]]
       }
-    }        
+    }
   }, {
     "id": "road_motorway_mid",
     "type": "line",
@@ -289,7 +289,7 @@
       "line-opacity": {
         "stops": [[10, 0], [11, 1]]
       }
-    }  
+    }
   }, {
     "id": "road_main_motorwaylink_mid",
     "type": "line",
@@ -304,7 +304,7 @@
       "line-opacity": {
         "stops": [[10, 0], [11, 1]]
       }
-    }   
+    }
   }, {
     "id": "road_street_mid",
     "type": "line",
@@ -318,7 +318,7 @@
       "line-opacity": {
         "stops": [[12, 0], [12.5, 1]]
       }
-    }  
+    }
   }, {
     "id": "road_path",
     "type": "line",
@@ -328,7 +328,7 @@
     "paint": {
       "line-image": "line_dotted_4",
       "line-width": 2
-    }     
+    }
   }, {
     "id": "road_service",
     "type": "line",
@@ -341,7 +341,7 @@
       "line-opacity": {
         "stops": [[15, 0], [15.25, 1]]
       }
-    }          
+    }
   }, {
     "id": "road_motorway_casing",
     "type": "line",
@@ -371,7 +371,7 @@
     "paint": {
       "line-image": "line_double_18",
       "line-width": 9
-    }  
+    }
   }, {
     "id": "road_street_casing",
     "type": "line",
@@ -396,7 +396,7 @@
     "paint": {
       "line-image": "line_double_18_mask",
       "line-width": 9
-    }  
+    }
   }, {
     "id": "road_street",
     "ref": "road_street_casing",
@@ -413,7 +413,7 @@
     "paint": {
       "line-image": "line_dotted_4",
       "line-width": 2
-    }     
+    }
   }, {
     "id": "bridge_service",
     "type": "line",
@@ -426,7 +426,7 @@
       "line-opacity": {
         "stops": [[15, 0], [15.25, 1]]
       }
-    }          
+    }
   }, {
     "id": "bridge_motorway_casing",
     "type": "line",
@@ -456,7 +456,7 @@
     "paint": {
       "line-image": "line_double_18",
       "line-width": 9
-    }  
+    }
   }, {
     "id": "bridge_street_casing",
     "type": "line",
@@ -481,14 +481,14 @@
     "paint": {
       "line-image": "line_double_18_mask",
       "line-width": 9
-    }  
+    }
   }, {
     "id": "bridge_street",
     "ref": "bridge_street_casing",
     "paint": {
       "line-image": "line_double_16_mask",
       "line-width": 8
-    }  
+    }
   }, {
     "id": "building",
     "type": "fill",
@@ -531,7 +531,7 @@
       "line-width": {
         "stops": [[3, 4], [6, 6]]
       }
-    }    
+    }
   }, {
     "id": "admin_3_4",
     "type": "line",
@@ -548,8 +548,8 @@
       "line-width": {
         "stops": [[5, 1], [9, 2.2]]
       },
-      "line-dasharray": [1,0.5,1.5,0.5,0.5,0.5,2,0.5,2.5,0.5]
-    }  
+      "line-dasharray": [1, 0.5, 1.5, 0.5, 0.5, 0.5, 2, 0.5, 2.5, 0.5]
+    }
   }, {
     "id": "admin_2_maritime",
     "type": "line",
@@ -567,7 +567,7 @@
         "stops": [[3, 1.2], [6, 2.2]]
       },
       "line-dasharray": [2, 2, 1.5, 1.5]
-    }  
+    }
   }, {
     "id": "admin_2_glow",
     "type": "line",
@@ -584,7 +584,7 @@
       "line-width": {
         "stops": [[3, 6], [6, 8]]
       }
-    }    
+    }
   }, {
     "id": "admin_2",
     "type": "line",
@@ -601,7 +601,7 @@
       "line-width": {
         "stops": [[3, 1.2], [6, 2.2]]
       },
-      "line-dasharray": [1,0.5,1.5,0.5,0.5,0.5,2,0.5,2.5,0.5]
+      "line-dasharray": [1, 0.5, 1.5, 0.5, 0.5, 0.5, 2, 0.5, 2.5, 0.5]
     }
   }]
 }
