@@ -5,3 +5,6 @@ node_js:
 install:
 - npm install
 - npm ls
+notifications:
+  slack:
+    secure: FhGLqoiuuRowcEyPmBzfPsYXBsy8Rp+Nm8q7qpG8VrDrqEUfHPkPmLzeBxmW1GWiIlEJTyk2nTLy2Rfgfd+z8HJE/qCBTDL4jauqxfo5GaTa1Dxcgd2ciX/uCc005teTsbRNZ41tvIXfXuVwafKAfXb+mxTWTYrYR39tZw1kHmw=
