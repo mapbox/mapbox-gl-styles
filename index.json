@@ -1028,8 +1028,7 @@
     "sources": {
       "mapbox": {
         "type": "vector",
-        "url": "mapbox://mapbox.mapbox-streets-v6-dev",
-        "maxzoom": 15
+        "url": "mapbox://mapbox.mapbox-streets-v6-dev"
       }
     },
     "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
@@ -3523,8 +3522,7 @@
     "sources": {
       "mapbox": {
         "type": "vector",
-        "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6-dev",
-        "maxzoom": 15
+        "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6-dev"
       }
     },
     "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/outdoors",
@@ -6904,8 +6902,7 @@
     "sources": {
       "mapbox": {
         "type": "vector",
-        "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6-dev",
-        "maxzoom": 15
+        "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6-dev"
       }
     },
     "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/pencil",
@@ -8182,8 +8179,7 @@
     "sources": {
       "mapbox": {
         "type": "vector",
-        "url": "mapbox://mapbox.mapbox-streets-v6-dev",
-        "maxzoom": 18
+        "url": "mapbox://mapbox.mapbox-streets-v6-dev"
       },
       "satellite": {
         "type": "raster",
@@ -8192,8 +8188,7 @@
       },
       "Mapbox Terrain V2": {
         "type": "vector",
-        "url": "mapbox://mapbox.mapbox-terrain-v2",
-        "maxzoom": 14
+        "url": "mapbox://mapbox.mapbox-terrain-v2"
       }
     },
     "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
