@@ -116,7 +116,7 @@
   "sources": {
     "mapbox": {
       "type": "vector",
-      "url": "mapbox://mapbox.mapbox-streets-v6-dev"
+      "url": "mapbox://mapbox.mapbox-streets-v6"
     }
   },
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
