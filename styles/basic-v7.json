@@ -200,15 +200,6 @@
       }
     }
   }, {
-    "id": "country_label_line",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "country_label_line",
-    "filter": ["==", "$type", "LineString"],
-    "paint": {
-      "line-color": "#aaa"
-    }
-  }, {
     "id": "country_label",
     "type": "symbol",
     "source": "mapbox",

@@ -1597,19 +1597,6 @@
       "line-color": "#0a1347"
     }
   }, {
-    "id": "country_label_line",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "country_label_line",
-    "paint": {
-      "line-color": "@country_text",
-      "line-width": 0.5,
-      "line-opacity": 0.5
-    },
-    "paint.night": {
-      "line-color": "@text_night"
-    }
-  }, {
     "id": "country_label",
     "type": "symbol",
     "source": "mapbox",

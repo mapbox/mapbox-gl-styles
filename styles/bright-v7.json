@@ -779,15 +779,6 @@
       "line-width": "@admin_level_2_width"
     }
   }, {
-    "id": "country_label_line",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "country_label_line",
-    "paint": {
-      "line-color": "@text",
-      "line-opacity": 0.5
-    }
-  }, {
     "id": "country_label_1",
     "type": "symbol",
     "source": "mapbox",
