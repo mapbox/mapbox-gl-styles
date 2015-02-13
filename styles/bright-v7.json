@@ -116,7 +116,7 @@
   "sources": {
     "mapbox": {
       "type": "vector",
-      "url": "mapbox://mapbox.mapbox-streets-v6-dev"
+      "url": "mapbox://mapbox.mapbox-streets-v6"
     }
   },
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
@@ -777,15 +777,6 @@
       "line-color": "@water",
       "line-opacity": "@admin-opacity",
       "line-width": "@admin_level_2_width"
-    }
-  }, {
-    "id": "country_label_line",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "country_label_line",
-    "paint": {
-      "line-color": "@text",
-      "line-opacity": 0.5
     }
   }, {
     "id": "country_label_1",

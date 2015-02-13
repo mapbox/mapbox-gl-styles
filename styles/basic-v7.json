@@ -26,7 +26,7 @@
   "sources": {
     "mapbox": {
       "type": "vector",
-      "url": "mapbox://mapbox.mapbox-streets-v6-dev",
+      "url": "mapbox://mapbox.mapbox-streets-v6",
       "maxZoom": 15
     }
   },
@@ -198,15 +198,6 @@
         "base": 1.3,
         "stops": [[3, 0.5], [22, 15]]
       }
-    }
-  }, {
-    "id": "country_label_line",
-    "type": "line",
-    "source": "mapbox",
-    "source-layer": "country_label_line",
-    "filter": ["==", "$type", "LineString"],
-    "paint": {
-      "line-color": "#aaa"
     }
   }, {
     "id": "country_label",
