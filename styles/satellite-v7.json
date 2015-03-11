@@ -51,7 +51,7 @@
     "satellite": {
       "type": "raster",
       "url": "mapbox://mapbox.satellite",
-      "tileSize": 256
+      "tilesize": 256
     },
     "Mapbox Terrain V2": {
       "type": "vector",
