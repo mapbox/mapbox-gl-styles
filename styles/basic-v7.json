@@ -26,8 +26,7 @@
   "sources": {
     "mapbox": {
       "type": "vector",
-      "url": "mapbox://mapbox.mapbox-streets-v6",
-      "maxZoom": 15
+      "url": "mapbox://mapbox.mapbox-streets-v6"
     }
   },
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/sprite",
