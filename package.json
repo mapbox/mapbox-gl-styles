@@ -11,7 +11,8 @@
   },
   "devDependencies": {
     "mapbox-gl-style-lint": "^7.0.0",
-    "mapbox-gl-style-spec": "^7.0.0"
+    "mapbox-gl-style-spec": "^7.0.0",
+    "sponge": "^0.1.0"
   },
   "license": "ISC"
 }
