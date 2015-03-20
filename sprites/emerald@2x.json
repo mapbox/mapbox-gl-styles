@@ -1,0 +1,338 @@
+{
+    "wave": {
+        "x": 0,
+        "y": 218,
+        "width": 8,
+        "height": 8,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "interstate_1": {
+        "x": 0,
+        "y": 48,
+        "width": 50,
+        "height": 48,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "interstate_2": {
+        "x": 0,
+        "y": 48,
+        "width": 50,
+        "height": 48,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "interstate_3": {
+        "x": 54,
+        "y": 48,
+        "width": 60,
+        "height": 48,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "us_highway_1": {
+        "x": 0,
+        "y": 164,
+        "width": 49,
+        "height": 48,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "us_highway_2": {
+        "x": 50,
+        "y": 164,
+        "width": 56,
+        "height": 48,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "us_highway_3": {
+        "x": 107,
+        "y": 164,
+        "width": 60,
+        "height": 48,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "us_state_1": {
+        "x": 0,
+        "y": 100,
+        "width": 58,
+        "height": 48,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "us_state_2": {
+        "x": 0,
+        "y": 100,
+        "width": 58,
+        "height": 48,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "us_state_3": {
+        "x": 60,
+        "y": 100,
+        "width": 65,
+        "height": 48,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "default_1": {
+        "x": 0,
+        "y": 0,
+        "width": 34,
+        "height": 32,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "default_2": {
+        "x": 34,
+        "y": 0,
+        "width": 44,
+        "height": 32,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "default_3": {
+        "x": 78,
+        "y": 0,
+        "width": 54,
+        "height": 32,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "default_4": {
+        "x": 132,
+        "y": 0,
+        "width": 64,
+        "height": 32,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "default_5": {
+        "x": 196,
+        "y": 0,
+        "width": 74,
+        "height": 32,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "default_6": {
+        "x": 270,
+        "y": 0,
+        "width": 84,
+        "height": 32,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "london-overground": {
+        "x": 140,
+        "y": 50,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "london-underground": {
+        "x": 176,
+        "y": 50,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "national-rail": {
+        "x": 212,
+        "y": 50,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "dlr": {
+        "x": 212,
+        "y": 50,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "dlr.london-overground.london-underground.national-rail": {
+        "x": 140,
+        "y": 50,
+        "width": 144,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "dlr.london-underground": {
+        "x": 176,
+        "y": 50,
+        "width": 72,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "dlr.london-underground.national-rail": {
+        "x": 176,
+        "y": 50,
+        "width": 108,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "dlr.national-rail": {
+        "x": 212,
+        "y": 50,
+        "width": 72,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "london-overground.london-underground": {
+        "x": 140,
+        "y": 50,
+        "width": 72,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "london-overground.london-underground.national-rail": {
+        "x": 248,
+        "y": 50,
+        "width": 108,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "london-overground.national-rail": {
+        "x": 248,
+        "y": 50,
+        "width": 72,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "london-underground.national-rail": {
+        "x": 248,
+        "y": 86,
+        "width": 72,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "metro": {
+        "x": 142,
+        "y": 86,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "rer": {
+        "x": 174,
+        "y": 86,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "metro.rer": {
+        "x": 142,
+        "y": 86,
+        "width": 68,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "rer.transilien": {
+        "x": 174,
+        "y": 86,
+        "width": 72,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "u-bahn": {
+        "x": 140,
+        "y": 124,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "s-bahn": {
+        "x": 176,
+        "y": 124,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "s-bahn.u-bahn": {
+        "x": 140,
+        "y": 124,
+        "width": 72,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "washington-metro": {
+        "x": 212,
+        "y": 124,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "wiener-linien": {
+        "x": 248,
+        "y": 124,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "moscow-metro": {
+        "x": 284,
+        "y": 122,
+        "width": 43,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "generic-metro": {
+        "x": 320,
+        "y": 86,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "generic-rail": {
+        "x": 356,
+        "y": 86,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "dot": {
+        "x": 333,
+        "y": 127,
+        "width": 26,
+        "height": 26,
+        "pixelRatio": 2,
+        "sdf": false
+    },
+    "default_marker": {
+        "x": 0,
+        "y": 234,
+        "width": 66,
+        "height": 102,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+}

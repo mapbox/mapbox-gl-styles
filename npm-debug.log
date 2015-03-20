@@ -1,0 +1,210 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'shader-school' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'shader-school', null ]
+6 verbose cache add name=undefined spec="shader-school" args=["shader-school",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'shader-school',
+7 verbose parsed url   path: 'shader-school',
+7 verbose parsed url   href: 'shader-school' }
+8 silly lockFile e8dfa91f-shader-school shader-school
+9 verbose lock shader-school /Users/peterliu/.npm/e8dfa91f-shader-school.lock
+10 silly lockFile e8dfa91f-shader-school shader-school
+11 silly lockFile e8dfa91f-shader-school shader-school
+12 verbose addNamed [ 'shader-school', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 03614f7a-shader-school shader-school@
+15 verbose lock shader-school@ /Users/peterliu/.npm/03614f7a-shader-school.lock
+16 silly addNameRange { name: 'shader-school', range: '*', hasData: false }
+17 verbose request where is /shader-school
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 054e599ed92474ac
+20 verbose url raw /shader-school
+21 verbose url resolving [ 'https://registry.npmjs.org/', './shader-school' ]
+22 verbose url resolved https://registry.npmjs.org/shader-school
+23 verbose request where is https://registry.npmjs.org/shader-school
+24 info trying registry request attempt 1 at 11:25:54
+25 http GET https://registry.npmjs.org/shader-school
+26 http 200 https://registry.npmjs.org/shader-school
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Thu, 29 Jan 2015 19:25:52 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"871GCUU5942SBHUID6J72EZS3"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '24479',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1422559552.420647,VS0,VE143',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'shader-school', range: '*', hasData: true }
+29 silly addNameRange versions [ 'shader-school',
+29 silly addNameRange   [ '0.0.0',
+29 silly addNameRange     '0.0.1',
+29 silly addNameRange     '0.0.3',
+29 silly addNameRange     '0.0.4',
+29 silly addNameRange     '0.0.5',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '1.0.1',
+29 silly addNameRange     '1.0.2' ] ]
+30 verbose addNamed [ 'shader-school', '1.0.2' ]
+31 verbose addNamed [ '1.0.2', '1.0.2' ]
+32 silly lockFile 25bfd3f9-shader-school-1-0-2 shader-school@1.0.2
+33 verbose lock shader-school@1.0.2 /Users/peterliu/.npm/25bfd3f9-shader-school-1-0-2.lock
+34 silly lockFile 4cf590ce-r-school-shader-school-1-0-2-tgz https://registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz
+35 verbose lock https://registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz /Users/peterliu/.npm/4cf590ce-r-school-shader-school-1-0-2-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz',
+36 verbose addRemoteTarball   '055feeed7dce08b692f5087b92161c1e994fb5f3' ]
+37 info retry fetch attempt 1 at 11:25:55
+38 verbose fetch to= /var/folders/s5/g_01z6sj5j50w6rm_w7069rr0000gn/T/npm-48430-lJn3bMe4/registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz
+39 http GET https://registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz
+40 http 200 https://registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz
+41 silly lockFile 4cf590ce-r-school-shader-school-1-0-2-tgz https://registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz
+42 silly lockFile 4cf590ce-r-school-shader-school-1-0-2-tgz https://registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz
+43 silly lockFile 25bfd3f9-shader-school-1-0-2 shader-school@1.0.2
+44 silly lockFile 25bfd3f9-shader-school-1-0-2 shader-school@1.0.2
+45 silly lockFile 03614f7a-shader-school shader-school@
+46 silly lockFile 03614f7a-shader-school shader-school@
+47 silly resolved [ { name: 'shader-school',
+47 silly resolved     version: '1.0.2',
+47 silly resolved     description: 'Self directed GLSL lessons',
+47 silly resolved     main: 'index.js',
+47 silly resolved     bin: { 'shader-school': 'index.js' },
+47 silly resolved     scripts:
+47 silly resolved      { pack: 'rm -rf answers; rm -rf node_modules && npm install && npm dedupe && node prepack && find . -type file | grep -v workshop.tar.gz | grep -v .git | tar -cvzf ./workshop.tar.gz -T - && node postpack',
+47 silly resolved        test: 'echo "Error: no test specified" && exit 1',
+47 silly resolved        start: 'mkdir answers; cd answers && NODE_ENV=development node ..' },
+47 silly resolved     authors:
+47 silly resolved      [ 'Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)',
+47 silly resolved        'Mikola Lysenko <mikolalysenko@gmail.com> (http://0fps.net)',
+47 silly resolved        'Chris Dickinson <chris@neversaw.us> (http://neversaw.us)' ],
+47 silly resolved     homepage: 'http://nodeschool.io/#shader-school',
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'https://github.com/stackgl/shader-school.git' },
+47 silly resolved     license: 'ISC',
+47 silly resolved     dependencies:
+47 silly resolved      { 'a-big-triangle': '0.0.0',
+47 silly resolved        apprise: '^1.0.0',
+47 silly resolved        autoprefixer: '^1.2.0',
+47 silly resolved        'baboon-image': '^1.0.0',
+47 silly resolved        beefy: '^2.0.2',
+47 silly resolved        brfs: '^1.1.1',
+47 silly resolved        'browser-menu': '^0.1.0',
+47 silly resolved        browserify: '^4.1.10',
+47 silly resolved        'canvas-fit': '0.0.0',
+47 silly resolved        chalk: '^0.4.0',
+47 silly resolved        clamp: '^1.0.0',
+47 silly resolved        'conway-hart': '^0.1.0',
+47 silly resolved        domify: '^1.2.2',
+47 silly resolved        ecstatic: '^0.5.3',
+47 silly resolved        envify: '^1.2.1',
+47 silly resolved        'findup-element': '0.0.0',
+47 silly resolved        'frame-debounce': '0.0.0',
+47 silly resolved        'gl-axes': '^2.2.3',
+47 silly resolved        'gl-buffer': '^2.0.8',
+47 silly resolved        'gl-compare': '^1.0.0',
+47 silly resolved        'gl-compare-sidebar': '^1.1.1',
+47 silly resolved        'gl-context': '^0.1.0',
+47 silly resolved        'gl-fbo': '^1.1.2',
+47 silly resolved        'gl-fbo-matching': '^1.0.0',
+47 silly resolved        'gl-matrix': '^2.1.0',
+47 silly resolved        'gl-texture2d': '^1.2.0',
+47 silly resolved        'gl-vao': '^1.1.3',
+47 silly resolved        glsldoc: '0.0.4',
+47 silly resolved        glslify: '^1.5.0',
+47 silly resolved        'glslify-live': '^2.0.3',
+47 silly resolved        'google-fonts': '0.0.0',
+47 silly resolved        'highlight.js': '^8.0.0',
+47 silly resolved        inquirer: '^0.5.1',
+47 silly resolved        'insert-css': '^0.1.1',
+47 silly resolved        marked: '^0.3.2',
+47 silly resolved        'memoize-sync': '0.0.2',
+47 silly resolved        'mesh-normals': '^1.0.0',
+47 silly resolved        mkdirp: '^0.5.0',
+47 silly resolved        'mouse-position': '^1.0.0',
+47 silly resolved        'mouse-pressed': '0.0.1',
+47 silly resolved        ndarray: '^1.0.15',
+47 silly resolved        'ndarray-distance': '0.0.0',
+47 silly resolved        opener: '^1.3.0',
+47 silly resolved        quotemeta: '0.0.0',
+47 silly resolved        raf: '^2.0.1',
+47 silly resolved        'remove-element': '0.0.0',
+47 silly resolved        rework: '^0.20.3',
+47 silly resolved        'rework-inline': '^0.2.0',
+47 silly resolved        'rework-npm': '^0.6.1',
+47 silly resolved        'right-now': '^1.0.0',
+47 silly resolved        sidenote: '^1.0.0',
+47 silly resolved        sliced: '0.0.5',
+47 silly resolved        'stanford-dragon': '^1.0.0',
+47 silly resolved        wordwrap: '0.0.2',
+47 silly resolved        xhr: '^1.9.0',
+47 silly resolved        zfill: '0.0.2' },
+47 silly resolved     gitHead: '573326fc47d83a3b19493aea9dcd0a13c21015ca',
+47 silly resolved     bugs: { url: 'https://github.com/stackgl/shader-school/issues' },
+47 silly resolved     _id: 'shader-school@1.0.2',
+47 silly resolved     _shasum: '055feeed7dce08b692f5087b92161c1e994fb5f3',
+47 silly resolved     _from: 'shader-school@',
+47 silly resolved     _npmVersion: '2.0.2',
+47 silly resolved     _nodeVersion: '0.10.28',
+47 silly resolved     _npmUser: { name: 'hughsk', email: 'hughskennedy@gmail.com' },
+47 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+47 silly resolved     dist:
+47 silly resolved      { shasum: '055feeed7dce08b692f5087b92161c1e994fb5f3',
+47 silly resolved        tarball: 'http://registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz' },
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/shader-school/-/shader-school-1.0.2.tgz' } ]
+48 info install shader-school@1.0.2 into /usr/local/lib
+49 info installOne shader-school@1.0.2
+50 verbose lib/node_modules/shader-school unbuild
+51 verbose tar unpack /Users/peterliu/.npm/shader-school/1.0.2/package.tgz
+52 silly lockFile 68d7d30b-l-lib-node-modules-shader-school tar:///usr/local/lib/node_modules/shader-school
+53 verbose lock tar:///usr/local/lib/node_modules/shader-school /Users/peterliu/.npm/68d7d30b-l-lib-node-modules-shader-school.lock
+54 silly lockFile bc227433--shader-school-1-0-2-package-tgz tar:///Users/peterliu/.npm/shader-school/1.0.2/package.tgz
+55 verbose lock tar:///Users/peterliu/.npm/shader-school/1.0.2/package.tgz /Users/peterliu/.npm/bc227433--shader-school-1-0-2-package-tgz.lock
+56 silly gunzTarPerm modes [ '755', '644' ]
+57 error Error: EACCES, mkdir '/usr/local/lib/node_modules/shader-school'
+57 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/shader-school']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/local/lib/node_modules/shader-school',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/local/lib/node_modules/shader-school',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:107:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Darwin 13.3.0
+60 error command "node" "/usr/local/bin/npm" "install" "-g" "shader-school"
+61 error cwd /Users/peterliu/Repos/mapbox-gl-styles
+62 error node -v v0.10.33
+63 error npm -v 1.4.28
+64 error path /usr/local/lib/node_modules/shader-school
+65 error fstream_path /usr/local/lib/node_modules/shader-school
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/shader-school'
+71 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:107:15)
+72 verbose exit [ 3, true ]
