@@ -1,1 +1,2795 @@
-{"version":7,"name":"EMERALD","constants":{"@motorway_case":"#e59063","@road_case":{"stops":[[0,"#ffffff"],[20,"#ffffff"]]},"@number-1":{"base":1,"stops":[[5,0],[5.2,1]]},"@number-2":1,"@hillshades":{"base":1,"stops":[[14,0.05],[15,0]]},"@number-3":{"base":1,"stops":[[11.2,0.75],[11.3,1],[18,13.25]]}},"sources":{"compositedsource":{"type":"vector","url":"mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6"}},"sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/emerald", "glyphs":"mapbox://fontstack/{fontstack}/{range}.pbf","layers":[{"id":"background","type":"background","minzoom":0,"maxzoom":22,"layout":{"visibility":"visible"},"paint":{"background-color":"#F8F4F0"}},{"id":"landcover_wood","type":"fill","source":"compositedsource","source-layer":"landcover","minzoom":0,"maxzoom":22,"filter":["all",["==","class","wood"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#d4e2c6","fill-opacity":0.5}},{"id":"landcover_scrub","type":"fill","source":"compositedsource","source-layer":"landcover","minzoom":0,"maxzoom":22,"filter":["all",["==","class","scrub"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#e0e8cd","fill-opacity":0.5}},{"id":"landcover_grass","type":"fill","source":"compositedsource","source-layer":"landcover","minzoom":0,"maxzoom":22,"filter":["all",["==","class","grass"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#e7ebd1","fill-opacity":0.5}},{"id":"landcover_crop","type":"fill","source":"compositedsource","source-layer":"landcover","minzoom":0,"maxzoom":22,"filter":["all",["==","class","crop"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#eeeed4","fill-opacity":0.5}},{"id":"landcover_snow","type":"fill","source":"compositedsource","source-layer":"landcover","minzoom":0,"maxzoom":22,"filter":["all",["==","class","snow"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#f4f8ff","fill-opacity":0.5}},{"id":"hospital","type":"fill","source":"compositedsource","source-layer":"landuse","minzoom":0,"maxzoom":22,"filter":["all",["==","class","hospital"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#f8ecee","fill-outline-color":"#ead1d2"}},{"id":"school","type":"fill","source":"compositedsource","source-layer":"landuse","minzoom":0,"maxzoom":22,"filter":["all",["==","class","school"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#f6eeff","fill-outline-color":{"base":1,"stops":[[12,"#f6eeff"],[13,"#e0dced"]]}}},{"id":"park","type":"fill","source":"compositedsource","source-layer":"landuse","minzoom":0,"maxzoom":22,"filter":["all",["==","class","park"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#d8e1c5","fill-opacity":1,"fill-outline-color":"#d2e4c7"}},{"id":"wood","type":"fill","source":"compositedsource","source-layer":"landuse","minzoom":0,"maxzoom":22,"filter":["all",["==","class","wood"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#6a4","fill-opacity":0.05}},{"id":"pitch","type":"fill","source":"compositedsource","source-layer":"landuse","minzoom":0,"maxzoom":22,"filter":["any",["==","class","pitch"],["==","type","golf_course"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#c1d6ac","fill-opacity":1}},{"id":"sand","type":"fill","source":"compositedsource","source-layer":"landuse","minzoom":0,"maxzoom":22,"filter":["all",["==","class","sand"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#f1f0d2","fill-opacity":1}},{"id":"cemetery","type":"fill","source":"compositedsource","source-layer":"landuse","minzoom":0,"maxzoom":22,"filter":["all",["==","class","cemetery"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#e7ebd1"}},{"id":"shadow_uber","type":"fill","source":"compositedsource","source-layer":"hillshade","minzoom":0,"maxzoom":15,"filter":["all",["==","level",56]],"layout":{"visibility":"visible"},"paint":{"fill-opacity":"@hillshades","fill-color":"#031c2a"}},{"id":"shadow_strong","type":"fill","source":"compositedsource","source-layer":"hillshade","minzoom":0,"maxzoom":15,"filter":["all",["==","level",67]],"layout":{"visibility":"visible"},"paint":{"fill-opacity":"@hillshades","fill-color":"#031c2a"}},{"id":"shadow_medium","type":"fill","source":"compositedsource","source-layer":"hillshade","minzoom":0,"maxzoom":15,"filter":["all",["==","level",78]],"layout":{"visibility":"visible"},"paint":{"fill-opacity":"@hillshades","fill-color":"#031c2a"}},{"id":"shadow_weak","type":"fill","source":"compositedsource","source-layer":"hillshade","minzoom":0,"maxzoom":15,"filter":["all",["==","level",89]],"layout":{"visibility":"visible"},"paint":{"fill-opacity":"@hillshades","fill-color":"#031c2a"}},{"id":"highlight_weak","type":"fill","source":"compositedsource","source-layer":"hillshade","minzoom":0,"maxzoom":15,"filter":["all",["==","level",90]],"layout":{"visibility":"visible"},"paint":{"fill-opacity":{"base":1,"stops":[[14,0.1],[15,0]]},"fill-color":"#fff"}},{"id":"highlight_medium","type":"fill","source":"compositedsource","source-layer":"hillshade","minzoom":0,"maxzoom":22,"filter":["all",["==","level",94]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#fff","fill-opacity":0.2}},{"id":"airport","type":"fill","source":"compositedsource","source-layer":"landuse","minzoom":0,"maxzoom":22,"filter":["all",["==","class","industrial"]],"layout":{},"paint":{"fill-color":"#ccc","fill-opacity":0.25}},{"id":"aeroway","type":"line","source":"compositedsource","source-layer":"aeroway","minzoom":0,"maxzoom":22,"filter":["all",["in","type","runway","taxiway"]],"layout":{"line-cap":"butt"},"paint":{"line-width":{"base":1,"stops":[[10,2],[20,12]]},"line-opacity":1,"line-color":"#ddd"}},{"id":"water","type":"fill","source":"compositedsource","source-layer":"water","minzoom":0,"maxzoom":22,"layout":{"visibility":"visible"},"paint":{"fill-color":"#b6d0ea","fill-outline-color":"#b6d0ea","fill-image":"wave"}},{"id":"barrier_land","type":"fill","source":"compositedsource","source-layer":"barrier_line","minzoom":0,"maxzoom":22,"filter":["all",["==","class","land"],["==","$type","Polygon"]],"layout":{"visibility":"visible"},"paint":{"fill-color":"#F8F4F0","fill-opacity":1}},{"id":"building_walls","type":"fill","source":"compositedsource","source-layer":"building","minzoom":0,"maxzoom":22,"layout":{"visibility":"visible"},"paint":{"fill-color":"#cfc4c3","fill-opacity":1}},{"id":"building_rooves","type":"fill","source":"compositedsource","source-layer":"building","minzoom":0,"maxzoom":22,"layout":{"visibility":"visible"},"paint":{"fill-color":"#ede6e3","fill-translate":{"base":1,"stops":[[16,[0,0]],[19,[-4,-4]]]},"fill-opacity":1}},{"id":"building_roof_edges","type":"line","source":"compositedsource","source-layer":"building","minzoom":0,"maxzoom":22,"layout":{"visibility":"visible"},"paint":{"line-color":"#cfc4c3","line-width":0.5,"line-opacity":{"base":1,"stops":[[16,0],[17,1]]},"line-translate":{"base":1,"stops":[[16,[-0.25,-0.25]],[19,[-4,-4]]]}}},{"id":"country_border","type":"line","source":"compositedsource","source-layer":"admin","minzoom":0,"maxzoom":22,"filter":["all",["==","admin_level",2],["==","maritime",0]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"#293804","line-opacity":0.5,"line-width":{"base":1,"stops":[[0,0.5],[10,2]]}}},{"id":"state_border","type":"line","source":"compositedsource","source-layer":"admin","minzoom":0,"maxzoom":22,"filter":["all",["==","admin_level",4],["==","maritime",0]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#99a472","line-opacity":1,"line-width":{"base":1,"stops":[[0,0.25],[13,2]]},"line-dasharray":[3,1]}},{"id":"state-label","type":"symbol","source":"compositedsource","source-layer":"state_label","minzoom":3,"maxzoom":22,"layout":{"text-allow-overlap":true,"text-ignore-placement":false,"text-transform":"uppercase","text-font":"Open Sans Bold, Arial Unicode MS Regular","text-padding":0,"visibility":"visible","text-field":{"base":1,"stops":[[0,"{abbr}"],[4,"{name}"]]},"text-letter-spacing":0.15,"text-max-width":4},"paint":{"text-opacity":0.25,"text-size":{"base":1,"stops":[[0,1],[12,35]]},"text-color":"#425807"}},{"id":"tunnel_path","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["in","class","path"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#aaa","line-width":{"base":1.25,"stops":[[5,0.75],[16,1.5]]},"line-dasharray":[0.3,2.5],"line-opacity":0.75}},{"id":"tunnel_service_case","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["in","class","service"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#ccc","line-width":{"base":1.75,"stops":[[12,0.25],[14.5,1.5],[14.6,4],[18,8.5]]},"line-dasharray":[0.5,0.5],"line-opacity":1}},{"id":"tunnel_street_case","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["in","class","street","street_limited"],["==","$type","LineString"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":{"base":1,"stops":[[14,"#ccc"],[14.1,"#b9b9b9"]]},"line-width":{"base":1.99,"stops":[[5,0.25],[14,1],[14.1,4],[18,9]]},"line-dasharray":[0.5,0.5]}},{"id":"tunnel_tertiary_misc_case","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["!in","type","primary","secondary","trunk"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":{"base":1,"stops":[[11.9,"#ccc"],[12,"#b9b9b9"]]},"line-width":{"base":1.25,"stops":[[11.9,0.75],[12,3.5],[18,11]]},"line-dasharray":[0.5,0.5]}},{"id":"tunnel_secondary_case","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["in","type","secondary"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":{"base":1,"stops":[[11.2,"#ccc"],[11.3,"#b9b9b9"]]},"line-width":{"base":1,"stops":[[11.2,0.75],[11.3,1],[18,13]]},"line-opacity":1,"line-dasharray":[0.5,0.5]}},{"id":"tunnel_primary_case","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["==","type","primary"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":{"base":1,"stops":[[10.9,"#ccc"],[11,"#b9b9b9"]]},"line-width":{"base":1.25,"stops":[[10.9,1],[11,2.75],[18,15]]},"line-opacity":1,"line-dasharray":[0.5,0.5]}},{"id":"tunnel_trunk_case","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["==","type","trunk"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"#dba866","line-width":{"base":1.25,"stops":[[9.9,1.5],[10,2],[18,16]]},"line-dasharray":[0.5,0.5]}},{"id":"tunnel_service","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["in","class","service"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"#fff","line-width":{"base":1.25,"stops":[[14.5,0],[14.6,2],[18,4.5]]},"line-dasharray":[1,0]}},{"id":"tunnel_street","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["in","class","street","street_limited"],["==","$type","LineString"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"#fff","line-width":{"base":1.75,"stops":[[14,0],[14.1,2.25],[18,5]]},"line-opacity":1,"line-dasharray":[1,0]}},{"id":"tunnel_tertiary_misc","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["!in","type","primary","secondary","trunk"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"#fff","line-width":{"base":1.25,"stops":[[11.9,0],[12,2],[18,7]]},"line-dasharray":[1,0]}},{"id":"tunnel_secondary","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["in","type","secondary"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1,"stops":[[11.2,0],[11.3,0.25],[18,9.5]]},"line-opacity":1,"line-dasharray":[1,0]}},{"id":"tunnel_primary","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["==","type","primary"],["==","class","main"],["==","$type","LineString"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1.25,"stops":[[10.9,0],[11,1.5],[18,10]]},"line-dasharray":[1,0]}},{"id":"tunnel_motorway_link_case","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway_link"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"@motorway_case","line-width":{"base":1.25,"stops":[[11.9,1],[12,2.75],[20,16]]},"line-dasharray":[0.5,0.5]}},{"id":"tunnel_motorway_case","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"@motorway_case","line-width":{"base":1.25,"stops":[[5,1],[9.9,1],[10,2.25],[20,24]]},"line-dasharray":[0.5,0.5]}},{"id":"tunnel_trunk","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["==","type","trunk"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fea","line-width":{"base":1.25,"stops":[[9.9,0],[10,0.5],[18,9]]},"line-gap-width":0,"line-opacity":1}},{"id":"tunnel_motorway_link","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway_link"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fc8","line-width":{"base":1.25,"stops":[[11.9,0.25],[12,1],[18,6]]}}},{"id":"tunnel_motorway","type":"line","source":"compositedsource","source-layer":"tunnel","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fc8","line-width":{"base":1.25,"stops":[[9.9,0],[10,1],[20,16]]}}},{"id":"railroad","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["in","class","major_rail","minor_rail"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#bbb","line-width":{"base":1.25,"stops":[[5,0.75],[16,1.5]]},"line-dasharray":[1,0],"line-opacity":0.75}},{"id":"railroad_hashes","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["in","class","major_rail","minor_rail"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"#bbb","line-width":{"base":1.49,"stops":[[5,0.5],[16,8]]},"line-dasharray":[0.15,1.95],"line-opacity":1}},{"id":"path","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["in","class","path"],["==","$type","LineString"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#a0aaa0","line-width":{"base":1.25,"stops":[[12,0.5],[15,1.5]]},"line-dasharray":[0.3,2.5],"line-opacity":0.75}},{"id":"service_case","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["in","class","service"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#ccc","line-width":{"base":1.75,"stops":[[12,0.25],[14.5,1.5],[14.6,4],[18,8.5]]}}},{"id":"street_case","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["in","class","street","street_limited"],["==","$type","LineString"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":{"base":1,"stops":[[14,"#ccc"],[14.1,"#b9b9b9"]]},"line-width":{"base":1.99,"stops":[[5,0.25],[14,1],[14.1,4],[18,9]]}}},{"id":"tertiary_misc_case","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["!in","type","primary","secondary","trunk"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":{"base":1,"stops":[[11.9,"#ccc"],[12,"#b9b9b9"]]},"line-width":{"base":1.25,"stops":[[11.9,0.75],[12,3.5],[18,11]]},"line-opacity":{"base":1,"stops":[[5,0],[5.2,1]]}}},{"id":"secondary_case","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["in","type","secondary"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":{"base":1,"stops":[[11.2,"#ccc"],[11.3,"#b9b9b9"]]},"line-width":"@number-3","line-opacity":1}},{"id":"primary_case","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["==","type","primary"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":{"base":1,"stops":[[10.9,"#ccc"],[11,"#b9b9b9"]]},"line-width":{"base":1.25,"stops":[[10.9,1],[11,2.75],[18,15]]},"line-opacity":1}},{"id":"trunk_case","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["==","type","trunk"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#dba866","line-width":{"base":1.25,"stops":[[9.9,1.5],[10,2],[18,16]]}}},{"id":"service","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["in","class","service"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1.25,"stops":[[14.5,0],[14.6,2],[18,4.5]]}}},{"id":"street","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["in","class","street","street_limited"],["==","$type","LineString"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1.75,"stops":[[14,0],[14.1,2.75],[18,6]]},"line-opacity":1}},{"id":"tertiary_misc","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["!in","type","primary","secondary","trunk"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1.25,"stops":[[11.9,0],[12,2.5],[18,8]]}}},{"id":"secondary","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["in","type","secondary"],["==","class","main"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1,"stops":[[11.2,0],[11.3,0.5],[18,10.5]]},"line-opacity":1}},{"id":"primary","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["==","type","primary"],["==","class","main"],["==","$type","LineString"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1.25,"stops":[[10.9,0],[11,2],[18,12]]}}},{"id":"motorway_link_case","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway_link"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"@motorway_case","line-width":{"base":1.25,"stops":[[11.9,0],[12,2.75],[20,16]]}}},{"id":"motorway_case","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"@motorway_case","line-width":{"base":1.25,"stops":[[5,1],[9.9,1],[10,2.25],[20,24]]},"line-opacity":"@number-1"}},{"id":"trunk","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["==","type","trunk"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fea","line-width":{"base":1.25,"stops":[[9.9,0],[10,1.5],[18,12]]},"line-gap-width":0}},{"id":"motorway_link","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway_link"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fc8","line-width":{"base":1.25,"stops":[[10.9,0],[11,1.5],[18,7]]}}},{"id":"motorway","type":"line","source":"compositedsource","source-layer":"road","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway"],["!=","class","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fc8","line-width":{"base":1.25,"stops":[[9.9,0],[10,1.5],[20,18]]}}},{"id":"river_label","type":"symbol","source":"compositedsource","source-layer":"waterway_label","minzoom":0,"maxzoom":22,"filter":["all",["==","type","river"]],"layout":{"text-line-height":{"base":1,"stops":[[8,1],[20,1.75]]},"text-allow-overlap":false,"symbol-min-distance":550,"text-ignore-placement":false,"text-max-angle":15,"text-max-size":16,"text-font":"Open Sans Semibold Italic, Arial Unicode MS Regular","symbol-placement":"line","text-padding":10,"visibility":"visible","text-rotation-alignment":"map","text-field":"{name}","text-letter-spacing":0.3,"text-max-width":5},"paint":{"text-color":"#568eb3","text-halo-color":"#F8F4F0","text-halo-width":0,"text-size":{"base":1,"stops":[[6,8],[18,18]]}}},{"id":"ocean_label","type":"symbol","source":"compositedsource","source-layer":"marine_label","minzoom":0,"maxzoom":22,"filter":["all",["<=","labelrank",2]],"layout":{"text-line-height":{"base":1,"stops":[[0,1.25],[20,1.75]]},"text-allow-overlap":false,"symbol-min-distance":550,"text-ignore-placement":false,"text-max-angle":15,"text-max-size":16,"text-font":"Open Sans Semibold Italic, Arial Unicode MS Regular","symbol-placement":"point","text-padding":10,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.3,"text-max-width":5},"paint":{"text-color":"#568eb3","text-halo-color":"#F8F4F0","text-halo-width":0,"text-size":{"base":1,"stops":[[2,13],[18,29]]}}},{"id":"sea_label","type":"symbol","source":"compositedsource","source-layer":"marine_label","minzoom":0,"maxzoom":22,"filter":["all",["in","labelrank",3,4,5]],"layout":{"text-line-height":{"base":1,"stops":[[4,1.25],[20,1.75]]},"text-allow-overlap":false,"symbol-min-distance":550,"text-ignore-placement":false,"text-max-angle":15,"text-max-size":16,"text-font":"Open Sans Semibold Italic, Arial Unicode MS Regular","symbol-placement":"point","text-padding":10,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.2,"text-max-width":7.5},"paint":{"text-color":"#568eb3","text-halo-color":"#F8F4F0","text-halo-width":0,"text-size":{"base":1,"stops":[[4,11],[18,18]]}}},{"id":"bridge_service_case","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["in","class","service"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#ccc","line-width":{"base":1.75,"stops":[[12,0.25],[14.5,1.5],[14.6,4],[18,8.5]]}}},{"id":"bridge_street_case","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["in","class","street","street_limited"],["==","$type","LineString"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":{"base":1,"stops":[[14,"#ccc"],[14.1,"#b9b9b9"]]},"line-width":{"base":1.99,"stops":[[5,0.25],[14,1],[14.1,4],[18,9]]}}},{"id":"bridge_tertiary_misc_case","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["!in","type","primary","secondary","trunk"],["==","class","main"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":{"base":1,"stops":[[11.9,"#ccc"],[12,"#b9b9b9"]]},"line-width":{"base":1.25,"stops":[[11.9,0.5],[12,3.5],[18,11]]}}},{"id":"bridge_secondary_case","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["in","type","secondary"],["==","class","main"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":{"base":1,"stops":[[11.2,"#ccc"],[11.3,"#b9b9b9"]]},"line-width":"@number-3","line-opacity":1}},{"id":"bridge_primary_case","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["==","type","primary"],["==","class","main"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":{"base":1,"stops":[[10.9,"#ccc"],[11,"#b9b9b9"]]},"line-width":{"base":1.25,"stops":[[10.9,0.75],[11,2.75],[18,15]]}}},{"id":"bridge_trunk_case","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["==","type","trunk"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"#dba866","line-width":{"base":1.25,"stops":[[9.9,1.5],[10,2],[18,16]]}}},{"id":"bridge_service","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["in","class","service"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1.25,"stops":[[14.5,0],[14.6,2],[18,4.5]]}}},{"id":"bridge_street","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["in","class","street","street_limited"],["==","$type","LineString"],["!=","type","construction"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1.75,"stops":[[14,0],[14.1,2.75],[18,6]]},"line-opacity":1}},{"id":"bridge_tertiary_misc","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["!in","type","primary","secondary","trunk"],["==","class","main"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1.25,"stops":[[11.9,0],[12,2.5],[18,8]]}}},{"id":"bridge_secondary","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["in","type","secondary"],["==","class","main"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1,"stops":[[11.2,0],[11.3,0.5],[18,10.5]]},"line-opacity":1}},{"id":"bridge_primary","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["==","type","primary"],["==","class","main"],["==","$type","LineString"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fff","line-width":{"base":1.25,"stops":[[10.9,0],[11,2],[18,12]]}}},{"id":"bridge_trunk","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["==","type","trunk"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fea","line-width":{"base":1.25,"stops":[[9.9,0],[10,1.5],[18,12]]}}},{"id":"bridge_motorway_link_case","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway_link"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"@motorway_case","line-width":{"base":1.25,"stops":[[11.9,0],[12,2.75],[20,16]]}}},{"id":"bridge_motorway_case","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"@motorway_case","line-width":{"base":1.25,"stops":[[5,1],[9.9,1],[10,2.25],[20,24]]}}},{"id":"bridge_motorway_link","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway_link"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fc8","line-width":{"base":1.25,"stops":[[11.9,1],[12,1.5],[18,7]]}}},{"id":"bridge_path","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["in","class","path"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#aaa","line-width":{"base":1.25,"stops":[[5,0.75],[16,1.5]]},"line-dasharray":[0.3,2.5],"line-opacity":0.75}},{"id":"bridge_motorway","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["all",["==","class","motorway"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#fc8","line-width":{"base":1.25,"stops":[[9.9,0],[10,1.5],[20,18]]}}},{"id":"bridge_railroad","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["any",["in","class","major_rail","minor_rail"]],"layout":{"visibility":"visible","line-cap":"round"},"paint":{"line-color":"#bbb","line-width":{"base":1.25,"stops":[[5,0.75],[16,1.5]]},"line-dasharray":[1,0],"line-opacity":0.75}},{"id":"bridge_railroad_hashes","type":"line","source":"compositedsource","source-layer":"bridge","minzoom":0,"maxzoom":22,"filter":["any",["in","class","major_rail","minor_rail"]],"layout":{"visibility":"visible","line-cap":"butt"},"paint":{"line-color":"#bbb","line-width":{"base":1.49,"stops":[[5,0.5],[16,8]]},"line-dasharray":[0.15,1.95],"line-opacity":1}},{"id":"country_label","type":"symbol","source":"compositedsource","source-layer":"country_label","minzoom":0,"maxzoom":22,"layout":{"visibility":"visible","text-field":"{name_en}","text-max-width":4,"text-transform":"none","text-font":"Open Sans Semibold, Arial Unicode MS Regular","text-letter-spacing":0.05,"text-allow-overlap":false,"text-ignore-placement":false},"paint":{"text-opacity":0.75,"text-size":{"base":1,"stops":[[0,6],[10,30]]},"text-halo-color":"#F8F4F0","text-halo-width":2}},{"id":"city_label_big","type":"symbol","source":"compositedsource","source-layer":"place_label","minzoom":0,"maxzoom":22,"filter":["all",["in","type","city"],["<=","scalerank",2]],"layout":{"text-line-height":{"base":1,"stops":[[8,1],[20,1.3]]},"text-allow-overlap":false,"symbol-min-distance":250,"icon-image":{"base":1,"stops":[[0,"dot"],[5,""]]},"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold, Arial Unicode MS Regular","symbol-placement":"point","text-padding":0,"visibility":"visible","text-offset":{"base":1,"stops":[[4.99,[0,0.25]],[5,[0,0]]]},"text-rotation-alignment":"viewport","text-anchor":{"base":1,"stops":[[0,"top"],[5,"center"]]},"text-field":"{name}","text-letter-spacing":0,"text-max-width":5},"paint":{"text-color":"#444","text-halo-color":"#F8F4F0","text-halo-width":{"base":1,"stops":[[6,1.75],[18,2.75]]},"text-size":{"base":1,"stops":[[4,12],[18,35]]}}},{"id":"city_label_medium","type":"symbol","source":"compositedsource","source-layer":"place_label","minzoom":0,"maxzoom":22,"filter":["all",["in","type","city"],["in","scalerank",3,4,5,6,7,8,9]],"layout":{"text-line-height":{"base":1,"stops":[[8,1],[20,1.75]]},"text-allow-overlap":false,"symbol-min-distance":250,"icon-image":{"base":1,"stops":[[0,"dot"],[5,""]]},"symbol-avoid-edges":true,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold, Arial Unicode MS Regular","symbol-placement":"point","text-padding":2,"visibility":"visible","text-offset":{"base":1,"stops":[[4.99,[0,0.3]],[5,[0,0]]]},"text-rotation-alignment":"viewport","text-anchor":{"base":1,"stops":[[0,"top"],[5,"center"]]},"text-field":"{name}","text-letter-spacing":0.05,"text-max-width":5},"paint":{"text-color":"#555","text-halo-color":"#F8F4F0","text-halo-width":{"base":1,"stops":[[6,1.25],[18,2.75]]},"text-size":{"base":1,"stops":[[4,9],[18,23]]},"icon-size":0.75,"icon-opacity":0.8}},{"id":"town_label","type":"symbol","source":"compositedsource","source-layer":"place_label","minzoom":0,"maxzoom":22,"filter":["all",["in","type","town"]],"layout":{"text-line-height":{"base":1,"stops":[[8,1],[20,1.75]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Regular, Arial Unicode MS Regular","symbol-placement":"point","text-padding":5,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.05,"text-max-width":5},"paint":{"text-color":"#555","text-halo-color":"#F8F4F0","text-halo-width":{"base":1,"stops":[[16,2],[20,3.75]]},"text-size":{"base":1,"stops":[[10,10],[18,22]]}}},{"id":"hamlet_village_label","type":"symbol","source":"compositedsource","source-layer":"place_label","minzoom":0,"maxzoom":22,"filter":["all",["in","type","village","hamlet"]],"layout":{"text-line-height":{"base":1,"stops":[[8,1],[20,1.75]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Regular, Arial Unicode MS Regular","symbol-placement":"point","text-padding":10,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.05,"text-max-width":5},"paint":{"text-color":"#555","text-halo-color":"#F8F4F0","text-halo-width":{"base":1,"stops":[[16,2],[20,3.75]]},"text-size":{"base":1,"stops":[[10,8],[18,20]]}}},{"id":"us_interstate_label","type":"symbol","source":"compositedsource","source-layer":"road_label","minzoom":0,"maxzoom":22,"filter":["all",["in","shield","us-interstate","us-interstate-alternate","us-interstate-business","us-interstate-duplex"],["<=","reflen",3]],"layout":{"text-line-height":1.4,"text-allow-overlap":false,"symbol-min-distance":2000,"icon-offset":[0,-0.5],"icon-image":"interstate_{reflen}","icon-rotation-alignment":"viewport","text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"icon-keep-upright":true,"text-font":"Open Sans Semibold,   Arial Unicode MS Regular","symbol-placement":"line","text-padding":10,"visibility":"visible","text-rotation-alignment":"viewport","text-anchor":"center","text-field":"{ref}","text-letter-spacing":0,"icon-padding":0},"paint":{"text-size":{"base":1,"stops":[[6,8.5],[20,15]]},"text-color":"#fff","icon-halo-color":"white","icon-halo-width":2,"text-opacity":1,"text-halo-color":"#fff","icon-size":{"base":1,"stops":[[6,0.5],[20,1.5]]},"text-halo-width":0}},{"id":"neighborhood_label","type":"symbol","source":"compositedsource","source-layer":"place_label","minzoom":0,"maxzoom":18,"filter":["all",["in","type","neighbourhood","suburb","Island"],["<=","localrank",3]],"layout":{"text-line-height":{"base":1,"stops":[[8,0.85],[20,1.75]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Italic,    Arial Unicode MS Regular","symbol-placement":"point","text-padding":15,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.15,"text-max-width":5},"paint":{"text-color":"#633","text-halo-color":"#F8F4F0","text-halo-width":{"base":1,"stops":[[16,2.25],[20,3.75]]},"text-size":{"base":1,"stops":[[8,6],[18,22]]}}},{"id":"transport_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["in","maki","airport","airfield",""]],"layout":{"text-line-height":{"base":1,"stops":[[8,1.2],[20,1.55]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":5,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.1,"text-max-width":7},"paint":{"text-color":"#333","text-halo-color":"#fff","text-halo-width":1.25,"text-size":{"base":1,"stops":[[8,6],[20,24]]}}},{"id":"networked_rail_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["in","maki","rail-light","rail-metro","rail"],["in","network","rer","moscow-metro","london-overground","london-underground","dlr","national-rail","s-bahn","s-bahn.u-bahn","u-bahn","transilien","london-overground.london-underground","dlr.london-overground.london-underground.national-rail","dlr.london-underground","dlr.london-underground.national-rail","metro","london-overground.london-underground.national-rail","london-overground.national-rail","national-rail","wiener-linien","washington-metro","london-underground.national-rail","metro"]],"layout":{"text-optional":false,"text-line-height":1,"text-allow-overlap":false,"symbol-min-distance":250,"icon-offset":[0,0],"icon-image":"{network}","symbol-avoid-edges":true,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-transform":"none","text-font":"Open Sans Semibold, Arial Unicode MS Regular","icon-allow-overlap":false,"symbol-placement":"point","text-justify":"center","text-padding":0,"visibility":"visible","text-offset":[0,0.75],"icon-optional":false,"text-rotation-alignment":"viewport","text-anchor":"top","text-field":{"base":1,"stops":[[0,""],[14,"{name}"]]},"text-letter-spacing":0.05,"icon-padding":0,"text-max-width":5.2,"icon-ignore-placement":{"base":1,"stops":[[0,true],[13,false]]}},"paint":{"text-color":"#333","text-halo-color":"#fff","text-halo-width":{"base":1,"stops":[[16,2],[20,3]]},"text-size":{"base":1,"stops":[[8,10],[20,12]]},"icon-halo-width":4,"icon-halo-color":"#fff","text-opacity":1,"text-translate":[0,0]}},{"id":"generic_metro_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["in","maki","rail-light","rail-metro"],["!in","network","rer","moscow-metro","london-overground","london-underground","dlr","national-rail","s-bahn","s-bahn.u-bahn","u-bahn","transilien","london-overground.london-underground","dlr.london-overground.london-underground.national-rail","dlr.london-underground","dlr.london-underground.national-rail","metro","london-overground.london-underground.national-rail","london-overground.national-rail","national-rail","wiener-linien","washington-metro","london-underground.national-rail","metro"]],"layout":{"text-optional":false,"text-line-height":1,"text-allow-overlap":false,"symbol-min-distance":250,"icon-offset":[0,0],"icon-image":"generic-metro","text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-transform":"none","text-font":"Open Sans Semibold, Arial Unicode MS Regular","icon-allow-overlap":false,"symbol-placement":"point","text-justify":"center","text-padding":0,"visibility":"visible","text-offset":[0,0.75],"icon-optional":false,"text-rotation-alignment":"viewport","text-anchor":"top","text-field":{"base":1,"stops":[[0,""],[14,"{name_en}"]]},"text-letter-spacing":0.05,"icon-padding":0,"text-max-width":5.2,"icon-ignore-placement":{"base":1,"stops":[[0,true],[13,false]]}},"paint":{"text-color":"#464445","text-halo-color":"#fff","text-halo-width":{"base":1,"stops":[[16,2],[20,3]]},"text-size":{"base":1,"stops":[[8,10],[20,12]]},"icon-halo-width":4,"icon-halo-color":"#fff","text-opacity":1,"text-translate":[0,0]}},{"id":"generic_rail_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["in","maki","rail"],["!in","network","rer","moscow-metro","london-overground","london-underground","dlr","national-rail","s-bahn","s-bahn.u-bahn","u-bahn","transilien","london-overground.london-underground","dlr.london-overground.london-underground.national-rail","dlr.london-underground","dlr.london-underground.national-rail","metro","london-overground.london-underground.national-rail","london-overground.national-rail","national-rail","wiener-linien","washington-metro","london-underground.national-rail","metro"]],"layout":{"text-optional":false,"text-line-height":1,"text-allow-overlap":false,"symbol-min-distance":250,"icon-offset":[0,0],"icon-image":"generic-rail","text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-transform":"none","text-font":"Open Sans Semibold, Arial Unicode MS Regular","icon-allow-overlap":false,"symbol-placement":"point","text-justify":"center","text-padding":0,"visibility":"visible","text-offset":[0,0.75],"icon-optional":false,"text-rotation-alignment":"viewport","text-anchor":"top","text-field":{"base":1,"stops":[[0,""],[14,"{name_en}"]]},"text-letter-spacing":0.05,"icon-padding":0,"text-max-width":5.2,"icon-ignore-placement":{"base":1,"stops":[[0,true],[13,false]]}},"paint":{"text-color":"#464445","text-halo-color":"#fff","text-halo-width":{"base":1,"stops":[[16,2],[20,3]]},"text-size":{"base":1,"stops":[[8,10],[20,12]]},"icon-halo-width":4,"icon-halo-color":"#fff","text-opacity":1,"text-translate":[0,0]}},{"id":"road-label-large","type":"symbol","source":"compositedsource","source-layer":"road_label","minzoom":0,"maxzoom":22,"filter":["all",["in","class","main","motorway_link"]],"layout":{"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold,   Arial Unicode MS Regular","symbol-placement":"line","text-padding":0,"visibility":"visible","text-rotation-alignment":"map","text-field":"{name}","text-letter-spacing":0.05},"paint":{"text-color":"#555","text-halo-color":"#fff","text-halo-width":{"base":1,"stops":[[16,2],[20,3.75]]},"text-size":{"base":1,"stops":[[8,8],[20,17]]}}},{"id":"road-label-medium","type":"symbol","source":"compositedsource","source-layer":"road_label","minzoom":0,"maxzoom":22,"filter":["all",["in","class","street"]],"layout":{"visibility":"visible","text-field":"{name}","symbol-placement":"line","text-rotation-alignment":"map","text-font":"Open Sans Regular,  Arial Unicode MS Regular","text-letter-spacing":0.05,"text-max-angle":38,"text-padding":0},"paint":{"text-color":"#666","text-halo-color":"#fff","text-halo-width":{"base":1,"stops":[[16,2],[20,3.75]]},"text-size":{"base":1,"stops":[[8,8],[20,16]]}}},{"id":"road-label-small","type":"symbol","source":"compositedsource","source-layer":"road_label","minzoom":0,"maxzoom":22,"filter":["all",["in","class","path","service","street_limited"],["==","$type","LineString"]],"layout":{"visibility":"visible","text-field":"{name}","symbol-placement":"line","text-rotation-alignment":"map","text-font":"Open Sans Regular,  Arial Unicode MS Regular","text-letter-spacing":0.1,"text-ignore-placement":false,"text-padding":0},"paint":{"text-color":"#555","text-halo-color":"#fff","text-halo-width":{"base":1,"stops":[[16,2],[20,3.75]]},"text-size":{"base":1,"stops":[[8,8],[20,15]]}}},{"id":"us_highway_label","type":"symbol","source":"compositedsource","source-layer":"road_label","minzoom":0,"maxzoom":22,"filter":["all",["in","shield","us-highway","us-highway-alternate","us-highway-business","us-highway-duplex"],["<=","reflen",3]],"layout":{"text-allow-overlap":false,"symbol-min-distance":250,"icon-image":"us_highway_{reflen}","text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold,   Arial Unicode MS Regular","symbol-placement":"point","text-padding":10,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{ref}","text-letter-spacing":0},"paint":{"text-size":{"base":1,"stops":[[8,10],[20,17]]},"text-color":"#666","icon-halo-color":"rgba(0, 0, 0, 1)","icon-halo-width":1,"text-opacity":1,"icon-color":"white","text-halo-color":"#fff","icon-size":{"base":1,"stops":[[8,0.7],[20,1.2]]},"text-halo-width":0}},{"id":"us_stateroad_label","type":"symbol","source":"compositedsource","source-layer":"road_label","minzoom":0,"maxzoom":22,"filter":["all",["in","shield","us-state","us-state-loop","us-state-business","us-state-toll","us-state-truck"],["==","class","motorway"],["<=","reflen",3]],"layout":{"text-allow-overlap":false,"symbol-min-distance":250,"icon-image":"us_state_{reflen}","text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold,   Arial Unicode MS Regular","symbol-placement":"point","text-padding":10,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{ref}","text-letter-spacing":0},"paint":{"text-size":{"base":1,"stops":[[8,10],[20,15]]},"text-color":"#666","icon-halo-color":"rgba(0, 0, 0, 1)","icon-halo-width":1,"text-opacity":1,"icon-color":"white","text-halo-color":"#fff","icon-size":{"base":1,"stops":[[8,0.7],[20,1]]},"text-halo-width":0}},{"id":"generic_motorway_label","type":"symbol","source":"compositedsource","source-layer":"road_label","minzoom":0,"maxzoom":22,"filter":["all",["in","class","motorway","motorway_link"],["==","shield","default"],["<=","reflen",6]],"layout":{"text-allow-overlap":false,"symbol-min-distance":250,"icon-image":"default_{reflen}","text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-transform":"uppercase","text-font":"Open Sans Semibold,   Arial Unicode MS Regular","symbol-placement":"point","text-padding":10,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{ref}","text-letter-spacing":0},"paint":{"text-size":{"base":1,"stops":[[10,10],[20,12]]},"text-color":"#666","icon-halo-color":"rgba(0, 0, 0, 1)","icon-halo-width":1,"text-opacity":1,"icon-color":"white","text-halo-color":"#fff","icon-size":{"base":1,"stops":[[10,1],[20,1.25]]},"text-halo-width":0}},{"id":"park_big_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["in","maki","park","golf","zoo","Garden","cemetery"],["==","scalerank",1]],"layout":{"text-line-height":{"base":1,"stops":[[8,1.2],[20,1.8]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-transform":"uppercase","text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":2,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.2,"text-max-width":7},"paint":{"text-color":"#51814f","text-halo-color":"#F8F4F0","text-halo-width":0,"text-size":{"base":1,"stops":[[8,12],[20,16]]}}},{"id":"generic_big_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["!in","maki","rail-light","rail-metro","rail","school","park","cemetery","college","golf","hospital"],["<=","scalerank",2],["!in","type","Island","Wetland"]],"layout":{"text-line-height":{"base":1,"stops":[[8,1.2],[20,1.8]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-transform":"uppercase","text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":5,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.2,"text-max-width":3.5},"paint":{"text-color":"#b36b47","text-halo-color":"#F8F4F0","text-halo-width":1.5,"text-size":{"base":1,"stops":[[8,12],[20,16]]}}},{"id":"park_small_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["any",["in","maki","park","golf","zoo","cemetery"],["==","type","Garden"]],"layout":{"text-line-height":1.3,"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":0,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.05,"text-max-width":5},"paint":{"text-color":"#3d813c","text-halo-color":"#F8F4F0","text-halo-width":1.5,"text-size":{"base":1,"stops":[[8,10],[20,12]]}}},{"id":"college_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["in","maki","college"]],"layout":{"text-line-height":{"base":1,"stops":[[8,1],[20,1.3]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":5,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.1,"text-max-width":7},"paint":{"text-color":"#895fb1","text-halo-color":"#fff","text-halo-width":{"base":1,"stops":[[16,1],[20,3.75]]},"text-size":{"base":1,"stops":[[8,10],[20,14]]},"text-halo-blur":0.75}},{"id":"school_museum_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["any",["in","maki","school","museum","library"],["==","type","school"]],"layout":{"text-line-height":{"base":1,"stops":[[8,0.95],[20,1.2]]},"text-allow-overlap":false,"symbol-min-distance":250,"symbol-avoid-edges":false,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":10,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.05,"text-max-width":7},"paint":{"text-color":"#895fb1","text-halo-color":"#F8F4F0","text-halo-width":{"base":1,"stops":[[16,1.25],[20,3.75]]},"text-size":{"base":1,"stops":[[8,10],[20,12]]}}},{"id":"hospital_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["in","maki","hospital"]],"layout":{"text-line-height":{"base":1,"stops":[[8,0.95],[20,1.2]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":5,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.1,"text-max-width":7},"paint":{"text-color":"#b73978","text-halo-color":"#fff","text-halo-width":{"base":1,"stops":[[16,2],[20,3.75]]},"text-size":{"base":1,"stops":[[8,10],[20,12]]}}},{"id":"religious_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["in","maki","religious-christian","religious-jewish","religious-muslim"]],"layout":{"text-line-height":{"base":1,"stops":[[8,0.95],[20,1.2]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":5,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.05,"text-max-width":3.5},"paint":{"text-color":"#117599","text-halo-color":"#F8F4F0","text-halo-width":{"base":1,"stops":[[16,1.25],[20,3.75]]},"text-size":{"base":1,"stops":[[8,10],[20,12]]}}},{"id":"government_label","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["any",["in","maki","police","embassy","fire-station","post","prison","monument"],["==","type","Military"]],"layout":{"text-line-height":{"base":1,"stops":[[8,0.95],[20,1.2]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":5,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.05,"text-max-width":3.5},"paint":{"text-color":"#5c5a5b","text-halo-color":"#F8F4F0","text-halo-width":{"base":1,"stops":[[16,2],[20,3.75]]},"text-size":{"base":1,"stops":[[8,10],[20,12]]}}},{"id":"generic_small_labels","type":"symbol","source":"compositedsource","source-layer":"poi_label","minzoom":0,"maxzoom":22,"filter":["all",["!in","maki","rail-light","rail-metro","rail","school","park","college","golf"],[">=","scalerank",3],["!in","type","Apartments","Yes","Military"]],"layout":{"text-line-height":{"base":1,"stops":[[8,0.95],[20,1.2]]},"text-allow-overlap":false,"symbol-min-distance":250,"text-ignore-placement":false,"text-max-angle":38,"text-max-size":16,"text-font":"Open Sans Semibold Italic,     Arial Unicode MS Regular","symbol-placement":"point","text-padding":5,"visibility":"visible","text-rotation-alignment":"viewport","text-field":"{name}","text-letter-spacing":0.05,"text-max-width":3.5},"paint":{"text-color":"#b36b47","text-halo-color":"#F8F4F0","text-halo-width":1.5,"text-size":{"base":1,"stops":[[8,10],[20,12]]}}}],"owner":"peterqliu","modified":"2015-03-24T17:43:54.070Z","created":"2015-03-10T22:36:44.888Z","id":"peterqliu.dc7c42de"}
+{
+  "version": 7,
+  "name": "EMERALD",
+  "constants": {
+    "@motorway_case": "#e59063",
+    "@road_case": {
+      "stops": [[0, "#ffffff"], [20, "#ffffff"]]
+    },
+    "@number-1": {
+      "base": 1,
+      "stops": [[5, 0], [5.2, 1]]
+    },
+    "@number-2": 1,
+    "@hillshades": {
+      "base": 1,
+      "stops": [[14, 0.05], [15, 0]]
+    },
+    "@number-3": {
+      "base": 1,
+      "stops": [[11.2, 0.75], [11.3, 1], [18, 13.25]]
+    }
+  },
+  "sources": {
+    "compositedsource": {
+      "type": "vector",
+      "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6"
+    }
+  },
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/emerald",
+  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "background-color": "#F8F4F0"
+    }
+  }, {
+    "id": "landcover_wood",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landcover",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "wood"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#d4e2c6",
+      "fill-opacity": 0.5
+    }
+  }, {
+    "id": "landcover_scrub",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landcover",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "scrub"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#e0e8cd",
+      "fill-opacity": 0.5
+    }
+  }, {
+    "id": "landcover_grass",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landcover",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "grass"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#e7ebd1",
+      "fill-opacity": 0.5
+    }
+  }, {
+    "id": "landcover_crop",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landcover",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "crop"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#eeeed4",
+      "fill-opacity": 0.5
+    }
+  }, {
+    "id": "landcover_snow",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landcover",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "snow"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#f4f8ff",
+      "fill-opacity": 0.5
+    }
+  }, {
+    "id": "hospital",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "hospital"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#f8ecee",
+      "fill-outline-color": "#ead1d2"
+    }
+  }, {
+    "id": "school",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "school"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#f6eeff",
+      "fill-outline-color": {
+        "base": 1,
+        "stops": [[12, "#f6eeff"], [13, "#e0dced"]]
+      }
+    }
+  }, {
+    "id": "park",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "park"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#d8e1c5",
+      "fill-opacity": 1,
+      "fill-outline-color": "#d2e4c7"
+    }
+  }, {
+    "id": "wood",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "wood"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#6a4",
+      "fill-opacity": 0.05
+    }
+  }, {
+    "id": "pitch",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["any", ["==", "class", "pitch"], ["==", "type", "golf_course"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#c1d6ac",
+      "fill-opacity": 1
+    }
+  }, {
+    "id": "sand",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "sand"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#f1f0d2",
+      "fill-opacity": 1
+    }
+  }, {
+    "id": "cemetery",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "cemetery"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#e7ebd1"
+    }
+  }, {
+    "id": "shadow_uber",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "hillshade",
+    "minzoom": 0,
+    "maxzoom": 15,
+    "filter": ["all", ["==", "level", 56]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-opacity": "@hillshades",
+      "fill-color": "#031c2a"
+    }
+  }, {
+    "id": "shadow_strong",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "hillshade",
+    "minzoom": 0,
+    "maxzoom": 15,
+    "filter": ["all", ["==", "level", 67]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-opacity": "@hillshades",
+      "fill-color": "#031c2a"
+    }
+  }, {
+    "id": "shadow_medium",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "hillshade",
+    "minzoom": 0,
+    "maxzoom": 15,
+    "filter": ["all", ["==", "level", 78]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-opacity": "@hillshades",
+      "fill-color": "#031c2a"
+    }
+  }, {
+    "id": "shadow_weak",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "hillshade",
+    "minzoom": 0,
+    "maxzoom": 15,
+    "filter": ["all", ["==", "level", 89]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-opacity": "@hillshades",
+      "fill-color": "#031c2a"
+    }
+  }, {
+    "id": "highlight_weak",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "hillshade",
+    "minzoom": 0,
+    "maxzoom": 15,
+    "filter": ["all", ["==", "level", 90]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-opacity": {
+        "base": 1,
+        "stops": [[14, 0.1], [15, 0]]
+      },
+      "fill-color": "#fff"
+    }
+  }, {
+    "id": "highlight_medium",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "hillshade",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "level", 94]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#fff",
+      "fill-opacity": 0.2
+    }
+  }, {
+    "id": "airport",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "industrial"]],
+    "layout": {},
+    "paint": {
+      "fill-color": "#ccc",
+      "fill-opacity": 0.25
+    }
+  }, {
+    "id": "aeroway",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "aeroway",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "runway", "taxiway"]],
+    "layout": {
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-width": {
+        "base": 1,
+        "stops": [[10, 2], [20, 12]]
+      },
+      "line-opacity": 1,
+      "line-color": "#ddd"
+    }
+  }, {
+    "id": "water",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "water",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#b6d0ea",
+      "fill-outline-color": "#b6d0ea",
+      "fill-image": "wave"
+    }
+  }, {
+    "id": "barrier_land",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "barrier_line",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "land"], ["==", "$type", "Polygon"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#F8F4F0",
+      "fill-opacity": 1
+    }
+  }, {
+    "id": "building_walls",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "building",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#cfc4c3",
+      "fill-opacity": 1
+    }
+  }, {
+    "id": "building_rooves",
+    "type": "fill",
+    "source": "compositedsource",
+    "source-layer": "building",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "#ede6e3",
+      "fill-translate": {
+        "base": 1,
+        "stops": [[16, [0, 0]], [19, [-4, -4]]]
+      },
+      "fill-opacity": 1
+    }
+  }, {
+    "id": "building_roof_edges",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "building",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "line-color": "#cfc4c3",
+      "line-width": 0.5,
+      "line-opacity": {
+        "base": 1,
+        "stops": [[16, 0], [17, 1]]
+      },
+      "line-translate": {
+        "base": 1,
+        "stops": [[16, [-0.25, -0.25]], [19, [-4, -4]]]
+      }
+    }
+  }, {
+    "id": "country_border",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "admin",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "admin_level", 2], ["==", "maritime", 0]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#293804",
+      "line-opacity": 0.5,
+      "line-width": {
+        "base": 1,
+        "stops": [[0, 0.5], [10, 2]]
+      }
+    }
+  }, {
+    "id": "state_border",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "admin",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "admin_level", 4], ["==", "maritime", 0]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#99a472",
+      "line-opacity": 1,
+      "line-width": {
+        "base": 1,
+        "stops": [[0, 0.25], [13, 2]]
+      },
+      "line-dasharray": [3, 1]
+    }
+  }, {
+    "id": "state-label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "state_label",
+    "minzoom": 3,
+    "maxzoom": 22,
+    "layout": {
+      "text-allow-overlap": true,
+      "text-ignore-placement": false,
+      "text-transform": "uppercase",
+      "text-font": "Open Sans Bold, Arial Unicode MS Regular",
+      "text-padding": 0,
+      "visibility": "visible",
+      "text-field": {
+        "base": 1,
+        "stops": [[0, "{abbr}"], [4, "{name}"]]
+      },
+      "text-letter-spacing": 0.15,
+      "text-max-width": 4
+    },
+    "paint": {
+      "text-opacity": 0.25,
+      "text-size": {
+        "base": 1,
+        "stops": [[0, 1], [12, 35]]
+      },
+      "text-color": "#425807"
+    }
+  }, {
+    "id": "tunnel_path",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "path"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#aaa",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[5, 0.75], [16, 1.5]]
+      },
+      "line-dasharray": [0.3, 2.5],
+      "line-opacity": 0.75
+    }
+  }, {
+    "id": "tunnel_service_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "service"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#ccc",
+      "line-width": {
+        "base": 1.75,
+        "stops": [[12, 0.25], [14.5, 1.5], [14.6, 4], [18, 8.5]]
+      },
+      "line-dasharray": [0.5, 0.5],
+      "line-opacity": 1
+    }
+  }, {
+    "id": "tunnel_street_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[14, "#ccc"], [14.1, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1.99,
+        "stops": [[5, 0.25], [14, 1], [14.1, 4], [18, 9]]
+      },
+      "line-dasharray": [0.5, 0.5]
+    }
+  }, {
+    "id": "tunnel_tertiary_misc_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "type", "primary", "secondary", "trunk"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[11.9, "#ccc"], [12, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 0.75], [12, 3.5], [18, 11]]
+      },
+      "line-dasharray": [0.5, 0.5]
+    }
+  }, {
+    "id": "tunnel_secondary_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "secondary"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[11.2, "#ccc"], [11.3, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1,
+        "stops": [[11.2, 0.75], [11.3, 1], [18, 13]]
+      },
+      "line-opacity": 1,
+      "line-dasharray": [0.5, 0.5]
+    }
+  }, {
+    "id": "tunnel_primary_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "primary"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[10.9, "#ccc"], [11, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1.25,
+        "stops": [[10.9, 1], [11, 2.75], [18, 15]]
+      },
+      "line-opacity": 1,
+      "line-dasharray": [0.5, 0.5]
+    }
+  }, {
+    "id": "tunnel_trunk_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "trunk"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#dba866",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[9.9, 1.5], [10, 2], [18, 16]]
+      },
+      "line-dasharray": [0.5, 0.5]
+    }
+  }, {
+    "id": "tunnel_service",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "service"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[14.5, 0], [14.6, 2], [18, 4.5]]
+      },
+      "line-dasharray": [1, 0]
+    }
+  }, {
+    "id": "tunnel_street",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.75,
+        "stops": [[14, 0], [14.1, 2.25], [18, 5]]
+      },
+      "line-opacity": 1,
+      "line-dasharray": [1, 0]
+    }
+  }, {
+    "id": "tunnel_tertiary_misc",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "type", "primary", "secondary", "trunk"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 0], [12, 2], [18, 7]]
+      },
+      "line-dasharray": [1, 0]
+    }
+  }, {
+    "id": "tunnel_secondary",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "secondary"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1,
+        "stops": [[11.2, 0], [11.3, 0.25], [18, 9.5]]
+      },
+      "line-opacity": 1,
+      "line-dasharray": [1, 0]
+    }
+  }, {
+    "id": "tunnel_primary",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "primary"], ["==", "class", "main"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[10.9, 0], [11, 1.5], [18, 10]]
+      },
+      "line-dasharray": [1, 0]
+    }
+  }, {
+    "id": "tunnel_motorway_link_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway_link"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "@motorway_case",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 1], [12, 2.75], [20, 16]]
+      },
+      "line-dasharray": [0.5, 0.5]
+    }
+  }, {
+    "id": "tunnel_motorway_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "@motorway_case",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[5, 1], [9.9, 1], [10, 2.25], [20, 24]]
+      },
+      "line-dasharray": [0.5, 0.5]
+    }
+  }, {
+    "id": "tunnel_trunk",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "trunk"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fea",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[9.9, 0], [10, 0.5], [18, 9]]
+      },
+      "line-gap-width": 0,
+      "line-opacity": 1
+    }
+  }, {
+    "id": "tunnel_motorway_link",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway_link"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fc8",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 0.25], [12, 1], [18, 6]]
+      }
+    }
+  }, {
+    "id": "tunnel_motorway",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fc8",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[9.9, 0], [10, 1], [20, 16]]
+      }
+    }
+  }, {
+    "id": "railroad",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "major_rail", "minor_rail"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#bbb",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[5, 0.75], [16, 1.5]]
+      },
+      "line-dasharray": [1, 0],
+      "line-opacity": 0.75
+    }
+  }, {
+    "id": "railroad_hashes",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "major_rail", "minor_rail"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#bbb",
+      "line-width": {
+        "base": 1.49,
+        "stops": [[5, 0.5], [16, 8]]
+      },
+      "line-dasharray": [0.15, 1.95],
+      "line-opacity": 1
+    }
+  }, {
+    "id": "path",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "path"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#a0aaa0",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[12, 0.5], [15, 1.5]]
+      },
+      "line-dasharray": [0.3, 2.5],
+      "line-opacity": 0.75
+    }
+  }, {
+    "id": "service_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "service"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#ccc",
+      "line-width": {
+        "base": 1.75,
+        "stops": [[12, 0.25], [14.5, 1.5], [14.6, 4], [18, 8.5]]
+      }
+    }
+  }, {
+    "id": "street_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[14, "#ccc"], [14.1, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1.99,
+        "stops": [[5, 0.25], [14, 1], [14.1, 4], [18, 9]]
+      }
+    }
+  }, {
+    "id": "tertiary_misc_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "type", "primary", "secondary", "trunk"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[11.9, "#ccc"], [12, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 0.75], [12, 3.5], [18, 11]]
+      },
+      "line-opacity": {
+        "base": 1,
+        "stops": [[5, 0], [5.2, 1]]
+      }
+    }
+  }, {
+    "id": "secondary_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "secondary"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[11.2, "#ccc"], [11.3, "#b9b9b9"]]
+      },
+      "line-width": "@number-3",
+      "line-opacity": 1
+    }
+  }, {
+    "id": "primary_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "primary"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[10.9, "#ccc"], [11, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1.25,
+        "stops": [[10.9, 1], [11, 2.75], [18, 15]]
+      },
+      "line-opacity": 1
+    }
+  }, {
+    "id": "trunk_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "trunk"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#dba866",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[9.9, 1.5], [10, 2], [18, 16]]
+      }
+    }
+  }, {
+    "id": "service",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "service"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[14.5, 0], [14.6, 2], [18, 4.5]]
+      }
+    }
+  }, {
+    "id": "street",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.75,
+        "stops": [[14, 0], [14.1, 2.75], [18, 6]]
+      },
+      "line-opacity": 1
+    }
+  }, {
+    "id": "tertiary_misc",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "type", "primary", "secondary", "trunk"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 0], [12, 2.5], [18, 8]]
+      }
+    }
+  }, {
+    "id": "secondary",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "secondary"], ["==", "class", "main"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1,
+        "stops": [[11.2, 0], [11.3, 0.5], [18, 10.5]]
+      },
+      "line-opacity": 1
+    }
+  }, {
+    "id": "primary",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "primary"], ["==", "class", "main"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[10.9, 0], [11, 2], [18, 12]]
+      }
+    }
+  }, {
+    "id": "motorway_link_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway_link"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "@motorway_case",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 0], [12, 2.75], [20, 16]]
+      }
+    }
+  }, {
+    "id": "motorway_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "@motorway_case",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[5, 1], [9.9, 1], [10, 2.25], [20, 24]]
+      },
+      "line-opacity": "@number-1"
+    }
+  }, {
+    "id": "trunk",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "trunk"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fea",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[9.9, 0], [10, 1.5], [18, 12]]
+      },
+      "line-gap-width": 0
+    }
+  }, {
+    "id": "motorway_link",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway_link"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fc8",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[10.9, 0], [11, 1.5], [18, 7]]
+      }
+    }
+  }, {
+    "id": "motorway",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway"], ["!=", "class", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fc8",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[9.9, 0], [10, 1.5], [20, 18]]
+      }
+    }
+  }, {
+    "id": "river_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "waterway_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "river"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1], [20, 1.75]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 550,
+      "text-ignore-placement": false,
+      "text-max-angle": 15,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular",
+      "symbol-placement": "line",
+      "text-padding": 10,
+      "visibility": "visible",
+      "text-rotation-alignment": "map",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.3,
+      "text-max-width": 5
+    },
+    "paint": {
+      "text-color": "#568eb3",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": 0,
+      "text-size": {
+        "base": 1,
+        "stops": [[6, 8], [18, 18]]
+      }
+    }
+  }, {
+    "id": "ocean_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "marine_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["<=", "labelrank", 2]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[0, 1.25], [20, 1.75]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 550,
+      "text-ignore-placement": false,
+      "text-max-angle": 15,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 10,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.3,
+      "text-max-width": 5
+    },
+    "paint": {
+      "text-color": "#568eb3",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": 0,
+      "text-size": {
+        "base": 1,
+        "stops": [[2, 13], [18, 29]]
+      }
+    }
+  }, {
+    "id": "sea_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "marine_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "labelrank", 3, 4, 5]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[4, 1.25], [20, 1.75]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 550,
+      "text-ignore-placement": false,
+      "text-max-angle": 15,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 10,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.2,
+      "text-max-width": 7.5
+    },
+    "paint": {
+      "text-color": "#568eb3",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": 0,
+      "text-size": {
+        "base": 1,
+        "stops": [[4, 11], [18, 18]]
+      }
+    }
+  }, {
+    "id": "bridge_service_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "service"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#ccc",
+      "line-width": {
+        "base": 1.75,
+        "stops": [[12, 0.25], [14.5, 1.5], [14.6, 4], [18, 8.5]]
+      }
+    }
+  }, {
+    "id": "bridge_street_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[14, "#ccc"], [14.1, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1.99,
+        "stops": [[5, 0.25], [14, 1], [14.1, 4], [18, 9]]
+      }
+    }
+  }, {
+    "id": "bridge_tertiary_misc_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "type", "primary", "secondary", "trunk"], ["==", "class", "main"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[11.9, "#ccc"], [12, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 0.5], [12, 3.5], [18, 11]]
+      }
+    }
+  }, {
+    "id": "bridge_secondary_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "secondary"], ["==", "class", "main"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[11.2, "#ccc"], [11.3, "#b9b9b9"]]
+      },
+      "line-width": "@number-3",
+      "line-opacity": 1
+    }
+  }, {
+    "id": "bridge_primary_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "primary"], ["==", "class", "main"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": {
+        "base": 1,
+        "stops": [[10.9, "#ccc"], [11, "#b9b9b9"]]
+      },
+      "line-width": {
+        "base": 1.25,
+        "stops": [[10.9, 0.75], [11, 2.75], [18, 15]]
+      }
+    }
+  }, {
+    "id": "bridge_trunk_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "trunk"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#dba866",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[9.9, 1.5], [10, 2], [18, 16]]
+      }
+    }
+  }, {
+    "id": "bridge_service",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "service"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[14.5, 0], [14.6, 2], [18, 4.5]]
+      }
+    }
+  }, {
+    "id": "bridge_street",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "street", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.75,
+        "stops": [[14, 0], [14.1, 2.75], [18, 6]]
+      },
+      "line-opacity": 1
+    }
+  }, {
+    "id": "bridge_tertiary_misc",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "type", "primary", "secondary", "trunk"], ["==", "class", "main"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 0], [12, 2.5], [18, 8]]
+      }
+    }
+  }, {
+    "id": "bridge_secondary",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "secondary"], ["==", "class", "main"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1,
+        "stops": [[11.2, 0], [11.3, 0.5], [18, 10.5]]
+      },
+      "line-opacity": 1
+    }
+  }, {
+    "id": "bridge_primary",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "primary"], ["==", "class", "main"], ["==", "$type", "LineString"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fff",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[10.9, 0], [11, 2], [18, 12]]
+      }
+    }
+  }, {
+    "id": "bridge_trunk",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "trunk"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fea",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[9.9, 0], [10, 1.5], [18, 12]]
+      }
+    }
+  }, {
+    "id": "bridge_motorway_link_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway_link"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "@motorway_case",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 0], [12, 2.75], [20, 16]]
+      }
+    }
+  }, {
+    "id": "bridge_motorway_case",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "@motorway_case",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[5, 1], [9.9, 1], [10, 2.25], [20, 24]]
+      }
+    }
+  }, {
+    "id": "bridge_motorway_link",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway_link"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fc8",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[11.9, 1], [12, 1.5], [18, 7]]
+      }
+    }
+  }, {
+    "id": "bridge_path",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "path"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#aaa",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[5, 0.75], [16, 1.5]]
+      },
+      "line-dasharray": [0.3, 2.5],
+      "line-opacity": 0.75
+    }
+  }, {
+    "id": "bridge_motorway",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#fc8",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[9.9, 0], [10, 1.5], [20, 18]]
+      }
+    }
+  }, {
+    "id": "bridge_railroad",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["any", ["in", "class", "major_rail", "minor_rail"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#bbb",
+      "line-width": {
+        "base": 1.25,
+        "stops": [[5, 0.75], [16, 1.5]]
+      },
+      "line-dasharray": [1, 0],
+      "line-opacity": 0.75
+    }
+  }, {
+    "id": "bridge_railroad_hashes",
+    "type": "line",
+    "source": "compositedsource",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["any", ["in", "class", "major_rail", "minor_rail"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "#bbb",
+      "line-width": {
+        "base": 1.49,
+        "stops": [[5, 0.5], [16, 8]]
+      },
+      "line-dasharray": [0.15, 1.95],
+      "line-opacity": 1
+    }
+  }, {
+    "id": "country_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "country_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "layout": {
+      "visibility": "visible",
+      "text-field": "{name_en}",
+      "text-max-width": 4,
+      "text-transform": "none",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
+      "text-letter-spacing": 0.05,
+      "text-allow-overlap": false,
+      "text-ignore-placement": false
+    },
+    "paint": {
+      "text-opacity": 0.75,
+      "text-size": {
+        "base": 1,
+        "stops": [[0, 6], [10, 30]]
+      },
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": 2
+    }
+  }, {
+    "id": "city_label_big",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "place_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "city"], ["<=", "scalerank", 2]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1], [20, 1.3]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-image": {
+        "base": 1,
+        "stops": [[0, "dot"], [5, ""]]
+      },
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 0,
+      "visibility": "visible",
+      "text-offset": {
+        "base": 1,
+        "stops": [[4.99, [0, 0.25]], [5, [0, 0]]]
+      },
+      "text-rotation-alignment": "viewport",
+      "text-anchor": {
+        "base": 1,
+        "stops": [[0, "top"], [5, "center"]]
+      },
+      "text-field": "{name}",
+      "text-letter-spacing": 0,
+      "text-max-width": 5
+    },
+    "paint": {
+      "text-color": "#444",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[6, 1.75], [18, 2.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[4, 12], [18, 35]]
+      }
+    }
+  }, {
+    "id": "city_label_medium",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "place_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "city"], ["in", "scalerank", 3, 4, 5, 6, 7, 8, 9]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1], [20, 1.75]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-image": {
+        "base": 1,
+        "stops": [[0, "dot"], [5, ""]]
+      },
+      "symbol-avoid-edges": true,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 2,
+      "visibility": "visible",
+      "text-offset": {
+        "base": 1,
+        "stops": [[4.99, [0, 0.3]], [5, [0, 0]]]
+      },
+      "text-rotation-alignment": "viewport",
+      "text-anchor": {
+        "base": 1,
+        "stops": [[0, "top"], [5, "center"]]
+      },
+      "text-field": "{name}",
+      "text-letter-spacing": 0.05,
+      "text-max-width": 5
+    },
+    "paint": {
+      "text-color": "#555",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[6, 1.25], [18, 2.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[4, 9], [18, 23]]
+      },
+      "icon-size": 0.75,
+      "icon-opacity": 0.8
+    }
+  }, {
+    "id": "town_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "place_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "town"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1], [20, 1.75]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 5,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.05,
+      "text-max-width": 5
+    },
+    "paint": {
+      "text-color": "#555",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[10, 10], [18, 22]]
+      }
+    }
+  }, {
+    "id": "hamlet_village_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "place_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "village", "hamlet"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1], [20, 1.75]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 10,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.05,
+      "text-max-width": 5
+    },
+    "paint": {
+      "text-color": "#555",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[10, 8], [18, 20]]
+      }
+    }
+  }, {
+    "id": "us_interstate_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "road_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "shield", "us-interstate", "us-interstate-alternate", "us-interstate-business", "us-interstate-duplex"], ["<=", "reflen", 3]],
+    "layout": {
+      "text-line-height": 1.4,
+      "text-allow-overlap": false,
+      "symbol-min-distance": 2000,
+      "icon-offset": [0, -0.5],
+      "icon-image": "interstate_{reflen}",
+      "icon-rotation-alignment": "viewport",
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "icon-keep-upright": true,
+      "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
+      "symbol-placement": "line",
+      "text-padding": 10,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-anchor": "center",
+      "text-field": "{ref}",
+      "text-letter-spacing": 0,
+      "icon-padding": 0
+    },
+    "paint": {
+      "text-size": {
+        "base": 1,
+        "stops": [[6, 8.5], [20, 15]]
+      },
+      "text-color": "#fff",
+      "icon-halo-color": "white",
+      "icon-halo-width": 2,
+      "text-opacity": 1,
+      "text-halo-color": "#fff",
+      "icon-size": {
+        "base": 1,
+        "stops": [[6, 0.5], [20, 1.5]]
+      },
+      "text-halo-width": 0
+    }
+  }, {
+    "id": "neighborhood_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "place_label",
+    "minzoom": 0,
+    "maxzoom": 18,
+    "filter": ["all", ["in", "type", "neighbourhood", "suburb", "Island"], ["<=", "localrank", 3]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 0.85], [20, 1.75]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Italic,    Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 15,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.15,
+      "text-max-width": 5
+    },
+    "paint": {
+      "text-color": "#633",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2.25], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 6], [18, 22]]
+      }
+    }
+  }, {
+    "id": "transport_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "maki", "airport", "airfield", ""]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1.2], [20, 1.55]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 5,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.1,
+      "text-max-width": 7
+    },
+    "paint": {
+      "text-color": "#333",
+      "text-halo-color": "#fff",
+      "text-halo-width": 1.25,
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 6], [20, 24]]
+      }
+    }
+  }, {
+    "id": "networked_rail_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "maki", "rail-light", "rail-metro", "rail"], ["in", "network", "rer", "moscow-metro", "london-overground", "london-underground", "dlr", "national-rail", "s-bahn", "s-bahn.u-bahn", "u-bahn", "transilien", "london-overground.london-underground", "dlr.london-overground.london-underground.national-rail", "dlr.london-underground", "dlr.london-underground.national-rail", "metro", "london-overground.london-underground.national-rail", "london-overground.national-rail", "national-rail", "wiener-linien", "washington-metro", "london-underground.national-rail", "metro"]],
+    "layout": {
+      "text-optional": false,
+      "text-line-height": 1,
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-offset": [0, 0],
+      "icon-image": "{network}",
+      "symbol-avoid-edges": true,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-transform": "none",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
+      "icon-allow-overlap": false,
+      "symbol-placement": "point",
+      "text-justify": "center",
+      "text-padding": 0,
+      "visibility": "visible",
+      "text-offset": [0, 0.75],
+      "icon-optional": false,
+      "text-rotation-alignment": "viewport",
+      "text-anchor": "top",
+      "text-field": {
+        "base": 1,
+        "stops": [[0, ""], [14, "{name}"]]
+      },
+      "text-letter-spacing": 0.05,
+      "icon-padding": 0,
+      "text-max-width": 5.2,
+      "icon-ignore-placement": {
+        "base": 1,
+        "stops": [[0, true], [13, false]]
+      }
+    },
+    "paint": {
+      "text-color": "#333",
+      "text-halo-color": "#fff",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 12]]
+      },
+      "icon-halo-width": 4,
+      "icon-halo-color": "#fff",
+      "text-opacity": 1,
+      "text-translate": [0, 0]
+    }
+  }, {
+    "id": "generic_metro_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "maki", "rail-light", "rail-metro"], ["!in", "network", "rer", "moscow-metro", "london-overground", "london-underground", "dlr", "national-rail", "s-bahn", "s-bahn.u-bahn", "u-bahn", "transilien", "london-overground.london-underground", "dlr.london-overground.london-underground.national-rail", "dlr.london-underground", "dlr.london-underground.national-rail", "metro", "london-overground.london-underground.national-rail", "london-overground.national-rail", "national-rail", "wiener-linien", "washington-metro", "london-underground.national-rail", "metro"]],
+    "layout": {
+      "text-optional": false,
+      "text-line-height": 1,
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-offset": [0, 0],
+      "icon-image": "generic-metro",
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-transform": "none",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
+      "icon-allow-overlap": false,
+      "symbol-placement": "point",
+      "text-justify": "center",
+      "text-padding": 0,
+      "visibility": "visible",
+      "text-offset": [0, 0.75],
+      "icon-optional": false,
+      "text-rotation-alignment": "viewport",
+      "text-anchor": "top",
+      "text-field": {
+        "base": 1,
+        "stops": [[0, ""], [14, "{name_en}"]]
+      },
+      "text-letter-spacing": 0.05,
+      "icon-padding": 0,
+      "text-max-width": 5.2,
+      "icon-ignore-placement": {
+        "base": 1,
+        "stops": [[0, true], [13, false]]
+      }
+    },
+    "paint": {
+      "text-color": "#464445",
+      "text-halo-color": "#fff",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 12]]
+      },
+      "icon-halo-width": 4,
+      "icon-halo-color": "#fff",
+      "text-opacity": 1,
+      "text-translate": [0, 0]
+    }
+  }, {
+    "id": "generic_rail_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "maki", "rail"], ["!in", "network", "rer", "moscow-metro", "london-overground", "london-underground", "dlr", "national-rail", "s-bahn", "s-bahn.u-bahn", "u-bahn", "transilien", "london-overground.london-underground", "dlr.london-overground.london-underground.national-rail", "dlr.london-underground", "dlr.london-underground.national-rail", "metro", "london-overground.london-underground.national-rail", "london-overground.national-rail", "national-rail", "wiener-linien", "washington-metro", "london-underground.national-rail", "metro"]],
+    "layout": {
+      "text-optional": false,
+      "text-line-height": 1,
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-offset": [0, 0],
+      "icon-image": "generic-rail",
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-transform": "none",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
+      "icon-allow-overlap": false,
+      "symbol-placement": "point",
+      "text-justify": "center",
+      "text-padding": 0,
+      "visibility": "visible",
+      "text-offset": [0, 0.75],
+      "icon-optional": false,
+      "text-rotation-alignment": "viewport",
+      "text-anchor": "top",
+      "text-field": {
+        "base": 1,
+        "stops": [[0, ""], [14, "{name_en}"]]
+      },
+      "text-letter-spacing": 0.05,
+      "icon-padding": 0,
+      "text-max-width": 5.2,
+      "icon-ignore-placement": {
+        "base": 1,
+        "stops": [[0, true], [13, false]]
+      }
+    },
+    "paint": {
+      "text-color": "#464445",
+      "text-halo-color": "#fff",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 12]]
+      },
+      "icon-halo-width": 4,
+      "icon-halo-color": "#fff",
+      "text-opacity": 1,
+      "text-translate": [0, 0]
+    }
+  }, {
+    "id": "road-label-large",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "road_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "main", "motorway_link"]],
+    "layout": {
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
+      "symbol-placement": "line",
+      "text-padding": 0,
+      "visibility": "visible",
+      "text-rotation-alignment": "map",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.05
+    },
+    "paint": {
+      "text-color": "#555",
+      "text-halo-color": "#fff",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 8], [20, 17]]
+      }
+    }
+  }, {
+    "id": "road-label-medium",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "road_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "street"]],
+    "layout": {
+      "visibility": "visible",
+      "text-field": "{name}",
+      "symbol-placement": "line",
+      "text-rotation-alignment": "map",
+      "text-font": "Open Sans Regular,  Arial Unicode MS Regular",
+      "text-letter-spacing": 0.05,
+      "text-max-angle": 38,
+      "text-padding": 0
+    },
+    "paint": {
+      "text-color": "#666",
+      "text-halo-color": "#fff",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 8], [20, 16]]
+      }
+    }
+  }, {
+    "id": "road-label-small",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "road_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "path", "service", "street_limited"], ["==", "$type", "LineString"]],
+    "layout": {
+      "visibility": "visible",
+      "text-field": "{name}",
+      "symbol-placement": "line",
+      "text-rotation-alignment": "map",
+      "text-font": "Open Sans Regular,  Arial Unicode MS Regular",
+      "text-letter-spacing": 0.1,
+      "text-ignore-placement": false,
+      "text-padding": 0
+    },
+    "paint": {
+      "text-color": "#555",
+      "text-halo-color": "#fff",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 8], [20, 15]]
+      }
+    }
+  }, {
+    "id": "us_highway_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "road_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "shield", "us-highway", "us-highway-alternate", "us-highway-business", "us-highway-duplex"], ["<=", "reflen", 3]],
+    "layout": {
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-image": "us_highway_{reflen}",
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 10,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{ref}",
+      "text-letter-spacing": 0
+    },
+    "paint": {
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 17]]
+      },
+      "text-color": "#666",
+      "icon-halo-color": "rgba(0, 0, 0, 1)",
+      "icon-halo-width": 1,
+      "text-opacity": 1,
+      "icon-color": "white",
+      "text-halo-color": "#fff",
+      "icon-size": {
+        "base": 1,
+        "stops": [[8, 0.7], [20, 1.2]]
+      },
+      "text-halo-width": 0
+    }
+  }, {
+    "id": "us_stateroad_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "road_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "shield", "us-state", "us-state-loop", "us-state-business", "us-state-toll", "us-state-truck"], ["==", "class", "motorway"], ["<=", "reflen", 3]],
+    "layout": {
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-image": "us_state_{reflen}",
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 10,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{ref}",
+      "text-letter-spacing": 0
+    },
+    "paint": {
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 15]]
+      },
+      "text-color": "#666",
+      "icon-halo-color": "rgba(0, 0, 0, 1)",
+      "icon-halo-width": 1,
+      "text-opacity": 1,
+      "icon-color": "white",
+      "text-halo-color": "#fff",
+      "icon-size": {
+        "base": 1,
+        "stops": [[8, 0.7], [20, 1]]
+      },
+      "text-halo-width": 0
+    }
+  }, {
+    "id": "generic_motorway_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "road_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "motorway", "motorway_link"], ["==", "shield", "default"], ["<=", "reflen", 6]],
+    "layout": {
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-image": "default_{reflen}",
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-transform": "uppercase",
+      "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 10,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{ref}",
+      "text-letter-spacing": 0
+    },
+    "paint": {
+      "text-size": {
+        "base": 1,
+        "stops": [[10, 10], [20, 12]]
+      },
+      "text-color": "#666",
+      "icon-halo-color": "rgba(0, 0, 0, 1)",
+      "icon-halo-width": 1,
+      "text-opacity": 1,
+      "icon-color": "white",
+      "text-halo-color": "#fff",
+      "icon-size": {
+        "base": 1,
+        "stops": [[10, 1], [20, 1.25]]
+      },
+      "text-halo-width": 0
+    }
+  }, {
+    "id": "park_big_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "maki", "park", "golf", "zoo", "Garden", "cemetery"], ["==", "scalerank", 1]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1.2], [20, 1.8]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-transform": "uppercase",
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 2,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.2,
+      "text-max-width": 7
+    },
+    "paint": {
+      "text-color": "#51814f",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": 0,
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 12], [20, 16]]
+      }
+    }
+  }, {
+    "id": "generic_big_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "maki", "rail-light", "rail-metro", "rail", "school", "park", "cemetery", "college", "golf", "hospital"], ["<=", "scalerank", 2], ["!in", "type", "Island", "Wetland"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1.2], [20, 1.8]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-transform": "uppercase",
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 5,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.2,
+      "text-max-width": 3.5
+    },
+    "paint": {
+      "text-color": "#b36b47",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": 1.5,
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 12], [20, 16]]
+      }
+    }
+  }, {
+    "id": "park_small_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["any", ["in", "maki", "park", "golf", "zoo", "cemetery"], ["==", "type", "Garden"]],
+    "layout": {
+      "text-line-height": 1.3,
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 0,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.05,
+      "text-max-width": 5
+    },
+    "paint": {
+      "text-color": "#3d813c",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": 1.5,
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 12]]
+      }
+    }
+  }, {
+    "id": "college_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "maki", "college"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1], [20, 1.3]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 5,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.1,
+      "text-max-width": 7
+    },
+    "paint": {
+      "text-color": "#895fb1",
+      "text-halo-color": "#fff",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 1], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 14]]
+      },
+      "text-halo-blur": 0.75
+    }
+  }, {
+    "id": "school_museum_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["any", ["in", "maki", "school", "museum", "library"], ["==", "type", "school"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 0.95], [20, 1.2]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "symbol-avoid-edges": false,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 10,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.05,
+      "text-max-width": 7
+    },
+    "paint": {
+      "text-color": "#895fb1",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 1.25], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 12]]
+      }
+    }
+  }, {
+    "id": "hospital_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "maki", "hospital"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 0.95], [20, 1.2]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 5,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.1,
+      "text-max-width": 7
+    },
+    "paint": {
+      "text-color": "#b73978",
+      "text-halo-color": "#fff",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 12]]
+      }
+    }
+  }, {
+    "id": "religious_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "maki", "religious-christian", "religious-jewish", "religious-muslim"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 0.95], [20, 1.2]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 5,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.05,
+      "text-max-width": 3.5
+    },
+    "paint": {
+      "text-color": "#117599",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 1.25], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 12]]
+      }
+    }
+  }, {
+    "id": "government_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["any", ["in", "maki", "police", "embassy", "fire-station", "post", "prison", "monument"], ["==", "type", "Military"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 0.95], [20, 1.2]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 5,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.05,
+      "text-max-width": 3.5
+    },
+    "paint": {
+      "text-color": "#5c5a5b",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[16, 2], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 12]]
+      }
+    }
+  }, {
+    "id": "generic_small_labels",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "poi_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "maki", "rail-light", "rail-metro", "rail", "school", "park", "college", "golf"], [">=", "scalerank", 3], ["!in", "type", "Apartments", "Yes", "Military"]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 0.95], [20, 1.2]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 16,
+      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 5,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{name}",
+      "text-letter-spacing": 0.05,
+      "text-max-width": 3.5
+    },
+    "paint": {
+      "text-color": "#b36b47",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": 1.5,
+      "text-size": {
+        "base": 1,
+        "stops": [[8, 10], [20, 12]]
+      }
+    }
+  }],
+  "owner": "peterqliu",
+  "modified": "2015-03-24T17:43:54.070Z",
+  "created": "2015-03-10T22:36:44.888Z",
+  "id": "peterqliu.dc7c42de"
+}
