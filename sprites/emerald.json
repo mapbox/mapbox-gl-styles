@@ -334,5 +334,21 @@
         "height": 51,
         "pixelRatio": 1,
         "sdf": false
+    },
+    "secondary_marker": {
+        "x": 33,
+        "y": 117,
+        "width": 33,
+        "height": 51,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "construction": {
+        "x": 178,
+        "y": 24,
+        "width": 21,
+        "height": 19,
+        "pixelRatio": 1,
+        "sdf": false
     }
 }
