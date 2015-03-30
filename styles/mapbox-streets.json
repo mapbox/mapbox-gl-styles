@@ -15,6 +15,7 @@
     "@snow": "#fff",
     "@label-park": "#245a00",
     "@landuse-school": "#f3e3a1",
+    "@label-water-dark": "#004087",
     "@road-main": "#a2a2a2",
     "@road-case-dark": "#d1cac2",
     "@road-trunk": "#e9c248",
@@ -71,7 +72,7 @@
     },
     "@label-road": "#3a3836",
     "@label-transit": "red",
-    "@label-secondary": "#936d49",
+    "@label-secondary": "#755434",
     "@halo": "#ffffff",
     "@building-extras": "#d2cbc3",
     "@street-width": {
@@ -877,6 +878,7 @@
     "maxzoom": 7,
     "filter": ["all", [">=", "area", 80000]],
     "layout": {
+      "text-allow-overlap": false,
       "text-ignore-placement": false,
       "text-max-size": 10,
       "text-transform": "uppercase",
@@ -909,17 +911,18 @@
     "maxzoom": 8,
     "filter": ["all", ["<", "area", 80000], [">=", "area", 20000]],
     "layout": {
+      "text-allow-overlap": false,
+      "text-ignore-placement": false,
+      "text-max-size": 10,
+      "text-transform": "uppercase",
+      "text-font": "Open Sans Bold, Arial Unicode MS Regular",
+      "visibility": "visible",
       "text-field": {
         "base": 1,
         "stops": [[0, "{abbr}"], [5, "{name_en}"]]
       },
-      "visibility": "visible",
-      "text-max-width": 6,
-      "text-ignore-placement": false,
-      "text-transform": "uppercase",
-      "text-font": "Open Sans Bold, Arial Unicode MS Regular",
       "text-letter-spacing": 0.15,
-      "text-max-size": 10
+      "text-max-width": 6
     },
     "paint": {
       "text-size": {
@@ -940,17 +943,18 @@
     "maxzoom": 9,
     "filter": ["all", ["<", "area", 20000]],
     "layout": {
+      "text-allow-overlap": false,
+      "text-ignore-placement": false,
+      "text-max-size": 10,
+      "text-transform": "uppercase",
+      "text-font": "Open Sans Bold, Arial Unicode MS Regular",
+      "visibility": "visible",
       "text-field": {
         "base": 1,
         "stops": [[0, "{abbr}"], [6, "{name_en}"]]
       },
-      "visibility": "visible",
-      "text-max-width": 5,
-      "text-ignore-placement": false,
-      "text-max-size": 10,
-      "text-font": "Open Sans Bold, Arial Unicode MS Regular",
-      "text-transform": "uppercase",
-      "text-letter-spacing": 0.15
+      "text-letter-spacing": 0.15,
+      "text-max-width": 5
     },
     "paint": {
       "text-size": {
@@ -1115,8 +1119,8 @@
     "type": "symbol",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "place_label",
-    "minzoom": 0,
-    "maxzoom": 13,
+    "minzoom": 1,
+    "maxzoom": 14,
     "filter": ["all", ["<=", "scalerank", 2], ["==", "type", "city"], ["in", "ldir", "N", "NE", "NW", "W"]],
     "layout": {
       "visibility": "visible",
@@ -1144,8 +1148,8 @@
     "type": "symbol",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "place_label",
-    "minzoom": 0,
-    "maxzoom": 13,
+    "minzoom": 1,
+    "maxzoom": 14,
     "filter": ["all", ["<=", "scalerank", 2], ["==", "type", "city"], ["in", "ldir", "S", "SE", "SW", "E"]],
     "layout": {
       "visibility": "visible",
@@ -1163,7 +1167,8 @@
         "stops": [[0, [0, 0.1]], [6, [0, 0]]]
       },
       "icon-max-size": 0.2,
-      "text-max-size": 20
+      "text-max-size": 20,
+      "text-font": "Open Sans Regular, Arial Unicode MS Regular"
     },
     "paint": {
       "icon-size": 0.2,
@@ -1177,7 +1182,7 @@
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "place_label",
     "minzoom": 0,
-    "maxzoom": 13,
+    "maxzoom": 14,
     "filter": ["all", ["in", "scalerank", 3, 4, 5], ["==", "type", "city"], ["in", "ldir", "N", "NE", "NW", "W"]],
     "layout": {
       "visibility": "visible",
@@ -1192,7 +1197,8 @@
         "stops": [[0, [0, -0.2]], [6, [0, 0]]]
       },
       "icon-max-size": 0.2,
-      "text-max-size": 20
+      "text-max-size": 20,
+      "text-font": "Open Sans Regular, Arial Unicode MS Regular"
     },
     "paint": {
       "icon-size": 0.2,
@@ -1206,7 +1212,7 @@
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "place_label",
     "minzoom": 0,
-    "maxzoom": 13,
+    "maxzoom": 14,
     "filter": ["all", ["in", "scalerank", 3, 4, 5], ["==", "type", "city"], ["in", "ldir", "S", "SE", "WW", "E"]],
     "layout": {
       "visibility": "visible",
@@ -1235,7 +1241,7 @@
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "place_label",
     "minzoom": 0,
-    "maxzoom": 13,
+    "maxzoom": 14,
     "filter": ["all", ["!in", "scalerank", 0, 1, 2, 3, 4, 5], ["==", "type", "city"]],
     "layout": {
       "visibility": "visible",
@@ -1255,7 +1261,7 @@
     "paint": {
       "icon-size": 0.2,
       "text-size": {
-        "base": 0.9,
+        "base": 1,
         "stops": [[6, 11], [14, 20]]
       },
       "text-halo-width": 1.5,
@@ -1277,7 +1283,7 @@
     },
     "paint": {
       "text-size": {
-        "base": 0.8,
+        "base": 1,
         "stops": [[7, 11], [15, 18]]
       },
       "text-halo-color": "@halo",
@@ -1330,8 +1336,8 @@
     "type": "symbol",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "place_label",
-    "minzoom": 0,
-    "maxzoom": 22,
+    "minzoom": 10,
+    "maxzoom": 16,
     "filter": ["all", ["==", "type", "suburb"]],
     "layout": {
       "visibility": "visible",
@@ -1348,7 +1354,8 @@
         "stops": [[11, 10], [15, 16]]
       },
       "text-halo-color": "@halo",
-      "text-halo-width": 1
+      "text-halo-width": 1,
+      "text-color": "@label-secondary"
     }
   }, {
     "id": "place-neighbourhood",
@@ -1374,7 +1381,30 @@
       },
       "text-halo-color": "@halo",
       "text-halo-width": 1.5,
-      "text-color": "#8d6453"
+      "text-color": "@label-secondary"
+    }
+  }, {
+    "id": "water-label",
+    "type": "symbol",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "water_label",
+    "minzoom": 5,
+    "maxzoom": 22,
+    "filter": ["all"],
+    "layout": {
+      "text-field": "{name_en}",
+      "visibility": "visible",
+      "text-font": "Open Sans Italic, Arial Unicode MS Regular"
+    },
+    "paint": {
+      "text-halo-width": 0,
+      "text-size": {
+        "base": 1,
+        "stops": [[13, 12], [18, 16]]
+      },
+      "text-halo-color": "@halo",
+      "text-color": "@label-water-dark",
+      "text-halo-blur": 1.5
     }
   }, {
     "id": "poi-scalerank1",
@@ -1942,6 +1972,30 @@
         "base": 1,
         "stops": [[16, 10], [20, 13]]
       }
+    }
+  }, {
+    "id": "waterway-label",
+    "type": "symbol",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "waterway_label",
+    "minzoom": 12,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "river"]],
+    "layout": {
+      "text-field": "{name_en}",
+      "visibility": "visible",
+      "text-font": "Open Sans Italic, Arial Unicode MS Regular",
+      "symbol-placement": "line"
+    },
+    "paint": {
+      "text-halo-width": 0,
+      "text-size": {
+        "base": 1,
+        "stops": [[13, 12], [18, 16]]
+      },
+      "text-halo-color": "@halo",
+      "text-color": "@label-water-dark",
+      "text-halo-blur": 1.5
     }
   }],
   "owner": "aj",
