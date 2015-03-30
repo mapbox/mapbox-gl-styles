@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="12"
+   id="svg3042"
+   version="1.1"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="rer.transilien-12.svg"
+   viewBox="0 0 24 12">
+  <defs
+     id="defs3044" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="47.588286"
+     inkscape:cx="14.193858"
+     inkscape:cy="5.8311534"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1546"
+     inkscape:window-height="891"
+     inkscape:window-x="40"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2996"
+       empspacing="2"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3047">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1040.3622)">
+    <g
+       id="g3010">
+      <g
+         id="g3812"
+         transform="translate(1137.7177,33.7637)">
+        <path
+           style="fill:#0079ac;fill-opacity:1;stroke:none"
+           d="M 15 1 C 13.892 1 13 1.892 13 3 L 13 9 C 13 10.108 13.892 11 15 11 L 21 11 C 22.108 11 23 10.108 23 9 L 23 3 C 23 1.892 22.108 1 21 1 L 15 1 z M 15 1.9980469 L 21 1.9980469 C 21.5721 1.9980469 22.001953 2.4279 22.001953 3 L 22.001953 9 C 22.001953 9.5719 21.5721 10.001953 21 10.001953 L 15 10.001953 C 14.4283 10.001953 13.998047 9.5717 13.998047 9 L 13.998047 3 C 13.998047 2.4279 14.428 1.9980469 15 1.9980469 z M 16.75 3 C 16.3345 3 16 3.3345 16 3.75 L 16 7.25 C 16 7.6655 16.3345 8 16.75 8 L 17 8 L 15.5 9.5 L 16.5 9.5 L 17.5 8.5 L 18.5 8.5 L 19.5 9.5 L 20.5 9.5 L 19 8 L 19.25 8 C 19.6655 8 20 7.6655 20 7.25 L 20 3.75 C 20 3.3345 19.6655 3 19.25 3 L 16.75 3 z M 16.75 4 L 19.25 4 C 19.3885 4 19.5 4.1115 19.5 4.25 L 19.5 4.75 C 19.5 4.8885 19.3885 5 19.25 5 L 16.75 5 C 16.6115 5 16.5 4.8885 16.5 4.75 L 16.5 4.25 C 16.5 4.1115 16.6115 4 16.75 4 z M 16.5 6 L 17 6 L 17 6.5 L 16.5 6.5 L 16.5 6 z M 19 6 L 19.5 6 L 19.5 6.5 L 19 6.5 L 19 6 z "
+           transform="translate(-1137.7177,1006.5985)"
+           id="rect4162" />
+      </g>
+      <g
+         transform="translate(0,1040.3622)"
+         id="g3843">
+        <path
+           style="fill:#3377a7;fill-opacity:1"
+           d="M 6.0136719 0.97460938 C 3.2509852 0.97460938 1 3.2250502 1 6 C 1 8.7370854 3.2509852 10.974609 6.0136719 10.974609 C 8.7759567 10.974609 11 8.7620854 11 6 C 11 3.2250502 8.6756032 0.97460938 6.0136719 0.97460938 z M 6.0117188 2 C 8.2024077 2 10 3.829642 10 6.0292969 C 10 6.5292607 9.8953138 7.0047792 9.7226562 7.4472656 L 9 6 L 9.75 5 L 9.71875 5 L 9 4 L 7.5 4 L 7.5 5 L 7.5 7 L 7.5 8 L 8 8 L 8 6.5 L 8.5 6.5 L 9 8 L 9.4492188 8 C 8.756753 9.1860073 7.4793448 10 6.0117188 10 C 4.5335738 10 3.2466581 9.1889314 2.5507812 8 L 3 8 L 3 6.5 L 3.5 6.5 L 4 8 L 5 8 L 4 6 L 4.75 5 L 4.71875 5 L 4 4 L 2.5703125 4 C 3.2708785 2.8122103 4.5474907 2 6.0117188 2 z M 5 8 L 7 8 L 7 7.25 L 5.5 7.25 L 5.5 6 L 7 6 L 7 5.5 L 5.5 5.5 L 5.5 4.5 L 7 4.5 L 7 4 L 5 4 L 5 8 z M 2.5 4.1289062 L 2.5 5 L 2.5 7 L 2.5 7.90625 C 2.1912215 7.3445986 2 6.7115264 2 6.0292969 C 2 5.339943 2.1912102 4.6987221 2.5 4.1289062 z M 3 4.5 L 3.5 4.5 L 4 5 L 3 6 L 3 4.5 z M 8 4.5 L 8.5 4.5 L 9 5 L 8 6 L 8 4.5 z "
+           id="path3324" />
+      </g>
+    </g>
+  </g>
+</svg>
