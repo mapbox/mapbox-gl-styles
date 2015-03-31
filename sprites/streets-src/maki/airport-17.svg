@@ -14,7 +14,8 @@
    height="17"
    id="svg4619"
    inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="airport-17.svg">
+   sodipodi:docname="airport-17.svg"
+   viewBox="0 0 17 17">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,18 +25,22 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1155"
+     inkscape:window-height="704"
      id="namedview3346"
      inkscape:document-units="px"
-     showgrid="false"
+     showgrid="true"
      inkscape:zoom="13.882353"
-     inkscape:cx="1.1525424"
+     inkscape:cx="-7.8516949"
      inkscape:cy="10.661017"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4619" />
+     inkscape:current-layer="svg4619">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3389" />
+  </sodipodi:namedview>
   <defs
      id="defs4621" />
   <metadata
@@ -51,8 +56,9 @@
     </rdf:RDF>
   </metadata>
   <path
-     d="m 0,0 0,1 -5.5,-1 0,3 2,1.2222 0,0.7778 -6,0 0,-0.7778 L 6.5,13 6.5,10 1,11 1,10 6.5,7 c 0,0 0,-1.7036 0,-3 0,-0.7777 0.22222,-2 1,-2 0.77777,0 1,1.2223 1,2 0,1.2964 0,3 0,3 z"
+     d="m 17,10.461539 0,1.307692 -7.1923081,-1.307692 0,3.923076 2.6153851,1.598262 0,1.017123 -7.8461539,0 0,-1.017123 2.6153846,-1.598262 0,-3.923076 L 6.0000001e-8,11.769231 l 0,-1.307692 L 7.1923077,6.5384617 l 0,-3.9230769 C 7.1923077,1.5983925 7.4829031,1.8e-7 8.5,1.8e-7 c 1.017084,0 1.3076919,1.59839232 1.3076919,2.61538462 l 0,3.9230769 z"
      inkscape:connector-curvature="0"
      id="path7712-0"
-     style="display:inline;fill:#000000;fill-opacity:1;stroke:none" />
+     style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.30769229"
+     sodipodi:nodetypes="cccccccccccccssscc" />
 </svg>

@@ -14,7 +14,8 @@
    height="17"
    id="svg4619"
    inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="baseball-17.svg">
+   sodipodi:docname="baseball-17.svg"
+   viewBox="0 0 17 17">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -34,9 +35,9 @@
      inkscape:object-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="39.265224"
-     inkscape:cx="5.2913291"
-     inkscape:cy="11.296113"
+     inkscape:zoom="27.764706"
+     inkscape:cx="13.571819"
+     inkscape:cy="6.5348205"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -60,9 +61,9 @@
     </rdf:RDF>
   </metadata>
   <path
-     d="M 0,0 C 0,0 -1,0 -1.5,0.5 -2,1 -2,2 -2,2 0.5,5.5 5.07972,8.1418 6,9 L 8.59375,11.4063 8,12 l 0,1 1,0 1,-1 1,-1 0,-1 -1,0 L 9.40625,10.5938 7,8 C 4.63789,5.4672 3.5,2.5 0,0 Z M 1.75,9 C 1.05964,9 0.5,9.5596 0.5,10.25 0.5,10.9404 1.05964,11.5 1.75,11.5 2.44036,11.5 3,10.9404 3,10.25 3,9.5596 2.44036,9 1.75,9 Z"
+     d="m 2.6153846,0 c 0,0 -1.3076923,0 -1.9615384,0.6538462 C 0,1.3076923 0,2.6153846 0,2.6153846 3.2692308,7.1923077 9.2580954,10.646969 10.461539,11.769231 l 3.391826,3.1467 -0.776442,0.776377 0,1.307692 1.307692,0 1.307693,-1.307692 L 17,14.384615 l 0,-1.307692 -1.307692,0 -0.776443,0.776508 -3.146634,-3.391892 C 8.6803177,7.1494154 7.1923077,3.2692308 2.6153846,0 Z m 2.2884616,11.769231 c -0.9027785,0 -1.6346154,0.731784 -1.6346154,1.634615 0,0.902831 0.7318369,1.634616 1.6346154,1.634616 0.9027784,0 1.6346153,-0.731785 1.6346153,-1.634616 0,-0.902831 -0.7318369,-1.634615 -1.6346153,-1.634615 z"
      inkscape:connector-curvature="0"
      id="path20837"
-     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.61538458;marker:none;enable-background:accumulate"
      sodipodi:nodetypes="cscccccccccccccsssss" />
 </svg>

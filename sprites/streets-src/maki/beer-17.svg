@@ -1,1 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) -->  <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="17" height="17" id="svg4619"> <defs id="defs4621" /> <metadata id="metadata4624"> <rdf:RDF> <cc:Work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /> <dc:title /> </cc:Work> </rdf:RDF> </metadata>   <path d="m 0,0 1.5,13 c 0.0577,0.5 0.5,1 1,1 l 6,0 c 0.5,0 0.94231,-0.5 1,-1 l 1.5,-13 z m 2,2 7,0 -0.4,3 -6.2,0 z" inkscape:connector-curvature="0" id="path10185" style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />    </svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="17"
+   height="17"
+   id="svg4619"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="beer-17.svg"
+   viewBox="0 0 17 17">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="683"
+     id="namedview3418"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="19.632612"
+     inkscape:cx="10.314449"
+     inkscape:cy="11.179477"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4619">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3440" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4621" />
+  <metadata
+     id="metadata4624">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="M 1.75,-5.3e-7 3.5714285,15.785714 C 3.6414925,16.392856 4.1785714,17 4.7857142,17 l 7.2857138,0 c 0.607143,0 1.144234,-0.607144 1.214287,-1.214286 L 15.107142,-5.3e-7 Z m 2.4285714,2.42857143 8.4999986,0 -0.485713,3.6428571 -7.5285714,0 z"
+     inkscape:connector-curvature="0"
+     id="path10185"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.42857146;marker:none;enable-background:accumulate" />
+</svg>
