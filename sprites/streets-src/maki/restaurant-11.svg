@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) -->  <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="11" height="11" id="svg4764"> <defs id="defs4766" /> <metadata id="metadata4769"> <rdf:RDF> <cc:Work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /> <dc:title /> </cc:Work> </rdf:RDF> </metadata>     <path d="m 0,0 -0.5,0 c 0,0.8333 0,2.1667 0,3 0,0.5 1,0.5 1,1 l 0,6 1,0 0,-6 c 0,-0.5 1,-0.5 1,-1 0,-0.8333 0,-2.1667 0,-3 l -0.5,0 0,2 -0.75,0 0,-2 -0.5,0 0,2 -0.75,0 z m 6.5,0 c -0.5,0 -1.43377,0.1176 -1.75,0.75 -0.25,0.5 -0.25,1.25 -0.25,2.25 l 0,2.5 1,0 0,4.5 1,0 z" inkscape:connector-curvature="0" id="rect6396-8" style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />    </svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg4764" xmlns:cc="http://creativecommons.org/ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 11"
+	 enable-background="new 0 0 11 11" xml:space="preserve">
+<path id="rect6396-8" inkscape:connector-curvature="0" d="M2,0H1.4c0,0.9,0,2.4,0,3.3c0,0.5,1.1,0.5,1.1,1.1V11h1.1V4.4
+	c0-0.6,1.1-0.6,1.1-1.1c0-0.9,0-2.4,0-3.3H4.2v2.2H3.3V0H2.8v2.2H2V0z M9.1,0C8.6,0,7.5,0.1,7.2,0.8C6.9,1.4,6.9,2.2,6.9,3.3v2.8H8
+	V11h1.1V0z"/>
+</svg>
