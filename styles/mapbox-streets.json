@@ -365,6 +365,42 @@
       "line-color": "@building-extras"
     }
   }, {
+    "id": "waterway-river",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "waterway",
+    "minzoom": 7,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "river"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "line-color": "@water",
+      "line-width": {
+        "base": 1.2,
+        "stops": [[13, 1], [18, 5]]
+      }
+    }
+  }, {
+    "id": "waterway-other",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "waterway",
+    "minzoom": 13,
+    "maxzoom": 22,
+    "filter": ["all", ["!=", "class", "river"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "line-color": "@water",
+      "line-width": {
+        "base": 1.2,
+        "stops": [[13, 0.33], [20, 5]]
+      }
+    }
+  }, {
     "id": "water",
     "type": "fill",
     "source": "mapbox://mapbox.mapbox-streets-v6",
