@@ -1,1 +1,59 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) -->  <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="11" height="11" id="svg4764"> <defs id="defs4766" /> <metadata id="metadata4769"> <rdf:RDF> <cc:Work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /> <dc:title /> </cc:Work> </rdf:RDF> </metadata>    <path d="m 0,0 0,0.5714 -3,-0.5 0,2 1,1.0556 0,0.4444 -3,0 0,-0.4444 1,-1.0556 0,-2 -3,0.5 0,-0.5714 3,-1.4286 c 0,0 0,-1.2592 0,-2 0,-0.4444 0.0556,-1 0.5,-1 0.44444,0 0.5,0.5556 0.5,1 0,0.7408 0,2 0,2 z" inkscape:connector-curvature="0" id="path7712-0-5" style="fill:#000000;fill-opacity:1;stroke:none;display:inline" />    </svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="11"
+   height="11"
+   id="svg4764"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="airport-11.svg"
+   viewBox="0 0 11 11">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1553"
+     inkscape:window-height="795"
+     id="namedview3352"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="21.454545"
+     inkscape:cx="-0.32627119"
+     inkscape:cy="5.5"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4764" />
+  <defs
+     id="defs4766" />
+  <metadata
+     id="metadata4769">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="m 10.3125,6.089325 0,0.785675 -4.125,-0.6875 0,2.75 1.375,1.45145 0,0.61105 -4.125,0 0,-0.61105 1.375,-1.45145 0,-2.75 -4.125,0.6875 0,-0.785675 L 4.8125,4.125 c 0,0 0,-1.7314 0,-2.75 C 4.8125,0.76395 4.88895,0 5.5,0 c 0.611105,0 0.6875,0.76395 0.6875,1.375 0,1.0186 0,2.75 0,2.75 z"
+     inkscape:connector-curvature="0"
+     id="path7712-0-5"
+     style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.375" />
+</svg>
