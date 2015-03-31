@@ -36,6 +36,7 @@
     "@landcover": "#bdd98c",
     "@building-roof": "#dfd8d0",
     "@background": "#e8e0d8",
+    "@aeroway": "#cfb7db",
     "@label-city-md-size": {
       "base": 0.9,
       "stops": [[5, 11], [12, 20]]
@@ -375,6 +376,56 @@
     },
     "paint": {
       "fill-color": "@water"
+    }
+  }, {
+    "id": "aeroway-polygon",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "aeroway",
+    "minzoom": 9,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "$type", "Polygon"], ["!=", "type", "apron"]],
+    "layout": {},
+    "paint": {
+      "fill-color": "@aeroway"
+    }
+  }, {
+    "id": "aeroway-runway",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "aeroway",
+    "minzoom": 9,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "runway"], ["==", "$type", "LineString"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "@aeroway",
+      "line-width": {
+        "base": 1.5,
+        "stops": [[9, 1], [18, 80]]
+      }
+    }
+  }, {
+    "id": "aeroway-taxiway",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "aeroway",
+    "minzoom": 9,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "type", "taxiway"], ["==", "$type", "LineString"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "@aeroway",
+      "line-width": {
+        "base": 1.5,
+        "stops": [[10, 0.5], [18, 20]]
+      }
     }
   }, {
     "id": "road-motorway_link-case",
