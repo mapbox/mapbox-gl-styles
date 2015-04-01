@@ -1,6 +1,7 @@
 [
     'basic',
     'bright',
+    'emerald',
     'empty',
     'outdoors',
     'pencil',
