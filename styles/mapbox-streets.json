@@ -14,7 +14,7 @@
     },
     "@snow": "#fff",
     "@label-park": "#245a00",
-    "@landuse-school": "#f3e3a1",
+    "@landuse-school": "#f8d7c5",
     "@label-water-dark": "#004087",
     "@road-main": "#a2a2a2",
     "@road-case-dark": "#d1cac2",
@@ -26,7 +26,7 @@
       "base": 0.9,
       "stops": [[4, 11], [10, 20]]
     },
-    "@landuse-industrial": "#dbcde3",
+    "@landuse-industrial": "#edd8a8",
     "@landcover-opacity": {
       "base": 1,
       "stops": [[0, 0.25], [12, 0]]
@@ -34,9 +34,9 @@
     "@landuse-hospital": "#f0caca",
     "@name": "{name_en}",
     "@landcover": "#bdd98c",
-    "@building-roof": "#dfd8d0",
+    "@building-roof": "#d6cabd",
     "@background": "#e8e0d8",
-    "@aeroway": "#cfb7db",
+    "@aeroway": "#ecbf7c",
     "@label-city-md-size": {
       "base": 0.9,
       "stops": [[5, 11], [12, 20]]
@@ -75,7 +75,7 @@
     "@label-transit": "red",
     "@label-secondary": "#755434",
     "@halo": "#ffffff",
-    "@building-extras": "#d2cbc3",
+    "@building-extras": "#c8c1b9",
     "@street-width": {
       "base": 1.5,
       "stops": [[12.5, 0.5], [18, 18]]
@@ -371,15 +371,17 @@
     "source-layer": "waterway",
     "minzoom": 7,
     "maxzoom": 22,
-    "filter": ["all", ["==", "class", "river"]],
+    "filter": ["any", ["==", "class", "river"], ["==", "class", "canal"]],
     "layout": {
-      "visibility": "visible"
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
     },
     "paint": {
       "line-color": "@water",
       "line-width": {
         "base": 1.2,
-        "stops": [[13, 1], [18, 5]]
+        "stops": [[6, 0], [7, 0.125], [8, 0.5], [10, 1], [13, 1.75], [17, 4], [20, 7]]
       }
     }
   }, {
@@ -389,15 +391,17 @@
     "source-layer": "waterway",
     "minzoom": 13,
     "maxzoom": 22,
-    "filter": ["all", ["!=", "class", "river"]],
+    "filter": ["all", ["!=", "class", "river"], ["!=", "class", "canal"]],
     "layout": {
-      "visibility": "visible"
+      "visibility": "visible",
+      "line-join": "round",
+      "line-cap": "round"
     },
     "paint": {
       "line-color": "@water",
       "line-width": {
         "base": 1.2,
-        "stops": [[13, 0.33], [20, 5]]
+        "stops": [[13, 0.33], [20, 2.5]]
       }
     }
   }, {
