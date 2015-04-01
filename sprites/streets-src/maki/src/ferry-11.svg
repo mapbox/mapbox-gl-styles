@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="11"
+   height="11"
+   id="svg4764"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="ferry-11.svg"
+   viewBox="0 0 11 11">
+  <sodipodi:namedview
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3376"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="39.276568"
+     inkscape:cx="2.455399"
+     inkscape:cy="5.3566135"
+     inkscape:current-layer="svg4764" />
+  <defs
+     id="defs4766" />
+  <metadata
+     id="metadata4769">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path style="fill:#000000;fill-opacity:1"
+     d="M 2.2,0 C 1.8953,0 1.65,0.2453 1.65,0.55 l 0,3.85 -1.1,0.55 1.1,2.2 0,1.1 2.2,0.55 1.65,-0.55 1.65,0.55 2.2,-0.55 0,-1.1 1.1,-2.2 L 9.35,4.43443 9.35,0.55 C 9.35,0.2453 9.1047,0 8.8,0 L 7.7,0 3.3,0 Z m 0.55,1.1 5.5,0 0,2.81875 L 5.5,2.2 2.75,3.85 Z M 2.2,9.34945 0.55,9.86513 l 0,1.13432 0.171875,-0.0682 L 2.2,10.45 3.85,11 5.5,10.45 7.15,11 8.8,10.45 10.45,11 10.45,9.86568 8.8,9.35 7.15,9.86568 5.5,9.35 3.85,9.86568 Z"
+     inkscape:connector-curvature="0"
+     id="path30937"
+      />
+</svg>
