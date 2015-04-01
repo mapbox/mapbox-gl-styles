@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="17"
+   height="17"
+   id="svg4619"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="basketball-17.svg"
+   viewBox="0 0 17 17">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3406"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="13.882353"
+     inkscape:cx="8.5"
+     inkscape:cy="8.5"
+     inkscape:current-layer="svg4619">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3448" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4621" />
+  <metadata
+     id="metadata4624">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="M 3.923077,-4e-7 0,2.6153843 0,11.769231 c 0,0.653846 0.6538462,1.307692 1.3076923,1.307692 l 3.2692308,0 L 7.1923078,17 l 1.307692,0 1.307693,0 2.6153842,-3.923077 3.269231,0 C 16.346154,13.076923 17,12.423077 17,11.769231 L 17,3.2692304 13.076923,-4e-7 l -9.153846,0 z m 0,3.923077 9.153846,0 0,6.5384614 -9.153846,0 0,-6.5384614 z m 1.3076923,1.3076923 0,3.923077 6.5384617,0 0,-3.923077 -6.5384617,0 z m 0.6538462,7.8461541 1.9615385,0 0,1.307692 1.3076918,0 0,-1.307692 1.9615392,0 -0.899038,1.307692 -1.0625012,0 0,1.307693 -1.3076918,0 0,-1.307693 -1.0625,0 -0.8990385,-1.307692 z"
+     inkscape:connector-curvature="0"
+     id="rect5769-7-5"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.30769229;marker:none;enable-background:accumulate" />
+</svg>
