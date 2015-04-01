@@ -2,7 +2,7 @@
 set -e -u
 
 # Usage:
-#   ./render.sh [png|sprite|css|csv]
+#   ./render.sh [png]
 
 # Config
 svgdir="src"  # SVGs should already be here
@@ -28,8 +28,7 @@ function build_pngs {
     done
 }
 
-# Get a list of all the icon names - any icons not in maki.json
-# will not be rendered or included in the sprites.
+# Get a list of all the icon names from icons in the folder
 icons=$(ls ${present}/$svgdir/*-11.svg \
     | sed s/-11*.svg//g \
     | sed s:${present}/$svgdir/::g)

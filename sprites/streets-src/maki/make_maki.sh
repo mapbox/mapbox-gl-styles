@@ -3,7 +3,7 @@ present=$(pwd)
 
 for w in 11 17
 do
-    sed -i.backup 's/000000/ffffff/g' ${present}/src/*${w}.svg
+    sed -i 's/000000/ffffff/g' ${present}/src/*${w}.svg
 done
 
 # ./render.sh png
@@ -22,6 +22,6 @@ done
 
 for w in 11 17
 do
-    sed -i.backup 's/ffffff/000000/g' ${present}/src/*${w}.svg
+    sed -i 's/ffffff/000000/g' ${present}/src/*${w}.svg
 done
 
