@@ -15,7 +15,7 @@
    sodipodi:docname="circle-17.svg"
    viewBox="0 0 17 17">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#fff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -32,9 +32,9 @@
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
-     inkscape:zoom="37"
-     inkscape:cx="8.5"
-     inkscape:cy="8.5"
+     inkscape:zoom="1"
+     inkscape:cx="4.1756757"
+     inkscape:cy="8.2567568"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -58,9 +58,9 @@
     </rdf:RDF>
   </metadata>
   <circle
-
      id="path3427"
      cx="8.5"
      cy="8.500001"
-     r="8.5" />
+     r="8.5"
+     style="fill:#000000;fill-opacity:1" />
 </svg>

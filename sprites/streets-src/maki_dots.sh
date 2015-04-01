@@ -1,8 +1,12 @@
 #!/bin/bash
 
+# Usage
+# Run the command from the streets-src directory
+# To change colors see line 14
+
 present=$(pwd)
 src="_maki_src"  # SVGs should already be here
-render="maki"  # PNGs will be created, possibly overwritten, here
+render="renders"  # PNGs will be created, possibly overwritten, here
 shapesrc="_maki_shapes_src"
 shapesrender="maki_shapes"
 count=0
@@ -40,14 +44,7 @@ do
     }
 
     # Get a list of all the maki icon names from svgs in the src folder
-    icons=$(ls ${present}/${src}/${c}/*-11.svg \
-        | sed s/-11*.svg//g \
-        | sed s:${present}/${src}/${c}/::g)
-
-    # Build lists of all the SVG and PNG files from the icons list
-    svgs=$(for icon in $icons; do echo -n ${present}/${src}/${c}/${icon}-{17,11}.svg" "; done)
-    pngs=$(for icon in $icons; do echo -n ${present}/${render}/${c}/${icon}-{17,11}.png" "; done)
-    pngs2x=$(for icon in $icons; do echo -n ${present}/${render}/${c}/${icon}-{17,11}@2x.png" "; done)
+    svgs=$(ls ${present}/${src}/${c}/*.svg)
 
     build_maki_pngs $svgs
 
@@ -77,11 +74,7 @@ do
     done
 
     # Get a list of all the shape names from shapes in the folder
-    shapes=$(ls ${present}/${shapesrc}/*-11.svg \
-        | sed s/-11*.svg//g \
-        | sed s:${present}/${shapesrc}/::g)
-
-    shapesvgs=$(for shape in $shapes; do echo -n ${present}/${shapesrc}/${shapes}-{17,11}.svg" "; done)
+    shapesvgs=$(ls ${present}/${shapesrc}/*.svg)
 
     build_shape_pngs $shapesvgs
 
