@@ -2,19 +2,21 @@
     "version": 7,
     "name": "EMERALD",
     "constants": {
-        "@motorway_case": "#e59063",
-        "@road_case": {
+        "@generic_poi": "#a86443",
+        "@hillshades": {
+            "base": 1,
             "stops": [
                 [
-                    0,
-                    "#ffffff"
+                    14,
+                    0.05
                 ],
                 [
-                    20,
-                    "#ffffff"
+                    15,
+                    0
                 ]
             ]
         },
+        "@color-2": "#fff",
         "@number-1": {
             "base": 1,
             "stops": [
@@ -29,16 +31,15 @@
             ]
         },
         "@number-2": 1,
-        "@hillshades": {
-            "base": 1,
+        "@road_case": {
             "stops": [
                 [
-                    14,
-                    0.05
+                    0,
+                    "#ffffff"
                 ],
                 [
-                    15,
-                    0
+                    20,
+                    "#ffffff"
                 ]
             ]
         },
@@ -59,8 +60,20 @@
                 ]
             ]
         },
-        "@generic_poi": "#a86443",
-        "@color-2": "#fff"
+        "@number-4": {
+            "base": 1,
+            "stops": [
+                [
+                    14,
+                    "#ccc"
+                ],
+                [
+                    14.1,
+                    "#b9b9b9"
+                ]
+            ]
+        },
+        "@motorway_case": "#e59063"
     },
     "sources": {
         "compositedsource": {
@@ -264,11 +277,16 @@
             "minzoom": 0,
             "maxzoom": 22,
             "filter": [
-                "all",
+                "any",
                 [
                     "==",
                     "class",
                     "park"
+                ],
+                [
+                    "==",
+                    "class",
+                    "grass"
                 ]
             ],
             "layout": {
@@ -543,7 +561,7 @@
             ],
             "layout": {},
             "paint": {
-                "fill-color": "#ccc",
+                "fill-color": "#ddd",
                 "fill-opacity": 0.25
             }
         },
@@ -595,8 +613,8 @@
                 "visibility": "visible"
             },
             "paint": {
-                "line-color": "#568eb3",
-                "line-opacity": 0.5,
+                "line-color": "#8f9ba6",
+                "line-opacity": 0.75,
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -606,10 +624,11 @@
                         ],
                         [
                             20,
-                            2
+                            2.5
                         ]
                     ]
-                }
+                },
+                "line-blur": 0
             }
         },
         {
@@ -623,8 +642,8 @@
                 "visibility": "visible"
             },
             "paint": {
-                "fill-color": "#b6d0ea",
-                "fill-outline-color": "#b6d0ea"
+                "fill-color": "#cadcea",
+                "fill-outline-color": "#cadcea"
             }
         },
         {
@@ -653,6 +672,141 @@
             "paint": {
                 "fill-color": "#F8F4F0",
                 "fill-opacity": 1
+            }
+        },
+        {
+            "id": "railroad",
+            "type": "line",
+            "source": "compositedsource",
+            "source-layer": "road",
+            "minzoom": 0,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "class",
+                    "major_rail",
+                    "minor_rail"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round"
+            },
+            "paint": {
+                "line-color": "#bbb",
+                "line-width": {
+                    "base": 1.25,
+                    "stops": [
+                        [
+                            5,
+                            0.75
+                        ],
+                        [
+                            16,
+                            1.5
+                        ]
+                    ]
+                },
+                "line-dasharray": [
+                    1,
+                    0
+                ],
+                "line-opacity": 0.75
+            }
+        },
+        {
+            "id": "railroad_hashes",
+            "type": "line",
+            "source": "compositedsource",
+            "source-layer": "road",
+            "minzoom": 0,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "class",
+                    "major_rail",
+                    "minor_rail"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "butt"
+            },
+            "paint": {
+                "line-color": "#bbb",
+                "line-width": {
+                    "base": 1.49,
+                    "stops": [
+                        [
+                            5,
+                            0.5
+                        ],
+                        [
+                            16,
+                            8
+                        ]
+                    ]
+                },
+                "line-dasharray": [
+                    0.15,
+                    1.95
+                ],
+                "line-opacity": 1
+            }
+        },
+        {
+            "id": "path",
+            "type": "line",
+            "source": "compositedsource",
+            "source-layer": "road",
+            "minzoom": 0,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "class",
+                    "path"
+                ],
+                [
+                    "==",
+                    "$type",
+                    "LineString"
+                ],
+                [
+                    "!=",
+                    "type",
+                    "construction"
+                ]
+            ],
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round"
+            },
+            "paint": {
+                "line-color": "#a0aaa0",
+                "line-width": {
+                    "base": 1.25,
+                    "stops": [
+                        [
+                            12,
+                            0.5
+                        ],
+                        [
+                            15,
+                            1.5
+                        ]
+                    ]
+                },
+                "line-dasharray": [
+                    0.3,
+                    2.5
+                ],
+                "line-opacity": 0.75
             }
         },
         {
@@ -721,11 +875,11 @@
                     "base": 1,
                     "stops": [
                         [
-                            16,
+                            15.8,
                             0
                         ],
                         [
-                            17,
+                            16,
                             1
                         ]
                     ]
@@ -815,7 +969,7 @@
             ],
             "layout": {
                 "visibility": "visible",
-                "line-cap": "round"
+                "line-cap": "butt"
             },
             "paint": {
                 "line-color": "#99a472",
@@ -861,7 +1015,7 @@
                             "{abbr}"
                         ],
                         [
-                            4,
+                            6,
                             "{name}"
                         ]
                     ]
@@ -1018,19 +1172,7 @@
                 "line-cap": "butt"
             },
             "paint": {
-                "line-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            14,
-                            "#ccc"
-                        ],
-                        [
-                            14.1,
-                            "#b9b9b9"
-                        ]
-                    ]
-                },
+                "line-color": "@number-4",
                 "line-width": {
                     "base": 1.99,
                     "stops": [
@@ -1039,7 +1181,7 @@
                             0.25
                         ],
                         [
-                            14,
+                            14.05,
                             1
                         ],
                         [
@@ -1090,19 +1232,7 @@
                 "line-cap": "butt"
             },
             "paint": {
-                "line-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            11.9,
-                            "#ccc"
-                        ],
-                        [
-                            12,
-                            "#b9b9b9"
-                        ]
-                    ]
-                },
+                "line-color": "@number-4",
                 "line-width": {
                     "base": 1.25,
                     "stops": [
@@ -1156,19 +1286,7 @@
                 "line-cap": "butt"
             },
             "paint": {
-                "line-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            11.2,
-                            "#ccc"
-                        ],
-                        [
-                            11.3,
-                            "#b9b9b9"
-                        ]
-                    ]
-                },
+                "line-color": "@number-4",
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -1223,19 +1341,7 @@
                 "line-cap": "butt"
             },
             "paint": {
-                "line-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            10.9,
-                            "#ccc"
-                        ],
-                        [
-                            11,
-                            "#b9b9b9"
-                        ]
-                    ]
-                },
+                "line-color": "@number-4",
                 "line-width": {
                     "base": 1.25,
                     "stops": [
@@ -1290,7 +1396,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            9.9,
+                            9.95,
                             1.5
                         ],
                         [
@@ -1306,6 +1412,50 @@
                 "line-dasharray": [
                     0.5,
                     0.5
+                ]
+            }
+        },
+        {
+            "id": "construction_tunnel",
+            "type": "line",
+            "source": "compositedsource",
+            "source-layer": "tunnel",
+            "minzoom": 0,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "type",
+                    "construction"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round"
+            },
+            "paint": {
+                "line-width": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            14.05,
+                            0
+                        ],
+                        [
+                            14.1,
+                            2
+                        ],
+                        [
+                            18,
+                            7
+                        ]
+                    ]
+                },
+                "line-opacity": 0.25,
+                "line-color": "#ccc",
+                "line-dasharray": [
+                    1,
+                    0
                 ]
             }
         },
@@ -1394,7 +1544,7 @@
                     "base": 1.75,
                     "stops": [
                         [
-                            14,
+                            14.05,
                             0
                         ],
                         [
@@ -1409,7 +1559,7 @@
                 },
                 "line-opacity": 1,
                 "line-dasharray": [
-                    1,
+                    1.15,
                     0
                 ]
             }
@@ -1451,7 +1601,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            11.9,
+                            11.95,
                             0
                         ],
                         [
@@ -1614,7 +1764,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            11.9,
+                            11.95,
                             1
                         ],
                         [
@@ -1667,7 +1817,7 @@
                             1
                         ],
                         [
-                            9.9,
+                            9.95,
                             1
                         ],
                         [
@@ -1763,7 +1913,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            11.9,
+                            11.95,
                             0.25
                         ],
                         [
@@ -1824,141 +1974,6 @@
             }
         },
         {
-            "id": "railroad",
-            "type": "line",
-            "source": "compositedsource",
-            "source-layer": "road",
-            "minzoom": 0,
-            "maxzoom": 22,
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "class",
-                    "major_rail",
-                    "minor_rail"
-                ]
-            ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round"
-            },
-            "paint": {
-                "line-color": "#bbb",
-                "line-width": {
-                    "base": 1.25,
-                    "stops": [
-                        [
-                            5,
-                            0.75
-                        ],
-                        [
-                            16,
-                            1.5
-                        ]
-                    ]
-                },
-                "line-dasharray": [
-                    1,
-                    0
-                ],
-                "line-opacity": 0.75
-            }
-        },
-        {
-            "id": "railroad_hashes",
-            "type": "line",
-            "source": "compositedsource",
-            "source-layer": "road",
-            "minzoom": 0,
-            "maxzoom": 22,
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "class",
-                    "major_rail",
-                    "minor_rail"
-                ]
-            ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "butt"
-            },
-            "paint": {
-                "line-color": "#bbb",
-                "line-width": {
-                    "base": 1.49,
-                    "stops": [
-                        [
-                            5,
-                            0.5
-                        ],
-                        [
-                            16,
-                            8
-                        ]
-                    ]
-                },
-                "line-dasharray": [
-                    0.15,
-                    1.95
-                ],
-                "line-opacity": 1
-            }
-        },
-        {
-            "id": "path",
-            "type": "line",
-            "source": "compositedsource",
-            "source-layer": "road",
-            "minzoom": 0,
-            "maxzoom": 22,
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "class",
-                    "path"
-                ],
-                [
-                    "==",
-                    "$type",
-                    "LineString"
-                ],
-                [
-                    "!=",
-                    "type",
-                    "construction"
-                ]
-            ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round"
-            },
-            "paint": {
-                "line-color": "#a0aaa0",
-                "line-width": {
-                    "base": 1.25,
-                    "stops": [
-                        [
-                            12,
-                            0.5
-                        ],
-                        [
-                            15,
-                            1.5
-                        ]
-                    ]
-                },
-                "line-dasharray": [
-                    0.3,
-                    2.5
-                ],
-                "line-opacity": 0.75
-            }
-        },
-        {
             "id": "service_case",
             "type": "line",
             "source": "compositedsource",
@@ -1983,7 +1998,7 @@
                 "line-cap": "round"
             },
             "paint": {
-                "line-color": "#ccc",
+                "line-color": "@number-4",
                 "line-width": {
                     "base": 1.75,
                     "stops": [
@@ -1992,7 +2007,7 @@
                             0.25
                         ],
                         [
-                            14.5,
+                            14.55,
                             1.5
                         ],
                         [
@@ -2038,19 +2053,7 @@
                 "line-cap": "round"
             },
             "paint": {
-                "line-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            14,
-                            "#ccc"
-                        ],
-                        [
-                            14.1,
-                            "#b9b9b9"
-                        ]
-                    ]
-                },
+                "line-color": "@number-4",
                 "line-width": {
                     "base": 1.99,
                     "stops": [
@@ -2059,7 +2062,7 @@
                             0.25
                         ],
                         [
-                            14,
+                            14.05,
                             1
                         ],
                         [
@@ -2123,7 +2126,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            11.9,
+                            11.95,
                             0.75
                         ],
                         [
@@ -2245,7 +2248,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            10.9,
+                            10.95,
                             1
                         ],
                         [
@@ -2291,7 +2294,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            9.9,
+                            9.95,
                             1.5
                         ],
                         [
@@ -2304,6 +2307,50 @@
                         ]
                     ]
                 }
+            }
+        },
+        {
+            "id": "construction_road",
+            "type": "line",
+            "source": "compositedsource",
+            "source-layer": "road",
+            "minzoom": 0,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "type",
+                    "construction"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round"
+            },
+            "paint": {
+                "line-width": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            14.05,
+                            0
+                        ],
+                        [
+                            14.1,
+                            2
+                        ],
+                        [
+                            18,
+                            7
+                        ]
+                    ]
+                },
+                "line-opacity": 0.25,
+                "line-color": "#ccc",
+                "line-dasharray": [
+                    1,
+                    0
+                ]
             }
         },
         {
@@ -2336,7 +2383,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            14.5,
+                            14.55,
                             0
                         ],
                         [
@@ -2387,7 +2434,7 @@
                     "base": 1.75,
                     "stops": [
                         [
-                            14,
+                            14.05,
                             0
                         ],
                         [
@@ -2440,7 +2487,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            11.9,
+                            11.95,
                             0
                         ],
                         [
@@ -2526,11 +2573,6 @@
                     "main"
                 ],
                 [
-                    "==",
-                    "$type",
-                    "LineString"
-                ],
-                [
                     "!=",
                     "type",
                     "construction"
@@ -2546,7 +2588,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            10.9,
+                            10.95,
                             0
                         ],
                         [
@@ -2591,7 +2633,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            11.9,
+                            11.95,
                             0
                         ],
                         [
@@ -2686,7 +2728,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            9.9,
+                            9.95,
                             0
                         ],
                         [
@@ -2732,7 +2774,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            10.9,
+                            10.95,
                             0
                         ],
                         [
@@ -3009,7 +3051,7 @@
                             0.25
                         ],
                         [
-                            14.5,
+                            14.55,
                             1.5
                         ],
                         [
@@ -3076,7 +3118,7 @@
                             0.25
                         ],
                         [
-                            14,
+                            14.05,
                             1
                         ],
                         [
@@ -3135,7 +3177,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            11.9,
+                            11.95,
                             0.5
                         ],
                         [
@@ -3234,7 +3276,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            10.9,
+                            10.95,
                             0.75
                         ],
                         [
@@ -3287,6 +3329,50 @@
                         ]
                     ]
                 }
+            }
+        },
+        {
+            "id": "construction_bridge",
+            "type": "line",
+            "source": "compositedsource",
+            "source-layer": "bridge",
+            "minzoom": 0,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "type",
+                    "construction"
+                ]
+            ],
+            "layout": {
+                "line-cap": "round"
+            },
+            "paint": {
+                "line-width": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            12.05,
+                            0
+                        ],
+                        [
+                            12.1,
+                            2
+                        ],
+                        [
+                            18,
+                            7
+                        ]
+                    ]
+                },
+                "line-opacity": 0.25,
+                "line-color": "#7fa5cc",
+                "line-dasharray": [
+                    1,
+                    0
+                ]
             }
         },
         {
@@ -3365,7 +3451,7 @@
                     "base": 1.75,
                     "stops": [
                         [
-                            14,
+                            14.05,
                             0
                         ],
                         [
@@ -3633,7 +3719,7 @@
                             1
                         ],
                         [
-                            9.9,
+                            9.95,
                             1
                         ],
                         [
@@ -3754,7 +3840,7 @@
                     "base": 1.25,
                     "stops": [
                         [
-                            9.9,
+                            9.95,
                             0
                         ],
                         [
@@ -3852,39 +3938,6 @@
                 ],
                 "line-opacity": 1
             }
-        },
-        {
-            "id": "construction",
-            "type": "symbol",
-            "source": "compositedsource",
-            "source-layer": "bridge",
-            "minzoom": 0,
-            "maxzoom": 22,
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "class",
-                    "street",
-                    "street_limited"
-                ],
-                [
-                    "==",
-                    "$type",
-                    "LineString"
-                ],
-                [
-                    "==",
-                    "type",
-                    "construction"
-                ]
-            ],
-            "layout": {
-                "icon-image": "ice-cream",
-                "symbol-placement": "point",
-                "text-field": ""
-            },
-            "paint": {}
         },
         {
             "id": "country_label",
@@ -4326,88 +4379,6 @@
                         ]
                     ]
                 }
-            }
-        },
-        {
-            "id": "us_interstate_label",
-            "type": "symbol",
-            "source": "compositedsource",
-            "source-layer": "road_label",
-            "minzoom": 0,
-            "maxzoom": 22,
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "shield",
-                    "us-interstate",
-                    "us-interstate-alternate",
-                    "us-interstate-business",
-                    "us-interstate-duplex"
-                ],
-                [
-                    "<=",
-                    "reflen",
-                    3
-                ]
-            ],
-            "layout": {
-                "text-line-height": 1.4,
-                "text-allow-overlap": false,
-                "symbol-min-distance": 2000,
-                "icon-offset": [
-                    0,
-                    -0.5
-                ],
-                "icon-image": "interstate_{reflen}",
-                "icon-rotation-alignment": "viewport",
-                "text-ignore-placement": false,
-                "text-max-angle": 38,
-                "text-max-size": 16,
-                "icon-keep-upright": true,
-                "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
-                "symbol-placement": "line",
-                "text-padding": 10,
-                "visibility": "visible",
-                "text-rotation-alignment": "viewport",
-                "text-anchor": "center",
-                "text-field": "{ref}",
-                "text-letter-spacing": 0,
-                "icon-padding": 0
-            },
-            "paint": {
-                "text-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            6,
-                            8.5
-                        ],
-                        [
-                            20,
-                            15
-                        ]
-                    ]
-                },
-                "text-color": "#fff",
-                "icon-halo-color": "white",
-                "icon-halo-width": 4,
-                "text-opacity": 1,
-                "text-halo-color": "#fff",
-                "icon-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            6,
-                            0.5
-                        ],
-                        [
-                            20,
-                            1.5
-                        ]
-                    ]
-                },
-                "text-halo-width": 0
             }
         },
         {
@@ -5152,6 +5123,88 @@
             }
         },
         {
+            "id": "us_interstate_label",
+            "type": "symbol",
+            "source": "compositedsource",
+            "source-layer": "road_label",
+            "minzoom": 0,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "shield",
+                    "us-interstate",
+                    "us-interstate-alternate",
+                    "us-interstate-business",
+                    "us-interstate-duplex"
+                ],
+                [
+                    "<=",
+                    "reflen",
+                    3
+                ]
+            ],
+            "layout": {
+                "text-line-height": 1.4,
+                "text-allow-overlap": false,
+                "symbol-min-distance": 2000,
+                "icon-offset": [
+                    0,
+                    -1
+                ],
+                "icon-image": "interstate_{reflen}",
+                "icon-rotation-alignment": "viewport",
+                "text-ignore-placement": false,
+                "text-max-angle": 38,
+                "text-max-size": 16,
+                "icon-keep-upright": true,
+                "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
+                "symbol-placement": "line",
+                "text-padding": 10,
+                "visibility": "visible",
+                "text-rotation-alignment": "viewport",
+                "text-anchor": "center",
+                "text-field": "{ref}",
+                "text-letter-spacing": 0,
+                "icon-padding": 0
+            },
+            "paint": {
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            6,
+                            8.5
+                        ],
+                        [
+                            20,
+                            15
+                        ]
+                    ]
+                },
+                "text-color": "#fff",
+                "icon-halo-color": "white",
+                "icon-halo-width": 4,
+                "text-opacity": 1,
+                "text-halo-color": "#fff",
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            6,
+                            0.3
+                        ],
+                        [
+                            20,
+                            0.9
+                        ]
+                    ]
+                },
+                "text-halo-width": 0
+            }
+        },
+        {
             "id": "us_highway_label",
             "type": "symbol",
             "source": "compositedsource",
@@ -5214,211 +5267,15 @@
                     "stops": [
                         [
                             8,
-                            0.7
+                            0.6
                         ],
                         [
                             20,
-                            1.2
+                            1
                         ]
                     ]
                 },
                 "text-halo-width": 0
-            }
-        },
-        {
-            "id": "oneway_arrows_large",
-            "type": "symbol",
-            "source": "compositedsource",
-            "source-layer": "road",
-            "minzoom": 14,
-            "maxzoom": 22,
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "oneway",
-                    1
-                ],
-                [
-                    "in",
-                    "class",
-                    "main"
-                ],
-                [
-                    "!=",
-                    "type",
-                    "trunk"
-                ]
-            ],
-            "layout": {
-                "text-line-height": 1,
-                "text-allow-overlap": false,
-                "symbol-min-distance": 250,
-                "text-ignore-placement": false,
-                "text-max-angle": 38,
-                "text-max-size": 16,
-                "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
-                "symbol-placement": "line",
-                "text-padding": 0,
-                "visibility": "visible",
-                "text-rotation-alignment": "map",
-                "text-field": "→",
-                "text-letter-spacing": 0
-            },
-            "paint": {
-                "text-color": "#aaa",
-                "text-halo-color": "#aaa",
-                "text-halo-width": 0,
-                "text-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            8,
-                            8
-                        ],
-                        [
-                            20,
-                            12
-                        ]
-                    ]
-                },
-                "text-translate": [
-                    0,
-                    -2
-                ]
-            }
-        },
-        {
-            "id": "oneway_arrows_small",
-            "type": "symbol",
-            "source": "compositedsource",
-            "source-layer": "road",
-            "minzoom": 18,
-            "maxzoom": 22,
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "oneway",
-                    1
-                ],
-                [
-                    "in",
-                    "class",
-                    "street",
-                    "street_limited"
-                ]
-            ],
-            "layout": {
-                "text-line-height": 1,
-                "text-allow-overlap": false,
-                "symbol-min-distance": 250,
-                "text-ignore-placement": false,
-                "text-max-angle": 38,
-                "text-max-size": 16,
-                "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
-                "symbol-placement": "line",
-                "text-padding": 0,
-                "visibility": "visible",
-                "text-rotation-alignment": "map",
-                "text-field": "→",
-                "text-letter-spacing": 0
-            },
-            "paint": {
-                "text-color": "#aaa",
-                "text-halo-color": "#aaa",
-                "text-halo-width": 0,
-                "text-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            8,
-                            8
-                        ],
-                        [
-                            20,
-                            12
-                        ]
-                    ]
-                },
-                "text-translate": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            16,
-                            [
-                                0,
-                                -1
-                            ]
-                        ],
-                        [
-                            20,
-                            [
-                                0,
-                                1
-                            ]
-                        ]
-                    ]
-                }
-            }
-        },
-        {
-            "id": "oneway_arrows_motorway",
-            "type": "symbol",
-            "source": "compositedsource",
-            "source-layer": "road",
-            "minzoom": 14,
-            "maxzoom": 22,
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "oneway",
-                    1
-                ],
-                [
-                    "in",
-                    "class",
-                    "motorway",
-                    "main"
-                ]
-            ],
-            "layout": {
-                "text-line-height": 1,
-                "text-allow-overlap": false,
-                "symbol-min-distance": 250,
-                "text-ignore-placement": false,
-                "text-max-angle": 38,
-                "text-max-size": 16,
-                "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
-                "symbol-placement": "line",
-                "text-padding": 0,
-                "visibility": "visible",
-                "text-rotation-alignment": "map",
-                "text-field": "→",
-                "text-letter-spacing": 0
-            },
-            "paint": {
-                "text-color": "@generic_poi",
-                "text-halo-color": "#aaa",
-                "text-halo-width": 0,
-                "text-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            8,
-                            8
-                        ],
-                        [
-                            20,
-                            12
-                        ]
-                    ]
-                },
-                "text-translate": [
-                    0,
-                    -2
-                ]
             }
         },
         {
@@ -5499,6 +5356,226 @@
                     ]
                 },
                 "text-halo-width": 0
+            }
+        },
+        {
+            "id": "oneway_arrows_large",
+            "type": "symbol",
+            "source": "compositedsource",
+            "source-layer": "road",
+            "minzoom": 14,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "oneway",
+                    1
+                ],
+                [
+                    "in",
+                    "class",
+                    "main"
+                ],
+                [
+                    "!=",
+                    "type",
+                    "trunk"
+                ]
+            ],
+            "layout": {
+                "text-line-height": 0,
+                "text-allow-overlap": false,
+                "symbol-min-distance": 250,
+                "text-ignore-placement": false,
+                "text-max-angle": 38,
+                "text-max-size": 16,
+                "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
+                "symbol-placement": "line",
+                "text-padding": 0,
+                "visibility": "visible",
+                "text-offset": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            10,
+                            [
+                                0,
+                                -0.2
+                            ]
+                        ],
+                        [
+                            20,
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    ]
+                },
+                "text-rotation-alignment": "map",
+                "text-keep-upright": false,
+                "text-field": "→",
+                "text-letter-spacing": 0
+            },
+            "paint": {
+                "text-color": "#aaa",
+                "text-halo-color": "#aaa",
+                "text-halo-width": 0,
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            8
+                        ],
+                        [
+                            20,
+                            12
+                        ]
+                    ]
+                },
+                "text-translate": [
+                    0,
+                    0
+                ]
+            }
+        },
+        {
+            "id": "oneway_arrows_small",
+            "type": "symbol",
+            "source": "compositedsource",
+            "source-layer": "road",
+            "minzoom": 18,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "oneway",
+                    1
+                ],
+                [
+                    "in",
+                    "class",
+                    "street",
+                    "street_limited"
+                ]
+            ],
+            "layout": {
+                "text-line-height": 1,
+                "text-allow-overlap": false,
+                "symbol-min-distance": 250,
+                "text-ignore-placement": false,
+                "text-max-angle": 38,
+                "text-max-size": 16,
+                "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
+                "symbol-placement": "line",
+                "text-padding": 0,
+                "visibility": "visible",
+                "text-rotation-alignment": "map",
+                "text-keep-upright": false,
+                "text-field": "→",
+                "text-letter-spacing": 0
+            },
+            "paint": {
+                "text-color": "#aaa",
+                "text-halo-color": "#aaa",
+                "text-halo-width": 0,
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            8
+                        ],
+                        [
+                            20,
+                            12
+                        ]
+                    ]
+                },
+                "text-translate": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            16,
+                            [
+                                0,
+                                -1
+                            ]
+                        ],
+                        [
+                            20,
+                            [
+                                0,
+                                1
+                            ]
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "oneway_arrows_motorway",
+            "type": "symbol",
+            "source": "compositedsource",
+            "source-layer": "road",
+            "minzoom": 14,
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "oneway",
+                    1
+                ],
+                [
+                    "in",
+                    "class",
+                    "motorway",
+                    "main"
+                ]
+            ],
+            "layout": {
+                "text-line-height": 0,
+                "text-allow-overlap": false,
+                "symbol-min-distance": 250,
+                "icon-image": "oneway_motorway",
+                "text-ignore-placement": false,
+                "text-max-angle": 38,
+                "text-max-size": 16,
+                "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
+                "symbol-placement": "line",
+                "text-padding": 0,
+                "visibility": "visible",
+                "text-rotation-alignment": "map",
+                "text-anchor": "top",
+                "text-keep-upright": false,
+                "text-field": "",
+                "text-letter-spacing": 0
+            },
+            "paint": {
+                "text-color": "@generic_poi",
+                "text-halo-color": "#aaa",
+                "text-halo-width": 0,
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            8
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                },
+                "text-translate": [
+                    0,
+                    -2
+                ]
             }
         },
         {
@@ -5633,7 +5710,7 @@
                 "text-max-width": 7
             },
             "paint": {
-                "text-color": "#51814f",
+                "text-color": "#608275",
                 "text-halo-color": "#F8F4F0",
                 "text-halo-width": 0,
                 "text-size": {
@@ -5773,7 +5850,7 @@
                 "text-max-width": 5
             },
             "paint": {
-                "text-color": "#3d813c",
+                "text-color": "#608275",
                 "text-halo-color": "#F8F4F0",
                 "text-halo-width": 1.5,
                 "text-size": {
@@ -5918,7 +5995,7 @@
                 "text-max-width": 7
             },
             "paint": {
-                "text-color": "#895fb1",
+                "text-color": "#6f59b1",
                 "text-halo-color": "#F8F4F0",
                 "text-halo-width": {
                     "base": 1,
@@ -5992,7 +6069,7 @@
                 "text-max-width": 7
             },
             "paint": {
-                "text-color": "#b73978",
+                "text-color": "#a80415",
                 "text-halo-color": "#fff",
                 "text-halo-width": {
                     "base": 1,
@@ -6068,7 +6145,7 @@
                 "text-max-width": 3.5
             },
             "paint": {
-                "text-color": "#117599",
+                "text-color": "#46819b",
                 "text-halo-color": "#F8F4F0",
                 "text-halo-width": {
                     "base": 1,
@@ -6264,7 +6341,7 @@
         }
     ],
     "owner": "peterqliu",
-    "modified": "2015-03-26T01:47:46.416Z",
+    "modified": "2015-04-01T23:03:36.474Z",
     "created": "2015-03-10T22:36:44.888Z",
     "id": "peterqliu.dc7c42de"
 }

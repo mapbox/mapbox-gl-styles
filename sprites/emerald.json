@@ -9,55 +9,31 @@
     },
     "interstate_1": {
         "x": 0,
-        "y": 24,
-        "width": 25,
-        "height": 24,
+        "y": 100,
+        "width": 41,
+        "height": 40,
         "pixelRatio": 1,
         "sdf": false
     },
     "interstate_2": {
         "x": 0,
-        "y": 24,
-        "width": 25,
-        "height": 24,
+        "y": 100,
+        "width": 41,
+        "height": 40,
         "pixelRatio": 1,
         "sdf": false
     },
     "interstate_3": {
-        "x": 27,
-        "y": 24,
-        "width": 30,
-        "height": 24,
-        "pixelRatio": 1,
-        "sdf": false
-    },
-    "us_highway_1": {
-        "x": 0,
-        "y": 82,
-        "width": 24,
-        "height": 24,
-        "pixelRatio": 1,
-        "sdf": false
-    },
-    "us_highway_2": {
-        "x": 25,
-        "y": 82,
-        "width": 28,
-        "height": 24,
-        "pixelRatio": 1,
-        "sdf": false
-    },
-    "us_highway_3": {
-        "x": 53,
-        "y": 82,
-        "width": 30,
-        "height": 24,
+        "x": 41,
+        "y": 100,
+        "width": 48,
+        "height": 39,
         "pixelRatio": 1,
         "sdf": false
     },
     "us_state_1": {
         "x": 0,
-        "y": 50,
+        "y": 73,
         "width": 29,
         "height": 24,
         "pixelRatio": 1,
@@ -65,7 +41,7 @@
     },
     "us_state_2": {
         "x": 0,
-        "y": 50,
+        "y": 73,
         "width": 29,
         "height": 24,
         "pixelRatio": 1,
@@ -73,9 +49,33 @@
     },
     "us_state_3": {
         "x": 30,
-        "y": 50,
+        "y": 73,
         "width": 32,
         "height": 24,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "us_highway_1": {
+        "x": 0,
+        "y": 142,
+        "width": 29,
+        "height": 29,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "us_highway_2": {
+        "x": 30,
+        "y": 142,
+        "width": 33,
+        "height": 29,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "us_highway_3": {
+        "x": 64,
+        "y": 142,
+        "width": 36,
+        "height": 29,
         "pixelRatio": 1,
         "sdf": false
     },
@@ -329,21 +329,21 @@
     },
     "default_marker": {
         "x": 0,
-        "y": 117,
+        "y": 175,
         "width": 33,
-        "height": 51,
+        "height": 86,
         "pixelRatio": 1,
         "sdf": false
     },
     "secondary_marker": {
         "x": 33,
-        "y": 117,
+        "y": 175,
         "width": 33,
-        "height": 51,
+        "height": 86,
         "pixelRatio": 1,
         "sdf": false
     },
-    "construction": {
+    "oneway_motorway": {
         "x": 178,
         "y": 24,
         "width": 21,
