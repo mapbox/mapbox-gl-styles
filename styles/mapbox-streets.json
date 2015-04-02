@@ -10,7 +10,7 @@
     "@landuse-cemetery": "#b0d183",
     "@admin-2-boundary": {
       "base": 1,
-      "stops": [[2, 0.5], [12, 3]]
+      "stops": [[3, 0.5], [10, 2]]
     },
     "@snow": "#fff",
     "@label-park": "#245a00",
@@ -54,7 +54,7 @@
       "stops": [[5, 11], [12, 20]]
     },
     "@landuse-pitch": "#a3c87b",
-    "@admin": "#686868",
+    "@admin": "#6d56c7",
     "@road-case-width-sm": {
       "base": 1.5,
       "stops": [[12, 0.75], [20, 2]]
@@ -1534,7 +1534,7 @@
       "line-width": "@rail-width"
     }
   }, {
-    "id": "admin-3-4-boundaries",
+    "id": "admin-3-4-boundaries-bg",
     "type": "line",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "admin",
@@ -1546,19 +1546,20 @@
       "line-join": "bevel"
     },
     "paint": {
-      "line-color": "@admin",
+      "line-color": "#fae1c5",
       "line-width": {
-        "base": 1.3,
-        "stops": [[3, 1], [14, 2]]
+        "base": 1,
+        "stops": [[3, 3.5], [12, 6]]
       },
       "line-opacity": {
         "base": 1,
-        "stops": [[2, 0], [5, 1]]
+        "stops": [[2, 0], [5, 0.75]]
       },
-      "line-dasharray": [4, 1]
+      "line-dasharray": [1, 0],
+      "line-translate": [0, 0]
     }
   }, {
-    "id": "admin-2-boundaries_bg",
+    "id": "admin-2-boundaries-bg",
     "type": "line",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "admin",
@@ -1567,16 +1568,48 @@
     "filter": ["all", ["==", "admin_level", 2], ["==", "maritime", 0], ["==", "disputed", 0]],
     "layout": {
       "visibility": "visible",
-      "line-join": "round",
-      "line-cap": "round"
+      "line-join": "miter",
+      "line-cap": "butt"
     },
     "paint": {
       "line-width": {
         "base": 1,
-        "stops": [[2, 1.5], [12, 5]]
+        "stops": [[2, 3.5], [10, 10]]
       },
-      "line-color": "#fbfc97",
-      "line-opacity": 0.75
+      "line-color": "#fae1c5",
+      "line-opacity": {
+        "base": 1,
+        "stops": [[3, 0], [4, 0.75]]
+      },
+      "line-translate": [0, 0]
+    }
+  }, {
+    "id": "admin-3-4-boundaries",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "admin",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", [">=", "admin_level", 3], ["==", "maritime", 0]],
+    "layout": {
+      "visibility": "visible",
+      "line-join": "miter",
+      "line-cap": "butt"
+    },
+    "paint": {
+      "line-color": "@admin",
+      "line-width": {
+        "base": 1,
+        "stops": [[3, 0.5], [12, 2]]
+      },
+      "line-opacity": {
+        "base": 1,
+        "stops": [[2, 0], [5, 1]]
+      },
+      "line-dasharray": {
+        "base": 1,
+        "stops": [[3, [1, 0]], [5, [2, 1, 6, 1]]]
+      }
     }
   }, {
     "id": "admin-2-boundaries",
@@ -1960,7 +1993,8 @@
       "icon-size": 0.2,
       "text-size": "@label-city-lg-size",
       "text-halo-width": 1.5,
-      "text-halo-color": "@halo"
+      "text-halo-color": "@halo",
+      "icon-halo-width": 0
     }
   }, {
     "id": "place-city-lg-s",
@@ -2818,7 +2852,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-01T21:34:00.204Z",
+  "modified": "2015-04-02T00:31:29.610Z",
   "created": "2015-04-01T16:47:51.698Z",
   "id": "nicki.8693a586"
 }
