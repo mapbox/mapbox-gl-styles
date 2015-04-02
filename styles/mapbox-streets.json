@@ -14,7 +14,7 @@
     },
     "@snow": "#fff",
     "@label-park": "#245a00",
-    "@landuse-school": "#f8d7c5",
+    "@landuse-school": "#eee7b9",
     "@label-water-dark": "#004087",
     "@road-main": "#a2a2a2",
     "@road-case-dark": "#d1cac2",
@@ -34,7 +34,7 @@
       "base": 0.9,
       "stops": [[4, 11], [10, 20]]
     },
-    "@landuse-industrial": "#edd8a8",
+    "@landuse-industrial": "#E7D2E7",
     "@landcover-opacity": {
       "base": 1,
       "stops": [[0, 0.25], [12, 0]]
@@ -48,7 +48,7 @@
     "@name": "{name_en}",
     "@landcover": "#bdd98c",
     "@tunnel-case-dark": "#c4beb7",
-    "@aeroway": "#ecbf7c",
+    "@aeroway": "#dac6da",
     "@label-city-md-size": {
       "base": 0.9,
       "stops": [[5, 11], [12, 20]]
@@ -96,7 +96,7 @@
     },
     "@building-shadow": "#c8c1b9",
     "@label-road": "#3a3836",
-    "@label-transit": "red",
+    "@label-transit": "#000000",
     "@label-secondary": "#755434",
     "@street-case-gap-width": {
       "base": 1.5,
@@ -131,7 +131,7 @@
       "type": "vector"
     }
   },
-  "sprite": "../sprites/streets-src/mapbox-streets",
+  "sprite": "https://www.mapbox.com/bites/00116/mapbox-streets",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
@@ -412,6 +412,78 @@
     },
     "paint": {
       "fill-color": "@landuse-sand"
+    }
+  }, {
+    "id": "hillshade_highlight_bright",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-terrain-v2",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 94],
+    "paint": {
+      "fill-color": "#ffffd8",
+      "fill-opacity": {
+        "stops": [[15, 0.08], [18, 0]]
+      }
+    }
+  }, {
+    "id": "hillshade_highlight_med",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-terrain-v2",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 90],
+    "paint": {
+      "fill-color": "#ffffd8",
+      "fill-opacity": {
+        "stops": [[15, 0.08], [18, 0]]
+      }
+    }
+  }, {
+    "id": "hillshade_shadow_faint",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-terrain-v2",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 89],
+    "paint": {
+      "fill-color": "#733a00",
+      "fill-opacity": {
+        "stops": [[14, 0.015], [17, 0]]
+      }
+    }
+  }, {
+    "id": "hillshade_shadow_med",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-terrain-v2",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 78],
+    "paint": {
+      "fill-color": "#733a00",
+      "fill-opacity": {
+        "stops": [[14, 0.025], [17, 0]]
+      }
+    }
+  }, {
+    "id": "hillshade_shadow_dark",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-terrain-v2",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 67],
+    "paint": {
+      "fill-color": "#733a00",
+      "fill-opacity": {
+        "stops": [[14, 0.03], [17, 0]]
+      }
+    }
+  }, {
+    "id": "hillshade_shadow_extreme",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-terrain-v2",
+    "source-layer": "hillshade",
+    "filter": ["==", "level", 56],
+    "paint": {
+      "fill-color": "#733a00",
+      "fill-opacity": {
+        "stops": [[14, 0.03], [17, 0]]
+      }
     }
   }, {
     "id": "building-bottom",
@@ -2285,7 +2357,7 @@
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "text-max-width": 8
     },
     "paint": {
@@ -2323,7 +2395,7 @@
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "text-max-width": 8
     },
     "paint": {
@@ -2361,7 +2433,7 @@
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
       "text-field": {
-        "stops": [[12, "{ref}"], [13, "{name}"]]
+        "stops": [[12, "{ref}"], [13, "{name_en}"]]
       },
       "text-max-width": 9
     },
@@ -2469,7 +2541,7 @@
       "text-padding": 0,
       "visibility": "visible",
       "text-rotation-alignment": "map",
-      "text-field": "{name}"
+      "text-field": "{name_en}"
     },
     "paint": {
       "text-color": "@label-road",
@@ -2503,7 +2575,7 @@
       "text-anchor": "top",
       "text-field": {
         "base": 1,
-        "stops": [[0, ""], [14, "{name}"]]
+        "stops": [[0, ""], [14, "{name_en}"]]
       },
       "icon-padding": 0,
       "text-max-width": 7
@@ -2545,7 +2617,7 @@
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "text-max-width": 7
     },
     "paint": {
@@ -2583,7 +2655,7 @@
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "text-max-width": 7
     },
     "paint": {
@@ -2605,7 +2677,7 @@
     "filter": ["all", ["in", "class", "street", "street_limited"]],
     "layout": {
       "visibility": "visible",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "symbol-placement": "line",
       "text-rotation-alignment": "map",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
@@ -2631,7 +2703,7 @@
     "filter": ["all", ["!in", "class", "motorway", "main", "street_limited", "street"], ["==", "$type", "LineString"]],
     "layout": {
       "visibility": "visible",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "symbol-placement": "line",
       "text-rotation-alignment": "map",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
@@ -2671,7 +2743,7 @@
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "text-max-width": 7
     },
     "paint": {
@@ -2707,7 +2779,7 @@
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "text-max-width": 7
     },
     "paint": {
@@ -2743,7 +2815,7 @@
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "text-max-width": 7
     },
     "paint": {
@@ -2779,7 +2851,7 @@
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "text-max-width": 7
     },
     "paint": {
@@ -2815,7 +2887,7 @@
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
-      "text-field": "{name}",
+      "text-field": "{name_en}",
       "text-max-width": 7
     },
     "paint": {
