@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -10,50 +10,57 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="11"
-   height="11"
    id="svg4764"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="alcohol-shop-11.svg"
-   viewBox="0 0 11 11">
-  <sodipodi:namedview
-     pagecolor="#000000"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
+   x="0px"
+   y="0px"
+   width="17px"
+   height="17px"
+   viewBox="0 0 17 17"
+   style="enable-background:new 0 0 17 17;"
+   xml:space="preserve"><metadata
+     id="metadata9"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs7" /><style
+     type="text/css"
+     id="style3">
+</style><sodipodi:namedview
+     inkscape:window-x="-15"
+     inkscape:window-y="0"
+     inkscape:window-width="1280"
      inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1471"
-     inkscape:window-height="845"
-     id="namedview3363"
-     inkscape:document-units="px"
-     showgrid="false"
-     inkscape:zoom="21.454545"
-     inkscape:cx="-0.32627119"
-     inkscape:cy="5.5"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-height="755"
+     inkscape:current-layer="svg4764"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4764" />
-  <defs
-     id="defs4766" />
-  <metadata
-     id="metadata4769">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="m 2.75,0 0,2.2 -2.2,2.2 0,5.94693 L 1.203125,11 5.6375,11 6.05,10.45 6.05,4.4 3.85,2.2 3.85,0 2.75,0 Z m 4.4,4.4 0,2.2 1.1,1.1 0,2.2 -1.1,1.1 3.3,0 -1.1,-1.1 0,-2.2 1.1,-1.1 0,-2.2 -3.3,0 z"
-     inkscape:connector-curvature="0"
+     inkscape:document-units="px"
+     inkscape:pageshadow="2"
+     id="namedview3363"
+     gridtolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     inkscape:cx="7.3924245"
+     guidetolerance="10"
+     showgrid="false"
+     pagecolor="#ffffff"
+     inkscape:cy="7.5090292"
+     objecttolerance="10"
+     inkscape:zoom="1"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-bbox="true"><inkscape:grid
+       type="xygrid"
+       id="grid3337"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#d30029"
+       opacity="0.1254902"
+       empspacing="2" /></sodipodi:namedview><path
      id="path5715"
-      />
-</svg>
+     inkscape:connector-curvature="0"
+     class="st0"
+     d="M 4,0 4,3 1.5,6 1.5,15.5 3,17 7.5,17 9,15.5 9,6 6.5,3 6.5,0 Z m 6,7 0,3 2,1.5 0,4 -1.5,1.5 4.5,0 -1.5,-1.5 0,-4 2,-1.5 0,-3 z"
+     style="fill:#000000"
+     sodipodi:nodetypes="cccccccccccccccccccccc" /></svg>

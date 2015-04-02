@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -10,51 +10,45 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="17"
-   height="17"
    id="svg4619"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="basketball-17.svg"
-   viewBox="0 0 17 17">
-  <sodipodi:namedview
-     pagecolor="#000000"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
+   x="0px"
+   y="0px"
+   viewBox="0 0 17 17"
+   enable-background="new 0 0 17 17"
+   xml:space="preserve"><metadata
+     id="metadata13"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs11" /><sodipodi:namedview
      inkscape:window-width="640"
+     inkscape:pageopacity="0"
      inkscape:window-height="480"
-     id="namedview3406"
+     inkscape:current-layer="svg4619"
      inkscape:document-units="px"
-     showgrid="true"
-     inkscape:zoom="13.882353"
+     inkscape:pageshadow="2"
+     id="namedview3406"
+     gridtolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
      inkscape:cx="8.5"
+     guidetolerance="10"
+     showgrid="false"
+     pagecolor="#ffffff"
      inkscape:cy="8.5"
-     inkscape:current-layer="svg4619">
-    <inkscape:grid
+     objecttolerance="10"
+     inkscape:zoom="1"
+     inkscape:window-x="692"
+     inkscape:window-y="90"
+     inkscape:window-maximized="0"><inkscape:grid
        type="xygrid"
-       id="grid3448" />
-  </sodipodi:namedview>
-  <defs
-     id="defs4621" />
-  <metadata
-     id="metadata4624">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="M 3.923077,-4e-7 0,2.6153843 0,11.769231 c 0,0.653846 0.6538462,1.307692 1.3076923,1.307692 l 3.2692308,0 L 7.1923078,17 l 1.307692,0 1.307693,0 2.6153842,-3.923077 3.269231,0 C 16.346154,13.076923 17,12.423077 17,11.769231 L 17,3.2692304 13.076923,-4e-7 l -9.153846,0 z m 0,3.923077 9.153846,0 0,6.5384614 -9.153846,0 0,-6.5384614 z m 1.3076923,1.3076923 0,3.923077 6.5384617,0 0,-3.923077 -6.5384617,0 z m 0.6538462,7.8461541 1.9615385,0 0,1.307692 1.3076918,0 0,-1.307692 1.9615392,0 -0.899038,1.307692 -1.0625012,0 0,1.307693 -1.3076918,0 0,-1.307693 -1.0625,0 -0.8990385,-1.307692 z"
-     inkscape:connector-curvature="0"
-     id="rect5769-7-5"
-      />
-</svg>
+       id="grid3448" /></sodipodi:namedview><g
+     id="g5"><rect
+       x="6"
+       y="6"
+       width="5"
+       height="3"
+       id="rect7" /><path
+       d="M13,2H4L1,5v6c0,0,0,1,1,1c0.2,0,1,0,2,0l2,4h5l2-4c1,0,1.8,0,2,0c1,0,1-1,1-1V5L13,2z M5,9V6V5h1h5h1v1v3v1h-1H6H5V9z    M5.5,12c0.5,0,1,0,1.5,0v1H6L5.5,12z M8,15H7l-0.5-1H8V15z M8,12c0.3,0,0.7,0,1,0v1H8V12z M10,15H9v-1h1.5L10,15z M11,13h-1v-1   c0.5,0,1,0,1.5,0L11,13z"
+       id="path9" /></g></svg>
