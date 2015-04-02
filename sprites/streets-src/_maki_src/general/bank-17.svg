@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -10,51 +10,54 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="17"
-   height="17"
    id="svg4619"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="bank-17.svg"
-   viewBox="0 0 17 17">
-  <sodipodi:namedview
-     pagecolor="#000000"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
+   x="0px"
+   y="0px"
+   viewBox="0 0 17 17"
+   enable-background="new 0 0 17 17"
+   xml:space="preserve"><metadata
+     id="metadata29"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+     id="defs27" /><sodipodi:namedview
+     inkscape:window-width="892"
      inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
-     id="namedview3370"
+     inkscape:window-height="733"
+     inkscape:current-layer="svg4619"
      inkscape:document-units="px"
-     showgrid="true"
-     inkscape:zoom="13.882353"
-     inkscape:cx="8.5"
-     inkscape:cy="8.5"
-     inkscape:current-layer="svg4619">
-    <inkscape:grid
+     inkscape:pageshadow="2"
+     id="namedview3370"
+     gridtolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     inkscape:cx="3.4489968"
+     guidetolerance="10"
+     showgrid="false"
+     pagecolor="#ffffff"
+     inkscape:cy="9.5568124"
+     objecttolerance="10"
+     inkscape:zoom="27.764706"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"><inkscape:grid
        type="xygrid"
-       id="grid3446" />
-  </sodipodi:namedview>
-  <defs
-     id="defs4621" />
-  <metadata
-     id="metadata4624">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="M 0.9444415,3.4028687 C 0.4212208,3.4028687 0,3.8240763 0,4.3474148 l 0,8.5725772 c 0,0.523207 0.4212208,0.944415 0.9444415,0.944415 l 15.1111165,0 C 16.578779,13.864407 17,13.443199 17,12.919992 L 17,4.3474148 C 17,3.8240763 16.578779,3.4028687 16.055558,3.4028687 Z m -0.2905953,1.9615384 15.6923078,0 0,1.9615387 -15.6923078,0 z m 0.653846,5.2307689 2.6153847,0 0,1.961539 -2.6153847,0 z m 7.8461538,1.016993 6.538462,0 0,0.944546 -6.538462,0 z"
-     inkscape:connector-curvature="0"
-     id="rect10401-9"
-      />
-</svg>
+       id="grid3446"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#d1001a"
+       opacity="0.1254902"
+       empspacing="2" /></sodipodi:namedview><path
+     d="M 0 4 L 0 12 L 14.5 12 L 14.5 4 L 0 4 z M 1 5 L 2 5 C 2 5 2 6 1 6 L 1 5 z M 12 5 L 13 5 L 13 6 C 13 6 12 6 12 5 z M 15 5 L 15 12.5 L 0 12.5 L 0 13 L 15 13 L 15.5 13 L 15.5 5 L 15 5 z M 7.4003906 6 A 1.9000001 2 0 0 1 9.3007812 8 A 1.9000001 2 0 0 1 7.4003906 10 A 1.9000001 2 0 0 1 5.5 8 A 1.9000001 2 0 0 1 7.4003906 6 z M 16 6.5 L 16 13.5 L 1 13.5 L 1 14 L 16 14 L 16.5 14 L 16.5 6.5 L 16 6.5 z M 1 10 C 1 10 2 10 2 11 L 1 11 L 1 10 z M 13 10 L 13 11 L 12 11 C 12 11 12 10 13 10 z "
+     id="rect5" /><g
+     id="g9" /></svg>

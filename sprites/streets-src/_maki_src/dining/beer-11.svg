@@ -17,7 +17,7 @@
    sodipodi:docname="beer-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -52,9 +52,9 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
+  <path
      d="M 1.3474576,0 2.5696798,10.388889 C 2.6133132,10.738078 2.8315776,11 3.1807909,11 l 4.8888887,0 c 0.349214,0 0.549951,-0.264611 0.611111,-0.611111 L 9.9030136,0 Z m 1.8333333,1.2222222 4.8888887,0 -0.305555,2.4444445 -4.2777781,0 z"
      inkscape:connector-curvature="0"
      id="path10133-9"
-      />
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.44444442;marker:none;enable-background:accumulate" />
 </svg>
