@@ -131,7 +131,7 @@
       "type": "vector"
     }
   },
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/sprite",
+  "sprite": "../sprites/streets-src/mapbox-streets",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
@@ -2272,7 +2272,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[13, "{maki}-12"], [14, "{maki}-18"]]
+        "stops": [[13, "{maki}-11"], [14, "{maki}-17"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
@@ -2281,7 +2281,7 @@
       "symbol-placement": "point",
       "text-padding": 2,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 1],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
@@ -2302,7 +2302,7 @@
     "type": "symbol",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "poi_label",
-    "minzoom": 13,
+    "minzoom": 0,
     "maxzoom": 22,
     "filter": ["all", ["in", "maki", "park", "golf", "cemetery", "zoo", "campsite", "swimming", "dog-park"], ["<=", "scalerank", 1]],
     "layout": {
@@ -2310,7 +2310,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[13, "{maki}-12"], [14, "{maki}-18"]]
+        "stops": [[13, "{maki}-11"], [14, "{maki}-17"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
@@ -2319,7 +2319,7 @@
       "symbol-placement": "point",
       "text-padding": 2,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 1.25],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
@@ -2329,7 +2329,7 @@
     "paint": {
       "text-color": "@label-park",
       "text-halo-color": "@halo",
-      "text-halo-width": 1.25,
+      "text-halo-width": 1.5,
       "text-size": {
         "base": 1,
         "stops": [[10, 10], [18, 14]]
@@ -2347,7 +2347,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[12, "{maki}-12"], [13, "{maki}-18"]]
+        "stops": [[12, "{maki}-15"], [13, "{maki}-17"]]
       },
       "text-ignore-placement": false,
       "text-max-size": 18,
@@ -2355,7 +2355,7 @@
       "symbol-placement": "point",
       "text-padding": 2,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 1.5],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
@@ -2385,12 +2385,12 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[12, "{shield}_{reflen}_sm"], [13, "{shield}_{reflen}"]]
+        "stops": [[12, "{shield}-{reflen}-small"], [13, "{shield}-{reflen}"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
       "text-max-size": 16,
-      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
+      "text-font": "Open Sans Bold, Arial Unicode MS Regular",
       "symbol-placement": "point",
       "text-padding": 10,
       "visibility": "visible",
@@ -2401,7 +2401,7 @@
     "paint": {
       "text-size": {
         "base": 1,
-        "stops": [[8, 10], [20, 17]]
+        "stops": [[12.9, 9], [13, 12]]
       },
       "text-color": "#fff",
       "icon-halo-color": "rgba(0, 0, 0, 1)",
@@ -2423,12 +2423,12 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[12, "{shield}_{reflen}_sm"], [13, "{shield}_{reflen}"]]
+        "stops": [[12, "{shield}-{reflen}-small"], [13, "{shield}-{reflen}"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
       "text-max-size": 16,
-      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
+      "text-font": "Open Sans Bold, Arial Unicode MS Regular",
       "symbol-placement": "point",
       "text-padding": 10,
       "visibility": "visible",
@@ -2439,7 +2439,7 @@
     "paint": {
       "text-size": {
         "base": 1,
-        "stops": [[12, 10], [13, 17]]
+        "stops": [[12.9, 9], [13, 12]]
       },
       "text-color": "@label-road",
       "icon-halo-color": "rgba(0, 0, 0, 1)",
@@ -2489,7 +2489,7 @@
     "filter": ["all", ["in", "type", "Rail Station"]],
     "layout": {
       "symbol-min-distance": 250,
-      "icon-image": "{network}",
+      "icon-image": "{network}-15",
       "symbol-avoid-edges": true,
       "text-max-size": 12,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
@@ -2510,7 +2510,7 @@
     "paint": {
       "text-color": "@label-transit",
       "text-halo-color": "@halo",
-      "text-halo-width": 1.25,
+      "text-halo-width": 1.5,
       "text-size": {
         "base": 1,
         "stops": [[13, 10], [20, 12]]
@@ -2531,7 +2531,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[14, "{maki}-12"], [15, "{maki}-18"]]
+        "stops": [[14, "{maki}-15"], [15, "{maki}-17"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
@@ -2540,7 +2540,7 @@
       "symbol-placement": "point",
       "text-padding": 2,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 5],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
@@ -2569,7 +2569,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[14, "{maki}-12"], [15, "{maki}-18"]]
+        "stops": [[14, "{maki}-15"], [15, "{maki}-17"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
@@ -2578,7 +2578,7 @@
       "symbol-placement": "point",
       "text-padding": 2,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 1.5],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
@@ -2658,7 +2658,7 @@
       "text-line-height": 1.2,
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
-      "icon-image": "{maki}-18",
+      "icon-image": "{maki}-17",
       "text-ignore-placement": false,
       "text-max-angle": 38,
       "text-max-size": 13,
@@ -2666,7 +2666,7 @@
       "symbol-placement": "point",
       "text-padding": 2,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 1],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
@@ -2694,7 +2694,7 @@
       "text-line-height": 1.2,
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
-      "icon-image": "{maki}-18",
+      "icon-image": "{maki}-17",
       "text-ignore-placement": false,
       "text-max-angle": 38,
       "text-max-size": 13,
@@ -2702,7 +2702,7 @@
       "symbol-placement": "point",
       "text-padding": 1,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 1],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
@@ -2730,7 +2730,7 @@
       "text-line-height": 1.2,
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
-      "icon-image": "{maki}-18",
+      "icon-image": "{maki}-17",
       "text-ignore-placement": false,
       "text-max-angle": 38,
       "text-max-size": 13,
@@ -2738,7 +2738,7 @@
       "symbol-placement": "point",
       "text-padding": 1,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 1],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
@@ -2766,7 +2766,7 @@
       "text-line-height": 1.2,
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
-      "icon-image": "{maki}-18",
+      "icon-image": "{maki}-17",
       "text-ignore-placement": false,
       "text-max-angle": 38,
       "text-max-size": 13,
@@ -2774,7 +2774,7 @@
       "symbol-placement": "point",
       "text-padding": 1,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 1],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
@@ -2802,7 +2802,7 @@
       "text-line-height": 1.2,
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
-      "icon-image": "{maki}-18",
+      "icon-image": "{maki}-17",
       "text-ignore-placement": false,
       "text-max-angle": 38,
       "text-max-size": 13,
@@ -2810,7 +2810,7 @@
       "symbol-placement": "point",
       "text-padding": 1,
       "visibility": "visible",
-      "text-offset": [0, 0.75],
+      "text-offset": [0, 1],
       "icon-optional": false,
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
