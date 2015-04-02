@@ -13,11 +13,11 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="beer-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -25,18 +25,35 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="789"
+     inkscape:window-height="721"
      id="namedview3412"
      inkscape:document-units="px"
-     showgrid="true"
+     showgrid="false"
      inkscape:zoom="21.454545"
-     inkscape:cx="5.5"
-     inkscape:cy="5.5"
-     inkscape:current-layer="svg4764">
+     inkscape:cx="-1.6776374"
+     inkscape:cy="8.8301846"
+     inkscape:current-layer="svg4764"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-x="58"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
-       id="grid3444" />
+       id="grid3444"
+       spacingy="0.5"
+       spacingx="0.5"
+       color="#de001c"
+       opacity="0.1254902"
+       empspacing="2" />
   </sodipodi:namedview>
   <defs
      id="defs4766" />
@@ -48,13 +65,19 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="M 1.3474576,0 2.5696798,10.388889 C 2.6133132,10.738078 2.8315776,11 3.1807909,11 l 4.8888887,0 c 0.349214,0 0.549951,-0.264611 0.611111,-0.611111 L 9.9030136,0 Z m 1.8333333,1.2222222 4.8888887,0 -0.305555,2.4444445 -4.2777781,0 z"
+  <path
      inkscape:connector-curvature="0"
-     id="path10133-9"
-      />
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 0,9.9375 C 0,9.9375 0,11 1.0625,11 L 6.375,11 C 7.4375,11 7.4375,9.9375 7.4375,9.9375 l 0,-1.0625 1.0625,0 c 1.0625,0 1.0625,-1.0625 1.0625,-1.0625 l 0,-3.1875 c 0,0 0,-1.0625 -1.0625,-1.0625 l -1.0625,0 0,-1.0625 L 0,2.5 c 6.6796909e-5,2.6015581 0,7.4375 0,7.4375 z m 1.0625,-5.84375 0.53125,0 0,4.78125 -0.53125,0 z m 2.125,0 0.53125,0 0,4.78125 -0.53125,0 z m 2.125,0 0.53125,0 0,4.78125 -0.53125,0 z m 2.125,0.53125 1.0625,0 0,3.1875 -1.0625,0 z"
+     id="rect3334"
+     sodipodi:nodetypes="cscccsccscccccccccccccccccccccccc" />
+  <path
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 3.8398438,0.00585933 A 2,2 0 0 0 3.640625,0.02343743 2,2 0 0 0 2.0996094,1.1660156 1.5,1.5 0 0 0 1.2089844,1.0136718 1.5,1.5 0 0 0 0,2 l 7.4121094,0 a 1,1 0 0 0 -0.00391,-0.087891 l -0.00781,-0.0625 A 1,1 0 0 0 6.2773438,1.0097656 1,1 0 0 0 5.7597656,1.2441406 2,2 0 0 0 3.8398438,0.00585933 Z"
+     id="path3367"
+     inkscape:connector-curvature="0" />
 </svg>

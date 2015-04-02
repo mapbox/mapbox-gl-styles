@@ -13,11 +13,11 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="fast-food-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -25,15 +25,36 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1185"
+     inkscape:window-height="624"
      id="namedview3364"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="55.545455"
-     inkscape:cx="3.2495908"
-     inkscape:cy="6.0581015"
-     inkscape:current-layer="svg4764" />
+     inkscape:zoom="1"
+     inkscape:cx="4.2257571"
+     inkscape:cy="2.9225364"
+     inkscape:current-layer="svg4764"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-x="68"
+     inkscape:window-y="14"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3333"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#ff0000"
+       opacity="0.1254902"
+       empspacing="2" />
+  </sodipodi:namedview>
   <defs
      id="defs4766" />
   <metadata
@@ -48,9 +69,25 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="m 4.2777777,1.2222224 c -1.7368389,0 -3.8485333,1.0661443 -3.7310044,2.5087332 l 0,1.4634889 9.8421147,0 0,-1.4634889 c 0,-1.4473555 -1.9298271,-2.5087332 -3.666666,-2.5087332 z M 0,6.1111111 l 0,1.2222222 11,0 0,-1.2222223 z M 0.61106218,8.25 c 0,0.5789667 0.64328002,1.5277777 1.22222222,1.5277777 l 7.3333332,0 c 0.578942,0 1.2222224,-0.948811 1.2222224,-1.5277777 z"
+  <rect
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect3335"
+     width="10"
+     height="2"
+     x="0.5"
+     y="8" />
+  <path
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 3.5,1.5 4,0 c 0,0 3,0 3,2.5 l 0,1 -10,0 0,-1 c 0,-2.5 3,-2.5 3,-2.5 z"
+     id="rect3335-7"
      inkscape:connector-curvature="0"
-     id="rect13326-2-5-2-3-1"
-      />
+     sodipodi:nodetypes="ccccccc" />
+  <rect
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect3353"
+     width="11"
+     height="1"
+     x="0"
+     y="6"
+     ry="0.5" />
 </svg>
