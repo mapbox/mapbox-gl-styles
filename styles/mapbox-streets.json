@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "name": "mapbox-streets-20150401",
+  "name": "mapbox-streets-landcover-hillshade.json",
   "constants": {
     "@road-width-minor": {
       "base": 1.5,
@@ -46,7 +46,8 @@
     "@landuse-hospital": "#f0caca",
     "@land": "#e8e0d8",
     "@name": "{name_en}",
-    "@landcover": "#bdd98c",
+    "@hillshade": "#8f9100",
+    "@landcover": "#cfe18f",
     "@tunnel-case-dark": "#c4beb7",
     "@aeroway": "#dac6da",
     "@label-city-md-size": {
@@ -65,7 +66,7 @@
     },
     "@road-case-width-lg": {
       "base": 1.5,
-      "stops": [[5, 0.5], [18, 2]]
+      "stops": [[5, 0.75], [16, 2]]
     },
     "@road-high-z-fadein": {
       "base": 1.2,
@@ -221,40 +222,8 @@
     },
     "paint": {
       "fill-color": "@snow",
-      "fill-opacity": 0.25,
+      "fill-opacity": 0.2,
       "fill-antialias": false
-    }
-  }, {
-    "id": "hospital",
-    "type": "fill",
-    "source": "mapbox://mapbox.mapbox-streets-v6",
-    "source-layer": "landuse",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all", ["==", "class", "hospital"]],
-    "layout": {
-      "visibility": "visible"
-    },
-    "paint": {
-      "fill-color": "@landuse-hospital"
-    }
-  }, {
-    "id": "parks",
-    "type": "fill",
-    "source": "mapbox://mapbox.mapbox-streets-v6",
-    "source-layer": "landuse",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all", ["==", "class", "park"]],
-    "layout": {
-      "visibility": "visible"
-    },
-    "paint": {
-      "fill-color": "@landuse-parks",
-      "fill-opacity": {
-        "base": 1,
-        "stops": [[5, 0], [6, 1]]
-      }
     }
   }, {
     "id": "scrub",
@@ -304,10 +273,42 @@
       "visibility": "visible"
     },
     "paint": {
+      "fill-color": "@landcover",
+      "fill-opacity": {
+        "base": 1,
+        "stops": [[6, 0], [16, 0.5]]
+      }
+    }
+  }, {
+    "id": "hospital",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "hospital"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "@landuse-hospital"
+    }
+  }, {
+    "id": "parks",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "park"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
       "fill-color": "@landuse-parks",
       "fill-opacity": {
         "base": 1,
-        "stops": [[6, 0], [16, 0.8]]
+        "stops": [[5, 0], [6, 1]]
       }
     }
   }, {
@@ -327,20 +328,6 @@
         "base": 1,
         "stops": [[9, 0], [10, 0.25]]
       }
-    }
-  }, {
-    "id": "school",
-    "type": "fill",
-    "source": "mapbox://mapbox.mapbox-streets-v6",
-    "source-layer": "landuse",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all", ["==", "class", "school"]],
-    "layout": {
-      "visibility": "visible"
-    },
-    "paint": {
-      "fill-color": "@landuse-school"
     }
   }, {
     "id": "landuse-overlay",
@@ -370,6 +357,20 @@
     },
     "paint": {
       "fill-color": "@landuse-pitch"
+    }
+  }, {
+    "id": "school",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "landuse",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "school"]],
+    "layout": {
+      "visibility": "visible"
+    },
+    "paint": {
+      "fill-color": "@landuse-school"
     }
   }, {
     "id": "cemetery",
@@ -418,72 +419,96 @@
     "type": "fill",
     "source": "mapbox://mapbox.mapbox-terrain-v2",
     "source-layer": "hillshade",
-    "filter": ["==", "level", 94],
+    "filter": ["all", ["==", "level", 94]],
+    "layout": {
+      "visibility": "visible"
+    },
     "paint": {
-      "fill-color": "#ffffd8",
+      "fill-color": "#ffffed",
       "fill-opacity": {
-        "stops": [[15, 0.08], [18, 0]]
-      }
+        "stops": [[15, 0.04], [18, 0]]
+      },
+      "fill-antialias": false
     }
   }, {
     "id": "hillshade_highlight_med",
     "type": "fill",
     "source": "mapbox://mapbox.mapbox-terrain-v2",
     "source-layer": "hillshade",
-    "filter": ["==", "level", 90],
+    "filter": ["all", ["==", "level", 90]],
+    "layout": {
+      "visibility": "visible"
+    },
     "paint": {
-      "fill-color": "#ffffd8",
+      "fill-color": "#ffffed",
       "fill-opacity": {
-        "stops": [[15, 0.08], [18, 0]]
-      }
+        "stops": [[15, 0.04], [18, 0]]
+      },
+      "fill-antialias": false
     }
   }, {
     "id": "hillshade_shadow_faint",
     "type": "fill",
     "source": "mapbox://mapbox.mapbox-terrain-v2",
     "source-layer": "hillshade",
-    "filter": ["==", "level", 89],
+    "filter": ["all", ["==", "level", 89]],
+    "layout": {
+      "visibility": "visible"
+    },
     "paint": {
-      "fill-color": "#733a00",
+      "fill-color": "@hillshade",
       "fill-opacity": {
-        "stops": [[14, 0.015], [17, 0]]
-      }
+        "stops": [[14, 0.02], [17, 0]]
+      },
+      "fill-antialias": false
     }
   }, {
     "id": "hillshade_shadow_med",
     "type": "fill",
     "source": "mapbox://mapbox.mapbox-terrain-v2",
     "source-layer": "hillshade",
-    "filter": ["==", "level", 78],
+    "filter": ["all", ["==", "level", 78]],
+    "layout": {
+      "visibility": "visible"
+    },
     "paint": {
-      "fill-color": "#733a00",
+      "fill-color": "@hillshade",
       "fill-opacity": {
-        "stops": [[14, 0.025], [17, 0]]
-      }
+        "stops": [[14, 0.03], [17, 0]]
+      },
+      "fill-antialias": false
     }
   }, {
     "id": "hillshade_shadow_dark",
     "type": "fill",
     "source": "mapbox://mapbox.mapbox-terrain-v2",
     "source-layer": "hillshade",
-    "filter": ["==", "level", 67],
+    "filter": ["all", ["==", "level", 67]],
+    "layout": {
+      "visibility": "visible"
+    },
     "paint": {
-      "fill-color": "#733a00",
+      "fill-color": "@hillshade",
       "fill-opacity": {
         "stops": [[14, 0.03], [17, 0]]
-      }
+      },
+      "fill-antialias": false
     }
   }, {
     "id": "hillshade_shadow_extreme",
     "type": "fill",
     "source": "mapbox://mapbox.mapbox-terrain-v2",
     "source-layer": "hillshade",
-    "filter": ["==", "level", 56],
+    "filter": ["all", ["==", "level", 56]],
+    "layout": {
+      "visibility": "visible"
+    },
     "paint": {
-      "fill-color": "#733a00",
+      "fill-color": "@hillshade",
       "fill-opacity": {
         "stops": [[14, 0.03], [17, 0]]
-      }
+      },
+      "fill-antialias": false
     }
   }, {
     "id": "building-bottom",
@@ -1046,7 +1071,7 @@
       "line-opacity": {
         "stops": [[11.5, 0], [12, 1]]
       }
-    }  
+    }
   }, {
     "id": "road-motorway_link-case",
     "type": "line",
@@ -1371,7 +1396,7 @@
       "line-opacity": {
         "stops": [[11.5, 0], [12, 1]]
       }
-    }    
+    }
   }, {
     "id": "bridge-motorway_link-case",
     "type": "line",
@@ -2971,7 +2996,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-02T00:31:29.610Z",
-  "created": "2015-04-01T16:47:51.698Z",
-  "id": "nicki.8693a586"
+  "modified": "2015-04-03T18:20:23.345Z",
+  "created": "2015-04-03T16:37:43.267Z",
+  "id": "nicki.70e7257c"
 }
