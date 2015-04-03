@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="beer-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -25,18 +25,35 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="789"
+     inkscape:window-height="721"
      id="namedview3412"
      inkscape:document-units="px"
-     showgrid="true"
+     showgrid="false"
      inkscape:zoom="21.454545"
-     inkscape:cx="5.5"
-     inkscape:cy="5.5"
-     inkscape:current-layer="svg4764">
+     inkscape:cx="-1.6776374"
+     inkscape:cy="8.8301846"
+     inkscape:current-layer="svg4764"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-x="58"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
-       id="grid3444" />
+       id="grid3444"
+       spacingy="0.5"
+       spacingx="0.5"
+       color="#de001c"
+       opacity="0.1254902"
+       empspacing="2" />
   </sodipodi:namedview>
   <defs
      id="defs4766" />
@@ -48,7 +65,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

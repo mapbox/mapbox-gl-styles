@@ -11,7 +11,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg4764"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="baseball-11.svg"
    x="0px"
    y="0px"
@@ -32,11 +32,11 @@
      gridtolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     inkscape:cx="5.7626291"
+     inkscape:cx="2.6309566"
      guidetolerance="10"
      showgrid="false"
      pagecolor="#ffffff"
-     inkscape:cy="2.5444755"
+     inkscape:cy="2.3683189"
      objecttolerance="10"
      inkscape:zoom="51.09091"
      inkscape:snap-bbox="true"
@@ -54,11 +54,6 @@
      inkscape:window-maximized="0"><inkscape:grid
        type="xygrid"
        id="grid3348" /></sodipodi:namedview><path
-       style="fill:#000000;fill-opacity:1"
-     id="path20839"
-     inkscape:connector-curvature="0"
-     d="M0,0v1.8c1.8,2.4,5.6,4.4,7.9,6.7L9,10l0,1h1.4l0.6-0.6V9l-1,0L8.6,7.9  C6.4,5.8,4.3,1.8,1.8,0H0z" /><circle
-     cx="2.5"
-     cy="8.5"
-     r="1.5"
-     id="circle6" /></svg>
+     style="fill:#000000;fill-opacity:1"
+     d="M 0 0 L 0 1.8007812 C 1.8 4.2007813 5.6003906 6.2 7.9003906 8.5 L 9 10 L 9 11 L 10.400391 11 L 11 10.400391 L 11 9 L 10 9 L 8.5996094 7.9003906 C 6.3996094 5.8003906 4.3007812 1.8 1.8007812 0 L 0 0 z M 2.5 7 A 1.5 1.5 0 0 0 1 8.5 A 1.5 1.5 0 0 0 2.5 10 A 1.5 1.5 0 0 0 4 8.5 A 1.5 1.5 0 0 0 2.5 7 z "
+     id="path20839" /></svg>

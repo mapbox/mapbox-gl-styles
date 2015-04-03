@@ -10,11 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="17"
-   height="23"
+   width="26"
+   height="19"
    id="svg3844"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="us-interstate-duplex-5.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="us-interstate-3-small.svg"
+   viewBox="0 0 26 19">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,35 +25,57 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1345"
-     inkscape:window-height="905"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
      id="namedview5316"
      showgrid="true"
-     inkscape:zoom="11.313708"
-     inkscape:cx="14.114351"
-     inkscape:cy="11.652501"
-     inkscape:window-x="167"
-     inkscape:window-y="63"
+     inkscape:zoom="16"
+     inkscape:cx="3.0205308"
+     inkscape:cy="11.757089"
+     inkscape:window-x="-53"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3844"
      inkscape:snap-bbox="true"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:object-paths="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:snap-intersection-paths="false"
+     inkscape:object-nodes="true"
+     borderlayer="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:document-units="px"
+     inkscape:showpageshadow="true">
     <inkscape:grid
        type="xygrid"
-       id="grid3070"
+       id="grid5480"
        empspacing="2"
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
        spacingx="0.5px"
        spacingy="0.5px"
-       originx="1px"
-       originy="7px" />
+       originx="4.0000968"
+       originy="1.9983899" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="14.000097,18.49839"
+       id="guide5601" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="4.5000968,18.49839"
+       id="guide5603" />
+    <sodipodi:guide
+       position="23.500097,15.99839"
+       orientation="0,1"
+       id="guide9216" />
   </sodipodi:namedview>
   <defs
      id="defs3846" />
@@ -69,22 +92,15 @@
     </rdf:RDF>
   </metadata>
   <path
+     style="fill:#5396c7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.11270142px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M -9.68e-5,5.0000004 C 9.68e-5,12.00161 3.7142166,18.5 13,19 22.285783,18.5 26.000097,12.00161 26.000097,5.0000004 l -13.000097,0 z"
+     id="path9494"
      inkscape:connector-curvature="0"
-     style="color:#3a3836;fill:#7c6e83;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-     id="path4616"
-     d="m 1.5,1 c -4,11.5 0.5,21 7,22 6.5,-1 11,-10.5 7,-22 -2,1 -5,1 -7,0 -2,1 -5,1 -7,0 z"
      sodipodi:nodetypes="ccccc" />
   <path
+     style="fill:#e97474;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.11270142px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m -9.68e-5,4.0000004 c 0,-1 0.61905223,-3 0.61905223,-3 0.20130588,-0.5 0.61905227,-1 1.23810447,-0.5 0,0 2.8284088,1.9627234 4.9524178,2 2.3065267,0.04048 4.3333653,-1.5 4.9524183,-2 0,0 1.238104,-1 2.476208,0 0.619053,0.5 3.211666,2.0305504 4.952418,2 2.124009,-0.037277 4.333366,-1.5 4.952418,-2 0.619052,-0.5 1.118103,0 1.238105,0.5 0,0 0.619052,2 0.619052,3 z"
+     id="path9499"
      inkscape:connector-curvature="0"
-     style="fill:#ffffff;stroke:none"
-     id="path4663"
-     d="m 1.5,4 c 4,-0.5 10,-0.5 14,0 C 17,9.5 16,20 8.5,22 1,20 0,9.5 1.5,4 z"
-     sodipodi:nodetypes="cccc" />
-  <rect
-     style="opacity:0;color:#3a3836;fill:#3a3836;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-     id="rect3933"
-     width="17"
-     height="23"
-     x="0"
-     y="0" />
+     sodipodi:nodetypes="csscccccccc" />
 </svg>

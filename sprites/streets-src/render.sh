@@ -1,6 +1,6 @@
 present=$(pwd)
 render="renders"  # PNGs will be created, possibly overwritten, here
-declare -a groups=(rail shield extras)
+declare -a groups=(rail)
 
 for g in ${groups[@]}
 do
@@ -10,6 +10,8 @@ do
 
         for svg in ${svgs[@]}; do
             icon=$(basename $svg .svg)
+
+            # export png
             inkscape -z \
                 --export-dpi=90 \
                 --export-png=${present}/${render}/${g}/${icon}.png \
@@ -20,8 +22,28 @@ do
                 --export-png=${present}/${render}/${g}/${icon}@2x.png \
                 $svg > /dev/null
 
-            echo ${icon}
+            # add stroke to png
+            if [ ${g} != extras ]
+            then
 
+            convert ${present}/${render}/${g}/${icon}.png \
+                -matte -bordercolor none -border 4 ${present}/${render}/${g}/${icon}.png
+
+            convert  ${present}/${render}/${g}/${icon}.png \( +clone \
+                -channel A -morphology Edge Diamond:2 +channel \
+                +level-colors white \
+                \) -compose DstOver -composite ${present}/${render}/${g}/${icon}.png
+
+            convert ${present}/${render}/${g}/${icon}@2X.png \
+                -matte -bordercolor none -border 6 ${present}/${render}/${g}/${icon}@2X.png
+
+            convert  ${present}/${render}/${g}/${icon}@2x.png \( +clone \
+                -channel A -morphology Edge Diamond:4 +channel \
+                +level-colors white \
+                \) -compose DstOver -composite ${present}/${render}/${g}/${icon}@2x.png
+            fi
+
+            echo ${icon}
         done
     }
 
