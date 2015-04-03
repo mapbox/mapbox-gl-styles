@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="19"
-   height="21.99992"
+   width="25"
+   height="17"
    id="svg3844"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="us-highway-duplex-4.svg">
+   sodipodi:docname="us-highway-3.svg">
   <defs
      id="defs3846" />
   <sodipodi:namedview
@@ -24,23 +24,25 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="8.5940226"
-     inkscape:cy="12.713036"
+     inkscape:zoom="16"
+     inkscape:cx="10.338651"
+     inkscape:cy="11.811112"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:snap-bbox="false"
+     showgrid="false"
+     inkscape:snap-bbox="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1280"
      inkscape:window-height="751"
-     inkscape:window-x="89"
+     inkscape:window-x="1"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:object-nodes="true">
+     inkscape:object-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid3875"
@@ -48,8 +50,8 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="-300"
-       originy="-129"
+       originx="-299px"
+       originy="-134px"
        spacingy="0.5px"
        spacingx="0.5px" />
   </sodipodi:namedview>
@@ -69,20 +71,20 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-300,-901.36226)">
+     transform="translate(-299,-901.36218)">
     <rect
        style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:0;fill:#3a3836;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
        id="rect3803"
-       width="17"
-       height="21.999998"
-       x="301"
+       width="21"
+       height="17"
+       x="299"
        y="901.36218" />
     <path
        style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#3a3836;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;marker:none;enable-background:accumulate"
        clip-path="none"
-       d="m 318.5,911.36224 c 0,-1.25 -0.5,-2.5 -1,-3.5 -1,-2 0.5,-3 1,-3.5 l -4,-2.5 c 0,0 -1,1.5 -2.5,1.5 -1.5,0 -2.5,-1.5 -2.5,-1.5 0,0 -1,1.5 -2.5,1.5 -1.5,0 -2.5,-1.5 -2.5,-1.5 l -4,2.5 c 0.5,0.5 2,1.5 1,3.5 -0.5,1 -1,2.25 -1,3.5 l 0,5.5 c 0,1.25 0.5,2.5 1.5,3.5 2.5,2.5 6.5,0.5 7.5,2.5 1,-2 5,0 7.5,-2.5 1,-1 1.5,-2.25 1.5,-3.5 z"
-       id="path3799-7-0"
+       d="m 304.5,902.36218 -5,2.5 c 0.5,0.5 2,1.5 1,3.5 -1,2 -1.5,5 0.5,7 2.5,2.5 9.5,0.5 10.5,2.5 1,-2 8,0 10.5,-2.5 2,-2 1.5,-5 0.5,-7 -1,-2 0.5,-3 1,-3.5 l -5,-2.5 c 0,0 -1.5,1.5 -3.5,1.5 -2,0 -3.5,-1.5 -3.5,-1.5 0,0 -1.5,1.5 -3.5,1.5 -2,0 -3.5,-1.5 -3.5,-1.5 z"
+       id="path3799-7"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ssccscsccsscscscs" />
+       sodipodi:nodetypes="ccsscssccscsc" />
   </g>
 </svg>

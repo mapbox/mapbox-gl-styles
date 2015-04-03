@@ -11,11 +11,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="26"
-   height="17"
+   height="19"
    id="svg3844"
    inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="us-interstate-duplex-3-small.svg"
-   viewBox="0 0 26 17">
+   sodipodi:docname="us-interstate-3-small.svg"
+   viewBox="0 0 26 19">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -28,10 +28,10 @@
      inkscape:window-width="1280"
      inkscape:window-height="751"
      id="namedview5316"
-     showgrid="false"
+     showgrid="true"
      inkscape:zoom="16"
-     inkscape:cx="-1.9794692"
-     inkscape:cy="6.7570885"
+     inkscape:cx="3.0205308"
+     inkscape:cy="11.757089"
      inkscape:window-x="-53"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -51,7 +51,8 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:document-units="px">
+     inkscape:document-units="px"
+     inkscape:showpageshadow="true">
     <inkscape:grid
        type="xygrid"
        id="grid5480"
@@ -86,13 +87,13 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
      style="fill:#5396c7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.11270142px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M -9.68e-5,5.0000004 C -9.68e-5,11 3.7142166,16.5 13,17 22.285783,16.5 26.000097,11 26.000097,5.0000004 l -13.000097,0 z"
+     d="M -9.68e-5,5.0000004 C 9.68e-5,12.00161 3.7142166,18.5 13,19 22.285783,18.5 26.000097,12.00161 26.000097,5.0000004 l -13.000097,0 z"
      id="path9494"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccccc" />
