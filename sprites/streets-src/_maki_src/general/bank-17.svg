@@ -32,11 +32,11 @@
      gridtolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     inkscape:cx="3.4489968"
+     inkscape:cx="-2.313715"
      guidetolerance="10"
      showgrid="false"
      pagecolor="#ffffff"
-     inkscape:cy="9.5568124"
+     inkscape:cy="9.2326599"
      objecttolerance="10"
      inkscape:zoom="27.764706"
      inkscape:snap-bbox="true"
@@ -59,5 +59,6 @@
        opacity="0.1254902"
        empspacing="2" /></sodipodi:namedview><path
      d="M 0 4 L 0 12 L 14.5 12 L 14.5 4 L 0 4 z M 1 5 L 2 5 C 2 5 2 6 1 6 L 1 5 z M 12 5 L 13 5 L 13 6 C 13 6 12 6 12 5 z M 15 5 L 15 12.5 L 0 12.5 L 0 13 L 15 13 L 15.5 13 L 15.5 5 L 15 5 z M 7.4003906 6 A 1.9000001 2 0 0 1 9.3007812 8 A 1.9000001 2 0 0 1 7.4003906 10 A 1.9000001 2 0 0 1 5.5 8 A 1.9000001 2 0 0 1 7.4003906 6 z M 16 6.5 L 16 13.5 L 1 13.5 L 1 14 L 16 14 L 16.5 14 L 16.5 6.5 L 16 6.5 z M 1 10 C 1 10 2 10 2 11 L 1 11 L 1 10 z M 13 10 L 13 11 L 12 11 C 12 11 12 10 13 10 z "
-     id="rect5" /><g
+     id="rect5"
+     style="fill:#000000" /><g
      id="g9" /></svg>

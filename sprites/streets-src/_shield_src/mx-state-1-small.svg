@@ -14,8 +14,8 @@
    viewBox="0 0 17 19.999983"
    id="svg4845"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="mx-state-1.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="mx-state-1-small.svg">
   <defs
      id="defs4847" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="-4.5188018"
-     inkscape:cy="8.9656471"
+     inkscape:cx="-14.518802"
+     inkscape:cy="8.4031471"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -63,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -87,7 +87,7 @@
        sodipodi:nodetypes="cccccc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#3a3836;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 1316,1626.8622 15,0"
+       d="m 1316,1625.8622 15,0"
        id="path5547"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />

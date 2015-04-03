@@ -14,8 +14,8 @@
    viewBox="0 0 17 21"
    id="svg4845"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="mx-federal-1.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="mx-federal-1-small.svg">
   <defs
      id="defs4847" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.627417"
-     inkscape:cx="3.7729251"
-     inkscape:cy="10.921361"
+     inkscape:cx="4.0822843"
+     inkscape:cy="11.584274"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -63,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -86,8 +86,8 @@
        d="m 1317.5,1621.8622 -2,3 0,2.5 c 1.5,1 1.5,3 0,4 0,8 6.328,10.082 8,10.5 1.6168,-0.4042 8.0776,-3.2694 8,-10.5 -1.5,-1 -1.5,-3 0,-4 l 0,-2.5 -2,-3 c -0.75,0.75 -1.875,1.5 -3,1.5 -1.125,0 -2.25,-0.75 -3,-1.5 -0.75,0.75 -1.875,1.5 -3,1.5 -1.125,0 -2.25,-0.75 -3,-1.5 z"
        sodipodi:nodetypes="cccccccccscsc" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#3a3836;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 1316,1626.8623 15,0"
+       style="fill:none;fill-rule:evenodd;stroke:#3a3836;stroke-width:1.03074884px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 1315.5246,1625.8623 15.9366,0"
        id="path5547"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />

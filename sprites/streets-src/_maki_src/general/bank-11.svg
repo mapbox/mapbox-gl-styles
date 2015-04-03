@@ -35,11 +35,11 @@
      gridtolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     inkscape:cx="1.2269509"
+     inkscape:cx="4.5887043"
      guidetolerance="10"
      showgrid="false"
      pagecolor="#ffffff"
-     inkscape:cy="6.2209866"
+     inkscape:cy="0.28848052"
      objecttolerance="10"
      inkscape:zoom="30.341309"
      inkscape:snap-bbox="true"
@@ -62,4 +62,5 @@
      transform="translate(0,-0.5)"><path
        d="M 0 2 L 0 9 L 10 9 L 10 2 L 0 2 z M 1 3 L 2 3 L 1 4 L 1 3 z M 8 3 L 9 3 L 9 4 L 8 3 z M 10.5 3 L 10.5 9.5 L 1 9.5 L 1 10 L 10.5 10 L 11 10 L 11 9.5 L 11 3 L 10.5 3 z M 4.9453125 3.5019531 A 1.5 2 0 0 1 6.4824219 5.1972656 L 6.4941406 5.3222656 A 1.5 2 0 0 1 5.15625 7.4882812 A 1.5 2 0 0 1 3.5117188 5.7402344 A 1.5 2 0 0 1 4.796875 3.5175781 A 1.5 2 0 0 1 4.9453125 3.5019531 z M 1 7 L 2 8 L 1 8 L 1 7 z M 9 7 L 9 8 L 8 8 L 9 7 z "
        transform="translate(0,0.5)"
-       id="path7" /></g></svg>
+       id="path7"
+       style="fill:#000000" /></g></svg>

@@ -10,11 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="21"
+   width="26"
    height="17"
    id="svg3844"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="us-interstate-3.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="us-interstate-business-3-small.svg"
+   viewBox="0 0 26 17">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,21 +25,21 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
      id="namedview5316"
      showgrid="false"
-     inkscape:zoom="11.313708"
-     inkscape:cx="12.074062"
-     inkscape:cy="15.556402"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
+     inkscape:zoom="16"
+     inkscape:cx="-1.9794692"
+     inkscape:cy="6.7570885"
+     inkscape:window-x="-53"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg3844"
      inkscape:snap-bbox="true"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:object-paths="false"
+     inkscape:object-paths="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -46,9 +47,11 @@
      inkscape:snap-intersection-paths="false"
      inkscape:object-nodes="true"
      borderlayer="true"
-     inkscape:snap-global="true"
-     inkscape:snap-nodes="false"
-     showborder="true">
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:document-units="px">
     <inkscape:grid
        type="xygrid"
        id="grid5480"
@@ -58,16 +61,20 @@
        snapvisiblegridlinesonly="true"
        spacingx="0.5px"
        spacingy="0.5px"
-       originx="1px"
-       originy="1px" />
+       originx="4.0000968"
+       originy="1.9983899" />
     <sodipodi:guide
        orientation="1,0"
-       position="11,17.5"
+       position="14.000097,18.49839"
        id="guide5601" />
     <sodipodi:guide
        orientation="1,0"
-       position="1.5,17.5"
+       position="4.5000968,18.49839"
        id="guide5603" />
+    <sodipodi:guide
+       position="23.500097,15.99839"
+       orientation="0,1"
+       id="guide9216" />
   </sodipodi:namedview>
   <defs
      id="defs3846" />
@@ -84,22 +91,15 @@
     </rdf:RDF>
   </metadata>
   <path
+     style="fill:#7e9a4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none"
+     d="M -9.68e-5,5.0000004 C -9.68e-5,11 3.7142166,16.5 13,17 22.285783,16.5 26.000097,11 26.000097,5.0000004 l -13.000097,0 z"
+     id="path9494"
      inkscape:connector-curvature="0"
-     style="color:#3a3836;fill:#2ca05a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-     id="path4616-1"
-     d="m 1,1 c -3.5,12 6.5,15.5 9.5,16 3,-0.5 13,-4 9.5,-16 C 18,2 12.5,2 10.5,1 8.5000004,2 3,2 1,1 z"
      sodipodi:nodetypes="ccccc" />
   <path
+     style="fill:#7e9a4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none"
+     d="m -9.68e-5,4.0000004 c 0,-1 0.61905223,-3 0.61905223,-3 0.20130588,-0.5 0.61905227,-1 1.23810447,-0.5 0,0 2.8284088,1.9627234 4.9524178,2 2.3065267,0.04048 4.3333653,-1.5 4.9524183,-2 0,0 1.238104,-1 2.476208,0 0.619053,0.5 3.211666,2.0305504 4.952418,2 2.124009,-0.037277 4.333366,-1.5 4.952418,-2 0.619052,-0.5 1.118103,0 1.238105,0.5 0,0 0.619052,2 0.619052,3 z"
+     id="path9499"
      inkscape:connector-curvature="0"
-     style="fill:#ffffff;stroke:none"
-     id="path4663-2"
-     d="m 1.5,4 c 4,-0.5 14,-0.5 18,0 1,5.5 -2.5,10 -9,12 C 4,14 0.5,9.5 1.5,4 z"
-     sodipodi:nodetypes="cccc" />
-  <rect
-     style="opacity:0;color:#3a3836;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-     id="rect3163"
-     width="21"
-     height="17"
-     x="0"
-     y="0" />
+     sodipodi:nodetypes="csscccccccc" />
 </svg>
