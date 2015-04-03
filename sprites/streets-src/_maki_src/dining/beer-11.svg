@@ -70,21 +70,8 @@
     </rdf:RDF>
   </metadata>
   <path
-<<<<<<< HEAD
-     inkscape:connector-curvature="0"
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 0,9.9375 C 0,9.9375 0,11 1.0625,11 L 6.375,11 C 7.4375,11 7.4375,9.9375 7.4375,9.9375 l 0,-1.0625 1.0625,0 c 1.0625,0 1.0625,-1.0625 1.0625,-1.0625 l 0,-3.1875 c 0,0 0,-1.0625 -1.0625,-1.0625 l -1.0625,0 0,-1.0625 L 0,2.5 c 6.6796909e-5,2.6015581 0,7.4375 0,7.4375 z m 1.0625,-5.84375 0.53125,0 0,4.78125 -0.53125,0 z m 2.125,0 0.53125,0 0,4.78125 -0.53125,0 z m 2.125,0 0.53125,0 0,4.78125 -0.53125,0 z m 2.125,0.53125 1.0625,0 0,3.1875 -1.0625,0 z"
-     id="rect3334"
-     sodipodi:nodetypes="cscccsccscccccccccccccccccccccccc" />
-  <path
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 3.8398438,0.00585933 A 2,2 0 0 0 3.640625,0.02343743 2,2 0 0 0 2.0996094,1.1660156 1.5,1.5 0 0 0 1.2089844,1.0136718 1.5,1.5 0 0 0 0,2 l 7.4121094,0 a 1,1 0 0 0 -0.00391,-0.087891 l -0.00781,-0.0625 A 1,1 0 0 0 6.2773438,1.0097656 1,1 0 0 0 5.7597656,1.2441406 2,2 0 0 0 3.8398438,0.00585933 Z"
-     id="path3367"
-     inkscape:connector-curvature="0" />
-=======
      d="M 1.3474576,0 2.5696798,10.388889 C 2.6133132,10.738078 2.8315776,11 3.1807909,11 l 4.8888887,0 c 0.349214,0 0.549951,-0.264611 0.611111,-0.611111 L 9.9030136,0 Z m 1.8333333,1.2222222 4.8888887,0 -0.305555,2.4444445 -4.2777781,0 z"
      inkscape:connector-curvature="0"
      id="path10133-9"
      style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.44444442;marker:none;enable-background:accumulate" />
->>>>>>> 08e4638ae7e04de79e70fee5dba066b03e32e274
 </svg>
