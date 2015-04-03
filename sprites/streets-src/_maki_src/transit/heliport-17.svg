@@ -13,11 +13,11 @@
    width="17"
    height="17"
    id="svg4619"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="heliport-17.svg"
    viewBox="0 0 17 17">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -25,8 +25,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1060"
+     inkscape:window-height="735"
      id="namedview3340"
      inkscape:document-units="px"
      showgrid="true"
@@ -34,15 +34,26 @@
      inkscape:bbox-nodes="true"
      inkscape:bbox-paths="true"
      inkscape:zoom="27.764706"
-     inkscape:cx="7.90196"
-     inkscape:cy="8.1166467"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:cx="9.807104"
+     inkscape:cy="8.7792683"
+     inkscape:window-x="6"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4619">
+     inkscape:current-layer="svg4619"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
-       id="grid3342" />
+       id="grid3342"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#e90000"
+       opacity="0.1254902"
+       empspacing="2" />
   </sodipodi:namedview>
   <defs
      id="defs4621" />
@@ -54,13 +65,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="m 9.4081141,14.384615 6.5747889,0 C 16.491451,14.384615 17,13.876053 17,13.367492 l 0,-3.051238 c 0,-1.0171229 -0.488972,-1.5060691 -1.017097,-2.034246 0,0 -0.678065,-0.6780384 -1.017097,-1.0169923 C 14.626787,6.9259311 13.948722,6.5384619 12.931625,6.5384619 l -2.470087,0 0,-2.6153846 4.213673,0 c 0.563458,0 1.017097,-0.1630693 1.017097,-0.7265539 0,-0.5633538 -0.380997,-0.5811384 -0.944455,-0.5811384 l -9.5897393,0 c -0.5634716,0 -1.0897392,0.018308 -1.0897392,0.5811384 0,0.5634846 0.4568946,0.665877 1.0170969,0.7265539 l 4.0683747,0 0,2.6153846 -1.0170971,0 -4.3544322,0 C 3.4303645,5.9313003 2.7864306,5.5213388 2.0341937,5.5213388 0.91074215,5.5213388 -4.9999999e-8,6.4320157 -4.9999999e-8,7.5555849 -4.9999999e-8,8.6790234 0.91074215,9.5897003 2.0341937,9.5897003 c 0.5868923,0 1.0907854,-0.2697769 1.4620654,-0.6674461 l 3.623393,3.4281148 c 1.0587339,1.001692 1.7799262,2.034246 2.288462,2.034246 z M 2.0341937,6.5384619 c 0.5617192,0 1.0170838,0.4553384 1.0170838,1.017123 0,0.5616539 -0.4553646,1.0169923 -1.0170838,1.0169923 -0.5617323,0 -1.0170969,-0.4553384 -1.0170969,-1.0169923 0,-0.5617846 0.4553646,-1.017123 1.0170969,-1.017123 z"
-     inkscape:connector-curvature="0"
-     id="rect9361-7"
-      />
+  <path
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 4.75 2.5 C 4.3345 2.5 4 2.8345 4 3.25 C 4 3.6655 4.3345 4 4.75 4 L 9 4 L 9 6 L 4.4980469 6 A 2.5 2.5 0 0 0 2.546875 5 A 2.5 2.5 0 0 0 2.4101562 5.0019531 A 2.5 2.5 0 0 0 2.1601562 5.0234375 A 2.5 2.5 0 0 0 0.017578125 7.7988281 A 2.5 2.5 0 0 0 2.7597656 9.9863281 A 2.5 2.5 0 0 0 4.6816406 8.7128906 L 10 14 L 14.947266 14 C 17.001211 14 17 11.999404 17 11.957031 L 17 9.0761719 L 13.939453 6 L 11 6 L 11 4 L 14.75 4 C 15.1655 4 15.5 3.6655 15.5 3.25 C 15.5 2.8345 15.1655 2.5 14.75 2.5 L 4.75 2.5 z M 2.4648438 6.5 A 1 1 0 0 1 3.4882812 7.3496094 L 3.4960938 7.4121094 A 1 1 0 0 1 2.6035156 8.4941406 A 1 1 0 0 1 1.5078125 7.6191406 A 1 1 0 0 1 2.3652344 6.5097656 A 1 1 0 0 1 2.4648438 6.5 z M 13 7 L 16 10 L 13 10 L 13 7 z "
+     id="path3355" />
 </svg>
