@@ -2143,7 +2143,7 @@
     "pixelRatio": 2,
     "sdf": false
   },
-  "circle.sdf": {
+  "circle": {
     "x": 898,
     "y": 190,
     "width": 19,
