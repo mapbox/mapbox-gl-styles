@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="11"
+   height="11"
+   id="svg2"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="dog-park-11.svg"
+   viewBox="0 0 11 11">
+  <sodipodi:namedview
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3426"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="55.545455"
+     inkscape:cx="3.2495908"
+     inkscape:cy="5.3379705"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <path style="fill:#000000;fill-opacity:1"
+
+     d="M 7.3333333,0.61111111 6.7222222,2.4444445 6.1111111,4.2777778 8.555556,5.5 9.777778,5.5 11,4.2777778 l 0,-1.2222222 -1.222222,0 -1.222222,-1.2222223 0,-1.22222219 -1.2222227,0 z M 2.4444444,1.8333333 1.2222222,3.0555556 l 0,2.4444444 0,1.2222222 L 0,10.388889 l 1.2222222,0 0.8856337,-1.7712676 0.3365885,-0.6731769 0,2.4444445 1.2222223,0 0,-2.4444445 1.8333333,0 -0.6111111,2.4444445 1.2222222,0 0.6111111,-1.8333334 0.6111111,0 0,1.8333334 1.2222227,0 0,-2.4444445 0,-1.2222223 -3.6666671,-2.4444444 -2.4444445,0 0,-1.2222222 1.2222223,-1.2222223 -1.2222223,0 z"
+     id="path6"
+     inkscape:connector-curvature="0" />
+</svg>

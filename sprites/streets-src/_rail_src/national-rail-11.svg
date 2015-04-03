@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="12"
+   height="12"
+   id="svg3122"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="national-rail-12.svg"
+   viewBox="0 0 12 12">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="960"
+     inkscape:window-height="1025"
+     id="namedview12"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:zoom="32.259358"
+     inkscape:cx="4.7310806"
+     inkscape:cy="4.0248116"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3122"
+     inkscape:document-units="px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3043" />
+  </sodipodi:namedview>
+  <defs
+     id="defs3124" />
+  <metadata
+     id="metadata3127">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-1040.3622)"
+     id="layer1">
+    <path
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#e97474;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;enable-background:accumulate"
+       d="M 2 2 C 1.446 2 1 2.446 1 3 L 1 4 L 6.6660156 4 L 3.3339844 2 L 2 2 z M 5.3339844 2 L 8.6660156 4 L 11 4 L 11 3 C 11 2.446 10.554 2 10 2 L 5.3339844 2 z M 1 5 L 1 7 L 3.3339844 7 L 6.6660156 5 L 1 5 z M 8.6660156 5 L 5.3339844 7 L 11 7 L 11 5 L 8.6660156 5 z M 1 8 L 1 9 C 1 9.554 1.446 10 2 10 L 6.6660156 10 L 3.3339844 8 L 1 8 z M 5.3339844 8 L 8.6660156 10 L 10 10 C 10.554 10 11 9.554 11 9 L 11 8 L 5.3339844 8 z "
+       transform="translate(0,1040.3622)"
+       id="rect3025" />
+  </g>
+</svg>
