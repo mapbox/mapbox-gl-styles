@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,15 +7,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4619"
+   height="15"
+   width="15"
    version="1.1"
-   width="11"
-   height="11"
-   id="svg4764"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="cinema-11.svg"
-   viewBox="0 0 11 11">
+   sodipodi:docname="circle-15.svg"
+   viewBox="0 0 15 15">
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#fff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -25,40 +23,35 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="846"
-     inkscape:window-height="734"
-     id="namedview3353"
+     inkscape:window-width="1280"
+     inkscape:window-height="755"
+     id="namedview3423"
      inkscape:document-units="px"
-     showgrid="false"
-     inkscape:zoom="57.181818"
-     inkscape:cx="4.996595"
-     inkscape:cy="5.8098998"
-     inkscape:current-layer="svg4764"
+     showgrid="true"
+     inkscape:object-paths="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
-     inkscape:snap-bbox-midpoints="true"
-     inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:object-paths="true"
-     inkscape:snap-intersection-paths="true"
-     inkscape:object-nodes="true"
-     inkscape:snap-smooth-nodes="true"
+     inkscape:zoom="51.282629"
+     inkscape:cx="11.772045"
+     inkscape:cy="7.3517035"
      inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0">
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4619">
     <inkscape:grid
        type="xygrid"
-       id="grid3333"
-       spacingx="0.5"
+       id="grid3425"
        spacingy="0.5"
+       spacingx="0.5"
+       empspacing="2"
        color="#ff0000"
-       opacity="0.1254902"
-       empspacing="2" />
+       opacity="0.1254902" />
   </sodipodi:namedview>
   <defs
-     id="defs4766" />
+     id="defs4621" />
   <metadata
-     id="metadata4769">
+     id="metadata4624">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -69,10 +62,10 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path
-     style="fill:#000000;fill-opacity:1"
-     d="M 9,0 0.5,2.5 1,4.5 9.5,2 Z m -8,4.5 0,6 c 0,0 0,0.5 0.5,0.5 l 8,0 C 10,11 10,10.5 10,10.5 l 0,-6 z m 1.5,1 6,0 0,1.5 -6,0 z"
-     inkscape:connector-curvature="0"
-     id="rect7568-8-4-7-5"
-     sodipodi:nodetypes="cccccccsscccccccc" />
+  <circle
+     id="path3427"
+     cx="7.5000005"
+     cy="7.5000005"
+     r="7.5000005"
+     style="fill:#000000;fill-opacity:1" />
 </svg>

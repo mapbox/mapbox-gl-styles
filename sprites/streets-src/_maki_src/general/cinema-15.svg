@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="11"
-   height="11"
-   id="svg4764"
+   width="15"
+   height="15"
+   id="svg4619"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="fire-station-11.svg"
-   viewBox="0 0 11 11">
+   sodipodi:docname="cinema-15.svg"
+   viewBox="0 0 15 15">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -25,23 +25,23 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="980"
-     inkscape:window-height="723"
-     id="namedview3388"
+     inkscape:window-width="909"
+     inkscape:window-height="751"
+     id="namedview3359"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="5.3424889"
-     inkscape:cy="5.3520945"
-     inkscape:current-layer="svg4764"
+     inkscape:zoom="35.941176"
+     inkscape:cx="7.4063486"
+     inkscape:cy="8.7139997"
+     inkscape:current-layer="svg4619"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
-     inkscape:snap-intersection-paths="true"
      inkscape:object-paths="true"
      inkscape:object-nodes="true"
+     inkscape:snap-intersection-paths="true"
      inkscape:snap-smooth-nodes="true"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -56,9 +56,9 @@
        empspacing="2" />
   </sodipodi:namedview>
   <defs
-     id="defs4766" />
+     id="defs4621" />
   <metadata
-     id="metadata4769">
+     id="metadata4624">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -71,8 +71,13 @@
   </metadata>
   <path
      style="fill:#000000;fill-opacity:1"
-     d="M 5.5,0 3.5,4 2,2 C 1.5949678,2.7120667 0,4.1666667 0,6 0,8.7001333 2.79994,11 5.5,11 8.20006,11 11,8.7001333 11,6 11,4.1666667 9.405032,2.7120667 9,2 L 7.5,4 Z m 0,5.5 c 0,0 2,1.5850333 2,3 0,0.6111111 -0.7777778,1.2777778 -2,1.2777778 -1.2222222,0 -2,-0.6666667 -2,-1.2777778 0,-1.3664445 2,-3 2,-3 z"
-     id="path10041-3-2"
+     d="m 1,7 0,7 c 0,0.510633 0.4893665,1 1,1 l 10.5,0 c 0.510634,0 1,-0.510634 1,-1.021267 L 13.5,7 Z m 2,1.5 8.5,0 0,2.5 -8.5,0 z"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccsssccccsssc" />
+     id="rect7568-8-4-7"
+     sodipodi:nodetypes="cssssccccccc" />
+  <path
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 12.316406,0.49609378 9.9082031,1.140625 l 0,3.1074219 3.1835939,-0.8535156 -0.775391,-2.89843752 z m -3.4082029,0.91210932 -2,0.5371094 0,3.1054688 2,-0.5351563 0,-3.1074219 z m -3,0.8046876 -2,0.5351562 0,3.1074219 2,-0.5371094 0,-3.1054687 z m -3,0.8027343 L 0.7246093,3.6015625 1.5,6.5 2.9082031,6.1230469 l 0,-3.1074219 z"
+     id="rect3405"
+     inkscape:connector-curvature="0" />
 </svg>

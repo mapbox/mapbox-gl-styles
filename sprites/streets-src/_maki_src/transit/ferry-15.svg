@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="11"
-   height="11"
-   id="svg4764"
+   width="17"
+   height="17"
+   id="svg4619"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="fuel-11.svg"
-   viewBox="0 0 11 11">
+   sodipodi:docname="ferry-17.svg"
+   viewBox="0 0 15 15">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -25,15 +25,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="986"
-     inkscape:window-height="759"
-     id="namedview3400"
+     inkscape:window-width="1008"
+     inkscape:window-height="728"
+     id="namedview3382"
      inkscape:document-units="px"
-     showgrid="false"
-     inkscape:zoom="39.276568"
-     inkscape:cx="3.0685615"
-     inkscape:cy="4.2822446"
-     inkscape:current-layer="svg4764"
+     showgrid="true"
+     inkscape:zoom="25.414249"
+     inkscape:cx="9.2974957"
+     inkscape:cy="9.4842073"
+     inkscape:current-layer="svg4619"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
@@ -51,14 +51,14 @@
        id="grid3333"
        spacingx="0.5"
        spacingy="0.5"
+       empspacing="2"
        color="#ff0000"
-       opacity="0.1254902"
-       empspacing="2" />
+       opacity="0.1254902" />
   </sodipodi:namedview>
   <defs
-     id="defs4766" />
+     id="defs4621" />
   <metadata
-     id="metadata4769">
+     id="metadata4624">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -71,8 +71,26 @@
   </metadata>
   <path
      style="fill:#000000;fill-opacity:1"
-     d="M 1.5,0 C 1.5,0 1,0 1,0.5 l 0,10 c 0,0 0,0.5 0.5,0.5 l 5,0 c 0,0 0.5,0 0.5,-0.5 l 0,-1 1.5,0 c 0,0 1,0 1,-1 L 9.5,5 8.5,4 8.5,2 7,1 7,0.5 C 7,0 6.5,0 6.5,0 Z M 2,1 6,1 6,3.5 2,3.5 Z m 5,2 0.5,0 0,1.5 1,1 c 0,0 0.02502,1.4499595 0,2.5 C 8.5,8.5 8,8.5 8,8.5 l -0.5,0 0,-1 L 7,7 Z"
+     d="M 6,1 4.5,1 c -0.5003922,0 -1,0.4996516 -1,1 l 0,4 -2,1 2,4 0,1.5 2.5,1 2.5,-1 2.5,1 2.5,-1 0,-1.5 2,-4 -2,-1 0,-4 c 0,-0.5003484 -0.501081,-1.03837838 -1,-1 z m -1,1.5 7,0 0,3 L 8.5,4 5,5.5 Z M 3.5,14 0,15 l 0,1.5 3.5,-1 2.5,1 2.5,-1 2.5,1 2.5,-1 3.5,1 L 17,15 13.5,14 11,15 8.5,14 6,15 Z"
      inkscape:connector-curvature="0"
-     id="rect7223-2-4-9-3"
-     sodipodi:nodetypes="cscscsccsccccsccccccccccccccccc" />
+     id="path30964"
+     sodipodi:nodetypes="csccccccccccccsccccccccccccccccccccccc" />
+  <path
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 17,10.5 0,1.5 -2.5,1 0,-1.5 z"
+     id="path4167-8"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m -132,10 0,1.5 -3,1.5 0.75,-1.5 z"
+     id="path4167-8-3"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 0,10.5 0,1.5 2.5,1 0,-1.5 z"
+     id="path4167-8-2"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
 </svg>
