@@ -9,12 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="49"
-   height="15"
+   width="54"
+   height="18"
    id="svg5088"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="us-state-5.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="us-state-6-large.svg"
+   viewBox="0 0 54 18">
   <defs
      id="defs5090" />
   <sodipodi:namedview
@@ -24,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.4"
-     inkscape:cx="28.335229"
-     inkscape:cy="6.0870811"
+     inkscape:zoom="31.678384"
+     inkscape:cx="50.353035"
+     inkscape:cy="11.533922"
      inkscape:document-units="px"
      inkscape:current-layer="generic-md-3"
      showgrid="true"
@@ -39,7 +40,11 @@
      inkscape:window-x="199"
      inkscape:window-y="298"
      inkscape:window-maximized="0"
-     inkscape:snap-bbox="true">
+     inkscape:snap-bbox="true"
+     inkscape:object-paths="false"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid5549"
@@ -47,8 +52,8 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="2.5878907e-07px"
-       originy="2.6171875e-06px" />
+       originx="7.7636721e-07"
+       originy="7.8515625e-06" />
   </sodipodi:namedview>
   <metadata
      id="metadata5093">
@@ -58,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -66,31 +71,31 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-54.999985,-943.36218)">
+     transform="translate(-54.999985,-940.36218)">
     <g
        transform="translate(-180,480)"
        inkscape:label="#g4394"
        id="generic-md-3">
       <rect
-         style="color:#3a3836;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
          id="rect3455"
-         width="49"
-         height="15"
+         width="54"
+         height="18"
          x="234.99998"
-         y="463.36218"
+         y="460.36218"
          inkscape:label="#rect3893"
          rx="7.0000024"
          ry="7.0000024" />
       <rect
          inkscape:label="#rect3893"
-         y="464.36218"
+         y="461.36224"
          x="235.99998"
-         height="13"
-         width="47"
+         height="15.999955"
+         width="51.999992"
          id="rect3457"
-         style="color:#3a3836;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
          rx="5.999999"
-         ry="5.9999995" />
+         ry="6" />
     </g>
   </g>
 </svg>

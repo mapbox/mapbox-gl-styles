@@ -9,12 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="47"
+   width="44"
    height="15"
    id="svg5088"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="default-5.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="default-6-small.svg"
+   viewBox="0 0 44 15">
   <defs
      id="defs5090" />
   <sodipodi:namedview
@@ -24,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="41.389507"
-     inkscape:cy="3.1536623"
+     inkscape:zoom="16"
+     inkscape:cx="15.993536"
+     inkscape:cy="5.7852613"
      inkscape:document-units="px"
      inkscape:current-layer="generic-md-3"
      showgrid="true"
@@ -39,7 +40,9 @@
      inkscape:window-x="354"
      inkscape:window-y="439"
      inkscape:window-maximized="0"
-     inkscape:snap-bbox="true">
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true">
     <inkscape:grid
        type="xygrid"
        id="grid3074"
@@ -47,8 +50,8 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="7.7636721e-07px"
-       originy="5.9442139e-06px" />
+       originx="1.0351563e-06"
+       originy="8.5614014e-06" />
   </sodipodi:namedview>
   <metadata
      id="metadata5093">
@@ -72,9 +75,9 @@
        inkscape:label="#g4394"
        id="generic-md-3">
       <rect
-         style="color:#3a3836;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
          id="rect3455"
-         width="47"
+         width="44"
          height="15"
          x="234.99998"
          y="464.36218"
@@ -86,9 +89,9 @@
          y="465.36218"
          x="235.99998"
          height="13"
-         width="45"
+         width="42"
          id="rect3457"
-         style="color:#3a3836;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
          ry="1.0000021"
          rx="1.0000021" />
     </g>

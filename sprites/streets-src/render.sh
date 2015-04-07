@@ -27,18 +27,18 @@ do
             then
 
             convert ${present}/${render}/${g}/${icon}.png \
-                -matte -bordercolor none -border 4 ${present}/${render}/${g}/${icon}.png
+                -matte -bordercolor none -border 2 ${present}/${render}/${g}/${icon}.png
 
             convert  ${present}/${render}/${g}/${icon}.png \( +clone \
-                -channel A -morphology Edge Diamond:2 +channel \
+                -channel A -morphology Edge Diamond:1 +channel \
                 +level-colors white \
                 \) -compose DstOver -composite ${present}/${render}/${g}/${icon}.png
 
             convert ${present}/${render}/${g}/${icon}@2X.png \
-                -matte -bordercolor none -border 6 ${present}/${render}/${g}/${icon}@2X.png
+                -matte -bordercolor none -border 3 ${present}/${render}/${g}/${icon}@2X.png
 
             convert  ${present}/${render}/${g}/${icon}@2x.png \( +clone \
-                -channel A -morphology Edge Diamond:4 +channel \
+                -channel A -morphology Edge Diamond:2 +channel \
                 +level-colors white \
                 \) -compose DstOver -composite ${present}/${render}/${g}/${icon}@2x.png
             fi

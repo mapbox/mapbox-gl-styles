@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313709"
-     inkscape:cx="9.4637944"
-     inkscape:cy="16.333613"
+     inkscape:cx="10.038319"
+     inkscape:cy="14.035516"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -129,16 +129,18 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(5.0000019,-1026.3622)">
+    <rect
+       style="opacity:1;fill:#9c8ea4;fill-opacity:1;stroke:none;stroke-width:2.63156796;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+       id="rect12407"
+       width="26.999933"
+       height="26.999933"
+       x="-2.9999661"
+       y="1028.3622"
+       rx="1.9375539"
+       ry="1.9375539" />
     <g
        id="g24360"
        transform="translate(2.384614,-2)">
-      <circle
-         r="13.500001"
-         transform="scale(-1)"
-         cy="-1043.8622"
-         cx="-8.1153851"
-         id="ellipse11031-1"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#9c8ea4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.63156796;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
       <path
          inkscape:connector-curvature="0"
          id="rect4041"
