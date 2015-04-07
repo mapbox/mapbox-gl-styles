@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91 r"
    sodipodi:docname="cafe-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -29,10 +29,10 @@
      inkscape:window-height="711"
      id="namedview3358"
      inkscape:document-units="px"
-     showgrid="true"
-     inkscape:zoom="27.772728"
-     inkscape:cx="2.2896833"
-     inkscape:cy="7.6193785"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="11.493714"
+     inkscape:cy="4.6649944"
      inkscape:current-layer="svg4764"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -45,7 +45,12 @@
      inkscape:snap-smooth-nodes="true"
      inkscape:window-x="-21"
      inkscape:window-y="9"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="0"
+     inkscape:snap-global="true"
+     showguides="false"
+     showborder="false"
+     inkscape:showpageshadow="false"
+     inkscape:guide-bbox="true">
     <inkscape:grid
        type="xygrid"
        id="grid3333"
@@ -54,6 +59,22 @@
        color="#ff0000"
        opacity="0.1254902"
        empspacing="2" />
+    <sodipodi:guide
+       position="0,11"
+       orientation="0,1"
+       id="guide9879" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="0,1"
+       id="guide9881" />
+    <sodipodi:guide
+       position="0,11"
+       orientation="1,0"
+       id="guide9883" />
+    <sodipodi:guide
+       position="11,11"
+       orientation="1,0"
+       id="guide9885" />
   </sodipodi:namedview>
   <defs
      id="defs4766" />
@@ -70,15 +91,21 @@
     </rdf:RDF>
   </metadata>
   <path
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 0.5,1 0,6 c 0,0.7641379 0.7358621,1.5 1.5,1.5 l 5.5,0 C 7.5,8.5 9,8.5 9,7 l 0,-1 1,0 c 1,0 1,-1 1,-1 L 11,3 C 11,3 11,2 10,2 L 9,2 9,1 7.3965517,1 1.8793103,1 Z M 9,3 10,3 10,5 9,5 Z"
-     id="rect3335"
+     style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 9,2.5 c 0,0 1,6 -3.5,6 C 1,8.5 2,2.5 2,2.5 2.5,2 8.5,2 9,2.5 Z"
+     id="path9873"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="csscscsccscccccccccc" />
+     sodipodi:nodetypes="czcc" />
   <path
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 0,9.5 9.5,9.5 8,11 1.5,11 Z"
-     id="rect3359"
+     style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 1.25,9 9.75,9 10,9.5 c -2,0.75 -7,0.75 -9,0 z"
+     id="path9940"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccccc" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 9,3.25 c 1.5,-0.5 2,0.25 2,1.25 0,1 -0.5,2 -2,2 C 7.5,6.5 8.5,5.75 8.5,5.75 8.5,5.75 10.25,6 10.25,4.5 10.25,3 8.5,4.25 8.5,4.25 Z"
+     id="path9946"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccscscc" />
 </svg>
