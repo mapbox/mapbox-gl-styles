@@ -2569,7 +2569,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[13, "{maki}-11"], [14, "{maki}-17"]]
+        "stops": [[13, "{maki}-11"], [14, "{maki}-15"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
@@ -2608,7 +2608,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[13, "{maki}-11"], [14, "{maki}-17"]]
+        "stops": [[13, "{maki}-11"], [14, "{maki}-15"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
@@ -2647,7 +2647,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[12, "{maki}-11"], [13, "{maki}-17"]]
+        "stops": [[12, "{maki}-11"], [13, "{maki}-15"]]
       },
       "text-ignore-placement": false,
       "text-max-size": 18,
@@ -2834,7 +2834,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[14, "{maki}-15"], [15, "{maki}-17"]]
+        "stops": [[14, "{maki}-15"], [15, "{maki}-15"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
@@ -2873,7 +2873,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": {
-        "stops": [[14, "{maki}-11"], [15, "{maki}-17"]]
+        "stops": [[14, "{maki}-11"], [15, "{maki}-15"]]
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
