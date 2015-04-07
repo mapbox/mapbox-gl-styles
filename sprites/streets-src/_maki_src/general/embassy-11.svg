@@ -13,11 +13,11 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="embassy-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -25,15 +25,36 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="994"
+     inkscape:window-height="766"
      id="namedview3340"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="55.545455"
-     inkscape:cx="3.789689"
-     inkscape:cy="5.2299509"
-     inkscape:current-layer="svg4764" />
+     inkscape:zoom="1"
+     inkscape:cx="10.729238"
+     inkscape:cy="4.1465462"
+     inkscape:current-layer="svg4764"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3333"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#ff0000"
+       opacity="0.1254902"
+       empspacing="2" />
+  </sodipodi:namedview>
   <defs
      id="defs4766" />
   <metadata
@@ -44,13 +65,14 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="m 4.2777778,0 -3.0555556,1.2222222 0,9.7777778 1.2222222,0 0,-6.1111111 1.8333334,-0.6111111 3.0555555,1.8333333 2.4444445,-1.2222222 0,-4.2777778 -2.4444445,1.2222222 z"
+  <path
+     style="fill:#000000;fill-opacity:1"
+     d="M 5,0 2,1.5 2,11 3,11 3,5.5 5,4.5 8,6 10.5,5 10.5,0.5 8,1.5 Z"
      inkscape:connector-curvature="0"
      id="rect9498-4-99-4"
-      />
+     sodipodi:nodetypes="ccccccccccc" />
 </svg>

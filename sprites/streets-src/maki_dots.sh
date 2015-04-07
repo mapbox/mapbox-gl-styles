@@ -12,13 +12,13 @@ shapesrender="maki_shapes"
 count=0
 
 declare -a categories=(dining education general health outdoors transit) # icon categories
-declare -a colors=(3377a7 b5a462 a9a199 b28b8b 7e9a4c 9c8ea4) # colors correspond to categories
+declare -a colors=(987b66 b5a462 a9a199 b28b8b 7e9a4c 9c8ea4) # colors correspond to categories
 
 # For each category...
 for c in ${categories[@]}
 do
     # Adjust icon fill colors
-    for w in 11 17
+    for w in 11 15
     do
         sed -i '' 's/fill:#000000/fill:#ffffff/g' ${present}/${src}/${c}/*${w}.svg
     done
@@ -68,7 +68,7 @@ do
     }
 
     # Adjust shape colors
-    for w in 11 17
+    for w in 11 15
     do
         sed -i '' s/fill:#000000/fill:#${colors[count]}/g ${present}/${shapesrc}/*${w}.svg
     done
@@ -78,27 +78,35 @@ do
 
     build_shape_pngs $shapesvgs
 
+    # Transit icons are placed on a square, all else placed on circle.
+    if [ ${c} == transit ]
+    then
+        shape=square
+    else
+        shape=circle
+    fi
+
     # combine shapes and icons
     for icon in $(ls ${present}/${render}/${c} | sed 's/.*\///g;s/-[0-9].*png//g' | sort | uniq )
     do
         echo "${icon}-11.png"
-        composite -gravity center -geometry -0-0 ${present}/${render}/${c}/${icon}-11.png ${present}/${shapesrender}/shape-11.png ${present}/${render}/${c}/${icon}-11.png
+        composite -gravity center -geometry -0-0 ${present}/${render}/${c}/${icon}-11.png ${present}/${shapesrender}/${shape}-11.png ${present}/${render}/${c}/${icon}-11.png
         echo "${icon}-11@2x.png"
-        composite -gravity center -geometry -0-0 ${present}/${render}/${c}/${icon}-11@2x.png ${present}/${shapesrender}/shape-11@2x.png ${present}/${render}/${c}/${icon}-11@2x.png
-        echo "${icon}-17.png"
-        composite -gravity center -geometry -0-0 ${present}/${render}/${c}/${icon}-17.png ${present}/${shapesrender}/shape-17.png ${present}/${render}/${c}/${icon}-17.png
-        echo "${icon}-17@2x.png"
-        composite -gravity center -geometry -0-0 ${present}/${render}/${c}/${icon}-17@2x.png ${present}/${shapesrender}/shape-17@2x.png ${present}/${render}/${c}/${icon}-17@2x.png
+        composite -gravity center -geometry -0-0 ${present}/${render}/${c}/${icon}-11@2x.png ${present}/${shapesrender}/${shape}-11@2x.png ${present}/${render}/${c}/${icon}-11@2x.png
+        echo "${icon}-15.png"
+        composite -gravity center -geometry -0-0 ${present}/${render}/${c}/${icon}-15.png ${present}/${shapesrender}/${shape}-15.png ${present}/${render}/${c}/${icon}-15.png
+        echo "${icon}-15@2x.png"
+        composite -gravity center -geometry -0-0 ${present}/${render}/${c}/${icon}-15@2x.png ${present}/${shapesrender}/${shape}-15@2x.png ${present}/${render}/${c}/${icon}-15@2x.png
     done
 
     # Reset shape fill colors
-    for w in 11 17
+    for w in 11 15
     do
         sed -i '' s/fill:#${colors[count]}/fill:#000000/g ${present}/${shapesrc}/*${w}.svg
     done
 
     # Reset icon fill colors
-    for w in 11 17
+    for w in 11 15
     do
         sed -i '' 's/fill:#ffffff/fill:#000000/g' ${present}/${src}/${c}/*${w}.svg
     done

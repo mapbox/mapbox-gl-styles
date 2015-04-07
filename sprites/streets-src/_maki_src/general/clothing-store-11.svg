@@ -13,11 +13,11 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="clothing-store-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -25,15 +25,36 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="975"
+     inkscape:window-height="758"
      id="namedview3389"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="55.545455"
-     inkscape:cx="3.2495908"
-     inkscape:cy="5.3379705"
-     inkscape:current-layer="svg4764" />
+     inkscape:zoom="45.254834"
+     inkscape:cx="2.8783933"
+     inkscape:cy="4.6974921"
+     inkscape:current-layer="svg4764"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3333"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#ff0000"
+       opacity="0.1254902"
+       empspacing="2" />
+  </sodipodi:namedview>
   <defs
      id="defs4766" />
   <metadata
@@ -44,13 +65,14 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="M 2.4444444,0 1.2222222,1.2222222 0,3.6666667 l 0,1.2222222 2.4444444,0 0,6.1111111 6.1111116,0 0,-6.1111111 2.444444,0 L 11,3.6666667 9.777778,1.2222222 8.555556,0 7.3333333,0 l 0,0.91666667 C 7.3333333,1.5277778 6.7222222,2.4444444 5.5,2.4444444 c -1.2222222,0 -1.8333333,-0.9166666 -1.8333333,-1.52777773 L 3.6666667,0 Z"
+  <path
+     style="fill:#000000;fill-opacity:1"
+     d="M 2.5,0 1.5,1 0,3.5 0,5 l 2.5,0 0,6 6,0 0,-6 L 11,5 11,3.5 9.5,1 l -1,-1 -1,0 0,1 c 0,0.6111111 -0.7777778,1.5 -2,1.5 -1.2222222,0 -2,-0.8888889 -2,-1.5 l 0,-1 z"
      inkscape:connector-curvature="0"
      id="rect3131"
-      />
+     sodipodi:nodetypes="cccccccccccccssscc" />
 </svg>

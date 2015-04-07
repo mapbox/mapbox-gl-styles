@@ -14,7 +14,7 @@
    height="12.000001"
    id="svg3122"
    inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="london-overground.london-underground.national-rail-12.svg"
+   sodipodi:docname="london-overground.london-underground.national-rail-11.svg"
    viewBox="0 0 36 12.000001">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -35,13 +35,15 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="31.388888"
-     inkscape:cx="28.781283"
-     inkscape:cy="6.3558362"
+     inkscape:cx="31.791903"
+     inkscape:cy="5.0496415"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3122"
-     inkscape:document-units="px">
+     inkscape:document-units="px"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid3003"
@@ -66,6 +68,15 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.63156796;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     id="rect13555"
+     width="10"
+     height="8"
+     x="25"
+     y="2.0000174"
+     rx="1"
+     ry="1" />
   <g
      transform="matrix(0.49999928,0,0,0.49999928,0,-514.18033)"
      id="layer0">

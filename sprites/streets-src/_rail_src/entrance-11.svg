@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="10.901392"
-     inkscape:cy="8.3210453"
+     inkscape:zoom="16"
+     inkscape:cx="9.7796219"
+     inkscape:cy="10.270468"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -102,7 +102,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -111,14 +111,15 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(3,-1033.3623)">
-    <ellipse
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#9c8ea4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="ellipse11031"
-       cx="-7.5001583"
-       cy="-1043.8623"
-       rx="9.5001583"
-       ry="9.4999809"
-       transform="scale(-1)" />
+    <rect
+       style="opacity:1;fill:#9c8ea4;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+       id="rect10153"
+       width="19"
+       height="19"
+       x="-2"
+       y="1034.3622"
+       rx="2.0000317"
+       ry="2.0000317" />
     <rect
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#a3a3a3;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
        id="rect3090"

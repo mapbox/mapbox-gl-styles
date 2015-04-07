@@ -11,11 +11,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="26"
-   height="19"
+   height="20"
    id="svg3844"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="us-interstate-business-3-small.svg"
-   viewBox="0 0 26 19">
+   viewBox="0 0 26 20">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -29,9 +29,9 @@
      inkscape:window-height="751"
      id="namedview5316"
      showgrid="true"
-     inkscape:zoom="6.8126511"
-     inkscape:cx="7.3626511"
-     inkscape:cy="0.61810984"
+     inkscape:zoom="13.625302"
+     inkscape:cx="13.357311"
+     inkscape:cy="8.8508"
      inkscape:window-x="-53"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -87,20 +87,27 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
      style="opacity:1;fill:#7e9a4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-     d="M -9.68e-5,5.0000004 C 9.68e-5,13.00161 3.7142166,18.5 13,19 22.285783,18.5 26.000097,13.00161 26.000097,5.0000004 l -13.000097,0 z"
-     id="path9494"
+     d="m 9.7000001e-5,7 c 0,8 12.999999999999,12 12.999999999999,12 0,0 12.999999,-4 12.999999,-12 l 0,-3 L 9.7000001e-5,4 Z"
+     id="path9494-4"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccc" />
+     sodipodi:nodetypes="cccccc" />
   <path
      style="opacity:1;fill:#7e9a4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-     d="m -9.68e-5,4.0000004 c 0,-1 0.61905223,-3 0.61905223,-3 0.20130588,-0.5 0.61905227,-1 1.23810447,-0.5 0,0 2.8284088,1.9627234 4.9524178,2 2.3065267,0.04048 4.3333653,-1.5 4.9524183,-2 0,0 1.238104,-1 2.476208,0 0.619053,0.5 3.211666,2.0305504 4.952418,2 2.124009,-0.037277 4.333366,-1.5 4.952418,-2 0.619052,-0.5 1.118103,0 1.238105,0.5 0,0 0.619052,2 0.619052,3 z"
-     id="path9499"
+     d="m 9.7000001e-5,4 c 0,-2 0.961938939999,-2.779786 1.529411699999,-4 0,0 3.0588234,2 5.7352939,2 2.6764705,0 5.7352944,-2 5.7352944,-2 0,0 3.058823,2 5.735294,2 2.67647,0 5.735293,-2 5.735293,-2 0,0 1.529412,2 1.529412,4 z"
+     id="path9499-4"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="csscccccccc" />
+     sodipodi:nodetypes="ccscsccc" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect5252"
+     width="26"
+     height="0.99999958"
+     x="9.6999996e-05"
+     y="4" />
 </svg>

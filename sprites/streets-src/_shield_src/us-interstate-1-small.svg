@@ -11,11 +11,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="17"
-   height="19"
+   height="20"
    id="svg3844"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="us-interstate-1-small.svg"
-   viewBox="0 0 17 19">
+   viewBox="0 0 17 20">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -28,10 +28,10 @@
      inkscape:window-width="1280"
      inkscape:window-height="751"
      id="namedview5316"
-     showgrid="true"
-     inkscape:zoom="17.956227"
-     inkscape:cx="6.6084549"
-     inkscape:cy="9.0713788"
+     showgrid="false"
+     inkscape:zoom="4"
+     inkscape:cx="-12.191638"
+     inkscape:cy="3.7844463"
      inkscape:window-x="-104"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -83,14 +83,21 @@
      y="2" />
   <path
      style="fill:#5396c7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.89973539px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 0,5.0000004 C 0,12 2.4285714,18.5 8.5,19 14.571429,18.5 17,12 17,5.0000004 l -8.5,0 z"
+     d="M 0,7.0000004 C 0,15 8.5,19 8.5,19 8.5,19 17,15 17,7.0000004 l 0,-2.9999999 -17,-10e-8 z"
      id="path9494"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccc" />
+     sodipodi:nodetypes="cccccc" />
   <path
      style="fill:#e97474;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.89973539px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 0,4.0000004 c 0,-1 0.4047619,-3 0.4047619,-3 0.1316221,-0.5 0.40476191,-1 0.8095238,-0.5 0,0 1.8493304,1.9627234 3.2380953,2 1.5081023,0.04048 2.8333333,-1.5 3.2380952,-2 0,0 0.8095238,-1 1.6190476,0 0.4047619,0.5 2.0999192,2.0305504 3.2380952,2 1.388765,-0.037277 2.833333,-1.5 3.238095,-2 0.404762,-0.5 0.731062,0 0.809524,0.5 0,0 0.404762,2 0.404762,3 z"
+     d="M 0,4.0000004 C 0,2 0.62896007,1.2202137 1,0 1,0 3,2 4.75,2 6.5,2 8.5,0 8.5,0 c 0,0 2,2 3.75,2 C 14,2 16,0 16,0 c 0,0 1,2 1,4.0000004 z"
      id="path9499"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="csscccccccc" />
+     sodipodi:nodetypes="ccscsccc" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect5252"
+     width="17"
+     height="0.99999958"
+     x="0"
+     y="4.0000005" />
 </svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   height="17"
+   width="17"
+   version="1.1"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="dog-park-17.svg"
+   viewBox="0 0 15 15">
+  <sodipodi:namedview
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3432"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="35.941176"
+     inkscape:cx="7.3036007"
+     inkscape:cy="8.5834697"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <path style="fill:#000000;fill-opacity:1"
+     id="path6"
+     d="M 13.6,2.2666666 11.9,3.4 10.766667,5.6666666 13.033333,7.9333333 13.6,6.8 16.433333,6.8 17,5.6666666 l -3.4,-1.7 1.133333,-1.7 -1.133333,0 z M 3.4,3.4 1.7,5.6666666 2.975,8.0750001 2.4371093,9.4341146 2.55,10.2 0,14.733333 l 1.1333333,0 2.8333334,-3.4 -0.5666667,3.4 1.1333333,0 L 5.6666667,10.2 l 3.9666663,1.133333 -1.133333,3.4 1.7,0 1.133333,-3.4 0.566667,3.4 1.7,0 -1.133333,-3.4 0,-2.833333 L 10.2,6.2333333 9.066667,6.8 l -4.5333337,0 -1.7,-1.1333334 L 4.5333333,3.4 3.4,3.4 Z"
+
+     inkscape:connector-curvature="0" />
+</svg>
