@@ -10,14 +10,14 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="17"
-   height="17"
+   width="15"
+   height="15"
    id="svg4619"
-   inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="hairdresser-17.svg"
-   viewBox="0 0 15 15">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="hairdresser-15.svg"
+   viewBox="0 0 13.235294 13.235294">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -25,8 +25,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="976"
+     inkscape:window-height="697"
      id="namedview3356"
      inkscape:document-units="px"
      showgrid="true"
@@ -35,16 +35,21 @@
      inkscape:object-paths="true"
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
-     inkscape:zoom="11.843188"
-     inkscape:cx="-6.6392463"
-     inkscape:cy="3.9747802"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:zoom="33.497594"
+     inkscape:cx="7.7154919"
+     inkscape:cy="5.7947594"
+     inkscape:window-x="188"
+     inkscape:window-y="52"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4619">
     <inkscape:grid
        type="xygrid"
-       id="grid3358" />
+       id="grid3358"
+       color="#ff0000"
+       opacity="0.1254902"
+       spacingx="0.44117647"
+       spacingy="0.44117647"
+       empspacing="2" />
   </sodipodi:namedview>
   <defs
      id="defs4621" />
@@ -56,14 +61,14 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="M 2.2666667,2.2666666 C 1.0148215,2.2666666 0,3.281523 0,4.5333333 0,5.7851436 1.0148215,6.8 2.2666667,6.8 2.6802941,6.8 3.0661837,6.6748103 3.4,6.4812717 L 6.2333333,8.5 3.4,10.518728 C 3.0661837,10.32519 2.6802941,10.2 2.2666667,10.2 1.0148215,10.2 0,11.214857 0,12.466666 c 0,1.25181 1.0148215,2.266667 2.2666667,2.266667 1.2518451,0 2.2666666,-1.014857 2.2666666,-2.266667 0,-0.207312 -0.018691,-0.411312 -0.070833,-0.602061 L 17,2.8333333 15.866667,2.2666666 l -2.939584,0 L 11.333333,3.4 6.69375,6.729123 4.4625,5.1353949 c 0.052142,-0.1907488 0.070833,-0.3947488 0.070833,-0.6020616 0,-1.2518103 -1.0148215,-2.2666667 -2.2666666,-2.2666667 z M 10.73125,9.6687282 8.2875,11.404123 11.333333,13.6 l 1.59375,1.133333 2.939584,0 L 17,14.166666 Z"
+  <path
+     style="fill:#000000;fill-opacity:1"
+     d="m 1.567817,1.6988161 c -0.80547081,0 -1.4584339,0.6609267 -1.4584339,1.4762713 0,0.8153446 0.65296309,1.4762712 1.4584339,1.4762712 0.259085,0 0.4727697,-0.1107212 0.6836415,-0.2305936 l 0.7747938,0.6919286 0,3.3678175 -0.8203699,0.7841948 C 2.0078649,9.1628457 1.8050978,9.0801719 1.567817,9.0801719 c -0.80547081,0 -1.4584339,0.6609265 -1.4584339,1.4762731 0,0.815343 0.65296309,1.47627 1.4584339,1.47627 0.8054709,0 1.4584353,-0.660927 1.4584353,-1.47627 0,-0.119574 -0.064508,-0.211256 -0.091149,-0.322862 L 13.235294,1.765919 10.572066,1.7647058 8.3527096,2.6470588 5.1227542,5.2972273 2.9351029,3.4980954 c 0.026655,-0.1121968 0.091149,-0.2031348 0.091149,-0.323008 0,-0.8153446 -0.6529631,-1.4762713 -1.4584353,-1.4762713 z m 6.4718023,6.0435595 -1.8230428,1.5223303 2.5800043,1.7647061 2.2193572,0.882353 2.219353,0 z"
      inkscape:connector-curvature="0"
-     id="path3187-0"
-
-     sodipodi:nodetypes="csscccsssscccccccsccccccccc" />
+     id="path3595"
+     sodipodi:nodetypes="sssccccssssccccccsscccccc" />
 </svg>

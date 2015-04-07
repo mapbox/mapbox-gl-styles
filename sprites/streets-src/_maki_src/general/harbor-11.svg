@@ -13,11 +13,11 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="harbor-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -25,11 +25,11 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="872"
+     inkscape:window-height="635"
      id="namedview3352"
      inkscape:document-units="px"
-     showgrid="true"
+     showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:object-paths="true"
      inkscape:bbox-paths="true"
@@ -37,13 +37,21 @@
      inkscape:object-nodes="true"
      inkscape:snap-intersection-paths="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="19.638284"
-     inkscape:cx="4.6833309"
-     inkscape:cy="5.9290717"
-     inkscape:current-layer="svg4764">
+     inkscape:zoom="1"
+     inkscape:cx="5.5"
+     inkscape:cy="5.5"
+     inkscape:current-layer="svg4764"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
-       id="grid3407" />
+       id="grid3407"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#ff0000"
+       opacity="0.1254902"
+       empspacing="2" />
   </sodipodi:namedview>
   <defs
      id="defs4766" />
@@ -55,14 +63,14 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="M 7.4097222,0 6.1875,1.2222222 l 0,2.3680556 -4.1631944,4.1632555 c 0,0 -0.8020834,-1.0313111 -0.8020834,-1.6424222 l 0,-1.2222222 L 2.4444444,5.5 l 0,-3.0555556 L 0,4.2777778 0,6.1111111 0,11 l 6.7222222,0 1.8333334,-2.4444444 -3.0555556,0 0.6111111,1.2222222 -1.2222222,0 c -0.6111111,0 -1.0864578,-0.3026222 -1.6423611,-0.7256334 l 4.1631944,-4.1632555 2.3680558,0 L 11,3.6666667 11,1.2222222 9.777778,0 Z m 0.6111111,1.2222222 1.2222227,0 0.611111,0.6111111 0,1.2222223 L 9.243056,3.6666667 8.0206378,3.685 7.4097222,3.0549444 l 0,-1.2222222 z"
+  <path
+     style="fill:#000000;fill-opacity:1"
+     d="M 7.4097222,0 6.1875,1.2222222 l 0,2.3680556 -4.1631944,4.1632555 c 0,0 -0.8020834,-1.0313111 -0.8020834,-1.6424222 l 0,-1.2222222 L 2.5,5.5 2.5,2.4444444 0,4.2777778 0,6.1111111 0,11 6.7222222,11 8.5,8.5 l -3,0 0.6111111,1.2777778 -1.2222222,0 c -0.6111111,0 -1.0864578,-0.3026222 -1.6423611,-0.7256334 l 4.1631944,-4.1632555 2.3680558,0 L 11,3.6666667 11,1.2222222 9.777778,0 Z m 0.6111111,1.2222222 1.2222227,0 0.611111,0.6111111 0,1.2222223 L 9.243056,3.6666667 8.0206378,3.685 7.4097222,3.0549444 l 0,-1.2222222 z"
      inkscape:connector-curvature="0"
      id="path7720"
-
      sodipodi:nodetypes="ccccsccccccccccscccccccccccccccc" />
 </svg>

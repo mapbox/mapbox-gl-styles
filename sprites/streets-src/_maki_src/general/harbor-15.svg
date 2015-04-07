@@ -10,14 +10,14 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="17"
-   height="17"
+   width="15"
+   height="15"
    id="svg4619"
-   inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="harbor-17.svg"
-   viewBox="0 0 15 15">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="harbor-15.svg"
+   viewBox="0 0 13.235294 13.235294">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -25,15 +25,34 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1016"
+     inkscape:window-height="653"
      id="namedview3358"
      inkscape:document-units="px"
-     showgrid="false"
-     inkscape:zoom="35.941176"
-     inkscape:cx="5.0220949"
-     inkscape:cy="8.2495908"
-     inkscape:current-layer="svg4619" />
+     showgrid="true"
+     inkscape:zoom="9.8124664"
+     inkscape:cx="9.2470284"
+     inkscape:cy="8.249489"
+     inkscape:current-layer="svg4619"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-x="207"
+     inkscape:window-y="113"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3333"
+       spacingx="0.44117647"
+       spacingy="0.44117647"
+       color="#ff0000"
+       opacity="0.1254902"
+       empspacing="2" />
+  </sodipodi:namedview>
   <defs
      id="defs4621" />
   <metadata
@@ -44,13 +63,20 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="m 13.076923,0 -1.307692,0.6538462 -0.653846,0.6538461 -0.653847,1.3076923 0,1.3076923 0.122531,0.5313154 L 2.2884615,12.75 C 1.3076923,11.769231 1.3076923,9.1538462 2.6153846,7.8461538 l 1.3076923,1.3076924 0,-5.2307693 -1.9615384,1.9615385 C 0.6538462,7.1923077 0,7.8461538 0,9.8076923 L 0,11.769231 0,17 5.2307692,17 7.1923077,17 C 8.5,17 9.8076923,16.346154 11.115385,15.038462 l 0.653846,-0.653847 1.307692,-1.307692 -1.307692,0 -3.9230772,0 1.3076924,1.307692 C 7.8461538,15.692308 5.2307692,15.692308 4.25,14.711538 l 8.295673,-8.2956072 0.53125,0.122923 1.307692,0 L 15.692308,5.8850077 16.346154,5.2311615 17,3.9234692 17,2.6157769 16.346154,1.3080846 15.692308,0.6542385 14.384615,3.923e-4 l -1.307692,0 z m 0,1.9615385 0.653846,0 0.653846,0 0.653847,0.6538461 0,0.6538462 0,0.6538461 -0.653847,0.6538462 -0.653846,0 -0.653846,0 -0.653846,-0.6538462 0,-0.6538461 0,-0.6538462 0.653846,-0.6538461 z"
+  <path
+     style="fill:#000000;fill-opacity:1"
+     d="M 8.9154408,-1.0000001e-7 7.4448531,1.4705882 l 0,2.8492646 -5.0091913,5.0092653 c 0,0 -0.9650741,-1.2408829 -0.9650741,-1.9761761 l 0,-0.7304038 C 1.4258639,5.7864286 2.167834,6.199283 2.167834,6.199283 l 0.9204013,0.4183641 0,-3.9705883 L 0,5.1470587 0,7.352942 l 0,5.882352 8.0882358,0 2.4999992,-3.088235 -3.9705878,0 0.4156422,0.914413 c 0.3511408,0.715534 -0.3728452,0.703234 -0.3728452,0.703234 l -0.778092,0 c -0.7352931,0 -1.307235,-0.364118 -1.9761027,-0.873088 l 5.0091913,-5.0092651 2.8492652,0 1.470588,-1.4705882 0,-2.9411765 L 11.764706,-1.0000001e-7 Z"
      inkscape:connector-curvature="0"
-     id="path7366"
-      />
+     id="path7720"
+     sodipodi:nodetypes="ccccsccccccccccccsccccccc" />
+  <circle
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path3341"
+     cx="10.367647"
+     cy="2.8676469"
+     r="1.2213058" />
 </svg>
