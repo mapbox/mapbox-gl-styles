@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="26"
-   height="19"
+   width="31"
+   height="24"
    id="svg3844"
    inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="us-interstate-business-3-small.svg"
-   viewBox="0 0 26 19">
+   sodipodi:docname="us-interstate-business-3-large.svg"
+   viewBox="0 0 31 24">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -29,9 +29,9 @@
      inkscape:window-height="751"
      id="namedview5316"
      showgrid="true"
-     inkscape:zoom="6.8126511"
-     inkscape:cx="7.3626511"
-     inkscape:cy="0.61810984"
+     inkscape:zoom="15.999999"
+     inkscape:cx="14.005475"
+     inkscape:cy="16.569781"
      inkscape:window-x="-53"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -39,7 +39,7 @@
      inkscape:snap-bbox="true"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:object-paths="false"
+     inkscape:object-paths="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -48,11 +48,12 @@
      inkscape:object-nodes="true"
      borderlayer="true"
      inkscape:bbox-paths="true"
-     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-edge-midpoints="false"
      inkscape:snap-nodes="true"
      inkscape:snap-smooth-nodes="true"
      inkscape:document-units="px"
-     showborder="true">
+     inkscape:showpageshadow="true"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid5480"
@@ -62,18 +63,18 @@
        snapvisiblegridlinesonly="true"
        spacingx="0.5px"
        spacingy="0.5px"
-       originx="4.0000968"
-       originy="1.9983899" />
+       originx="7"
+       originy="3" />
     <sodipodi:guide
        orientation="1,0"
-       position="14.000097,18.49839"
+       position="17,19.5"
        id="guide5601" />
     <sodipodi:guide
        orientation="1,0"
-       position="4.5000968,18.49839"
+       position="7.5,19.5"
        id="guide5603" />
     <sodipodi:guide
-       position="23.500097,15.99839"
+       position="26.5,17"
        orientation="0,1"
        id="guide9216" />
   </sodipodi:namedview>
@@ -93,14 +94,21 @@
   </metadata>
   <path
      style="opacity:1;fill:#7e9a4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-     d="M -9.68e-5,5.0000004 C 9.68e-5,13.00161 3.7142166,18.5 13,19 22.285783,18.5 26.000097,13.00161 26.000097,5.0000004 l -13.000097,0 z"
-     id="path9494"
+     d="M 0,8.5187124 C 0,19.381621 15.5,23 15.5,23 15.5,23 31,19.381621 31,8.5187124 L 31,5 0,5 Z"
+     id="path9494-5"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccc" />
+     sodipodi:nodetypes="cccccc" />
   <path
      style="opacity:1;fill:#7e9a4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-     d="m -9.68e-5,4.0000004 c 0,-1 0.61905223,-3 0.61905223,-3 0.20130588,-0.5 0.61905227,-1 1.23810447,-0.5 0,0 2.8284088,1.9627234 4.9524178,2 2.3065267,0.04048 4.3333653,-1.5 4.9524183,-2 0,0 1.238104,-1 2.476208,0 0.619053,0.5 3.211666,2.0305504 4.952418,2 2.124009,-0.037277 4.333366,-1.5 4.952418,-2 0.619052,-0.5 1.118103,0 1.238105,0.5 0,0 0.619052,2 0.619052,3 z"
-     id="path9499"
+     d="M 0,5 C 0,2.6007721 1.8235293,0 1.8235293,0 c 0,0 3.6470591,2.4991952 6.8382354,2.4991952 C 11.852941,2.4991952 15.5,0 15.5,0 c 0,0 3.64706,2.4991952 6.838236,2.4991952 C 25.529412,2.4991952 29.176471,0 29.176471,0 29.176471,0 31,2.6007721 31,5 Z"
+     id="path9499-8"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="csscccccccc" />
+     sodipodi:nodetypes="ccscsccc" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect5252"
+     width="31"
+     height="1.0000001"
+     x="0"
+     y="5" />
 </svg>

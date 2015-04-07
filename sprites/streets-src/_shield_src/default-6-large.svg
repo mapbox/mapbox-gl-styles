@@ -9,12 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="47"
-   height="15"
+   width="50"
+   height="18"
    id="svg5088"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="default-5.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="default-6-large.svg"
+   viewBox="0 0 50 18">
   <defs
      id="defs5090" />
   <sodipodi:namedview
@@ -24,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="41.389507"
-     inkscape:cy="3.1536623"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="38.889494"
+     inkscape:cy="-5.3662231"
      inkscape:document-units="px"
      inkscape:current-layer="generic-md-3"
      showgrid="true"
@@ -39,7 +40,10 @@
      inkscape:window-x="354"
      inkscape:window-y="439"
      inkscape:window-maximized="0"
-     inkscape:snap-bbox="true">
+     inkscape:snap-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid3074"
@@ -47,8 +51,8 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="7.7636721e-07px"
-       originy="5.9442139e-06px" />
+       originx="1.5487891e-06"
+       originy="1.1397187e-05" />
   </sodipodi:namedview>
   <metadata
      id="metadata5093">
@@ -66,31 +70,34 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-54.999985,-944.36218)">
+     transform="translate(-54.999985,-941.36218)">
     <g
        transform="translate(-180,480)"
        inkscape:label="#g4394"
        id="generic-md-3">
-      <rect
-         style="color:#3a3836;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="rect3455"
-         width="47"
-         height="15"
-         x="234.99998"
-         y="464.36218"
-         inkscape:label="#rect3893"
-         ry="2.0000021"
-         rx="2.0000021" />
-      <rect
-         inkscape:label="#rect3893"
-         y="465.36218"
-         x="235.99998"
-         height="13"
-         width="45"
-         id="rect3457"
-         style="color:#3a3836;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         ry="1.0000021"
-         rx="1.0000021" />
+      <g
+         id="g6358">
+        <rect
+           rx="2.9999888"
+           ry="2.9999888"
+           inkscape:label="#rect3893"
+           y="461.36218"
+           x="234.99998"
+           height="18"
+           width="50"
+           id="rect3455"
+           style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.18501282;marker:none;enable-background:accumulate" />
+        <rect
+           rx="1.9999888"
+           ry="1.9999888"
+           style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.20398235;marker:none;enable-background:accumulate"
+           id="rect3457"
+           width="48"
+           height="16.000008"
+           x="235.99998"
+           y="462.36218"
+           inkscape:label="#rect3893" />
+      </g>
     </g>
   </g>
 </svg>

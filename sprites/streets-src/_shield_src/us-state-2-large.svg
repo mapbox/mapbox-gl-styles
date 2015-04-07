@@ -9,12 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="23"
-   height="15"
+   width="27.999998"
+   height="18"
    id="svg5037"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="us-state-2.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="us-state-2-large.svg"
+   viewBox="0 0 27.999998 18">
   <defs
      id="defs5039" />
   <sodipodi:namedview
@@ -25,11 +26,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.2"
-     inkscape:cx="16.419267"
-     inkscape:cy="6.047226"
+     inkscape:cx="14.403947"
+     inkscape:cy="7.758712"
      inkscape:document-units="px"
      inkscape:current-layer="generic-md-2"
-     showgrid="false"
+     showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -38,7 +39,16 @@
      inkscape:window-height="386"
      inkscape:window-x="609"
      inkscape:window-y="308"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="0"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9134"
+       originx="1.5517578e-05"
+       originy="2.6171875e-06" />
+  </sodipodi:namedview>
   <metadata
      id="metadata5042">
     <rdf:RDF>
@@ -47,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,28 +65,28 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-54.999985,-923.36218)">
+     transform="translate(-54.999969,-920.36218)">
     <g
        transform="translate(-180,480)"
        inkscape:label="#g4390"
        id="generic-md-2">
       <rect
          inkscape:label="#rect3893"
-         y="443.36218"
-         x="234.99998"
-         height="15"
-         width="23"
+         y="440.36218"
+         x="234.99997"
+         height="18"
+         width="27.999998"
          id="rect3449"
-         style="color:#3a3836;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         rx="7.0000024"
+         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
+         rx="7.0000019"
          ry="7.0000024" />
       <rect
-         style="color:#3a3836;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
          id="rect3451"
-         width="21"
-         height="13"
+         width="26"
+         height="16"
          x="235.99998"
-         y="444.36218"
+         y="441.36218"
          inkscape:label="#rect3893"
          rx="5.9999995"
          ry="5.9999995" />

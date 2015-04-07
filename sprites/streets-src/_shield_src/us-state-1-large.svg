@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="21"
-   height="17"
+   width="22.000004"
+   height="18"
    id="svg4986"
    version="1.1"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="us-state-1-large.svg"
-   viewBox="0 0 21 17">
+   viewBox="0 0 22.000004 18">
   <defs
      id="defs4988" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="14.730159"
-     inkscape:cx="10.917942"
-     inkscape:cy="8.6236285"
+     inkscape:zoom="10.415795"
+     inkscape:cx="9.0675643"
+     inkscape:cy="8.8517775"
      inkscape:document-units="px"
      inkscape:current-layer="generic-md-1"
      showgrid="true"
@@ -39,12 +39,15 @@
      inkscape:window-height="734"
      inkscape:window-x="551"
      inkscape:window-y="266"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="0"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid6907"
-       originx="5e-06"
-       originy="5.6843419e-14" />
+       originx="8.0462858e-06"
+       originy="2.1115892e-05" />
   </sodipodi:namedview>
   <metadata
      id="metadata4991">
@@ -62,23 +65,29 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-54.99998,-901.36218)">
+     transform="translate(-54.999977,-900.3622)">
     <g
        transform="translate(-180,480)"
        inkscape:label="#g4386"
        id="generic-md-1">
-      <path
-         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-         d="m 241.99998,421.36218 7,0 c 3.878,0 7,3.122 7,7 l 0,3 c 0,3.878 -3.122,7 -7,7 l -7,0 c -3.878,0 -7,-3.122 -7,-7 l 0,-3 c 0,-3.878 3.122,-7 7,-7 z"
-         id="rect3443"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="sssssssss" />
-      <path
-         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-         d="m 241.99998,422.36218 7.00001,0 c 3.32399,0 5.99999,2.676 5.99999,6 l 0,3 c 0,3.324 -2.676,6 -5.99999,6 l -7.00001,0 c -3.324,0 -6,-2.676 -6,-6 l 0,-3 c 0,-3.324 2.676,-6 6,-6 z"
-         id="rect3445"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g6908"
+         transform="matrix(0.85714286,0,0,0.85714286,34.600002,60.737457)"
+         style="stroke-width:1.16666663">
+        <path
+           sodipodi:nodetypes="sssssssss"
+           inkscape:connector-curvature="0"
+           id="rect3443"
+           d="m 242.35552,419.5622 8.55556,0 c 4.73979,0 8.55556,3.85658 8.55556,8.64705 l 0,3.70589 c 0,4.79047 -3.81579,8.64706 -8.55556,8.64706 l -8.55556,0 c -4.73977,0 -8.55555,-3.85659 -8.55555,-8.64706 l 0,-3.70589 c 0,-4.79047 3.81578,-8.64705 8.55555,-8.64705 z"
+           style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.16666663;marker:none;enable-background:accumulate" />
+        <path
+           sodipodi:nodetypes="sssssssss"
+           inkscape:connector-curvature="0"
+           id="rect3445"
+           d="m 242.33507,420.72884 8.59649,0 c 4.0821,0 7.36841,3.33013 7.36841,7.46666 l 0,3.73334 c 0,4.13653 -3.28631,7.46667 -7.36841,7.46667 l -8.59649,0 c -4.08211,0 -7.36842,-3.33014 -7.36842,-7.46667 l 0,-3.73334 c 0,-4.13653 3.28631,-7.46666 7.36842,-7.46666 z"
+           style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.16666639;marker:none;enable-background:accumulate"
+           transform="translate(0,4.9374802e-5)" />
+      </g>
     </g>
   </g>
 </svg>

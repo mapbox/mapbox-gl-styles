@@ -13,8 +13,9 @@
    height="15"
    id="svg4986"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="us-state-1.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="us-state-1-small.svg"
+   viewBox="0 0 17 15">
   <defs
      id="defs4988" />
   <sodipodi:namedview
@@ -25,11 +26,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="3.9594988"
-     inkscape:cy="-0.53287006"
+     inkscape:cx="6.6782488"
+     inkscape:cy="4.5296299"
      inkscape:document-units="px"
      inkscape:current-layer="generic-md-1"
-     showgrid="false"
+     showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -38,7 +39,11 @@
      inkscape:window-height="734"
      inkscape:window-x="551"
      inkscape:window-y="266"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid7482" />
+  </sodipodi:namedview>
   <metadata
      id="metadata4991">
     <rdf:RDF>
@@ -61,7 +66,7 @@
        inkscape:label="#g4386"
        id="generic-md-1">
       <rect
-         style="color:#3a3836;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
          id="rect3443"
          width="17"
          height="15"
@@ -77,7 +82,7 @@
          height="13"
          width="15"
          id="rect3445"
-         style="color:#3a3836;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
          rx="5.9999995"
          ry="5.9999995" />
     </g>
