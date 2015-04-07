@@ -16,8 +16,8 @@
    viewBox="0 0 15 15"
    enable-background="new 0 0 15 15"
    xml:space="preserve"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="rail-metro-17.svg"><metadata
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="rail-metro-15.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
@@ -33,7 +33,7 @@
      inkscape:window-width="1194"
      inkscape:window-height="704"
      id="namedview4"
-     showgrid="true"
+     showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
@@ -43,9 +43,9 @@
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="13.882353"
-     inkscape:cx="3.5456252"
-     inkscape:cy="9.2394019"
+     inkscape:zoom="16"
+     inkscape:cx="5.758905"
+     inkscape:cy="8.957289"
      inkscape:window-x="31"
      inkscape:window-y="8"
      inkscape:window-maximized="0"
@@ -58,5 +58,5 @@
        opacity="0.1254902"
        empspacing="2" /></sodipodi:namedview><path
      style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 4.5 1 C 3.5 1 3.5 2 3.5 2 L 1.5 9 C 1.5 9 1.5 11 3.5 11 L 12 11 C 14 11 14 9 14 9 L 12 2 C 12 2 12 1 11 1 L 4.5 1 z M 5 2.5 L 10.5 2.5 L 11.5 7 L 4 7 L 5 2.5 z M 4.4648438 8 A 1 1 0 0 1 5.4882812 8.8496094 L 5.4960938 8.9121094 A 1 1 0 0 1 4.6035156 9.9941406 A 1 1 0 0 1 3.5078125 9.1191406 A 1 1 0 0 1 4.3652344 8.0097656 A 1 1 0 0 1 4.4648438 8 z M 7 8 L 8.5 8 L 8.5 9 L 7 9 L 7 8 z M 10.964844 8 A 1 1 0 0 1 11.988281 8.8496094 L 11.996094 8.9121094 A 1 1 0 0 1 11.103516 9.9941406 A 1 1 0 0 1 10.007812 9.1191406 A 1 1 0 0 1 10.865234 8.0097656 A 1 1 0 0 1 10.964844 8 z M 3.5 12 L 3 14 L 2 14 L 2 15.5 L 2.5 15.5 L 2 17 L 3.5 17 L 4 15.5 L 11.5 15.5 L 12 17 L 13.5 17 L 13 15.5 L 14 15.5 L 14 14 L 12.5 14 L 12 12 L 10.5 12 L 11 14 L 4.5 14 L 5 12 L 3.5 12 z "
-     id="rect3338" /></svg>
+     d="M 5.5 0 C 5.5 0 4.75 0 4.5 1 L 3 6.5 L 3 10 C 3 11 4 11 4 11 L 11 11 C 11 11 12 11 12 10 L 12 6.5 L 10.5 1 C 10.227273 0 9.5 0 9.5 0 L 5.5 0 z M 6.5 1.5 L 8.5 1.5 C 8.5 1.5 9.0357143 1.5 9.25 2.5 L 10 6 C 10.21464 7.0016547 9 7 9 7 L 6 7 C 6 7 4.7853597 7.0016548 5 6 L 5.75 2.5 C 5.9642857 1.5 6.5 1.5 6.5 1.5 z M 5 8 A 1 1 0 0 1 6 9 A 1 1 0 0 1 5 10 A 1 1 0 0 1 4 9 A 1 1 0 0 1 5 8 z M 6.75 8 L 8.25 8 C 8.3885 8 8.5 8.1115 8.5 8.25 C 8.5 8.3885 8.3885 8.5 8.25 8.5 L 6.75 8.5 C 6.6115 8.5 6.5 8.3885 6.5 8.25 C 6.5 8.1115 6.6115 8 6.75 8 z M 10 8 A 1 1 0 0 1 11 9 A 1 1 0 0 1 10 10 A 1 1 0 0 1 9 9 A 1 1 0 0 1 10 8 z M 4.125 12 L 3 15 L 4.5 15 L 4.875 14 L 10.125 14 L 10.5 15 L 12 15 L 10.875 12 L 9.375 12 L 9.75 13 L 5.25 13 L 5.625 12 L 4.125 12 z "
+     id="path5258" /></svg>
