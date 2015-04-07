@@ -12,7 +12,7 @@ shapesrender="maki_shapes"
 count=0
 
 declare -a categories=(dining education general health outdoors transit) # icon categories
-declare -a colors=(497391 b5a462 a9a199 b28b8b 7e9a4c 9c8ea4) # colors correspond to categories
+declare -a colors=(987b66 b5a462 a9a199 b28b8b 7e9a4c 9c8ea4) # colors correspond to categories
 
 # For each category...
 for c in ${categories[@]}
