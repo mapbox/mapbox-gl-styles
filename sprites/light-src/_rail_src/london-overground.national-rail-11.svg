@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="24"
+   height="12.000001"
+   id="svg3122"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="london-overground.national-rail-12.svg"
+   viewBox="0 0 24 12.000001">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     id="namedview19"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="30.346666"
+     inkscape:cx="20.942536"
+     inkscape:cy="6.3854104"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3122"
+     inkscape:document-units="px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2996"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="0px"
+       originy="-1.6392178e-05px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs3124" />
+  <metadata
+     id="metadata3127">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="matrix(0.49999928,0,0,0.49999928,0,-514.18033)"
+     id="layer0">
+    <path
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#eea66f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;enable-background:accumulate"
+       d="M 6.1171875 2.0019531 A 3.9999942 3.9999942 0 0 0 2 6 A 3.9999942 3.9999942 0 0 0 10 6 A 3.9999942 3.9999942 0 0 0 6.1171875 2.0019531 z M 6.0722656 3.5019531 A 2.5000314 2.5000314 0 0 1 8.5 6 A 2.5000314 2.5000314 0 0 1 3.5 6 A 2.5000314 2.5000314 0 0 1 6.0722656 3.5019531 z "
+       transform="matrix(2.0000029,0,0,2.0000029,0,1028.3621)"
+       id="path4080" />
+    <rect
+       width="20.000004"
+       height="4.0000005"
+       rx="0.5"
+       ry="0.49999994"
+       x="2"
+       y="1038.3622"
+       id="rect4084"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#3377a7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;enable-background:accumulate" />
+  </g>
+  <g
+     transform="translate(12,-1040.3622)"
+     id="layer1">
+    <path
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#e97474;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;enable-background:accumulate"
+       d="M 14 2 C 13.446 2 13 2.446 13 3 L 13 4 L 18.666016 4 L 15.333984 2 L 14 2 z M 17.333984 2 L 20.666016 4 L 23 4 L 23 3 C 23 2.446 22.554 2 22 2 L 17.333984 2 z M 13 5 L 13 7 L 15.333984 7 L 18.666016 5 L 13 5 z M 20.666016 5 L 17.333984 7 L 23 7 L 23 5 L 20.666016 5 z M 13 8 L 13 9 C 13 9.554 13.446 10 14 10 L 18.666016 10 L 15.333984 8 L 13 8 z M 17.333984 8 L 20.666016 10 L 22 10 C 22.554 10 23 9.554 23 9 L 23 8 L 17.333984 8 z "
+       transform="translate(-12,1040.3622)"
+       id="rect3025" />
+  </g>
+</svg>

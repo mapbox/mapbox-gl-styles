@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="18"
+   height="18"
+   id="svg3122"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="national-rail-18.svg"
+   viewBox="0 0 18 18">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview15296"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="13.111111"
+     inkscape:cx="9"
+     inkscape:cy="9"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3122" />
+  <defs
+     id="defs3124" />
+  <metadata
+     id="metadata3127">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-1034.3622)"
+     id="layer1">
+    <path
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#e97474;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;enable-background:accumulate"
+       d="M 3 4 C 2.446 4 2 4.446 2 5 L 2 6.75 L 9.0351562 6.75 L 5.5 4 L 3 4 z M 8 4 L 11.535156 6.75 L 16 6.75 L 16 5 C 16 4.446 15.554 4 15 4 L 8 4 z M 2 8 L 2 10 L 6.25 10 L 9.25 8 L 2 8 z M 11.75 8 L 8.75 10 L 16 10 L 16 8 L 11.75 8 z M 2 11.25 L 2 13 C 2 13.554 2.446 14 3 14 L 10 14 L 6.4648438 11.25 L 2 11.25 z M 8.9648438 11.25 L 12.5 14 L 15 14 C 15.554 14 16 13.554 16 13 L 16 11.25 L 8.9648438 11.25 z "
+       transform="translate(0,1034.3622)"
+       id="rect3025-0" />
+  </g>
+</svg>

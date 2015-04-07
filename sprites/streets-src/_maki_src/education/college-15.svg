@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="17"
-   height="17"
+   width="15"
+   height="15"
    id="svg4619"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="college-15.svg"
-   viewBox="0 0 15 15">
+   viewBox="0 0 13.235294 13.235294">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -29,10 +29,10 @@
      inkscape:window-height="755"
      id="namedview3407"
      inkscape:document-units="px"
-     showgrid="true"
-     inkscape:zoom="28.727273"
-     inkscape:cx="11.657738"
-     inkscape:cy="8.9275618"
+     showgrid="false"
+     inkscape:zoom="22.627417"
+     inkscape:cx="7.1878612"
+     inkscape:cy="5.4707648"
      inkscape:current-layer="svg4619"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -49,8 +49,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid3333"
-       spacingx="0.5"
-       spacingy="0.5"
+       spacingx="0.44117647"
+       spacingy="0.44117647"
        color="#ff000d"
        opacity="0.1254902"
        empspacing="2" />
@@ -65,20 +65,26 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:#000000;fill-opacity:1"
-     d="M 7.5000001,2 0,5.9807693 7.5000001,10 12.5,7.2796217 12.5,11 c 0,2.060501 1.5,2 1.5,2 l 0,-1 c 0,0 -0.44964,-0.09771 -0.5,-1 l 0,-4.20489 1.538462,-0.8143407 z M 3.5,9.5000001 l 0,1.7692309 c 0,0.415061 0.5630916,0.825694 1.1269529,1.107722 L 7.5000001,14 10.411508,12.376953 C 10.975369,12.094925 11.471248,11.683295 11.5,11.269231 L 11.5,9.5000001 7.5000001,11.5 Z"
-     id="path7442-0"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccsccsccccscccsccc" />
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.00000012px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 7.5 1 L 0 4.5 L 2 5.4335938 L 2 10 L 1.09375 12.095703 C 0.7515604 13 1.0000001 14 2.5 14 C 3.9999995 14 4.1769542 13 3.9042969 12.095703 L 3 10 L 3 5.9003906 L 7.5 8 L 15 4.5 L 7.5 1 z M 12 7.5 L 7.5 9.5 L 4.9960938 8.3886719 A 2.5 2.5 0 0 1 5 8.5 A 2.5 2.5 0 0 1 4.2226562 10.310547 L 4.8457031 11.751953 L 4.8613281 11.806641 C 4.9685868 12.162353 5.0301833 12.564183 4.9960938 12.978516 C 5.6490218 13.285791 6.4607707 13.5 7.5 13.5 C 10.772728 13.5 12 11.499999 12 10.5 L 12 7.5 z "
+     transform="scale(0.88235293)"
+     id="path5992" />
+  <g
+     id="g6004"
+     style="stroke:#ffffff;stroke-width:1.7647059;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     transform="translate(-3.6666667e-7,26.470588)" />
+  <g
+     id="g5998"
+     transform="translate(-3.6666667e-7,26.470588)" />
   <circle
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="path3334"
-     cx="7.5"
-     cy="6"
-     r="0.5" />
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.7647059;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     id="path6065"
+     cx="2.205883"
+     cy="7.5"
+     r="1.3235295" />
 </svg>
