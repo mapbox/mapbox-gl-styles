@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="12"
-   height="12"
+   width="11"
+   height="11"
    id="svg3122"
-   inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="dlr-12.svg"
-   viewBox="0 0 12 12">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="dlr-11.svg"
+   viewBox="0 0 11 11">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -25,8 +25,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="989"
+     inkscape:window-width="1005"
+     inkscape:window-height="737"
      id="namedview12"
      showgrid="true"
      inkscape:snap-bbox="true"
@@ -34,23 +34,35 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="21.458333"
-     inkscape:cx="32.038835"
-     inkscape:cy="2.1203792"
-     inkscape:window-x="609"
-     inkscape:window-y="182"
+     inkscape:zoom="30.346666"
+     inkscape:cx="3.636035"
+     inkscape:cy="7.9949261"
+     inkscape:window-x="7"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3122"
-     inkscape:document-units="px">
+     inkscape:document-units="px"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid2989"
-       empspacing="5"
+       empspacing="2"
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
        originx="0px"
-       originy="-8.6914063e-06px" />
+       originy="0"
+       color="#ff0000"
+       opacity="0.1254902"
+       spacingx="0.5"
+       spacingy="0.5" />
   </sodipodi:namedview>
   <defs
      id="defs3124" />
@@ -66,22 +78,17 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     transform="matrix(0.5,0,0,0.5,0,-514.18109)"
-     id="layer1">
-    <path
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#9cc883;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;enable-background:accumulate"
-       d="M 6.1171875 2.0019531 A 4 4 0 0 0 2 6 A 4 4 0 0 0 10 6 A 4 4 0 0 0 6.1171875 2.0019531 z M 6 4 A 2 2 0 0 1 8 6 A 2 2 0 0 1 6 8 A 2 2 0 0 1 4 6 A 2 2 0 0 1 6 4 z "
-       transform="matrix(2,0,0,2,0,1028.3622)"
-       id="path4187" />
-    <rect
-       width="20.000004"
-       height="4.0000005"
-       rx="0.5"
-       ry="0.49999994"
-       x="2"
-       y="1038.3622"
-       id="rect4191"
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#3377a7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;enable-background:accumulate" />
-  </g>
+  <path
+     style="opacity:1;fill:#9cc883;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 5.5,1 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 0,2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 z"
+     id="path3336"
+     inkscape:connector-curvature="0" />
+  <rect
+     style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect3354"
+     width="10"
+     height="2"
+     x="0.5"
+     y="4"
+     ry="0.5" />
 </svg>

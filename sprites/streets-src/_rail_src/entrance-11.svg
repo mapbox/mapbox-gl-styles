@@ -13,7 +13,7 @@
    height="11"
    id="svg4764"
    version="1.1"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="entrance-11.svg"
    viewBox="0 0 11 11">
   <defs
@@ -25,16 +25,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="12.976697"
-     inkscape:cy="1.207968"
+     inkscape:zoom="45.254834"
+     inkscape:cx="6.3939065"
+     inkscape:cy="5.0642058"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="989"
+     inkscape:window-width="1280"
+     inkscape:window-height="755"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -47,7 +47,11 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0">
+     fit-margin-bottom="0"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true">
     <inkscape:grid
        type="xygrid"
        id="grid4772"
@@ -55,12 +59,14 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       color="#ff00ff"
+       color="#ff0000"
        opacity="0.1254902"
-       empcolor="#ff00ff"
+       empcolor="#0000ff"
        empopacity="0.25098039"
        originx="23"
-       originy="-6.9999144" />
+       originy="-6.9999144"
+       spacingx="0.5"
+       spacingy="0.5" />
     <sodipodi:guide
        orientation="0,1"
        position="27,7.000086"

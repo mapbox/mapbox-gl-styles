@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="12"
-   height="12"
+   width="11"
+   height="11"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="u-bahn-11.svg"
-   viewBox="0 0 12 12">
+   viewBox="0 0 11 11">
   <metadata
      id="metadata12">
     <rdf:RDF>
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,18 +37,26 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="483"
-     inkscape:window-height="454"
+     inkscape:window-width="971"
+     inkscape:window-height="613"
      id="namedview8"
-     showgrid="true"
-     inkscape:zoom="16"
-     inkscape:cx="-5.2993765"
-     inkscape:cy="8.8884212"
-     inkscape:window-x="618"
-     inkscape:window-y="424"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="6.447133"
+     inkscape:cy="6.5753246"
+     inkscape:window-x="104"
+     inkscape:window-y="75"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
-     inkscape:document-units="px">
+     inkscape:document-units="px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid2997"
@@ -56,10 +64,12 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       color="#ff00ff"
+       color="#ff0000"
        opacity="0.1254902"
-       empcolor="#ff00ff"
-       empopacity="0.25098039" />
+       empcolor="#0000ff"
+       empopacity="0.25098039"
+       spacingx="0.5"
+       spacingy="0.5" />
   </sodipodi:namedview>
   <rect
      style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
@@ -67,12 +77,14 @@
      width="8"
      height="8"
      x="2"
-     y="2" />
+     y="1" />
   <g
-     id="g3007">
+     id="g3007"
+     transform="translate(-0.5,-0.5)">
     <path
        style="fill:#3377a7;fill-opacity:1"
-       d="M 1 1 L 1 11 L 11 11 L 11 1 L 1 1 z M 3 2 L 4.5 2 L 4.5 7 C 4.5 8 5.28125 8.5 6 8.5 C 6.71875 8.5 7.5 8 7.5 7 L 7.5 2 L 9 2 C 9 2 8.99586 5.4691074 9 7.5 C 9 9 7.5 10 6 10 C 4.5 10 3 9 3 7.5 L 3 2 z "
-       id="rect3272" />
+       d="M 1,1 1,11 11,11 11,1 1,1 Z m 2,1 1.5,0 0,5 C 4.5,8 5.28125,8.5 6,8.5 6.71875,8.5 7.5,8 7.5,7 L 7.5,2 9,2 C 9,2 8.99586,5.4691074 9,7.5 9,9 7.5,10 6,10 4.5,10 3,9 3,7.5 L 3,2 Z"
+       id="rect3272"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

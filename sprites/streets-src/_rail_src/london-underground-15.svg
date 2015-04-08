@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="11"
-   height="11"
+   width="15"
+   height="15"
    id="svg3122"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="london-overground-11.svg"
-   viewBox="0 0 11 11">
+   sodipodi:docname="london-underground-15.svg"
+   viewBox="0 0 15 15">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -25,37 +25,34 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="784"
-     inkscape:window-height="551"
-     id="namedview12"
+     inkscape:window-width="647"
+     inkscape:window-height="655"
+     id="namedview15131"
+     inkscape:document-units="px"
      showgrid="true"
-     inkscape:snap-bbox="true"
-     inkscape:zoom="31.022222"
-     inkscape:cx="4.2699503"
-     inkscape:cy="5.9362325"
-     inkscape:window-x="414"
-     inkscape:window-y="144"
+     inkscape:zoom="13.111111"
+     inkscape:cx="0.94634867"
+     inkscape:cy="9.3706745"
+     inkscape:window-x="607"
+     inkscape:window-y="49"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3122"
-     inkscape:document-units="px"
+     inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:object-paths="true"
      inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
-       id="grid2989"
-       empspacing="2"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true"
+       id="grid3335"
        spacingx="0.5"
        spacingy="0.5"
        color="#ff0000"
-       opacity="0.1254902" />
+       opacity="0.1254902"
+       empspacing="2" />
   </sodipodi:namedview>
   <defs
      id="defs3124" />
@@ -67,25 +64,31 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     id="g3344"
-     transform="translate(10.307767,-0.261165)">
-    <path
-       inkscape:connector-curvature="0"
-       id="path3336"
-       d="m -4.8077671,1.261165 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3.99999997,-4 4,4 0 0 0 -3.99999997,-4 z m 0,2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 z"
-       style="opacity:1;fill:#eea66f;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+     id="g3365">
+    <circle
+       r="5.5"
+       cy="7.5"
+       cx="7.5"
+       id="path3346"
+       style="opacity:1;fill:#e97474;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <circle
+       r="3.5"
+       cy="7.5"
+       cx="7.5"
+       id="path3346-2"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <rect
-       ry="0.5"
-       y="4.2611651"
-       x="-9.8077669"
-       height="2"
-       width="10"
-       id="rect3354"
+       ry="0.49999997"
+       y="6"
+       x="1"
+       height="3"
+       width="13"
+       id="rect3363"
        style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>

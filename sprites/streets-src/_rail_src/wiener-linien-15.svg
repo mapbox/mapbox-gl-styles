@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="18"
-   height="18"
+   width="15"
+   height="15"
    id="svg3115"
    version="1.1"
-   inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="wiener-linien-17.svg"
-   viewBox="0 0 18 18">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="wiener-linien-15.svg"
+   viewBox="0 0 15 15">
   <metadata
      id="metadata3125">
     <rdf:RDF>
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,15 +37,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1349"
-     inkscape:window-height="985"
+     inkscape:window-width="1280"
+     inkscape:window-height="755"
      id="namedview3121"
-     showgrid="true"
-     inkscape:zoom="32"
+     showgrid="false"
+     inkscape:zoom="1"
      inkscape:cx="8.419079"
      inkscape:cy="8.1596041"
-     inkscape:window-x="806"
-     inkscape:window-y="92"
+     inkscape:window-x="-2"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer2"
      showguides="false"
@@ -53,14 +53,25 @@
      inkscape:snap-to-guides="true"
      inkscape:snap-bbox="true"
      inkscape:guide-bbox="true"
-     inkscape:document-units="px">
+     inkscape:document-units="px"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid3305"
        empspacing="2"
        visible="true"
        enabled="true"
-       snapvisiblegridlinesonly="true" />
+       snapvisiblegridlinesonly="true"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#ff0000"
+       opacity="0.1254902" />
     <sodipodi:guide
        orientation="1,0"
        position="8.5073785,8.374796"
@@ -70,7 +81,8 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Original"
-     style="display:none">
+     style="display:none"
+     transform="translate(0,-3)">
     <circle
        style="fill:#025ca0"
        transform="matrix(0.02811245,0,0,0.02811245,1.9606244,1.9718876)"
@@ -87,7 +99,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer">
+     inkscape:label="Layer"
+     transform="translate(0,-3)">
     <circle
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
        id="path42997"
@@ -97,7 +110,7 @@
     <path
        inkscape:connector-curvature="0"
        id="circle3117"
-       d="m 8.4882812,2 a 6.5000006,6.5000006 0 0 0 -6.5,6.5 6.5000006,6.5000006 0 0 0 6.5,6.5 A 6.5000006,6.5000006 0 0 0 14.988281,8.5 6.5000006,6.5000006 0 0 0 8.4882812,2 Z M 5,5 7,5 7,9.5 C 7,10 7.5,11 8.5,11 9.5,11 10,10 10,9.5 L 10,5 12,5 12,9 C 11.9972,11.162274 10.662275,13 8.5,13 6.3377251,13 5.0028,11.162274 5,9 L 5,5 Z"
+       d="M 7.5,4 A 6.5000006,6.5000006 0 0 0 1,10.5 6.5000006,6.5000006 0 0 0 7.5,17 6.5000006,6.5000006 0 0 0 14,10.5 6.5000006,6.5000006 0 0 0 7.5,4 Z m -3.4882812,3 2,0 0,4.5 c 0,0.5 0.5,1.5 1.5,1.5 1,0 1.5,-1 1.5,-1.5 l 0,-4.5 2.0000002,0 0,4 c -0.0028,2.162274 -1.3377252,4 -3.5000002,4 -2.1622749,0 -3.4972,-1.837726 -3.5,-4 l 0,-4 z"
        style="fill:#0079ac;fill-opacity:1;stroke-width:0.02610442" />
   </g>
 </svg>

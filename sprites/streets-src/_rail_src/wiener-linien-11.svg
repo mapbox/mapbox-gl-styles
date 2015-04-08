@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="12"
-   height="12"
+   width="11"
+   height="11"
    id="svg3115"
    version="1.1"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="wiener-linien-11.svg"
-   viewBox="0 0 12 12">
+   viewBox="0 0 11 11">
   <metadata
      id="metadata3125">
     <rdf:RDF>
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,33 +41,46 @@
      inkscape:window-height="716"
      id="namedview3121"
      showgrid="false"
-     inkscape:zoom="32"
-     inkscape:cx="1.5415713"
-     inkscape:cy="3.5282059"
-     inkscape:window-x="309"
-     inkscape:window-y="23"
+     inkscape:zoom="1"
+     inkscape:cx="5.5147692"
+     inkscape:cy="5.240646"
+     inkscape:window-x="175"
+     inkscape:window-y="19"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3115"
-     inkscape:document-units="px">
+     inkscape:document-units="px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid3305"
        empspacing="2"
        visible="true"
        enabled="true"
-       snapvisiblegridlinesonly="true" />
+       snapvisiblegridlinesonly="true"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#ff0000"
+       opacity="0.1254902" />
   </sodipodi:namedview>
   <circle
      style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
      id="path43028"
      cx="5.96875"
-     cy="5.84375"
+     cy="4.84375"
      r="4.3125" />
   <g
-     id="g3007">
+     id="g3007"
+     transform="translate(-0.5,-0.523438)">
     <path
        style="fill:#0079ac;fill-opacity:1;stroke-width:0.02012556"
-       d="M 6 1 A 5.0112644 5.0112644 0 0 0 0.98828125 6.0117188 A 5.0112644 5.0112644 0 0 0 6 11.023438 A 5.0112644 5.0112644 0 0 0 11.011719 6.0117188 A 5.0112644 5.0112644 0 0 0 6 1 z M 3 3 L 5 3 L 5 6.5 C 5 7 5.5 7.5 6 7.5 C 6.5 7.5 7 7 7 6.5 L 7 3 L 9 3 L 9 3.5 L 9 6.5 C 8.9978328 8.1670345 7.6748477 9.4804688 6.0078125 9.4804688 C 4.3407772 9.4804688 3.00216 8.1670345 3 6.5 L 3 3.5 L 3 3 z "
-       id="circle3117-7" />
+       d="M 6,1 A 5.0112644,5.0112644 0 0 0 0.98828125,6.0117188 5.0112644,5.0112644 0 0 0 6,11.023438 5.0112644,5.0112644 0 0 0 11.011719,6.0117188 5.0112644,5.0112644 0 0 0 6,1 Z M 3,3 5,3 5,6.5 c 0,0.5 0.5,1 1,1 0.5,0 1,-0.5 1,-1 L 7,3 9,3 9,3.5 9,6.5 C 8.9978328,8.1670345 7.6748477,9.4804688 6.0078125,9.4804688 4.3407772,9.4804688 3.00216,8.1670345 3,6.5 L 3,3.5 3,3 Z"
+       id="circle3117-7"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

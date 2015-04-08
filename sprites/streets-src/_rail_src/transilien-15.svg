@@ -9,15 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="18"
-   height="18"
+   width="15"
+   height="15"
    id="svg2484"
    sodipodi:version="0.32"
-   inkscape:version="0.91+devel+osxmenu r12911"
+   inkscape:version="0.91 r13725"
    version="1.0"
-   sodipodi:docname="transilien-17.svg"
+   sodipodi:docname="transilien-15.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   viewBox="0 0 18 18">
+   viewBox="0 0 15 15">
   <defs
      id="defs2486" />
   <sodipodi:namedview
@@ -27,26 +27,37 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="14.464504"
-     inkscape:cy="4.8644701"
+     inkscape:zoom="1"
+     inkscape:cx="9.4088686"
+     inkscape:cy="8.6652578"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:window-width="1540"
-     inkscape:window-height="956"
-     inkscape:window-x="18"
-     inkscape:window-y="23"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="755"
+     inkscape:window-x="8"
+     inkscape:window-y="1"
      inkscape:window-maximized="0"
      inkscape:snap-bbox="true"
-     inkscape:snap-nodes="true">
+     inkscape:snap-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid2991"
        empspacing="2"
        visible="true"
        enabled="true"
-       snapvisiblegridlinesonly="true" />
+       snapvisiblegridlinesonly="true"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#ff0000"
+       opacity="0.1254902" />
   </sodipodi:namedview>
   <metadata
      id="metadata2489">
@@ -56,7 +67,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,17 +75,11 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(1125.7177,-1000.5985)"
+     transform="translate(1125.7177,-1003.5985)"
      style="display:inline">
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-       id="rect42999"
-       width="12"
-       height="12"
-       x="-1122.7177"
-       y="1003.5985" />
     <g
-       id="g3018">
+       id="g3018"
+       transform="translate(-1.5000002,1.5156252)">
       <g
          transform="matrix(0.0581986,0,0,0.0581986,-1116.1461,991.08678)"
          id="g3038"
@@ -130,9 +135,11 @@
                    style="fill:#ffffff;stroke:#0062ac;stroke-opacity:1">
                   <path
                      style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:Sans;-inkscape-font-specification:Sans;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#0079ac;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-                     d="M 4.40625 2.015625 C 3.0910525 2.015625 2.015625 3.0910656 2.015625 4.40625 L 2.015625 13.595703 C 2.015625 14.910887 3.0910525 15.984375 4.40625 15.984375 L 13.59375 15.984375 C 14.908948 15.984375 15.984375 14.910887 15.984375 13.595703 L 15.984375 4.40625 C 15.984375 3.0910656 14.908947 2.015625 13.59375 2.015625 L 4.40625 2.015625 z M 4.40625 3.015625 L 13.59375 3.015625 C 14.372243 3.015625 14.984375 3.627766 14.984375 4.40625 L 14.984375 13.595703 C 14.984375 14.374187 14.372242 14.984375 13.59375 14.984375 L 4.40625 14.984375 C 3.6277582 14.984375 3.015625 14.374187 3.015625 13.595703 L 3.015625 4.40625 C 3.015625 3.627766 3.6277582 3.015625 4.40625 3.015625 z M 7 4 C 6.446 4 6 4.4205 6 4.9375 L 6 10.0625 C 6 10.5795 6.446 11 7 11 L 5.5 14 L 7 14 L 8 12 L 10 12 L 11 14 L 12.5 14 L 11 11 C 11.554 11 12 10.5795 12 10.0625 L 12 4.9375 C 12 4.4205 11.554 4 11 4 L 7 4 z M 7.5 5 L 10.5 5 C 10.777 5 11 5.223 11 5.5 L 11 6.5 C 11 6.777 10.777 7 10.5 7 L 7.5 7 C 7.223 7 7 6.777 7 6.5 L 7 5.5 C 7 5.223 7.223 5 7.5 5 z M 7 8 L 8 8 L 8 9 L 7 9 L 7 8 z M 10 8 L 11 8 L 11 9 L 10 9 L 10 8 z "
+                     d="m 4.40625,2.015625 c -1.3151975,0 -2.390625,1.0754406 -2.390625,2.390625 l 0,9.189453 c 0,1.315184 1.0754275,2.388672 2.390625,2.388672 l 9.1875,0 c 1.315198,0 2.390625,-1.073488 2.390625,-2.388672 l 0,-9.189453 c 0,-1.3151844 -1.075428,-2.390625 -2.390625,-2.390625 z m 0,1 9.1875,0 c 0.778493,0 1.390625,0.612141 1.390625,1.390625 l 0,9.189453 c 0,0.778484 -0.612133,1.388672 -1.390625,1.388672 l -9.1875,0 c -0.7784918,0 -1.390625,-0.610188 -1.390625,-1.388672 l 0,-9.189453 c 0,-0.778484 0.6121332,-1.390625 1.390625,-1.390625 z M 7,4 C 6.446,4 6,4.4205 6,4.9375 l 0,5.125 C 6,10.5795 6.446,11 7,11 l -1.5,3 1.5,0 1,-2 2,0 1,2 1.5,0 -1.5,-3 c 0.554,0 1,-0.4205 1,-0.9375 l 0,-5.125 C 12,4.4205 11.554,4 11,4 Z m 0.5,1 3,0 C 10.777,5 11,5.223 11,5.5 l 0,1 C 11,6.777 10.777,7 10.5,7 l -3,0 C 7.223,7 7,6.777 7,6.5 l 0,-1 C 7,5.223 7.223,5 7.5,5 Z M 7,8.484375 l 1,0 0,1 -1,0 z m 3,0 1,0 0,1 -1,0 z"
                      transform="matrix(21.844971,0,0,21.845188,48.154341,458.23356)"
-                     id="rect2993" />
+                     id="rect2993"
+                     inkscape:connector-curvature="0"
+                     sodipodi:nodetypes="sssssssssssssssssssssccccccccssssssssssssscccccccccc" />
                 </g>
               </g>
             </g>

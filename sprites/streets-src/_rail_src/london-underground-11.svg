@@ -10,11 +10,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="12"
-   height="12"
+   width="11"
+   height="11"
    id="svg3122"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="london-underground-24.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="london-underground-11.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,25 +24,36 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1053"
+     inkscape:window-width="821"
+     inkscape:window-height="658"
      id="namedview12"
      showgrid="true"
      inkscape:snap-bbox="true"
-     inkscape:zoom="21.458333"
-     inkscape:cx="12"
-     inkscape:cy="12"
+     inkscape:zoom="30.346666"
+     inkscape:cx="5.6738024"
+     inkscape:cy="5.329069"
      inkscape:window-x="0"
-     inkscape:window-y="-1"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3122">
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3122"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid2989"
-       empspacing="5"
+       empspacing="2"
        visible="true"
        enabled="true"
-       snapvisiblegridlinesonly="true" />
+       snapvisiblegridlinesonly="true"
+       spacingx="0.5"
+       spacingy="0.5"
+       color="#ff0000"
+       opacity="0.1254902" />
   </sodipodi:namedview>
   <defs
      id="defs3124" />
@@ -59,50 +70,20 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(0.49999928,0,0,0.49999928,0,-514.18035)"
-     id="layer1">
-    <rect
-       width="24"
-       height="7.9999943"
-       rx="2"
-       ry="2"
-       x="0"
-       y="1036.3622"
-       id="rect3817-1-9"
-       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+     id="g3344"
+     transform="translate(10.307767,-0.261165)">
     <path
-       d="m 13,20 a 4,4 0 1 1 -8,0 4,4 0 1 1 8,0 z"
-       transform="matrix(2.500005,0,0,2.500005,-10.500045,990.36212)"
-       id="path4036"
-       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       id="path3336"
+       d="m -4.8077671,1.261165 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 3.99999997,-4 4,4 0 0 0 -3.99999997,-4 z m 0,2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 z"
+       style="opacity:1;fill:#e97474;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <rect
-       width="24"
-       height="24"
-       x="0"
-       y="1028.3622"
-       id="rect3901"
-       style="color:#000000;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       d="m 13,20 a 4,4 0 1 1 -8,0 4,4 0 1 1 8,0 z"
-       transform="matrix(2,0,0,2,-6,1000.3622)"
-       id="path3903"
-       style="color:#000000;fill:#e97474;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:connector-curvature="0" />
-    <path
-       d="m 13,20 a 4,4 0 1 1 -8,0 4,4 0 1 1 8,0 z"
-       transform="matrix(1.2500175,0,0,1.2500175,0.749833,1015.3619)"
-       id="path4034"
-       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       inkscape:connector-curvature="0" />
-    <rect
-       width="20.000004"
-       height="4.0000005"
-       rx="0.5"
-       ry="0.49999994"
-       x="2"
-       y="1038.3622"
-       id="rect3827-1-4"
-       style="color:#000000;fill:#3377a7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       ry="0.5"
+       y="4.2611651"
+       x="-9.8077669"
+       height="2"
+       width="10"
+       id="rect3354"
+       style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>
