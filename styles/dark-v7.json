@@ -218,7 +218,7 @@
       "visibility": "visible"
     },
     "paint": {
-      "fill-color": "#e0e0e0"
+      "fill-color": "#1f1f1f"
     }
   }, {
     "id": "hillshade_highlight_bright",
@@ -1526,7 +1526,7 @@
     }
   }],
   "owner": "andreasviglakis",
-  "modified": "2015-04-08T18:25:39.688Z",
+  "modified": "2015-04-08T21:41:52.340Z",
   "created": "2015-04-08T18:12:11.188Z",
   "id": "andreasviglakis.1857cdc2"
 }
