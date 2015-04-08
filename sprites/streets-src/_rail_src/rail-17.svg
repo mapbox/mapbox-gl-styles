@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="31"
-   height="31"
+   width="23"
+   height="23"
    id="svg4619"
    version="1.1"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="rail-17.svg"
-   viewBox="0 0 31 31">
+   viewBox="0 0 23 23">
   <defs
      id="defs4621" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313709"
-     inkscape:cx="18.314311"
-     inkscape:cy="17.666188"
+     inkscape:cx="-1.9326782"
+     inkscape:cy="11.870677"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -56,59 +56,59 @@
        opacity="0.1254902"
        empcolor="#ff00ff"
        empopacity="0.25098039"
-       originx="0"
-       originy="0" />
+       originx="-4.9999999"
+       originy="-5.0000155" />
     <sodipodi:guide
        orientation="0,1"
-       position="11.500001,22.499984"
+       position="6.5000011,17.499969"
        id="guide4659" />
     <sodipodi:guide
        orientation="1,0"
-       position="22.500001,13.499984"
+       position="17.500001,8.4999685"
        id="guide4661" />
     <sodipodi:guide
        orientation="0,1"
-       position="20.500001,21.499984"
+       position="15.500001,16.499969"
        id="guide4663" />
     <sodipodi:guide
        orientation="1,0"
-       position="21.500001,18.499984"
+       position="16.500001,13.499969"
        id="guide4665" />
     <sodipodi:guide
        orientation="1,0"
-       position="4.500001,20.499984"
+       position="-0.4999989,15.499969"
        id="guide4667" />
     <sodipodi:guide
        orientation="0,1"
-       position="12.500001,4.4999836"
+       position="7.5000011,-0.50003188"
        id="guide4669" />
     <sodipodi:guide
        orientation="1,0"
-       position="6.500001,14.499984"
+       position="1.5000011,9.4999685"
        id="guide4671" />
     <sodipodi:guide
        orientation="0,1"
-       position="16.500001,6.4999836"
+       position="11.500001,1.4999681"
        id="guide4673" />
     <sodipodi:guide
        orientation="0,1"
-       position="16.500001,20.499984"
+       position="11.500001,15.499969"
        id="guide3010" />
     <sodipodi:guide
        orientation="1,0"
-       position="7.500001,15.999984"
+       position="2.5000011,10.999969"
        id="guide3012" />
     <sodipodi:guide
        orientation="1,0"
-       position="20.500001,12.999984"
+       position="15.500001,7.9999685"
        id="guide3016" />
     <sodipodi:guide
        orientation="1,0"
-       position="14.000001,13.499984"
+       position="9.0000011,8.4999685"
        id="guide3804" />
     <sodipodi:guide
        orientation="0,1"
-       position="17.500001,7.4999836"
+       position="12.500001,2.4999681"
        id="guide3138" />
   </sodipodi:namedview>
   <metadata
@@ -127,20 +127,26 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(4.500001,-1025.8622)">
+     transform="translate(-0.4999989,-1028.8622)">
     <rect
        style="opacity:1;fill:#9c8ea4;fill-opacity:1;stroke:none;stroke-width:2.63156772;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
        id="rect18064"
-       width="27"
-       height="27.000002"
-       x="-2.500001"
-       y="1027.8622"
+       width="21"
+       height="21.000002"
+       x="1.4999989"
+       y="1029.8622"
        rx="2.0000539"
        ry="2.0000539" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.30769229"
-       d="m 8.956731,1032.8622 c -2.5336539,0 -5.1490385,1.3077 -5.1490385,3.9231 l 0,6.8654 0,0.9807 c 0,0.7245 0.5832308,1.3077 1.3076923,1.3077 l 11.7692312,0 c 0.724462,0 1.307691,-0.5832 1.307691,-1.3077 l 0,-0.9807 0,-6.8654 c 0,-2.6154 -2.615384,-3.9231 -5.149038,-3.9231 l -4.086538,0 z m 0.081731,1.3077 3.923077,0 0,1.3077 -3.923077,0 0,-1.3077 z m -1.9615384,2.6154 7.8461544,0 0.653845,0.6538 0,2.6154 -0.653845,0.6539 -7.8461544,0 -0.6538462,-0.6539 0,-2.6154 0.6538462,-0.6538 z m 0.4903846,5.2307 a 1.1442308,1.1442308 0 0 1 1.1442308,1.1443 1.1442308,1.1442308 0 0 1 -1.1442308,1.1442 1.1442308,1.1442308 0 0 1 -1.1442308,-1.1442 1.1442308,1.1442308 0 0 1 1.1442308,-1.1443 z m 6.8653838,0 a 1.1442308,1.1442308 0 0 1 1.144231,1.1443 1.1442308,1.1442308 0 0 1 -1.144231,1.1442 1.1442308,1.1442308 0 0 1 -1.144231,-1.1442 1.1442308,1.1442308 0 0 1 1.144231,-1.1443 z m -8.0096149,5.2308 -2.6153846,1.3077 0,1.3077 3.9230769,0 1.3076923,-1.3077 0,-1.3077 -2.6153846,0 z m 6.5384619,0 0,1.3077 1.307691,1.3077 3.923077,0 0,-1.3077 -2.615384,-1.3077 -2.615384,0 z"
-       id="rect3226"
-       inkscape:connector-curvature="0" />
+    <g
+       id="g14137"
+       transform="matrix(1.3636364,0,0,1.3636364,17.636363,1032.8622)"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.73333335">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 3.5,0 C 3.5,0 2,-2.4545453e-8 2,1.5 l 0,8 C 2,11 3.5,11 3.5,11 l 8,0 c 0,0 1.5,0 1.5,-1.5 l 0,-8 C 13,1.5 13,0 11.5,0 l -8,0 z m 2.25,0.5 3.5,0 C 9.3885,0.5 9.5,0.6115 9.5,0.75 9.5,0.8885 9.3885,1 9.25,1 L 5.75,1 C 5.6115,1 5.5,0.8885 5.5,0.75 5.5,0.6115 5.6115,0.5 5.75,0.5 Z M 4,2 7,2 7,7 4,7 C 3,7 3,6 3,6 L 3,3 C 3,2 4,2 4,2 Z m 4,0 3,0 c 0,0 1,-7.996e-4 1,1 l 0,3 c 0,1 -1,1 -1,1 L 8,7 8,2 Z M 5,8 A 0.99999998,0.99999998 0 0 1 6,9 0.99999998,0.99999998 0 0 1 5,10 0.99999998,0.99999998 0 0 1 4,9 0.99999998,0.99999998 0 0 1 5,8 Z m 5,0 A 0.99999998,0.99999998 0 0 1 11,9 0.99999998,0.99999998 0 0 1 10,10 0.99999998,0.99999998 0 0 1 9,9 0.99999998,0.99999998 0 0 1 10,8 Z M 4.125,12 3,15 l 1.5,0 0.375,-1 5.25,0 0.375,1 1.5,0 -1.125,-3 -1.5,0 0.375,1 -4.5,0 0.375,-1 -1.5,0 z"
+         transform="matrix(0.73333331,0,0,0.73333331,-9.6333333,0)"
+         id="path14003" />
+    </g>
   </g>
 </svg>

@@ -43,9 +43,9 @@
      inkscape:object-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="1"
-     inkscape:cx="3.388196"
-     inkscape:cy="6.0045413"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="-27.698327"
+     inkscape:cy="9.6485121"
      inkscape:window-x="53"
      inkscape:window-y="5"
      inkscape:window-maximized="0"
@@ -58,12 +58,5 @@
        opacity="0.1254902"
        empspacing="2" /></sodipodi:namedview><path
      style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 5.5,0 C 5,0 5,0.5 5,0.5 l 0,1 C 5,1.777 5.223,2 5.5,2 5.777,2 6,1.777 6,1.5 L 6,1 7,1 7,3 6,3 C 6,3 4,3 4,5 l 0,3 c 0,3 3,3 3,3 l 1,0 c 0,0 3,0 3,-3 L 11,5 C 11,3 9,3 9,3 L 8,3 8,1 9,1 9,1.5 C 9,1.777 9.223,2 9.5,2 9.777,2 10,1.777 10,1.5 l 0,-1 C 10,0 9.5,0 9.5,0 Z M 7.5,4 9.5449219,4.7734375 10,6.5 C 10.131579,7 9.5,7 9.5,7 l -4,0 C 5.5,7 4.8684211,7 5,6.5 L 5.4550781,4.7734375 Z m 0,4 C 7.7761424,8 8,8.2238576 8,8.5 8,8.7761424 7.7761424,9 7.5,9 7.2238576,9 7,8.7761424 7,8.5 7,8.2238576 7.2238576,8 7.5,8 Z"
-     id="path14245"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccc" /><path
-     inkscape:connector-curvature="0"
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 4.125,12 3,15 l 1.5,0 0.375,-1 5.25,0 0.375,1 1.5,0 -1.125,-3 -1.5,0 0.375,1 -4.5,0 0.375,-1 z"
-     id="path5258"
-     sodipodi:nodetypes="ccccccccccccc" /></svg>
+     d="M 5.5 0 C 5 0 5 0.5 5 0.5 L 5 1.5 C 5 1.777 5.223 2 5.5 2 C 5.777 2 6 1.777 6 1.5 L 6 1 L 7 1 L 7 3 L 6 3 C 6 3 4 3 4 5 L 4 8 C 4 11 7 11 7 11 L 8 11 C 8 11 11 11 11 8 L 11 5 C 11 3 9 3 9 3 L 8 3 L 8 1 L 9 1 L 9 1.5 C 9 1.777 9.223 2 9.5 2 C 9.777 2 10 1.777 10 1.5 L 10 0.5 C 10 0 9.5 0 9.5 0 L 5.5 0 z M 7.5 4 L 9.5449219 4.7734375 L 10 6.5 C 10.131579 7 9.5 7 9.5 7 L 5.5 7 C 5.5 7 4.8684211 7 5 6.5 L 5.4550781 4.7734375 L 7.5 4 z M 7.5 8 C 7.7761424 8 8 8.2238576 8 8.5 C 8 8.7761424 7.7761424 9 7.5 9 C 7.2238576 9 7 8.7761424 7 8.5 C 7 8.2238576 7.2238576 8 7.5 8 z M 4.125 12 L 3 15 L 4.5 15 L 4.875 14 L 10.125 14 L 10.5 15 L 12 15 L 10.875 12 L 9.375 12 L 9.75 13 L 5.25 13 L 5.625 12 L 4.125 12 z "
+     id="path14245" /></svg>
