@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="21"
-   height="21"
+   width="11"
+   height="11"
    id="svg4764"
    version="1.1"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="entrance-11.svg"
-   viewBox="0 0 21 21">
+   viewBox="0 0 11 11">
   <defs
      id="defs4766" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="9.7796219"
-     inkscape:cy="10.270468"
+     inkscape:cx="12.976697"
+     inkscape:cy="1.207968"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -59,39 +59,39 @@
        opacity="0.1254902"
        empcolor="#ff00ff"
        empopacity="0.25098039"
-       originx="1"
-       originy="8.5614014e-05" />
+       originx="23"
+       originy="-6.9999144" />
     <sodipodi:guide
        orientation="0,1"
-       position="5.0000001,14.000086"
+       position="27,7.000086"
        id="guide4789" />
     <sodipodi:guide
        orientation="1,0"
-       position="15,12.000086"
+       position="37,5.000086"
        id="guide4791" />
     <sodipodi:guide
        orientation="0,1"
-       position="13,2.0000856"
+       position="35,-4.9999144"
        id="guide4793" />
     <sodipodi:guide
        orientation="1,0"
-       position="3,11.000086"
+       position="25,4.000086"
        id="guide4795" />
     <sodipodi:guide
        orientation="0,1"
-       position="8.0000001,13.000086"
+       position="30,6.000086"
        id="guide4797" />
     <sodipodi:guide
        orientation="1,0"
-       position="14,9.0000857"
+       position="36,2.0000857"
        id="guide4799" />
     <sodipodi:guide
        orientation="0,1"
-       position="12,4.0000857"
+       position="34,-2.9999143"
        id="guide4801" />
     <sodipodi:guide
        orientation="1,0"
-       position="5.0000001,7.0000857"
+       position="27,8.57e-05"
        id="guide4803" />
   </sodipodi:namedview>
   <metadata
@@ -102,7 +102,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -110,27 +110,18 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(3,-1033.3623)">
-    <rect
-       style="opacity:1;fill:#9c8ea4;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-       id="rect10153"
-       width="19"
-       height="19"
-       x="-2"
-       y="1034.3622"
-       rx="2.0000317"
-       ry="2.0000317" />
-    <rect
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#a3a3a3;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-       id="rect3090"
-       width="12"
-       height="12"
-       x="1"
-       y="1039.3622" />
+     transform="translate(25,-1036.3623)">
     <path
-       style="fill:#ffffff;fill-opacity:1"
-       d="m 3.6666664,1038.3622 0,3.6667 1.2222223,0 0,-2.4445 6.1111113,0 0,8.5556 -6.1111113,0 0,-2.4445 -1.2222223,0 0,3.6667 8.5555556,0 0,-11 z m 2.4444445,2.4444 0,2.4445 -4.8888889,0 0,1.2222 4.8888889,0 0,2.4445 0.6111111,0 3.666667,-3.0556 -3.666667,-3.0556 z"
-       id="rect3955-3"
-       inkscape:connector-curvature="0" />
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:connector-curvature="0"
+       id="path12685"
+       d="m -24,1037.3623 0,9 3,0 3,0 3,0 0,-3 -3,0 0,-3 -3,0 0,-3 z"
+       style="opacity:1;fill:#9c8ea4;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
+    <path
+       style="opacity:1;fill:#9c8ea4;fill-opacity:1;stroke:none;stroke-width:2.63156772;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+       d="m -24,1037.3623 0,9 3,0 3,0 3,0 0,-3 -3,0 0,-3 -3,0 0,-3 z"
+       id="rect4696"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccc" />
   </g>
 </svg>

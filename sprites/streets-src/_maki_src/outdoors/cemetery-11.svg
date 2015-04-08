@@ -17,7 +17,7 @@
    sodipodi:docname="cemetery-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -29,11 +29,22 @@
      inkscape:window-height="480"
      id="namedview3394"
      inkscape:document-units="px"
-     showgrid="false"
-     inkscape:zoom="55.545455"
-     inkscape:cx="3.2495908"
-     inkscape:cy="6.0581015"
-     inkscape:current-layer="svg4764" />
+     showgrid="true"
+     inkscape:zoom="32"
+     inkscape:cx="10.426814"
+     inkscape:cy="4.5687104"
+     inkscape:current-layer="svg4764"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid8878" />
+  </sodipodi:namedview>
   <defs
      id="defs4766" />
   <metadata
@@ -44,13 +55,23 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path style="fill:#000000;fill-opacity:1"
-     d="M 5.5,0 C 2.9355164,0 2.0625,1.7678375 2.0625,3.8303375 l 0,5.1071625 c -0.6875,0 -1.375,0.6875 -1.375,1.375 l 0,0.6875 9.625,0 0,-0.6875 c 0,-0.6875 -0.6875,-1.375 -1.375,-1.375 l 0,-4.8125 C 8.9375,1.7678375 8.0644823,0 5.5,0 Z"
-     inkscape:connector-curvature="0"
+  <path
+     style="fill:#000000;fill-opacity:1;stroke-width:1"
+     d="M 5.5,1 C 3.1020413,1 2,2.9375 2,5 L 2,7 9,7 9,5 C 9,3 7.8979574,1 5.5,1 Z M 2,8 1,9 1,10 10,10 10,9 9,8 Z"
      id="rect12479-9-1-9"
-      />
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ssccssccccccc" />
+  <rect
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     id="rect8942"
+     width="3"
+     height="0.5"
+     x="4"
+     y="4.5"
+     rx="0"
+     ry="0" />
 </svg>

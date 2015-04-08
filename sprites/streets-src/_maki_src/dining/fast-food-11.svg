@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91 r"
    sodipodi:docname="fast-food-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -29,10 +29,10 @@
      inkscape:window-height="624"
      id="namedview3364"
      inkscape:document-units="px"
-     showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="4.2257571"
-     inkscape:cy="2.9225364"
+     showgrid="true"
+     inkscape:zoom="2"
+     inkscape:cx="24.458444"
+     inkscape:cy="16.268898"
      inkscape:current-layer="svg4764"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -45,7 +45,12 @@
      inkscape:snap-smooth-nodes="true"
      inkscape:window-x="68"
      inkscape:window-y="14"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="0"
+     inkscape:showpageshadow="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     showborder="false"
+     inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
        id="grid3333"
@@ -54,6 +59,22 @@
        color="#ff0000"
        opacity="0.1254902"
        empspacing="2" />
+    <sodipodi:guide
+       position="0,11"
+       orientation="1,0"
+       id="guide7169" />
+    <sodipodi:guide
+       position="0,11"
+       orientation="0,1"
+       id="guide7171" />
+    <sodipodi:guide
+       position="11,11"
+       orientation="1,0"
+       id="guide7173" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="0,1"
+       id="guide7175" />
   </sodipodi:namedview>
   <defs
      id="defs4766" />
@@ -65,17 +86,10 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <rect
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect3335"
-     width="10"
-     height="2"
-     x="0.5"
-     y="8" />
   <path
      style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      d="m 3.5,1.5 4,0 c 0,0 3,0 3,2.5 l 0,1 -10,0 0,-1 c 0,-2.5 3,-2.5 3,-2.5 z"
@@ -89,5 +103,14 @@
      height="1"
      x="0"
      y="6"
+     ry="0.5" />
+  <rect
+     style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="rect7177"
+     width="10"
+     height="2"
+     x="0.5"
+     y="8"
+     rx="0.5"
      ry="0.5" />
 </svg>

@@ -16,11 +16,11 @@
    viewBox="0 0 15 15"
    enable-background="new 0 0 15 15"
    xml:space="preserve"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91 r"
    sodipodi:docname="restaurant-15.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -33,7 +33,7 @@
      inkscape:window-width="985"
      inkscape:window-height="745"
      id="namedview4"
-     showgrid="false"
+     showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
@@ -43,9 +43,9 @@
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="1"
-     inkscape:cx="4.3616899"
-     inkscape:cy="8.8997478"
+     inkscape:zoom="16"
+     inkscape:cx="5.2948226"
+     inkscape:cy="16.255993"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -58,7 +58,5 @@
        opacity="0.1254902"
        empspacing="2" /></sodipodi:namedview><path
      style="fill:#000000;fill-opacity:1"
-     id="rect6396-83"
-     inkscape:connector-curvature="0"
-     d="m 3,0 -0.5,0 0,4.5 c 0,0.8181818 1,0.6804039 1,1.5 l 0,7 c 0,1 1,1 1,1 0,0 1,0 1,-1 l 0,-7 c 0,-0.8181818 0.9834499,-0.6807691 1,-1.5 L 6.5,0 6,0 6,3 5,3 5,0 4,0 4,3 3,3 Z m 8.5,0 C 10.763636,0 9.536364,0.65454547 9.0454547,1.6363637 8.6363638,2.3727273 8.5,4.0181818 8.5,5 l 0,2.5 c 0,0.8181819 0.5909085,1 1,1 l 0,4.5 c 0,1 1,1 1,1 0,0 1,0 1,-1 z"
-     sodipodi:nodetypes="ccsscczsscccccccccccsscccsc" /></svg>
+     d="M 3.5 0 L 2.5 5.5 C 2.3536392 6.3049845 4.2814996 6.6810094 4.25 7.5 L 4 14 C 3.961567 14.999261 5 15 5 15 C 5 15 6.0384331 14.999261 6 14 L 5.75 7.5 C 5.7185547 6.6824227 7.4834499 6.3192309 7.5 5.5 L 6.5 0 L 6 0 L 6.25 4 L 5.5 4.5 L 5.25 0 L 4.75 0 L 4.5 4.5 L 3.75 4 L 4 0 L 3.5 0 z M 12 0 C 11.263636 0 10.035831 0.65490052 9.5449219 1.6367188 C 9.135831 2.3730824 9 4.0181818 9 5 L 9 7.5 C 9 8.3181819 10.090908 8.5 10.5 8.5 L 10 14 C 9.909464 14.995893 11 15 11 15 C 11 15 12 15 12 14 L 12 0 z "
+     id="path11774" /></svg>

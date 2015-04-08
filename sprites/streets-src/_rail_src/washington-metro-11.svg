@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="12"
-   height="12"
+   width="14"
+   height="14"
    id="svg3122"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="washington-metro-11.svg"
-   viewBox="0 0 12 12">
+   viewBox="0 0 14 14">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -28,10 +28,10 @@
      inkscape:window-width="1920"
      inkscape:window-height="1031"
      id="namedview3085"
-     showgrid="false"
-     inkscape:zoom="45.254834"
-     inkscape:cx="6.4947885"
-     inkscape:cy="3.525015"
+     showgrid="true"
+     inkscape:zoom="32"
+     inkscape:cx="4.9283881"
+     inkscape:cy="5.4212306"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -51,24 +51,23 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-1040.3622)"
+     transform="translate(0,-1038.3622)"
      id="layer1">
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
        id="rect43005"
        width="7.8223686"
        height="7.6234951"
-       x="1.9887378"
-       y="1042.7058" />
+       x="2.9887378"
+       y="1041.7058" />
     <path
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#9c8ea4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;marker:none;enable-background:accumulate;opacity:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 2,1 C 1.4459904,1 1,1.4459904 1,2 l 0,8 c 0,0.55401 0.4459904,1 1,1 l 8,0 c 0.55401,0 1,-0.44599 1,-1 L 11,2 C 11,1.4459904 10.55401,1 10,1 Z M 3,3 4.8769531,3 6.0039062,7.09375 7.1191406,3 9,3 9,9 7.8339844,9 l 0,-4.7226562 L 6.6015625,9 5.3945312,9 4.1660156,4.2773438 4.1660156,9 3,9 Z"
-       transform="translate(0,1040.3622)"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#9c8ea4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       d="m 2,1039.3622 c -0.5540096,0 -1,0.446 -1,1 l 0,10 c 0,0.554 0.4459904,1 1,1 l 10,0 c 0.55401,0 1,-0.446 1,-1 l 0,-10 c 0,-0.554 -0.44599,-1 -1,-1 z m 2,3 1.8769531,0 1.1269531,4.0938 1.1152344,-4.0938 1.8808594,0 0,6 -1.1660156,0 0,-4.7227 -1.2324219,4.7227 -1.2070313,0 -1.2285156,-4.7227 0,4.7227 -1.1660156,0 z"
        id="rect3416"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ssssssssscccccccccccccc" />
