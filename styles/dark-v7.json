@@ -25,7 +25,7 @@
       "base": 1,
       "stops": [[0, "#393939"], [20, "#393939"]]
     },
-    "@road-minor": "#efefef",
+    "@road-minor": "#101010",
     "@road-street-width": {
       "base": 1.55,
       "stops": [[4, 0.25], [20, 20]]
@@ -35,14 +35,14 @@
       "stops": [[14, 4], [20, 8]]
     },
     "@building-outline": "#c0c0c0",
-    "@park": "#e4e4e4",
+    "@park": "#1b1b1b",
     "@rail-width": {
       "base": 1.5,
       "stops": [[14, 0.5], [20, 1]]
     },
     "@land": "#111",
     "@name": "{name_en}",
-    "@road-major": "#fff",
+    "@road-major": "#000000",
     "@wood": "#232323",
     "@number-2": {
       "base": 1.5,
@@ -65,10 +65,10 @@
       "base": 1.5,
       "stops": [[5, 0.75], [18, 32]]
     },
-    "@label": "#666",
-    "@label-halo": "#fff",
+    "@label": "#999999",
+    "@label-halo": "#000",
     "@grass": "#1a1a1a",
-    "@water": "#333333",
+    "@water": "#222222",
     "@state-label": {
       "base": 1,
       "stops": [[0, "#929292"], [20, "#929292"]]
@@ -190,10 +190,10 @@
     "maxzoom": 22,
     "filter": ["all", ["==", "class", "industrial"], ["==", "$type", "Polygon"]],
     "layout": {
-      "visibility": "none"
+      "visibility": "visible"
     },
     "paint": {
-      "fill-color": "#fff",
+      "fill-color": "#000",
       "fill-opacity": 0.5
     }
   }, {
@@ -203,7 +203,7 @@
     "source-layer": "landuse",
     "filter": ["all", ["==", "class", "park"]],
     "layout": {
-      "visibility": "none"
+      "visibility": "visible"
     },
     "paint": {
       "fill-color": "@park"
@@ -215,7 +215,7 @@
     "source-layer": "landuse",
     "filter": ["all", ["==", "class", "wood"]],
     "layout": {
-      "visibility": "none"
+      "visibility": "visible"
     },
     "paint": {
       "fill-color": "#e0e0e0"
