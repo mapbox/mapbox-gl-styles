@@ -3,7 +3,7 @@ present=$(pwd)
 # render is a path to a directory where your pngs will be saved to, make sure this exists. If not empty, running this script will overwrite whatever's in there.
 render="renders"
 # srcdir is a path to a directory where your svg's are located.
-srcdir=_maki_src/transit
+srcdir=_src/
  
 function build_pngs {
  

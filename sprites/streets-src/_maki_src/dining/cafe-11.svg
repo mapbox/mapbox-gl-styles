@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="cafe-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -29,10 +29,10 @@
      inkscape:window-height="711"
      id="namedview3358"
      inkscape:document-units="px"
-     showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="11.493714"
-     inkscape:cy="4.6649944"
+     showgrid="true"
+     inkscape:zoom="32"
+     inkscape:cx="-1.1359333"
+     inkscape:cy="6.9812248"
      inkscape:current-layer="svg4764"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -48,7 +48,7 @@
      inkscape:window-maximized="0"
      inkscape:snap-global="true"
      showguides="false"
-     showborder="false"
+     showborder="true"
      inkscape:showpageshadow="false"
      inkscape:guide-bbox="true">
     <inkscape:grid

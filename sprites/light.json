@@ -1,30 +1,46 @@
 {
-  "airport-17": {
+  "default-3-large": {
     "x": 0,
-    "y": 0,
-    "width": 1701,
-    "height": 1701,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-3-small": {
-    "x": 1703,
     "y": 0,
     "width": 27,
     "height": 15,
     "pixelRatio": 1,
     "sdf": false
   },
-  "default-1-large": {
-    "x": 1703,
+  "default-6-small": {
+    "x": 29,
+    "y": 0,
+    "width": 47,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "default-6-large": {
+    "x": 0,
+    "y": 17,
+    "width": 47,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "airport-15": {
+    "x": 49,
     "y": 17,
     "width": 15,
     "height": 15,
     "pixelRatio": 1,
     "sdf": false
   },
+  "default-1-large": {
+    "x": 0,
+    "y": 34,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": false
+  },
   "default-1-small": {
-    "x": 1703,
+    "x": 17,
     "y": 34,
     "width": 15,
     "height": 15,
@@ -32,80 +48,80 @@
     "sdf": false
   },
   "default-2-large": {
-    "x": 1703,
-    "y": 51,
+    "x": 34,
+    "y": 34,
     "width": 21,
     "height": 15,
     "pixelRatio": 1,
     "sdf": false
   },
   "default-2-small": {
-    "x": 1703,
-    "y": 68,
+    "x": 0,
+    "y": 51,
     "width": 21,
     "height": 15,
     "pixelRatio": 1,
     "sdf": false
   },
-  "default-3-large": {
-    "x": 1703,
-    "y": 85,
+  "airfield-15": {
+    "x": 57,
+    "y": 34,
+    "width": 15,
+    "height": 15,
+    "pixelRatio": 1,
+    "sdf": false
+  },
+  "default-3-small": {
+    "x": 23,
+    "y": 51,
     "width": 27,
     "height": 15,
     "pixelRatio": 1,
     "sdf": false
   },
-  "default-6-small": {
-    "x": 0,
-    "y": 1703,
-    "width": 47,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
   "default-4-large": {
-    "x": 49,
-    "y": 1703,
+    "x": 78,
+    "y": 0,
     "width": 33,
     "height": 15,
     "pixelRatio": 1,
     "sdf": false
   },
   "default-4-small": {
-    "x": 84,
-    "y": 1703,
+    "x": 78,
+    "y": 17,
     "width": 33,
     "height": 15,
     "pixelRatio": 1,
     "sdf": false
   },
   "default-5-large": {
-    "x": 119,
-    "y": 1703,
+    "x": 0,
+    "y": 68,
     "width": 41,
     "height": 15,
     "pixelRatio": 1,
     "sdf": false
   },
   "default-5-small": {
-    "x": 162,
-    "y": 1703,
+    "x": 43,
+    "y": 68,
     "width": 41,
     "height": 15,
     "pixelRatio": 1,
     "sdf": false
   },
-  "default-6-large": {
-    "x": 205,
-    "y": 1703,
-    "width": 47,
-    "height": 15,
+  "airport-11": {
+    "x": 78,
+    "y": 34,
+    "width": 11,
+    "height": 11,
     "pixelRatio": 1,
     "sdf": false
   },
-  "airport-11": {
-    "x": 1703,
-    "y": 102,
+  "airfield-11": {
+    "x": 91,
+    "y": 34,
     "width": 11,
     "height": 11,
     "pixelRatio": 1,
