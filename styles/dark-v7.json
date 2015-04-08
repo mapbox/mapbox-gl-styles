@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "name": "light-v7.json",
+  "name": "dark-v7.json",
   "constants": {
     "@road-motorway-width": {
       "base": 1,
@@ -40,7 +40,7 @@
       "base": 1.5,
       "stops": [[14, 0.5], [20, 1]]
     },
-    "@land": "#eee",
+    "@land": "#111",
     "@name": "{name_en}",
     "@road-major": "#fff",
     "@wood": "#dcdcdc",
@@ -68,7 +68,7 @@
     "@label": "#666",
     "@label-halo": "#fff",
     "@grass": "#e5e5e5",
-    "@water": "#d6d6d6",
+    "@water": "#1e1e1e",
     "@state-label": {
       "base": 1,
       "stops": [[0, "#929292"], [20, "#929292"]]
@@ -232,7 +232,7 @@
       "fill-color": "#fff",
       "fill-opacity": {
         "base": 1,
-        "stops": [[15, 0.15], [17, 0.05]]
+        "stops": [[15, 0.05], [17, 0.05]]
       }
     }
   }, {
@@ -250,7 +250,7 @@
       "fill-color": "#fff",
       "fill-opacity": {
         "base": 1,
-        "stops": [[15, 0.15], [17, 0.05]]
+        "stops": [[15, 0.05], [17, 0.05]]
       }
     }
   }, {
@@ -268,7 +268,7 @@
       "fill-color": "#666",
       "fill-opacity": {
         "base": 1,
-        "stops": [[14, 0.06], [17, 0.01]]
+        "stops": [[14, 0.01], [17, 0.01]]
       }
     }
   }, {
@@ -286,7 +286,7 @@
       "fill-color": "#666",
       "fill-opacity": {
         "base": 1,
-        "stops": [[14, 0.06], [17, 0.01]]
+        "stops": [[14, 0.01], [17, 0.01]]
       }
     }
   }, {
@@ -304,7 +304,7 @@
       "fill-color": "#888",
       "fill-opacity": {
         "base": 1,
-        "stops": [[14, 0.06], [17, 0.01]]
+        "stops": [[14, 0.01], [17, 0.01]]
       }
     }
   }, {
@@ -322,7 +322,7 @@
       "fill-color": "#666",
       "fill-opacity": {
         "base": 1,
-        "stops": [[14, 0.06], [17, 0.01]]
+        "stops": [[14, 0.01], [17, 0.01]]
       }
     }
   }, {
@@ -1522,7 +1522,7 @@
     }
   }],
   "owner": "andreasviglakis",
-  "modified": "2015-04-04T01:30:56.926Z",
-  "created": "2015-04-02T16:59:45.012Z",
-  "id": "andreasviglakis.cf0fa75b"
+  "modified": "2015-04-08T18:25:39.688Z",
+  "created": "2015-04-08T18:12:11.188Z",
+  "id": "andreasviglakis.1857cdc2"
 }
