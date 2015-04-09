@@ -350,5 +350,13 @@
         "height": 19,
         "pixelRatio": 1,
         "sdf": false
+    },
+    "oneway_road": {
+        "x": 178,
+        "y": 62,
+        "width": 21,
+        "height": 19,
+        "pixelRatio": 1,
+        "sdf": false
     }
 }
