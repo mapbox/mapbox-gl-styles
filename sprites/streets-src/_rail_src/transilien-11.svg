@@ -13,7 +13,7 @@
    height="11"
    id="svg2484"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    version="1.0"
    sodipodi:docname="transilien-11.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -28,13 +28,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="56.717949"
-     inkscape:cx="5.31531"
-     inkscape:cy="5.1824901"
+     inkscape:cx="4.3250831"
+     inkscape:cy="5.9958074"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="707"
-     inkscape:window-height="703"
      inkscape:window-x="15"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -70,7 +68,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -82,10 +80,12 @@
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
        id="rect42995"
-       width="8"
-       height="8"
-       x="-1123.7177"
-       y="1008.5985" />
+       width="8.9999752"
+       height="8.9999285"
+       x="-1124.7178"
+       y="1008.5986"
+       rx="1.4999284"
+       ry="1.4999282" />
     <g
        id="g3812">
       <path

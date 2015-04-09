@@ -13,7 +13,7 @@
    width="15"
    height="15"
    id="svg3122"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="washington-metro-15.svg"
    viewBox="0 0 15 15">
   <sodipodi:namedview
@@ -25,13 +25,11 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="755"
      id="namedview3924"
-     showgrid="false"
-     inkscape:zoom="8.5076923"
-     inkscape:cx="-1"
-     inkscape:cy="0.5"
+     showgrid="true"
+     inkscape:zoom="34.030769"
+     inkscape:cx="13.11264"
+     inkscape:cy="5.4744221"
      inkscape:window-x="-1"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -64,7 +62,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -80,9 +78,9 @@
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke:none;stroke-width:1px;marker:none;enable-background:accumulate" />
     <path
        style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#9c8ea4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-       d="m 1.8125,1038.3622 c -0.450125,0 -0.8125,0.3624 -0.8125,0.8125 l 0,11.375 c 0,0.4501 0.362375,0.8125 0.8125,0.8125 l 11.375,0 c 0.450125,0 0.8125,-0.3624 0.8125,-0.8125 l 0,-11.375 c 0,-0.4501 -0.362375,-0.8125 -0.8125,-0.8125 z m 1.6875,2.5 2.5,0 1.5,5.5 1.5,-5.5 2.5,0 0,8 -1.5,0 0,-6.5 -1.5,6.5 -2,0 -1.5,-6.5 0,6.5 -1.5,0 z"
+       d="m 2,1038.3622 c 0,0 -1,0 -1,1 l 0,11 c 0,1 1,1 1,1 l 11,0 c 0,0 1,0 1,-1 l 0,-11 c 0,0 0,-1 -1,-1 z m 1.5,2.5 2.5,0 1.5,5.5 1.5,-5.5 2.5,0 0,8 -1.5,0 0,-6.5 -1.5,6.5 -2,0 -1.5,-6.5 0,6.5 -1.5,0 z"
        id="rect3420"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ssssssssscccccccccccccc" />
+       sodipodi:nodetypes="cssccscsccccccccccccccc" />
   </g>
 </svg>
