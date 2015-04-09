@@ -95,7 +95,7 @@
       "type": "vector"
     }
   },
-  "sprite": "https://www.mapbox.com/bites/00116/mapbox-streets",
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/mapbox-streets",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
