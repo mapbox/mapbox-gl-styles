@@ -12,7 +12,7 @@ if (!argv[2] || argv[2].split('.').length < 2) {
 
 var base = {};
 var networks = argv[2].split('.').reduce(function(memo, network) {
-    [12,18,24].forEach(function(size) {
+    [11,15].forEach(function(size) {
         memo[size] = memo[size] || {};
         memo[size][network] = fs.readFileSync(__dirname + '/' + util.format('%s-%s.svg', network, size), 'utf8');
         base[size] = base[size] || memo[size][network];
@@ -20,7 +20,7 @@ var networks = argv[2].split('.').reduce(function(memo, network) {
     return memo;
 }, {});
 
-[12,18,24].forEach(function(size) {
+[11,15].forEach(function(size) {
     var lines = base[size].split('\n');
     var head = [];
     var body = [];
@@ -34,6 +34,7 @@ var networks = argv[2].split('.').reduce(function(memo, network) {
     var line = lines.shift();
     while (!/<g/.test(line)) {
         var match = line.match(/width="([0-9]+)"/);
+        console.log(typeof line, match);
         if (match) {
             if (parseInt(match[1],10) !== size) throw new Error('Base svg width does not match size ' + size + '.');
             line = line.replace(size, size * Object.keys(networks[size]).length);

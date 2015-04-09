@@ -25,8 +25,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="872"
-     inkscape:window-height="635"
+     inkscape:window-width="843"
+     inkscape:window-height="762"
      id="namedview3352"
      inkscape:document-units="px"
      showgrid="false"
@@ -37,9 +37,9 @@
      inkscape:object-nodes="true"
      inkscape:snap-intersection-paths="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="1"
-     inkscape:cx="5.5"
-     inkscape:cy="5.5"
+     inkscape:zoom="21.404313"
+     inkscape:cx="2.0458938"
+     inkscape:cy="6.8813677"
      inkscape:current-layer="svg4764"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -68,9 +68,9 @@
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:#000000;fill-opacity:1"
-     d="M 7.4097222,0 6.1875,1.2222222 l 0,2.3680556 -4.1631944,4.1632555 c 0,0 -0.8020834,-1.0313111 -0.8020834,-1.6424222 l 0,-1.2222222 L 2.5,5.5 2.5,2.4444444 0,4.2777778 0,6.1111111 0,11 6.7222222,11 8.5,8.5 l -3,0 0.6111111,1.2777778 -1.2222222,0 c -0.6111111,0 -1.0864578,-0.3026222 -1.6423611,-0.7256334 l 4.1631944,-4.1632555 2.3680558,0 L 11,3.6666667 11,1.2222222 9.777778,0 Z m 0.6111111,1.2222222 1.2222227,0 0.611111,0.6111111 0,1.2222223 L 9.243056,3.6666667 8.0206378,3.685 7.4097222,3.0549444 l 0,-1.2222222 z"
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 5.5,0 c -1.10457,0 -2,0.895431 -2,2 0.0013,0.713268 0.38229,1.371882 1,1.728516 L 4.5,8.5 2,7.333984 2,6 2.5,6 2,4.994515 0.5,4 0.5,8 5,11 6,11 10.5,8 10.5,4 9,5 8.5,6 9,6 9,7.333984 6.5,8.5 6.5,3.730469 C 7.118313,3.373486 7.499435,2.713966 7.5,2 7.5,0.895431 6.604569,0 5.5,0 Z m 0,1 c 0.552285,0 1,0.447715 1,1 0,0.552285 -0.447715,1 -1,1 -0.552285,0 -1,-0.447715 -1,-1 0,-0.552285 0.447715,-1 1,-1 z"
+     id="path3334-7-9"
      inkscape:connector-curvature="0"
-     id="path7720"
-     sodipodi:nodetypes="ccccsccccccccccscccccccccccccccc" />
+     sodipodi:nodetypes="sccccccccccccccccccccssssss" />
 </svg>

@@ -95,7 +95,7 @@
       "type": "vector"
     }
   },
-  "sprite": "https://www.mapbox.com/bites/00116/mapbox-streets",
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/light",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
@@ -130,7 +130,7 @@
       "visibility": "visible"
     },
     "paint": {
-      "fill-color": "@crop",
+      "fill-color": "#ebebeb",
       "fill-opacity": 0.5
     }
   }, {
@@ -1522,7 +1522,7 @@
     }
   }],
   "owner": "andreasviglakis",
-  "modified": "2015-04-04T01:30:56.926Z",
-  "created": "2015-04-02T16:59:45.012Z",
-  "id": "andreasviglakis.cf0fa75b"
+  "modified": "2015-04-09T02:24:48.899Z",
+  "created": "2015-04-08T20:28:47.817Z",
+  "id": "andreasviglakis.d4c56b6d"
 }

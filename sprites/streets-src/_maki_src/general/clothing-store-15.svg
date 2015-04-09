@@ -26,15 +26,15 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1027"
-     inkscape:window-height="758"
+     inkscape:window-height="755"
      id="namedview3395"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="50.828499"
-     inkscape:cx="8.3158082"
-     inkscape:cy="7.3392033"
+     inkscape:zoom="18.401414"
+     inkscape:cx="5.0009851"
+     inkscape:cy="14.813201"
      inkscape:current-layer="svg4619"
-     inkscape:window-x="0"
+     inkscape:window-x="1"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:snap-bbox="true"
@@ -66,14 +66,14 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:#000000;fill-opacity:1"
-     d="m 5,2 -2,1 -3,3.5 2,2 1,-1 1,0 0,6.5 6.5,0 0,-6.5 1,0 1,1 2,-2 -3,-3.5 -2,-1 C 9.5,2.7215597 9.3610535,3.2368777 8.9874998,3.7333331 8.5604783,4.3008478 7.9540321,4.6666664 7.2666667,4.6666664 6.5793015,4.6666664 5.9728547,4.3008478 5.5458334,3.7333331 5.17228,3.2368777 5,2.7215597 5,2 Z"
-     id="rect3340-6"
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 7,0.5 c -0.5522847,0 -1,0.44771525 -1,1 7.308e-4,0.3929195 0.2314943,0.7489982 0.5898438,0.9101562 L 6.5,2.5 c 0,0 -2.6599369,2.7214078 -4,4 l 0,1 1.5,0 0.5,3 5,0 0.5,-3 1.5,0 0,-1 L 7.75,2.7851562 7.3964844,2.4160156 C 7.3964844,2.4160156 6.9963217,1.9999868 7,2 6.7238576,2 6.5,1.7761424 6.5,1.5 6.5,1.2238576 6.7238576,1 7,1 7.2761424,1 7.5,1.2238576 7.5,1.5 L 8,1.5 C 8,0.94771525 7.5522847,0.5 7,0.5 Z M 7,3 9.5,5.5 c 0,0 -0.5,1 -1,1 l -3,0 c -0.5,0 -1,-1 -1,-1 z M 4.5,11 3,15 11.142578,15 9.5,11 Z"
+     id="rect3334-2"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccccccccccccsssc" />
+     sodipodi:nodetypes="sccccccccccccccssccsccssccccccc" />
 </svg>

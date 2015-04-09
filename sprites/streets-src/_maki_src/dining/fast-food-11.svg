@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="fast-food-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -30,9 +30,9 @@
      id="namedview3364"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="2"
-     inkscape:cx="24.458444"
-     inkscape:cy="16.268898"
+     inkscape:zoom="32"
+     inkscape:cx="4.0915992"
+     inkscape:cy="6.9508226"
      inkscape:current-layer="svg4764"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -49,7 +49,7 @@
      inkscape:showpageshadow="false"
      showguides="false"
      inkscape:guide-bbox="true"
-     showborder="false"
+     showborder="true"
      inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
