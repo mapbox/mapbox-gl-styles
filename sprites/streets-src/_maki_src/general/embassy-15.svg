@@ -13,7 +13,7 @@
    width="15"
    height="15"
    id="svg4619"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="embassy-15.svg"
    viewBox="0 0 15 15">
   <sodipodi:namedview
@@ -29,10 +29,10 @@
      inkscape:window-height="694"
      id="namedview3346"
      inkscape:document-units="px"
-     showgrid="true"
-     inkscape:zoom="11.714286"
-     inkscape:cx="-0.30126881"
-     inkscape:cy="6.4741962"
+     showgrid="false"
+     inkscape:zoom="16"
+     inkscape:cx="4.6942974"
+     inkscape:cy="3.8257542"
      inkscape:current-layer="svg4619"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -70,9 +70,7 @@
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:#000000;fill-opacity:1"
-     d="M 6,1.0198414 C 4.5,1.0396828 3,2 3,2 L 3,14 4,14 4,6.5 C 4,6.5 5,6 6,6 c 1,0 2.5,1.5 3.5,1.5 1,0 2.5,-1 2.5,-1 l 0,-5 c 0,0 -1.5,1 -2.5,1 C 8.5,2.5 7.5,1 6,1.0198414 Z"
-     inkscape:connector-curvature="0"
-     id="rect9498-4-99"
-     sodipodi:nodetypes="zcccczzcczz" />
+     style="fill:#000000;fill-opacity:1;stroke-width:1"
+     d="M 6.8164062 2 C 5.1585114 2 3.5 4 3.5 4 L 3.5 10 C 3.5 10 5.1585114 8 6.8164062 8 C 8.4128974 8 9.0256986 10 10.683594 10 C 12.341488 10 14 7.7773437 14 7.7773438 L 14 2 C 14 2 12.341488 4 10.683594 4 C 9.0256986 4 8.474301 2 6.8164062 2 z M 2.4355469 2.4726562 A 0.52777779 0.52777791 0 0 0 1.9453125 3 A 0.52777779 0.52777791 0 0 0 1.9453125 3.0371094 L 1.9453125 12.060547 C 1.6909026 13.488917 0.5 13.5 0.5 13.5 L 0.5 14 L 4.5 14 L 4.5 13.5 C 4.5 13.5 3 13.499999 3 11.5 L 3 9.9453125 L 3 3 A 0.52777779 0.52777791 0 0 0 2.4726562 2.4726562 A 0.52777779 0.52777791 0 0 0 2.4355469 2.4726562 z "
+     id="path5391" />
 </svg>
