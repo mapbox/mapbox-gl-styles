@@ -11,7 +11,7 @@
    height="15"
    id="svg3115"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="wiener-linien-15.svg"
    viewBox="0 0 15 15">
   <metadata
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,13 +37,11 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="755"
      id="namedview3121"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="8.419079"
-     inkscape:cy="8.1596041"
+     inkscape:zoom="22.627417"
+     inkscape:cx="11.811772"
+     inkscape:cy="13.003224"
      inkscape:window-x="-2"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -101,16 +99,17 @@
      id="layer2"
      inkscape:label="Layer"
      transform="translate(0,-3)">
-    <circle
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-       id="path42997"
-       cx="8.5"
-       cy="8.375"
-       r="5.375" />
     <path
        inkscape:connector-curvature="0"
        id="circle3117"
-       d="M 7.5,4 A 6.5000006,6.5000006 0 0 0 1,10.5 6.5000006,6.5000006 0 0 0 7.5,17 6.5000006,6.5000006 0 0 0 14,10.5 6.5000006,6.5000006 0 0 0 7.5,4 Z m -3.4882812,3 2,0 0,4.5 c 0,0.5 0.5,1.5 1.5,1.5 1,0 1.5,-1 1.5,-1.5 l 0,-4.5 2.0000002,0 0,4 c -0.0028,2.162274 -1.3377252,4 -3.5000002,4 -2.1622749,0 -3.4972,-1.837726 -3.5,-4 l 0,-4 z"
-       style="fill:#0079ac;fill-opacity:1;stroke-width:0.02610442" />
+       d="M 7.5000004,3.0000002 C 3.3578647,3.0000005 3.7428572e-7,6.3578649 3.1428572e-8,10.5 3.7428572e-7,14.642137 3.3578647,18 7.5000004,18 11.642137,18 15,14.642137 15,10.5 15,6.3578649 11.642137,3.0000005 7.5000004,3.0000002 Z"
+       style="fill:#0079ac;fill-opacity:1;stroke-width:0.02610441"
+       sodipodi:nodetypes="sssss" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.02610442"
+       d="m 4.0117188,7 2,0 0,4.5 c 0,0.5 0.5,1.5 1.5,1.5 1,0 1.5,-1 1.5,-1.5 l 0,-4.5 2.0000002,0 0,4 c -0.0028,2.162274 -1.3377252,4 -3.5000002,4 -2.1622749,0 -3.4972,-1.837726 -3.5,-4 z"
+       id="path4728"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccssscccscc" />
   </g>
 </svg>

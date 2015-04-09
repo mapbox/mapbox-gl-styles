@@ -1,8 +1,8 @@
 #!/bin/bash
 present=$(pwd)
 
-./maki_dots.sh
-./render.sh
+# ./maki_dots.sh
+# ./render.sh
 
 cd ..
 
