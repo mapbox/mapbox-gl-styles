@@ -30,8 +30,8 @@
      id="namedview8"
      showgrid="true"
      inkscape:zoom="8"
-     inkscape:cx="-0.635448"
-     inkscape:cy="-5.6017951"
+     inkscape:cx="-22.197948"
+     inkscape:cy="-6.7267951"
      inkscape:window-x="141"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -62,7 +62,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(-1,0,0,1,386,-534.36218)"
+     transform="translate(-375,-534.36218)"
      id="layer1">
     <path
        d="m 386,536.86218 -4,-2.5 0,2 -6.5,0 c 0,0 -0.5,0 -0.5,0.5 0,0.5 0.5,0.5 0.5,0.5 l 6.5,0 0,2 z"

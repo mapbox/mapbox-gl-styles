@@ -100,7 +100,7 @@
        cy="3.9705882"
        cx="1.7647059"
        id="path6112"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.7647059;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.7647059;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
     <path
        sodipodi:nodetypes="sccccs"
        inkscape:connector-curvature="0"
@@ -111,7 +111,7 @@
        inkscape:connector-curvature="0"
        id="path6357"
        d="m 0.88235293,3.9705881 0,0.8823529 1.76470587,0 0,-0.8823529 z"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.88235295px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.88235295px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
   <g
      transform="rotate(-180,1.7647059,6.8382354)"
@@ -129,7 +129,7 @@
        cy="3.9705882"
        r="1.7647059" />
     <circle
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.7647059;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.7647059;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
        id="circle6372"
        cx="1.7647059"
        cy="3.9705882"
@@ -141,7 +141,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sccccs" />
     <path
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.88235295px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.88235295px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 0.88235293,3.9705881 0,0.8823529 1.76470587,0 0,-0.8823529 z"
        id="path6376"
        inkscape:connector-curvature="0" />
@@ -153,7 +153,7 @@
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccscc" />
   <circle
-     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.76470602;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.76470602;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
      id="path6164"
      cx="6.3168449"
      cy="6.6176476"
