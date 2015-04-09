@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="lodging-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -30,9 +30,9 @@
      id="namedview3364"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="30.341309"
-     inkscape:cx="6.4345727"
-     inkscape:cy="4.3057155"
+     inkscape:zoom="22.627417"
+     inkscape:cx="1.418609"
+     inkscape:cy="4.9171309"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -63,12 +63,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:#000000;fill-opacity:1"
-     d="M 1.5 2 A 1.5 1.5 0 0 0 0 3.5 A 1.5 1.5 0 0 0 1.5 5 A 1.5 1.5 0 0 0 3 3.5 A 1.5 1.5 0 0 0 1.5 2 z M 4 3 C 4 4.222215 2.8333225 6 1 6 L 0.5 6 C 0.5 6 0 6 0 6.5 C 0 7 0.5 7 0.5 7 L 11 7 L 11 5.1660156 C 11 4.5549081 10.83288 3 7.7773438 3 L 4 3 z M 0.5 8 C 0.1944463 8 0 8.1944463 0 8.5 C -0.00014671 9.1054853 3.6140072e-20 9.4772587 0 10 C 0 10.305554 0.1944463 10.5 0.5 10.5 C 0.8055538 10.5 1 10.305554 1 10 L 1 9.5 L 10 9.5 L 10 10 C 10 10.305554 10.194447 10.5 10.5 10.5 C 10.805554 10.5 11 10.305554 11 10 L 11 8.5 C 11 8.1944463 10.805554 8 10.5 8 L 0.5 8 z "
-     id="path4536-6" />
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     d="M 0.5 2 C 0.223 2 0 2.223 0 2.5 L 0 7.5 L 0 8.5 C 0 8.777 0.223 9 0.5 9 C 0.777 9 1 8.777 1 8.5 L 1 8 L 10 8 L 10 8.5 C 10 8.777 10.223 9 10.5 9 C 10.777 9 11 8.777 11 8.5 L 11 7.5 C 11 7.223 10.777 7 10.5 7 L 1 7 L 1 2.5 C 1 2.223 0.777 2 0.5 2 z M 2.5 2 A 1 1 0 0 0 1.5 3 A 1 1 0 0 0 2.5 4 A 1 1 0 0 0 3.5 3 A 1 1 0 0 0 2.5 2 z M 5 3 C 4 3 4 4 4 4 L 4 5 L 2 5 C 1.723 5 1.5 5.223 1.5 5.5 C 1.5 5.777 1.723 6 2 6 L 4.5 6 L 11 6 L 11 5 C 11 3 9 3 9 3 L 5 3 z "
+     id="rect6430" />
 </svg>
