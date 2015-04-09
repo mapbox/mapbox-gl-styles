@@ -13,7 +13,7 @@
    width="15"
    height="15"
    id="svg3122"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="national-rail-15.svg"
    viewBox="0 0 15 15">
   <sodipodi:namedview
@@ -25,14 +25,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1001"
-     inkscape:window-height="668"
      id="namedview15296"
      inkscape:document-units="px"
-     showgrid="false"
-     inkscape:zoom="37.083822"
-     inkscape:cx="6.4975464"
-     inkscape:cy="7.7043295"
+     showgrid="true"
+     inkscape:zoom="45.254834"
+     inkscape:cx="6.5333081"
+     inkscape:cy="9.3504281"
      inkscape:window-x="1"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -68,14 +66,24 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     id="rect16692"
+     width="13"
+     height="10"
+     x="1"
+     y="2"
+     rx="1.5"
+     ry="1.5" />
   <g
      transform="translate(-1.5,-1036.3622)"
      id="layer1">
     <path
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#e97474;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;enable-background:accumulate"
-       d="M 3,4 C 2.446,4 2,4.446 2,5 l 0,1.75 7.0351562,0 L 5.5,4 3,4 Z M 8,4 11.535156,6.75 16,6.75 16,5 C 16,4.446 15.554,4 15,4 L 8,4 Z m -6,4 0,2 4.25,0 3,-2 L 2,8 Z m 9.75,0 -3,2 7.25,0 0,-2 -4.25,0 z M 2,11.25 2,13 c 0,0.554 0.446,1 1,1 L 10,14 6.4648438,11.25 2,11.25 Z m 6.9648438,0 L 12.5,14 15,14 c 0.554,0 1,-0.446 1,-1 l 0,-1.75 -7.0351562,0 z"
+       d="M 3.5,4 C 2.946,4 2.4973937,4.4460061 2.5,5 l 0,1.75 6.5351562,0 L 5.5,4 Z M 8,4 11.535156,6.75 15.5,6.75 15.5,5 c 0,-0.554 -0.446,-1 -1,-1 z m -5.5,4 0,2 3.75,0 3,-2 z m 9.25,0 -3,2 6.75,0 0,-2 z M 2.5,11.25 2.5,13 c 0,0.554 0.446,1 1,1 L 10,14 6.4648438,11.25 Z m 6.4648438,0 L 12.5,14 l 2,0 c 0.554,0 1,-0.446 1,-1 l 0,-1.75 z"
        transform="translate(0,1034.3622)"
        id="rect3025-0"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sscccscccssccccccccccccsscccccsscc" />
   </g>
 </svg>

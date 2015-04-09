@@ -13,8 +13,9 @@
    width="15"
    height="15"
    id="svg3122"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="dlr-15.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="dlr-15.svg"
+   viewBox="0 0 15 15">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,8 +25,6 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="947"
-     inkscape:window-height="635"
      id="namedview8"
      showgrid="true"
      inkscape:snap-bbox="true"
@@ -36,13 +35,14 @@
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="16"
-     inkscape:cx="4.6137851"
-     inkscape:cy="10.371"
+     inkscape:zoom="22.627417"
+     inkscape:cx="2.800275"
+     inkscape:cy="0.50353252"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg3122">
+     inkscape:current-layer="svg3122"
+     inkscape:document-units="px">
     <inkscape:grid
        type="xygrid"
        id="grid3336"
@@ -66,27 +66,23 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     id="g3365">
-    <circle
-       r="5.5"
-       cy="7.5"
-       cx="7.5"
-       id="path3346"
-       style="opacity:1;fill:#9cc883;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <circle
-       r="3.5"
-       cy="7.5"
-       cx="7.5"
-       id="path3346-2"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       ry="0.49999997"
-       y="6"
-       x="1"
-       height="3"
-       width="13"
-       id="rect3363"
-       style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-  </g>
+  <circle
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     id="path5295"
+     cx="7.5"
+     cy="7.5"
+     r="5" />
+  <path
+     style="opacity:1;fill:#9cc883;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 7.5 1 A 6.5 6.5 0 0 0 1 7.5 A 6.5 6.5 0 0 0 7.5 14 A 6.5 6.5 0 0 0 14 7.5 A 6.5 6.5 0 0 0 7.5 1 z M 7.5 3.5 A 3.9999998 3.9999998 0 0 1 11.5 7.5 A 3.9999998 3.9999998 0 0 1 7.5 11.5 A 3.9999998 3.9999998 0 0 1 3.5 7.5 A 3.9999998 3.9999998 0 0 1 7.5 3.5 z "
+     id="path3346" />
+  <rect
+     style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect3363"
+     width="15.000001"
+     height="3"
+     x="0"
+     y="6"
+     ry="0.49999997"
+     rx="0.5" />
 </svg>

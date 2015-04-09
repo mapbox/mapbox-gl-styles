@@ -11,7 +11,7 @@
    height="11"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="u-bahn-11.svg"
    viewBox="0 0 11 11">
   <metadata
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,13 +37,11 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="971"
-     inkscape:window-height="613"
      id="namedview8"
-     showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="6.447133"
-     inkscape:cy="6.5753246"
+     showgrid="true"
+     inkscape:zoom="32"
+     inkscape:cx="0.17778904"
+     inkscape:cy="8.9997545"
      inkscape:window-x="104"
      inkscape:window-y="75"
      inkscape:window-maximized="0"
@@ -76,15 +74,16 @@
      id="rect43001"
      width="8"
      height="8"
-     x="2"
-     y="1" />
+     x="1.5"
+     y="1.5" />
   <g
      id="g3007"
      transform="translate(-0.5,-0.5)">
     <path
        style="fill:#3377a7;fill-opacity:1"
-       d="M 1,1 1,11 11,11 11,1 1,1 Z m 2,1 1.5,0 0,5 C 4.5,8 5.28125,8.5 6,8.5 6.71875,8.5 7.5,8 7.5,7 L 7.5,2 9,2 C 9,2 8.99586,5.4691074 9,7.5 9,9 7.5,10 6,10 4.5,10 3,9 3,7.5 L 3,2 Z"
+       d="m 1.5,2.5 0,7 c 0,0 0,1 1,1 l 7,0 c 0,0 1,0 1,-1 l 0,-7 c 0,0 0,-1 -1,-1 l -7,0 c -1,0 -1,1 -1,1 z m 1.5,0 1.5,0 0,4 C 4.5,7.5 5.28125,8 6,8 6.71875,8 7.5,7.5 7.5,6.5 l 0,-4 1.5,0 C 9,2.5 8.99586,4.9691074 9,7 9,8.5 7.5,9.5 6,9.5 4.5,9.5 3,8.5 3,7 Z"
        id="rect3272"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccssscccssc" />
   </g>
 </svg>

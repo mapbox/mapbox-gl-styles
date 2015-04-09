@@ -12,8 +12,8 @@
    viewBox="0 40 15 15"
    id="svg3253"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="moscow-metro-17.svg">
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="moscow-metro-15.svg">
   <metadata
      id="metadata3263">
     <rdf:RDF>
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,13 +37,11 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="879"
-     inkscape:window-height="768"
      id="namedview3259"
      showgrid="false"
-     inkscape:zoom="31.894628"
-     inkscape:cx="4.8177071"
-     inkscape:cy="8.5762605"
+     inkscape:zoom="1"
+     inkscape:cx="3.1089554"
+     inkscape:cy="-34.308238"
      inkscape:window-x="-3"
      inkscape:window-y="0"
      inkscape:window-maximized="0"

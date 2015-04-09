@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg3122"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="dlr-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -25,8 +25,6 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1005"
-     inkscape:window-height="737"
      id="namedview12"
      showgrid="true"
      inkscape:snap-bbox="true"
@@ -34,9 +32,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="30.346666"
-     inkscape:cx="3.636035"
-     inkscape:cy="7.9949261"
+     inkscape:zoom="64"
+     inkscape:cx="6.9598781"
+     inkscape:cy="3.7785864"
      inkscape:window-x="7"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -74,21 +72,27 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <circle
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     id="path5297"
+     cx="5.5"
+     cy="5.5"
+     r="2.796875" />
   <path
-     style="opacity:1;fill:#9cc883;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 5.5,1 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 0,2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 z"
-     id="path3336"
-     inkscape:connector-curvature="0" />
+     style="opacity:1;fill:#9cc883;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 5.5 1 A 4.4999999 4.4999999 0 0 0 1 5.5 A 4.4999999 4.4999999 0 0 0 5.5 10 A 4.4999999 4.4999999 0 0 0 10 5.5 A 4.4999999 4.4999999 0 0 0 5.5 1 z M 5.5 3 A 2.5 2.5 0 0 1 8 5.5 A 2.5 2.5 0 0 1 5.5 8 A 2.5 2.5 0 0 1 3 5.5 A 2.5 2.5 0 0 1 5.5 3 z "
+     id="path3336" />
   <rect
      style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="rect3354"
-     width="10"
+     width="11"
      height="2"
-     x="0.5"
-     y="4"
-     ry="0.5" />
+     x="0"
+     y="4.5"
+     ry="0.5"
+     rx="0.5" />
 </svg>

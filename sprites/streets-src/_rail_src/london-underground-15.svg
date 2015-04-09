@@ -13,7 +13,7 @@
    width="15"
    height="15"
    id="svg3122"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="london-underground-15.svg"
    viewBox="0 0 15 15">
   <sodipodi:namedview
@@ -25,14 +25,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="647"
-     inkscape:window-height="655"
      id="namedview15131"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="13.111111"
-     inkscape:cx="0.94634867"
-     inkscape:cy="9.3706745"
+     inkscape:zoom="26.222222"
+     inkscape:cx="-0.80716509"
+     inkscape:cy="4.4596659"
      inkscape:window-x="607"
      inkscape:window-y="49"
      inkscape:window-maximized="0"
@@ -64,31 +62,28 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     id="g3365">
-    <circle
-       r="5.5"
-       cy="7.5"
-       cx="7.5"
-       id="path3346"
-       style="opacity:1;fill:#e97474;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <circle
-       r="3.5"
-       cy="7.5"
-       cx="7.5"
-       id="path3346-2"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       ry="0.49999997"
-       y="6"
-       x="1"
-       height="3"
-       width="13"
-       id="rect3363"
-       style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-  </g>
+  <circle
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00000012;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     id="path4699"
+     cx="7.5000005"
+     cy="7.5000005"
+     r="5" />
+  <path
+     inkscape:connector-curvature="0"
+     style="opacity:1;fill:#e97474;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 7.5,1 A 6.5,6.5 0 0 0 1,7.5 6.5,6.5 0 0 0 7.5,14 6.5,6.5 0 0 0 14,7.5 6.5,6.5 0 0 0 7.5,1 Z m 0,2.5 a 3.9999998,3.9999998 0 0 1 4,4 3.9999998,3.9999998 0 0 1 -4,4 3.9999998,3.9999998 0 0 1 -4,-4 3.9999998,3.9999998 0 0 1 4,-4 z"
+     id="path3346-4" />
+  <rect
+     style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect3363-1"
+     width="15.000001"
+     height="3"
+     x="0"
+     y="6"
+     ry="0.49999997"
+     rx="0.5" />
 </svg>

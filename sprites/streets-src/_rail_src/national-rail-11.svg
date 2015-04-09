@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg3122"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="national-rail-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -25,14 +25,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
-     inkscape:window-height="755"
      id="namedview12"
-     showgrid="false"
+     showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:zoom="45.621622"
-     inkscape:cx="4.8552987"
-     inkscape:cy="7.1273417"
+     inkscape:cx="4.2086755"
+     inkscape:cy="5.7025787"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -63,7 +61,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -72,17 +70,18 @@
      id="rect13555"
      width="10"
      height="8"
-     x="1"
+     x="0.5"
      y="1"
-     rx="1"
-     ry="1" />
+     rx="1.5"
+     ry="1.5" />
   <g
      transform="translate(-0.5,-1040.8622)"
      id="layer1">
     <path
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#e97474;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;enable-background:accumulate"
-       d="m 2,1041.8622 c -0.554,0 -1,0.446 -1,1 l 0,1 5.6660156,0 -3.3320312,-2 -1.3339844,0 z m 3.3339844,0 3.3320312,2 2.3339844,0 0,-1 c 0,-0.554 -0.446,-1 -1,-1 l -4.6660156,0 z m -4.3339844,3 0,2 2.3339844,0 3.3320312,-2 -5.6660156,0 z m 7.6660156,0 -3.3320312,2 5.6660156,0 0,-2 -2.3339844,0 z m -7.6660156,3 0,1 c 0,0.554 0.446,1 1,1 l 4.6660156,0 -3.3320312,-2 -2.3339844,0 z m 4.3339844,0 3.3320312,2 1.3339844,0 c 0.554,0 1,-0.446 1,-1 l 0,-1 -5.6660156,0 z"
+       d="m 2,1041.8622 c -0.554,0 -1,0.446 -1,1 l 0,1 5.6660156,0 -3.3320312,-2 z m 3.3339844,0 3.3320312,2 2.3339844,0 0,-1 c 0,-0.554 -0.446,-1 -1,-1 z m -4.3339844,3 0,2 2.3339844,0 3.3320312,-2 z m 7.6660156,0 -3.3320312,2 5.6660156,0 0,-2 z m -7.6660156,3 0,1 c 0,0 0,1 1,1 l 4.6660156,0 -3.3320312,-2 z m 4.3339844,0 3.3320312,2 1.3339844,0 c 1,0 1,-1 1,-1 l 0,-1 z"
        id="rect3025"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sscccscccssccccccccccccsscccccsscc" />
   </g>
 </svg>

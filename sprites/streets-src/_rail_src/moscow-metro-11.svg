@@ -8,11 +8,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="11"
-   height="12"
-   viewBox="0 40 11 12"
+   height="11"
+   viewBox="0 40 11 11"
    id="svg3253"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="moscow-metro-11.svg">
   <metadata
      id="metadata3263">
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,13 +37,11 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="861"
-     inkscape:window-height="758"
      id="namedview3259"
      showgrid="true"
-     inkscape:zoom="45.254834"
-     inkscape:cx="3.3100529"
-     inkscape:cy="6.9551942"
+     inkscape:zoom="64"
+     inkscape:cx="5.5495288"
+     inkscape:cy="5.6861835"
      inkscape:window-x="5"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -70,13 +68,13 @@
   </sodipodi:namedview>
   <path
      id="path38532"
-     d="m 6,43.009766 c 2.0998527,0 3.990269,2.243308 3.9902344,4.490234 0,0.829735 -0.2735943,1.210496 -0.4238282,1.490234 l -7.1464843,0 C 2.2797153,48.755256 2.0097656,48.431284 2.0097656,47.5 2.0097656,45.253021 3.9001169,43.009766 6,43.009766 Z"
-     style="fill:#ffffff;fill-opacity:1"
+     d="m 5.5048827,41.500001 c 2.3655463,0 4.4951563,2.434524 4.4951172,4.872975 0,0.90046 -0.3082121,1.313677 -0.477455,1.617259 l -8.0507261,0 C 1.3138719,47.735228 1.0097656,47.383641 1.0097656,46.372976 c 0,-2.438508 2.1295367,-4.872975 4.4951171,-4.872975 z"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:1"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="scccss" />
   <g
      id="g3337"
-     transform="translate(-0.5,0)">
+     transform="translate(-0.5,-1)">
     <path
        inkscape:connector-curvature="0"
        id="path3025"
@@ -92,6 +90,6 @@
   <path
      inkscape:connector-curvature="0"
      style="fill:#ffffff;fill-opacity:0;stroke:none"
-     d="m 0,40 12,0 0,12 -12,0 z"
+     d="m 0,39 12,0 0,12 -12,0 z"
      id="rect3010" />
 </svg>
