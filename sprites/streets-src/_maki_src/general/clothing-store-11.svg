@@ -25,14 +25,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="975"
-     inkscape:window-height="755"
+     inkscape:window-width="1040"
+     inkscape:window-height="752"
      id="namedview3389"
      inkscape:document-units="px"
-     showgrid="false"
-     inkscape:zoom="15.324813"
-     inkscape:cx="29.279809"
-     inkscape:cy="7.1983084"
+     showgrid="true"
+     inkscape:zoom="32"
+     inkscape:cx="6.0203879"
+     inkscape:cy="3.7366814"
      inkscape:current-layer="svg4764"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -71,9 +71,12 @@
     </rdf:RDF>
   </metadata>
   <path
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 5.5,0 c -0.5522847,0 -1,0.44771525 -1,1 0,0.4056441 0.2447067,0.7513468 0.5917969,0.9082031 L 5,2 2,4.9042969 2,5.5 l 1,0 0.5,2 4,0 0.5,-2 1,0 L 9,4.9042969 6,2 5.5,1.5 C 5.2238576,1.5 5,1.2761424 5,1 5,0.72385763 5.2238576,0.5 5.5,0.5 5.7761424,0.5 6,0.72385763 6,1 L 6.5,1 C 6.5,0.44771525 6.0522847,0 5.5,0 Z m 0,2.3652344 1.8574219,1.796875 C 7.1682472,4.552087 6.965169,4.8827359 6.5,5 l -2,0 C 4.034831,4.8827359 3.8317528,4.552087 3.6425781,4.1621094 Z M 3.5,8 l -1,3 6,0 -1,-3 z"
-     id="rect3334-2"
+     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="m 2.5,1 -2,2 0,2 2,0 0,5 6,0 0,-5 2,0 0,-2 L 8.5,1 7,1 5.5,4 4,1 Z"
+     id="rect4181-0-0"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ssccccccccccccssccsccccccccccc" />
+     sodipodi:nodetypes="cccccccccccccc"
+     inkscape:export-filename="/Users/MapBox/Desktop/clothing-store.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
 </svg>
