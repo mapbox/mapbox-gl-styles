@@ -1,12 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg4619" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" inkscape:version="0.91+devel+osxmenu r12911" sodipodi:docname="hospital-17.svg"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="2 885 15 15"
-	 enable-background="new 2 885 15 15" xml:space="preserve">
-<sodipodi:namedview  borderopacity="1" bordercolor="#666666" objecttolerance="10" showgrid="false" guidetolerance="10" inkscape:zoom="35.941176" gridtolerance="10" pagecolor="#000000" inkscape:cx="5.0220949" inkscape:cy="7.1366612" id="namedview3382" inkscape:document-units="px" inkscape:window-width="640" inkscape:pageshadow="2" inkscape:window-height="480" inkscape:pageopacity="0" inkscape:current-layer="svg4619">
-	</sodipodi:namedview>
-<path d="M15,890h-3v-3c0-1.1-0.9-2-2-2H9c-1.1,0-2,0.9-2,2v3H4c-1.1,0-2,0.9-2,2v1c0,1.1,0.9,2,2,2h3v3c0,1.1,0.9,2,2,2h1
-	c1.1,0,2-0.9,2-2v-3h3c1.1,0,2-0.9,2-2v-1C17,890.9,16.1,890,15,890z"/>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg4619"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="hospital-15.svg"
+   x="0px"
+   y="0px"
+   viewBox="2 885 15 15"
+   enable-background="new 2 885 15 15"
+   xml:space="preserve"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs6" /><sodipodi:namedview
+     borderopacity="1"
+     bordercolor="#666666"
+     objecttolerance="10"
+     showgrid="false"
+     guidetolerance="10"
+     inkscape:zoom="35.941176"
+     gridtolerance="10"
+     pagecolor="#ffffff"
+     inkscape:cx="5.0220949"
+     inkscape:cy="7.1366612"
+     id="namedview3382"
+     inkscape:document-units="px"
+     inkscape:window-width="1925"
+     inkscape:pageshadow="2"
+     inkscape:window-height="1046"
+     inkscape:pageopacity="0"
+     inkscape:current-layer="svg4619"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" /><path
+     d="M15,890h-3v-3c0-1.1-0.9-2-2-2H9c-1.1,0-2,0.9-2,2v3H4c-1.1,0-2,0.9-2,2v1c0,1.1,0.9,2,2,2h3v3c0,1.1,0.9,2,2,2h1  c1.1,0,2-0.9,2-2v-3h3c1.1,0,2-0.9,2-2v-1C17,890.9,16.1,890,15,890z"
+     id="path4"
+     style="fill:#000000" /></svg>
