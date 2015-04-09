@@ -12,7 +12,7 @@
    version="1.1"
    id="svg4619"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="baseball-17.svg"
+   sodipodi:docname="baseball-15.svg"
    x="0px"
    y="0px"
    viewBox="0 0 15 15"
@@ -20,7 +20,7 @@
    xml:space="preserve"><metadata
      id="metadata10"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs8" /><sodipodi:namedview
      inkscape:object-nodes="true"
      inkscape:snap-bbox="true"
@@ -30,7 +30,7 @@
      inkscape:window-width="907"
      inkscape:object-paths="true"
      inkscape:pageopacity="0"
-     inkscape:window-height="761"
+     inkscape:window-height="755"
      inkscape:current-layer="svg4619"
      inkscape:window-maximized="0"
      inkscape:document-units="px"
@@ -39,13 +39,13 @@
      gridtolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     inkscape:cx="8.092042"
+     inkscape:cx="12.784204"
      guidetolerance="10"
      showgrid="false"
      pagecolor="#ffffff"
-     inkscape:cy="10.148754"
+     inkscape:cy="7.4734556"
      objecttolerance="10"
-     inkscape:zoom="33.878788"
+     inkscape:zoom="27.532411"
      inkscape:snap-intersection-paths="true"><inkscape:grid
        type="xygrid"
        id="grid3342"
@@ -54,6 +54,6 @@
        color="#b90023"
        opacity="0.1254902"
        empspacing="2" /></sodipodi:namedview><path
-       style="fill:#000000;fill-opacity:1"
-     d="M 2.5 0 C 2.5 0 1.7 0.3 1 1 C 0.3 1.7 0 2.5 0 2.5 C 3.3 7.1 9.3 10.600781 10.5 11.800781 L 13.935547 14.941406 L 13.287109 15.591797 C 12.993307 15.8856 12.993307 16.358541 13.287109 16.652344 C 13.580912 16.946147 14.053853 16.946147 14.347656 16.652344 L 16.46875 14.53125 C 16.762553 14.237447 16.762553 13.762553 16.46875 13.46875 C 16.174947 13.174947 15.702006 13.174947 15.408203 13.46875 L 14.941406 13.935547 L 11.800781 10.5 C 8.6961095 7.1042654 7.1 3.3 2.5 0 z M 4 11 C 2.9 11 2 11.9 2 13 C 2 14.1 2.9 15 4 15 C 5.1 15 6 14.1 6 13 C 6 11.9 5.1 11 4 11 z "
+     style="fill:#000000;fill-opacity:1"
+     d="M 1.8535156 -0.009765625 C 1.5784148 -0.015914819 0.96967738 0.03032258 0.5 0.5 C -0.12623656 1.1262365 -7.4014868e-17 2 0 2 C 2.9522581 6.1152689 8.3190297 9.4830921 9.3925781 10.556641 L 12.439453 13.443359 C 12.170622 13.833315 12.191635 14.359604 12.539062 14.707031 C 12.9308 15.098768 13.561388 15.098768 13.953125 14.707031 L 14.660156 14 C 15.051893 13.608263 15.051893 12.977675 14.660156 12.585938 C 14.328963 12.254744 13.835171 12.220398 13.451172 12.449219 L 10.556641 9.3925781 C 7.7791279 6.3546736 6.1152689 2.9522581 2 0 C 2 0 1.9452159 -0.0077158938 1.8535156 -0.009765625 z M 3.578125 9.8417969 C 2.594039 9.8417969 1.7890625 10.646773 1.7890625 11.630859 C 1.7890625 12.614945 2.594039 13.419922 3.578125 13.419922 C 4.562211 13.419922 5.3671875 12.614945 5.3671875 11.630859 C 5.3671875 10.646773 4.562211 9.8417969 3.578125 9.8417969 z "
      id="path20837" /></svg>

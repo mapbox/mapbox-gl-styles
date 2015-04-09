@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="56.717949"
-     inkscape:cx="4.3250831"
-     inkscape:cy="5.9958074"
+     inkscape:zoom="40.105646"
+     inkscape:cx="4.3154869"
+     inkscape:cy="5.0673636"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -80,28 +80,21 @@
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
        id="rect42995"
-       width="8.9999752"
-       height="8.9999285"
-       x="-1124.7178"
-       y="1008.5986"
-       rx="1.4999284"
-       ry="1.4999282" />
+       width="10.000124"
+       height="10.000072"
+       x="-1125.2178"
+       y="1008.0984"
+       rx="1.4999281"
+       ry="1.4999281" />
     <g
        id="g3812">
       <path
          style="fill:#0079ac;fill-opacity:1;stroke:none"
-         d="m -1123.2177,1008.0985 c -1.108,0 -2,0.892 -2,2 l 0,6 c 0,1.108 0.892,2 2,2 l 6,0 c 1.108,0 2,-0.892 2,-2 l 0,-6 c 0,-1.108 -0.892,-2 -2,-2 z m 0,0.998 6,0 c 0.5721,0 1.002,0.4299 1.002,1.002 l 0,6 c 0,0.5719 -0.4299,1.002 -1.002,1.002 l -6,0 c -0.5717,0 -1.002,-0.4303 -1.002,-1.002 l 0,-6 c 0,-0.5721 0.43,-1.002 1.002,-1.002 z m 1.75,1.002 c -0.4155,0 -0.75,0.3345 -0.75,0.75 l 0,3.5 c 0,0.4155 0.3345,0.75 0.75,0.75 l 0.25,0 -1.5,1.5 1,0 1,-1 1,0 1,1 1,0 -1.5,-1.5 0.25,0 c 0.4155,0 0.75,-0.3345 0.75,-0.75 l 0,-3.5 c 0,-0.4155 -0.3345,-0.75 -0.75,-0.75 z m -0.25,2.5 0.5,0 0,0.5 -0.5,0 z m 2.5,0 0.5,0 0,0.5 -0.5,0 z"
+         d="M 2,0 C 0.892,0 0,0.892 0,2 l 0,7 c 0,1.108 0.892,2 2,2 l 7,0 c 1.108,0 2,-0.892 2,-2 L 11,2 C 11,0.892 10.108,0 9,0 Z m 0,0.9980469 7,0 C 9.5721,0.9980469 10.001953,1.4279 10.001953,2 l 0,7 C 10.001953,9.5719 9.5721,10.001953 9,10.001953 l -7,0 C 1.4283,10.001953 0.9980469,9.5717 0.9980469,9 l 0,-7 C 0.9980469,1.4279 1.428,0.9980469 2,0.9980469 Z M 4.25,2.5 C 3.8345,2.5 3.5,2.8345 3.5,3.25 l 0,3.5 C 3.5,7.1655 3.8345,7.5 4.25,7.5 L 4.5,7.5 3,9 4,9 5,8 6,8 7,9 8,9 6.5,7.5 6.75,7.5 C 7.1655,7.5 7.5,7.1655 7.5,6.75 l 0,-3.5 C 7.5,2.8345 7.1655,2.5 6.75,2.5 Z M 4.5,3 6.5,3 C 6.7769941,3 7,3.2230059 7,3.5 7,3.7769941 6.7769941,4 6.5,4 l -2,0 C 4.2230059,4 4,3.7769941 4,3.5 4,3.2230059 4.2230059,3 4.5,3 Z M 4,5 4.5,5 4.5,5.5 4,5.5 Z M 6.5,5 7,5 7,5.5 6.5,5.5 Z"
+         transform="translate(-1125.7177,1007.5985)"
          id="rect4162"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ssssssssssssssssssssssccccccccssssscccccccccc" />
+         sodipodi:nodetypes="ssssssssssssssssssssssccccccccsssssssssssscccccccccc" />
     </g>
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3337"
-       width="3"
-       height="1"
-       x="-1121.7177"
-       y="1010.5985"
-       ry="0.49998927" />
   </g>
 </svg>

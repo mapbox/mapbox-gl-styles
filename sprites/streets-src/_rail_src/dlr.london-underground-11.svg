@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="24"
-   height="12"
+   width="26"
+   height="11"
    id="svg3122"
    inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="dlr.london-underground-12.svg"
-   viewBox="0 0 24 12">
+   sodipodi:docname="dlr.london-underground-11.svg"
+   viewBox="0 0 26 11">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -35,8 +35,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="21.458333"
-     inkscape:cx="24"
-     inkscape:cy="11.999981"
+     inkscape:cx="15.961165"
+     inkscape:cy="7.8524081"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -62,44 +62,56 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(0.5,0,0,0.5,0,-514.18109)"
-     id="layer0">
+     id="g9384"
+     transform="translate(1,1)">
+    <circle
+       r="2.796875"
+       cy="4.5"
+       cx="5.5"
+       id="path5297"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
     <path
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#9cc883;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;enable-background:accumulate"
-       d="M 6.1171875 2.0019531 A 4 4 0 0 0 2 6 A 4 4 0 0 0 10 6 A 4 4 0 0 0 6.1171875 2.0019531 z M 6.0722656 3.5019531 A 2.5000352 2.5000352 0 0 1 8.5 6 A 2.5000352 2.5000352 0 0 1 3.5 6 A 2.5000352 2.5000352 0 0 1 6.0722656 3.5019531 z "
-       transform="matrix(2,0,0,2,0,1028.3622)"
-       id="path4187" />
+       id="path3336"
+       d="M 5.5,0 A 4.4999999,4.4999999 0 0 0 1,4.5 4.4999999,4.4999999 0 0 0 5.5,9 4.4999999,4.4999999 0 0 0 10,4.5 4.4999999,4.4999999 0 0 0 5.5,0 Z m 0,2 A 2.5,2.5 0 0 1 8,4.5 2.5,2.5 0 0 1 5.5,7 2.5,2.5 0 0 1 3,4.5 2.5,2.5 0 0 1 5.5,2 Z"
+       style="opacity:1;fill:#9cc883;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
     <rect
-       width="20.000004"
-       height="4.0000005"
        rx="0.5"
-       ry="0.49999994"
-       x="2"
-       y="1038.3622"
-       id="rect4191"
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#3377a7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;enable-background:accumulate" />
+       ry="0.5"
+       y="3.5"
+       x="0"
+       height="2"
+       width="11"
+       id="rect3354"
+       style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
   <g
-     transform="matrix(0.5,0,0,0.5,12,-514.18109)"
-     id="layer1">
+     transform="translate(14,1)"
+     id="g9389">
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+       id="circle9391"
+       cx="5.5"
+       cy="4.5"
+       r="2.796875" />
     <path
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#e97474;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74999994;marker:none;enable-background:accumulate"
-       d="M 18.117188 2.0019531 A 4 4 0 0 0 14 6 A 4 4 0 0 0 22 6 A 4 4 0 0 0 18.117188 2.0019531 z M 18.072266 3.5019531 A 2.500035 2.500035 0 0 1 20.5 6 A 2.500035 2.500035 0 0 1 15.5 6 A 2.500035 2.500035 0 0 1 18.072266 3.5019531 z "
-       transform="matrix(2,0,0,2,-24,1028.3622)"
-       id="path3903" />
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:#e97474;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 5.5,0 A 4.4999999,4.4999999 0 0 0 1,4.5 4.4999999,4.4999999 0 0 0 5.5,9 4.4999999,4.4999999 0 0 0 10,4.5 4.4999999,4.4999999 0 0 0 5.5,0 Z m 0,2 A 2.5,2.5 0 0 1 8,4.5 2.5,2.5 0 0 1 5.5,7 2.5,2.5 0 0 1 3,4.5 2.5,2.5 0 0 1 5.5,2 Z"
+       id="path9393" />
     <rect
-       width="20.000004"
-       height="4.0000005"
-       rx="0.5"
-       ry="0.49999994"
-       x="2"
-       y="1038.3622"
-       id="rect3827-1-4"
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#3377a7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;marker:none;enable-background:accumulate" />
+       style="opacity:1;fill:#3377a7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect9395"
+       width="11"
+       height="2"
+       x="0"
+       y="3.5"
+       ry="0.5"
+       rx="0.5" />
   </g>
 </svg>
