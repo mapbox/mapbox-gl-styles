@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="hairdresser-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -33,9 +33,9 @@
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
-     inkscape:zoom="33.410985"
-     inkscape:cx="4.4074986"
-     inkscape:cy="5.8696735"
+     inkscape:zoom="45.254834"
+     inkscape:cx="7.9010014"
+     inkscape:cy="4.4138636"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -43,7 +43,8 @@
      inkscape:object-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-intersection-paths="true"
-     inkscape:snap-smooth-nodes="true">
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid3342"
@@ -63,14 +64,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:#000000;fill-opacity:1"
-     d="M 1.2222221,1.4444446 C 0.54720748,1.4444446 -1e-7,1.9916335 -1e-7,2.6666668 c 0,0.6750333 0.54720758,1.2222222 1.2222222,1.2222222 0.2171225,0 0.396198,-0.091667 0.5729166,-0.1909111 l 0.6493056,0.5728556 0,2.7882555 -0.6875,0.6492444 C 1.5909987,7.6240001 1.4210719,7.5555556 1.2222221,7.5555556 0.54720748,7.5555556 -1e-7,8.1027445 -1e-7,8.7777778 -1e-7,9.4528111 0.54720748,10 1.2222221,10 1.8972367,10 2.4444443,9.4528111 2.4444443,8.7777778 c 0,-0.099 -0.054055,-0.1749 -0.076389,-0.2673 L 11,1.5 7.9444442,1.5 4.2013887,4.4236112 2.3680554,2.934089 c 0.022334,-0.092889 0.076389,-0.1681777 0.076389,-0.2674222 0,-0.6750333 -0.5472076,-1.2222222 -1.2222223,-1.2222222 z M 6.6458331,6.4479779 5.1180553,7.7083334 7.9444442,10 11,10 Z"
-     inkscape:connector-curvature="0"
-     id="path3595"
-     sodipodi:nodetypes="sssccccsssscccccssccccc" />
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 1.5 2 A 1.5 1.5 0 0 0 0 3.5 L 0 4.5 C 0 5 0.5 5 0.5 5 L 1.5 5 C 3 5 4 5.5 4 5.5 C 4 5.5 3 6 1.5 6 L 0.5 6 C 0.5 6 1.4802974e-16 6 0 6.5 L 0 7.5 A 1.5 1.5 0 0 0 1.5 9 A 1.5 1.5 0 0 0 3 7.5 L 3 6.8847656 C 3.808196 6.7270055 4.5864906 6.4316405 5.2246094 6.1425781 L 8.5 8 C 10 8.75 11 8 11 8 L 6.5 5.5 L 11 3 C 11 3 10 2.25 8.5 3 L 5.2246094 4.8574219 C 4.5865585 4.5683903 3.8081416 4.273053 3 4.1152344 L 3 3.5039062 A 1.5 1.5 0 0 0 3 3.5 A 1.5 1.5 0 0 0 1.5 2 z M 1.5 3 A 0.5 0.5 0 0 1 2 3.5 A 0.5 0.5 0 0 1 1.5 4 A 0.5 0.5 0 0 1 1 3.5 A 0.5 0.5 0 0 1 1.5 3 z M 5.2324219 5.25 A 0.25 0.25 0 0 1 5.25 5.25 A 0.25 0.25 0 0 1 5.5 5.5 A 0.25 0.25 0 0 1 5.25 5.75 A 0.25 0.25 0 0 1 5 5.5 A 0.25 0.25 0 0 1 5.2324219 5.25 z M 1.5 7 A 0.5 0.5 0 0 1 2 7.5 A 0.5 0.5 0 0 1 1.5 8 A 0.5 0.5 0 0 1 1 7.5 A 0.5 0.5 0 0 1 1.5 7 z "
+     id="path6232" />
 </svg>
