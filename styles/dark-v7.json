@@ -25,7 +25,7 @@
       "base": 1,
       "stops": [[0, "#393939"], [20, "#393939"]]
     },
-    "@road-minor": "#101010",
+    "@road-minor": "#484848",
     "@road-street-width": {
       "base": 1.55,
       "stops": [[4, 0.25], [20, 20]]
@@ -42,11 +42,11 @@
     },
     "@land": "#111",
     "@name": "{name_en}",
-    "@road-major": "#000000",
+    "@road-major": "#484848",
     "@wood": "#232323",
     "@number-2": {
       "base": 1.5,
-      "stops": [[12.5, 0.5], [14, 2], [18, 18]]
+      "stops": [[12.5, 0.3], [14, 2], [18, 18]]
     },
     "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
     "@scrub": "#1c1c1c",
@@ -68,10 +68,10 @@
     "@label": "#999999",
     "@label-halo": "#000",
     "@grass": "#1a1a1a",
-    "@water": "#222222",
+    "@water": "#2c2c2c",
     "@state-label": {
       "base": 1,
-      "stops": [[0, "#929292"], [20, "#929292"]]
+      "stops": [[0, "#969696"], [20, "#969696"]]
     },
     "@label-road": "#929292",
     "@label-secondary": "#5a5a5a",
@@ -95,7 +95,7 @@
       "type": "vector"
     }
   },
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/mapbox-streets",
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/light",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
@@ -235,7 +235,7 @@
       "fill-color": "#000",
       "fill-opacity": {
         "base": 1,
-        "stops": [[15, 0.15], [17, 0.05]]
+        "stops": [[15, 0.1], [17, 0.05]]
       }
     }
   }, {
@@ -253,7 +253,7 @@
       "fill-color": "#000",
       "fill-opacity": {
         "base": 1,
-        "stops": [[15, 0.15], [17, 0.05]]
+        "stops": [[15, 0.1], [17, 0.05]]
       }
     }
   }, {
@@ -271,7 +271,7 @@
       "fill-color": "#999999",
       "fill-opacity": {
         "base": 1,
-        "stops": [[14, 0.06], [17, 0.01]]
+        "stops": [[14, 0.03], [17, 0.01]]
       }
     }
   }, {
@@ -289,7 +289,7 @@
       "fill-color": "#999999",
       "fill-opacity": {
         "base": 1,
-        "stops": [[14, 0.06], [17, 0.01]]
+        "stops": [[14, 0.03], [17, 0.01]]
       }
     }
   }, {
@@ -307,7 +307,7 @@
       "fill-color": "#888888",
       "fill-opacity": {
         "base": 1,
-        "stops": [[14, 0.06], [17, 0.01]]
+        "stops": [[14, 0.03], [17, 0.01]]
       }
     }
   }, {
@@ -325,7 +325,7 @@
       "fill-color": "#999",
       "fill-opacity": {
         "base": 1,
-        "stops": [[14, 0.05], [17, 0.01]]
+        "stops": [[14, 0.03], [17, 0.01]]
       }
     }
   }, {
@@ -397,7 +397,7 @@
         "base": 1.15,
         "stops": [[11, 3], [20, 32]]
       },
-      "line-color": "#fff",
+      "line-color": "#000",
       "line-opacity": {
         "base": 1,
         "stops": [[9, 0.5], [11, 1]]
@@ -419,7 +419,7 @@
         "base": 1.15,
         "stops": [[10, 0.25], [11, 1], [20, 8]]
       },
-      "line-color": "#fff"
+      "line-color": "#222"
     }
   }, {
     "id": "tunnel_minor",
@@ -525,7 +525,8 @@
     },
     "paint": {
       "line-color": "@road-major",
-      "line-width": "@number-2"
+      "line-width": "@number-2",
+      "line-opacity": 1
     }
   }, {
     "id": "road-main",
@@ -679,14 +680,13 @@
       "line-join": "bevel"
     },
     "paint": {
-      "line-color": "#fff",
-      "line-opacity": {
-        "base": 1,
-        "stops": [[2, 0], [5, 0.75]]
-      },
       "line-width": {
         "base": 1,
         "stops": [[3, 3.5], [12, 6]]
+      },
+      "line-opacity": {
+        "base": 1,
+        "stops": [[2, 0], [5, 0.75]]
       }
     }
   }, {
@@ -702,7 +702,7 @@
       "line-join": "miter"
     },
     "paint": {
-      "line-color": "#fff",
+      "line-color": "#000",
       "line-opacity": {
         "base": 1,
         "stops": [[3, 0], [4, 0.75]]
@@ -725,7 +725,7 @@
       "line-join": "miter"
     },
     "paint": {
-      "line-color": "#b5b5b5",
+      "line-color": "#4a4a4a",
       "line-opacity": {
         "base": 1,
         "stops": [[2, 0], [5, 1]]
@@ -749,7 +749,7 @@
       "line-cap": "round"
     },
     "paint": {
-      "line-color": "#b5b5b5",
+      "line-color": "#4a4a4a",
       "line-opacity": 1,
       "line-width": "@admin-2-boundary"
     }
@@ -767,7 +767,7 @@
       "line-cap": "butt"
     },
     "paint": {
-      "line-color": "#b5b5b5",
+      "line-color": "#4a4a4a",
       "line-opacity": 1,
       "line-width": "@admin-2-boundary"
     }
@@ -1426,7 +1426,7 @@
         "base": 1,
         "stops": [[10, 10], [18, 18]]
       },
-      "text-halo-color": "#ffffff",
+      "text-halo-color": "@label-halo",
       "text-halo-width": 1,
       "text-halo-blur": 0
     }
