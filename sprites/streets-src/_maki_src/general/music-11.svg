@@ -20,7 +20,7 @@
    sodipodi:docname="music-11.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -30,8 +30,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="992"
-     inkscape:window-height="728"
+     inkscape:window-width="906"
+     inkscape:window-height="755"
      id="namedview4"
      showgrid="true"
      inkscape:snap-bbox="true"
@@ -42,9 +42,9 @@
      inkscape:object-nodes="true"
      inkscape:snap-intersection-paths="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="32"
-     inkscape:cx="1.1338398"
-     inkscape:cy="5.750384"
+     inkscape:zoom="31.333333"
+     inkscape:cx="4.2717347"
+     inkscape:cy="5.1694391"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -56,8 +56,7 @@
        color="#ff0000"
        opacity="0.1254902"
        empspacing="2" /></sodipodi:namedview><path
-     style="fill:#000000;fill-opacity:1"
-     id="path7598"
-     inkscape:connector-curvature="0"
-     d="M 3.5,0 3.5,7.0976562 2.9,7.1 C 1.8000084,7.1042968 1,8 1,9 c 0,1 0.8,2 1.9,2 1.1,0 2,-0.9 2,-2 l 0,-5.1 3.9,0 0,3.2 -0.7,0 C 7,7.1 6.1,8 6.1,9 c 0,1 0.9,2 2,2 1.1,0 1.9,-0.9 1.9,-2 l 0,-9 z"
-     sodipodi:nodetypes="ccsssscccsssscc" /></svg>
+     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="M 10,0 3,1.5 3,4 3,7 A 2,2 0 0 0 1,9 2,2 0 0 0 3,11 2,2 0 0 0 5,9 L 5,3.7148438 8,3.2851562 8,6 a 2,2 0 0 0 -2,2 2,2 0 0 0 2,2 2,2 0 0 0 2,-2 l 0,-5 0,-3 z"
+     id="path3334"
+     inkscape:connector-curvature="0" /></svg>
