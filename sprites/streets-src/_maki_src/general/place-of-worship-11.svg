@@ -16,11 +16,11 @@
    viewBox="0 0 11 11"
    enable-background="new 0 0 11 11"
    xml:space="preserve"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="place-of-worship-11.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -42,9 +42,9 @@
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="1"
-     inkscape:cx="4.4946375"
-     inkscape:cy="4.2438191"
+     inkscape:zoom="22.627417"
+     inkscape:cx="4.9923962"
+     inkscape:cy="4.9607914"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -57,7 +57,5 @@
        opacity="0.1254902"
        empspacing="2" /></sodipodi:namedview><path
      style="fill:#000000;fill-opacity:1"
-     id="path8846-6"
-     inkscape:connector-curvature="0"
-     d="m 5.5,0 -1.8,1.4 0,1.3 -1.2,1.3 0,6 6,0 0,-6 -1.2,-1.3 0,-1.2 z M 0,5 l 0,5 1.5,0 0,-5 z m 9.5,0 0,5 1.5,0 0,-5 z"
-     sodipodi:nodetypes="cccccccccccccccccccc" /></svg>
+     d="M 5.5 0 L 3.6992188 1.4003906 L 3.6992188 2.5 L 7.3007812 2.5 L 7.3007812 1.5 L 5.5 0 z M 3.421875 3 L 2.5 4 L 2.5 9 L 8.5 9 L 8.5 4 L 7.578125 3 L 3.421875 3 z M 0.75 4 C 0.33578644 4 0 4.3357864 0 4.75 L 0 9 L 1.5 9 L 1.5 4.75 C 1.5 4.3357864 1.1642136 4 0.75 4 z M 10.25 4 C 9.8357864 4 9.5 4.3357864 9.5 4.75 L 9.5 9 L 11 9 L 11 4.75 C 11 4.3357864 10.664214 4 10.25 4 z "
+     id="path8846-6" /></svg>
