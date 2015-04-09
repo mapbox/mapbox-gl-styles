@@ -20,7 +20,7 @@
    sodipodi:docname="post-11.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -30,10 +30,10 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="909"
-     inkscape:window-height="727"
+     inkscape:window-width="1408"
+     inkscape:window-height="827"
      id="namedview4"
-     showgrid="true"
+     showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
      inkscape:bbox-paths="true"
@@ -43,9 +43,9 @@
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="30.341309"
-     inkscape:cx="6.5171662"
-     inkscape:cy="4.1426622"
+     inkscape:zoom="1"
+     inkscape:cx="3.5673923"
+     inkscape:cy="5.9388932"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -60,5 +60,5 @@
      style="fill:#000000;fill-opacity:1"
      id="path7085-2"
      inkscape:connector-curvature="0"
-     d="M -4.1e-7,2 5.5,6 11,2 Z m 0,1.5 L 0,9 c 2.2363636e-8,0.3 0.3,0.5 0.5,0.5 l 10,0 C 11,9.5 11,9 11,9 l 0,-5.5 -5.5,4 z"
+     d="M -4.1e-7,2 5.5,6 11,2 Z m 0,2 L 0,9 c 2.46e-8,0.3 0.3,0.5 0.5,0.5 l 10,0 C 11,9.5 11,9 11,9 L 11,4 5.5,8 Z"
      sodipodi:nodetypes="cccccssscccc" /></svg>
