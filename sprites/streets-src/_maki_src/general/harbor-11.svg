@@ -13,7 +13,7 @@
    width="11"
    height="11"
    id="svg4764"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="harbor-11.svg"
    viewBox="0 0 11 11">
   <sodipodi:namedview
@@ -29,7 +29,7 @@
      inkscape:window-height="762"
      id="namedview3352"
      inkscape:document-units="px"
-     showgrid="false"
+     showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:object-paths="true"
      inkscape:bbox-paths="true"
@@ -37,13 +37,15 @@
      inkscape:object-nodes="true"
      inkscape:snap-intersection-paths="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="21.404313"
-     inkscape:cx="2.0458938"
-     inkscape:cy="6.8813677"
+     inkscape:zoom="32"
+     inkscape:cx="5.5187685"
+     inkscape:cy="5.5770995"
      inkscape:current-layer="svg4764"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="0"
+     inkscape:snap-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true">
     <inkscape:grid
        type="xygrid"
        id="grid3407"
@@ -63,14 +65,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
      style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 5.5,0 c -1.10457,0 -2,0.895431 -2,2 0.0013,0.713268 0.38229,1.371882 1,1.728516 L 4.5,8.5 2,7.333984 2,6 2.5,6 2,4.994515 0.5,4 0.5,8 5,11 6,11 10.5,8 10.5,4 9,5 8.5,6 9,6 9,7.333984 6.5,8.5 6.5,3.730469 C 7.118313,3.373486 7.499435,2.713966 7.5,2 7.5,0.895431 6.604569,0 5.5,0 Z m 0,1 c 0.552285,0 1,0.447715 1,1 0,0.552285 -0.447715,1 -1,1 -0.552285,0 -1,-0.447715 -1,-1 0,-0.552285 0.447715,-1 1,-1 z"
-     id="path3334-7-9"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="sccccccccccccccccccccssssss" />
+     d="M 5.5 0 A 2.5 2.5 0 0 0 3 2.5 A 2.5 2.5 0 0 0 5 4.9453125 L 5 6 L 4.5 6 C 4.223 6 4 6.223 4 6.5 C 4 6.777 4.223 7 4.5 7 L 5 7 L 5 9.4609375 C 4.2665056 9.374226 3.4819793 9.1016632 2.8574219 8.5585938 C 2.088577 7.8900622 1.5 6.8296669 1.5 5 A 0.750075 0.750075 0 0 0 0.73828125 4.2402344 A 0.750075 0.750075 0 0 0 0 5 C 0 7.1703331 0.77305945 8.7349378 1.8730469 9.6914062 C 2.9730343 10.647875 4.3333184 11 5.5 11 C 6.6666816 11 8.0269657 10.647875 9.1269531 9.6914062 C 10.226941 8.7349378 11 7.1703331 11 5 A 0.750075 0.750075 0 1 0 9.5 5 C 9.5 6.8296669 8.911423 7.8900622 8.1425781 8.5585938 C 7.5180207 9.1016632 6.7334944 9.374226 6 9.4609375 L 6 7 L 6.5 7 C 6.777 7 7 6.777 7 6.5 C 7 6.223 6.777 6 6.5 6 L 6 6 L 6 4.9492188 A 2.5 2.5 0 0 0 8 2.5 A 2.5 2.5 0 0 0 5.5 0 z M 5.5 1.5 A 1 1 0 0 1 6.5 2.5 A 1 1 0 0 1 5.5 3.5 A 1 1 0 0 1 4.5 2.5 A 1 1 0 0 1 5.5 1.5 z "
+     id="path5263" />
 </svg>
