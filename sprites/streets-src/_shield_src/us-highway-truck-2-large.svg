@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="23"
+   width="27"
    height="35"
    id="svg3844"
    version="1.1"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="us-highway-truck-2-large.svg"
-   viewBox="0 0 23 35">
+   viewBox="0 0 27 35">
   <defs
      id="defs3846" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313709"
-     inkscape:cx="11.558592"
-     inkscape:cy="15.087204"
+     inkscape:cx="8.46716"
+     inkscape:cy="16.717177"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -53,7 +53,7 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="-298"
+       originx="-296.00001"
        originy="-125"
        spacingy="0.5px"
        spacingx="0.5px" />
@@ -74,7 +74,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-298,-892.36218)">
+     transform="translate(-296.00001,-892.36218)">
     <rect
        style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:0;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;marker:none;enable-background:accumulate"
        id="rect3803"
@@ -110,7 +110,7 @@
          sodipodi:nodetypes="ccsscssccscsc"
          inkscape:connector-curvature="0"
          id="path3799-7"
-         d="m 304.45479,902.08238 -4.0362,2.54513 c 0.50453,0.50902 2.0181,1.52708 1.00905,3.56318 -1.00905,2.03611 -1.51358,5.09026 0.50452,7.12637 2.52263,2.54513 6.55882,0.50902 7.56786,2.54513 1.00905,-2.03611 5.04524,0 7.56785,-2.54513 2.0181,-2.03611 1.51358,-5.09026 0.50454,-7.12637 -1.00906,-2.0361 0.50452,-3.05416 1.00904,-3.56318 l -4.03619,-2.54513 c 0,0 -1.00906,1.52708 -2.52262,1.52708 -1.51357,0 -2.52262,-1.52708 -2.52262,-1.52708 0,0 -1.00904,1.52708 -2.52262,1.52708 -1.51357,0 -2.52261,-1.52708 -2.52261,-1.52708 z"
+         d="m 303.53735,902.08238 -4.77014,2.54513 c 0.59627,0.50902 2.38507,1.52708 1.19254,3.56318 -1.19254,2.03611 -1.78881,5.09026 0.59626,7.12637 2.98134,2.54513 7.75148,0.50902 8.944,2.54513 1.19254,-2.03611 5.96267,0 8.94399,-2.54513 2.38508,-2.03611 1.78881,-5.09026 0.59629,-7.12637 -1.19255,-2.0361 0.59626,-3.05416 1.19252,-3.56318 l -4.77013,-2.54513 c 0,0 -1.19255,1.52708 -2.98133,1.52708 -1.7888,0 -2.98134,-1.52708 -2.98134,-1.52708 0,0 -1.19252,1.52708 -2.98133,1.52708 -1.7888,0 -2.98133,-1.52708 -2.98133,-1.52708 z"
          clip-path="none"
          style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#3a3836;stroke-width:0.82803553;stroke-linecap:round;stroke-linejoin:round;marker:none;enable-background:accumulate" />
     </g>

@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="21"
+   width="27"
    height="37"
    id="svg3844"
    version="1.1"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="us-highway-business-2-large.svg"
-   viewBox="0 0 21 37">
+   viewBox="0 0 27 37">
   <defs
      id="defs3846" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313708"
-     inkscape:cx="6.8963998"
-     inkscape:cy="24.256569"
+     inkscape:cx="2.4275461"
+     inkscape:cy="10.619981"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -56,12 +56,12 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="-299.99998"
+       originx="-297.00001"
        originy="-127"
        spacingy="0.5px"
        spacingx="0.5px" />
     <sodipodi:guide
-       position="10.000022,34.999999"
+       position="12.999984,34.999997"
        orientation="0,1"
        id="guide10363" />
   </sodipodi:namedview>
@@ -81,7 +81,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-299.99998,-888.36218)">
+     transform="translate(-297.00002,-888.36218)">
     <g
        id="g10365">
       <g
@@ -134,7 +134,7 @@
         <path
            style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#3a3836;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;marker:none;enable-background:accumulate"
            clip-path="none"
-           d="m 303.25,898.86211 -3.75001,3.06453 c 0.62499,0.6129 2.5,1.83872 1.24999,4.29034 -1.24999,2.45162 -1.87501,6.12906 0.625,8.58068 3.12501,3.06453 6.87503,0.61291 8.12502,3.06453 1.25001,-2.45162 5.00002,0 8.12503,-3.06453 2.50001,-2.45162 1.87501,-6.12906 0.62501,-8.58068 -1.25001,-2.45162 0.625,-3.67744 1.25,-4.29034 l -3.75001,-3.06453 c 0,0 -1.25001,1.83872 -3.12501,1.83872 -1.87501,0 -3.12502,-1.83872 -3.12502,-1.83872 0,0 -1.24999,1.83872 -3.125,1.83872 -1.87501,0 -3.12501,-1.83872 -3.12501,-1.83872 z"
+           d="m 301.37499,898.86211 -4.87501,3.06453 c 0.81249,0.6129 3.25,1.83872 1.62499,4.29034 -1.62499,2.45162 -2.43752,6.12906 0.81249,8.58068 4.06252,3.06453 8.93754,0.61291 10.56252,3.06453 1.62502,-2.45162 6.50003,0 10.56254,-3.06453 3.25001,-2.45162 2.43751,-6.12906 0.81251,-8.58068 -1.62501,-2.45162 0.8125,-3.67744 1.625,-4.29034 l -4.87501,-3.06453 c 0,0 -1.62501,1.83872 -4.06251,1.83872 -2.43751,0 -4.06253,-1.83872 -4.06253,-1.83872 0,0 -1.62498,1.83872 -4.06249,1.83872 -2.43751,0 -4.06251,-1.83872 -4.06251,-1.83872 z"
            id="path3799"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="ccsscssccscsc" />

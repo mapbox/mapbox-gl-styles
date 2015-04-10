@@ -31,8 +31,8 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="45.254834"
-     inkscape:cx="8.0117713"
-     inkscape:cy="5.0394294"
+     inkscape:cx="4.2000238"
+     inkscape:cy="4.8405556"
      inkscape:current-layer="svg4764"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -51,14 +51,14 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <path
      style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.63156772;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-     d="m 1,1 0,9 3,0 3,0 3,0 L 10,7 7,7 7,4 4,4 4,1 Z"
-     id="rect4696"
+     d="M 2,1 C 2,1 1,0.99990001 1,1.9999 L 1,9 c 0,0 0,0.9999 1,1 l 5,0 2,-10e-5 c 1,0 1,-1 1,-1 l 0,-1 c 0,-1 -1,-1 -1,-1 L 7,7 7,4.9999 c 0,0 0,-1 -1,-1 L 4,4 4,1.9999 C 4,1.9999 4,0.99990001 3,1 Z"
+     id="rect4696-3"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccccccccc" />
+     sodipodi:nodetypes="cccccccccccccccc" />
 </svg>

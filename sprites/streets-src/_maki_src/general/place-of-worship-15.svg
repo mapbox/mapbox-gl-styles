@@ -42,9 +42,9 @@
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="8"
-     inkscape:cx="0.44601909"
-     inkscape:cy="17.360461"
+     inkscape:zoom="1"
+     inkscape:cx="5.7502629"
+     inkscape:cy="7.4372946"
      inkscape:window-x="7"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -57,5 +57,7 @@
        opacity="0.1254902"
        empspacing="2" /></sodipodi:namedview><path
      style="fill:#000000;fill-opacity:1"
-     d="M 7.5 0 L 5.5 2 L 5.5 4 L 9.5 4 L 9.5 2 L 7.5 0 z M 5.5 4.5 L 3.625 6 L 11.375 6 L 9.5 4.5 L 5.5 4.5 z M 1 6.5 A 1 1 0 0 0 0 7.5 L 0 13 L 2 13 L 2 7.5 A 1 1 0 0 0 1 6.5 z M 3 6.5 L 3 13 L 12 13 L 12 6.5 L 3 6.5 z M 14 6.5 A 1 1 0 0 0 13 7.5 L 13 13 L 15 13 L 15 7.5 A 1 1 0 0 0 14 6.5 z "
-     id="path9064" /></svg>
+     d="m 7.5,0 -2,2 0,2 4,0 0,-2 z M 5.5,4.5 4,6 11,6 9.5,4.5 Z M 2,6.5 c -0.5522847,0 -1,0.4477153 -1,1 L 1,13 3,13 3,7.5 C 3,6.9477153 2.5522847,6.5 2,6.5 Z m 2,0 0,6.5 7,0 0,-6.5 z m 9,0 c -0.552285,0 -1,0.4477153 -1,1 l 0,5.5 2,0 0,-5.5 c 0,-0.5522847 -0.447715,-1 -1,-1 z"
+     id="path9064"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccccccssccsscccccssccss" /></svg>

@@ -22,8 +22,8 @@ do
                 --export-png=${present}/${render}/${g}/${icon}@2x.png \
                 $svg > /dev/null
 
-            # add stroke to png
-            if [ ${g} == rail ]
+            # add stroke to rail icons and to US interstates
+            if [ ${g} == rail ] || [[ ${icon} == *"interstate"* ]]
             then
 
             convert ${present}/${render}/${g}/${icon}.png \
