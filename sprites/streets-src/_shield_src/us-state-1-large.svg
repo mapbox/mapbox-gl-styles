@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.415795"
-     inkscape:cx="9.0675643"
-     inkscape:cy="8.8517775"
+     inkscape:zoom="14.730159"
+     inkscape:cx="12.433838"
+     inkscape:cy="8.7753157"
      inkscape:document-units="px"
      inkscape:current-layer="generic-md-1"
      showgrid="true"
@@ -57,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,24 +70,15 @@
        transform="translate(-180,480)"
        inkscape:label="#g4386"
        id="generic-md-1">
-      <g
-         id="g6908"
-         transform="matrix(0.85714286,0,0,0.85714286,34.600002,60.737457)"
-         style="stroke-width:1.16666663">
-        <path
-           sodipodi:nodetypes="sssssssss"
-           inkscape:connector-curvature="0"
-           id="rect3443"
-           d="m 242.35552,419.5622 8.55556,0 c 4.73979,0 8.55556,3.85658 8.55556,8.64705 l 0,3.70589 c 0,4.79047 -3.81579,8.64706 -8.55556,8.64706 l -8.55556,0 c -4.73977,0 -8.55555,-3.85659 -8.55555,-8.64706 l 0,-3.70589 c 0,-4.79047 3.81578,-8.64705 8.55555,-8.64705 z"
-           style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.16666663;marker:none;enable-background:accumulate" />
-        <path
-           sodipodi:nodetypes="sssssssss"
-           inkscape:connector-curvature="0"
-           id="rect3445"
-           d="m 242.33507,420.72884 8.59649,0 c 4.0821,0 7.36841,3.33013 7.36841,7.46666 l 0,3.73334 c 0,4.13653 -3.28631,7.46667 -7.36841,7.46667 l -8.59649,0 c -4.08211,0 -7.36842,-3.33014 -7.36842,-7.46667 l 0,-3.73334 c 0,-4.13653 3.28631,-7.46666 7.36842,-7.46666 z"
-           style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.16666639;marker:none;enable-background:accumulate"
-           transform="translate(0,4.9374802e-5)" />
-      </g>
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#3a3836;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+         id="rect10221"
+         width="21"
+         height="16.999996"
+         x="235.49998"
+         y="420.86218"
+         rx="8.4999981"
+         ry="8.4999981" />
     </g>
   </g>
 </svg>

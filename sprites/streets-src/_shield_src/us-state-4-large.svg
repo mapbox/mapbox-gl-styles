@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.2"
-     inkscape:cx="33.716724"
-     inkscape:cy="5.9106235"
+     inkscape:cx="18.314938"
+     inkscape:cy="5.1516949"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -61,7 +61,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,31 +70,14 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-54.999982,-940.36218)">
-    <g
-       transform="matrix(1.2,0,0,1.2,-227,384.32756)"
-       inkscape:label="#g4394"
-       id="generic-md-3"
-       style="stroke-width:0.83333331">
-      <rect
-         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.83333331;marker:none;enable-background:accumulate"
-         id="rect3455"
-         width="35"
-         height="15"
-         x="234.99998"
-         y="463.36218"
-         inkscape:label="#rect3893"
-         rx="5.8333354"
-         ry="5.8333354" />
-      <rect
-         inkscape:label="#rect3893"
-         y="464.19553"
-         x="235.57689"
-         height="13.333325"
-         width="33.589764"
-         id="rect3457"
-         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.83333331;marker:none;enable-background:accumulate"
-         rx="4.999999"
-         ry="4.9999995" />
-    </g>
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#3a3836;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+       id="rect10221"
+       width="40.999992"
+       height="16.999996"
+       x="55.499989"
+       y="940.86218"
+       rx="8.4999981"
+       ry="8.4999981" />
   </g>
 </svg>

@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="31.678384"
-     inkscape:cx="50.353035"
-     inkscape:cy="11.533922"
+     inkscape:zoom="11.2"
+     inkscape:cx="19.573045"
+     inkscape:cy="8.9811958"
      inkscape:document-units="px"
      inkscape:current-layer="generic-md-3"
      showgrid="true"
@@ -77,25 +77,14 @@
        inkscape:label="#g4394"
        id="generic-md-3">
       <rect
-         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#3a3836;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-         id="rect3455"
-         width="54"
-         height="18"
-         x="234.99998"
-         y="460.36218"
-         inkscape:label="#rect3893"
-         rx="7.0000024"
-         ry="7.0000024" />
-      <rect
-         inkscape:label="#rect3893"
-         y="461.36224"
-         x="235.99998"
-         height="15.999955"
-         width="51.999992"
-         id="rect3457"
-         style="color:#3a3836;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-         rx="5.999999"
-         ry="6" />
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#3a3836;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+         id="rect10221"
+         width="52.999985"
+         height="16.999996"
+         x="235.5"
+         y="460.86215"
+         rx="8.4999981"
+         ry="8.4999981" />
     </g>
   </g>
 </svg>
