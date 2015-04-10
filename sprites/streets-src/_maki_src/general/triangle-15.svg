@@ -16,11 +16,11 @@
    viewBox="0 0 15 15"
    enable-background="new 0 0 15 15"
    xml:space="preserve"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="triangle-15.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -43,9 +43,9 @@
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="15.733333"
-     inkscape:cx="-1.9284729"
-     inkscape:cy="11.984592"
+     inkscape:zoom="22.250293"
+     inkscape:cx="7.9453043"
+     inkscape:cy="3.719381"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -60,5 +60,5 @@
      style="fill:#000000;fill-opacity:1"
      id="path21090-9"
      inkscape:connector-curvature="0"
-     d="M 7.5384615,1.923077 C 7.1538462,1.923077 7,2.0769231 6.9230769,2.3076924 L 1.0769231,12.923077 C 1,13 1,13.153846 1,13.307692 1,13.846154 1.3846154,14 1.6923077,14 L 13.307692,14 C 13.692308,14 14,13.846154 14,13.307692 14,13.153846 14,13.076923 13.92308,12.923077 L 8.1538462,2.3076924 C 8.0769231,2.0769231 7.9230769,1.923077 7.5384615,1.923077 Z"
-     sodipodi:nodetypes="cccsssscccc" /></svg>
+     d="M 7.5384615,2 C 7.2437327,2 7.0501913,2.1772183 6.9230769,2.3846154 L 1.0769231,11.923077 C 1,12 1,12.153846 1,12.307692 1,12.846154 1.3846154,13 1.6923077,13 L 13.307692,13 C 13.692308,13 14,12.846154 14,12.307692 14,12.153846 14,12.076923 13.92308,11.923077 L 8.1538462,2.3846154 C 8.0279542,2.176474 7.7882472,2 7.5384615,2 Z"
+     sodipodi:nodetypes="sscsssscss" /></svg>
