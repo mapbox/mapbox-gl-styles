@@ -1,8 +1,11 @@
 [
     'basic',
     'bright',
+    'dark',
     'emerald',
     'empty',
+    'light',
+    'mapbox-streets'
     'outdoors',
     'pencil',
     'satellite'
