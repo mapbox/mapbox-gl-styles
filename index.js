@@ -5,7 +5,7 @@
     'emerald',
     'empty',
     'light',
-    'mapbox-streets'
+    'mapbox-streets',
     'outdoors',
     'pencil',
     'satellite'
