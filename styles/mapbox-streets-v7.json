@@ -7,7 +7,7 @@
       "stops": [[16, 11], [20, 13]]
     },
     "@label-neighbourhood": "#805540",
-    "@hillshade-shadow": "#8f9100",
+    "@hillshade-shadow": "#66601a",
     "@road-width-minor": {
       "base": 1.5,
       "stops": [[14, 0.5], [18, 12]]
@@ -58,15 +58,16 @@
       "stops": [[14, 0.5], [20, 1]]
     },
     "@landuse-hospital": "#f4dcdc",
-    "@land": "#f1e8dd",
+    "@land": "#ede9d9",
     "@name": "{name_en}",
-    "@landcover": "#e0ecb1",
+    "@landcover": "#ddecb1",
     "@tunnel-case-dark": "#c4beb7",
     "@aeroway": "#e1d4e1",
     "@label-city-md-size": {
       "base": 0.9,
       "stops": [[5, 12], [12, 22]]
     },
+    "@tunnel-trunk": "#f2de9e",
     "@landuse-pitch": "#def1c0",
     "@admin": "#7f75a6",
     "@road-case-width-sm": {
@@ -88,7 +89,7 @@
     },
     "@rail": "#b3ada6",
     "@country-halo": "rgba(255,255,255,0.75)",
-    "@hillshade-highlight": "#fffff4",
+    "@hillshade-highlight": "#fff",
     "@motorway-width": {
       "base": 1.5,
       "stops": [[5, 0.75], [18, 32]]
@@ -97,8 +98,8 @@
       "stops": [[8, "#000000"], [10, "#888888"]],
       "base": 1
     },
-    "@building": "#e5dfd7",
-    "@landuse-sand": "#f0eeaf",
+    "@building": "#ebe4d3",
+    "@landuse-sand": "#ededcf",
     "@road-trunk-case": "#fff",
     "@ramp-1": {
       "base": 1,
@@ -109,7 +110,7 @@
       "base": 1.5,
       "stops": [[12.5, 0.5], [14, 2], [18, 12]]
     },
-    "@water": "#81c7f7",
+    "@water": "#93cef7",
     "@label-state": "#242424",
     "@landuse-parks": "#cde8a2",
     "@street_limited-case-width": {
@@ -120,9 +121,13 @@
       "base": 1.5,
       "stops": [[12, 0.5], [14, 2], [18, 18]]
     },
-    "@building-shadow": "#d4cdc3",
+    "@building-shadow": "#d0cbbb",
     "@label-road": "#3a3836",
+    "@rail-low": "#ccc5bd",
     "@label-transit": "#000000",
+    "@rail-lowhigh": {
+      "stops": [[13, "#d8d5c8"], [16, "#b3b1a6"]]
+    },
     "@street-case-gap-width": {
       "base": 1.5,
       "stops": [[13, 0], [14, 2], [18, 18]]
@@ -147,7 +152,7 @@
       "base": 1.5,
       "stops": [[15, 1], [18, 4]]
     },
-    "@tunnel-motorway": "#ffb074",
+    "@tunnel-motorway": "#ffbe8c",
     "@poi-scalerank2": {
       "base": 1,
       "stops": [[14, 11], [20, 14]]
@@ -454,7 +459,7 @@
     "paint": {
       "fill-color": "@hillshade-highlight",
       "fill-opacity": {
-        "stops": [[15, 0.1], [18, 0]]
+        "stops": [[15, 0.12], [18, 0]]
       },
       "fill-antialias": false
     }
@@ -470,7 +475,7 @@
     "paint": {
       "fill-color": "@hillshade-highlight",
       "fill-opacity": {
-        "stops": [[15, 0.1], [18, 0]]
+        "stops": [[15, 0.12], [18, 0]]
       },
       "fill-antialias": false
     }
@@ -502,7 +507,7 @@
     "paint": {
       "fill-color": "@hillshade-shadow",
       "fill-opacity": {
-        "stops": [[15, 0.05], [17, 0]]
+        "stops": [[15, 0.04], [17, 0]]
       },
       "fill-antialias": false
     }
@@ -518,7 +523,7 @@
     "paint": {
       "fill-color": "@hillshade-shadow",
       "fill-opacity": {
-        "stops": [[15, 0.06], [17, 0]]
+        "stops": [[15, 0.05], [17, 0]]
       },
       "fill-antialias": false
     }
@@ -534,7 +539,7 @@
     "paint": {
       "fill-color": "@hillshade-shadow",
       "fill-opacity": {
-        "stops": [[15, 0.06], [17, 0]]
+        "stops": [[15, 0.05], [17, 0]]
       },
       "fill-antialias": false
     }
@@ -1110,7 +1115,7 @@
     },
     "paint": {
       "line-width": "@motorway-width",
-      "line-color": "#f2d885"
+      "line-color": "@tunnel-trunk"
     }
   }, {
     "id": "tunnel-motorway",
@@ -1181,7 +1186,9 @@
       "line-cap": "butt"
     },
     "paint": {
-      "line-color": "#a49f98",
+      "line-color": {
+        "stops": [[13, "#d8d5c8"], [16, "#c0beb2"]]
+      },
       "line-width": "@rail-width"
     }
   }, {
@@ -1197,7 +1204,9 @@
       "line-cap": "butt"
     },
     "paint": {
-      "line-color": "@rail",
+      "line-color": {
+        "stops": [[13, "#d8d5c8"], [16, "#c0beb2"]]
+      },
       "line-width": "@rail-track-width",
       "line-dasharray": [0.1, 15]
     }
@@ -1609,7 +1618,7 @@
       "line-cap": "butt"
     },
     "paint": {
-      "line-color": "@rail",
+      "line-color": "@rail-lowhigh",
       "line-width": "@rail-width"
     }
   }, {
@@ -1625,7 +1634,7 @@
       "line-cap": "butt"
     },
     "paint": {
-      "line-color": "@rail",
+      "line-color": "@rail-lowhigh",
       "line-width": "@rail-track-width",
       "line-dasharray": [0.1, 15]
     }
@@ -1988,7 +1997,7 @@
       "line-cap": "butt"
     },
     "paint": {
-      "line-color": "@rail",
+      "line-color": "@rail-lowhigh",
       "line-width": "@rail-width"
     }
   }, {
@@ -2004,7 +2013,7 @@
       "line-cap": "butt"
     },
     "paint": {
-      "line-color": "@rail",
+      "line-color": "@rail-lowhigh",
       "line-width": "@rail-track-width",
       "line-dasharray": [0.1, 15]
     }
@@ -2193,8 +2202,8 @@
       "visibility": "visible"
     },
     "paint": {
-      "line-opacity": 0.06,
-      "line-color": "#5b5c00"
+      "line-opacity": 0.07,
+      "line-color": "#66601a"
     }
   }, {
     "id": "contour-index",
@@ -2209,7 +2218,7 @@
     },
     "paint": {
       "line-opacity": 0.12,
-      "line-color": "#5b5c00"
+      "line-color": "#66601a"
     }
   }, {
     "id": "country-label-lg",
@@ -2587,7 +2596,7 @@
       "visibility": "visible",
       "text-offset": {
         "base": 1,
-        "stops": [[7.99, [0, -0.3]], [8, [0, 0]]]
+        "stops": [[7.99, [0, -0.25]], [8, [0, 0]]]
       },
       "text-anchor": {
         "base": 1,
@@ -3725,10 +3734,10 @@
     },
     "paint": {
       "text-size": 9.5,
-      "text-color": "#909166",
+      "text-color": "#a7a696",
       "text-halo-width": 1,
       "text-halo-blur": 1,
-      "text-halo-color": "rgba(255,255,237, 0.25)"
+      "text-halo-color": "rgba(237,233,217, 0.25)"
     }
   }, {
     "id": "housenum-label",
@@ -3755,7 +3764,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-16T00:36:41.024Z",
+  "modified": "2015-04-16T23:19:43.163Z",
   "created": "2015-04-15T22:20:45.883Z",
   "id": "nicki.be444c8f"
 }
