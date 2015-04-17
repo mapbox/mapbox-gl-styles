@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="15"
+   height="15"
+   id="svg4619"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="hairdresser-15.svg"
+   viewBox="0 0 13.235294 13.235294">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="976"
+     inkscape:window-height="697"
+     id="namedview3356"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:zoom="32"
+     inkscape:cx="2.0194386"
+     inkscape:cy="5.56586"
+     inkscape:window-x="188"
+     inkscape:window-y="52"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4619"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     showguides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3358"
+       color="#ff0000"
+       opacity="0.1254902"
+       spacingx="0.44117647"
+       spacingy="0.44117647"
+       empspacing="2" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4621" />
+  <metadata
+     id="metadata4624">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.00000012px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 2 2 A 2 2 0 0 0 0 4 L 0 5.5 C 0 6 0.5 6 0.5 6 L 2 6 L 2.5 6 C 4.5454545 6 6 7.5 6 7.5 C 6 7.5 4.5454544 9 2.5 9 L 2 9 L 0.5 9 C 0.5 9 0 9 0 9.5 L 0 11 A 2 2 0 0 0 2 13 A 2 2 0 0 0 4 11 L 4 10.216797 C 5.2062657 9.8368061 6.3819379 9.1263956 7.2304688 8.5117188 L 11.5 11.5 C 13 12.55 15 12 15 12 L 8.5136719 7.5097656 L 15 3 C 15 3 13 2.4439555 11.5 3.5 L 7.2421875 6.4960938 C 6.3928847 5.8798723 5.211441 5.1648074 4 4.7832031 L 4 4 A 2 2 0 0 0 2 2 z M 2 3 A 1 1 0 0 1 3 4 L 3 5 L 2 5 L 1 5 L 1 4 A 1 1 0 0 1 2 3 z M 7.1582031 7.1582031 A 0.3409091 0.3409091 0 0 1 7.5 7.5 A 0.3409091 0.3409091 0 0 1 7.1582031 7.8417969 A 0.3409091 0.3409091 0 0 1 6.8183594 7.5 A 0.3409091 0.3409091 0 0 1 7.1582031 7.1582031 z M 1 10 L 2 10 L 3 10 L 3 11 A 1 1 0 0 1 2 12 A 1 1 0 0 1 1 11 L 1 10 z "
+     transform="scale(0.88235293)"
+     id="path6100" />
+  <g
+     id="g6359"
+     transform="translate(0,-0.44117656)" />
+  <g
+     transform="rotate(-180,1.7647059,6.8382354)"
+     id="g6366" />
+</svg>

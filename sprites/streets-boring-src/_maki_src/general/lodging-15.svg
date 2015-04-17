@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="15"
+   height="15"
+   id="svg4619"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="lodging-15.svg"
+   viewBox="0 0 13.235294 13.235294">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="912"
+     inkscape:window-height="586"
+     id="namedview3452"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="16"
+     inkscape:cx="11.570084"
+     inkscape:cy="5.3441987"
+     inkscape:current-layer="svg4619"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-x="197"
+     inkscape:window-y="62"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3333"
+       spacingx="0.44117647"
+       spacingy="0.44117647"
+       color="#ff0000"
+       opacity="0.1254902"
+       empspacing="2" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4621" />
+  <metadata
+     id="metadata4624">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.00000024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     d="M 0.5 2.5 C 0.22300058 2.5 0 2.723 0 3 L 0 10.5 L 0 12.5 C -3.7007434e-17 12.777 0.22300058 13 0.5 13 C 0.77699942 13 1 12.777 1 12.5 L 1 11 L 14 11 L 14 12.5 C 14 12.777 14.223 13 14.5 13 C 14.777 13 15 12.777 15 12.5 L 15 10.5 C 15 10.223 14.777 10 14.5 10 L 1 10 L 1 3 C 1 2.723 0.77699942 2.5 0.5 2.5 z M 3.5 3 A 1.4999998 1.4999998 0 0 0 2 4.5 A 1.4999998 1.4999998 0 0 0 3.5 6 A 1.4999998 1.4999998 0 0 0 5 4.5 A 1.4999998 1.4999998 0 0 0 3.5 3 z M 7 4 C 5.4999993 4 5.5 5.5 5.5 5.5 L 5.5 7 L 2.5 7 C 2.223 7 2 7.223 2 7.5 L 2 8.5 C 2 8.777 2.223 9 2.5 9 L 6 9 L 15 9 L 15 6.5 C 15 4.0277282 12.5 4 12.5 4 L 7 4 z "
+     transform="scale(0.88235293)"
+     id="rect6507" />
+</svg>

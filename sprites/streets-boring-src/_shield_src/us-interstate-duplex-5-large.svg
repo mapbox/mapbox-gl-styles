@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="39"
+   height="24"
+   id="svg3844"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="us-interstate-duplex-5-large.svg"
+   viewBox="0 0 39 24">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     id="namedview5316"
+     showgrid="true"
+     inkscape:zoom="11.313709"
+     inkscape:cx="15.226286"
+     inkscape:cy="13.388215"
+     inkscape:window-x="-53"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3844"
+     inkscape:snap-bbox="true"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:object-paths="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-intersection-paths="false"
+     inkscape:object-nodes="true"
+     borderlayer="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:document-units="px"
+     inkscape:showpageshadow="true"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:bbox-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5480"
+       empspacing="2"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="0.5px"
+       spacingy="0.5px"
+       originx="3"
+       originy="-2" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="17.000097,16.49839"
+       id="guide5601" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="7.5000968,16.49839"
+       id="guide5603" />
+    <sodipodi:guide
+       position="26.500097,13.99839"
+       orientation="0,1"
+       id="guide9216" />
+  </sodipodi:namedview>
+  <defs
+     id="defs3846" />
+  <metadata
+     id="metadata3849">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:0;fill:#3a3836;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;marker:none;enable-background:accumulate"
+     id="rect3933-5"
+     width="38.999996"
+     height="20.578947"
+     x="2.8845307e-06"
+     y="2.4210525" />
+  <path
+     style="fill:#5396c7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.89973521px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 1.0067924e-7,9.684211 C -2.119576e-8,23 19.499999,23 19.499999,23 c 0,0 19.500002,0 19.5,-13.315789 L 39,5 0,5 Z"
+     id="path9494-5"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccc" />
+  <path
+     style="fill:#e97474;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.89973521px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 0,5 C 0,2.5789469 2.2941167,0 2.2941167,0 c 0,0 4.5882358,2.4210526 8.6029413,2.4210526 C 14.911764,2.4210526 19.499999,0 19.499999,0 c 0,0 4.588235,2.4210526 8.60294,2.4210526 C 32.117646,2.4210526 36.705883,0 36.705883,0 36.705883,0 39,2.5789469 39,5 Z"
+     id="path9499-8"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccscsccc" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect5252"
+     width="39"
+     height="0.99999994"
+     x="2.6085678e-15"
+     y="5" />
+</svg>
