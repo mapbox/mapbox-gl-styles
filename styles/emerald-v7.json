@@ -228,8 +228,7 @@
     "paint": {
       "fill-color": "#d8e1c5",
       "fill-opacity": 1,
-      "fill-outline-color": "#d2e4c7",
-      "fill-image": "grass_pattern"
+      "fill-outline-color": "#d2e4c7"
     }
   }, {
     "id": "wood",
@@ -470,8 +469,8 @@
     "id": "noise",
     "ref": "background",
     "paint": {
-      "background-opacity": 1,
-      "background-image": "background"
+      "background-opacity": 0,
+      "background-color": "white"
     }
   }, {
     "id": "barrier_land",
