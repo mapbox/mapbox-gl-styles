@@ -2070,7 +2070,10 @@
         "base": 1,
         "stops": [[2, 0], [3, 1]]
       },
-      "line-color": "#aba8b3"
+      "line-color": {
+        "base": 1,
+        "stops": [[3, "#c3bfcc"], [7, "#aba8b3"]]
+      }
     }
   }, {
     "id": "admin-2-boundaries",
@@ -3583,14 +3586,14 @@
       "text-max-angle": 30
     },
     "paint": {
-      "text-halo-width": 0,
+      "text-halo-width": 0.5,
       "text-size": {
         "base": 1,
         "stops": [[13, 12], [18, 16]]
       },
       "text-halo-color": "@halo",
       "text-color": "@label-water-dark",
-      "text-halo-blur": 1.5
+      "text-halo-blur": 0.5
     }
   }, {
     "id": "contour-index-label",
@@ -3641,7 +3644,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-17T21:23:56.463Z",
+  "modified": "2015-04-17T23:10:24.140Z",
   "created": "2015-04-15T22:20:45.883Z",
   "id": "nicki.be444c8f"
 }
