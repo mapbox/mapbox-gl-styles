@@ -7,7 +7,7 @@
       "stops": [[16, 11], [20, 13]]
     },
     "@label-neighbourhood": "#805540",
-    "@hillshade-shadow": "#66601a",
+    "@hillshade-shadow": "#5a5517",
     "@road-width-minor": {
       "base": 1.5,
       "stops": [[14, 0.5], [18, 12]]
@@ -491,7 +491,7 @@
     "paint": {
       "fill-color": "@hillshade-shadow",
       "fill-opacity": {
-        "stops": [[15, 0.04], [17, 0]]
+        "stops": [[15, 0.05], [17, 0]]
       },
       "fill-antialias": false
     }
@@ -507,7 +507,7 @@
     "paint": {
       "fill-color": "@hillshade-shadow",
       "fill-opacity": {
-        "stops": [[15, 0.04], [17, 0]]
+        "stops": [[15, 0.05], [17, 0]]
       },
       "fill-antialias": false
     }
@@ -523,7 +523,7 @@
     "paint": {
       "fill-color": "@hillshade-shadow",
       "fill-opacity": {
-        "stops": [[15, 0.05], [17, 0]]
+        "stops": [[15, 0.06], [17, 0]]
       },
       "fill-antialias": false
     }
@@ -539,7 +539,7 @@
     "paint": {
       "fill-color": "@hillshade-shadow",
       "fill-opacity": {
-        "stops": [[15, 0.05], [17, 0]]
+        "stops": [[15, 0.06], [17, 0]]
       },
       "fill-antialias": false
     }
@@ -3764,7 +3764,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-16T23:19:43.163Z",
+  "modified": "2015-04-17T01:09:01.755Z",
   "created": "2015-04-15T22:20:45.883Z",
   "id": "nicki.be444c8f"
 }
