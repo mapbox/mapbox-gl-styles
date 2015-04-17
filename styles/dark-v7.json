@@ -1554,10 +1554,6 @@
       "visibility": "visible",
       "text-field": "{name_en}",
       "text-max-size": 14,
-      "icon-image": {
-        "base": 1,
-        "stops": [[13, "{maki}-11"], [14, "{maki}-17"]]
-      },
       "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular"
     },
     "paint": {
@@ -1693,7 +1689,7 @@
     }
   }],
   "owner": "andreasviglakis",
-  "modified": "2015-04-17T21:05:59.997Z",
+  "modified": "2015-04-17T23:47:09.286Z",
   "created": "2015-04-17T20:52:42.134Z",
   "id": "andreasviglakis.0c9f1222"
 }
