@@ -1015,7 +1015,7 @@
     "pixelRatio": 1,
     "sdf": false
   },
-  "circle.sdf": {
+  "circle": {
     "x": 312,
     "y": 68,
     "width": 19,
