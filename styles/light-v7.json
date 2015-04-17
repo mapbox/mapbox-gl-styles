@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "name": "light-v4-040915.json",
+  "name": "light-v7.json",
   "constants": {
     "@road-motorway-width": {
       "base": 1,
@@ -10,7 +10,7 @@
       "base": 1,
       "stops": [[14, 0.5], [18, 12]]
     },
-    "@sans_md": "Open Sans Semibold, Arial Unicode MS Bold",
+    "@sans_md": "DIN Offc Pro Medium, Arial Unicode MS Bold",
     "@admin-2-boundary": {
       "base": 1,
       "stops": [[3, 0.5], [10, 2]]
@@ -48,7 +48,7 @@
       "base": 1.5,
       "stops": [[12.5, 0.3], [14, 2], [18, 18]]
     },
-    "@sans_bd": "Open Sans Bold, Arial Unicode MS Bold",
+    "@sans_bd": "DIN Offc Pro Bold, Arial Unicode MS Bold",
     "@scrub": "#e3e3e3",
     "@crop": "#ececec",
     "@label-waterway": "#929292",
@@ -60,7 +60,7 @@
       "base": 1,
       "stops": [[5, 0], [5.5, 1]]
     },
-    "@sans": "Open Sans Regular, Arial Unicode MS Regular",
+    "@sans": "DIN Offc Pro Regular, Arial Unicode MS Regular",
     "@motorway-width": {
       "base": 1.5,
       "stops": [[5, 0.75], [18, 32]]
@@ -955,7 +955,7 @@
     "filter": ["all", ["in", "scalerank", 1, 2]],
     "layout": {
       "text-field": "@name",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
       "text-max-size": 18,
       "text-max-width": 6
     },
@@ -985,7 +985,7 @@
         "base": 1,
         "stops": [[0, "{code}"], [2, "{name_en}"]]
       },
-      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
       "text-max-size": 18,
       "text-max-width": 7
     },
@@ -1012,7 +1012,7 @@
     "filter": ["all", [">=", "scalerank", 5]],
     "layout": {
       "text-field": "{name_en}",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
       "text-max-size": 18,
       "text-max-width": 7
     },
@@ -1044,7 +1044,7 @@
         "base": 1,
         "stops": [[0, "{abbr}"], [4, "{name_en}"]]
       },
-      "text-font": "Open Sans Bold, Arial Unicode MS Regular",
+      "text-font": "DIN Offc Pro Bold, Arial Unicode MS Regular",
       "text-max-size": 10,
       "text-letter-spacing": 0.15,
       "text-max-width": 7
@@ -1072,7 +1072,7 @@
       "text-max-size": 30,
       "text-line-height": 1.2,
       "text-letter-spacing": 0.4,
-      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular"
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label",
@@ -1098,7 +1098,7 @@
       "text-max-size": 24,
       "text-line-height": 1.2,
       "text-letter-spacing": 0,
-      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular"
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label",
@@ -1124,7 +1124,7 @@
       "text-max-size": 18,
       "text-line-height": 1.2,
       "text-letter-spacing": 0,
-      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular"
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label",
@@ -1150,7 +1150,7 @@
       "text-max-size": 16,
       "text-line-height": 1.2,
       "text-letter-spacing": 0,
-      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular"
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label",
@@ -1176,7 +1176,7 @@
       "text-max-size": 30,
       "text-line-height": 1.5,
       "text-letter-spacing": 0.25,
-      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular"
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label",
@@ -1202,7 +1202,7 @@
       "text-max-size": 24,
       "text-line-height": 1.2,
       "text-letter-spacing": 0,
-      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular"
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label",
@@ -1228,7 +1228,7 @@
       "text-max-size": 18,
       "text-line-height": 1.3,
       "text-letter-spacing": 0.1,
-      "text-font": "Open Sans Semibold Italic, Arial Unicode MS Regular"
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label",
@@ -1253,7 +1253,8 @@
       "text-field": "@name",
       "text-max-size": 16,
       "text-line-height": 1.2,
-      "text-letter-spacing": 0.1
+      "text-letter-spacing": 0.1,
+      "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label",
@@ -1336,7 +1337,7 @@
     "filter": ["all", ["==", "type", "city"], ["<=", "scalerank", 4], [">", "scalerank", 1], ["in", "ldir", "N", "W", "NW", "NE"]],
     "layout": {
       "text-field": "@name",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Bold",
       "text-max-width": 10,
       "text-max-size": 19,
       "text-anchor": {
@@ -1367,7 +1368,7 @@
     "filter": ["all", ["==", "type", "city"], ["<=", "scalerank", 4], [">", "scalerank", 1], ["in", "ldir", "S", "E", "SE", "SW"]],
     "layout": {
       "text-field": "@name",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Bold",
       "text-max-width": 10,
       "text-max-size": 19,
       "text-anchor": {
@@ -1398,7 +1399,7 @@
     "filter": ["all", ["==", "type", "city"], [">", "scalerank", 4], ["in", "ldir", "N", "W", "NW", "NE"]],
     "layout": {
       "text-field": "@name",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Bold",
       "text-max-width": 10,
       "text-max-size": 19,
       "text-anchor": {
@@ -1428,7 +1429,7 @@
     "filter": ["all", ["==", "type", "city"], [">", "scalerank", 4], ["in", "ldir", "S", "E", "SE", "SW"]],
     "layout": {
       "text-field": "@name",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Bold",
       "text-max-width": 10,
       "text-max-size": 19,
       "text-anchor": {
@@ -1458,7 +1459,7 @@
     "filter": ["all", ["==", "$type", "Point"], ["in", "type", "town", "village", "hamlet"]],
     "layout": {
       "text-field": "@name",
-      "text-font": "Open Sans Regular, Arial Unicode MS Bold",
+      "text-font": "DIN Offc Pro Regular, Arial Unicode MS Bold",
       "text-max-width": 15,
       "text-max-size": 18
     },
@@ -1480,7 +1481,7 @@
     "filter": ["all", ["==", "$type", "Point"], ["in", "type", "suburb", "neighbourhood"]],
     "layout": {
       "text-field": "@name",
-      "text-font": "Open Sans Bold, Arial Unicode MS Bold",
+      "text-font": "DIN Offc Pro Bold, Arial Unicode MS Bold",
       "text-max-width": 7,
       "text-max-size": 14,
       "text-letter-spacing": 0.1,
@@ -1507,7 +1508,7 @@
     "minzoom": 5,
     "maxzoom": 22,
     "layout": {
-      "text-font": "Open Sans Italic, Arial Unicode MS Regular",
+      "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular",
       "visibility": "visible",
       "text-field": "{name_en}",
       "text-max-width": 7
@@ -1532,10 +1533,7 @@
       "visibility": "visible",
       "text-field": "{name_en}",
       "text-max-size": 14,
-      "icon-image": {
-        "base": 1,
-        "stops": [[13, "{maki}-11"], [14, "{maki}-17"]]
-      }
+      "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label-secondary",
@@ -1553,7 +1551,7 @@
     "source-layer": "poi_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["!in", "maki", "park", "golf", "cemetary", "zoo", "campsite", "heliport", "rocket", "park", "golf", "cemetary", "zoo", "campsite", "swimming", "dog-park"], ["<=", "scalerank", 1]],
+    "filter": ["all", ["in", "maki", "park", "", "", "", "", ""], ["<=", "scalerank", 1]],
     "layout": {
       "text-max-width": 8,
       "visibility": "visible",
@@ -1562,7 +1560,8 @@
       "icon-image": {
         "base": 1,
         "stops": [[13, "{maki}-11"], [14, "{maki}-17"]]
-      }
+      },
+      "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular"
     },
     "paint": {
       "text-color": "@label-park",
@@ -1582,18 +1581,14 @@
     "maxzoom": 22,
     "filter": ["all", ["in", "maki", "airport", "heliport", "rocket"], ["<=", "scalerank", 2]],
     "layout": {
-      "icon-image": {
-        "base": 1,
-        "stops": [[12, "{maki-11}"], [13, "{maki-17}"]]
-      },
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
       "visibility": "visible",
       "text-field": {
         "base": 1,
-        "stops": [[12, "{ref}"], [13, "{name_en}"]]
+        "stops": [[12, ""], [13, "{name_en}"]]
       },
       "text-max-size": 18,
-      "text-max-width": 9,
-      "text-font": "Open Sans Semibold, Arial Unicode MS Regular"
+      "text-max-width": 9
     },
     "paint": {
       "text-color": "@label",
@@ -1614,7 +1609,7 @@
     "layout": {
       "symbol-placement": "line",
       "text-field": "{name_en}",
-      "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Bold",
       "text-transform": "none",
       "text-letter-spacing": 0,
       "text-max-size": 16,
@@ -1687,7 +1682,7 @@
     "maxzoom": 22,
     "filter": ["all", ["==", "class", "river"]],
     "layout": {
-      "text-font": "Open Sans Italic, Arial Unicode MS Regular",
+      "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular",
       "visibility": "visible",
       "symbol-placement": "line",
       "text-field": "{name_en}"
@@ -1715,7 +1710,7 @@
       "icon-image": "default-4-small",
       "text-max-angle": 38,
       "text-max-size": 11,
-      "text-font": "Open Sans Bold, Arial Unicode MS Regular",
+      "text-font": "DIN Offc Pro Bold, Arial Unicode MS Regular",
       "symbol-placement": "line",
       "visibility": "none",
       "text-field": "{ref}",
@@ -1734,7 +1729,7 @@
     }
   }],
   "owner": "andreasviglakis",
-  "modified": "2015-04-10T21:22:55.274Z",
-  "created": "2015-04-10T00:53:04.196Z",
+  "modified": "2015-04-17T21:07:18.348Z",
+  "created": "2015-04-14T22:28:40.506Z",
   "id": "andreasviglakis.e1a9590a"
 }
