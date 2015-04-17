@@ -6,7 +6,7 @@ present=$(pwd)
 
 cd ..
 
-gl-style-spritify mapbox-streets-boring streets-src/renders/*
+gl-style-spritify mapbox-streets-boring streets-boring-src/renders/*
 
 # rename circle
 sed -i '' 's/circle.sdf/circle/g' ${present}/../mapbox-streets.json
