@@ -57,7 +57,7 @@
       "base": 1.5,
       "stops": [[14, 0.75], [20, 3]]
     },
-    "@landuse-hospital": "#ffe2d9",
+    "@landuse-hospital": "#ffdcd4",
     "@land": "#ede9d9",
     "@name": "{name_en}",
     "@landcover": "#cde8a2",
@@ -2196,7 +2196,7 @@
     "type": "line",
     "source": "mapbox://mapbox.mapbox-terrain-v2",
     "source-layer": "contour",
-    "minzoom": 13,
+    "minzoom": 14,
     "maxzoom": 22,
     "filter": ["all", ["!=", "index", 5]],
     "layout": {
@@ -2211,7 +2211,7 @@
     "type": "line",
     "source": "mapbox://mapbox.mapbox-terrain-v2",
     "source-layer": "contour",
-    "minzoom": 13,
+    "minzoom": 14,
     "maxzoom": 22,
     "filter": ["all", ["==", "index", 5]],
     "layout": {
@@ -3762,7 +3762,7 @@
     }
   }],
   "owner": "saman",
-  "modified": "2015-04-17T11:53:40.187Z",
+  "modified": "2015-04-17T13:27:57.332Z",
   "created": "2015-04-17T10:03:34.209Z",
   "id": "saman.ec2c6b23"
 }
