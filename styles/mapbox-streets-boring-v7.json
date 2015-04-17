@@ -36,8 +36,8 @@
       "base": 1.5,
       "stops": [[15, 2], [18, 7]]
     },
-    "@road-trunk": "#edd077",
-    "@road-motorway": "#f7924a",
+    "@road-trunk": "#f5d36e",
+    "@road-motorway": "#ff9e59",
     "@road-minor": "#fff",
     "@rail-track-width": {
       "base": 1.5,
@@ -55,7 +55,7 @@
     },
     "@rail-width": {
       "base": 1.5,
-      "stops": [[14, 0.5], [20, 1]]
+      "stops": [[14, 0.75], [20, 3]]
     },
     "@landuse-hospital": "#ffe2d9",
     "@land": "#ede9d9",
@@ -110,7 +110,7 @@
       "base": 1.5,
       "stops": [[12.5, 0.5], [14, 2], [18, 12]]
     },
-    "@water": "#9ed2f7",
+    "@water": "#93cef7",
     "@label-state": "#242424",
     "@landuse-parks": "#cbe6a1",
     "@street_limited-case-width": {
@@ -119,7 +119,7 @@
     },
     "@motorway_link-width": {
       "base": 1.5,
-      "stops": [[12, 0.75], [14, 3], [18, 18]]
+      "stops": [[12, 0.75], [14, 2], [18, 18]]
     },
     "@building-shadow": "#d0cbbb",
     "@label-road": "#3a3836",
@@ -1300,7 +1300,7 @@
     "type": "line",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "road",
-    "minzoom": 11,
+    "minzoom": 12,
     "maxzoom": 22,
     "filter": ["all", ["==", "class", "motorway_link"]],
     "layout": {
@@ -1463,7 +1463,7 @@
     "type": "line",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "road",
-    "minzoom": 11,
+    "minzoom": 12,
     "maxzoom": 22,
     "filter": ["all", ["==", "class", "motorway_link"]],
     "layout": {
@@ -1565,7 +1565,7 @@
       "line-width": "@motorway-width",
       "line-color": {
         "base": 1,
-        "stops": [[5.9, "#fff"], [6, "#f7924a"]]
+        "stops": [[5.9, "#fff"], [6, "#ff9e59"]]
       },
       "line-opacity": "@road-high-z-fadein"
     }
@@ -1724,7 +1724,7 @@
     "type": "line",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "bridge",
-    "minzoom": 11,
+    "minzoom": 12,
     "maxzoom": 22,
     "filter": ["all", ["==", "class", "motorway_link"]],
     "layout": {
@@ -1834,7 +1834,7 @@
     "type": "line",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "bridge",
-    "minzoom": 11,
+    "minzoom": 12,
     "maxzoom": 22,
     "filter": ["all", ["==", "class", "motorway_link"]],
     "layout": {
@@ -3762,7 +3762,7 @@
     }
   }],
   "owner": "saman",
-  "modified": "2015-04-17T11:34:39.087Z",
+  "modified": "2015-04-17T11:53:40.187Z",
   "created": "2015-04-17T10:03:34.209Z",
   "id": "saman.ec2c6b23"
 }

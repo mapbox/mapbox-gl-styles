@@ -11,11 +11,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="31"
-   height="24"
+   height="25"
    id="svg3844"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="us-interstate-3-large.svg"
-   viewBox="0 0 31 24">
+   viewBox="0 0 31 25">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -30,8 +30,8 @@
      id="namedview5316"
      showgrid="true"
      inkscape:zoom="11.313708"
-     inkscape:cx="13.552176"
-     inkscape:cy="9.3114238"
+     inkscape:cx="0.072952389"
+     inkscape:cy="6.9249383"
      inkscape:window-x="-53"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -88,7 +88,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

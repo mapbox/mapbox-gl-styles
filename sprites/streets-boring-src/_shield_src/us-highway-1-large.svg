@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="5.473165"
-     inkscape:cy="14.311462"
+     inkscape:cx="4.566915"
+     inkscape:cy="8.592712"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -62,7 +62,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -74,7 +74,7 @@
     <path
        style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#3a3836;stroke-width:1.00000215;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker:none;enable-background:accumulate"
        clip-path="none"
-       d="M 303.56251,900.36597 300,903.4305 c 0.59374,0.61291 2.375,1.83872 1.18751,4.29034 -1.18751,2.45163 -1.78126,6.12907 0.59374,8.58069 2.96875,3.06452 6.53126,0.6129 7.71874,3.06452 1.18751,-2.45162 4.75001,0 7.71875,-3.06452 2.375,-2.45162 1.78126,-6.12906 0.59376,-8.58069 -1.1875,-2.45162 0.59375,-3.67743 1.1875,-4.29034 l -3.5625,-3.06453 c 0,0 -1.1875,1.83872 -2.96876,1.83872 -1.78124,0 -2.96875,-1.83872 -2.96875,-1.83872 0,0 -1.18748,1.83872 -2.96874,1.83872 -1.78125,0 -2.96874,-1.83872 -2.96874,-1.83872 z"
+       d="M 303.56251,899.36597 300,902.4305 c 0.59374,0.61291 2.375,1.83872 1.18751,4.29034 -1.18751,2.45163 -1.78126,6.12907 0.59374,8.58069 2.96875,3.06452 6.53126,0.6129 7.71874,3.06452 1.18751,-2.45162 4.75001,0 7.71875,-3.06452 2.375,-2.45162 1.78126,-6.12906 0.59376,-8.58069 -1.1875,-2.45162 0.59375,-3.67743 1.1875,-4.29034 l -3.5625,-3.06453 c 0,0 -1.1875,1.83872 -2.96876,1.83872 -1.78124,0 -2.96875,-1.83872 -2.96875,-1.83872 0,0 -1.18748,1.83872 -2.96874,1.83872 -1.78125,0 -2.96874,-1.83872 -2.96874,-1.83872 z"
        id="path3799"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccsscssccscsc" />

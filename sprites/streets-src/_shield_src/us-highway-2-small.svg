@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="21"
-   height="17"
+   height="18"
    id="svg3844"
    version="1.1"
    inkscape:version="0.91+devel+osxmenu r12911"
    sodipodi:docname="us-highway-2-small.svg"
-   viewBox="0 0 21 17">
+   viewBox="0 0 21 18">
   <defs
      id="defs3846" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="3.4904018"
-     inkscape:cy="8.2468847"
+     inkscape:cx="15.584152"
+     inkscape:cy="6.4968847"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -70,18 +70,11 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-300,-902.36213)">
-    <rect
-       style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:0;fill:#3a3836;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-       id="rect3803"
-       width="17"
-       height="18"
-       x="301"
-       y="901.36218" />
+     transform="translate(-300,-901.36213)">
     <path
        style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#3a3836;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:round;marker:none;enable-background:accumulate"
        clip-path="none"
-       d="m 304.94442,903.36218 -4.44446,2.5 c 0.55555,0.5 2.22223,1.5 1.11112,3.5 -1.11112,2 -1.66668,5 0.55555,7 2.77779,2.5 7.22225,0.5 8.33337,2.5 1.11111,-2 5.55558,0 8.33336,-2.5 2.22223,-2 1.66668,-5 0.55556,-7 -1.11111,-2 0.55555,-3 1.11112,-3.5 l -4.44446,-2.5 c 0,0 -1.11112,1.5 -2.7778,1.5 -1.66667,0 -2.77778,-1.5 -2.77778,-1.5 0,0 -1.11112,1.5 -2.77779,1.5 -1.66667,0 -2.77779,-1.5 -2.77779,-1.5 z"
+       d="m 304.94442,902.36218 -4.44446,2.5 c 0.55555,0.5 2.22223,1.5 1.11112,3.5 -1.11112,2 -1.66668,5 0.55555,7 2.77779,2.5 7.22225,0.5 8.33337,2.5 1.11111,-2 5.55558,0 8.33336,-2.5 2.22223,-2 1.66668,-5 0.55556,-7 -1.11111,-2 0.55555,-3 1.11112,-3.5 l -4.44446,-2.5 c 0,0 -1.11112,1.5 -2.7778,1.5 -1.66667,0 -2.77778,-1.5 -2.77778,-1.5 0,0 -1.11112,1.5 -2.77779,1.5 -1.66667,0 -2.77779,-1.5 -2.77779,-1.5 z"
        id="path3799-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccsscssccscsc" />
