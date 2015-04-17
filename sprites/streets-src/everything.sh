@@ -2,7 +2,7 @@
 present=$(pwd)
 
 ./maki_dots.sh
-./render.sh
+# ./render.sh
 
 cd ..
 
