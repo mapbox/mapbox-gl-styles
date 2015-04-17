@@ -767,7 +767,11 @@
         "stops": [[7, 0], [8, 0.75]]
       },
       "line-dasharray": [1, 0],
-      "line-translate": [0, 0]
+      "line-translate": [0, 0],
+      "line-blur": {
+        "base": 1,
+        "stops": [[3, 0], [8, 3]]
+      }
     }
   }, {
     "id": "tunnel-street_limited-polygon",
@@ -2024,7 +2028,7 @@
     "paint": {
       "line-width": {
         "base": 1,
-        "stops": [[2, 3.5], [10, 10]]
+        "stops": [[3, 3.5], [10, 10]]
       },
       "line-color": {
         "base": 1,
@@ -2034,7 +2038,11 @@
         "base": 1,
         "stops": [[3, 0], [4, 0.5]]
       },
-      "line-translate": [0, 0]
+      "line-translate": [0, 0],
+      "line-blur": {
+        "base": 1,
+        "stops": [[3, 0], [10, 2]]
+      }
     }
   }, {
     "id": "admin-3-4-boundaries",
@@ -3136,7 +3144,7 @@
       "text-halo-width": 0
     }
   }, {
-    "id": "rail-label_copy_copy",
+    "id": "rail-label",
     "type": "symbol",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "poi_label",
@@ -3257,43 +3265,6 @@
       "icon-color": "white",
       "text-halo-color": "@halo",
       "text-halo-width": 0
-    }
-  }, {
-    "id": "rail-label_copy",
-    "type": "symbol",
-    "source": "mapbox://mapbox.mapbox-streets-v6",
-    "source-layer": "poi_label",
-    "minzoom": 13,
-    "maxzoom": 22,
-    "filter": ["all", ["in", "type", "Rail Station"]],
-    "layout": {
-      "symbol-min-distance": 250,
-      "icon-image": "{network}-11",
-      "symbol-avoid-edges": true,
-      "text-max-size": "@poi-scalerank3",
-      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
-      "icon-allow-overlap": false,
-      "symbol-placement": "point",
-      "text-justify": "center",
-      "visibility": "none",
-      "text-offset": [0, 1],
-      "text-rotation-alignment": "viewport",
-      "text-anchor": "top",
-      "text-field": {
-        "base": 1,
-        "stops": [[0, ""], [14, "{name_en}"]]
-      },
-      "text-letter-spacing": 0.02,
-      "icon-padding": 0,
-      "text-max-width": 7
-    },
-    "paint": {
-      "text-color": "@label-poi",
-      "text-halo-color": "@halo",
-      "text-halo-width": 1.5,
-      "text-size": "@poi-scalerank3",
-      "icon-halo-width": 4,
-      "icon-halo-color": "#fff"
     }
   }, {
     "id": "poi-parks-scalerank2",
@@ -3670,7 +3641,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-17T20:01:53.785Z",
+  "modified": "2015-04-17T21:23:56.463Z",
   "created": "2015-04-15T22:20:45.883Z",
   "id": "nicki.be444c8f"
 }
