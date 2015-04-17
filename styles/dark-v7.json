@@ -1548,7 +1548,7 @@
     "source-layer": "poi_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["==", "scalerank", 1], ["==", "type", "park"]],
+    "filter": ["all", ["==", "scalerank", 1], ["==", "maki", "park"]],
     "layout": {
       "text-max-width": 8,
       "visibility": "visible",
@@ -1689,7 +1689,7 @@
     }
   }],
   "owner": "andreasviglakis",
-  "modified": "2015-04-17T23:47:09.286Z",
-  "created": "2015-04-17T20:52:42.134Z",
+  "modified": "2015-04-17T23:53:14.552Z",
+  "created": "2015-04-09T00:33:20.278Z",
   "id": "andreasviglakis.0c9f1222"
 }
