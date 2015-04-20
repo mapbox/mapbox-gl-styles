@@ -40,8 +40,8 @@
      id="namedview8"
      showgrid="true"
      inkscape:zoom="32"
-     inkscape:cx="3.396539"
-     inkscape:cy="5.8122545"
+     inkscape:cx="8.7062616"
+     inkscape:cy="8.1593928"
      inkscape:window-x="104"
      inkscape:window-y="75"
      inkscape:window-maximized="0"
@@ -70,15 +70,22 @@
        spacingx="0.5"
        spacingy="0.5" />
   </sodipodi:namedview>
+  <rect
+     style="opacity:1;fill:#5396c7;fill-opacity:1;stroke:none;stroke-width:0.89973533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+     id="rect10174"
+     width="15"
+     height="15"
+     x="1"
+     y="1"
+     rx="1.9375501"
+     ry="1.9375501" />
   <g
      id="g3007"
      transform="translate(-0.5,5.5)" />
   <path
-     style="display:inline;opacity:1;fill:#5396c7;fill-opacity:1;stroke-width:0.89973533px;stroke:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 1,2 0,13 c 0,0 0,1 1,1 l 13,0 c 0,0 1,0 1,-1 L 16,2 C 16,2 16,1 15,1 L 2,1 C 1,1 1,2 1,2 Z"
-     id="path7877" />
-  <path
-     style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.89973533px;stroke:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 3.4999991,2.984375 2.9902345,0 c 0,0 0.00236,3.8409958 0.0097,6.515625 -0.00649,1.139077 1,2.000001 2,2.000001 1,0 2.0032654,-0.860924 2.0097664,-2.000001 L 10.5,2.984375 13.5,3 c 0,0 -0.0059,3.6538191 0,6.5 C 13.5,12 11,14 8.5,14 6,14 3.4999998,12 3.4999998,9.5 c 1.221e-4,-0.441103 1e-4,-6.5156249 1e-4,-6.5156249 z"
-     id="rect3272-4" />
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.02610442"
+     d="m 4.9999999,5 2,0 0,4.5 c 0,0.5 0.5,1.5 1.5,1.5 C 9.4999999,11 10,10 10,9.5 l 0,-4.5 2,0 0,4 c -0.0028,2.162274 -1.337725,4 -3.5000001,4 -2.1622749,0 -3.4972,-1.837726 -3.5,-4 z"
+     id="path4728"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccssscccscc" />
 </svg>
