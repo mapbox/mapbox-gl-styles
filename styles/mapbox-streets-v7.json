@@ -716,12 +716,16 @@
     "type": "fill",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "aeroway",
-    "minzoom": 9,
+    "minzoom": 11,
     "maxzoom": 22,
     "filter": ["all", ["==", "$type", "Polygon"], ["!=", "type", "apron"]],
     "layout": {},
     "paint": {
-      "fill-color": "@aeroway"
+      "fill-color": "@aeroway",
+      "fill-opacity": {
+        "base": 1,
+        "stops": [[11, 0], [11.5, 1]]
+      }
     }
   }, {
     "id": "aeroway-runway",
@@ -928,7 +932,8 @@
     "paint": {
       "line-width": "@road-case-width-sm",
       "line-color": "@tunnel-case-dark",
-      "line-gap-width": "@road-width-minor"
+      "line-gap-width": "@road-width-minor",
+      "line-dasharray": [3, 3]
     }
   }, {
     "id": "tunnel-street_limited-case",
@@ -1043,7 +1048,8 @@
     "ref": "tunnel-service-driveway-case",
     "paint": {
       "line-width": "@road-width-minor",
-      "line-color": "@road-minor"
+      "line-color": "@road-minor",
+      "line-dasharray": [1, 0]
     }
   }, {
     "id": "tunnel-construction",
@@ -3189,50 +3195,6 @@
       "text-size": "@poi-scalerank1"
     }
   }, {
-    "id": "interstate_motorway_shields",
-    "type": "symbol",
-    "source": "mapbox://mapbox.mapbox-streets-v6",
-    "source-layer": "road_label",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all", ["in", "shield", "us-interstate", "us-interstate-business", "us-interstate-duplex"], ["<=", "reflen", 6]],
-    "layout": {
-      "text-allow-overlap": false,
-      "symbol-min-distance": 1000,
-      "icon-image": {
-        "stops": [[15, "{shield}-{reflen}-small"], [16, "{shield}-{reflen}-large"]]
-      },
-      "icon-rotation-alignment": "viewport",
-      "symbol-avoid-edges": false,
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": 11,
-      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
-      "symbol-placement": {
-        "base": 1,
-        "stops": [[10, "point"], [11, "line"]]
-      },
-      "text-padding": 20,
-      "visibility": "visible",
-      "text-rotation-alignment": "viewport",
-      "text-field": "{ref}",
-      "text-letter-spacing": 0.05,
-      "icon-padding": 20
-    },
-    "paint": {
-      "text-size": {
-        "base": 1,
-        "stops": [[15.95, 9], [16, 11]]
-      },
-      "text-color": "#fff",
-      "icon-halo-color": "rgba(0, 0, 0, 1)",
-      "icon-halo-width": 1,
-      "text-opacity": 1,
-      "icon-color": "white",
-      "text-halo-color": "@halo",
-      "text-halo-width": 0
-    }
-  }, {
     "id": "rail-label",
     "type": "symbol",
     "source": "mapbox://mapbox.mapbox-streets-v6",
@@ -3275,6 +3237,122 @@
         "base": 1,
         "stops": [[13.99, 0], [14, 1]]
       }
+    }
+  }, {
+    "id": "poi-parks-scalerank2",
+    "type": "symbol",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "poi_label",
+    "minzoom": 13,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "maki", "park", "golf", "cemetery", "zoo", "campsite", "swimming", "dog-park"], ["==", "scalerank", 2]],
+    "layout": {
+      "text-line-height": 1.2,
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-image": {
+        "stops": [[14, "{maki}-11"], [15, "{maki}-15"]]
+      },
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": "@poi-scalerank2",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 2,
+      "visibility": "visible",
+      "text-offset": [0, 1.25],
+      "icon-optional": false,
+      "text-rotation-alignment": "viewport",
+      "text-anchor": "top",
+      "text-field": "{name_en}",
+      "text-letter-spacing": 0.02,
+      "text-max-width": 8
+    },
+    "paint": {
+      "text-color": "@label-park",
+      "text-halo-color": "@halo",
+      "text-halo-width": 1.25,
+      "text-size": "@poi-scalerank2"
+    }
+  }, {
+    "id": "poi-scalerank2",
+    "type": "symbol",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "poi_label",
+    "minzoom": 13,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "maki", "rail-light", "rail-metro", "rail", "airport", "airfield", "heliport", "rocket", "park", "golf", "cemetery", "zoo", "campsite", "swimming", "dog-park"], ["==", "scalerank", 2]],
+    "layout": {
+      "text-line-height": 1.2,
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-image": {
+        "stops": [[14, "{maki}-11"], [15, "{maki}-15"]]
+      },
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": "@poi-scalerank2",
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 2,
+      "visibility": "visible",
+      "text-offset": [0, 1.25],
+      "icon-optional": false,
+      "text-rotation-alignment": "viewport",
+      "text-anchor": "top",
+      "text-field": "{name_en}",
+      "text-letter-spacing": 0.02,
+      "text-max-width": 8
+    },
+    "paint": {
+      "text-color": "@label-poi",
+      "text-halo-color": "@halo",
+      "text-halo-width": 1.25,
+      "text-size": "@poi-scalerank2"
+    }
+  }, {
+    "id": "interstate_motorway_shields",
+    "type": "symbol",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "shield", "us-interstate", "us-interstate-business", "us-interstate-duplex"], ["<=", "reflen", 6]],
+    "layout": {
+      "text-allow-overlap": false,
+      "symbol-min-distance": 1000,
+      "icon-image": {
+        "stops": [[15, "{shield}-{reflen}-small"], [16, "{shield}-{reflen}-large"]]
+      },
+      "icon-rotation-alignment": "viewport",
+      "symbol-avoid-edges": false,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 11,
+      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+      "symbol-placement": {
+        "base": 1,
+        "stops": [[10, "point"], [11, "line"]]
+      },
+      "text-padding": 20,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{ref}",
+      "text-letter-spacing": 0.05,
+      "icon-padding": 20
+    },
+    "paint": {
+      "text-size": {
+        "base": 1,
+        "stops": [[15.95, 9], [16, 11]]
+      },
+      "text-color": "#fff",
+      "icon-halo-color": "rgba(0, 0, 0, 1)",
+      "icon-halo-width": 1,
+      "text-opacity": 1,
+      "icon-color": "white",
+      "text-halo-color": "@halo",
+      "text-halo-width": 0
     }
   }, {
     "id": "road-label-large",
@@ -3354,78 +3432,6 @@
       "icon-color": "white",
       "text-halo-color": "@halo",
       "text-halo-width": 0
-    }
-  }, {
-    "id": "poi-parks-scalerank2",
-    "type": "symbol",
-    "source": "mapbox://mapbox.mapbox-streets-v6",
-    "source-layer": "poi_label",
-    "minzoom": 13,
-    "maxzoom": 22,
-    "filter": ["all", ["in", "maki", "park", "golf", "cemetery", "zoo", "campsite", "swimming", "dog-park"], ["==", "scalerank", 2]],
-    "layout": {
-      "text-line-height": 1.2,
-      "text-allow-overlap": false,
-      "symbol-min-distance": 250,
-      "icon-image": {
-        "stops": [[14, "{maki}-11"], [15, "{maki}-15"]]
-      },
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": "@poi-scalerank2",
-      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
-      "symbol-placement": "point",
-      "text-padding": 2,
-      "visibility": "visible",
-      "text-offset": [0, 1.25],
-      "icon-optional": false,
-      "text-rotation-alignment": "viewport",
-      "text-anchor": "top",
-      "text-field": "{name_en}",
-      "text-letter-spacing": 0.02,
-      "text-max-width": 8
-    },
-    "paint": {
-      "text-color": "@label-park",
-      "text-halo-color": "@halo",
-      "text-halo-width": 1.25,
-      "text-size": "@poi-scalerank2"
-    }
-  }, {
-    "id": "poi-scalerank2",
-    "type": "symbol",
-    "source": "mapbox://mapbox.mapbox-streets-v6",
-    "source-layer": "poi_label",
-    "minzoom": 13,
-    "maxzoom": 22,
-    "filter": ["all", ["!in", "maki", "rail-light", "rail-metro", "rail", "airport", "airfield", "heliport", "rocket", "park", "golf", "cemetery", "zoo", "campsite", "swimming", "dog-park"], ["==", "scalerank", 2]],
-    "layout": {
-      "text-line-height": 1.2,
-      "text-allow-overlap": false,
-      "symbol-min-distance": 250,
-      "icon-image": {
-        "stops": [[14, "{maki}-11"], [15, "{maki}-15"]]
-      },
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": "@poi-scalerank2",
-      "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
-      "symbol-placement": "point",
-      "text-padding": 2,
-      "visibility": "visible",
-      "text-offset": [0, 1.25],
-      "icon-optional": false,
-      "text-rotation-alignment": "viewport",
-      "text-anchor": "top",
-      "text-field": "{name_en}",
-      "text-letter-spacing": 0.02,
-      "text-max-width": 8
-    },
-    "paint": {
-      "text-color": "@label-poi",
-      "text-halo-color": "@halo",
-      "text-halo-width": 1.25,
-      "text-size": "@poi-scalerank2"
     }
   }, {
     "id": "road-label-medium",
@@ -3730,7 +3736,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-20T20:00:09.959Z",
+  "modified": "2015-04-20T22:52:06.997Z",
   "created": "2015-04-20T17:11:47.261Z",
   "id": "nicki.be444c8f"
 }
