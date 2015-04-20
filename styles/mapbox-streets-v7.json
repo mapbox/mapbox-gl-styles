@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "name": "mapbox-streets",
+  "name": "mapbox-streets-v7.json",
   "constants": {
     "@poi-scalerank3": {
       "base": 1,
@@ -16,7 +16,7 @@
       "base": 1,
       "stops": [[16, 11], [20, 13]]
     },
-    "@wetlands": "#9DD3D8",
+    "@wetlands": "#9ed9a4",
     "@landuse-cemetery": "#dde6c2",
     "@admin-2-boundary": {
       "base": 1,
@@ -625,6 +625,15 @@
     "paint": {
       "fill-color": "@wetlands",
       "fill-opacity": 0.25
+    }
+  }, {
+    "id": "landuse-overlay-texture",
+    "ref": "landuse-overlay",
+    "paint": {
+      "fill-color": "@wetlands",
+      "fill-opacity": 0.5,
+      "fill-image": "marsh",
+      "fill-antialias": true
     }
   }, {
     "id": "barrier_line-land-polygon",
@@ -3643,8 +3652,8 @@
       "text-halo-blur": 0
     }
   }],
-  "owner": "nicki",
-  "modified": "2015-04-17T23:10:24.140Z",
-  "created": "2015-04-15T22:20:45.883Z",
-  "id": "nicki.be444c8f"
+  "owner": "saman",
+  "modified": "2015-04-20T13:53:38.274Z",
+  "created": "2015-04-20T13:36:51.648Z",
+  "id": "saman.3ce94caf"
 }
