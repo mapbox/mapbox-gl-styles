@@ -378,7 +378,7 @@
         "sdf": false
     }
 ,
-    "airport_icon": {
+    "cemetery_icon": {
         "x": 314,
         "y": 158,
         "width": 36,
@@ -387,7 +387,7 @@
         "sdf": false
     }
 ,
-    "college_icon": {
+    "zoo_icon": {
         "x": 354,
         "y": 158,
         "width": 36,
@@ -399,6 +399,15 @@
     "park_icon": {
         "x": 354,
         "y": 194,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "college_icon": {
+        "x": 354,
+        "y": 230,
         "width": 36,
         "height": 36,
         "pixelRatio": 2,
@@ -471,6 +480,15 @@
     "government_icon": {
         "x": 314,
         "y": 338,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "airport_icon": {
+        "x": 314,
+        "y": 374,
         "width": 36,
         "height": 36,
         "pixelRatio": 2,
