@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "name": "mapbox-streets-v7.json",
+  "name": "mapbox-streets",
   "constants": {
     "@poi-scalerank3": {
       "base": 1,
@@ -16,7 +16,7 @@
       "base": 1,
       "stops": [[16, 11], [20, 13]]
     },
-    "@wetlands": "#9ed9a4",
+    "@wetlands": "#9DD3D8",
     "@landuse-cemetery": "#dde6c2",
     "@admin-2-boundary": {
       "base": 1,
@@ -54,7 +54,7 @@
     },
     "@landuse-industrial": "#e0dae0",
     "@landcover-opacity": {
-      "base": 1.2,
+      "base": 1.5,
       "stops": [[2, 0.3], [14, 0]]
     },
     "@rail-width": {
@@ -81,7 +81,7 @@
     "@label-poi": "#65513d",
     "@main-width": {
       "base": 1.5,
-      "stops": [[8.5, 0.5], [9.5, 1], [18, 26]]
+      "stops": [[8.5, 0.5], [10, 0.75], [18, 26]]
     },
     "@road-case-width-lg": {
       "base": 1.5,
@@ -115,6 +115,10 @@
       "stops": [[12.5, 0.5], [14, 2], [18, 12]]
     },
     "@water": "#8ccbf7",
+    "@ramp-2": {
+      "base": 1,
+      "stops": [[14, [0.4, 0.4]], [15, [0.3, 0.3]], [16, [0.2, 0.2]], [18, [0.15, 0.15]], [19, [0.1, 0.1]]]
+    },
     "@label-state": "#242424",
     "@landuse-parks": "#cde8a2",
     "@street_limited-case-width": {
@@ -620,20 +624,27 @@
     "maxzoom": 22,
     "filter": ["all"],
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "paint": {
       "fill-color": "@wetlands",
       "fill-opacity": 0.25
     }
   }, {
-    "id": "landuse-overlay-texture",
-    "ref": "landuse-overlay",
+    "id": "landuse-overlay-pattern",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "landuse_overlay",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all"],
+    "layout": {
+      "visibility": "visible"
+    },
     "paint": {
       "fill-color": "@wetlands",
-      "fill-opacity": 0.5,
-      "fill-image": "marsh",
-      "fill-antialias": true
+      "fill-opacity": 1,
+      "fill-image": "marsh"
     }
   }, {
     "id": "barrier_line-land-polygon",
@@ -679,7 +690,7 @@
       "fill-color": "@building-shadow",
       "fill-opacity": {
         "base": 1,
-        "stops": [[16, 0], [16.5, 1]]
+        "stops": [[15.5, 0], [16, 1]]
       }
     }
   }, {
@@ -692,12 +703,12 @@
       },
       "fill-opacity": {
         "base": 1,
-        "stops": [[15, 0], [16.5, 1]]
+        "stops": [[15, 0], [15.5, 1]]
       },
       "fill-outline-color": "#d0cbbb",
       "fill-translate": {
         "base": 1,
-        "stops": [[16, [0, 0]], [20, [-6, -6]]]
+        "stops": [[15, [0, 0]], [20, [-5, -5]]]
       }
     }
   }, {
@@ -926,7 +937,7 @@
     "source-layer": "tunnel",
     "minzoom": 11,
     "maxzoom": 22,
-    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"]],
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
     "layout": {
       "visibility": "visible",
       "line-cap": "round",
@@ -1033,6 +1044,28 @@
     "paint": {
       "line-width": "@road-width-minor",
       "line-color": "@road-minor"
+    }
+  }, {
+    "id": "tunnel-construction",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "tunnel",
+    "minzoom": 14,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"], ["==", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt",
+      "line-join": "miter"
+    },
+    "paint": {
+      "line-width": "@street_limited-width",
+      "line-color": "@road-case-dark",
+      "line-opacity": "@street-high-opacity",
+      "line-dasharray": {
+        "base": 1,
+        "stops": [[14, [0.4, 0.8]], [15, [0.3, 0.6]], [16, [0.2, 0.3]], [17, [0.2, 0.25]], [18, [0.15, 0.15]]]
+      }
     }
   }, {
     "id": "tunnel-street_limited",
@@ -1296,7 +1329,7 @@
     "source-layer": "road",
     "minzoom": 11,
     "maxzoom": 22,
-    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"]],
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
     "layout": {
       "visibility": "visible",
       "line-cap": "round",
@@ -1422,6 +1455,28 @@
       "line-width": "@motorway_link-width",
       "line-color": "@road-motorway",
       "line-opacity": 1
+    }
+  }, {
+    "id": "road-construction",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road",
+    "minzoom": 14,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"], ["==", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt",
+      "line-join": "miter"
+    },
+    "paint": {
+      "line-width": "@street_limited-width",
+      "line-color": "@road-case-dark",
+      "line-opacity": "@street-high-opacity",
+      "line-dasharray": {
+        "base": 1,
+        "stops": [[14, [0.4, 0.8]], [15, [0.3, 0.6]], [16, [0.2, 0.3]], [17, [0.2, 0.25]], [18, [0.15, 0.15]]]
+      }
     }
   }, {
     "id": "road-street_limited",
@@ -1687,7 +1742,7 @@
     "source-layer": "bridge",
     "minzoom": 14,
     "maxzoom": 22,
-    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"]],
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
     "layout": {
       "visibility": "visible",
       "line-cap": "butt",
@@ -1788,13 +1843,35 @@
       "line-color": "@road-minor"
     }
   }, {
+    "id": "bridge-construction",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "bridge",
+    "minzoom": 14,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"], ["==", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt",
+      "line-join": "miter"
+    },
+    "paint": {
+      "line-width": "@street_limited-width",
+      "line-color": "@road-case-dark",
+      "line-opacity": "@street-high-opacity",
+      "line-dasharray": {
+        "base": 1,
+        "stops": [[14, [0.4, 0.8]], [15, [0.3, 0.6]], [16, [0.2, 0.3]], [17, [0.2, 0.25]], [18, [0.15, 0.15]]]
+      }
+    }
+  }, {
     "id": "bridge-street_limited",
     "type": "line",
     "source": "mapbox://mapbox.mapbox-streets-v6",
     "source-layer": "bridge",
     "minzoom": 11,
     "maxzoom": 22,
-    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"]],
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
     "layout": {
       "visibility": "visible",
       "line-cap": "round",
@@ -3652,8 +3729,8 @@
       "text-halo-blur": 0
     }
   }],
-  "owner": "saman",
-  "modified": "2015-04-20T13:53:38.274Z",
-  "created": "2015-04-20T13:36:51.648Z",
-  "id": "saman.3ce94caf"
+  "owner": "nicki",
+  "modified": "2015-04-20T20:00:09.959Z",
+  "created": "2015-04-20T17:11:47.261Z",
+  "id": "nicki.be444c8f"
 }
