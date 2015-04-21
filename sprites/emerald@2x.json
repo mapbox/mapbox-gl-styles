@@ -370,8 +370,17 @@
     }
 ,
     "hospital_icon": {
-        "x": 144,
-        "y": 158,
+        "x": 314,
+        "y": 518,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "fire-station_icon": {
+        "x": 314,
+        "y": 482,
         "width": 36,
         "height": 36,
         "pixelRatio": 2,
@@ -480,6 +489,24 @@
     "government_icon": {
         "x": 314,
         "y": 338,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "post_icon": {
+        "x": 314,
+        "y": 410,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "embassy_icon": {
+        "x": 314,
+        "y": 446,
         "width": 36,
         "height": 36,
         "pixelRatio": 2,
