@@ -396,6 +396,15 @@
         "sdf": false
     }
 ,
+    "marker_icon": {
+        "x": 314,
+        "y": 194,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
     "zoo_icon": {
         "x": 354,
         "y": 158,
