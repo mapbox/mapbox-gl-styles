@@ -2364,133 +2364,6 @@
       "text-size": "@small_poi_size"
     }
   }, {
-    "id": "hospital_fire_label",
-    "type": "symbol",
-    "source": "compositedsource",
-    "source-layer": "poi_label",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all", ["in", "maki", "hospital", "fire-station"]],
-    "layout": {
-      "text-optional": true,
-      "text-line-height": {
-        "base": 1,
-        "stops": [[8, 0.95], [20, 1.2]]
-      },
-      "text-allow-overlap": false,
-      "symbol-min-distance": 250,
-      "icon-image": "{maki}_icon",
-      "symbol-avoid-edges": true,
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": 16,
-      "text-font": "Open Sans Italic, Arial Unicode MS Regular",
-      "symbol-placement": "point",
-      "text-padding": 5,
-      "visibility": "none",
-      "text-offset": [0, 0.85],
-      "text-rotation-alignment": "viewport",
-      "text-anchor": "top",
-      "text-field": "{name}",
-      "text-letter-spacing": 0.1,
-      "icon-padding": 0,
-      "text-max-width": 10
-    },
-    "paint": {
-      "text-color": "#af3c41",
-      "text-halo-color": "#fff",
-      "text-halo-width": {
-        "base": 1,
-        "stops": [[16, 1.75], [20, 2.25]]
-      },
-      "text-size": "@small_poi_size",
-      "icon-opacity": 1
-    }
-  }, {
-    "id": "religious_label",
-    "type": "symbol",
-    "source": "compositedsource",
-    "source-layer": "poi_label",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all", ["in", "maki", "religious-christian", "religious-jewish", "religious-muslim"]],
-    "layout": {
-      "text-optional": true,
-      "text-line-height": {
-        "base": 1,
-        "stops": [[8, 0.95], [20, 1.2]]
-      },
-      "text-allow-overlap": false,
-      "symbol-min-distance": 250,
-      "icon-image": "{maki}_icon",
-      "symbol-avoid-edges": true,
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": 16,
-      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "symbol-placement": "point",
-      "text-padding": 5,
-      "visibility": "none",
-      "text-offset": [0, 0.8],
-      "text-rotation-alignment": "viewport",
-      "text-anchor": "top",
-      "text-field": "{name}",
-      "text-letter-spacing": 0.05,
-      "text-max-width": 8
-    },
-    "paint": {
-      "text-color": "#666",
-      "text-halo-color": "#F8F4F0",
-      "text-halo-width": {
-        "base": 1,
-        "stops": [[16, 1.25], [20, 3.75]]
-      },
-      "text-size": "@small_poi_size",
-      "text-opacity": 1,
-      "icon-opacity": 1
-    }
-  }, {
-    "id": "government_label",
-    "type": "symbol",
-    "source": "compositedsource",
-    "source-layer": "poi_label",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["any", ["in", "maki", "police", "embassy", "post", "prison"], ["==", "type", "Military"]],
-    "layout": {
-      "text-optional": true,
-      "text-line-height": {
-        "base": 1,
-        "stops": [[8, 0.95], [20, 1.2]]
-      },
-      "text-allow-overlap": false,
-      "symbol-min-distance": 250,
-      "icon-image": "{maki}_icon",
-      "symbol-avoid-edges": true,
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": 16,
-      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
-      "symbol-placement": "point",
-      "text-padding": 5,
-      "visibility": "none",
-      "text-offset": [0, 0.8],
-      "text-rotation-alignment": "viewport",
-      "text-anchor": "top",
-      "text-field": "{name}",
-      "text-letter-spacing": 0.05,
-      "text-max-width": 6
-    },
-    "paint": {
-      "text-color": "#666",
-      "text-halo-color": "#F8F4F0",
-      "text-halo-width": {
-        "base": 1,
-        "stops": [[16, 2], [20, 3.75]]
-      },
-      "text-size": "@small_poi_size"
-    }
-  }, {
     "id": "road-label-large",
     "type": "symbol",
     "source": "compositedsource",
@@ -2951,7 +2824,7 @@
     }
   }],
   "owner": "peterqliu",
-  "modified": "2015-04-21T17:08:44.346Z",
+  "modified": "2015-04-21T17:58:47.351Z",
   "created": "2015-04-20T17:55:34.667Z",
   "id": "peterqliu.9e140828"
 }
