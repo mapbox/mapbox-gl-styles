@@ -624,7 +624,7 @@
     "maxzoom": 22,
     "filter": ["all"],
     "layout": {
-      "visibility": "none"
+      "visibility": "visible"
     },
     "paint": {
       "fill-color": "@wetlands",
@@ -632,20 +632,13 @@
     }
   }, {
     "id": "landuse-overlay-pattern",
-    "type": "fill",
-    "source": "mapbox://mapbox.mapbox-streets-v6",
-    "source-layer": "landuse_overlay",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all"],
-    "layout": {
-      "visibility": "visible"
-    },
+    "ref": "landuse-overlay",
     "paint": {
       "fill-color": "@wetlands",
       "fill-opacity": 1,
       "fill-image": {
-        "stops": [[14, "marsh-16"], [15, "marsh-32"]]
+        "base": 1,
+        "stops": [[13, "marsh-16"], [14, "marsh-32"]]
       }
     }
   }, {
@@ -2643,7 +2636,7 @@
     "maxzoom": 14,
     "filter": ["all", ["<=", "scalerank", 2], ["==", "type", "city"], ["in", "ldir", "S", "SE", "SW", "E"]],
     "layout": {
-      "icon-image": "circle.sdf,
+      "icon-image": "circle.sdf",
       "text-max-size": "@label-city-lg-size",
       "text-font": {
         "base": 1,
@@ -2687,7 +2680,7 @@
     "maxzoom": 14,
     "filter": ["all", ["in", "scalerank", 3, 4, 5], ["==", "type", "city"], ["in", "ldir", "N", "NE", "NW", "W"]],
     "layout": {
-      "icon-image": "circle.sdf,
+      "icon-image": "circle.sdf",
       "text-max-size": "@label-city-md-size",
       "text-font": {
         "base": 1,
@@ -2733,7 +2726,7 @@
     "layout": {
       "visibility": "visible",
       "text-field": "{name_en}",
-      "icon-image": "circle.sdf,
+      "icon-image": "circle.sdf",
       "text-anchor": {
         "base": 1,
         "stops": [[7, "top"], [8, "center"]]
@@ -2771,7 +2764,7 @@
     "maxzoom": 14,
     "filter": ["all", ["!in", "scalerank", 0, 1, 2, 3, 4, 5], ["==", "type", "city"]],
     "layout": {
-      "icon-image": "circle.sdf,
+      "icon-image": "circle.sdf",
       "text-max-size": {
         "base": 1,
         "stops": [[6, 12], [14, 22]]
@@ -2857,7 +2850,7 @@
     "maxzoom": 14,
     "filter": ["all", ["in", "type", "town"]],
     "layout": {
-      "icon-image": "circle.sdf,
+      "icon-image": "circle.sdf",
       "text-max-size": {
         "base": 1,
         "stops": [[7, 11.5], [15, 20]]
@@ -3324,6 +3317,7 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 1000,
       "icon-image": {
+        "base": 1,
         "stops": [[15, "{shield}-{reflen}-small"], [16, "{shield}-{reflen}-large"]]
       },
       "icon-rotation-alignment": "viewport",
@@ -3346,9 +3340,54 @@
     "paint": {
       "text-size": {
         "base": 1,
-        "stops": [[15.95, 9], [16, 11]]
+        "stops": [[16, 9], [16.01, 11]]
       },
       "text-color": "#fff",
+      "icon-halo-color": "rgba(0, 0, 0, 1)",
+      "icon-halo-width": 1,
+      "text-opacity": 1,
+      "icon-color": "white",
+      "text-halo-color": "@halo",
+      "text-halo-width": 0
+    }
+  }, {
+    "id": "other-motorway-shields",
+    "type": "symbol",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["!in", "shield", "us-interstate", "us-interstate-business", "us-interstate-duplex"], ["<=", "reflen", 6]],
+    "layout": {
+      "text-allow-overlap": false,
+      "symbol-min-distance": 1000,
+      "icon-image": {
+        "base": 1,
+        "stops": [[15, "{shield}-{reflen}-small"], [16, "{shield}-{reflen}-large"]]
+      },
+      "icon-rotation-alignment": "viewport",
+      "symbol-avoid-edges": false,
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": 11,
+      "text-font": "DIN Offc Pro Bold, Arial Unicode MS Regular",
+      "symbol-placement": {
+        "base": 1,
+        "stops": [[10, "point"], [11, "line"]]
+      },
+      "text-padding": 20,
+      "visibility": "visible",
+      "text-rotation-alignment": "viewport",
+      "text-field": "{ref}",
+      "text-letter-spacing": 0.05,
+      "icon-padding": 20
+    },
+    "paint": {
+      "text-size": {
+        "base": 1,
+        "stops": [[16, 9], [16.01, 11]]
+      },
+      "text-color": "@label-road",
       "icon-halo-color": "rgba(0, 0, 0, 1)",
       "icon-halo-width": 1,
       "text-opacity": 1,
@@ -3390,50 +3429,6 @@
         "stops": [[9, 10], [20, 16]]
       },
       "text-halo-blur": 1
-    }
-  }, {
-    "id": "other-motorway-shields",
-    "type": "symbol",
-    "source": "mapbox://mapbox.mapbox-streets-v6",
-    "source-layer": "road_label",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all", ["!in", "shield", "us-interstate", "us-interstate-business", "us-interstate-duplex"], ["<=", "reflen", 6]],
-    "layout": {
-      "text-allow-overlap": false,
-      "symbol-min-distance": 1000,
-      "icon-image": {
-        "stops": [[15, "{shield}-{reflen}-small"], [16, "{shield}-{reflen}-large"]]
-      },
-      "icon-rotation-alignment": "viewport",
-      "symbol-avoid-edges": false,
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": 11,
-      "text-font": "DIN Offc Pro Bold, Arial Unicode MS Regular",
-      "symbol-placement": {
-        "base": 1,
-        "stops": [[10, "point"], [11, "line"]]
-      },
-      "text-padding": 20,
-      "visibility": "visible",
-      "text-rotation-alignment": "viewport",
-      "text-field": "{ref}",
-      "text-letter-spacing": 0.05,
-      "icon-padding": 20
-    },
-    "paint": {
-      "text-size": {
-        "base": 1,
-        "stops": [[15.95, 9], [16, 11]]
-      },
-      "text-color": "@label-road",
-      "icon-halo-color": "rgba(0, 0, 0, 1)",
-      "icon-halo-width": 1,
-      "text-opacity": 1,
-      "icon-color": "white",
-      "text-halo-color": "@halo",
-      "text-halo-width": 0
     }
   }, {
     "id": "road-label-medium",
@@ -3738,7 +3733,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-20T22:52:06.997Z",
+  "modified": "2015-04-21T16:02:21.801Z",
   "created": "2015-04-20T17:11:47.261Z",
   "id": "nicki.be444c8f"
 }
