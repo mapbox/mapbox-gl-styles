@@ -33,7 +33,7 @@
       "base": 1,
       "stops": [[14, 0.05], [15, 0]]
     },
-    "@case_light": "#d0cbce",
+    "@case_light": "#d8d3d7",
     "@primary_width": {
       "base": 1.5,
       "stops": [[10.95, 0], [11, 1.5], [20, 56]]
@@ -92,7 +92,7 @@
       "stops": [[14.55, 0], [14.6, 2.5], [20, 17]]
     },
     "@motorway_color": "#ffbc96",
-    "@park_label": "#2f6a3f"
+    "@park_label": "#214f2e"
   },
   "sources": {
     "compositedsource": {
@@ -1837,7 +1837,7 @@
         "stops": [[0, "Open Sans Regular, Arial Unicode MS Regular"], [9, "Open Sans Semibold, Arial Unicode MS Regular"]]
       },
       "symbol-placement": "point",
-      "text-padding": 1,
+      "text-padding": 0,
       "visibility": "visible",
       "text-offset": {
         "base": 1,
@@ -1887,7 +1887,7 @@
       "text-max-size": 26,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "symbol-placement": "point",
-      "text-padding": 2,
+      "text-padding": 0,
       "visibility": "visible",
       "text-rotation-alignment": "viewport",
       "text-field": "{name_en}",
@@ -1983,8 +1983,8 @@
     },
     "paint": {
       "text-color": "#666",
-      "text-halo-color": "#fff",
-      "text-halo-width": 0,
+      "text-halo-color": "@background",
+      "text-halo-width": 1,
       "text-size": {
         "base": 1,
         "stops": [[8, 10], [20, 18]]
@@ -2010,7 +2010,7 @@
       "text-max-angle": 38,
       "text-max-size": 12,
       "text-transform": "none",
-      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
       "icon-allow-overlap": false,
       "symbol-placement": "point",
       "text-justify": "center",
@@ -2068,7 +2068,7 @@
       "text-max-angle": 38,
       "text-max-size": 16,
       "text-transform": "none",
-      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
       "icon-allow-overlap": false,
       "symbol-placement": "point",
       "text-justify": "center",
@@ -2082,7 +2082,7 @@
         "base": 1,
         "stops": [[0, ""], [14, "{name_en}"]]
       },
-      "text-letter-spacing": 0.05,
+      "text-letter-spacing": 0,
       "icon-padding": 0,
       "text-max-width": 5.2,
       "icon-ignore-placement": {
@@ -2125,7 +2125,7 @@
       "text-max-angle": 38,
       "text-max-size": 16,
       "text-transform": "none",
-      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
       "icon-allow-overlap": false,
       "symbol-placement": "point",
       "text-justify": "center",
@@ -2185,7 +2185,7 @@
       "text-transform": "uppercase",
       "text-font": "Open Sans Italic, Arial Unicode MS Regular",
       "symbol-placement": "point",
-      "text-padding": 2,
+      "text-padding": 0,
       "visibility": "visible",
       "text-offset": [0, 0],
       "text-rotation-alignment": "viewport",
@@ -2200,7 +2200,7 @@
       "text-halo-width": 0,
       "text-size": {
         "base": 1.2,
-        "stops": [[8, 10], [20, 16]]
+        "stops": [[8, 12], [20, 16]]
       },
       "text-opacity": 1
     }
@@ -2258,21 +2258,21 @@
       "text-ignore-placement": false,
       "text-max-angle": 38,
       "text-max-size": 16,
-      "text-font": "Open Sans Italic, Arial Unicode MS Regular",
+      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "symbol-placement": "point",
       "text-padding": 0,
       "visibility": "visible",
-      "text-offset": [0, 0.8],
+      "text-offset": [0, 0.9],
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
       "text-field": "{name}",
-      "text-letter-spacing": 0.05,
+      "text-letter-spacing": 0,
       "text-max-width": 8
     },
     "paint": {
       "text-color": "@park_label",
       "text-halo-color": "#F8F4F0",
-      "text-halo-width": 1.75,
+      "text-halo-width": 1.5,
       "text-size": {
         "base": 1.5,
         "stops": [[8, 10], [20, 20]]
@@ -2285,7 +2285,7 @@
     "source-layer": "poi_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["in", "maki", "college"]],
+    "filter": ["all", ["in", "maki", "college"], ["<=", "scalerank", 2]],
     "layout": {
       "text-optional": true,
       "text-line-height": {
@@ -2298,7 +2298,7 @@
       "text-ignore-placement": false,
       "text-max-angle": 38,
       "text-max-size": 16,
-      "text-font": "Open Sans Semibold Italic,     Arial Unicode MS Regular",
+      "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
       "symbol-placement": "point",
       "text-padding": 5,
       "visibility": "visible",
@@ -2306,11 +2306,11 @@
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
       "text-field": "{name}",
-      "text-letter-spacing": 0.1,
+      "text-letter-spacing": 0.05,
       "text-max-width": 12
     },
     "paint": {
-      "text-color": "#895fb1",
+      "text-color": "#444",
       "text-halo-color": "#fff",
       "text-halo-width": {
         "base": 1,
@@ -2323,140 +2323,13 @@
       "text-halo-blur": 0.75
     }
   }, {
-    "id": "school_museum_label",
+    "id": "small_maki_label",
     "type": "symbol",
     "source": "compositedsource",
     "source-layer": "poi_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["any", ["in", "maki", "school", "museum", "library", "monument"], ["==", "type", "school"]],
-    "layout": {
-      "text-optional": true,
-      "text-line-height": {
-        "base": 1,
-        "stops": [[8, 0.95], [20, 1.2]]
-      },
-      "text-allow-overlap": false,
-      "symbol-min-distance": 250,
-      "icon-image": "{maki}_icon",
-      "symbol-avoid-edges": true,
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": 16,
-      "text-font": "Open Sans Italic, Arial Unicode MS Regular",
-      "symbol-placement": "point",
-      "text-padding": 5,
-      "visibility": "visible",
-      "text-offset": [0, 0.8],
-      "text-rotation-alignment": "viewport",
-      "text-anchor": "top",
-      "text-field": "{name}",
-      "text-letter-spacing": 0.05,
-      "text-max-width": 7
-    },
-    "paint": {
-      "text-color": "#895fb1",
-      "text-halo-color": "@background",
-      "text-halo-width": {
-        "base": 1,
-        "stops": [[16, 1.75], [20, 3.75]]
-      },
-      "text-size": "@small_poi_size"
-    }
-  }, {
-    "id": "hospital_fire_label",
-    "type": "symbol",
-    "source": "compositedsource",
-    "source-layer": "poi_label",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all", ["in", "maki", "hospital", "fire-station"]],
-    "layout": {
-      "text-optional": true,
-      "text-line-height": {
-        "base": 1,
-        "stops": [[8, 0.95], [20, 1.2]]
-      },
-      "text-allow-overlap": false,
-      "symbol-min-distance": 250,
-      "icon-image": "{maki}_icon",
-      "symbol-avoid-edges": true,
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": 16,
-      "text-font": "Open Sans Italic, Arial Unicode MS Regular",
-      "symbol-placement": "point",
-      "text-padding": 5,
-      "visibility": "visible",
-      "text-offset": [0, 0.85],
-      "text-rotation-alignment": "viewport",
-      "text-anchor": "top",
-      "text-field": "{name}",
-      "text-letter-spacing": 0.1,
-      "icon-padding": 0,
-      "text-max-width": 10
-    },
-    "paint": {
-      "text-color": "#af3c41",
-      "text-halo-color": "#fff",
-      "text-halo-width": {
-        "base": 1,
-        "stops": [[16, 1.75], [20, 2.25]]
-      },
-      "text-size": "@small_poi_size",
-      "icon-opacity": 1
-    }
-  }, {
-    "id": "religious_label",
-    "type": "symbol",
-    "source": "compositedsource",
-    "source-layer": "poi_label",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["all", ["in", "maki", "religious-christian", "religious-jewish", "religious-muslim"]],
-    "layout": {
-      "text-optional": true,
-      "text-line-height": {
-        "base": 1,
-        "stops": [[8, 0.95], [20, 1.2]]
-      },
-      "text-allow-overlap": false,
-      "symbol-min-distance": 250,
-      "icon-image": "{maki}_icon",
-      "symbol-avoid-edges": true,
-      "text-ignore-placement": false,
-      "text-max-angle": 38,
-      "text-max-size": 16,
-      "text-font": "Open Sans Italic, Arial Unicode MS Regular",
-      "symbol-placement": "point",
-      "text-padding": 5,
-      "visibility": "visible",
-      "text-offset": [0, 0.8],
-      "text-rotation-alignment": "viewport",
-      "text-anchor": "top",
-      "text-field": "{name}",
-      "text-letter-spacing": 0.05,
-      "text-max-width": 8
-    },
-    "paint": {
-      "text-color": "#c46237",
-      "text-halo-color": "#F8F4F0",
-      "text-halo-width": {
-        "base": 1,
-        "stops": [[16, 1.25], [20, 3.75]]
-      },
-      "text-size": "@small_poi_size",
-      "text-opacity": 1,
-      "icon-opacity": 1
-    }
-  }, {
-    "id": "government_label",
-    "type": "symbol",
-    "source": "compositedsource",
-    "source-layer": "poi_label",
-    "minzoom": 0,
-    "maxzoom": 22,
-    "filter": ["any", ["in", "maki", "police", "embassy", "post", "prison"], ["==", "type", "Military"]],
+    "filter": ["any", ["in", "maki", "school", "museum", "library", "monument", "hospital", "fire-station", "religious-christian", "religious-muslim", "religious-jewish", "post", "embassy", "police", "prison", "college"], ["==", "type", "school"]],
     "layout": {
       "text-optional": true,
       "text-line-height": {
@@ -2472,21 +2345,21 @@
       "text-max-size": 16,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "symbol-placement": "point",
-      "text-padding": 5,
+      "text-padding": 0,
       "visibility": "visible",
-      "text-offset": [0, 0.8],
+      "text-offset": [0, 1],
       "text-rotation-alignment": "viewport",
       "text-anchor": "top",
       "text-field": "{name}",
-      "text-letter-spacing": 0.05,
-      "text-max-width": 6
+      "text-letter-spacing": 0,
+      "text-max-width": 10
     },
     "paint": {
-      "text-color": "#383738",
-      "text-halo-color": "#F8F4F0",
+      "text-color": "#444",
+      "text-halo-color": "@background",
       "text-halo-width": {
-        "base": 1,
-        "stops": [[16, 2], [20, 3.75]]
+        "base": 1.5,
+        "stops": [[16, 1.75], [20, 3.75]]
       },
       "text-size": "@small_poi_size"
     }
@@ -2505,7 +2378,7 @@
       "text-max-angle": 20,
       "text-max-size": {
         "base": 1.1,
-        "stops": [[8, 8], [20, 17]]
+        "stops": [[8, 8], [20, 20]]
       },
       "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
       "symbol-placement": "line",
@@ -2539,7 +2412,7 @@
       "text-max-angle": 38,
       "text-max-size": {
         "base": 1,
-        "stops": [[8, 8], [20, 16]]
+        "stops": [[8, 8], [20, 20]]
       },
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "symbol-placement": "line",
@@ -2833,7 +2706,7 @@
         "stops": [[16, [0, -1]], [20, [0, 1]]]
       },
       "icon-size": 0.75,
-      "text-opacity": 0
+      "text-opacity": 1
     }
   }, {
     "id": "oneway_arrows_motorway",
@@ -2951,7 +2824,7 @@
     }
   }],
   "owner": "peterqliu",
-  "modified": "2015-04-21T04:45:22.945Z",
+  "modified": "2015-04-21T17:58:47.351Z",
   "created": "2015-04-20T17:55:34.667Z",
   "id": "peterqliu.9e140828"
 }
