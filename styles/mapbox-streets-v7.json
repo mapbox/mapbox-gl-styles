@@ -646,7 +646,7 @@
       "fill-opacity": 1,
       "fill-image": {
         "stops": [[14, "marsh-16"], [15, "marsh-32"]]
-      },
+      }
     }
   }, {
     "id": "barrier_line-land-polygon",
