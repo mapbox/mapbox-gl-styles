@@ -628,14 +628,28 @@
     },
     "paint": {
       "fill-color": "@wetlands",
-      "fill-opacity": 0.25
+      "fill-opacity": {
+        "base": 1,
+        "stops": [[10, 0.25], [10.5, 0.15]]
+      }
     }
   }, {
     "id": "landuse-overlay-pattern",
-    "ref": "landuse-overlay",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "landuse_overlay",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all"],
+    "layout": {
+      "visibility": "visible"
+    },
     "paint": {
       "fill-color": "@wetlands",
-      "fill-opacity": 1,
+      "fill-opacity": {
+        "base": 1,
+        "stops": [[10, 0], [10.5, 1]]
+      },
       "fill-image": {
         "base": 1,
         "stops": [[13, "marsh-16"], [14, "marsh-32"]]
@@ -690,7 +704,14 @@
     }
   }, {
     "id": "building-top",
-    "ref": "building-bottom",
+    "type": "fill",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "building",
+    "minzoom": 15,
+    "maxzoom": 22,
+    "layout": {
+      "visibility": "visible"
+    },
     "paint": {
       "fill-color": {
         "base": 1,
@@ -1031,7 +1052,17 @@
     }
   }, {
     "id": "tunnel-motorway_link",
-    "ref": "tunnel-motorway_link-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "tunnel",
+    "minzoom": 11,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway_link"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@motorway_link-width",
       "line-color": "@tunnel-motorway",
@@ -1040,7 +1071,17 @@
     }
   }, {
     "id": "tunnel-service-driveway",
-    "ref": "tunnel-service-driveway-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "tunnel",
+    "minzoom": 15,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "service", "driveway"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@road-width-minor",
       "line-color": "@road-minor",
@@ -1070,7 +1111,17 @@
     }
   }, {
     "id": "tunnel-street_limited",
-    "ref": "tunnel-street_limited-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "tunnel",
+    "minzoom": 11,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@street_limited-width",
       "line-color": "@road-street-limited",
@@ -1078,7 +1129,17 @@
     }
   }, {
     "id": "tunnel-street",
-    "ref": "tunnel-street-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "tunnel",
+    "minzoom": 11,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "street"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@street-width",
       "line-color": "@road-minor",
@@ -1086,7 +1147,17 @@
     }
   }, {
     "id": "tunnel-main",
-    "ref": "tunnel-main-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "main"], ["!=", "type", "trunk"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@main-width",
       "line-color": "@road-minor",
@@ -1096,7 +1167,17 @@
     }
   }, {
     "id": "tunnel-trunk",
-    "ref": "tunnel-trunk-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "tunnel",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "main"], ["==", "type", "trunk"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@motorway-width",
       "line-color": "@tunnel-trunk"
@@ -1177,7 +1258,16 @@
     }
   }, {
     "id": "tunnel-rail-tracks",
-    "ref": "tunnel-rail",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "tunnel",
+    "minzoom": 13,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "major_rail", "minor_rail"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
     "paint": {
       "line-color": {
         "stops": [[13, "#d8d5c8"], [16, "#c0beb2"]]
@@ -1214,7 +1304,17 @@
     }
   }, {
     "id": "road-path",
-    "ref": "road-path-bg",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "path"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@path-width",
       "line-color": "@road-minor",
@@ -1444,14 +1544,34 @@
     }
   }, {
     "id": "road-service-driveway",
-    "ref": "road-service-driveway-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road",
+    "minzoom": 15,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "service", "driveway"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@road-width-minor",
       "line-color": "@road-minor"
     }
   }, {
     "id": "road-motorway_link",
-    "ref": "road-motorway_link-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road",
+    "minzoom": 10,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "motorway_link"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@motorway_link-width",
       "line-color": "@road-motorway",
@@ -1481,7 +1601,17 @@
     }
   }, {
     "id": "road-street_limited",
-    "ref": "road-street_limited-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road",
+    "minzoom": 11,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"], ["!=", "type", "construction"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@street_limited-width",
       "line-color": "@road-street-limited",
@@ -1489,7 +1619,17 @@
     }
   }, {
     "id": "road-street",
-    "ref": "road-street-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road",
+    "minzoom": 11,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "street"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@street-width",
       "line-color": "@road-minor",
@@ -1497,7 +1637,17 @@
     }
   }, {
     "id": "road-main",
-    "ref": "road-main-case",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["==", "class", "main"], ["!=", "type", "trunk"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@main-width",
       "line-color": {
@@ -1599,7 +1749,16 @@
     }
   }, {
     "id": "road-rail-tracks",
-    "ref": "road-rail",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "road",
+    "minzoom": 13,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "major_rail", "minor_rail"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
     "paint": {
       "line-color": "@rail-lowhigh",
       "line-width": "@rail-track-width",
@@ -1649,7 +1808,17 @@
     }
   }, {
     "id": "bridge-path",
-    "ref": "bridge-path-bg",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "bridge",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "path"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "round",
+      "line-join": "round"
+    },
     "paint": {
       "line-width": "@path-width",
       "line-color": "@road-minor",
@@ -2007,7 +2176,16 @@
     }
   }, {
     "id": "bridge-rail-tracks",
-    "ref": "bridge-rail",
+    "type": "line",
+    "source": "mapbox://mapbox.mapbox-streets-v6",
+    "source-layer": "bridge",
+    "minzoom": 13,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "class", "major_rail", "minor_rail"]],
+    "layout": {
+      "visibility": "visible",
+      "line-cap": "butt"
+    },
     "paint": {
       "line-color": "@rail-lowhigh",
       "line-width": "@rail-track-width",
@@ -3733,7 +3911,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-21T16:02:21.801Z",
+  "modified": "2015-04-22T21:56:16.821Z",
   "created": "2015-04-20T17:11:47.261Z",
   "id": "nicki.be444c8f"
 }
