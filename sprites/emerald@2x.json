@@ -423,7 +423,7 @@
         "sdf": false
     }
 ,
-    "college_icon": {
+    "golf_icon": {
         "x": 354,
         "y": 230,
         "width": 36,
@@ -462,6 +462,15 @@
     "museum_icon": {
         "x": 354,
         "y": 374,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "college_icon": {
+        "x": 354,
+        "y": 410,
         "width": 36,
         "height": 36,
         "pixelRatio": 2,
@@ -522,11 +531,38 @@
         "sdf": false
     }
 ,
+    "police_icon": {
+        "x": 314,
+        "y": 338,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
     "airport_icon": {
         "x": 314,
         "y": 374,
         "width": 36,
         "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "hospital_striped": {
+        "x": 234,
+        "y": 270,
+        "width": 6,
+        "height": 6,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "school_striped": {
+        "x": 228,
+        "y": 270,
+        "width": 6,
+        "height": 6,
         "pixelRatio": 2,
         "sdf": false
     }

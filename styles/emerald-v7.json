@@ -1969,10 +1969,10 @@
     },
     "paint": {
       "text-color": "@city_label",
-      "text-halo-color": "#F8F4F0",
+      "text-halo-color": "@background",
       "text-halo-width": {
         "base": 1,
-        "stops": [[6, 1.25], [20, 6]]
+        "stops": [[6, 1.5], [20, 6]]
       },
       "text-size": {
         "base": 1.1,
@@ -2285,7 +2285,7 @@
     "source-layer": "poi_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["!in", "maki", "rail-light", "rail-metro", "rail", "school", "park", "cemetery", "college", "golf", "hospital", "zoo", "museum"], ["<=", "scalerank", 2], ["!in", "type", "Island", "Wetland", "Military"]],
+    "filter": ["all", ["!in", "maki", "rail-light", "rail-metro", "rail", "school", "park", "cemetery", "college", "golf", "hospital", "zoo", "museum", "post"], ["<=", "scalerank", 2], ["!in", "type", "Island", "Wetland", "Military"]],
     "layout": {
       "text-line-height": {
         "base": 1,
@@ -2329,9 +2329,10 @@
       "text-allow-overlap": false,
       "symbol-min-distance": 250,
       "icon-image": "{maki}_icon",
+      "symbol-avoid-edges": false,
       "text-ignore-placement": false,
       "text-max-angle": 38,
-      "text-max-size": 16,
+      "text-max-size": 10,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "symbol-placement": "point",
       "text-padding": 0,
@@ -2902,7 +2903,7 @@
     }
   }],
   "owner": "peterqliu",
-  "modified": "2015-04-21T23:36:45.532Z",
+  "modified": "2015-04-22T17:29:57.865Z",
   "created": "2015-04-20T17:55:34.667Z",
   "id": "peterqliu.9e140828"
 }
