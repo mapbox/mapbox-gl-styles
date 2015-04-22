@@ -100,7 +100,7 @@
       "type": "vector"
     }
   },
-  "sprite": "https://www.mapbox.com/bites/00108/emerald",
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/emerald",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
