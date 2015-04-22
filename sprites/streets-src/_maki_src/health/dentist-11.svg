@@ -22,7 +22,7 @@
    viewBox="0 0 11 11"><metadata
      id="metadata3356"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs3354" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -42,9 +42,9 @@
      inkscape:bbox-nodes="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
-     inkscape:zoom="39.333333"
-     inkscape:cx="-3.1379212"
-     inkscape:cy="5.7585189"
+     inkscape:zoom="27.812866"
+     inkscape:cx="1.702824"
+     inkscape:cy="5.0498214"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -53,7 +53,7 @@
        id="grid3358" /></sodipodi:namedview><path
      style="fill:#000000;fill-opacity:1;stroke-width:1"
      enable-background="new    "
-     d="M 1.5256679,5.3648936 C 1.2273429,3.9375717 0.75929934,1.3253832 2.5028668,1.039708 4.2232428,0.75614115 4.259084,2.0938601 5.4998209,2.0938601 c 1.241791,0 1.2755238,-1.33877309 2.9948457,-1.0541521 C 10.241396,1.3253832 9.7722991,3.9365177 9.4750284,5.3648936 9.122941,7.0462661 8.6622762,10 7.6081244,10 6.5539728,10 6.6658087,7.8916959 5.4998209,7.8916959 4.4467231,7.8916959 4.4467231,10 3.3925711,10 2.3384191,10 1.8767004,7.0462661 1.5256679,5.3648936 Z"
+     d="M 1.9672604,5.3799054 C 1.7020826,4.1111748 1.2860439,1.7892295 2.8358816,1.535296 4.3651047,1.2832366 4.3969636,2.4723201 5.4998408,2.4723201 6.603655,2.4723201 6.6336397,1.2822996 8.1619259,1.535296 9.7145742,1.7892295 9.2975992,4.110238 9.0333586,5.3799054 8.720392,6.8744588 8.3109122,9.5 7.3738884,9.5 6.4368647,9.5 6.5362744,7.6259519 5.4998408,7.6259519 4.5637539,7.6259519 4.5637539,9.5 3.6267299,9.5 2.6897059,9.5 2.2792892,6.8744588 1.9672604,5.3799054 Z"
      id="path3348"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccsccsssc" /><path
