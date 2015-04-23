@@ -566,4 +566,13 @@
         "pixelRatio": 2,
         "sdf": false
     }
+,
+    "sand_noise": {
+        "x": 0,
+        "y": 460,
+        "width": 100,
+        "height": 100,
+        "pixelRatio": 2,
+        "sdf": false
+    }
 }
