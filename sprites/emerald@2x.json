@@ -540,9 +540,27 @@
         "sdf": false
     }
 ,
+    "prison_icon": {
+        "x": 314,
+        "y": 338,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
     "airport_icon": {
         "x": 314,
         "y": 374,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "harbor_icon": {
+        "x": 278,
+        "y": 338,
         "width": 36,
         "height": 36,
         "pixelRatio": 2,
