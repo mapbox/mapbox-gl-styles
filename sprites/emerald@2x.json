@@ -567,6 +567,15 @@
         "sdf": false
     }
 ,
+    "generic_icon": {
+        "x": 278,
+        "y": 374,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
     "hospital_striped": {
         "x": 234,
         "y": 270,
