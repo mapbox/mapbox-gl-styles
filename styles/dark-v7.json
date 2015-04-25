@@ -52,7 +52,7 @@
     "@scrub": "#1c1c1c",
     "@crop": "#131313",
     "@label-waterway": "#929292",
-    "@main-width": {
+    "@road-main-width": {
       "base": 1.5,
       "stops": [[6, 0.5], [18, 26]]
     },
@@ -83,10 +83,6 @@
     "@path-width": {
       "base": 1.5,
       "stops": [[15, 1], [18, 4]]
-    },
-    "@road-main-width": {
-      "base": 1.4,
-      "stops": [[6, 0.25], [20, 25]]
     }
   },
   "sources": {
@@ -756,7 +752,7 @@
     },
     "paint": {
       "line-color": "@road-major",
-      "line-width": "@main-width",
+      "line-width": "@road-main-width",
       "line-opacity": "@road-high-z-fadein"
     }
   }, {
