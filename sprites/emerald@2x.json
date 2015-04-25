@@ -396,15 +396,6 @@
         "sdf": false
     }
 ,
-    "marker_icon": {
-        "x": 314,
-        "y": 194,
-        "width": 36,
-        "height": 36,
-        "pixelRatio": 2,
-        "sdf": false
-    }
-,
     "zoo_icon": {
         "x": 354,
         "y": 158,
@@ -540,9 +531,27 @@
         "sdf": false
     }
 ,
+    "marker_icon": {
+        "x": 314,
+        "y": 338,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
     "prison_icon": {
         "x": 314,
         "y": 338,
+        "width": 36,
+        "height": 36,
+        "pixelRatio": 2,
+        "sdf": false
+    }
+,
+    "airfield_icon": {
+        "x": 314,
+        "y": 374,
         "width": 36,
         "height": 36,
         "pixelRatio": 2,
