@@ -52,10 +52,6 @@
     "@scrub": "#1c1c1c",
     "@crop": "#131313",
     "@label-waterway": "#929292",
-    "@road-main-width": {
-      "base": 1.5,
-      "stops": [[6, 0.5], [18, 26]]
-    },
     "@road-high-z-fadein": {
       "base": 1,
       "stops": [[5, 0], [5.5, 1]]
@@ -83,6 +79,10 @@
     "@path-width": {
       "base": 1.5,
       "stops": [[15, 1], [18, 4]]
+    },
+    "@road-main-width": {
+      "base": 1.5,
+      "stops": [[6, 0.5], [18, 26]]
     }
   },
   "sources": {
@@ -95,7 +95,7 @@
       "type": "vector"
     }
   },
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/light",
+  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/dark",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
@@ -1685,7 +1685,7 @@
     }
   }],
   "owner": "andreasviglakis",
-  "modified": "2015-04-17T23:53:14.552Z",
-  "created": "2015-04-09T00:33:20.278Z",
-  "id": "andreasviglakis.0c9f1222"
+  "modified": "2015-04-27T23:18:28.945Z",
+  "created": "2015-04-27T23:18:28.945Z",
+  "id": "andreasviglakis.f10d781d"
 }
