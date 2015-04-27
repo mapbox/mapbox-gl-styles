@@ -66,7 +66,7 @@
     },
     "@road_label": "#785655",
     "@motorway_case": "#e59063",
-    "@water": "#cee6ee",
+    "@water": "#c3dde9",
     "@trunk_color": "#ffe2b4",
     "@tertiary_width": {
       "base": 1.5,
@@ -3015,7 +3015,7 @@
     }
   }],
   "owner": "peterqliu",
-  "modified": "2015-04-27T22:58:24.984Z",
+  "modified": "2015-04-27T23:11:35.442Z",
   "created": "2015-04-20T17:55:34.667Z",
   "id": "peterqliu.9e140828"
 }
