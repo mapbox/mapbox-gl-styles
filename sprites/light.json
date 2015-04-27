@@ -1,137 +1,17 @@
 {
-  "dot.sdf": {
+  "default_marker": {
     "x": 0,
     "y": 0,
-    "width": 19,
-    "height": 20,
+    "width": 20,
+    "height": 50,
     "pixelRatio": 1,
-    "sdf": true
+    "sdf": false
   },
-  "default-3-large": {
-    "x": 21,
+  "secondary_marker": {
+    "x": 22,
     "y": 0,
-    "width": 27,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-6-small": {
-    "x": 0,
-    "y": 22,
-    "width": 47,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "airport-15": {
-    "x": 50,
-    "y": 0,
-    "width": 15,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-1-large": {
-    "x": 50,
-    "y": 17,
-    "width": 15,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-1-small": {
-    "x": 0,
-    "y": 39,
-    "width": 15,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-2-large": {
-    "x": 17,
-    "y": 39,
-    "width": 21,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-2-small": {
-    "x": 40,
-    "y": 39,
-    "width": 21,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "airfield-15": {
-    "x": 67,
-    "y": 0,
-    "width": 15,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-3-small": {
-    "x": 0,
-    "y": 56,
-    "width": 27,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-4-large": {
-    "x": 29,
-    "y": 56,
-    "width": 33,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-4-small": {
-    "x": 84,
-    "y": 0,
-    "width": 33,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-5-large": {
-    "x": 0,
-    "y": 73,
-    "width": 41,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-5-small": {
-    "x": 43,
-    "y": 73,
-    "width": 41,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "default-6-large": {
-    "x": 0,
-    "y": 90,
-    "width": 47,
-    "height": 15,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "airport-11": {
-    "x": 84,
-    "y": 17,
-    "width": 11,
-    "height": 11,
-    "pixelRatio": 1,
-    "sdf": false
-  },
-  "airfield-11": {
-    "x": 97,
-    "y": 17,
-    "width": 11,
-    "height": 11,
+    "width": 20,
+    "height": 50,
     "pixelRatio": 1,
     "sdf": false
   }

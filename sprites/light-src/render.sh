@@ -28,5 +28,3 @@ function build_pngs {
 svgs=$(ls ${present}/${srcdir}/*.svg)
  
 build_pngs $svgs
- 
-done
