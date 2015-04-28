@@ -22,12 +22,20 @@
       "base": 1,
       "stops": [[3, 0.5], [10, 2]]
     },
+    "@country-label-lg-size": {
+      "base": 1,
+      "stops": [[1, 10], [6, 24]]
+    },
     "@snow": "#fff",
     "@path-opacity": {
       "base": 1,
       "stops": [[15, 0], [15.25, 1]]
     },
     "@label-park": "#4c661f",
+    "@country-label-sm-size": {
+      "base": 0.9,
+      "stops": [[5, 14], [9, 22]]
+    },
     "@landuse-school": "#f3ebb4",
     "@label-water-dark": "#004087",
     "@road-main": "#a2a2a2",
@@ -38,6 +46,10 @@
     },
     "@road-trunk": "#f2cf60",
     "@road-motorway": "#ffa159",
+    "@country-label-md-size": {
+      "base": 1,
+      "stops": [[3, 10], [8, 24]]
+    },
     "@road-minor": "#fff",
     "@rail-track-width": {
       "base": 1.5,
@@ -2416,7 +2428,7 @@
     "layout": {
       "text-field": "{name_en}",
       "visibility": "visible",
-      "text-max-size": 24,
+      "text-max-size": "@country-label-lg-size",
       "text-max-width": {
         "base": 1,
         "stops": [[0, 5], [3, 6]]
@@ -2424,10 +2436,7 @@
       "text-font": "DIN Offc Pro Medium, Arial Unicode MS Bold"
     },
     "paint": {
-      "text-size": {
-        "base": 1,
-        "stops": [[1, 10], [6, 24]]
-      },
+      "text-size": "@country-label-lg-size",
       "text-color": "@label-primary",
       "text-halo-color": {
         "base": 1,
@@ -2449,15 +2458,12 @@
         "stops": [[0, "{code}"], [2, "{name_en}"]]
       },
       "visibility": "visible",
-      "text-max-size": 24,
+      "text-max-size": "@country-label-md-size",
       "text-max-width": 6,
       "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
     },
     "paint": {
-      "text-size": {
-        "base": 1,
-        "stops": [[3, 10], [8, 24]]
-      },
+      "text-size": "@country-label-md-size",
       "text-color": "@label-primary",
       "text-halo-color": {
         "base": 1,
@@ -2476,15 +2482,12 @@
     "layout": {
       "text-field": "{name_en}",
       "visibility": "visible",
-      "text-max-size": 22,
+      "text-max-size": "@country-label-sm-size",
       "text-max-width": 6,
       "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
     },
     "paint": {
-      "text-size": {
-        "base": 0.9,
-        "stops": [[5, 14], [9, 22]]
-      },
+      "text-size": "@country-label-sm-size",
       "text-color": "@label-primary",
       "text-halo-color": {
         "base": 1,
@@ -3911,7 +3914,7 @@
     }
   }],
   "owner": "nicki",
-  "modified": "2015-04-22T21:56:16.821Z",
+  "modified": "2015-04-28T00:03:18.362Z",
   "created": "2015-04-20T17:11:47.261Z",
   "id": "nicki.be444c8f"
 }
