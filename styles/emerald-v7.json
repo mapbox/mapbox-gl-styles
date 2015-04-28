@@ -2045,7 +2045,7 @@
     "source-layer": "place_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["in", "type", "city"], ["<=", "scalerank", 2]],
+    "filter": ["all", ["in", "type", "city"], ["<=", "localrank", 1]],
     "layout": {
       "text-line-height": {
         "base": 1,
@@ -2059,7 +2059,10 @@
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
-      "text-max-size": 40,
+      "text-max-size": {
+        "base": 1.1,
+        "stops": [[3, 12], [20, 40]]
+      },
       "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
       "symbol-placement": "point",
       "text-padding": 0,
@@ -2086,7 +2089,7 @@
       },
       "text-size": {
         "base": 1.1,
-        "stops": [[4, 14], [20, 40]]
+        "stops": [[3, 12], [20, 40]]
       }
     }
   }, {
@@ -2096,7 +2099,7 @@
     "source-layer": "place_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["in", "type", "city"], [">", "scalerank", 2]],
+    "filter": ["all", ["in", "type", "city"], ["!in", "localrank", 1]],
     "layout": {
       "text-line-height": 1.1,
       "text-allow-overlap": false,
@@ -2108,7 +2111,10 @@
       "symbol-avoid-edges": true,
       "text-ignore-placement": false,
       "text-max-angle": 38,
-      "text-max-size": 30,
+      "text-max-size": {
+        "base": 1.1,
+        "stops": [[4, 12], [20, 30]]
+      },
       "text-font": {
         "base": 1,
         "stops": [[0, "Open Sans Regular, Arial Unicode MS Regular"], [9, "Open Sans Semibold, Arial Unicode MS Regular"]]
@@ -2133,7 +2139,7 @@
       "text-color": "@city_label",
       "text-halo-color": "@background",
       "text-halo-width": {
-        "base": 1,
+        "base": 1.2,
         "stops": [[6, 1.5], [20, 6]]
       },
       "text-size": {
@@ -2162,7 +2168,10 @@
       },
       "text-ignore-placement": false,
       "text-max-angle": 38,
-      "text-max-size": 26,
+      "text-max-size": {
+        "base": 1.2,
+        "stops": [[5, 10], [20, 26]]
+      },
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "symbol-placement": "point",
       "text-padding": 5,
@@ -2680,7 +2689,10 @@
       "icon-rotation-alignment": "viewport",
       "text-ignore-placement": false,
       "text-max-angle": 38,
-      "text-max-size": 16,
+      "text-max-size": {
+        "base": 1,
+        "stops": [[6, 8], [20, 16]]
+      },
       "icon-keep-upright": true,
       "text-font": "Open Sans Semibold,   Arial Unicode MS Regular",
       "symbol-placement": "line",
@@ -2690,7 +2702,8 @@
       "text-anchor": "center",
       "text-field": "{ref}",
       "text-letter-spacing": 0,
-      "icon-padding": 0
+      "icon-padding": 0,
+      "icon-max-size": 0.3
     },
     "paint": {
       "text-size": {
@@ -3015,7 +3028,7 @@
     }
   }],
   "owner": "peterqliu",
-  "modified": "2015-04-27T23:11:35.442Z",
+  "modified": "2015-04-28T00:48:03.579Z",
   "created": "2015-04-20T17:55:34.667Z",
   "id": "peterqliu.9e140828"
 }
