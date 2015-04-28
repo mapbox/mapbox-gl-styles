@@ -276,7 +276,7 @@
       },
       "fill-opacity": {
         "base": 1,
-        "stops": [[12, 0], [13, 0.75]]
+        "stops": [[13, 0], [14, 0.75]]
       },
       "fill-image": "hospital_striped"
     }
@@ -299,7 +299,7 @@
       },
       "fill-opacity": {
         "base": 1,
-        "stops": [[12, 0], [13, 0.5]]
+        "stops": [[13, 0], [14, 0.5]]
       },
       "fill-image": "school_striped"
     }
@@ -316,7 +316,10 @@
     },
     "paint": {
       "fill-color": "#d8e1c5",
-      "fill-opacity": 1,
+      "fill-opacity": {
+        "base": 1,
+        "stops": [[5, 0], [6, 1]]
+      },
       "fill-outline-color": "#d2e4c7",
       "fill-image": "grass_pattern"
     }
@@ -333,7 +336,10 @@
     },
     "paint": {
       "fill-color": "#6a4",
-      "fill-opacity": 0.15
+      "fill-opacity": {
+        "base": 1,
+        "stops": [[5, 0], [6, 0.1]]
+      }
     }
   }, {
     "id": "pitch",
@@ -2113,7 +2119,7 @@
       "text-max-angle": 38,
       "text-max-size": {
         "base": 1.1,
-        "stops": [[4, 12], [20, 30]]
+        "stops": [[4, 10], [20, 30]]
       },
       "text-font": {
         "base": 1,
@@ -2144,7 +2150,7 @@
       },
       "text-size": {
         "base": 1.1,
-        "stops": [[4, 12], [20, 30]]
+        "stops": [[4, 10], [20, 30]]
       },
       "icon-size": 0.8,
       "icon-opacity": 1,
@@ -3028,7 +3034,7 @@
     }
   }],
   "owner": "peterqliu",
-  "modified": "2015-04-28T00:48:03.579Z",
+  "modified": "2015-04-28T06:26:46.298Z",
   "created": "2015-04-20T17:55:34.667Z",
   "id": "peterqliu.9e140828"
 }
