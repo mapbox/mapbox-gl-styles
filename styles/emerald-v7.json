@@ -56,6 +56,10 @@
       "base": 1,
       "stops": [[14, "@case_light"], [14.1, "@case_dark"]]
     },
+    "@neighborhood_size": {
+      "base": 1.2,
+      "stops": [[8, 8], [20, 30]]
+    },
     "@street_case_width": {
       "base": 1.5,
       "stops": [[12, 0.5], [14.05, 1.7], [14.1, 3.5], [20, 34]]
@@ -758,7 +762,10 @@
       "text-max-width": 4
     },
     "paint": {
-      "text-opacity": 0.25,
+      "text-opacity": {
+        "base": 1,
+        "stops": [[3, 0], [3.5, 0.25]]
+      },
       "text-size": {
         "base": 1,
         "stops": [[0, 1], [12, 35]]
@@ -2051,7 +2058,7 @@
     "source-layer": "place_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["in", "type", "city"], ["<=", "localrank", 1]],
+    "filter": ["all", ["in", "type", "city"], ["<=", "scalerank", 2]],
     "layout": {
       "text-line-height": {
         "base": 1,
@@ -2067,7 +2074,7 @@
       "text-max-angle": 38,
       "text-max-size": {
         "base": 1.1,
-        "stops": [[3, 12], [20, 40]]
+        "stops": [[2, 12], [20, 40]]
       },
       "text-font": "Open Sans Semibold, Arial Unicode MS Regular",
       "symbol-placement": "point",
@@ -2095,7 +2102,7 @@
       },
       "text-size": {
         "base": 1.1,
-        "stops": [[3, 12], [20, 40]]
+        "stops": [[1.9, 12], [20, 40]]
       }
     }
   }, {
@@ -2105,7 +2112,64 @@
     "source-layer": "place_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["in", "type", "city"], ["!in", "localrank", 1]],
+    "filter": ["all", ["in", "type", "city"], ["in", "scalerank", 3, 4]],
+    "layout": {
+      "text-line-height": {
+        "base": 1,
+        "stops": [[8, 1], [20, 1.3]]
+      },
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-image": {
+        "base": 1,
+        "stops": [[0, "dot"], [6, ""]]
+      },
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": {
+        "base": 1.1,
+        "stops": [[5, 12], [20, 36]]
+      },
+      "text-font": {
+        "base": 1,
+        "stops": [[0, "Open Sans Regular, Arial Unicode MS Regular"], [6, "Open Sans Semibold, Arial Unicode MS Regular"]]
+      },
+      "symbol-placement": "point",
+      "text-padding": 0,
+      "visibility": "visible",
+      "text-offset": {
+        "base": 1,
+        "stops": [[5.99, [0, 0.25]], [6, [0, 0]]]
+      },
+      "text-rotation-alignment": "viewport",
+      "text-anchor": {
+        "base": 1,
+        "stops": [[0, "top"], [6, "center"]]
+      },
+      "text-field": "{name_en}",
+      "text-letter-spacing": 0,
+      "text-max-width": 5
+    },
+    "paint": {
+      "text-color": "@city_label",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[6, 1.75], [18, 2.75]]
+      },
+      "text-size": {
+        "base": 1.1,
+        "stops": [[5, 12], [20, 40]]
+      }
+    }
+  }, {
+    "id": "city_label_small",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "place_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "city"], ["!in", "scalerank", 1, 2, 3, 4]],
     "layout": {
       "text-line-height": 1.1,
       "text-allow-overlap": false,
@@ -2119,7 +2183,7 @@
       "text-max-angle": 38,
       "text-max-size": {
         "base": 1.1,
-        "stops": [[4, 10], [20, 30]]
+        "stops": [[6, 12], [20, 30]]
       },
       "text-font": {
         "base": 1,
@@ -2149,21 +2213,21 @@
         "stops": [[6, 1.5], [20, 6]]
       },
       "text-size": {
-        "base": 1.1,
-        "stops": [[4, 10], [20, 30]]
+        "base": 1.2,
+        "stops": [[6, 12], [20, 30]]
       },
       "icon-size": 0.8,
       "icon-opacity": 1,
       "text-opacity": 1
     }
   }, {
-    "id": "town_hamlet_village_label",
+    "id": "town_label",
     "type": "symbol",
     "source": "compositedsource",
     "source-layer": "place_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["in", "type", "town", "hamlet", "village"], ["<=", "localrank", 40]],
+    "filter": ["all", ["in", "type", "town"], ["<=", "localrank", 40]],
     "layout": {
       "text-line-height": 1,
       "text-allow-overlap": false,
@@ -2176,7 +2240,7 @@
       "text-max-angle": 38,
       "text-max-size": {
         "base": 1.2,
-        "stops": [[5, 10], [20, 26]]
+        "stops": [[8, 10], [20, 26]]
       },
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "symbol-placement": "point",
@@ -2205,12 +2269,67 @@
       },
       "text-size": {
         "base": 1.2,
-        "stops": [[5, 10], [20, 28]]
+        "stops": [[8, 10], [20, 26]]
       },
       "text-opacity": {
         "base": 1,
         "stops": [[0, 1], [13, 0.9]]
       },
+      "icon-opacity": 1,
+      "icon-size": 0.9
+    }
+  }, {
+    "id": "hamlet_village_label",
+    "type": "symbol",
+    "source": "compositedsource",
+    "source-layer": "place_label",
+    "minzoom": 0,
+    "maxzoom": 22,
+    "filter": ["all", ["in", "type", "village", "hamlet"], ["<=", "localrank", 40]],
+    "layout": {
+      "text-line-height": 1,
+      "text-allow-overlap": false,
+      "symbol-min-distance": 250,
+      "icon-image": {
+        "base": 1,
+        "stops": [[0, "dot"], [8, ""]]
+      },
+      "text-ignore-placement": false,
+      "text-max-angle": 38,
+      "text-max-size": {
+        "base": 1.2,
+        "stops": [[8, 10], [20, 26]]
+      },
+      "text-font": "Open Sans Regular, Arial Unicode MS Regular",
+      "symbol-placement": "point",
+      "text-padding": 5,
+      "visibility": "visible",
+      "text-offset": {
+        "base": 1,
+        "stops": [[0, [0, 1]], [8, [0, 0]]]
+      },
+      "text-rotation-alignment": "viewport",
+      "text-anchor": {
+        "base": 1,
+        "stops": [[0, "top"], [8, "center"]]
+      },
+      "text-field": "{name_en}",
+      "text-letter-spacing": 0,
+      "text-max-width": 5,
+      "icon-max-size": 1
+    },
+    "paint": {
+      "text-color": "@city_label",
+      "text-halo-color": "#F8F4F0",
+      "text-halo-width": {
+        "base": 1,
+        "stops": [[8, 2], [20, 3.75]]
+      },
+      "text-size": {
+        "base": 1.2,
+        "stops": [[8, 10], [20, 26]]
+      },
+      "text-opacity": 0.75,
       "icon-opacity": 1,
       "icon-size": 0.9
     }
@@ -2232,7 +2351,7 @@
       "symbol-avoid-edges": false,
       "text-ignore-placement": false,
       "text-max-angle": 38,
-      "text-max-size": 16,
+      "text-max-size": "@neighborhood_size",
       "text-font": "Open Sans Italic,    Arial Unicode MS Regular",
       "symbol-placement": "point",
       "text-padding": 0,
@@ -2249,10 +2368,7 @@
         "base": 1,
         "stops": [[16, 2.5], [20, 5]]
       },
-      "text-size": {
-        "base": 1.1,
-        "stops": [[8, 8], [20, 30]]
-      }
+      "text-size": "@neighborhood_size"
     }
   }, {
     "id": "airport_label",
@@ -3010,7 +3126,7 @@
       "symbol-avoid-edges": false,
       "text-ignore-placement": false,
       "text-max-angle": 38,
-      "text-max-size": 16,
+      "text-max-size": "@neighborhood_size",
       "text-font": "Open Sans Italic,    Arial Unicode MS Regular",
       "symbol-placement": "point",
       "text-padding": 20,
@@ -3027,14 +3143,11 @@
         "base": 1,
         "stops": [[16, 2.5], [20, 5]]
       },
-      "text-size": {
-        "base": 1.1,
-        "stops": [[8, 8], [20, 30]]
-      }
+      "text-size": "@neighborhood_size"
     }
   }],
   "owner": "peterqliu",
-  "modified": "2015-04-28T06:26:46.298Z",
+  "modified": "2015-04-28T07:49:41.149Z",
   "created": "2015-04-20T17:55:34.667Z",
   "id": "peterqliu.9e140828"
 }
