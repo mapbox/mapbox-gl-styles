@@ -52,10 +52,6 @@
     "@scrub": "#e3e3e3",
     "@crop": "#ececec",
     "@label-waterway": "#929292",
-    "@road-main-width": {
-      "base": 1.5,
-      "stops": [[6, 0.5], [18, 26]]
-    },
     "@road-high-z-fadein": {
       "base": 1,
       "stops": [[5, 0], [5.5, 1]]
@@ -83,6 +79,10 @@
     "@path-width": {
       "base": 1.5,
       "stops": [[15, 1], [18, 4]]
+    },
+    "@road-main-width": {
+      "base": 1.5,
+      "stops": [[6, 0.5], [18, 26]]
     }
   },
   "sources": {
@@ -1721,7 +1721,7 @@
     }
   }],
   "owner": "andreasviglakis",
-  "modified": "2015-04-17T23:46:22.916Z",
-  "created": "2015-04-14T22:28:40.506Z",
-  "id": "andreasviglakis.e1a9590a"
+  "modified": "2015-04-27T23:19:35.558Z",
+  "created": "2015-04-27T23:19:35.558Z",
+  "id": "andreasviglakis.3081d695"
 }
