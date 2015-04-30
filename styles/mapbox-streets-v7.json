@@ -2811,7 +2811,7 @@
     "source-layer": "place_label",
     "minzoom": 0,
     "maxzoom": 14,
-    "filter": ["all", ["in", "scalerank", 3, 4, 5], ["in", "type", "city"], ["in", "ldir", "S", "SE", "WW", "E"]],
+    "filter": ["all", ["in", "scalerank", 3, 4, 5], ["in", "type", "city"], ["in", "ldir", "S", "SE", "SW", "E"]],
     "layout": {
       "visibility": "visible",
       "text-field": "{name_en}",
@@ -3497,7 +3497,7 @@
       },
       "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
       "symbol-placement": "line",
-      "text-padding": 2,
+      "text-padding": 1,
       "visibility": "visible",
       "text-rotation-alignment": "map",
       "text-field": "{name_en}",
@@ -3526,7 +3526,7 @@
       "text-max-angle": 30,
       "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
       "symbol-placement": "line",
-      "text-padding": 2,
+      "text-padding": 1,
       "visibility": "visible",
       "text-rotation-alignment": "map",
       "text-field": "{name_en}",
@@ -3556,7 +3556,7 @@
       "text-max-size": 12,
       "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
       "symbol-placement": "line",
-      "text-padding": 2,
+      "text-padding": 1,
       "visibility": "visible",
       "text-rotation-alignment": "map",
       "text-field": "{name_en}",
@@ -3927,7 +3927,7 @@
     "paint": {}
   }],
   "owner": "nicki",
-  "modified": "2015-04-29T23:04:09.226Z",
+  "modified": "2015-04-30T20:56:05.795Z",
   "created": "2015-04-20T17:11:47.261Z",
   "id": "nicki.be444c8f"
 }
