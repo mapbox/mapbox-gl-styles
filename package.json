@@ -1,8 +1,8 @@
 {
   "name": "mapbox-gl-styles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mapbox gl example styles",
-  "main": "index.js",
+  "main": "index.json",
   "bin": {},
   "scripts": {
     "test": "gl-style-validate styles/*-v7.json",
