@@ -2995,7 +2995,7 @@
   },
   "dark": {
     "version": 7,
-    "name": "dark-v7.json",
+    "name": "Dark",
     "constants": {
       "@road-motorway-width": {
         "base": 1,
@@ -6445,7 +6445,7 @@
   },
   "emerald": {
     "version": 7,
-    "name": "Emerald-v7",
+    "name": "Emerald",
     "constants": {
       "@city_label": "#2d1617",
       "@service_case_width": {
@@ -12702,7 +12702,7 @@
   },
   "light": {
     "version": 7,
-    "name": "light-v7.json",
+    "name": "Light",
     "constants": {
       "@road-motorway-width": {
         "base": 1,
@@ -16226,7 +16226,7 @@
   },
   "mapbox-streets": {
     "version": 7,
-    "name": "mapbox-streets-v7",
+    "name": "Mapbox Streets",
     "constants": {
       "@poi-scalerank3": {
         "base": 1,

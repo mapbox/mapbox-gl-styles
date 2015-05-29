@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "name": "mapbox-streets-v7",
+  "name": "Mapbox Streets",
   "constants": {
     "@poi-scalerank3": {
       "base": 1,

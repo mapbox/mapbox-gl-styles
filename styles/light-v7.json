@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "name": "light-v7.json",
+  "name": "Light",
   "constants": {
     "@road-motorway-width": {
       "base": 1,
