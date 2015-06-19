@@ -5,12 +5,12 @@
   "main": "index.json",
   "bin": {},
   "scripts": {
-    "test": "gl-style-validate styles/*-v7.json",
-    "migrate": "for style in styles/*-v7.json; do gl-style-migrate $style | sponge $style; done",
+    "test": "gl-style-validate styles/*-v8.json",
+    "migrate": "for style in styles/*-v8.json; do gl-style-migrate $style | sponge $style; done",
     "build": "node -e 'require(\"fs\").writeFileSync(\"index.json\", JSON.stringify(require(\"./index.js\"), null, 2))'"
   },
   "devDependencies": {
-    "mapbox-gl-style-spec": "^7.3.0",
+    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#3a32ab5b9fc0ffa4b846dde17f87a330007799a0",
     "sponge": "^0.1.0"
   },
   "license": "ISC"
