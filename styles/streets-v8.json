@@ -1,535 +1,639 @@
 {
-  "version": 7,
+  "version": 8,
   "name": "Mapbox Streets",
   "constants": {
     "@poi-scalerank3": {
-      "base": 1,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1,
+        "domain": [
           16,
-          11
+          20
         ],
-        [
-          20,
+        "range": [
+          11,
           13
-        ]
-      ]
-    },
-    "@label-neighbourhood": "#805540",
-    "@hillshade-shadow": "#5a5517",
-    "@road-width-minor": {
-      "base": 1.5,
-      "stops": [
-        [
-          14,
-          0.5
         ],
-        [
-          18,
+        "type": "exponential"
+      }
+    },
+    "@label-neighbourhood": {
+      "type": "color",
+      "value": "#805540"
+    },
+    "@hillshade-shadow": {
+      "type": "color",
+      "value": "#5a5517"
+    },
+    "@road-width-minor": {
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
+          14,
+          18
+        ],
+        "range": [
+          0.5,
           12
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
     "@poi-scalerank4": {
-      "base": 1,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1,
+        "domain": [
           16,
-          11
+          20
         ],
-        [
-          20,
+        "range": [
+          11,
           13
-        ]
-      ]
-    },
-    "@wetlands": "#9DD3D8",
-    "@landuse-cemetery": "#dde6c2",
-    "@admin-2-boundary": {
-      "base": 1,
-      "stops": [
-        [
-          3,
-          0.5
         ],
-        [
-          10,
+        "type": "exponential"
+      }
+    },
+    "@wetlands": {
+      "type": "color",
+      "value": "#9DD3D8"
+    },
+    "@landuse-cemetery": {
+      "type": "color",
+      "value": "#dde6c2"
+    },
+    "@admin-2-boundary": {
+      "type": "number",
+      "value": {
+        "base": 1,
+        "domain": [
+          3,
+          10
+        ],
+        "range": [
+          0.5,
           2
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
     "@country-label-lg-size": {
-      "base": 1,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1,
+        "domain": [
           1,
-          10
+          6
         ],
-        [
-          6,
+        "range": [
+          10,
           24
-        ]
-      ]
-    },
-    "@snow": "#fff",
-    "@path-opacity": {
-      "base": 1,
-      "stops": [
-        [
-          15,
-          0
         ],
-        [
-          15.25,
-          1
-        ]
-      ]
+        "type": "exponential"
+      }
     },
-    "@label-park": "#4c661f",
+    "@snow": {
+      "type": "color",
+      "value": "#fff"
+    },
+    "@path-opacity": {
+      "type": "opacity",
+      "value": {
+        "base": 1,
+        "domain": [
+          15,
+          15.25
+        ],
+        "range": [
+          0,
+          1
+        ],
+        "type": "exponential"
+      }
+    },
+    "@label-park": {
+      "type": "color",
+      "value": "#4c661f"
+    },
     "@country-label-sm-size": {
-      "base": 0.9,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 0.9,
+        "domain": [
           5,
+          9
+        ],
+        "range": [
+          14,
+          22
+        ],
+        "type": "exponential"
+      }
+    },
+    "@landuse-school": {
+      "type": "color",
+      "value": "#f3ebb4"
+    },
+    "@label-water-dark": {
+      "type": "color",
+      "value": "#004087"
+    },
+    "@road-main": {
+      "type": "color",
+      "value": "#a2a2a2"
+    },
+    "@road-case-dark": {
+      "type": "color",
+      "value": "#d9d3c9"
+    },
+    "@path-bg-width": {
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
+          15,
+          18
+        ],
+        "range": [
+          2,
+          7
+        ],
+        "type": "exponential"
+      }
+    },
+    "@road-trunk": {
+      "type": "color",
+      "value": "#f2cf60"
+    },
+    "@road-motorway": {
+      "type": "color",
+      "value": "#ffa159"
+    },
+    "@country-label-md-size": {
+      "type": "number",
+      "value": {
+        "base": 1,
+        "domain": [
+          3,
+          8
+        ],
+        "range": [
+          10,
+          24
+        ],
+        "type": "exponential"
+      }
+    },
+    "@road-minor": {
+      "type": "color",
+      "value": "#fff"
+    },
+    "@rail-track-width": {
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
+          14,
+          20
+        ],
+        "range": [
+          4,
+          8
+        ],
+        "type": "exponential"
+      }
+    },
+    "@label-primary": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "@street-high-opacity": {
+      "type": "opacity",
+      "value": {
+        "base": 1,
+        "domain": [
+          13.99,
           14
         ],
-        [
-          9,
-          22
-        ]
-      ]
-    },
-    "@landuse-school": "#f3ebb4",
-    "@label-water-dark": "#004087",
-    "@road-main": "#a2a2a2",
-    "@road-case-dark": "#d9d3c9",
-    "@path-bg-width": {
-      "base": 1.5,
-      "stops": [
-        [
-          15,
-          2
-        ],
-        [
-          18,
-          7
-        ]
-      ]
-    },
-    "@road-trunk": "#f2cf60",
-    "@road-motorway": "#ffa159",
-    "@country-label-md-size": {
-      "base": 1,
-      "stops": [
-        [
-          3,
-          10
-        ],
-        [
-          8,
-          24
-        ]
-      ]
-    },
-    "@road-minor": "#fff",
-    "@rail-track-width": {
-      "base": 1.5,
-      "stops": [
-        [
-          14,
-          4
-        ],
-        [
-          20,
-          8
-        ]
-      ]
-    },
-    "@label-primary": "#000000",
-    "@street-high-opacity": {
-      "base": 1,
-      "stops": [
-        [
-          13.99,
-          0
-        ],
-        [
-          14,
+        "range": [
+          0,
           1
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
     "@label-city-lg-size": {
-      "base": 0.9,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 0.9,
+        "domain": [
           4,
-          12
+          10
         ],
-        [
-          10,
+        "range": [
+          12,
           22
-        ]
-      ]
-    },
-    "@landuse-industrial": "#e0dae0",
-    "@landcover-opacity": {
-      "base": 1.5,
-      "stops": [
-        [
-          2,
-          0.3
         ],
-        [
-          14,
+        "type": "exponential"
+      }
+    },
+    "@landuse-industrial": {
+      "type": "color",
+      "value": "#e0dae0"
+    },
+    "@landcover-opacity": {
+      "type": "opacity",
+      "value": {
+        "base": 1.5,
+        "domain": [
+          2,
+          14
+        ],
+        "range": [
+          0.3,
           0
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
     "@rail-width": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           14,
-          0.5
+          20
         ],
-        [
-          20,
+        "range": [
+          0.5,
           1
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
-    "@landuse-hospital": "#f4dcdc",
-    "@land": "#ede9d9",
-    "@name": "{name_en}",
-    "@landcover": "#ddecb1",
-    "@tunnel-case-dark": "#c4beb7",
-    "@aeroway": "#dbcedb",
+    "@landuse-hospital": {
+      "type": "color",
+      "value": "#f4dcdc"
+    },
+    "@land": {
+      "type": "color",
+      "value": "#ede9d9"
+    },
+    "@landcover": {
+      "type": "color",
+      "value": "#ddecb1"
+    },
+    "@tunnel-case-dark": {
+      "type": "color",
+      "value": "#c4beb7"
+    },
+    "@aeroway": {
+      "type": "color",
+      "value": "#dbcedb"
+    },
     "@label-city-md-size": {
-      "base": 0.9,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 0.9,
+        "domain": [
           5,
           12
         ],
-        [
+        "range": [
           12,
           22
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
-    "@tunnel-trunk": "#f2de9e",
-    "@landuse-pitch": "#c3e194",
-    "@admin": "#787680",
+    "@tunnel-trunk": {
+      "type": "color",
+      "value": "#f2de9e"
+    },
+    "@landuse-pitch": {
+      "type": "color",
+      "value": "#c3e194"
+    },
+    "@admin": {
+      "type": "color",
+      "value": "#787680"
+    },
     "@road-case-width-sm": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           12,
-          0.75
+          20
         ],
-        [
-          20,
+        "range": [
+          0.75,
           2
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
-    "@label-poi": "#65513d",
+    "@label-poi": {
+      "type": "color",
+      "value": "#65513d"
+    },
     "@main-width": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           8.5,
-          0.5
-        ],
-        [
           10,
-          0.75
+          18
         ],
-        [
-          18,
+        "range": [
+          0.5,
+          0.75,
           26
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
     "@road-case-width-lg": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           5,
-          0.75
+          16
         ],
-        [
-          16,
+        "range": [
+          0.75,
           2
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
     "@road-high-z-fadein": {
-      "base": 1.2,
-      "stops": [
-        [
+      "type": "opacity",
+      "value": {
+        "base": 1.2,
+        "domain": [
           5,
-          0
+          5.5
         ],
-        [
-          5.5,
-          1
-        ]
-      ]
-    },
-    "@rail": "#b3ada6",
-    "@country-halo": "rgba(255,255,255,0.75)",
-    "@hillshade-highlight": "#fff",
-    "@motorway-width": {
-      "base": 1.5,
-      "stops": [
-        [
-          5,
-          0.75
-        ],
-        [
-          18,
-          32
-        ]
-      ]
-    },
-    "@country-label-color": {
-      "stops": [
-        [
-          8,
-          "#000000"
-        ],
-        [
-          10,
-          "#888888"
-        ]
-      ],
-      "base": 1
-    },
-    "@building": "#e8e0cc",
-    "@landuse-sand": "#ededcf",
-    "@road-trunk-case": "#fff",
-    "@ramp-1": {
-      "base": 1,
-      "stops": [
-        [
+        "range": [
           0,
-          [
-            1,
-            2
-          ]
+          1
         ],
-        [
-          20,
-          [
-            1,
-            0.25
-          ]
-        ]
-      ]
+        "type": "exponential"
+      }
     },
-    "@road-motorway-case": "#fff",
+    "@rail": {
+      "type": "color",
+      "value": "#b3ada6"
+    },
+    "@country-halo": {
+      "type": "color",
+      "value": "rgba(255,255,255,0.75)"
+    },
+    "@hillshade-highlight": {
+      "type": "color",
+      "value": "#fff"
+    },
+    "@motorway-width": {
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
+          5,
+          18
+        ],
+        "range": [
+          0.75,
+          32
+        ],
+        "type": "exponential"
+      }
+    },
+    "@building": {
+      "type": "color",
+      "value": "#e8e0cc"
+    },
+    "@landuse-sand": {
+      "type": "color",
+      "value": "#ededcf"
+    },
+    "@road-trunk-case": {
+      "type": "color",
+      "value": "#fff"
+    },
+    "@road-motorway-case": {
+      "type": "color",
+      "value": "#fff"
+    },
     "@street_limited-width": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           12.5,
-          0.5
-        ],
-        [
           14,
-          2
+          18
         ],
-        [
-          18,
+        "range": [
+          0.5,
+          2,
           12
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
-    "@water": "#8ccbf7",
-    "@ramp-2": {
-      "base": 1,
-      "stops": [
-        [
-          14,
-          [
-            0.4,
-            0.4
-          ]
-        ],
-        [
-          15,
-          [
-            0.3,
-            0.3
-          ]
-        ],
-        [
-          16,
-          [
-            0.2,
-            0.2
-          ]
-        ],
-        [
-          18,
-          [
-            0.15,
-            0.15
-          ]
-        ],
-        [
-          19,
-          [
-            0.1,
-            0.1
-          ]
-        ]
-      ]
+    "@water": {
+      "type": "color",
+      "value": "#8ccbf7"
     },
-    "@label-state": "#242424",
-    "@landuse-parks": "#cde8a2",
+    "@label-state": {
+      "type": "color",
+      "value": "#242424"
+    },
+    "@landuse-parks": {
+      "type": "color",
+      "value": "#cde8a2"
+    },
     "@street_limited-case-width": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           13,
-          0
-        ],
-        [
           14,
-          2
+          18
         ],
-        [
-          18,
+        "range": [
+          0,
+          2,
           12
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
     "@motorway_link-width": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           12,
-          0.5
-        ],
-        [
           14,
-          2
-        ],
-        [
-          18,
           18
-        ]
-      ]
-    },
-    "@building-shadow": "#cbc6b7",
-    "@label-road": "#3a3836",
-    "@rail-low": "#ccc5bd",
-    "@label-transit": "#000000",
-    "@rail-lowhigh": {
-      "stops": [
-        [
-          13,
-          "#d8d5c8"
         ],
-        [
-          16,
+        "range": [
+          0.5,
+          2,
+          18
+        ],
+        "type": "exponential"
+      }
+    },
+    "@building-shadow": {
+      "type": "color",
+      "value": "#cbc6b7"
+    },
+    "@label-road": {
+      "type": "color",
+      "value": "#3a3836"
+    },
+    "@rail-low": {
+      "type": "color",
+      "value": "#ccc5bd"
+    },
+    "@label-transit": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "@rail-lowhigh": {
+      "type": "color",
+      "value": {
+        "domain": [
+          13,
+          16
+        ],
+        "range": [
+          "#d8d5c8",
           "#b3b1a6"
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
     "@street-case-gap-width": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           13,
-          0
-        ],
-        [
           14,
-          2
-        ],
-        [
-          18,
           18
-        ]
-      ]
+        ],
+        "range": [
+          0,
+          2,
+          18
+        ],
+        "type": "exponential"
+      }
     },
-    "@halo": "#ffffff",
+    "@halo": {
+      "type": "color",
+      "value": "#ffffff"
+    },
     "@street-width": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           12.5,
-          0.5
-        ],
-        [
           14,
-          2
-        ],
-        [
-          18,
           18
-        ]
-      ]
+        ],
+        "range": [
+          0.5,
+          2,
+          18
+        ],
+        "type": "exponential"
+      }
     },
     "@main-case-width": {
-      "base": 1.2,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.2,
+        "domain": [
           10,
-          0.75
+          18
         ],
-        [
-          18,
+        "range": [
+          0.75,
           2
-        ]
-      ]
-    },
-    "@road-street-limited": "#EFEDEB",
-    "@landuse-glacier": "#dcedf9",
-    "@label-water": "#c8e5f9",
-    "@poi-scalerank1": {
-      "base": 1,
-      "stops": [
-        [
-          10,
-          11
         ],
-        [
-          18,
+        "type": "exponential"
+      }
+    },
+    "@road-street-limited": {
+      "type": "color",
+      "value": "#EFEDEB"
+    },
+    "@landuse-glacier": {
+      "type": "color",
+      "value": "#dcedf9"
+    },
+    "@label-water": {
+      "type": "color",
+      "value": "#c8e5f9"
+    },
+    "@poi-scalerank1": {
+      "type": "number",
+      "value": {
+        "base": 1,
+        "domain": [
+          10,
+          18
+        ],
+        "range": [
+          11,
           14
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     },
     "@path-width": {
-      "base": 1.5,
-      "stops": [
-        [
+      "type": "number",
+      "value": {
+        "base": 1.5,
+        "domain": [
           15,
-          1
+          18
         ],
-        [
-          18,
+        "range": [
+          1,
           4
-        ]
-      ]
-    },
-    "@tunnel-motorway": "#ffbe8c",
-    "@poi-scalerank2": {
-      "base": 1,
-      "stops": [
-        [
-          14,
-          11
         ],
-        [
-          20,
+        "type": "exponential"
+      }
+    },
+    "@tunnel-motorway": {
+      "type": "color",
+      "value": "#ffbe8c"
+    },
+    "@poi-scalerank2": {
+      "type": "number",
+      "value": {
+        "base": 1,
+        "domain": [
+          14,
+          20
+        ],
+        "range": [
+          11,
           14
-        ]
-      ]
+        ],
+        "type": "exponential"
+      }
     }
   },
   "sources": {
@@ -702,16 +806,15 @@
         "fill-color": "@landcover",
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              9,
-              0
-            ],
-            [
-              16,
-              0.2
-            ]
-          ]
+          "domain": [
+            9,
+            16
+          ],
+          "range": [
+            0,
+            0.2
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -738,16 +841,15 @@
         "fill-color": "@landcover",
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              9,
-              0
-            ],
-            [
-              16,
-              0.4
-            ]
-          ]
+          "domain": [
+            9,
+            16
+          ],
+          "range": [
+            0,
+            0.4
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -774,16 +876,15 @@
         "fill-color": "@landcover",
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              6,
-              0
-            ],
-            [
-              16,
-              0.5
-            ]
-          ]
+          "domain": [
+            6,
+            16
+          ],
+          "range": [
+            0,
+            0.5
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -880,16 +981,15 @@
         "fill-color": "@landuse-parks",
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              5,
-              0
-            ],
-            [
-              6,
-              1
-            ]
-          ]
+          "domain": [
+            5,
+            6
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -916,16 +1016,15 @@
         "fill-color": "@landuse-glacier",
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              9,
-              0
-            ],
-            [
-              10,
-              0.25
-            ]
-          ]
+          "domain": [
+            9,
+            10
+          ],
+          "range": [
+            0,
+            0.25
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1063,16 +1162,15 @@
       "paint": {
         "fill-color": "@hillshade-highlight",
         "fill-opacity": {
-          "stops": [
-            [
-              15,
-              0.12
-            ],
-            [
-              18,
-              0
-            ]
-          ]
+          "domain": [
+            15,
+            18
+          ],
+          "range": [
+            0.12,
+            0
+          ],
+          "type": "exponential"
         },
         "fill-antialias": false
       }
@@ -1098,16 +1196,15 @@
       "paint": {
         "fill-color": "@hillshade-highlight",
         "fill-opacity": {
-          "stops": [
-            [
-              15,
-              0.12
-            ],
-            [
-              18,
-              0
-            ]
-          ]
+          "domain": [
+            15,
+            18
+          ],
+          "range": [
+            0.12,
+            0
+          ],
+          "type": "exponential"
         },
         "fill-antialias": false
       }
@@ -1133,16 +1230,15 @@
       "paint": {
         "fill-color": "@hillshade-shadow",
         "fill-opacity": {
-          "stops": [
-            [
-              15,
-              0.05
-            ],
-            [
-              17,
-              0
-            ]
-          ]
+          "domain": [
+            15,
+            17
+          ],
+          "range": [
+            0.05,
+            0
+          ],
+          "type": "exponential"
         },
         "fill-antialias": false
       }
@@ -1168,16 +1264,15 @@
       "paint": {
         "fill-color": "@hillshade-shadow",
         "fill-opacity": {
-          "stops": [
-            [
-              15,
-              0.05
-            ],
-            [
-              17,
-              0
-            ]
-          ]
+          "domain": [
+            15,
+            17
+          ],
+          "range": [
+            0.05,
+            0
+          ],
+          "type": "exponential"
         },
         "fill-antialias": false
       }
@@ -1203,16 +1298,15 @@
       "paint": {
         "fill-color": "@hillshade-shadow",
         "fill-opacity": {
-          "stops": [
-            [
-              15,
-              0.06
-            ],
-            [
-              17,
-              0
-            ]
-          ]
+          "domain": [
+            15,
+            17
+          ],
+          "range": [
+            0.06,
+            0
+          ],
+          "type": "exponential"
         },
         "fill-antialias": false
       }
@@ -1238,16 +1332,15 @@
       "paint": {
         "fill-color": "@hillshade-shadow",
         "fill-opacity": {
-          "stops": [
-            [
-              15,
-              0.06
-            ],
-            [
-              17,
-              0
-            ]
-          ]
+          "domain": [
+            15,
+            17
+          ],
+          "range": [
+            0.06,
+            0
+          ],
+          "type": "exponential"
         },
         "fill-antialias": false
       }
@@ -1276,17 +1369,16 @@
       "layout": {
         "visibility": "visible",
         "line-cap": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "butt"
-            ],
-            [
-              11,
-              "round"
-            ]
-          ]
+          "domain": [
+            0,
+            11
+          ],
+          "range": [
+            "butt",
+            "butt",
+            "round"
+          ],
+          "type": "interval"
         },
         "line-join": "round"
       },
@@ -1294,29 +1386,27 @@
         "line-color": "@water",
         "line-width": {
           "base": 1.3,
-          "stops": [
-            [
-              8.5,
-              0.1
-            ],
-            [
-              20,
-              8
-            ]
-          ]
+          "domain": [
+            8.5,
+            20
+          ],
+          "range": [
+            0.1,
+            8
+          ],
+          "type": "exponential"
         },
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              8,
-              0
-            ],
-            [
-              8.5,
-              1
-            ]
-          ]
+          "domain": [
+            8,
+            8.5
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1350,29 +1440,27 @@
         "line-color": "@water",
         "line-width": {
           "base": 1.35,
-          "stops": [
-            [
-              13.5,
-              0.1
-            ],
-            [
-              20,
-              3
-            ]
-          ]
+          "domain": [
+            13.5,
+            20
+          ],
+          "range": [
+            0.1,
+            3
+          ],
+          "type": "exponential"
         },
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              13.5,
-              1
-            ]
-          ]
+          "domain": [
+            13,
+            13.5
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1409,16 +1497,15 @@
         "fill-color": "@wetlands",
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              10,
-              0.25
-            ],
-            [
-              10.5,
-              0.15
-            ]
-          ]
+          "domain": [
+            10,
+            10.5
+          ],
+          "range": [
+            0.25,
+            0.15
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1430,29 +1517,27 @@
         "fill-color": "@wetlands",
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              10,
-              0
-            ],
-            [
-              10.5,
-              1
-            ]
-          ]
+          "domain": [
+            10,
+            10.5
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         },
-        "fill-image": {
-          "base": 1,
-          "stops": [
-            [
-              13,
-              "marsh-16"
-            ],
-            [
-              14,
-              "marsh-32"
-            ]
-          ]
+        "fill-pattern": {
+          "domain": [
+            13,
+            14
+          ],
+          "range": [
+            "marsh-16",
+            "marsh-16",
+            "marsh-32"
+          ],
+          "type": "interval"
         }
       }
     },
@@ -1509,16 +1594,15 @@
       "paint": {
         "line-width": {
           "base": 1.99,
-          "stops": [
-            [
-              14,
-              0.75
-            ],
-            [
-              20,
-              40
-            ]
-          ]
+          "domain": [
+            14,
+            20
+          ],
+          "range": [
+            0.75,
+            40
+          ],
+          "type": "exponential"
         },
         "line-color": "@land"
       }
@@ -1538,16 +1622,15 @@
         "fill-color": "@building-shadow",
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              15.5,
-              0
-            ],
-            [
-              16,
-              1
-            ]
-          ]
+          "domain": [
+            15.5,
+            16
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1558,49 +1641,46 @@
       "paint": {
         "fill-color": {
           "base": 1,
-          "stops": [
-            [
-              15,
-              "@land"
-            ],
-            [
-              16,
-              "@building"
-            ]
-          ]
+          "domain": [
+            15,
+            16
+          ],
+          "range": [
+            "@land",
+            "@building"
+          ],
+          "type": "exponential"
         },
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              15,
-              0
-            ],
-            [
-              15.5,
-              1
-            ]
-          ]
+          "domain": [
+            15,
+            15.5
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         },
         "fill-outline-color": "#d0cbbb",
         "fill-translate": {
           "base": 1,
-          "stops": [
+          "domain": [
+            15,
+            20
+          ],
+          "range": [
             [
-              15,
-              [
-                0,
-                0
-              ]
+              0,
+              0
             ],
             [
-              20,
-              [
-                -5,
-                -5
-              ]
+              -5,
+              -5
             ]
-          ]
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1630,16 +1710,15 @@
         "fill-color": "@aeroway",
         "fill-opacity": {
           "base": 1,
-          "stops": [
-            [
-              11,
-              0
-            ],
-            [
-              11.5,
-              1
-            ]
-          ]
+          "domain": [
+            11,
+            11.5
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1672,16 +1751,15 @@
         "line-color": "@aeroway",
         "line-width": {
           "base": 1.5,
-          "stops": [
-            [
-              9,
-              1
-            ],
-            [
-              18,
-              80
-            ]
-          ]
+          "domain": [
+            9,
+            18
+          ],
+          "range": [
+            1,
+            80
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1714,16 +1792,15 @@
         "line-color": "@aeroway",
         "line-width": {
           "base": 1.5,
-          "stops": [
-            [
-              10,
-              0.5
-            ],
-            [
-              18,
-              20
-            ]
-          ]
+          "domain": [
+            10,
+            18
+          ],
+          "range": [
+            0.5,
+            20
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1755,42 +1832,39 @@
       "paint": {
         "line-color": {
           "base": 1,
-          "stops": [
-            [
-              8,
-              "@land"
-            ],
-            [
-              16,
-              "#f6e8e1"
-            ]
-          ]
+          "domain": [
+            8,
+            16
+          ],
+          "range": [
+            "@land",
+            "#f6e8e1"
+          ],
+          "type": "exponential"
         },
         "line-width": {
           "base": 1,
-          "stops": [
-            [
-              3,
-              3.5
-            ],
-            [
-              10,
-              8
-            ]
-          ]
+          "domain": [
+            3,
+            10
+          ],
+          "range": [
+            3.5,
+            8
+          ],
+          "type": "exponential"
         },
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              7,
-              0
-            ],
-            [
-              8,
-              0.75
-            ]
-          ]
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
+            0,
+            0.75
+          ],
+          "type": "exponential"
         },
         "line-dasharray": [
           1,
@@ -1802,16 +1876,15 @@
         ],
         "line-blur": {
           "base": 1,
-          "stops": [
-            [
-              3,
-              0
-            ],
-            [
-              8,
-              3
-            ]
-          ]
+          "domain": [
+            3,
+            8
+          ],
+          "range": [
+            0,
+            3
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1875,16 +1948,15 @@
         "line-blur": 0,
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              15,
-              0
-            ],
-            [
-              15.25,
-              0.5
-            ]
-          ]
+          "domain": [
+            15,
+            15.25
+          ],
+          "range": [
+            0,
+            0.5
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -1912,37 +1984,35 @@
       "paint": {
         "line-width": "@path-width",
         "line-dasharray": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            15,
+            16,
+            17,
+            18
+          ],
+          "range": [
             [
-              15,
-              [
-                0.1,
-                1.25
-              ]
+              0.1,
+              1.25
             ],
             [
-              16,
-              [
-                0.1,
-                1.6
-              ]
+              0.1,
+              1.25
             ],
             [
-              17,
-              [
-                0.1,
-                1.45
-              ]
+              0.1,
+              1.6
             ],
             [
-              18,
-              [
-                0.1,
-                1.3
-              ]
+              0.1,
+              1.45
+            ],
+            [
+              0.1,
+              1.3
             ]
-          ]
+          ],
+          "type": "interval"
         },
         "line-color": "#f5f2ee",
         "line-opacity": "@path-opacity"
@@ -1978,24 +2048,19 @@
         "line-width": "@street-width",
         "line-color": "@road-minor",
         "line-opacity": {
-          "stops": [
-            [
-              11.5,
-              0
-            ],
-            [
-              12,
-              1
-            ],
-            [
-              14,
-              1
-            ],
-            [
-              14.01,
-              0
-            ]
-          ]
+          "domain": [
+            11.5,
+            12,
+            14,
+            14.01
+          ],
+          "range": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -2029,24 +2094,19 @@
         "line-width": "@street-width",
         "line-color": "@road-minor",
         "line-opacity": {
-          "stops": [
-            [
-              11.5,
-              0
-            ],
-            [
-              12,
-              1
-            ],
-            [
-              14,
-              1
-            ],
-            [
-              14.01,
-              0
-            ]
-          ]
+          "domain": [
+            11.5,
+            12,
+            14,
+            14.01
+          ],
+          "range": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -2355,44 +2415,40 @@
         "line-color": "@road-case-dark",
         "line-opacity": "@street-high-opacity",
         "line-dasharray": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "range": [
             [
-              14,
-              [
-                0.4,
-                0.8
-              ]
+              0.4,
+              0.8
             ],
             [
-              15,
-              [
-                0.3,
-                0.6
-              ]
+              0.4,
+              0.8
             ],
             [
-              16,
-              [
-                0.2,
-                0.3
-              ]
+              0.3,
+              0.6
             ],
             [
-              17,
-              [
-                0.2,
-                0.25
-              ]
+              0.2,
+              0.3
             ],
             [
-              18,
-              [
-                0.15,
-                0.15
-              ]
+              0.2,
+              0.25
+            ],
+            [
+              0.15,
+              0.15
             ]
-          ]
+          ],
+          "type": "interval"
         }
       }
     },
@@ -2478,16 +2534,15 @@
       },
       "paint": {
         "line-color": {
-          "stops": [
-            [
-              13,
-              "#d8d5c8"
-            ],
-            [
-              16,
-              "#c0beb2"
-            ]
-          ]
+          "domain": [
+            13,
+            16
+          ],
+          "range": [
+            "#d8d5c8",
+            "#c0beb2"
+          ],
+          "type": "exponential"
         },
         "line-width": "@rail-width"
       }
@@ -2498,16 +2553,15 @@
       "interactive": true,
       "paint": {
         "line-color": {
-          "stops": [
-            [
-              13,
-              "#d8d5c8"
-            ],
-            [
-              16,
-              "#c0beb2"
-            ]
-          ]
+          "domain": [
+            13,
+            16
+          ],
+          "range": [
+            "#d8d5c8",
+            "#c0beb2"
+          ],
+          "type": "exponential"
         },
         "line-width": "@rail-track-width",
         "line-dasharray": [
@@ -2516,16 +2570,15 @@
         ],
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              13.75,
-              0
-            ],
-            [
-              20,
-              1
-            ]
-          ]
+          "domain": [
+            13.75,
+            20
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -2560,16 +2613,15 @@
         "line-blur": 0,
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              15,
-              0
-            ],
-            [
-              15.25,
-              0.5
-            ]
-          ]
+          "domain": [
+            15,
+            15.25
+          ],
+          "range": [
+            0,
+            0.5
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -2581,37 +2633,35 @@
         "line-width": "@path-width",
         "line-color": "@road-minor",
         "line-dasharray": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            15,
+            16,
+            17,
+            18
+          ],
+          "range": [
             [
-              15,
-              [
-                0.1,
-                1.25
-              ]
+              0.1,
+              1.25
             ],
             [
-              16,
-              [
-                0.1,
-                1.6
-              ]
+              0.1,
+              1.25
             ],
             [
-              17,
-              [
-                0.1,
-                1.45
-              ]
+              0.1,
+              1.6
             ],
             [
-              18,
-              [
-                0.1,
-                1.3
-              ]
+              0.1,
+              1.45
+            ],
+            [
+              0.1,
+              1.3
             ]
-          ]
+          ],
+          "type": "interval"
         },
         "line-opacity": "@path-opacity"
       }
@@ -2644,16 +2694,15 @@
         "line-color": "@road-case-dark",
         "line-width": {
           "base": 1.5,
-          "stops": [
-            [
-              12,
-              1.5
-            ],
-            [
-              20,
-              4
-            ]
-          ]
+          "domain": [
+            12,
+            20
+          ],
+          "range": [
+            1.5,
+            4
+          ],
+          "type": "exponential"
         },
         "line-opacity": 1
       }
@@ -2688,24 +2737,19 @@
         "line-width": "@street-width",
         "line-color": "@road-minor",
         "line-opacity": {
-          "stops": [
-            [
-              11,
-              0
-            ],
-            [
-              11.25,
-              1
-            ],
-            [
-              14,
-              1
-            ],
-            [
-              14.01,
-              0
-            ]
-          ]
+          "domain": [
+            11,
+            11.25,
+            14,
+            14.01
+          ],
+          "range": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -2739,24 +2783,19 @@
         "line-width": "@street-width",
         "line-color": "@road-minor",
         "line-opacity": {
-          "stops": [
-            [
-              11,
-              0
-            ],
-            [
-              11.25,
-              1
-            ],
-            [
-              14,
-              1
-            ],
-            [
-              14.01,
-              0
-            ]
-          ]
+          "domain": [
+            11,
+            11.25,
+            14,
+            14.01
+          ],
+          "range": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -2787,16 +2826,15 @@
         "line-gap-width": "@motorway_link-width",
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              10.99,
-              0
-            ],
-            [
-              11,
-              1
-            ]
-          ]
+          "domain": [
+            10.99,
+            11
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -2926,16 +2964,15 @@
         "line-gap-width": "@main-width",
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              9.99,
-              0
-            ],
-            [
-              10,
-              1
-            ]
-          ]
+          "domain": [
+            9.99,
+            10
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -2971,16 +3008,15 @@
         "line-gap-width": "@motorway-width",
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              5.9,
-              0
-            ],
-            [
-              6,
-              1
-            ]
-          ]
+          "domain": [
+            5.9,
+            6
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -3011,16 +3047,15 @@
         "line-gap-width": "@motorway-width",
         "line-opacity": {
           "base": 1.2,
-          "stops": [
-            [
-              5.9,
-              0
-            ],
-            [
-              6,
-              1
-            ]
-          ]
+          "domain": [
+            5.9,
+            6
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -3108,44 +3143,40 @@
         "line-color": "@road-case-dark",
         "line-opacity": "@street-high-opacity",
         "line-dasharray": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "range": [
             [
-              14,
-              [
-                0.4,
-                0.8
-              ]
+              0.4,
+              0.8
             ],
             [
-              15,
-              [
-                0.3,
-                0.6
-              ]
+              0.4,
+              0.8
             ],
             [
-              16,
-              [
-                0.2,
-                0.3
-              ]
+              0.3,
+              0.6
             ],
             [
-              17,
-              [
-                0.2,
-                0.25
-              ]
+              0.2,
+              0.3
             ],
             [
-              18,
-              [
-                0.15,
-                0.15
-              ]
+              0.2,
+              0.25
+            ],
+            [
+              0.15,
+              0.15
             ]
-          ]
+          ],
+          "type": "interval"
         }
       }
     },
@@ -3177,16 +3208,15 @@
         "line-width": "@main-width",
         "line-color": {
           "base": 1,
-          "stops": [
-            [
-              5,
-              "@land"
-            ],
-            [
-              8,
-              "@road-minor"
-            ]
-          ]
+          "domain": [
+            5,
+            8
+          ],
+          "range": [
+            "@land",
+            "@road-minor"
+          ],
+          "type": "exponential"
         },
         "line-opacity": "@road-high-z-fadein"
       }
@@ -3208,16 +3238,15 @@
         "line-width": "@motorway-width",
         "line-color": {
           "base": 1,
-          "stops": [
-            [
-              5.9,
-              "#fff"
-            ],
-            [
-              6,
-              "#ffa159"
-            ]
-          ]
+          "domain": [
+            5.9,
+            6
+          ],
+          "range": [
+            "#fff",
+            "#ffa159"
+          ],
+          "type": "exponential"
         },
         "line-opacity": "@road-high-z-fadein"
       }
@@ -3261,16 +3290,15 @@
         ],
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              13.75,
-              0
-            ],
-            [
-              14,
-              1
-            ]
-          ]
+          "domain": [
+            13.75,
+            14
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -3334,16 +3362,15 @@
         "line-blur": 0,
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              15,
-              0
-            ],
-            [
-              15.25,
-              0.75
-            ]
-          ]
+          "domain": [
+            15,
+            15.25
+          ],
+          "range": [
+            0,
+            0.75
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -3355,37 +3382,35 @@
         "line-width": "@path-width",
         "line-color": "@road-minor",
         "line-dasharray": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            14,
+            16,
+            17,
+            18
+          ],
+          "range": [
             [
-              14,
-              [
-                0.1,
-                1.25
-              ]
+              0.1,
+              1.25
             ],
             [
-              16,
-              [
-                0.1,
-                1.6
-              ]
+              0.1,
+              1.25
             ],
             [
-              17,
-              [
-                0.1,
-                1.45
-              ]
+              0.1,
+              1.6
             ],
             [
-              18,
-              [
-                0.1,
-                1.3
-              ]
+              0.1,
+              1.45
+            ],
+            [
+              0.1,
+              1.3
             ]
-          ]
+          ],
+          "type": "interval"
         },
         "line-opacity": "@path-opacity"
       }
@@ -3420,24 +3445,19 @@
         "line-width": "@street-width",
         "line-color": "@road-minor",
         "line-opacity": {
-          "stops": [
-            [
-              11.5,
-              0
-            ],
-            [
-              12,
-              1
-            ],
-            [
-              14,
-              1
-            ],
-            [
-              14.01,
-              0
-            ]
-          ]
+          "domain": [
+            11.5,
+            12,
+            14,
+            14.01
+          ],
+          "range": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -3471,24 +3491,19 @@
         "line-width": "@street-width",
         "line-color": "@road-minor",
         "line-opacity": {
-          "stops": [
-            [
-              11.5,
-              0
-            ],
-            [
-              12,
-              1
-            ],
-            [
-              14,
-              1
-            ],
-            [
-              14.01,
-              0
-            ]
-          ]
+          "domain": [
+            11.5,
+            12,
+            14,
+            14.01
+          ],
+          "range": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -3769,44 +3784,40 @@
         "line-color": "@road-case-dark",
         "line-opacity": "@street-high-opacity",
         "line-dasharray": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "range": [
             [
-              14,
-              [
-                0.4,
-                0.8
-              ]
+              0.4,
+              0.8
             ],
             [
-              15,
-              [
-                0.3,
-                0.6
-              ]
+              0.4,
+              0.8
             ],
             [
-              16,
-              [
-                0.2,
-                0.3
-              ]
+              0.3,
+              0.6
             ],
             [
-              17,
-              [
-                0.2,
-                0.25
-              ]
+              0.2,
+              0.3
             ],
             [
-              18,
-              [
-                0.15,
-                0.15
-              ]
+              0.2,
+              0.25
+            ],
+            [
+              0.15,
+              0.15
             ]
-          ]
+          ],
+          "type": "interval"
         }
       }
     },
@@ -4002,16 +4013,15 @@
         ],
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              13.75,
-              0
-            ],
-            [
-              20,
-              1
-            ]
-          ]
+          "domain": [
+            13.75,
+            20
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -4065,16 +4075,15 @@
         "line-color": "#e2f4c2",
         "line-width": {
           "base": 1,
-          "stops": [
-            [
-              16,
-              1
-            ],
-            [
-              20,
-              3
-            ]
-          ]
+          "domain": [
+            16,
+            20
+          ],
+          "range": [
+            1,
+            3
+          ],
+          "type": "exponential"
         },
         "line-opacity": 1,
         "line-dasharray": [
@@ -4112,16 +4121,15 @@
         "line-color": "@building-shadow",
         "line-width": {
           "base": 1,
-          "stops": [
-            [
-              16,
-              1
-            ],
-            [
-              20,
-              3
-            ]
-          ]
+          "domain": [
+            16,
+            20
+          ],
+          "range": [
+            1,
+            3
+          ],
+          "type": "exponential"
         },
         "line-opacity": 1,
         "line-dasharray": [
@@ -4159,16 +4167,15 @@
         "line-color": "@building-shadow",
         "line-width": {
           "base": 1,
-          "stops": [
-            [
-              16,
-              1
-            ],
-            [
-              20,
-              3
-            ]
-          ]
+          "domain": [
+            16,
+            20
+          ],
+          "range": [
+            1,
+            3
+          ],
+          "type": "exponential"
         },
         "line-opacity": 0.5,
         "line-dasharray": [
@@ -4210,42 +4217,39 @@
       "paint": {
         "line-width": {
           "base": 1,
-          "stops": [
-            [
-              3,
-              3.5
-            ],
-            [
-              10,
-              10
-            ]
-          ]
+          "domain": [
+            3,
+            10
+          ],
+          "range": [
+            3.5,
+            10
+          ],
+          "type": "exponential"
         },
         "line-color": {
           "base": 1,
-          "stops": [
-            [
-              6,
-              "@land"
-            ],
-            [
-              8,
-              "#f6e8e1"
-            ]
-          ]
+          "domain": [
+            6,
+            8
+          ],
+          "range": [
+            "@land",
+            "#f6e8e1"
+          ],
+          "type": "exponential"
         },
         "line-opacity": {
           "base": 1,
-          "stops": [
-            [
-              3,
-              0
-            ],
-            [
-              4,
-              0.5
-            ]
-          ]
+          "domain": [
+            3,
+            4
+          ],
+          "range": [
+            0,
+            0.5
+          ],
+          "type": "exponential"
         },
         "line-translate": [
           0,
@@ -4253,16 +4257,15 @@
         ],
         "line-blur": {
           "base": 1,
-          "stops": [
-            [
-              3,
-              0
-            ],
-            [
-              10,
-              2
-            ]
-          ]
+          "domain": [
+            3,
+            10
+          ],
+          "range": [
+            0,
+            2
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -4294,64 +4297,63 @@
       },
       "paint": {
         "line-dasharray": {
-          "base": 1,
-          "stops": [
-            [
-              6,
-              [
-                2,
-                0
-              ]
-            ],
-            [
-              7,
-              [
-                2,
-                2,
-                6,
-                2
-              ]
-            ]
-          ]
-        },
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              7,
-              0.75
-            ],
-            [
-              12,
-              1.5
-            ]
-          ]
-        },
-        "line-opacity": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            6,
+            7
+          ],
+          "range": [
             [
               2,
               0
             ],
             [
-              3,
-              1
+              2,
+              0
+            ],
+            [
+              2,
+              2,
+              6,
+              2
             ]
-          ]
+          ],
+          "type": "interval"
+        },
+        "line-width": {
+          "base": 1,
+          "domain": [
+            7,
+            12
+          ],
+          "range": [
+            0.75,
+            1.5
+          ],
+          "type": "exponential"
+        },
+        "line-opacity": {
+          "base": 1,
+          "domain": [
+            2,
+            3
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         },
         "line-color": {
           "base": 1,
-          "stops": [
-            [
-              3,
-              "#c3bfcc"
-            ],
-            [
-              7,
-              "#aba8b3"
-            ]
-          ]
+          "domain": [
+            3,
+            7
+          ],
+          "range": [
+            "#c3bfcc",
+            "#aba8b3"
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -4502,34 +4504,35 @@
         "text-max-size": "@country-label-lg-size",
         "text-max-width": {
           "base": 1,
-          "stops": [
-            [
-              0,
-              5
-            ],
-            [
-              3,
-              6
-            ]
-          ]
+          "domain": [
+            0,
+            3
+          ],
+          "range": [
+            5,
+            6
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ]
       },
       "paint": {
         "text-size": "@country-label-lg-size",
         "text-color": "@label-primary",
         "text-halo-color": {
           "base": 1,
-          "stops": [
-            [
-              2,
-              "@country-halo"
-            ],
-            [
-              3,
-              "@halo"
-            ]
-          ]
+          "domain": [
+            2,
+            3
+          ],
+          "range": [
+            "@country-halo",
+            "@halo"
+          ],
+          "type": "exponential"
         },
         "text-halo-width": 1.25
       }
@@ -4553,38 +4556,39 @@
       ],
       "layout": {
         "text-field": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "{code}"
-            ],
-            [
-              2,
-              "{name_en}"
-            ]
-          ]
+          "domain": [
+            0,
+            2
+          ],
+          "range": [
+            "{code}",
+            "{code}",
+            "{name_en}"
+          ],
+          "type": "interval"
         },
         "visibility": "visible",
         "text-max-size": "@country-label-md-size",
         "text-max-width": 6,
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ]
       },
       "paint": {
         "text-size": "@country-label-md-size",
         "text-color": "@label-primary",
         "text-halo-color": {
           "base": 1,
-          "stops": [
-            [
-              2,
-              "@country-halo"
-            ],
-            [
-              3,
-              "@halo"
-            ]
-          ]
+          "domain": [
+            2,
+            3
+          ],
+          "range": [
+            "@country-halo",
+            "@halo"
+          ],
+          "type": "exponential"
         },
         "text-halo-width": 1.25
       }
@@ -4610,23 +4614,25 @@
         "visibility": "visible",
         "text-max-size": "@country-label-sm-size",
         "text-max-width": 6,
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular"
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ]
       },
       "paint": {
         "text-size": "@country-label-sm-size",
         "text-color": "@label-primary",
         "text-halo-color": {
           "base": 1,
-          "stops": [
-            [
-              2,
-              "@country-halo"
-            ],
-            [
-              3,
-              "@halo"
-            ]
-          ]
+          "domain": [
+            2,
+            3
+          ],
+          "range": [
+            "@country-halo",
+            "@halo"
+          ],
+          "type": "exponential"
         },
         "text-halo-width": 1.25
       }
@@ -4652,33 +4658,34 @@
         "text-ignore-placement": false,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              4,
-              10
-            ],
-            [
-              7,
-              18
-            ]
-          ]
+          "domain": [
+            4,
+            7
+          ],
+          "range": [
+            10,
+            18
+          ],
+          "type": "exponential"
         },
         "text-transform": "uppercase",
-        "text-font": "DIN Offc Pro Bold, Arial Unicode MS Bold",
+        "text-font": [
+          "DIN Offc Pro Bold",
+          "Arial Unicode MS Bold"
+        ],
         "text-padding": 1,
         "visibility": "visible",
         "text-field": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "{abbr}"
-            ],
-            [
-              4,
-              "{name_en}"
-            ]
-          ]
+          "domain": [
+            0,
+            4
+          ],
+          "range": [
+            "{abbr}",
+            "{abbr}",
+            "{name_en}"
+          ],
+          "type": "interval"
         },
         "text-letter-spacing": 0.15,
         "text-max-width": 6
@@ -4686,16 +4693,15 @@
       "paint": {
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              4,
-              10
-            ],
-            [
-              7,
-              18
-            ]
-          ]
+          "domain": [
+            4,
+            7
+          ],
+          "range": [
+            10,
+            18
+          ],
+          "type": "exponential"
         },
         "text-opacity": 1,
         "text-color": "@label-state",
@@ -4729,32 +4735,33 @@
         "text-ignore-placement": false,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              5,
-              10
-            ],
-            [
-              8,
-              16
-            ]
-          ]
+          "domain": [
+            5,
+            8
+          ],
+          "range": [
+            10,
+            16
+          ],
+          "type": "exponential"
         },
         "text-transform": "uppercase",
-        "text-font": "DIN Offc Pro Bold, Arial Unicode MS Bold",
+        "text-font": [
+          "DIN Offc Pro Bold",
+          "Arial Unicode MS Bold"
+        ],
         "visibility": "visible",
         "text-field": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "{abbr}"
-            ],
-            [
-              5,
-              "{name_en}"
-            ]
-          ]
+          "domain": [
+            0,
+            5
+          ],
+          "range": [
+            "{abbr}",
+            "{abbr}",
+            "{name_en}"
+          ],
+          "type": "interval"
         },
         "text-letter-spacing": 0.15,
         "text-max-width": 6
@@ -4762,16 +4769,15 @@
       "paint": {
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              5,
-              10
-            ],
-            [
-              8,
-              16
-            ]
-          ]
+          "domain": [
+            5,
+            8
+          ],
+          "range": [
+            10,
+            16
+          ],
+          "type": "exponential"
         },
         "text-opacity": 1,
         "text-color": "@label-state",
@@ -4800,32 +4806,33 @@
         "text-ignore-placement": false,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              6,
-              10
-            ],
-            [
-              9,
-              14
-            ]
-          ]
+          "domain": [
+            6,
+            9
+          ],
+          "range": [
+            10,
+            14
+          ],
+          "type": "exponential"
         },
         "text-transform": "uppercase",
-        "text-font": "DIN Offc Pro Bold, Arial Unicode MS Bold",
+        "text-font": [
+          "DIN Offc Pro Bold",
+          "Arial Unicode MS Bold"
+        ],
         "visibility": "visible",
         "text-field": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "{abbr}"
-            ],
-            [
-              6,
-              "{name_en}"
-            ]
-          ]
+          "domain": [
+            0,
+            6
+          ],
+          "range": [
+            "{abbr}",
+            "{abbr}",
+            "{name_en}"
+          ],
+          "type": "interval"
         },
         "text-letter-spacing": 0.15,
         "text-max-width": 5
@@ -4833,16 +4840,15 @@
       "paint": {
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              6,
-              10
-            ],
-            [
-              9,
-              14
-            ]
-          ]
+          "domain": [
+            6,
+            9
+          ],
+          "range": [
+            10,
+            14
+          ],
+          "type": "exponential"
         },
         "text-opacity": 1,
         "text-color": "@label-state",
@@ -4879,33 +4885,34 @@
         "text-line-height": 1.5,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              1,
-              14
-            ],
-            [
-              4,
-              30
-            ]
-          ]
+          "domain": [
+            1,
+            4
+          ],
+          "range": [
+            14,
+            30
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular"
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ]
       },
       "paint": {
         "text-color": "@label-water",
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              1,
-              14
-            ],
-            [
-              4,
-              30
-            ]
-          ]
+          "domain": [
+            1,
+            4
+          ],
+          "range": [
+            14,
+            30
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -4938,34 +4945,35 @@
         "text-line-height": 1.1,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              1,
-              14
-            ],
-            [
-              4,
-              30
-            ]
-          ]
+          "domain": [
+            1,
+            4
+          ],
+          "range": [
+            14,
+            30
+          ],
+          "type": "exponential"
         },
         "symbol-placement": "line",
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular"
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ]
       },
       "paint": {
         "text-color": "@label-water",
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              1,
-              14
-            ],
-            [
-              4,
-              30
-            ]
-          ]
+          "domain": [
+            1,
+            4
+          ],
+          "range": [
+            14,
+            30
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -4999,33 +5007,34 @@
         "text-line-height": 1.5,
         "text-max-size": {
           "base": 1.1,
-          "stops": [
-            [
-              2,
-              14
-            ],
-            [
-              5,
-              20
-            ]
-          ]
+          "domain": [
+            2,
+            5
+          ],
+          "range": [
+            14,
+            20
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular"
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ]
       },
       "paint": {
         "text-color": "@label-water",
         "text-size": {
           "base": 1.1,
-          "stops": [
-            [
-              2,
-              14
-            ],
-            [
-              5,
-              20
-            ]
-          ]
+          "domain": [
+            2,
+            5
+          ],
+          "range": [
+            14,
+            20
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -5053,29 +5062,31 @@
       ],
       "layout": {
         "text-line-height": 1.1,
-        "symbol-min-distance": 250,
         "text-max-size": 20,
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "line",
         "visibility": "visible",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.15,
-        "text-max-width": 5
+        "text-max-width": 5,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-water",
         "text-size": {
           "base": 1.1,
-          "stops": [
-            [
-              2,
-              12
-            ],
-            [
-              5,
-              20
-            ]
-          ]
+          "domain": [
+            2,
+            5
+          ],
+          "range": [
+            12,
+            20
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -5108,22 +5119,24 @@
         "text-line-height": 1.5,
         "text-max-size": 20,
         "symbol-placement": "point",
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular"
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ]
       },
       "paint": {
         "text-color": "@label-water",
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              3,
-              12
-            ],
-            [
-              6,
-              16
-            ]
-          ]
+          "domain": [
+            3,
+            6
+          ],
+          "range": [
+            12,
+            16
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -5150,41 +5163,42 @@
       ],
       "layout": {
         "text-line-height": 1.1,
-        "symbol-min-distance": {
-          "base": 1,
-          "stops": [
-            [
-              4,
-              100
-            ],
-            [
-              6,
-              400
-            ]
-          ]
-        },
         "text-max-size": 16,
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "line",
         "visibility": "visible",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.1,
-        "text-max-width": 5
+        "text-max-width": 5,
+        "symbol-spacing": {
+          "base": 1,
+          "domain": [
+            4,
+            6
+          ],
+          "range": [
+            100,
+            400
+          ],
+          "type": "exponential"
+        }
       },
       "paint": {
         "text-color": "@label-water",
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              3,
-              12
-            ],
-            [
-              6,
-              16
-            ]
-          ]
+          "domain": [
+            3,
+            6
+          ],
+          "range": [
+            12,
+            16
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -5221,50 +5235,56 @@
         "icon-image": "circle.sdf",
         "text-max-size": "@label-city-lg-size",
         "text-font": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
             [
-              7,
-              "DIN Offc Pro Regular, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
             ],
             [
-              8,
-              "DIN Offc Pro Medium, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
+            ],
+            [
+              "DIN Offc Pro Medium",
+              "Arial Unicode MS Regular"
             ]
-          ]
+          ],
+          "type": "interval"
         },
         "visibility": "visible",
         "text-offset": {
           "base": 1,
-          "stops": [
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
             [
-              7.99,
-              [
-                0,
-                -0.25
-              ]
+              0,
+              -0.25
             ],
             [
-              8,
-              [
-                0,
-                0
-              ]
+              0,
+              0
             ]
-          ]
+          ],
+          "type": "exponential"
         },
         "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              7,
-              "bottom"
-            ],
-            [
-              8,
-              "center"
-            ]
-          ]
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
+            "bottom",
+            "bottom",
+            "center"
+          ],
+          "type": "interval"
         },
         "text-field": "{name_en}",
         "text-max-width": 7,
@@ -5283,16 +5303,15 @@
         "text-halo-width": 1,
         "icon-opacity": {
           "base": 1,
-          "stops": [
-            [
-              7.99,
-              1
-            ],
-            [
-              8,
-              0
-            ]
-          ]
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
+            1,
+            0
+          ],
+          "type": "exponential"
         },
         "text-halo-blur": 1
       }
@@ -5330,50 +5349,56 @@
         "icon-image": "circle.sdf",
         "text-max-size": "@label-city-lg-size",
         "text-font": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
             [
-              7,
-              "DIN Offc Pro Regular, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
             ],
             [
-              8,
-              "DIN Offc Pro Medium, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
+            ],
+            [
+              "DIN Offc Pro Medium",
+              "Arial Unicode MS Regular"
             ]
-          ]
+          ],
+          "type": "interval"
         },
         "visibility": "visible",
         "text-offset": {
           "base": 1,
-          "stops": [
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
             [
-              7.99,
-              [
-                0,
-                0.15
-              ]
+              0,
+              0.15
             ],
             [
-              8,
-              [
-                0,
-                0
-              ]
+              0,
+              0
             ]
-          ]
+          ],
+          "type": "exponential"
         },
         "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              7,
-              "top"
-            ],
-            [
-              8,
-              "center"
-            ]
-          ]
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
+            "top",
+            "top",
+            "center"
+          ],
+          "type": "interval"
         },
         "text-field": "{name_en}",
         "text-max-width": 7,
@@ -5391,16 +5416,15 @@
         "text-halo-width": 1,
         "icon-opacity": {
           "base": 1,
-          "stops": [
-            [
-              7.99,
-              1
-            ],
-            [
-              8,
-              0
-            ]
-          ]
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
+            1,
+            0
+          ],
+          "type": "exponential"
         },
         "text-halo-blur": 1
       }
@@ -5440,50 +5464,56 @@
         "icon-image": "circle.sdf",
         "text-max-size": "@label-city-md-size",
         "text-font": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
             [
-              7,
-              "DIN Offc Pro Regular, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
             ],
             [
-              8,
-              "DIN Offc Pro Medium, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
+            ],
+            [
+              "DIN Offc Pro Medium",
+              "Arial Unicode MS Regular"
             ]
-          ]
+          ],
+          "type": "interval"
         },
         "visibility": "visible",
         "text-offset": {
           "base": 1,
-          "stops": [
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
             [
-              7.99,
-              [
-                0,
-                -0.25
-              ]
+              0,
+              -0.25
             ],
             [
-              8,
-              [
-                0,
-                0
-              ]
+              0,
+              0
             ]
-          ]
+          ],
+          "type": "exponential"
         },
         "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              7,
-              "bottom"
-            ],
-            [
-              8,
-              "center"
-            ]
-          ]
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
+            "bottom",
+            "bottom",
+            "center"
+          ],
+          "type": "interval"
         },
         "text-field": "{name_en}",
         "text-max-width": 7,
@@ -5501,16 +5531,15 @@
         "text-halo-width": 1,
         "icon-opacity": {
           "base": 1,
-          "stops": [
-            [
-              7.99,
-              1
-            ],
-            [
-              8,
-              0
-            ]
-          ]
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
+            1,
+            0
+          ],
+          "type": "exponential"
         },
         "text-halo-blur": 1
       }
@@ -5551,51 +5580,57 @@
         "text-field": "{name_en}",
         "icon-image": "circle.sdf",
         "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              7,
-              "top"
-            ],
-            [
-              8,
-              "center"
-            ]
-          ]
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
+            "top",
+            "top",
+            "center"
+          ],
+          "type": "interval"
         },
         "text-offset": {
           "base": 1,
-          "stops": [
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
             [
-              7.99,
-              [
-                0,
-                0.1
-              ]
+              0,
+              0.1
             ],
             [
-              8,
-              [
-                0,
-                0
-              ]
+              0,
+              0
             ]
-          ]
+          ],
+          "type": "exponential"
         },
         "icon-max-size": 0.35,
         "text-max-size": "@label-city-md-size",
         "text-font": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
             [
-              7,
-              "DIN Offc Pro Regular, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
             ],
             [
-              8,
-              "DIN Offc Pro Medium, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
+            ],
+            [
+              "DIN Offc Pro Medium",
+              "Arial Unicode MS Regular"
             ]
-          ]
+          ],
+          "type": "interval"
         }
       },
       "paint": {
@@ -5608,16 +5643,15 @@
         "icon-color": "@label-primary",
         "icon-opacity": {
           "base": 1,
-          "stops": [
-            [
-              7.99,
-              1
-            ],
-            [
-              8,
-              0
-            ]
-          ]
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
+            1,
+            0
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -5651,63 +5685,68 @@
         "icon-image": "circle.sdf",
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              6,
-              12
-            ],
-            [
-              14,
-              22
-            ]
-          ]
+          "domain": [
+            6,
+            14
+          ],
+          "range": [
+            12,
+            22
+          ],
+          "type": "exponential"
         },
         "text-transform": "none",
         "text-font": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
             [
-              7,
-              "DIN Offc Pro Regular, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
             ],
             [
-              8,
-              "DIN Offc Pro Medium, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
+            ],
+            [
+              "DIN Offc Pro Medium",
+              "Arial Unicode MS Regular"
             ]
-          ]
+          ],
+          "type": "interval"
         },
         "visibility": "visible",
         "text-offset": {
           "base": 1,
-          "stops": [
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
             [
-              7.99,
-              [
-                0,
-                -0.2
-              ]
+              0,
+              -0.2
             ],
             [
-              8,
-              [
-                0,
-                0
-              ]
+              0,
+              0
             ]
-          ]
+          ],
+          "type": "exponential"
         },
         "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              7,
-              "bottom"
-            ],
-            [
-              8,
-              "center"
-            ]
-          ]
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
+            "bottom",
+            "bottom",
+            "center"
+          ],
+          "type": "interval"
         },
         "text-field": "{name_en}",
         "text-max-width": 7,
@@ -5716,16 +5755,15 @@
       "paint": {
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              6,
-              12
-            ],
-            [
-              14,
-              22
-            ]
-          ]
+          "domain": [
+            6,
+            14
+          ],
+          "range": [
+            12,
+            22
+          ],
+          "type": "exponential"
         },
         "text-color": "@label-primary",
         "icon-halo-blur": 1,
@@ -5737,16 +5775,15 @@
         "text-halo-width": 1.25,
         "icon-opacity": {
           "base": 1,
-          "stops": [
-            [
-              7.99,
-              1
-            ],
-            [
-              8,
-              0
-            ]
-          ]
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
+            1,
+            0
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -5769,11 +5806,13 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": 14,
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 2,
         "visibility": "visible",
@@ -5786,7 +5825,8 @@
         "text-anchor": "center",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 7
+        "text-max-width": 7,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-poi",
@@ -5794,16 +5834,15 @@
         "text-halo-width": 1,
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              10,
-              11
-            ],
-            [
-              18,
-              16
-            ]
-          ]
+          "domain": [
+            10,
+            18
+          ],
+          "range": [
+            11,
+            16
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -5827,62 +5866,67 @@
         "icon-image": "circle.sdf",
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              7,
-              11.5
-            ],
-            [
-              15,
-              20
-            ]
-          ]
+          "domain": [
+            7,
+            15
+          ],
+          "range": [
+            11.5,
+            20
+          ],
+          "type": "exponential"
         },
         "text-font": {
-          "base": 1,
-          "stops": [
+          "domain": [
+            11,
+            12
+          ],
+          "range": [
             [
-              11,
-              "DIN Offc Pro Regular, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
             ],
             [
-              12,
-              "DIN Offc Pro Medium, Arial Unicode MS Regular"
+              "DIN Offc Pro Regular",
+              "Arial Unicode MS Regular"
+            ],
+            [
+              "DIN Offc Pro Medium",
+              "Arial Unicode MS Regular"
             ]
-          ]
+          ],
+          "type": "interval"
         },
         "visibility": "visible",
         "text-offset": {
           "base": 1,
-          "stops": [
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
             [
-              7,
-              [
-                0,
-                -0.15
-              ]
+              0,
+              -0.15
             ],
             [
-              8,
-              [
-                0,
-                0
-              ]
+              0,
+              0
             ]
-          ]
+          ],
+          "type": "exponential"
         },
         "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              7,
-              "bottom"
-            ],
-            [
-              8,
-              "center"
-            ]
-          ]
+          "domain": [
+            7,
+            8
+          ],
+          "range": [
+            "bottom",
+            "bottom",
+            "center"
+          ],
+          "type": "interval"
         },
         "text-field": "{name_en}",
         "text-max-width": 7,
@@ -5891,16 +5935,15 @@
       "paint": {
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              7,
-              11.5
-            ],
-            [
-              15,
-              20
-            ]
-          ]
+          "domain": [
+            7,
+            15
+          ],
+          "range": [
+            11.5,
+            20
+          ],
+          "type": "exponential"
         },
         "text-color": "@label-primary",
         "icon-halo-blur": 1,
@@ -5912,16 +5955,15 @@
         "text-halo-width": 1.25,
         "icon-opacity": {
           "base": 1,
-          "stops": [
-            [
-              7.99,
-              1
-            ],
-            [
-              8,
-              0
-            ]
-          ]
+          "domain": [
+            7.99,
+            8
+          ],
+          "range": [
+            1,
+            0
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -5946,33 +5988,34 @@
         "text-field": "{name_en}",
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              10,
-              11.5
-            ],
-            [
-              16,
-              18
-            ]
-          ]
+          "domain": [
+            10,
+            16
+          ],
+          "range": [
+            11.5,
+            18
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
         "text-max-width": 7
       },
       "paint": {
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              10,
-              11.5
-            ],
-            [
-              16,
-              18
-            ]
-          ]
+          "domain": [
+            10,
+            16
+          ],
+          "range": [
+            11.5,
+            18
+          ],
+          "type": "exponential"
         },
         "text-halo-color": "@halo",
         "text-halo-width": 1.25,
@@ -6000,32 +6043,33 @@
         "text-field": "{name_en}",
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              12,
-              11.5
-            ],
-            [
-              15,
-              16
-            ]
-          ]
+          "domain": [
+            12,
+            15
+          ],
+          "range": [
+            11.5,
+            16
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular"
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ]
       },
       "paint": {
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              12,
-              11.5
-            ],
-            [
-              15,
-              16
-            ]
-          ]
+          "domain": [
+            12,
+            15
+          ],
+          "range": [
+            11.5,
+            16
+          ],
+          "type": "exponential"
         },
         "text-halo-color": "@halo",
         "text-halo-width": 1.25,
@@ -6054,18 +6098,20 @@
         "text-transform": "uppercase",
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              11,
-              11
-            ],
-            [
-              15,
-              18
-            ]
-          ]
+          "domain": [
+            11,
+            15
+          ],
+          "range": [
+            11,
+            18
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
         "text-letter-spacing": 0.15,
         "text-max-width": 7,
         "text-padding": 3
@@ -6073,16 +6119,15 @@
       "paint": {
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              11,
-              11
-            ],
-            [
-              15,
-              18
-            ]
-          ]
+          "domain": [
+            11,
+            15
+          ],
+          "range": [
+            11,
+            18
+          ],
+          "type": "exponential"
         },
         "text-halo-color": "rgba(255,255,255, 0.5)",
         "text-halo-width": 1.75,
@@ -6110,36 +6155,37 @@
         "text-field": "{name_en}",
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              12,
-              11
-            ],
-            [
-              16,
-              16
-            ]
-          ]
+          "domain": [
+            12,
+            16
+          ],
+          "range": [
+            11,
+            16
+          ],
+          "type": "exponential"
         },
         "text-transform": "uppercase",
         "text-letter-spacing": 0.1,
         "text-max-width": 7,
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
         "text-padding": 3
       },
       "paint": {
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              12,
-              11
-            ],
-            [
-              16,
-              16
-            ]
-          ]
+          "domain": [
+            12,
+            16
+          ],
+          "range": [
+            11,
+            16
+          ],
+          "type": "exponential"
         },
         "text-halo-color": "rgba(255,255,255, 0.5)",
         "text-halo-width": 1.75,
@@ -6166,23 +6212,24 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              10,
-              11
-            ],
-            [
-              14,
-              16
-            ]
-          ]
+          "domain": [
+            10,
+            14
+          ],
+          "range": [
+            11,
+            16
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 2,
         "visibility": "visible",
@@ -6195,7 +6242,8 @@
         "text-anchor": "center",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-poi",
@@ -6203,16 +6251,15 @@
         "text-halo-width": 1,
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              10,
-              11
-            ],
-            [
-              14,
-              16
-            ]
-          ]
+          "domain": [
+            10,
+            14
+          ],
+          "range": [
+            11,
+            16
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -6241,73 +6288,74 @@
       ],
       "layout": {
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": {
-          "stops": [
-            [
-              12,
-              "{maki}-11"
-            ],
-            [
-              13,
-              "{maki}-15"
-            ]
-          ]
+          "domain": [
+            12,
+            13
+          ],
+          "range": [
+            "{maki}-11",
+            "{maki}-11",
+            "{maki}-15"
+          ],
+          "type": "interval"
         },
         "text-ignore-placement": false,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              10,
-              12
-            ],
-            [
-              18,
-              18
-            ]
-          ]
+          "domain": [
+            10,
+            18
+          ],
+          "range": [
+            12,
+            18
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 2,
         "visibility": "visible",
         "text-offset": {
           "base": 1,
-          "stops": [
+          "domain": [
+            12,
+            13
+          ],
+          "range": [
             [
-              12,
-              [
-                0,
-                1
-              ]
+              0,
+              1
             ],
             [
-              13,
-              [
-                0,
-                1.25
-              ]
+              0,
+              1.25
             ]
-          ]
+          ],
+          "type": "exponential"
         },
         "icon-optional": false,
         "text-rotation-alignment": "viewport",
         "text-anchor": "top",
         "text-field": {
-          "stops": [
-            [
-              12,
-              "{ref}"
-            ],
-            [
-              13,
-              "{name_en}"
-            ]
-          ]
+          "domain": [
+            12,
+            13
+          ],
+          "range": [
+            "{ref}",
+            "{ref}",
+            "{name_en}"
+          ],
+          "type": "interval"
         },
         "text-letter-spacing": 0.02,
-        "text-max-width": 9
+        "text-max-width": 9,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-transit",
@@ -6315,16 +6363,15 @@
         "text-halo-width": 1.25,
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              10,
-              12
-            ],
-            [
-              18,
-              18
-            ]
-          ]
+          "domain": [
+            10,
+            18
+          ],
+          "range": [
+            12,
+            18
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -6370,23 +6417,25 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": {
-          "stops": [
-            [
-              13,
-              "{maki}-11"
-            ],
-            [
-              14,
-              "{maki}-15"
-            ]
-          ]
+          "domain": [
+            13,
+            14
+          ],
+          "range": [
+            "{maki}-11",
+            "{maki}-11",
+            "{maki}-15"
+          ],
+          "type": "interval"
         },
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": "@poi-scalerank1",
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 2,
         "visibility": "visible",
@@ -6399,7 +6448,8 @@
         "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-poi",
@@ -6438,23 +6488,25 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": {
-          "stops": [
-            [
-              13,
-              "{maki}-11"
-            ],
-            [
-              14,
-              "{maki}-15"
-            ]
-          ]
+          "domain": [
+            13,
+            14
+          ],
+          "range": [
+            "{maki}-11",
+            "{maki}-11",
+            "{maki}-15"
+          ],
+          "type": "interval"
         },
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": "@poi-scalerank1",
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 2,
         "visibility": "visible",
@@ -6467,7 +6519,8 @@
         "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-park",
@@ -6496,36 +6549,37 @@
       "layout": {
         "text-field": "{name_en}",
         "visibility": "visible",
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ],
         "text-max-width": 7,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              13,
-              13
-            ],
-            [
-              18,
-              18
-            ]
-          ]
+          "domain": [
+            13,
+            18
+          ],
+          "range": [
+            13,
+            18
+          ],
+          "type": "exponential"
         }
       },
       "paint": {
         "text-halo-width": 0,
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              13,
-              13
-            ],
-            [
-              18,
-              18
-            ]
-          ]
+          "domain": [
+            13,
+            18
+          ],
+          "range": [
+            13,
+            18
+          ],
+          "type": "exponential"
         },
         "text-halo-color": "@halo",
         "text-color": "@label-water-dark",
@@ -6551,36 +6605,37 @@
       "layout": {
         "text-field": "{name_en}",
         "visibility": "visible",
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ],
         "text-max-width": 7,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              16,
-              13
-            ],
-            [
-              20,
-              16
-            ]
-          ]
+          "domain": [
+            16,
+            20
+          ],
+          "range": [
+            13,
+            16
+          ],
+          "type": "exponential"
         }
       },
       "paint": {
         "text-halo-width": 0,
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              16,
-              13
-            ],
-            [
-              20,
-              16
-            ]
-          ]
+          "domain": [
+            16,
+            20
+          ],
+          "range": [
+            13,
+            16
+          ],
+          "type": "exponential"
         },
         "text-halo-color": "@halo",
         "text-color": "@label-water-dark",
@@ -6604,31 +6659,28 @@
         ]
       ],
       "layout": {
-        "symbol-min-distance": 250,
         "icon-image": "{network}-11",
         "symbol-avoid-edges": true,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              13,
-              6
-            ],
-            [
-              14,
-              11
-            ],
-            [
-              16,
-              11
-            ],
-            [
-              20,
-              13
-            ]
-          ]
+          "domain": [
+            13,
+            14,
+            16,
+            20
+          ],
+          "range": [
+            6,
+            11,
+            11,
+            13
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "icon-allow-overlap": false,
         "symbol-placement": "point",
         "text-justify": "center",
@@ -6640,21 +6692,21 @@
         "text-rotation-alignment": "viewport",
         "text-anchor": "top",
         "text-field": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              ""
-            ],
-            [
-              13,
-              "{name_en}"
-            ]
-          ]
+          "domain": [
+            0,
+            13
+          ],
+          "range": [
+            "",
+            "",
+            "{name_en}"
+          ],
+          "type": "interval"
         },
         "text-letter-spacing": 0.02,
         "icon-padding": 0,
-        "text-max-width": 7
+        "text-max-width": 7,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-poi",
@@ -6665,16 +6717,15 @@
         "icon-halo-color": "#fff",
         "text-opacity": {
           "base": 1,
-          "stops": [
-            [
-              13.99,
-              0
-            ],
-            [
-              14,
-              1
-            ]
-          ]
+          "domain": [
+            13.99,
+            14
+          ],
+          "range": [
+            0,
+            1
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -6708,23 +6759,25 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": {
-          "stops": [
-            [
-              14,
-              "{maki}-11"
-            ],
-            [
-              15,
-              "{maki}-15"
-            ]
-          ]
+          "domain": [
+            14,
+            15
+          ],
+          "range": [
+            "{maki}-11",
+            "{maki}-11",
+            "{maki}-15"
+          ],
+          "type": "interval"
         },
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": "@poi-scalerank2",
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 2,
         "visibility": "visible",
@@ -6737,7 +6790,8 @@
         "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-park",
@@ -6783,23 +6837,25 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": {
-          "stops": [
-            [
-              14,
-              "{maki}-11"
-            ],
-            [
-              15,
-              "{maki}-15"
-            ]
-          ]
+          "domain": [
+            14,
+            15
+          ],
+          "range": [
+            "{maki}-11",
+            "{maki}-11",
+            "{maki}-15"
+          ],
+          "type": "interval"
         },
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": "@poi-scalerank2",
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 2,
         "visibility": "visible",
@@ -6812,7 +6868,8 @@
         "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-poi",
@@ -6846,26 +6903,27 @@
       ],
       "layout": {
         "text-allow-overlap": false,
-        "symbol-min-distance": 1000,
         "icon-image": "{shield}-{reflen}-small",
         "icon-rotation-alignment": "viewport",
         "symbol-avoid-edges": false,
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": 9,
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              "point"
-            ],
-            [
-              11,
-              "line"
-            ]
-          ]
+          "domain": [
+            10,
+            11
+          ],
+          "range": [
+            "point",
+            "point",
+            "line"
+          ],
+          "type": "interval"
         },
         "text-padding": 2,
         "visibility": "visible",
@@ -6874,17 +6932,17 @@
         "text-letter-spacing": 0.05,
         "icon-padding": {
           "base": 0.7,
-          "stops": [
-            [
-              6,
-              2
-            ],
-            [
-              14,
-              20
-            ]
-          ]
-        }
+          "domain": [
+            6,
+            14
+          ],
+          "range": [
+            2,
+            20
+          ],
+          "type": "exponential"
+        },
+        "symbol-spacing": 1000
       },
       "paint": {
         "text-size": 9,
@@ -6922,26 +6980,27 @@
       ],
       "layout": {
         "text-allow-overlap": false,
-        "symbol-min-distance": 1000,
         "icon-image": "{shield}-{reflen}-small",
         "icon-rotation-alignment": "viewport",
         "symbol-avoid-edges": false,
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": 9,
-        "text-font": "DIN Offc Pro Bold, Arial Unicode MS Bold",
+        "text-font": [
+          "DIN Offc Pro Bold",
+          "Arial Unicode MS Bold"
+        ],
         "symbol-placement": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              "point"
-            ],
-            [
-              11,
-              "line"
-            ]
-          ]
+          "domain": [
+            10,
+            11
+          ],
+          "range": [
+            "point",
+            "point",
+            "line"
+          ],
+          "type": "interval"
         },
         "text-padding": 2,
         "visibility": "visible",
@@ -6950,17 +7009,17 @@
         "text-letter-spacing": 0.05,
         "icon-padding": {
           "base": 1,
-          "stops": [
-            [
-              6,
-              2
-            ],
-            [
-              14,
-              20
-            ]
-          ]
-        }
+          "domain": [
+            6,
+            14
+          ],
+          "range": [
+            2,
+            20
+          ],
+          "type": "exponential"
+        },
+        "symbol-spacing": 1000
       },
       "paint": {
         "text-size": 9,
@@ -6992,29 +7051,31 @@
       ],
       "layout": {
         "text-allow-overlap": false,
-        "symbol-min-distance": 500,
         "text-ignore-placement": false,
         "text-max-angle": 30,
         "text-max-size": {
           "base": 1,
-          "stops": [
-            [
-              9,
-              10
-            ],
-            [
-              20,
-              16
-            ]
-          ]
+          "domain": [
+            9,
+            20
+          ],
+          "range": [
+            10,
+            16
+          ],
+          "type": "exponential"
         },
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "line",
         "text-padding": 1,
         "visibility": "visible",
         "text-rotation-alignment": "map",
         "text-field": "{name_en}",
-        "text-letter-spacing": 0.01
+        "text-letter-spacing": 0.01,
+        "symbol-spacing": 500
       },
       "paint": {
         "text-color": "@label-road",
@@ -7022,16 +7083,15 @@
         "text-halo-width": 1,
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              9,
-              10
-            ],
-            [
-              20,
-              16
-            ]
-          ]
+          "domain": [
+            9,
+            20
+          ],
+          "range": [
+            10,
+            16
+          ],
+          "type": "exponential"
         },
         "text-halo-blur": 1
       }
@@ -7059,15 +7119,18 @@
         ]
       ],
       "layout": {
-        "symbol-min-distance": 500,
         "text-max-angle": 30,
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "line",
         "text-padding": 1,
         "visibility": "visible",
         "text-rotation-alignment": "map",
         "text-field": "{name_en}",
-        "text-letter-spacing": 0.01
+        "text-letter-spacing": 0.01,
+        "symbol-spacing": 500
       },
       "paint": {
         "text-color": "@label-road",
@@ -7075,16 +7138,15 @@
         "text-halo-width": 1,
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              11,
-              10
-            ],
-            [
-              20,
-              14
-            ]
-          ]
+          "domain": [
+            11,
+            20
+          ],
+          "range": [
+            10,
+            14
+          ],
+          "type": "exponential"
         }
       }
     },
@@ -7113,17 +7175,20 @@
         ]
       ],
       "layout": {
-        "symbol-min-distance": 500,
         "text-ignore-placement": false,
         "text-max-angle": 30,
         "text-max-size": 12,
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "line",
         "text-padding": 1,
         "visibility": "visible",
         "text-rotation-alignment": "map",
         "text-field": "{name_en}",
-        "text-letter-spacing": 0.01
+        "text-letter-spacing": 0.01,
+        "symbol-spacing": 500
       },
       "paint": {
         "text-color": "@label-road",
@@ -7131,16 +7196,15 @@
         "text-halo-width": 1.25,
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              15,
-              10
-            ],
-            [
-              20,
-              13
-            ]
-          ]
+          "domain": [
+            15,
+            20
+          ],
+          "range": [
+            10,
+            13
+          ],
+          "type": "exponential"
         },
         "text-halo-blur": 1
       }
@@ -7172,12 +7236,14 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": "{maki}-11",
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": "@poi-scalerank3",
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 2,
         "visibility": "visible",
@@ -7190,7 +7256,8 @@
         "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-park",
@@ -7236,12 +7303,14 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": "{maki}-11",
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": "@poi-scalerank3",
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 1,
         "visibility": "visible",
@@ -7254,7 +7323,8 @@
         "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-poi",
@@ -7292,12 +7362,14 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": "{maki}-11",
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": "@poi-scalerank4",
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 1,
         "visibility": "visible",
@@ -7310,7 +7382,8 @@
         "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-park",
@@ -7361,12 +7434,14 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": "{maki}-11",
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": "@poi-scalerank4",
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 1,
         "visibility": "visible",
@@ -7379,7 +7454,8 @@
         "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-poi",
@@ -7430,12 +7506,14 @@
       "layout": {
         "text-line-height": 1.2,
         "text-allow-overlap": false,
-        "symbol-min-distance": 250,
         "icon-image": "{maki}-11",
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-max-size": "@poi-scalerank4",
-        "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-padding": 2,
         "visibility": "visible",
@@ -7448,7 +7526,8 @@
         "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.02,
-        "text-max-width": 8
+        "text-max-width": 8,
+        "symbol-spacing": 250
       },
       "paint": {
         "text-color": "@label-poi",
@@ -7476,7 +7555,10 @@
       "layout": {
         "text-field": "{name_en}",
         "visibility": "visible",
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "line",
         "text-max-angle": 30
       },
@@ -7484,16 +7566,15 @@
         "text-halo-width": 0.5,
         "text-size": {
           "base": 1,
-          "stops": [
-            [
-              13,
-              12
-            ],
-            [
-              18,
-              16
-            ]
-          ]
+          "domain": [
+            13,
+            18
+          ],
+          "range": [
+            12,
+            16
+          ],
+          "type": "exponential"
         },
         "text-halo-color": "@halo",
         "text-color": "@label-water-dark",
@@ -7523,7 +7604,10 @@
         "text-max-angle": 25,
         "visibility": "visible",
         "text-padding": 5,
-        "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular"
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ]
       },
       "paint": {
         "text-size": 9.5,
@@ -7544,7 +7628,10 @@
       "layout": {
         "visibility": "visible",
         "text-field": "{house_num}",
-        "text-font": "DIN Offc Pro Italic, Arial Unicode MS Regular",
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ],
         "symbol-placement": "point",
         "text-max-size": 9.5,
         "text-padding": 4,
@@ -7589,22 +7676,21 @@
         ]
       ],
       "layout": {
-        "symbol-min-distance": 250,
         "symbol-placement": "line",
         "icon-image": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              "oneway-spaced-white-small"
-            ],
-            [
-              17,
-              "oneway-spaced-white-large"
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            "oneway-spaced-white-small",
+            "oneway-spaced-white-small",
+            "oneway-spaced-white-large"
+          ],
+          "type": "interval"
         },
-        "icon-ignore-placement": false
+        "icon-ignore-placement": false,
+        "symbol-spacing": 250
       },
       "paint": {}
     },
@@ -7637,22 +7723,21 @@
         ]
       ],
       "layout": {
-        "symbol-min-distance": 250,
         "symbol-placement": "line",
         "icon-image": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              "oneway-spaced-small"
-            ],
-            [
-              17,
-              "oneway-spaced-large"
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            "oneway-spaced-small",
+            "oneway-spaced-small",
+            "oneway-spaced-large"
+          ],
+          "type": "interval"
         },
-        "icon-ignore-placement": false
+        "icon-ignore-placement": false,
+        "symbol-spacing": 250
       },
       "paint": {}
     },
@@ -7687,23 +7772,22 @@
         ]
       ],
       "layout": {
-        "symbol-min-distance": 250,
         "symbol-placement": "line",
         "icon-image": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              "oneway-spaced-white-small"
-            ],
-            [
-              17,
-              "oneway-spaced-white-large"
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            "oneway-spaced-white-small",
+            "oneway-spaced-white-small",
+            "oneway-spaced-white-large"
+          ],
+          "type": "interval"
         },
         "icon-ignore-placement": false,
-        "icon-padding": 2
+        "icon-padding": 2,
+        "symbol-spacing": 250
       },
       "paint": {}
     },
@@ -7736,24 +7820,23 @@
         ]
       ],
       "layout": {
-        "symbol-min-distance": 250,
         "symbol-placement": "line",
         "icon-image": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              "oneway-spaced-small"
-            ],
-            [
-              17,
-              "oneway-spaced-large"
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            "oneway-spaced-small",
+            "oneway-spaced-small",
+            "oneway-spaced-large"
+          ],
+          "type": "interval"
         },
         "icon-ignore-placement": false,
         "icon-rotation-alignment": "map",
-        "icon-padding": 2
+        "icon-padding": 2,
+        "symbol-spacing": 250
       },
       "paint": {}
     },
@@ -7788,22 +7871,21 @@
         ]
       ],
       "layout": {
-        "symbol-min-distance": 250,
         "symbol-placement": "line",
         "icon-image": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              "oneway-spaced-white-small"
-            ],
-            [
-              17,
-              "oneway-spaced-white-large"
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            "oneway-spaced-white-small",
+            "oneway-spaced-white-small",
+            "oneway-spaced-white-large"
+          ],
+          "type": "interval"
         },
-        "icon-ignore-placement": false
+        "icon-ignore-placement": false,
+        "symbol-spacing": 250
       },
       "paint": {}
     },
@@ -7836,22 +7918,21 @@
         ]
       ],
       "layout": {
-        "symbol-min-distance": 250,
         "symbol-placement": "line",
         "icon-image": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              "oneway-spaced-small"
-            ],
-            [
-              17,
-              "oneway-spaced-large"
-            ]
-          ]
+          "domain": [
+            16,
+            17
+          ],
+          "range": [
+            "oneway-spaced-small",
+            "oneway-spaced-small",
+            "oneway-spaced-large"
+          ],
+          "type": "interval"
         },
-        "icon-ignore-placement": false
+        "icon-ignore-placement": false,
+        "symbol-spacing": 250
       },
       "paint": {}
     }
