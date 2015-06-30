@@ -1827,14 +1827,9 @@
         },
         "line-dasharray": {
           "domain": [
-            4,
             5
           ],
           "range": [
-            [
-              2,
-              0
-            ],
             [
               2,
               0
@@ -1959,11 +1954,9 @@
       "layout": {
         "text-field": {
           "domain": [
-            0,
             2
           ],
           "range": [
-            "{code}",
             "{code}",
             "{name_en}"
           ],
@@ -2080,11 +2073,9 @@
         "visibility": "visible",
         "text-field": {
           "domain": [
-            0,
             4
           ],
           "range": [
-            "{abbr}",
             "{abbr}",
             "{name_en}"
           ],
@@ -2552,11 +2543,9 @@
         "text-transform": "none",
         "text-anchor": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "bottom",
             "bottom",
             "center"
           ],
@@ -2636,11 +2625,9 @@
         "text-transform": "none",
         "text-anchor": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "top",
             "top",
             "center"
           ],
@@ -2726,11 +2713,9 @@
         "text-max-size": 19,
         "text-anchor": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "bottom",
             "bottom",
             "center"
           ],
@@ -2816,11 +2801,9 @@
         "text-max-size": 19,
         "text-anchor": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "top",
             "top",
             "center"
           ],
@@ -2901,11 +2884,9 @@
         "text-max-size": 19,
         "text-anchor": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "bottom",
             "bottom",
             "center"
           ],
@@ -2985,11 +2966,9 @@
         "text-max-size": 19,
         "text-anchor": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "top",
             "top",
             "center"
           ],
@@ -3314,11 +3293,9 @@
         "visibility": "visible",
         "text-field": {
           "domain": [
-            10,
             13
           ],
           "range": [
-            "{name_en}",
             "{name_en}",
             ""
           ],

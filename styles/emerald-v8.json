@@ -1600,11 +1600,9 @@
         "visibility": "visible",
         "text-field": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "{abbr}",
             "{abbr}",
             "{name}"
           ],
@@ -3985,11 +3983,9 @@
         "text-allow-overlap": false,
         "icon-image": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "dot",
             "dot",
             ""
           ],
@@ -4037,11 +4033,9 @@
         "text-rotation-alignment": "viewport",
         "text-anchor": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "top",
             "top",
             "center"
           ],
@@ -4119,11 +4113,9 @@
         "text-allow-overlap": false,
         "icon-image": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "dot",
             "dot",
             ""
           ],
@@ -4145,14 +4137,9 @@
         },
         "text-font": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            [
-              "Open Sans Regular",
-              "Arial Unicode MS Regular"
-            ],
             [
               "Open Sans Regular",
               "Arial Unicode MS Regular"
@@ -4188,11 +4175,9 @@
         "text-rotation-alignment": "viewport",
         "text-anchor": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "top",
             "top",
             "center"
           ],
@@ -4276,14 +4261,9 @@
         },
         "text-font": {
           "domain": [
-            0,
             9
           ],
           "range": [
-            [
-              "Open Sans Regular",
-              "Arial Unicode MS Regular"
-            ],
             [
               "Open Sans Regular",
               "Arial Unicode MS Regular"
@@ -4381,14 +4361,9 @@
         },
         "text-font": {
           "domain": [
-            0,
             12
           ],
           "range": [
-            [
-              "Open Sans Regular",
-              "Arial Unicode MS Regular"
-            ],
             [
               "Open Sans Regular",
               "Arial Unicode MS Regular"
@@ -4657,11 +4632,9 @@
         "text-anchor": "top",
         "text-field": {
           "domain": [
-            0,
             11
           ],
           "range": [
-            "{ref}",
             "{ref}",
             "{name}"
           ],
@@ -4754,11 +4727,9 @@
         "text-anchor": "top",
         "text-field": {
           "domain": [
-            0,
             14
           ],
           "range": [
-            "",
             "",
             "{name}"
           ],
@@ -4769,11 +4740,9 @@
         "text-max-width": 5.2,
         "icon-ignore-placement": {
           "domain": [
-            0,
             13
           ],
           "range": [
-            false,
             false,
             false
           ],
@@ -4881,11 +4850,9 @@
         "text-anchor": "top",
         "text-field": {
           "domain": [
-            0,
             14
           ],
           "range": [
-            "",
             "",
             "{name_en}"
           ],
@@ -4896,11 +4863,9 @@
         "text-max-width": 5.2,
         "icon-ignore-placement": {
           "domain": [
-            0,
             13
           ],
           "range": [
-            true,
             true,
             false
           ],
@@ -5006,11 +4971,9 @@
         "text-anchor": "top",
         "text-field": {
           "domain": [
-            0,
             14
           ],
           "range": [
-            "",
             "",
             "{name_en}"
           ],

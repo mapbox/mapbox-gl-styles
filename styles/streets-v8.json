@@ -1370,11 +1370,9 @@
         "visibility": "visible",
         "line-cap": {
           "domain": [
-            0,
             11
           ],
           "range": [
-            "butt",
             "butt",
             "round"
           ],
@@ -1529,11 +1527,9 @@
         },
         "fill-pattern": {
           "domain": [
-            13,
             14
           ],
           "range": [
-            "marsh-16",
             "marsh-16",
             "marsh-32"
           ],
@@ -1985,16 +1981,11 @@
         "line-width": "@path-width",
         "line-dasharray": {
           "domain": [
-            15,
             16,
             17,
             18
           ],
           "range": [
-            [
-              0.1,
-              1.25
-            ],
             [
               0.1,
               1.25
@@ -2416,17 +2407,12 @@
         "line-opacity": "@street-high-opacity",
         "line-dasharray": {
           "domain": [
-            14,
             15,
             16,
             17,
             18
           ],
           "range": [
-            [
-              0.4,
-              0.8
-            ],
             [
               0.4,
               0.8
@@ -2634,16 +2620,11 @@
         "line-color": "@road-minor",
         "line-dasharray": {
           "domain": [
-            15,
             16,
             17,
             18
           ],
           "range": [
-            [
-              0.1,
-              1.25
-            ],
             [
               0.1,
               1.25
@@ -3144,17 +3125,12 @@
         "line-opacity": "@street-high-opacity",
         "line-dasharray": {
           "domain": [
-            14,
             15,
             16,
             17,
             18
           ],
           "range": [
-            [
-              0.4,
-              0.8
-            ],
             [
               0.4,
               0.8
@@ -3383,16 +3359,11 @@
         "line-color": "@road-minor",
         "line-dasharray": {
           "domain": [
-            14,
             16,
             17,
             18
           ],
           "range": [
-            [
-              0.1,
-              1.25
-            ],
             [
               0.1,
               1.25
@@ -3785,17 +3756,12 @@
         "line-opacity": "@street-high-opacity",
         "line-dasharray": {
           "domain": [
-            14,
             15,
             16,
             17,
             18
           ],
           "range": [
-            [
-              0.4,
-              0.8
-            ],
             [
               0.4,
               0.8
@@ -4298,14 +4264,9 @@
       "paint": {
         "line-dasharray": {
           "domain": [
-            6,
             7
           ],
           "range": [
-            [
-              2,
-              0
-            ],
             [
               2,
               0
@@ -4557,11 +4518,9 @@
       "layout": {
         "text-field": {
           "domain": [
-            0,
             2
           ],
           "range": [
-            "{code}",
             "{code}",
             "{name_en}"
           ],
@@ -4677,11 +4636,9 @@
         "visibility": "visible",
         "text-field": {
           "domain": [
-            0,
             4
           ],
           "range": [
-            "{abbr}",
             "{abbr}",
             "{name_en}"
           ],
@@ -4753,11 +4710,9 @@
         "visibility": "visible",
         "text-field": {
           "domain": [
-            0,
             5
           ],
           "range": [
-            "{abbr}",
             "{abbr}",
             "{name_en}"
           ],
@@ -4824,11 +4779,9 @@
         "visibility": "visible",
         "text-field": {
           "domain": [
-            0,
             6
           ],
           "range": [
-            "{abbr}",
             "{abbr}",
             "{name_en}"
           ],
@@ -5236,14 +5189,9 @@
         "text-max-size": "@label-city-lg-size",
         "text-font": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            [
-              "DIN Offc Pro Regular",
-              "Arial Unicode MS Regular"
-            ],
             [
               "DIN Offc Pro Regular",
               "Arial Unicode MS Regular"
@@ -5276,11 +5224,9 @@
         },
         "text-anchor": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            "bottom",
             "bottom",
             "center"
           ],
@@ -5350,14 +5296,9 @@
         "text-max-size": "@label-city-lg-size",
         "text-font": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            [
-              "DIN Offc Pro Regular",
-              "Arial Unicode MS Regular"
-            ],
             [
               "DIN Offc Pro Regular",
               "Arial Unicode MS Regular"
@@ -5390,11 +5331,9 @@
         },
         "text-anchor": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            "top",
             "top",
             "center"
           ],
@@ -5465,14 +5404,9 @@
         "text-max-size": "@label-city-md-size",
         "text-font": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            [
-              "DIN Offc Pro Regular",
-              "Arial Unicode MS Regular"
-            ],
             [
               "DIN Offc Pro Regular",
               "Arial Unicode MS Regular"
@@ -5505,11 +5439,9 @@
         },
         "text-anchor": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            "bottom",
             "bottom",
             "center"
           ],
@@ -5581,11 +5513,9 @@
         "icon-image": "circle.sdf",
         "text-anchor": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            "top",
             "top",
             "center"
           ],
@@ -5613,14 +5543,9 @@
         "text-max-size": "@label-city-md-size",
         "text-font": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            [
-              "DIN Offc Pro Regular",
-              "Arial Unicode MS Regular"
-            ],
             [
               "DIN Offc Pro Regular",
               "Arial Unicode MS Regular"
@@ -5698,14 +5623,9 @@
         "text-transform": "none",
         "text-font": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            [
-              "DIN Offc Pro Regular",
-              "Arial Unicode MS Regular"
-            ],
             [
               "DIN Offc Pro Regular",
               "Arial Unicode MS Regular"
@@ -5738,11 +5658,9 @@
         },
         "text-anchor": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            "bottom",
             "bottom",
             "center"
           ],
@@ -5878,14 +5796,9 @@
         },
         "text-font": {
           "domain": [
-            11,
             12
           ],
           "range": [
-            [
-              "DIN Offc Pro Regular",
-              "Arial Unicode MS Regular"
-            ],
             [
               "DIN Offc Pro Regular",
               "Arial Unicode MS Regular"
@@ -5918,11 +5831,9 @@
         },
         "text-anchor": {
           "domain": [
-            7,
             8
           ],
           "range": [
-            "bottom",
             "bottom",
             "center"
           ],
@@ -6290,11 +6201,9 @@
         "text-allow-overlap": false,
         "icon-image": {
           "domain": [
-            12,
             13
           ],
           "range": [
-            "{maki}-11",
             "{maki}-11",
             "{maki}-15"
           ],
@@ -6343,11 +6252,9 @@
         "text-anchor": "top",
         "text-field": {
           "domain": [
-            12,
             13
           ],
           "range": [
-            "{ref}",
             "{ref}",
             "{name_en}"
           ],
@@ -6419,11 +6326,9 @@
         "text-allow-overlap": false,
         "icon-image": {
           "domain": [
-            13,
             14
           ],
           "range": [
-            "{maki}-11",
             "{maki}-11",
             "{maki}-15"
           ],
@@ -6490,11 +6395,9 @@
         "text-allow-overlap": false,
         "icon-image": {
           "domain": [
-            13,
             14
           ],
           "range": [
-            "{maki}-11",
             "{maki}-11",
             "{maki}-15"
           ],
@@ -6693,11 +6596,9 @@
         "text-anchor": "top",
         "text-field": {
           "domain": [
-            0,
             13
           ],
           "range": [
-            "",
             "",
             "{name_en}"
           ],
@@ -6761,11 +6662,9 @@
         "text-allow-overlap": false,
         "icon-image": {
           "domain": [
-            14,
             15
           ],
           "range": [
-            "{maki}-11",
             "{maki}-11",
             "{maki}-15"
           ],
@@ -6839,11 +6738,9 @@
         "text-allow-overlap": false,
         "icon-image": {
           "domain": [
-            14,
             15
           ],
           "range": [
-            "{maki}-11",
             "{maki}-11",
             "{maki}-15"
           ],
@@ -6915,11 +6812,9 @@
         ],
         "symbol-placement": {
           "domain": [
-            10,
             11
           ],
           "range": [
-            "point",
             "point",
             "line"
           ],
@@ -6992,11 +6887,9 @@
         ],
         "symbol-placement": {
           "domain": [
-            10,
             11
           ],
           "range": [
-            "point",
             "point",
             "line"
           ],
@@ -7679,11 +7572,9 @@
         "symbol-placement": "line",
         "icon-image": {
           "domain": [
-            16,
             17
           ],
           "range": [
-            "oneway-spaced-white-small",
             "oneway-spaced-white-small",
             "oneway-spaced-white-large"
           ],
@@ -7726,11 +7617,9 @@
         "symbol-placement": "line",
         "icon-image": {
           "domain": [
-            16,
             17
           ],
           "range": [
-            "oneway-spaced-small",
             "oneway-spaced-small",
             "oneway-spaced-large"
           ],
@@ -7775,11 +7664,9 @@
         "symbol-placement": "line",
         "icon-image": {
           "domain": [
-            16,
             17
           ],
           "range": [
-            "oneway-spaced-white-small",
             "oneway-spaced-white-small",
             "oneway-spaced-white-large"
           ],
@@ -7823,11 +7710,9 @@
         "symbol-placement": "line",
         "icon-image": {
           "domain": [
-            16,
             17
           ],
           "range": [
-            "oneway-spaced-small",
             "oneway-spaced-small",
             "oneway-spaced-large"
           ],
@@ -7874,11 +7759,9 @@
         "symbol-placement": "line",
         "icon-image": {
           "domain": [
-            16,
             17
           ],
           "range": [
-            "oneway-spaced-white-small",
             "oneway-spaced-white-small",
             "oneway-spaced-white-large"
           ],
@@ -7921,11 +7804,9 @@
         "symbol-placement": "line",
         "icon-image": {
           "domain": [
-            16,
             17
           ],
           "range": [
-            "oneway-spaced-small",
             "oneway-spaced-small",
             "oneway-spaced-large"
           ],
