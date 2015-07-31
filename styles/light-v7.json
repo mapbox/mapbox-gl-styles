@@ -523,7 +523,7 @@
     "source-layer": "road",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["in", "class", "street_limited", ""], ["==", "$type", "LineString"]],
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"]],
     "layout": {
       "visibility": "visible",
       "line-cap": "round",
@@ -1547,7 +1547,7 @@
     "source-layer": "poi_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["in", "maki", "park", "", "", "", "", ""], ["<=", "scalerank", 1]],
+    "filter": ["all", ["==", "maki", "park"], ["<=", "scalerank", 1]],
     "layout": {
       "text-max-width": 8,
       "visibility": "visible",

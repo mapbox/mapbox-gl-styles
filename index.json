@@ -4047,10 +4047,9 @@
         "filter": [
           "all",
           [
-            "in",
+            "==",
             "class",
-            "street_limited",
-            ""
+            "street_limited"
           ],
           [
             "==",
@@ -13756,10 +13755,9 @@
         "filter": [
           "all",
           [
-            "in",
+            "==",
             "class",
-            "street_limited",
-            ""
+            "street_limited"
           ],
           [
             "==",
@@ -15878,14 +15876,9 @@
         "filter": [
           "all",
           [
-            "in",
+            "==",
             "maki",
-            "park",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "park"
           ],
           [
             "<=",
@@ -23072,13 +23065,49 @@
         ],
         "layout": {
           "text-allow-overlap": false,
-          "symbol-min-distance": 1000,
-          "icon-image": "{shield}-{reflen}-small",
+          "symbol-min-distance": {
+            "base": 1,
+            "stops": [
+              [
+                11,
+                100
+              ],
+              [
+                14,
+                200
+              ]
+            ]
+          },
+          "icon-image": {
+            "base": 1,
+            "stops": [
+              [
+                0,
+                "{shield}-{reflen}-small"
+              ],
+              [
+                16,
+                "{shield}-{reflen}-large"
+              ]
+            ]
+          },
           "icon-rotation-alignment": "viewport",
           "symbol-avoid-edges": false,
           "text-ignore-placement": false,
           "text-max-angle": 38,
-          "text-max-size": 9,
+          "text-max-size": {
+            "base": 1,
+            "stops": [
+              [
+                15,
+                9
+              ],
+              [
+                16,
+                11
+              ]
+            ]
+          },
           "text-font": "DIN Offc Pro Medium, Arial Unicode MS Regular",
           "symbol-placement": {
             "base": 1,
@@ -23098,22 +23127,22 @@
           "text-rotation-alignment": "viewport",
           "text-field": "{ref}",
           "text-letter-spacing": 0.05,
-          "icon-padding": {
-            "base": 0.7,
-            "stops": [
-              [
-                6,
-                2
-              ],
-              [
-                14,
-                20
-              ]
-            ]
-          }
+          "icon-padding": 2
         },
         "paint": {
-          "text-size": 9,
+          "text-size": {
+            "base": 1,
+            "stops": [
+              [
+                16,
+                9
+              ],
+              [
+                16.01,
+                11
+              ]
+            ]
+          },
           "text-color": "#fff",
           "icon-halo-color": "rgba(0, 0, 0, 1)",
           "icon-halo-width": 1,
@@ -23148,13 +23177,49 @@
         ],
         "layout": {
           "text-allow-overlap": false,
-          "symbol-min-distance": 1000,
-          "icon-image": "{shield}-{reflen}-small",
+          "symbol-min-distance": {
+            "base": 1,
+            "stops": [
+              [
+                11,
+                100
+              ],
+              [
+                14,
+                200
+              ]
+            ]
+          },
+          "icon-image": {
+            "base": 1,
+            "stops": [
+              [
+                0,
+                "{shield}-{reflen}-small"
+              ],
+              [
+                16,
+                "{shield}-{reflen}-large"
+              ]
+            ]
+          },
           "icon-rotation-alignment": "viewport",
           "symbol-avoid-edges": false,
           "text-ignore-placement": false,
           "text-max-angle": 38,
-          "text-max-size": 9,
+          "text-max-size": {
+            "base": 1,
+            "stops": [
+              [
+                15,
+                9
+              ],
+              [
+                16,
+                11
+              ]
+            ]
+          },
           "text-font": "DIN Offc Pro Bold, Arial Unicode MS Bold",
           "symbol-placement": {
             "base": 1,
@@ -23174,22 +23239,22 @@
           "text-rotation-alignment": "viewport",
           "text-field": "{ref}",
           "text-letter-spacing": 0.05,
-          "icon-padding": {
+          "icon-padding": 2
+        },
+        "paint": {
+          "text-size": {
             "base": 1,
             "stops": [
               [
-                6,
-                2
+                16,
+                9
               ],
               [
-                14,
-                20
+                16.01,
+                11
               ]
             ]
-          }
-        },
-        "paint": {
-          "text-size": 9,
+          },
           "text-color": "@label-road",
           "icon-halo-color": "rgba(0, 0, 0, 1)",
           "icon-halo-width": 1,
@@ -23218,7 +23283,7 @@
         ],
         "layout": {
           "text-allow-overlap": false,
-          "symbol-min-distance": 500,
+          "symbol-min-distance": 250,
           "text-ignore-placement": false,
           "text-max-angle": 30,
           "text-max-size": {
@@ -23285,7 +23350,7 @@
           ]
         ],
         "layout": {
-          "symbol-min-distance": 500,
+          "symbol-min-distance": 250,
           "text-max-angle": 30,
           "text-font": "DIN Offc Pro Regular, Arial Unicode MS Regular",
           "symbol-placement": "line",
@@ -23339,7 +23404,7 @@
           ]
         ],
         "layout": {
-          "symbol-min-distance": 500,
+          "symbol-min-distance": 250,
           "text-ignore-placement": false,
           "text-max-angle": 30,
           "text-max-size": 12,
@@ -23506,8 +23571,7 @@
             "cemetery",
             "golf",
             "zoo",
-            "playground",
-            ""
+            "playground"
           ],
           [
             "in",

@@ -521,7 +521,7 @@
     "source-layer": "road",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["in", "class", "street_limited", ""], ["==", "$type", "LineString"]],
+    "filter": ["all", ["==", "class", "street_limited"], ["==", "$type", "LineString"]],
     "layout": {
       "visibility": "visible",
       "line-cap": "round",

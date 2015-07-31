@@ -1113,10 +1113,9 @@
       "filter": [
         "all",
         [
-          "in",
+          "==",
           "class",
-          "street_limited",
-          ""
+          "street_limited"
         ],
         [
           "==",
