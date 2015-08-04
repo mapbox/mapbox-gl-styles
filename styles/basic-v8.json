@@ -63,30 +63,32 @@
       "type": "number",
       "value": {
         "base": 1.4,
-        "domain": [
-          6,
-          20
-        ],
-        "range": [
-          0.5,
-          30
-        ],
-        "type": "exponential"
+        "stops": [
+          [
+            6,
+            0.5
+          ],
+          [
+            20,
+            30
+          ]
+        ]
       }
     },
     "@road-minor-width": {
       "type": "number",
       "value": {
         "base": 1.55,
-        "domain": [
-          4,
-          20
-        ],
-        "range": [
-          0.25,
-          30
-        ],
-        "type": "exponential"
+        "stops": [
+          [
+            4,
+            0.25
+          ],
+          [
+            20,
+            30
+          ]
+        ]
       }
     }
   },
@@ -143,15 +145,16 @@
         "line-color": "@water",
         "line-width": {
           "base": 1.4,
-          "domain": [
-            8,
-            20
-          ],
-          "range": [
-            0.5,
-            15
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              8,
+              0.5
+            ],
+            [
+              20,
+              15
+            ]
+          ]
         }
       }
     },
@@ -320,15 +323,16 @@
         "line-color": "@land",
         "line-width": {
           "base": 1.6,
-          "domain": [
-            12,
-            20
-          ],
-          "range": [
-            0.5,
-            10
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              12,
+              0.5
+            ],
+            [
+              20,
+              10
+            ]
+          ]
         },
         "line-gap-width": "@road-minor-width"
       }
@@ -356,15 +360,16 @@
         "line-color": "@land",
         "line-width": {
           "base": 1.4,
-          "domain": [
-            12,
-            20
-          ],
-          "range": [
-            0.5,
-            10
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              12,
+              0.5
+            ],
+            [
+              20,
+              10
+            ]
+          ]
         },
         "line-gap-width": "@road-major-width"
       }
@@ -460,15 +465,16 @@
         "line-color": "#8b8a8a",
         "line-width": {
           "base": 1.3,
-          "domain": [
-            3,
-            22
-          ],
-          "range": [
-            0.5,
-            15
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              3,
+              0.5
+            ],
+            [
+              22,
+              15
+            ]
+          ]
         }
       }
     },
@@ -495,15 +501,16 @@
         "text-halo-width": 1,
         "text-halo-blur": 1,
         "text-size": {
-          "domain": [
-            3,
-            8
-          ],
-          "range": [
-            14,
-            22
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              3,
+              14
+            ],
+            [
+              8,
+              22
+            ]
+          ]
         }
       }
     },
@@ -537,15 +544,16 @@
         "text-halo-width": 1,
         "text-halo-blur": 1,
         "text-size": {
-          "domain": [
-            3,
-            8
-          ],
-          "range": [
-            12,
-            16
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              3,
+              12
+            ],
+            [
+              8,
+              16
+            ]
+          ]
         }
       }
     },
@@ -583,15 +591,16 @@
         "text-halo-width": 1,
         "text-halo-blur": 1,
         "text-size": {
-          "domain": [
-            6,
-            12
-          ],
-          "range": [
-            12,
-            16
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              6,
+              12
+            ],
+            [
+              12,
+              16
+            ]
+          ]
         }
       }
     },
@@ -628,15 +637,16 @@
         "text-halo-width": 2,
         "text-size": {
           "base": 1.4,
-          "domain": [
-            10,
-            20
-          ],
-          "range": [
-            8,
-            14
-          ],
-          "type": "exponential"
+          "stops": [
+            [
+              10,
+              8
+            ],
+            [
+              20,
+              14
+            ]
+          ]
         }
       }
     },
