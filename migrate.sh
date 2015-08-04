@@ -1,6 +1,6 @@
-set -e
+# This script must be run via "npm run migrate" in order for the PATH to be set properly
 
-PATH=./node_modules/mapbox-gl-style-spec/bin:$PATH
+set -e
 
 gl-style-migrate styles/basic-v7.json > styles/basic-v8.json
 gl-style-migrate styles/bright-v7.json > styles/bright-v8.json
