@@ -1115,10 +1115,9 @@
       "filter": [
         "all",
         [
-          "in",
+          "==",
           "class",
-          "street_limited",
-          ""
+          "street_limited"
         ],
         [
           "==",
@@ -3228,14 +3227,9 @@
       "filter": [
         "all",
         [
-          "in",
+          "==",
           "maki",
-          "park",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "park"
         ],
         [
           "<=",
