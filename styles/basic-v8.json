@@ -7,7 +7,6 @@
       "url": "mapbox://mapbox.mapbox-streets-v6"
     }
   },
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/sprite",
   "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {

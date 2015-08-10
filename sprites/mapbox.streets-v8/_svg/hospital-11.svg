@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1"
+	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<ellipse id="ellipse4" fill="#FFFFFF" cx="10" cy="10" rx="10" ry="10"/>
+<ellipse id="ellipse6" fill="#B28B8B" cx="10" cy="10" rx="8" ry="8"/>
+<g id="g8" transform="translate(4.5,5)">
+	<path fill="#FFFFFF" d="M10,3.5H7v-3c0-0.5-0.5-1-1-1H5c-0.5,0-1,0.5-1,1v3H1c-0.5,0-1,0.5-1,1v1c0,0.5,0.5,1,1,1h3v3
+		c0,0.5,0.5,1,1,1h1c0.5,0,1-0.5,1-1v-3h3c0.5,0,1-0.5,1-1v-1C11,3.9,10.5,3.5,10,3.5z"/>
+</g>
+</svg>

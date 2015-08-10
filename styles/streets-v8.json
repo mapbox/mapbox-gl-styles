@@ -7,7 +7,6 @@
       "type": "vector"
     }
   },
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/mapbox-streets",
   "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -7460,7 +7459,7 @@
         ]
       ],
       "layout": {
-        "icon-image": "circle.sdf",
+        "icon-image": "dot-9",
         "text-font": {
           "base": 1,
           "stops": [
@@ -7527,15 +7526,10 @@
               20
             ]
           ]
-        },
-        "icon-size": 0.3
+        }
       },
       "paint": {
         "text-color": "#000000",
-        "icon-halo-blur": 1,
-        "icon-halo-color": "#ffffff",
-        "icon-halo-width": 1,
-        "icon-color": "#000000",
         "text-halo-color": "#ffffff",
         "text-halo-width": 1.25,
         "icon-opacity": {
@@ -7639,7 +7633,7 @@
         ]
       ],
       "layout": {
-        "icon-image": "circle.sdf",
+        "icon-image": "dot-9",
         "text-transform": "none",
         "text-font": {
           "base": 1,
@@ -7707,15 +7701,10 @@
               22
             ]
           ]
-        },
-        "icon-size": 0.3
+        }
       },
       "paint": {
         "text-color": "#000000",
-        "icon-halo-blur": 1,
-        "icon-halo-color": "#ffffff",
-        "icon-halo-width": 1,
-        "icon-color": "#000000",
         "text-halo-color": "#ffffff",
         "text-halo-width": 1.25,
         "icon-opacity": {
@@ -7767,7 +7756,7 @@
       "layout": {
         "visibility": "visible",
         "text-field": "{name_en}",
-        "icon-image": "circle.sdf",
+        "icon-image": "dot-10",
         "text-anchor": {
           "base": 1,
           "stops": [
@@ -7831,15 +7820,13 @@
               22
             ]
           ]
-        },
-        "icon-size": 0.35
+        }
       },
       "paint": {
         "text-halo-width": 1,
         "text-halo-color": "#ffffff",
         "text-color": "#000000",
         "text-halo-blur": 1,
-        "icon-color": "#000000",
         "icon-opacity": {
           "base": 1,
           "stops": [
@@ -7887,7 +7874,7 @@
         ]
       ],
       "layout": {
-        "icon-image": "circle.sdf",
+        "icon-image": "dot-10",
         "text-font": {
           "base": 1,
           "stops": [
@@ -7954,15 +7941,10 @@
               22
             ]
           ]
-        },
-        "icon-size": 0.35
+        }
       },
       "paint": {
         "text-color": "#000000",
-        "icon-halo-blur": 1,
-        "icon-halo-color": "#ffffff",
-        "icon-halo-width": 1,
-        "icon-color": "#000000",
         "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "icon-opacity": {
@@ -8011,7 +7993,7 @@
         ]
       ],
       "layout": {
-        "icon-image": "circle.sdf",
+        "icon-image": "dot-11",
         "text-font": {
           "base": 1,
           "stops": [
@@ -8078,15 +8060,10 @@
               22
             ]
           ]
-        },
-        "icon-size": 0.4
+        }
       },
       "paint": {
         "text-color": "#000000",
-        "icon-halo-blur": 1,
-        "icon-halo-color": "#ffffff",
-        "icon-halo-width": 1,
-        "icon-color": "#000000",
         "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "icon-opacity": {
@@ -8135,7 +8112,7 @@
         ]
       ],
       "layout": {
-        "icon-image": "circle.sdf",
+        "icon-image": "dot-11",
         "text-font": {
           "base": 1,
           "stops": [
@@ -8202,16 +8179,11 @@
               22
             ]
           ]
-        },
-        "icon-size": 0.4
+        }
       },
       "paint": {
         "text-color": "#000000",
-        "icon-halo-blur": 1,
-        "icon-halo-color": "#ffffff",
-        "icon-halo-width": 1,
         "text-opacity": 1,
-        "icon-color": "#000000",
         "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "icon-opacity": {

@@ -7,10 +7,13 @@
   "scripts": {
     "test": "gl-style-validate styles/*-v8.json",
     "migrate": "./migrate.sh",
+    "generate_sprites": "node ./generate_sprites.js && npm run build",
     "build": "node -e 'require(\"fs\").writeFileSync(\"index.json\", JSON.stringify(require(\"./index.js\"), null, 2))'"
   },
   "devDependencies": {
-    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#8555318440c9bb3fba0f151b33b906b84dda0fe2"
+    "glob": "^5.0.14",
+    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#8555318440c9bb3fba0f151b33b906b84dda0fe2",
+    "spritezero": "^2.2.0"
   },
   "license": "ISC"
 }

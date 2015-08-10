@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg3115" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="weiner-linien-11.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px"
+	 viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+<sodipodi:namedview  inkscape:snap-intersection-paths="true" id="namedview3121" inkscape:zoom="22.627417" showguides="false" inkscape:cx="4.188277" showgrid="true" gridtolerance="10" inkscape:cy="13.003224" objecttolerance="10" guidetolerance="10" bordercolor="#666666" borderopacity="1" pagecolor="#ffffff" inkscape:bbox-paths="true" inkscape:snap-bbox="true" inkscape:current-layer="layer2" inkscape:pageopacity="0" inkscape:window-y="0" inkscape:window-x="-2" inkscape:snap-grids="true" inkscape:object-paths="true" inkscape:document-units="px" inkscape:snap-to-guides="true" inkscape:bbox-nodes="true" inkscape:snap-smooth-nodes="true" inkscape:pageshadow="2" inkscape:guide-bbox="true" inkscape:window-maximized="0" inkscape:object-nodes="true" inkscape:snap-bbox-edge-midpoints="true">
+	
+		<inkscape:grid  color="#ff0000" type="xygrid" opacity="0.1254902" id="grid3305" visible="true" empspacing="2" spacingy="0.5" enabled="true" spacingx="0.5" snapvisiblegridlinesonly="true">
+		</inkscape:grid>
+	<sodipodi:guide  id="guide3044" orientation="1,0" position="8.5073785,8.374796"></sodipodi:guide>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-3)" inkscape:groupmode="layer" inkscape:label="Original" display="none">
+	<circle id="circle2988" display="inline" fill="#025CA0" cx="8.989" cy="9" r="7"/>
+	<path id="path2990" inkscape:connector-curvature="0" display="inline" fill="none" stroke="#FFFFFF" stroke-width="2.6801" d="
+		M6.09,4.9v5.305c0.002,1.601,1.301,2.897,2.902,2.895c1.598-0.002,2.893-1.297,2.895-2.895V4.9"/>
+</g>
+<g>
+	<path fill="#FFFFFF" d="M7.5,0C3.365,0,0,3.365,0,7.5S3.365,15,7.5,15S15,11.635,15,7.5S11.635,0,7.5,0z M7.5,14
+		C3.91,14,1,11.09,1,7.5S3.91,1,7.5,1S14,3.91,14,7.5S11.09,14,7.5,14z"/>
+	<path fill="#5396C7" d="M7.5,1C3.91,1,1,3.91,1,7.5S3.91,14,7.5,14S14,11.09,14,7.5S11.09,1,7.5,1z M11.012,8
+		c-0.003,2.162-1.338,4-3.5,4s-3.497-1.838-3.5-4V4h2v4.5c0,0.5,0.5,1.5,1.5,1.5s1.5-1,1.5-1.5V4h2V8z"/>
+	<path fill="#FFFFFF" d="M9.012,8.5c0,0.5-0.5,1.5-1.5,1.5s-1.5-1-1.5-1.5V4h-2v4c0.003,2.162,1.338,4,3.5,4s3.497-1.838,3.5-4V4h-2
+		V8.5z"/>
+</g>
+</svg>

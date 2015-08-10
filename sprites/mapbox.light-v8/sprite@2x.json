@@ -1,0 +1,16 @@
+{
+  "default_marker": {
+    "width": 40,
+    "height": 100,
+    "x": 0,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "secondary_marker": {
+    "width": 40,
+    "height": 100,
+    "x": 40,
+    "y": 0,
+    "pixelRatio": 2
+  }
+}
