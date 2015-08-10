@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2"
+   width="20"
+   height="20"
+   viewBox="0 0 20 20"
+   version="1.1">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <ellipse
+     id="ellipse4"
+     ry="10"
+     rx="10"
+     cy="10"
+     cx="10"
+     style="fill:#ffffff;stroke:none;" />
+  <ellipse
+     id="ellipse6"
+     rx="8"
+     ry="8"
+     cy="10"
+     cx="10"
+     style="fill:#a9a199;stroke:none;" />
+  <g
+     id="g8"
+     transform="translate(4.5,5)">
+      <defs     id="defs4766" />  <metadata     id="metadata4769">    <rdf:RDF>      <cc:Work         rdf:about="">        <dc:format>image/svg+xml</dc:format>        <dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />        <dc:title />      </cc:Work>    </rdf:RDF>  </metadata>  <path     id="path10041-3-2"     d="M 5.5,0 3.5,4 2,2 C 1.5949678,2.7120667 0,4.1666667 0,6 0,8.7001333 2.79994,11 5.5,11 8.20006,11 11,8.7001333 11,6 11,4.1666667 9.405032,2.7120667 9,2 L 7.5,4 Z m 0,5.5 c 0,0 2,1.5850333 2,3 0,0.6111111 -0.7777778,1.2777778 -2,1.2777778 -1.2222222,0 -2,-0.6666667 -2,-1.2777778 0,-1.3664445 2,-3 2,-3 z"     style="fill:#ffffff;fill-opacity:1" />
+  </g>
+</svg>

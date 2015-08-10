@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2"
+   width="48"
+   height="48"
+   viewBox="0 0 24 24"
+   version="1.1">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <ellipse
+     id="ellipse4"
+     ry="12"
+     rx="12"
+     cy="12"
+     cx="12"
+     style="fill:#ffffff;stroke:none;" />
+  <ellipse
+     id="ellipse6"
+     ry="10"
+     rx="10"
+     cy="12"
+     cx="12"
+     style="fill:#7e9a4c;stroke:none;" />
+  <g
+     id="g8"
+     transform="translate(4.5,4.5)">
+    <metadata     id="metadata10"><rdf:RDF><cc:Work         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs     id="defs8" /><path     id="path20837"     d="M 1.8535156 -0.009765625 C 1.5784148 -0.015914819 0.96967738 0.03032258 0.5 0.5 C -0.12623656 1.1262365 -7.4014868e-17 2 0 2 C 2.9522581 6.1152689 8.3190297 9.4830921 9.3925781 10.556641 L 12.439453 13.443359 C 12.170622 13.833315 12.191635 14.359604 12.539062 14.707031 C 12.9308 15.098768 13.561388 15.098768 13.953125 14.707031 L 14.660156 14 C 15.051893 13.608263 15.051893 12.977675 14.660156 12.585938 C 14.328963 12.254744 13.835171 12.220398 13.451172 12.449219 L 10.556641 9.3925781 C 7.7791279 6.3546736 6.1152689 2.9522581 2 0 C 2 0 1.9452159 -0.0077158938 1.8535156 -0.009765625 z M 3.578125 9.8417969 C 2.594039 9.8417969 1.7890625 10.646773 1.7890625 11.630859 C 1.7890625 12.614945 2.594039 13.419922 3.578125 13.419922 C 4.562211 13.419922 5.3671875 12.614945 5.3671875 11.630859 C 5.3671875 10.646773 4.562211 9.8417969 3.578125 9.8417969 z "     style="fill:#ffffff;fill-opacity:1" />
+  </g>
+</svg>

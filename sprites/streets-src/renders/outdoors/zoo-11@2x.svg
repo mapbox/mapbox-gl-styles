@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2"
+   width="40"
+   height="40"
+   viewBox="0 0 20 20"
+   version="1.1">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <ellipse
+     id="ellipse4"
+     ry="10"
+     rx="10"
+     cy="10"
+     cx="10"
+     style="fill:#ffffff;stroke:none;" />
+  <ellipse
+     id="ellipse6"
+     rx="8"
+     ry="8"
+     cy="10"
+     cx="10"
+     style="fill:#7e9a4c;stroke:none;" />
+  <g
+     id="g8"
+     transform="translate(4.5,4.5)">
+    <metadata     id="metadata11981"><rdf:RDF><cc:Work         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs     id="defs11979" /><circle     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"     id="ellipse16334"     cx="-12.5"     cy="6.5"     r="0" /><path     id="circle17441"     d="M 8,1.984375 C 7.080645,1.9859286 6.5,2.450441 6.151137,3.0546894 6.151137,3.0546894 5.5,4 5,4 L 3,4 C 2.5,4 2,4.5 2,4.5 L 0,6.5 0,7 0.5,7 1.75,5.75 1.949219,5.9121094 C 1.949219,5.9121094 1.25,7.25 1.25,8.5 1.25,9 1.75,9 1.75,9 l 0.5,0 c 0,0 0.25,0 0,-0.25 L 2,8.5 C 2,8 2.633467,7.4889333 3,7 3,7 3.0123,7.6324791 3,8.25 2.994,8.550403 3.199537,9 3.5,9 L 4,9 C 4,9 4.25,9 4,8.75 L 3.75,8.5 C 3.520993,8.0829885 4.25,7 4.25,7 L 6,7 6.5,8.5 C 6.666667,9 7,9 7,9 L 8,9 C 8.25,9 8.722495,8.8137668 8.25,8.5 L 8,8.3339844 8,7 8,7.015625 C 9,7 9.143088,5.7588829 9.525391,5.3144531 L 10.25,5.25 C 10.481126,5.2962251 11,5 11,4.5 L 11,4 9.75,3 9.748,3.00195 C 9.390043,2.3737928 8.723015,1.9855007 8,1.984375 Z"     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <ellipse
+     id="ellipse4"
+     ry="12"
+     rx="12"
+     cy="12"
+     cx="12"
+     style="fill:#ffffff;stroke:none;" />
+  <ellipse
+     id="ellipse6"
+     ry="10"
+     rx="10"
+     cy="12"
+     cx="12"
+     style="fill:#ab9483;stroke:none;" />
+  <g
+     id="g8"
+     transform="translate(4.5,5)">
+      <defs     id="defs4621" />  <metadata     id="metadata4624">    <rdf:RDF>      <cc:Work         rdf:about="">        <dc:format>image/svg+xml</dc:format>        <dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />        <dc:title />      </cc:Work>    </rdf:RDF>  </metadata>  <path     id="path9873"     d="m 5.735294,2.8090533 c -1.6544119,-10e-8 -3.3088234,0.1607306 -3.7499999,0.4842601 0,0 -1.98529422666666,6.633157 3.7499999,6.633157 1.7406015,0 2.7622185,-0.6156 3.3519071,-1.4665671 l -0.00517,0.01551 C 9.7230555,7.5150707 9.9023566,8.0738741 10.743336,8.0049401 11.62274,7.9328567 12.352941,7.0588234 12.352941,6.1764705 12.352941,4.0636253 10.440085,4.0969873 9.750689,4.7874539 9.6563619,3.9352588 9.485294,3.2933134 9.485294,3.2933134 9.0441167,2.9697839 7.389706,2.8090533 5.735294,2.8090533 Z m 4.877068,2.2989429 c 0.237615,0.00122 0.473001,0.081306 0.620405,0.2223116 0.245652,0.2349854 0.495845,0.8658538 0.06376,1.4717371 C 10.765343,7.5468954 9.8777443,7.387312 9.7265628,6.7899815 9.7806952,6.4629537 9.8086022,6.1369544 9.8127299,5.8180146 9.8406405,5.3173526 10.226563,5.1060115 10.612362,5.1079962 Z M 1.1029412,10.560662 0.88235293,11.001838 c 1.76470597,0.661764 7.94117727,0.661764 9.70588207,0 l -0.220588,-0.441176 -9.2647058,0 z"     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>

@@ -6,41 +6,39 @@ for g in ${groups[@]}
 do
     srcdir=_${g}_src
 
-    function build_pngs {
+    function build_assets {
 
         for svg in ${svgs[@]}; do
             icon=$(basename $svg .svg)
 
             # export png
             inkscape -z \
-                --export-dpi=90 \
-                --export-png=${present}/${render}/${g}/${icon}.png \
+                --export-plain-svg=${present}/${render}/${g}/${icon}.svg \
                 $svg > /dev/null
 
             inkscape -z \
-                --export-dpi=180 \
-                --export-png=${present}/${render}/${g}/${icon}@2x.png \
+                --export-plain-svg=${present}/${render}/${g}/${icon}@2x.svg \
                 $svg > /dev/null
 
             # add stroke to rail icons and to US interstates
             if [ ${g} == rail ] || [[ ${icon} == *"interstate"* ]]
             then
 
-            convert ${present}/${render}/${g}/${icon}.png \
-                -matte -bordercolor none -border 2 ${present}/${render}/${g}/${icon}.png
+            convert ${present}/${render}/${g}/${icon}.svg \
+                -matte -bordercolor none -border 2 ${present}/${render}/${g}/${icon}.svg
 
-            convert  ${present}/${render}/${g}/${icon}.png \( +clone \
+            convert  ${present}/${render}/${g}/${icon}.svg \( +clone \
                 -channel A -morphology Edge Diamond:1 +channel \
                 +level-colors white \
-                \) -compose DstOver -composite ${present}/${render}/${g}/${icon}.png
+                \) -compose DstOver -composite ${present}/${render}/${g}/${icon}.svg
 
-            convert ${present}/${render}/${g}/${icon}@2X.png \
-                -matte -bordercolor none -border 3 ${present}/${render}/${g}/${icon}@2X.png
+            convert ${present}/${render}/${g}/${icon}@2X.svg \
+                -matte -bordercolor none -border 3 ${present}/${render}/${g}/${icon}@2X.svg
 
-            convert  ${present}/${render}/${g}/${icon}@2x.png \( +clone \
+            convert  ${present}/${render}/${g}/${icon}@2x.svg \( +clone \
                 -channel A -morphology Edge Diamond:2 +channel \
                 +level-colors white \
-                \) -compose DstOver -composite ${present}/${render}/${g}/${icon}@2x.png
+                \) -compose DstOver -composite ${present}/${render}/${g}/${icon}@2x.svg
             fi
 
             echo ${icon}
@@ -49,6 +47,6 @@ do
 
     svgs=$(ls ${present}/${srcdir}/*.svg)
 
-    build_pngs $svgs
+    build_assets $svgs
 
 done
