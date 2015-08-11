@@ -1276,7 +1276,20 @@
           ]
         },
         "text-letter-spacing": 0.15,
-        "text-max-width": 4
+        "text-max-width": 4,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              1
+            ],
+            [
+              12,
+              35
+            ]
+          ]
+        }
       },
       "paint": {
         "text-opacity": {
@@ -1289,19 +1302,6 @@
             [
               3.5,
               0.25
-            ]
-          ]
-        },
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              1
-            ],
-            [
-              12,
-              35
             ]
           ]
         },
@@ -3175,7 +3175,6 @@
         "text-allow-overlap": false,
         "text-ignore-placement": false,
         "text-max-angle": 15,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold Italic",
           "Arial Unicode MS Regular"
@@ -3187,12 +3186,7 @@
         "text-field": "{name}",
         "text-letter-spacing": 0.3,
         "text-max-width": 5,
-        "symbol-spacing": 550
-      },
-      "paint": {
-        "text-color": "#568eb3",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 0,
+        "symbol-spacing": 550,
         "text-size": {
           "base": 1,
           "stops": [
@@ -3206,6 +3200,11 @@
             ]
           ]
         }
+      },
+      "paint": {
+        "text-color": "#568eb3",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 0
       }
     },
     {
@@ -3241,7 +3240,6 @@
         "text-allow-overlap": false,
         "text-ignore-placement": false,
         "text-max-angle": 15,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold Italic",
           "Arial Unicode MS Regular"
@@ -3253,12 +3251,7 @@
         "text-field": "{name}",
         "text-letter-spacing": 0.3,
         "text-max-width": 5,
-        "symbol-spacing": 550
-      },
-      "paint": {
-        "text-color": "#568eb3",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 0,
+        "symbol-spacing": 550,
         "text-size": {
           "base": 1,
           "stops": [
@@ -3272,6 +3265,11 @@
             ]
           ]
         }
+      },
+      "paint": {
+        "text-color": "#568eb3",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 0
       }
     },
     {
@@ -3312,7 +3310,6 @@
         "text-allow-overlap": false,
         "text-ignore-placement": false,
         "text-max-angle": 45,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold Italic",
           "Arial Unicode MS Regular"
@@ -3324,12 +3321,7 @@
         "text-field": "{name}",
         "text-letter-spacing": 0.2,
         "text-max-width": 7.5,
-        "symbol-spacing": 400
-      },
-      "paint": {
-        "text-color": "#568eb3",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 0,
+        "symbol-spacing": 400,
         "text-size": {
           "base": 1,
           "stops": [
@@ -3343,6 +3335,11 @@
             ]
           ]
         }
+      },
+      "paint": {
+        "text-color": "#568eb3",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 0
       }
     },
     {
@@ -3383,7 +3380,6 @@
         "text-allow-overlap": false,
         "text-ignore-placement": false,
         "text-max-angle": 45,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold Italic",
           "Arial Unicode MS Regular"
@@ -3395,12 +3391,7 @@
         "text-field": "{name}",
         "text-letter-spacing": 0.2,
         "text-max-width": 7.5,
-        "symbol-spacing": 400
-      },
-      "paint": {
-        "text-color": "#568eb3",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 0,
+        "symbol-spacing": 400,
         "text-size": {
           "base": 1,
           "stops": [
@@ -3414,6 +3405,11 @@
             ]
           ]
         }
+      },
+      "paint": {
+        "text-color": "#568eb3",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 0
       }
     },
     {
@@ -4416,10 +4412,7 @@
         ],
         "text-field": "{name_en}",
         "text-letter-spacing": 0.05,
-        "text-max-width": 4
-      },
-      "paint": {
-        "text-opacity": 1,
+        "text-max-width": 4,
         "text-size": {
           "base": 1.1,
           "stops": [
@@ -4432,7 +4425,10 @@
               36
             ]
           ]
-        },
+        }
+      },
+      "paint": {
+        "text-opacity": 1,
         "text-halo-color": "#F8F4F0",
         "text-halo-width": 2,
         "text-color": "#2d1617"
@@ -4467,10 +4463,7 @@
         "visibility": "visible",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.05,
-        "text-max-width": 4
-      },
-      "paint": {
-        "text-opacity": 1,
+        "text-max-width": 4,
         "text-size": {
           "base": 1.2,
           "stops": [
@@ -4483,7 +4476,10 @@
               36
             ]
           ]
-        },
+        }
+      },
+      "paint": {
+        "text-opacity": 1,
         "text-halo-color": "#F8F4F0",
         "text-halo-width": 2,
         "text-color": "#2d1617"
@@ -4540,19 +4536,6 @@
         },
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              2,
-              10
-            ],
-            [
-              18,
-              40
-            ]
-          ]
-        },
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Regular"
@@ -4596,7 +4579,20 @@
         "text-field": "{name_en}",
         "text-letter-spacing": 0,
         "text-max-width": 5,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              1.9,
+              10
+            ],
+            [
+              18,
+              40
+            ]
+          ]
+        }
       },
       "paint": {
         "text-color": "#2d1617",
@@ -4611,19 +4607,6 @@
             [
               18,
               2.75
-            ]
-          ]
-        },
-        "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              1.9,
-              10
-            ],
-            [
-              18,
-              40
             ]
           ]
         }
@@ -4681,19 +4664,6 @@
         },
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              4,
-              10
-            ],
-            [
-              18,
-              36
-            ]
-          ]
-        },
         "text-font": {
           "base": 1,
           "stops": [
@@ -4752,7 +4722,20 @@
         "text-field": "{name_en}",
         "text-letter-spacing": 0,
         "text-max-width": 5,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              4,
+              10
+            ],
+            [
+              18,
+              40
+            ]
+          ]
+        }
       },
       "paint": {
         "text-color": "#2d1617",
@@ -4767,19 +4750,6 @@
             [
               18,
               2.75
-            ]
-          ]
-        },
-        "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              4,
-              10
-            ],
-            [
-              18,
-              40
             ]
           ]
         }
@@ -4815,19 +4785,6 @@
         "symbol-avoid-edges": true,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              5,
-              10
-            ],
-            [
-              18,
-              30
-            ]
-          ]
-        },
         "text-font": {
           "base": 1,
           "stops": [
@@ -4859,7 +4816,21 @@
         "text-field": "{name_en}",
         "text-letter-spacing": 0,
         "text-max-width": 5,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              5,
+              10
+            ],
+            [
+              18,
+              30
+            ]
+          ]
+        },
+        "icon-size": 0.8
       },
       "paint": {
         "text-color": "#2d1617",
@@ -4877,20 +4848,6 @@
             ]
           ]
         },
-        "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              5,
-              10
-            ],
-            [
-              18,
-              30
-            ]
-          ]
-        },
-        "icon-size": 0.8,
         "icon-opacity": 1,
         "text-opacity": 1
       }
@@ -4921,19 +4878,6 @@
         "text-allow-overlap": false,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              8,
-              12
-            ],
-            [
-              18,
-              26
-            ]
-          ]
-        },
         "text-font": {
           "base": 1,
           "stops": [
@@ -4965,8 +4909,21 @@
         "text-field": "{name_en}",
         "text-letter-spacing": 0,
         "text-max-width": 5,
-        "icon-max-size": 1,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              8,
+              11
+            ],
+            [
+              18,
+              26
+            ]
+          ]
+        },
+        "icon-size": 0.9
       },
       "paint": {
         "text-color": "#2d1617",
@@ -4984,22 +4941,8 @@
             ]
           ]
         },
-        "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              8,
-              11
-            ],
-            [
-              18,
-              26
-            ]
-          ]
-        },
         "text-opacity": 0.8,
-        "icon-opacity": 1,
-        "icon-size": 0.9
+        "icon-opacity": 1
       }
     },
     {
@@ -5029,19 +4972,6 @@
         "text-allow-overlap": false,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              24
-            ]
-          ]
-        },
         "text-font": [
           "Open Sans Regular",
           "Arial Unicode MS Regular"
@@ -5058,8 +4988,21 @@
         "text-field": "{name_en}",
         "text-letter-spacing": 0,
         "text-max-width": 5,
-        "icon-max-size": 1,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        "icon-size": 0.9
       },
       "paint": {
         "text-color": "#2d1617",
@@ -5077,22 +5020,8 @@
             ]
           ]
         },
-        "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              24
-            ]
-          ]
-        },
         "text-opacity": 0.7,
-        "icon-opacity": 1,
-        "icon-size": 0.9
+        "icon-opacity": 1
       }
     },
     {
@@ -5135,19 +5064,6 @@
         "symbol-avoid-edges": false,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              8
-            ],
-            [
-              20,
-              28
-            ]
-          ]
-        },
         "text-font": [
           "Open Sans Italic",
           "Arial Unicode MS Regular"
@@ -5163,7 +5079,20 @@
         "text-field": "{name_en}",
         "text-letter-spacing": 0.15,
         "text-max-width": 5,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              8
+            ],
+            [
+              20,
+              28
+            ]
+          ]
+        }
       },
       "paint": {
         "text-color": "#844",
@@ -5178,19 +5107,6 @@
             [
               20,
               5
-            ]
-          ]
-        },
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              8
-            ],
-            [
-              20,
-              28
             ]
           ]
         }
@@ -5225,7 +5141,6 @@
         "icon-image": "airport_icon",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Regular"
@@ -5254,12 +5169,7 @@
         },
         "text-letter-spacing": 0,
         "text-max-width": 12,
-        "symbol-spacing": 250
-      },
-      "paint": {
-        "text-color": "#666",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 1,
+        "symbol-spacing": 250,
         "text-size": {
           "stops": [
             [
@@ -5273,6 +5183,11 @@
           ],
           "base": 1.5
         }
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 1
       }
     },
     {
@@ -5331,7 +5246,6 @@
         "symbol-avoid-edges": true,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 12,
         "text-transform": "none",
         "text-font": [
           "Open Sans Regular",
@@ -5378,9 +5292,7 @@
             ]
           ]
         },
-        "symbol-spacing": 250
-      },
-      "paint": {
+        "symbol-spacing": 250,
         "text-size": {
           "stops": [
             [
@@ -5393,7 +5305,9 @@
             ]
           ],
           "base": 1.5
-        },
+        }
+      },
+      "paint": {
         "text-color": "#333",
         "icon-halo-color": "#fff",
         "icon-halo-width": 4,
@@ -5473,7 +5387,6 @@
         "icon-image": "generic-metro",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 12,
         "text-transform": "none",
         "text-font": [
           "Open Sans Regular",
@@ -5520,7 +5433,20 @@
             ]
           ]
         },
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "base": 1.5
+        }
       },
       "paint": {
         "text-color": "#333",
@@ -5537,19 +5463,6 @@
               3
             ]
           ]
-        },
-        "text-size": {
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              20
-            ]
-          ],
-          "base": 1.5
         },
         "icon-halo-width": 4,
         "icon-halo-color": "#fff",
@@ -5613,7 +5526,6 @@
         "icon-image": "generic-rail",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 12,
         "text-transform": "none",
         "text-font": [
           "Open Sans Regular",
@@ -5648,7 +5560,20 @@
         "icon-padding": 0,
         "text-max-width": 5.2,
         "icon-ignore-placement": false,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "base": 1.5
+        }
       },
       "paint": {
         "text-color": "#333",
@@ -5665,19 +5590,6 @@
               3
             ]
           ]
-        },
-        "text-size": {
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              20
-            ]
-          ],
-          "base": 1.5
         },
         "icon-halo-width": 4,
         "icon-halo-color": "#fff",
@@ -5741,7 +5653,6 @@
         "icon-image": "generic_icon",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 16,
         "text-transform": "none",
         "text-font": [
           "Open Sans Semibold",
@@ -5759,12 +5670,7 @@
         "text-field": "{name}",
         "text-letter-spacing": 0.02,
         "text-max-width": 10,
-        "symbol-spacing": 250
-      },
-      "paint": {
-        "text-color": "#504a4c",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 1.5,
+        "symbol-spacing": 250,
         "text-size": {
           "stops": [
             [
@@ -5778,6 +5684,11 @@
           ],
           "base": 1.5
         }
+      },
+      "paint": {
+        "text-color": "#504a4c",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 1.5
       }
     },
     {
@@ -5807,7 +5718,6 @@
         "symbol-avoid-edges": false,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 10,
         "text-font": [
           "Open Sans Regular",
           "Arial Unicode MS Regular"
@@ -5824,13 +5734,7 @@
         "text-field": "{name}",
         "text-letter-spacing": 0,
         "text-max-width": 8,
-        "icon-max-size": 1,
-        "symbol-spacing": 250
-      },
-      "paint": {
-        "text-color": "rgba(9,43,9,1.000)",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 2,
+        "symbol-spacing": 250,
         "text-size": {
           "stops": [
             [
@@ -5843,7 +5747,12 @@
             ]
           ],
           "base": 1.5
-        },
+        }
+      },
+      "paint": {
+        "text-color": "rgba(9,43,9,1.000)",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 2,
         "text-halo-blur": 1
       }
     },
@@ -5873,7 +5782,18 @@
         "text-allow-overlap": false,
         "text-ignore-placement": false,
         "text-max-angle": 20,
-        "text-max-size": {
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.05,
+        "symbol-spacing": 250,
+        "text-size": {
           "base": 1.2,
           "stops": [
             [
@@ -5885,18 +5805,7 @@
               20
             ]
           ]
-        },
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.05,
-        "symbol-spacing": 250
+        }
       },
       "paint": {
         "text-color": "#785655",
@@ -5911,19 +5820,6 @@
             [
               20,
               3.75
-            ]
-          ]
-        },
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              8,
-              9
-            ],
-            [
-              20,
-              20
             ]
           ]
         }
@@ -5947,7 +5843,17 @@
       ],
       "layout": {
         "text-max-angle": 20,
-        "text-max-size": {
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.05,
+        "text-size": {
           "base": 1.2,
           "stops": [
             [
@@ -5959,17 +5865,7 @@
               20
             ]
           ]
-        },
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.05
+        }
       },
       "paint": {
         "text-color": "#785655",
@@ -5984,19 +5880,6 @@
             [
               20,
               3.75
-            ]
-          ]
-        },
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              8,
-              8
-            ],
-            [
-              20,
-              20
             ]
           ]
         }
@@ -6027,7 +5910,17 @@
       ],
       "layout": {
         "text-ignore-placement": false,
-        "text-max-size": {
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.05,
+        "text-size": {
           "base": 1.2,
           "stops": [
             [
@@ -6039,17 +5932,7 @@
               15
             ]
           ]
-        },
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.05
+        }
       },
       "paint": {
         "text-color": "#785655",
@@ -6064,19 +5947,6 @@
             [
               20,
               3.75
-            ]
-          ]
-        },
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              8,
-              8
-            ],
-            [
-              20,
-              15
             ]
           ]
         }
@@ -6128,19 +5998,6 @@
         "symbol-avoid-edges": true,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              20
-            ]
-          ],
-          "base": 1.5
-        },
         "text-font": [
           "Open Sans Regular",
           "Arial Unicode MS Regular"
@@ -6157,7 +6014,20 @@
         "text-field": "{name}",
         "text-letter-spacing": 0.01,
         "text-max-width": 10,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "base": 1.5
+        }
       },
       "paint": {
         "text-color": "#504a4c",
@@ -6174,19 +6044,6 @@
               3.75
             ]
           ]
-        },
-        "text-size": {
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              20
-            ]
-          ],
-          "base": 1.5
         },
         "icon-opacity": 1
       }
@@ -6226,19 +6083,6 @@
         "icon-rotation-alignment": "viewport",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              6,
-              8
-            ],
-            [
-              20,
-              16
-            ]
-          ]
-        },
         "icon-keep-upright": true,
         "text-font": [
           "Open Sans Semibold",
@@ -6252,10 +6096,7 @@
         "text-field": "{ref}",
         "text-letter-spacing": 0,
         "icon-padding": 0,
-        "icon-max-size": 0.3,
-        "symbol-spacing": 2000
-      },
-      "paint": {
+        "symbol-spacing": 2000,
         "text-size": {
           "base": 1.05,
           "stops": [
@@ -6269,11 +6110,6 @@
             ]
           ]
         },
-        "text-color": "#fff",
-        "icon-halo-color": "white",
-        "icon-halo-width": 4,
-        "text-opacity": 1,
-        "text-halo-color": "#fff",
         "icon-size": {
           "base": 1,
           "stops": [
@@ -6286,7 +6122,14 @@
               0.9
             ]
           ]
-        },
+        }
+      },
+      "paint": {
+        "text-color": "#fff",
+        "icon-halo-color": "white",
+        "icon-halo-width": 4,
+        "text-opacity": 1,
+        "text-halo-color": "#fff",
         "text-halo-width": 0
       }
     },
@@ -6319,7 +6162,6 @@
         "icon-image": "us_highway_{reflen}",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Regular"
@@ -6330,9 +6172,7 @@
         "text-rotation-alignment": "viewport",
         "text-field": "{ref}",
         "text-letter-spacing": 0,
-        "symbol-spacing": 250
-      },
-      "paint": {
+        "symbol-spacing": 250,
         "text-size": {
           "base": 1,
           "stops": [
@@ -6346,12 +6186,6 @@
             ]
           ]
         },
-        "text-color": "#666",
-        "icon-halo-color": "rgba(0, 0, 0, 1)",
-        "icon-halo-width": 1,
-        "text-opacity": 1,
-        "icon-color": "white",
-        "text-halo-color": "#fff",
         "icon-size": {
           "base": 1,
           "stops": [
@@ -6364,7 +6198,15 @@
               1
             ]
           ]
-        },
+        }
+      },
+      "paint": {
+        "text-color": "#666",
+        "icon-halo-color": "rgba(0, 0, 0, 1)",
+        "icon-halo-width": 1,
+        "text-opacity": 1,
+        "icon-color": "white",
+        "text-halo-color": "#fff",
         "text-halo-width": 0
       }
     },
@@ -6403,7 +6245,6 @@
         "icon-image": "us_state_{reflen}",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Regular"
@@ -6415,9 +6256,7 @@
         "text-field": "{ref}",
         "text-letter-spacing": 0,
         "icon-padding": 0,
-        "symbol-spacing": 250
-      },
-      "paint": {
+        "symbol-spacing": 250,
         "text-size": {
           "base": 1,
           "stops": [
@@ -6431,12 +6270,6 @@
             ]
           ]
         },
-        "text-color": "#666",
-        "icon-halo-color": "rgba(0, 0, 0, 1)",
-        "icon-halo-width": 1,
-        "text-opacity": 1,
-        "icon-color": "white",
-        "text-halo-color": "#fff",
         "icon-size": {
           "base": 1,
           "stops": [
@@ -6449,7 +6282,15 @@
               1
             ]
           ]
-        },
+        }
+      },
+      "paint": {
+        "text-color": "#666",
+        "icon-halo-color": "rgba(0, 0, 0, 1)",
+        "icon-halo-width": 1,
+        "text-opacity": 1,
+        "icon-color": "white",
+        "text-halo-color": "#fff",
         "text-halo-width": 0
       }
     },
@@ -6485,7 +6326,6 @@
         "icon-image": "default_{reflen}",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 16,
         "text-transform": "uppercase",
         "text-font": [
           "Open Sans Semibold",
@@ -6497,10 +6337,7 @@
         "text-rotation-alignment": "viewport",
         "text-field": "{ref}",
         "text-letter-spacing": 0.05,
-        "icon-max-size": 0.8,
-        "symbol-spacing": 250
-      },
-      "paint": {
+        "symbol-spacing": 250,
         "text-size": {
           "base": 1,
           "stops": [
@@ -6514,11 +6351,6 @@
             ]
           ]
         },
-        "text-color": "#fff",
-        "icon-halo-width": 0,
-        "text-opacity": 1,
-        "icon-color": "white",
-        "text-halo-color": "#fff",
         "icon-size": {
           "base": 1,
           "stops": [
@@ -6531,7 +6363,14 @@
               1.25
             ]
           ]
-        },
+        }
+      },
+      "paint": {
+        "text-color": "#fff",
+        "icon-halo-width": 0,
+        "text-opacity": 1,
+        "icon-color": "white",
+        "text-halo-color": "#fff",
         "text-halo-width": 0
       }
     },
@@ -6570,19 +6409,6 @@
         "symbol-avoid-edges": false,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              8
-            ],
-            [
-              20,
-              28
-            ]
-          ]
-        },
         "text-font": [
           "Open Sans Italic",
           "Arial Unicode MS Regular"
@@ -6594,7 +6420,20 @@
         "text-field": "{name_en}",
         "text-letter-spacing": 0.15,
         "text-max-width": 5,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              8
+            ],
+            [
+              20,
+              28
+            ]
+          ]
+        }
       },
       "paint": {
         "text-color": "#844",
@@ -6609,19 +6448,6 @@
             [
               20,
               5
-            ]
-          ]
-        },
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              8
-            ],
-            [
-              20,
-              28
             ]
           ]
         }
@@ -6662,19 +6488,6 @@
         "symbol-avoid-edges": false,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              8
-            ],
-            [
-              20,
-              28
-            ]
-          ]
-        },
         "text-font": [
           "Open Sans Italic",
           "Arial Unicode MS Regular"
@@ -6686,7 +6499,20 @@
         "text-field": "{name_en}",
         "text-letter-spacing": 0.15,
         "text-max-width": 5,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              8
+            ],
+            [
+              20,
+              28
+            ]
+          ]
+        }
       },
       "paint": {
         "text-color": "#844",
@@ -6701,19 +6527,6 @@
             [
               20,
               5
-            ]
-          ]
-        },
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              8
-            ],
-            [
-              20,
-              28
             ]
           ]
         }
@@ -6755,7 +6568,6 @@
         "icon-image": "oneway_road",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Regular"
@@ -6772,12 +6584,7 @@
         "text-field": "",
         "text-letter-spacing": 0.5,
         "icon-padding": 0,
-        "symbol-spacing": 250
-      },
-      "paint": {
-        "text-color": "#aaa",
-        "text-halo-color": "#aaa",
-        "text-halo-width": 0,
+        "symbol-spacing": 250,
         "text-size": {
           "base": 1,
           "stops": [
@@ -6790,7 +6597,12 @@
               12
             ]
           ]
-        },
+        }
+      },
+      "paint": {
+        "text-color": "#aaa",
+        "text-halo-color": "#aaa",
+        "text-halo-width": 0,
         "text-translate": [
           0,
           0
@@ -6830,7 +6642,6 @@
         "icon-image": "oneway_road",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Regular"
@@ -6843,18 +6654,18 @@
         "text-field": "",
         "text-letter-spacing": 0,
         "icon-padding": 0,
-        "symbol-spacing": 250
+        "symbol-spacing": 250,
+        "text-size": 8,
+        "icon-size": 1
       },
       "paint": {
         "text-color": "#aaa",
         "text-halo-color": "#aaa",
         "text-halo-width": 0,
-        "text-size": 8,
         "text-translate": [
           0,
           0
         ],
-        "icon-size": 1,
         "text-opacity": 1
       }
     },
@@ -6885,7 +6696,6 @@
         "icon-image": "oneway_motorway",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 16,
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Regular"
@@ -6899,12 +6709,7 @@
         "text-field": "",
         "text-letter-spacing": 0,
         "icon-padding": 0,
-        "symbol-spacing": 250
-      },
-      "paint": {
-        "text-color": "#504a4c",
-        "text-halo-color": "#aaa",
-        "text-halo-width": 0,
+        "symbol-spacing": 250,
         "text-size": {
           "base": 1,
           "stops": [
@@ -6917,7 +6722,12 @@
               18
             ]
           ]
-        },
+        }
+      },
+      "paint": {
+        "text-color": "#504a4c",
+        "text-halo-color": "#aaa",
+        "text-halo-width": 0,
         "text-translate": [
           0,
           -2
@@ -6964,7 +6774,6 @@
         "symbol-avoid-edges": true,
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-max-size": 20,
         "text-font": [
           "Open Sans Italic",
           "Arial Unicode MS Regular"
@@ -6976,12 +6785,7 @@
         "text-field": "{name}",
         "text-letter-spacing": 0.05,
         "text-max-width": 5,
-        "symbol-spacing": 250
-      },
-      "paint": {
-        "text-color": "rgba(99,93,96,0.842)",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 1.5,
+        "symbol-spacing": 250,
         "text-size": {
           "stops": [
             [
@@ -6995,6 +6799,11 @@
           ],
           "base": 1.5
         }
+      },
+      "paint": {
+        "text-color": "rgba(99,93,96,0.842)",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 1.5
       }
     }
   ],

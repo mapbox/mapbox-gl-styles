@@ -500,14 +500,7 @@
           "Open Sans Regular",
           "Arial Unicode MS Regular"
         ],
-        "text-max-size": 22,
-        "text-max-width": 10
-      },
-      "paint": {
-        "text-color": "#666",
-        "text-halo-color": "rgba(255,255,255,0.75)",
-        "text-halo-width": 1,
-        "text-halo-blur": 1,
+        "text-max-width": 10,
         "text-size": {
           "stops": [
             [
@@ -520,6 +513,12 @@
             ]
           ]
         }
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
       }
     },
     {
@@ -547,13 +546,7 @@
           "Open Sans Bold",
           "Arial Unicode MS Bold"
         ],
-        "text-max-width": 10
-      },
-      "paint": {
-        "text-color": "#666",
-        "text-halo-color": "rgba(255,255,255,0.75)",
-        "text-halo-width": 1,
-        "text-halo-blur": 1,
+        "text-max-width": 10,
         "text-size": {
           "stops": [
             [
@@ -566,6 +559,12 @@
             ]
           ]
         }
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
       }
     },
     {
@@ -597,13 +596,7 @@
           "Open Sans Semibold",
           "Arial Unicode MS Bold"
         ],
-        "text-max-width": 6
-      },
-      "paint": {
-        "text-color": "#666",
-        "text-halo-color": "rgba(255,255,255,0.75)",
-        "text-halo-width": 1,
-        "text-halo-blur": 1,
+        "text-max-width": 6,
         "text-size": {
           "stops": [
             [
@@ -616,6 +609,12 @@
             ]
           ]
         }
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
       }
     },
     {
@@ -646,12 +645,6 @@
         ],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.1,
-        "text-max-size": 14
-      },
-      "paint": {
-        "text-color": "#666",
-        "text-halo-color": "rgba(255,255,255,0.75)",
-        "text-halo-width": 2,
         "text-size": {
           "base": 1.4,
           "stops": [
@@ -665,6 +658,11 @@
             ]
           ]
         }
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-width": 2
       }
     },
     {
@@ -693,7 +691,6 @@
       ],
       "layout": {
         "icon-image": "{maki}-12",
-        "icon-max-size": 1,
         "text-offset": [
           0,
           0.5
@@ -703,17 +700,16 @@
           "Open Sans Semibold",
           "Arial Unicode MS Bold"
         ],
-        "text-max-size": 11,
         "text-max-width": 8,
-        "text-anchor": "top"
+        "text-anchor": "top",
+        "text-size": 11,
+        "icon-size": 1
       },
       "paint": {
-        "icon-size": 1,
         "text-color": "#666",
         "text-halo-width": 1,
         "text-halo-color": "rgba(255,255,255,0.75)",
-        "text-halo-blur": 1,
-        "text-size": 11
+        "text-halo-blur": 1
       }
     }
   ]

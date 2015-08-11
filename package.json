@@ -10,7 +10,7 @@
     "build": "node -e 'require(\"fs\").writeFileSync(\"index.json\", JSON.stringify(require(\"./index.js\"), null, 2))'"
   },
   "devDependencies": {
-    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#1b8a95179efc879712afe999dabc9b3ac03cb75a"
+    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#8555318440c9bb3fba0f151b33b906b84dda0fe2"
   },
   "license": "ISC"
 }
