@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="20"
-   height="50"
+   width="40"
+   height="100"
    viewBox="0 0 5.2916664 13.229166"
    id="svg4148"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="secondary_marker.svg">
+   sodipodi:docname="default_marker.svg">
   <defs
      id="defs4150" />
   <sodipodi:namedview
@@ -81,13 +81,13 @@
        ry="1.3229098"
        transform="scale(1,-1)" />
     <path
-       style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#666666;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+       style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:#b4b4b4;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
        d="m 5.1593756,286.51288 c 1.8e-6,1.65286 -2.5135418,4.52361 -2.5135418,4.52361 0,0 -2.51354302,-2.87075 -2.51354112,-4.52361 1.8e-6,-1.44134 1.12535202,-2.60976 2.51354112,-2.60976 1.3881891,0 2.5135399,1.16842 2.5135418,2.60976 z"
        id="path5359"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="scsss" />
     <circle
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#666666;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#b2b2b2;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
        id="path5990"
        cx="2.6458349"
        cy="286.41669"
