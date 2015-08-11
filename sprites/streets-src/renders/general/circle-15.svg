@@ -39,7 +39,7 @@
      style="fill:#a9a199;stroke:none;" />
   <g
      id="g8"
-     transform="translate(4.5,5)">
+     transform="translate(4.5,4.5)">
       <defs     id="defs4621" />  <metadata     id="metadata4624">    <rdf:RDF>      <cc:Work         rdf:about="">        <dc:format>image/svg+xml</dc:format>        <dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />        <dc:title />      </cc:Work>    </rdf:RDF>  </metadata>  <circle     style="fill:#ffffff;fill-opacity:1"     r="7.5000005"     cy="7.5000005"     cx="7.5000005"     id="path3427" />
   </g>
 </svg>

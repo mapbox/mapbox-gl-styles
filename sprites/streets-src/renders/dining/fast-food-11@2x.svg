@@ -39,7 +39,7 @@
      style="fill:#ab9483;stroke:none;" />
   <g
      id="g8"
-     transform="translate(4.5,4.5)">
+     transform="translate(4.5,4)">
       <defs     id="defs4766" />  <metadata     id="metadata4769">    <rdf:RDF>      <cc:Work         rdf:about="">        <dc:format>image/svg+xml</dc:format>        <dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />        <dc:title />      </cc:Work>    </rdf:RDF>  </metadata>  <path     id="rect3335-7"     d="m 4.5,1 2,0 c 0,0 4,0 4,2.5 l 0,1.5 -10,0 0,-1.5 C 0.5,1 4.5,1 4.5,1 Z"     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />  <rect     ry="0.5"     y="6"     x="0"     height="1"     width="11"     id="rect3353"     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />  <rect     ry="0.5"     rx="0.5"     y="8"     x="0.5"     height="2"     width="10"     id="rect7177"     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>

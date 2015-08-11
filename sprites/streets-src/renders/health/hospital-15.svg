@@ -40,6 +40,6 @@
   <g
      id="g8"
      transform="translate(4.5,5)">
-    <metadata     id="metadata8"><rdf:RDF><cc:Work         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs     id="defs6" /><path     id="rect4194"     transform="translate(2,885)"     d="M 7 1 C 6.446 1 6 1.4459999 6 2 L 6 6 L 2 6 C 1.4459999 6 1 6.446 1 7 L 1 8 C 1 8.554 1.4459999 9 2 9 L 6 9 L 6 13 C 6 13.554 6.446 14 7 14 L 8 14 C 8.554 14 9 13.554 9 13 L 9 9 L 13 9 C 13.554 9 14 8.554 14 8 L 14 7 C 14 6.446 13.554 6 13 6 L 9 6 L 9 2 C 9 1.4459999 8.554 1 8 1 L 7 1 z "     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
+    <path id="rect4194" d="M 7 1 C 6.446 1 6 1.4459999 6 2 L 6 6 L 2 6 C 1.4459999 6 1 6.446 1 7 L 1 8 C 1 8.554 1.4459999 9 2 9 L 6 9 L 6 13 C 6 13.554 6.446 14 7 14 L 8 14 C 8.554 14 9 13.554 9 13 L 9 9 L 13 9 C 13.554 9 14 8.554 14 8 L 14 7 C 14 6.446 13.554 6 13 6 L 9 6 L 9 2 C 9 1.4459999 8.554 1 8 1 L 7 1 z "     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
   </g>
 </svg>

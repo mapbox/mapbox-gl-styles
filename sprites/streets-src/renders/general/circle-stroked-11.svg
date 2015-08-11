@@ -39,7 +39,7 @@
      style="fill:#a9a199;stroke:none;" />
   <g
      id="g8"
-     transform="translate(4.5,5)">
+     transform="translate(4.5,4.5)">
       <defs     id="defs4766" />  <metadata     id="metadata4769">    <rdf:RDF>      <cc:Work         rdf:about="">        <dc:format>image/svg+xml</dc:format>        <dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />        <dc:title />      </cc:Work>    </rdf:RDF>  </metadata>  <path     id="path8564-5-6-2"     d="M 5.5,0 C 8.5375828,0 11,2.4624111 11,5.5 11,8.5375889 8.5375828,11 5.5,11 2.4624172,11 0,8.5375889 0,5.5 0,2.4624111 2.4624172,0 5.5,0 Z m 0,1.2222222 c -2.3625678,0 -4.2777778,1.9152222 -4.2777778,4.2777778 0,2.3625556 1.91521,4.2777778 4.2777778,4.2777778 C 7.8625678,9.7777778 9.777778,7.8625556 9.777778,5.5 9.777778,3.1374444 7.8625678,1.2222222 5.5,1.2222222 Z"     style="fill:#ffffff;fill-opacity:1" />
   </g>
 </svg>
