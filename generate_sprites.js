@@ -25,7 +25,7 @@ function getFiles(style) {
 }
 
 function writeToFile(style, format, type, file) {
-  var dir = './sprites/' + style + '/sprite@' + format + 'x.' + type;
+  var dir = './sprites/' + style + '/sprite' + (format > 1 ? '@' + format + 'x' : '') + '.' + type;
   fs.writeFile(dir, file, function(err) {
     if (err) console.log(err);
     else console.log(dir);
