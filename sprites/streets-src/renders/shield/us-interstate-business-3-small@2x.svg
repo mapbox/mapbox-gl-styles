@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="26px" viewBox="0 0 32 26" enable-background="new 0 0 32 26" xml:space="preserve">  <image id="image0" width="32" height="26" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAMAAADhRa4NAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX///+kuIG6yaD4+vbp
-7uCgtXzl69v6+/jD0Kv+//7W38V+mkyHoVi0xJbe5dH2+PL8/fvt8ebL17ecsnZ/mk2dsnfM17iz
-xJbV3sSes3iit3+GoFeJoluEn1SFoFaVrGyWrW3w8+qBnFDv8um+zKW/zab9/fyitn75+veftHqg
-tXv5+/fc486LpF7Y4Mj2+POCnVKywpT09/CDnlP19/HG0rBRvJQxAAAAAWJLR0QAiAUdSAAAAAlw
-SFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB98IChAjK35Cgq4AAACtSURBVCjPvZJZD4JADISX9bYs
-LLqKt8gq3ifw//+aMakosk1INM7TJPM9tNMy9h9ZvIKuatXqaBtNq4W2DWALx5Vep6sAVK/vSdfx
-bYABAkMgNEJgTAGTsjMCqbLAlMpnCMwpIECAUwBHYBGa81A/11iagVW2Z7Q29hi9mthsi/lu/96V
-FCofKyE/6jwcc1c4FQs/80s2/vVmvIn240cc+5pRStIgSJPvX/THugNcohUTz6RyewAAACV0RVh0
-ZGF0ZTpjcmVhdGUAMjAxNS0wOC0xMFQxNjozNTo0My0wNzowMAP6IuQAAAAldEVYdGRhdGU6bW9k
-aWZ5ADIwMTUtMDgtMTBUMTY6MzU6NDMtMDc6MDByp5pYAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5r
-c2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==" />
+<svg version="1.1"
+	 id="svg3844" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="us-interstate-business-3-small.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56" height="44"
+	 viewBox="-1 -1 28 22" enable-background="new -1 -1 28 22" xml:space="preserve">
+<path fill="#7E9A4C" d="M13,19.467c0,0,13-4,13-12v-2H0v2C0,15.467,13,19.467,13,19.467z"/>
+<path fill="#7E9A4C" d="M24.471,0.467c0,0-3.059,2-5.735,2c-2.677,0-5.735-2-5.735-2s-3.059,2-5.735,2c-2.677,0-5.735-2-5.735-2
+	c-0.567,1.22-1.529,2-1.529,4h26C26,2.467,24.471,0.467,24.471,0.467z"/>
+<path fill="#FFFFFF" d="M25.265-0.141l-0.563-0.736l-0.778,0.506c-0.028,0.018-2.849,1.837-5.189,1.837
+	c-2.34,0-5.161-1.819-5.189-1.837l-0.546-0.355l-0.547,0.355c-0.028,0.018-2.849,1.837-5.189,1.837c-2.34,0-5.161-1.819-5.189-1.837
+	L1.11-1L0.623,0.045C0.489,0.333,0.319,0.607,0.14,0.898C-0.368,1.72-1,2.742-1,4.467v1v2c0,8.639,13.146,12.784,13.706,12.956
+	L13,20.513l0.294-0.091C13.854,20.25,27,16.106,27,7.467v-2v-1C27,2.155,25.336-0.048,25.265-0.141z M26,7.467c0,8-13,12-13,12
+	s-13-4-13-12v-2h26V7.467z M0,4.467c0-2,0.962-2.78,1.529-4c0,0,3.059,2,5.735,2c2.676,0,5.735-2,5.735-2s3.059,2,5.735,2
+	c2.676,0,5.735-2,5.735-2s1.529,2,1.529,4H0z"/>
 </svg>

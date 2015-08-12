@@ -1,120 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="26"
-   height="21"
-   id="svg3844"
-   inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="us-interstate-duplex-3-small.svg"
-   viewBox="0 0 26 21">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="751"
-     id="namedview5316"
-     showgrid="false"
-     inkscape:zoom="11.313709"
-     inkscape:cx="1.3229887"
-     inkscape:cy="8.2762682"
-     inkscape:window-x="-53"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg3844"
-     inkscape:snap-bbox="true"
-     showguides="false"
-     inkscape:guide-bbox="true"
-     inkscape:object-paths="true"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:snap-intersection-paths="false"
-     inkscape:object-nodes="true"
-     borderlayer="true"
-     inkscape:bbox-paths="true"
-     inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:snap-nodes="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:document-units="px"
-     inkscape:showpageshadow="true">
-    <inkscape:grid
-       type="xygrid"
-       id="grid5480"
-       empspacing="2"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true"
-       spacingx="0.5px"
-       spacingy="0.5px"
-       originx="4.0000968"
-       originy="1.9983899" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="14.000097,18.49839"
-       id="guide5601" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="4.5000968,18.49839"
-       id="guide5603" />
-    <sodipodi:guide
-       position="23.500097,15.99839"
-       orientation="0,1"
-       id="guide9216" />
-  </sodipodi:namedview>
-  <defs
-     id="defs3846" />
-  <metadata
-     id="metadata3849">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <rect
-     style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:0;fill:#3a3836;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-     id="rect3933-5"
-     width="26"
-     height="17"
-     x="9.6797834e-05"
-     y="2" />
-  <path
-     style="fill:#5396c7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.89973533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 9.6795853e-5,7.0000004 C 9.68e-5,16.00161 13.000097,19 13.000097,19 c 0,0 13,-2.99839 13,-11.9999996 l 0,-2.9999999 -26.000000204147,-10e-8 z"
-     id="path9494-5"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccccc" />
-  <path
-     style="fill:#e97474;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.89973533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 9.6795853e-5,4.0000004 C 9.6795853e-5,2 0.96203575,1.2202137 1.5295085,0 c 0,0 3.0588236,2 5.7352941,2 2.6764709,0 5.7352944,-2 5.7352944,-2 0,0 3.058823,2 5.735294,2 2.67647,0 5.735294,-2 5.735294,-2 0,0 1.529412,2 1.529412,4.0000004 z"
-     id="path9499-8"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccscsccc" />
-  <rect
-     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect5252"
-     width="26"
-     height="0.99999958"
-     x="9.6797834e-05"
-     y="4.0000005" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg3844" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="us-interstate-duplex-3-small.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="23px"
+	 viewBox="-1 -1 28 23" enable-background="new -1 -1 28 23" xml:space="preserve">
+<path fill="#5396C7" d="M13,19.467c0,0,13-2.998,13-12v-2H0v2C0,16.468,13,19.467,13,19.467z"/>
+<path fill="#E97474" d="M25.569,2.467c-0.453-1.145-1.098-2-1.098-2s-3.059,2-5.735,2c-2.677,0-5.735-2-5.735-2s-3.059,2-5.735,2
+	c-2.677,0-5.735-2-5.735-2c-0.328,0.705-0.783,1.269-1.113,2C0.176,3.001,0,3.622,0,4.467h26C26,3.77,25.81,3.079,25.569,2.467z"/>
+<polygon fill="#FFFFFF" points="-0.5,4.967 -0.5,4.467 -1,4.467 -1,5.467 -0.5,5.467 "/>
+<path fill="#FFFFFF" d="M26.499,2.099c-0.497-1.258-1.2-2.196-1.23-2.235L24.707-0.88l-0.782,0.51
+	c-0.028,0.018-2.849,1.837-5.189,1.837c-2.34,0-5.161-1.819-5.189-1.837l-0.546-0.355l-0.547,0.355
+	c-0.028,0.018-2.849,1.837-5.189,1.837c-2.34,0-5.161-1.819-5.189-1.837L1.11-1L0.623,0.045C0.488,0.334,0.319,0.611,0.14,0.904
+	c-0.216,0.353-0.439,0.717-0.635,1.152C-0.839,2.82-1,3.586-1,4.467h0.5v0.5v0.5H-1v2c0,4.058,2.421,7.6,7,10.242
+	c3.341,1.927,6.636,2.701,6.775,2.733L13,20.493l0.225-0.052c0.139-0.032,3.434-0.805,6.775-2.733c4.58-2.642,7-6.183,7-10.242v-2
+	v-1C27,3.738,26.831,2.942,26.499,2.099z M0.417,2.467c0.33-0.731,0.785-1.295,1.113-2c0,0,3.059,2,5.735,2c2.676,0,5.735-2,5.735-2
+	s3.059,2,5.735,2c2.676,0,5.735-2,5.735-2s0.645,0.855,1.098,2C25.81,3.079,26,3.77,26,4.467H0C0,3.622,0.176,3.001,0.417,2.467z
+	 M26,5.467v2c0,9.002-13,12-13,12s-13-2.998-13-12v-2H26z"/>
 </svg>

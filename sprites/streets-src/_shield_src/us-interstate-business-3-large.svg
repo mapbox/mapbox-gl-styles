@@ -1,114 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="31"
-   height="24"
-   id="svg3844"
-   inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="us-interstate-business-3-large.svg"
-   viewBox="0 0 31 24">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="751"
-     id="namedview5316"
-     showgrid="true"
-     inkscape:zoom="15.999999"
-     inkscape:cx="14.005475"
-     inkscape:cy="16.569781"
-     inkscape:window-x="-53"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg3844"
-     inkscape:snap-bbox="true"
-     showguides="false"
-     inkscape:guide-bbox="true"
-     inkscape:object-paths="true"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:snap-intersection-paths="false"
-     inkscape:object-nodes="true"
-     borderlayer="true"
-     inkscape:bbox-paths="true"
-     inkscape:snap-bbox-edge-midpoints="false"
-     inkscape:snap-nodes="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:document-units="px"
-     inkscape:showpageshadow="true"
-     inkscape:bbox-nodes="true">
-    <inkscape:grid
-       type="xygrid"
-       id="grid5480"
-       empspacing="2"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true"
-       spacingx="0.5px"
-       spacingy="0.5px"
-       originx="7"
-       originy="3" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="17,19.5"
-       id="guide5601" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="7.5,19.5"
-       id="guide5603" />
-    <sodipodi:guide
-       position="26.5,17"
-       orientation="0,1"
-       id="guide9216" />
-  </sodipodi:namedview>
-  <defs
-     id="defs3846" />
-  <metadata
-     id="metadata3849">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <path
-     style="opacity:1;fill:#7e9a4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-     d="M 0,8.5187124 C 0,19.381621 15.5,23 15.5,23 15.5,23 31,19.381621 31,8.5187124 L 31,5 0,5 Z"
-     id="path9494-5"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccccc" />
-  <path
-     style="opacity:1;fill:#7e9a4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-     d="M 0,5 C 0,2.6007721 1.8235293,0 1.8235293,0 c 0,0 3.6470591,2.4991952 6.8382354,2.4991952 C 11.852941,2.4991952 15.5,0 15.5,0 c 0,0 3.64706,2.4991952 6.838236,2.4991952 C 25.529412,2.4991952 29.176471,0 29.176471,0 29.176471,0 31,2.6007721 31,5 Z"
-     id="path9499-8"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccscsccc" />
-  <rect
-     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect5252"
-     width="31"
-     height="1.0000001"
-     x="0"
-     y="5" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg3844" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="us-interstate-business-3-large.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="26px"
+	 viewBox="-1 -1 33 26" enable-background="new -1 -1 33 26" xml:space="preserve">
+<path fill="#7E9A4C" d="M15.5,23.384c0,0,15.5-3.618,15.5-14.481V6.384H0v2.519C0,19.766,15.5,23.384,15.5,23.384z"/>
+<path fill="#7E9A4C" d="M22.338,2.883c-3.191,0-6.838-2.499-6.838-2.499s-3.647,2.499-6.838,2.499c-3.191,0-6.838-2.499-6.838-2.499
+	S0,2.985,0,5.384h31c0-2.399-1.824-5-1.824-5S25.529,2.883,22.338,2.883z"/>
+<path fill="#FFFFFF" d="M29.995-0.19l-0.567-0.809l-0.816,0.557c-0.034,0.023-3.437,2.325-6.274,2.325
+	c-2.849,0-6.239-2.301-6.273-2.324l-0.564-0.387l-0.566,0.386c-0.034,0.023-3.437,2.325-6.274,2.325
+	c-2.848,0-6.239-2.301-6.273-2.324L1.573-1L1.005-0.19C0.923-0.073-1,2.7-1,5.384v1v2.519c0,4.817,2.851,9.028,8.246,12.178
+	c3.96,2.312,7.863,3.239,8.027,3.277l0.227,0.053l0.227-0.053c0.164-0.038,4.067-0.965,8.027-3.277C29.149,17.931,32,13.72,32,8.903
+	V6.384v-1C32,2.7,30.077-0.073,29.995-0.19z M31,8.903c0,10.863-15.5,14.481-15.5,14.481S0,19.766,0,8.903V6.384h31V8.903z M0,5.384
+	c0-2.399,1.824-5,1.824-5s3.647,2.499,6.838,2.499c3.191,0,6.838-2.499,6.838-2.499s3.647,2.499,6.838,2.499
+	c3.191,0,6.838-2.499,6.838-2.499S31,2.985,31,5.384H0z"/>
 </svg>

@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="25px" viewBox="0 0 34 25" enable-background="new 0 0 34 25" xml:space="preserve">  <image id="image0" width="34" height="25" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAZCAMAAABjJAyeAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAtFBMVEX////zsbHwnZ364uL/
-/v741dXulJTtkJD3zMz//f375eXxp6fysLD639/pdXXpdHTtj4/0u7v64OD99fX98vL52NjshIT5
-2dntjo7vnJzwoaHqfX3rgYFTlsdbm8pcm8ptps9tptCWv92XwN3S5PGCstaCs9bt9PlkoMzu9frk
-7/Znos5loc3h7PXw9vqIttjX5vKBstZ7rtTL3+7Y5/Kbwt7+/v/b6fO10ueQu9t1q9JencsX79LP
-AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB98IChAkBJrSKTAAAACs
-SURBVCjPY2CgFmBkYoYxWVjZ2Dk4YTwubh4Ig5ePn19AUEiYU0SUUYwfCMQYxUU4hYUEJfj5+XjB
-SiT58QApsBJpfEpkiHWtLF5ARSVy+FTIg5Uo4FOiCFaihE+JMliJCj4lKhBfq+JWoQYNGHUNXCo0
-NGGBp6WNXYWOLiKA9fSxqdDXQ4kFA0N0BUbGGFFlYorkJA1TE6zxaWZuYWllbW1laWFuRrUkTV0A
-ADrsMgPyoUCDAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTA4LTEwVDE2OjM2OjA0LTA3OjAwqSCp
-kwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wOC0xMFQxNjozNjowNC0wNzowMNh9ES8AAAAZdEVY
-dFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC" />
+<svg version="1.1"
+	 id="svg3844" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="us-interstate-duplex-4-small.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="23px"
+	 viewBox="-1 -1 32 23" enable-background="new -1 -1 32 23" xml:space="preserve">
+<path fill="#E97474" d="M28.235,0.375c0,0-3.529,2-6.618,2s-6.618-2-6.618-2s-3.529,2-6.618,2s-6.618-2-6.618-2
+	C1.11,1.595,0,2.375,0,4.375h30C30,2.375,28.235,0.375,28.235,0.375z"/>
+<path fill="#5396C7" d="M15,19.375c0,0,15-0.998,15-11v-3H0v3C0,18.376,15,19.375,15,19.375z"/>
+<path fill="#FFFFFF" d="M28.985-0.287l-0.536-0.608l-0.706,0.399c-0.033,0.019-3.344,1.87-6.125,1.87s-6.092-1.852-6.125-1.87
+	l-0.492-0.278l-0.493,0.278c-0.033,0.019-3.344,1.87-6.125,1.87c-2.792,0-6.092-1.851-6.125-1.87L1.367-1L0.884-0.098
+	C0.73,0.187,0.535,0.461,0.328,0.751C-0.263,1.581-1,2.614-1,4.375v1v3c0,4.532,2.811,8.052,8.129,10.179
+	c3.853,1.541,7.645,1.808,7.805,1.819L15,20.377l0.066-0.004c0.16-0.011,3.952-0.278,7.805-1.819C28.189,16.427,31,12.907,31,8.375
+	v-3v-1C31,2.023,29.068-0.194,28.985-0.287z M30,8.375c0,10.002-15,11-15,11s-15-0.998-15-11v-3h30V8.375z M0,4.375
+	c0-2,1.11-2.78,1.765-4c0,0,3.529,2,6.618,2s6.618-2,6.618-2s3.529,2,6.618,2s6.618-2,6.618-2s1.765,2,1.765,4H0z"/>
 </svg>

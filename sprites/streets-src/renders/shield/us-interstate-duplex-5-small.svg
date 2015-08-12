@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="25px" viewBox="0 0 36 25" enable-background="new 0 0 36 25" xml:space="preserve">  <image id="image0" width="36" height="25" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAZCAMAAABuOnzZAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAtFBMVEX////1vb3ulJT40dH/
-/f341dXtkJD3zMz//Pz//v752trwnZ30u7v75eXqd3fpdHTrgoLyrKz409P87u7++/v++vr86+v3
-z8/xp6frfn7pdnbwnp7wo6PqfX1Tlsdbm8pcm8prpc+Pu9uQu9vG3Oz9/v5wqNBuptD8/f7Z6PJY
-mcnE2+xXmMjU5fFnos32+fyjx+H0+Pu10ud8r9RWmMj3+vzM4O6nyeKMudpyqdFloc1ZmskBb1UM
-AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB98IChAkEfcPzdsAAACz
-SURBVCjPrdLHDoJAFAVQROzi0IsNUSz03v//vzRDCMTA6GLu6k1yFpP7HkHgzIScUu1Mzcj5Ytm+
-VuvNtpnoHQAMy/GCKMmKCj5RFVkSBZ5jGQD2NEQHgMwRIhWNTv//+/wjmJGGNheIdDTSIbqi0Q0i
-A40MiO4PlHm+mqJMa9xYZlun7YwZx+5Kd71h47n91fjBQFta4H9tMIzipC+SOAqHNp1meVFWdV2V
-RZ6lWI8ff94JWTh4qkdQfgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wOC0xMFQxNjozNjoxNy0w
-NzowMFRis5AAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDgtMTBUMTY6MzY6MTctMDc6MDAlPwss
-AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==" />
+<svg version="1.1"
+	 id="svg3844" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="us-interstate-duplex-5-small.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="23px"
+	 viewBox="-1 -1 34 23" enable-background="new -1 -1 34 23" xml:space="preserve">
+<path fill="#5396C7" d="M16,19.338c0,0,16,0,16-11v-3H0v3C0,19.338,16,19.338,16,19.338z"/>
+<path fill="#E97474" d="M30.118,0.338c0,0-3.765,2-7.059,2s-7.059-2-7.059-2s-3.765,2-7.059,2s-7.059-2-7.059-2
+	c-0.698,1.22-1.882,2-1.882,4h32C32,2.338,30.118,0.338,30.118,0.338z"/>
+<path fill="#FFFFFF" d="M30.846-0.348l-0.522-0.555l-0.674,0.357c-0.036,0.019-3.591,1.883-6.59,1.883
+	c-3.01,0-6.554-1.864-6.59-1.883l-0.468-0.249l-0.469,0.249c-0.036,0.019-3.591,1.883-6.59,1.883c-3.01,0-6.554-1.864-6.59-1.883
+	L1.496-1L1.014-0.159C0.851,0.126,0.643,0.4,0.423,0.69C-0.211,1.523-1,2.56-1,4.338v1v3c0,9.492,11.12,12,17,12s17-2.508,17-12v-3
+	v-1C33,2.008,31.066-0.113,30.846-0.348z M32,8.338c0,11-16,11-16,11s-16,0-16-11v-3h32V8.338z M0,4.338c0-2,1.184-2.78,1.882-4
+	c0,0,3.765,2,7.059,2s7.059-2,7.059-2s3.765,2,7.059,2s7.059-2,7.059-2s1.882,2,1.882,4H0z"/>
 </svg>
