@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="36" height="36" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve">
-<path fill="#F8F4F0" d="M18,0c9.941,0,18,8.059,18,18c0,9.941-8.059,18-18,18C8.059,36,0,27.941,0,18C0,8.059,8.059,0,18,0"/>
-<path opacity="0.35" fill="#C94300" d="M18,4c7.732,0,14,6.268,14,14c0,7.732-6.268,14-14,14c-7.732,0-14-6.268-14-14
-	C4,10.268,10.268,4,18,4"/>
-<path fill="#FFFFFF" d="M19,28h-2c-0.55,0-1-0.45-1-1V10c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v17C20,27.55,19.55,28,19,28z"/>
-<path fill="#FFFFFF" d="M11,17v-2c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1v2c0,0.55-0.45,1-1,1H12C11.45,18,11,17.55,11,17z"/>
-</svg>

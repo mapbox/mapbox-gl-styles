@@ -36,10 +36,6 @@ do
                 --export-plain-svg=${present}/${render}/${c}/${icon}.svg \
                 $svg > /dev/null
 
-            inkscape -z \
-                --vacuum-defs \
-                --export-plain-svg=${present}/${render}/${c}/${icon}@2x.svg \
-                $svg > /dev/null
         done
     }
 
@@ -93,14 +89,9 @@ do
         echo "${icon}-11.svg"
         sed -E "s/<!-- ICON -->/$(cat ${present}/${render}/${c}/${icon}-11.svg | sed -e 's/[\/&]/\\&/g')/" ${present}/${shapesrender}/${shape}-11.svg > ${present}/${render}/${c}/${icon}-11.svg
 
-        echo "${icon}-11@2x.svg"
-        sed -E "s/<!-- ICON -->/$(cat ${present}/${render}/${c}/${icon}-11@2x.svg | sed -e 's/[\/&]/\\&/g')/" ${present}/${shapesrender}/${shape}-11@2x.svg > ${present}/${render}/${c}/${icon}-11@2x.svg
-
         echo "${icon}-15.svg"
         sed -E "s/<!-- ICON -->/$(cat ${present}/${render}/${c}/${icon}-15.svg | sed -e 's/[\/&]/\\&/g')/" ${present}/${shapesrender}/${shape}-15.svg > ${present}/${render}/${c}/${icon}-15.svg
 
-        echo "${icon}-15@2x.svg"
-        sed -E "s/<!-- ICON -->/$(cat ${present}/${render}/${c}/${icon}-15@2x.svg | sed -e 's/[\/&]/\\&/g')/" ${present}/${shapesrender}/${shape}-15@2x.svg > ${present}/${render}/${c}/${icon}-15@2x.svg
     done
 
     # Reset shape fill colors
