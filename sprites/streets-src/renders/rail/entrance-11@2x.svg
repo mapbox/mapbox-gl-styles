@@ -1,11 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">  <image id="image0" width="19" height="19" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATBAMAAACAfiv/AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX///+xqLmajqTn5Oqy
-qblJtuE/AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB98IChAlEwAa
-nbYAAAA3SURBVAjXY2AgCBiVQEARxGQCM5XATGVmOFOBATuTwQjBZMLKZGBGMBmg5iJEEbZB3KBC
-2LEMADTWB3lzLoAYAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTA4LTEwVDE2OjM3OjE5LTA3OjAw
-65+j8wAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wOC0xMFQxNjozNzoxOS0wNzowMJrCG08AAAAZ
-dEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC" />
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1"
+	 id="svg4764" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30" height="30"
+	 viewBox="-1 -1 15 15" enable-background="new -1 -1 15 15" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M12-1H1c-1.103,0-2,0.897-2,2v11c0,1.103,0.897,2,2,2h11c1.103,0,2-0.897,2-2V1C14-0.103,13.103-1,12-1z
+		 M13,12c0,0.552-0.448,1-1,1H1c-0.552,0-1-0.448-1-1V1c0-0.552,0.448-1,1-1h11c0.552,0,1,0.448,1,1V12z"/>
+	<path fill="#9A8EA4" d="M12,0H1C0.448,0,0,0.448,0,1v11c0,0.552,0.448,1,1,1h11c0.552,0,1-0.448,1-1V1C13,0.448,12.552,0,12,0z
+		 M11,10c0,0,0,1-1,1l-2,0H3c-1,0-1-1-1-1V3c0-1,1-1,1-1h1c1,0,1,1,1,1v2l2,0c1,0,1,1,1,1v2l2,0c0,0,1,0,1,1V10z"/>
+	<path fill="#FFFFFF" d="M10,8L8,8V6c0,0,0-1-1-1L5,5V3c0,0,0-1-1-1H3c0,0-1,0-1,1v7c0,0,0,1,1,1h5l2,0c1,0,1-1,1-1V9
+		C11,8,10,8,10,8z"/>
+</g>
 </svg>

@@ -1,85 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="15"
-   height="15"
-   id="svg3122"
-   inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="national-rail-15.svg"
-   viewBox="0 0 15 15">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     id="namedview15296"
-     inkscape:document-units="px"
-     showgrid="true"
-     inkscape:zoom="22.627417"
-     inkscape:cx="4.4270159"
-     inkscape:cy="5.5738025"
-     inkscape:window-x="1"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg3122"
-     inkscape:snap-bbox="true"
-     inkscape:bbox-paths="true"
-     inkscape:bbox-nodes="true"
-     inkscape:object-paths="true"
-     inkscape:object-nodes="true"
-     inkscape:snap-intersection-paths="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:snap-bbox-edge-midpoints="true">
-    <inkscape:grid
-       type="xygrid"
-       id="grid16927"
-       spacingx="0.5"
-       spacingy="0.5"
-       color="#ff0000"
-       opacity="0.1254902"
-       empspacing="2" />
-  </sodipodi:namedview>
-  <defs
-     id="defs3124" />
-  <metadata
-     id="metadata3127">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     id="g11681">
-    <rect
-       ry="1"
-       rx="1"
-       y="1.9999999"
-       x="0"
-       height="11"
-       width="15"
-       id="rect4778"
-       style="opacity:1;fill:#e97474;fill-opacity:1;stroke:none;stroke-width:0.74999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
-    <path
-       id="rect4780"
-       d="M 4.9570312 2 L 9.7558594 5 L 0 5 L 0 6 L 9.3808594 6 L 3.3808594 9 L 0 9 L 0 10 L 3.3574219 10 L 8.15625 13 L 10.042969 13 L 5.2441406 10 L 15 10 L 15 9 L 5.6191406 9 L 11.619141 6 L 15 6 L 15 5 L 11.642578 5 L 6.84375 2 L 4.9570312 2 z "
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.74999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg3122" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="national-rail-15.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="15px"
+	 viewBox="-1 0 17 15" enable-background="new -1 0 17 15" xml:space="preserve">
+<path fill="#E97474" d="M0,10v2c0,0.552,0.448,1,1,1h7.156l-4.799-3H0z"/>
+<polygon fill="#E97474" points="9.381,6 0,6 0,9 3.381,9 "/>
+<path fill="#E97474" d="M10.043,13H14c0.552,0,1-0.448,1-1v-2H5.244L10.043,13z"/>
+<path fill="#E97474" d="M4.957,2H1C0.448,2,0,2.448,0,3v2h9.756L4.957,2z"/>
+<path fill="#E97474" d="M14,2H6.844l4.799,3H15V3C15,2.448,14.552,2,14,2z"/>
+<polygon fill="#E97474" points="5.619,9 15,9 15,6 11.619,6 "/>
+<path fill="#FFFFFF" d="M14,1H6.844H4.957H1c-1.103,0-2,0.897-2,2v2v1v3v1v2c0,1.103,0.897,2,2,2h7.156h1.887H14
+	c1.103,0,2-0.897,2-2v-2V9V6V5V3C16,1.897,15.103,1,14,1z M0,3c0-0.552,0.448-1,1-1h3.957l4.799,3H0V3z M0,6h9.381l-6,3H0V6z M1,13
+	c-0.552,0-1-0.448-1-1v-2h3.357l4.799,3H1z M15,12c0,0.552-0.448,1-1,1h-3.957l-4.799-3H15V12z M15,9H5.619l6-3H15V9z M15,5h-3.357
+	L6.844,2H14c0.552,0,1,0.448,1,1V5z"/>
 </svg>

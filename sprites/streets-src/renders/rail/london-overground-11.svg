@@ -1,14 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">  <image id="image0" width="19" height="19" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAYFBMVEX////76t30xKDwr37u
-qHL0xaH//v31yqrupm/1y6vvqXX0xaL20LLvqnX76dzxtor98ur99vDxt4v76t788urvqXRfnctT
-lsdgnsv88enxt4rxtonupnD76971zKzwsH9PurOtAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAN1wAA
-DdcBQiibeAAAAAd0SU1FB98IChAlHeeisLEAAAB8SURBVBjTpc/JDoMwDARQEzCdEHZIoWz5/78k
-DYRF4sZcbD354CF6nUCEUcjBReIPtsj4MEuJSlVm0VMOFKWdVQ00uwkkpVtaDd7o213TO+vucdY/
-3BEjq9zy01D+YWBo/zRimv0zEtCcCg0sZw+591jOHkQNm8iomV5nBdKRCEw9UjRNAAAAJXRFWHRk
-YXRlOmNyZWF0ZQAyMDE1LTA4LTEwVDE2OjM3OjI5LTA3OjAwZRCkEAAAACV0RVh0ZGF0ZTptb2Rp
-ZnkAMjAxNS0wOC0xMFQxNjozNzoyOS0wNzowMBRNHKwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtz
-Y2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC" />
+<svg version="1.1"
+	 id="svg3122" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="london-overground-15.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
+	 viewBox="-2 -2 19 19" enable-background="new -2 -2 19 19" xml:space="preserve">
+<sodipodi:namedview  inkscape:snap-intersection-paths="true" id="namedview14987" inkscape:zoom="24.428571" inkscape:cx="4.2395121" showgrid="true" gridtolerance="10" inkscape:cy="7.4359351" objecttolerance="10" guidetolerance="10" bordercolor="#666666" borderopacity="1" pagecolor="#ffffff" inkscape:bbox-paths="true" inkscape:snap-bbox="true" inkscape:current-layer="svg3122" inkscape:pageopacity="0" inkscape:window-y="42" inkscape:window-x="371" inkscape:object-paths="true" inkscape:document-units="px" inkscape:bbox-nodes="true" inkscape:snap-smooth-nodes="true" inkscape:pageshadow="2" inkscape:window-maximized="0" inkscape:object-nodes="true" inkscape:snap-bbox-edge-midpoints="true">
+	<inkscape:grid  color="#ff0000" type="xygrid" opacity="0.1254902" id="grid3335" empspacing="2" spacingy="0.5" spacingx="0.5">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g>
+	<path fill="#FFFFFF" d="M7.5,3.5C5.822,3.5,4.391,4.535,3.797,6h7.407C10.609,4.535,9.178,3.5,7.5,3.5z"/>
+	<path fill="#FFFFFF" d="M7.5,11.5c1.678,0,3.109-1.035,3.703-2.5H3.797C4.391,10.465,5.822,11.5,7.5,11.5z"/>
+	<path fill="#FFFFFF" d="M15.302,4.132C13.982,1.05,10.953-1,7.5-1S1.018,1.05-0.302,4.132C-1.288,4.467-2,5.402-2,6.5v2
+		c0,1.098,0.712,2.033,1.698,2.368C1.018,13.95,4.047,16,7.5,16s6.482-2.05,7.802-5.132C16.288,10.533,17,9.598,17,8.5v-2
+		C17,5.402,16.288,4.467,15.302,4.132z M15,8.5C15,8.776,14.776,9,14.5,9h-0.681c-0.678,2.865-3.246,5-6.319,5s-5.641-2.135-6.319-5
+		H0.5C0.224,9,0,8.776,0,8.5v-2C0,6.224,0.224,6,0.5,6h0.681C1.859,3.135,4.427,1,7.5,1s5.641,2.135,6.319,5H14.5
+		C14.776,6,15,6.224,15,6.5V8.5z"/>
+	<path fill="#EEA66F" d="M7.5,11.5c-1.678,0-3.109-1.035-3.703-2.5H1.181c0.678,2.865,3.246,5,6.319,5s5.641-2.135,6.319-5h-2.616
+		C10.609,10.465,9.178,11.5,7.5,11.5z"/>
+	<path fill="#EEA66F" d="M7.5,3.5c1.678,0,3.109,1.035,3.703,2.5h2.616C13.141,3.135,10.573,1,7.5,1S1.859,3.135,1.181,6h2.616
+		C4.391,4.535,5.822,3.5,7.5,3.5z"/>
+	<path fill="#5396C7" d="M14.5,6h-0.681h-2.616H3.797H1.181H0.5C0.224,6,0,6.224,0,6.5v2C0,8.776,0.224,9,0.5,9h0.681h2.616h7.407
+		h2.616H14.5C14.776,9,15,8.776,15,8.5v-2C15,6.224,14.776,6,14.5,6z"/>
+</g>
 </svg>

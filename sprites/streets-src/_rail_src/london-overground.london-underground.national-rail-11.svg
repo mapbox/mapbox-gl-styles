@@ -1,127 +1,45 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="53"
-   height="15"
-   id="svg3122"
-   inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="london-overground.london-underground.national-rail-15.svg"
-   viewBox="0 0 53 15">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1441"
-     inkscape:window-height="791"
-     id="namedview15067"
-     inkscape:document-units="px"
-     showgrid="true"
-     inkscape:zoom="15.556349"
-     inkscape:cx="32.010855"
-     inkscape:cy="2.0705808"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg3122"
-     inkscape:snap-bbox="true"
-     inkscape:bbox-paths="true"
-     inkscape:bbox-nodes="true">
-    <inkscape:grid
-       type="xygrid"
-       id="grid13553" />
-  </sodipodi:namedview>
-  <defs
-     id="defs3124" />
-  <metadata
-     id="metadata3127">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     id="g9279"
-     transform="translate(1,-3)">
-    <circle
-       r="4.5"
-       cy="10.5"
-       cx="7.5"
-       id="path5864"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
-    <path
-       id="path3346-0"
-       d="M 7.5,4 A 6.5,6.5 0 0 0 1,10.5 6.5,6.5 0 0 0 7.5,17 6.5,6.5 0 0 0 14,10.5 6.5,6.5 0 0 0 7.5,4 Z m 0,2.5 a 3.9999998,3.9999998 0 0 1 4,4 3.9999998,3.9999998 0 0 1 -4,4 3.9999998,3.9999998 0 0 1 -4,-4 3.9999998,3.9999998 0 0 1 4,-4 z"
-       style="opacity:1;fill:#eea66f;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
-    <rect
-       rx="0.5"
-       ry="0.49999997"
-       y="9"
-       x="0"
-       height="3"
-       width="15.000001"
-       id="rect3363-0"
-       style="opacity:1;fill:#5396c7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-  </g>
-  <g
-     transform="translate(19,-3)"
-     id="g9284">
-    <circle
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none"
-       id="circle9286"
-       cx="7.5"
-       cy="10.5"
-       r="4.5" />
-    <path
-       inkscape:connector-curvature="0"
-       style="opacity:1;fill:#e97474;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 7.5,4 A 6.5,6.5 0 0 0 1,10.5 6.5,6.5 0 0 0 7.5,17 6.5,6.5 0 0 0 14,10.5 6.5,6.5 0 0 0 7.5,4 Z m 0,2.5 a 3.9999998,3.9999998 0 0 1 4,4 3.9999998,3.9999998 0 0 1 -4,4 3.9999998,3.9999998 0 0 1 -4,-4 3.9999998,3.9999998 0 0 1 4,-4 z"
-       id="path9288" />
-    <rect
-       style="opacity:1;fill:#5396c7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect9290"
-       width="15.000001"
-       height="3"
-       x="0"
-       y="9"
-       ry="0.49999997"
-       rx="0.5" />
-  </g>
-  <g
-     id="g11681"
-     transform="translate(37)">
-    <rect
-       ry="1"
-       rx="1"
-       y="1.9999999"
-       x="0"
-       height="11"
-       width="15"
-       id="rect4778-9"
-       style="opacity:1;fill:#e97474;fill-opacity:1;stroke:none;stroke-width:0.74999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
-    <path
-       inkscape:connector-curvature="0"
-       id="rect4780"
-       d="M 4.9570312,2 9.7558594,5 0,5 l 0,1 9.3808594,0 -6,3 L 0,9 0,10 3.3574219,10 8.15625,13 10.042969,13 5.2441406,10 15,10 15,9 5.6191406,9 11.619141,6 15,6 15,5 11.642578,5 6.84375,2 4.9570312,2 Z"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.74999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg3122" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="london-overground.london-underground.national-rail-15.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="57px" height="19px"
+	 viewBox="-2 -2 57 19" enable-background="new -2 -2 57 19" xml:space="preserve">
+<sodipodi:namedview  id="namedview15067" inkscape:zoom="15.556349" inkscape:cx="32.010855" showgrid="true" gridtolerance="10" inkscape:cy="2.0705808" objecttolerance="10" guidetolerance="10" bordercolor="#666666" borderopacity="1" pagecolor="#ffffff" inkscape:bbox-paths="true" inkscape:snap-bbox="true" inkscape:current-layer="svg3122" inkscape:pageopacity="0" inkscape:window-y="23" inkscape:window-x="0" inkscape:window-width="1441" inkscape:document-units="px" inkscape:bbox-nodes="true" inkscape:pageshadow="2" inkscape:window-height="791" inkscape:window-maximized="0">
+	<inkscape:grid  type="xygrid" id="grid13553"></inkscape:grid>
+</sodipodi:namedview>
+<path fill="#FFFFFF" d="M26.5,11.5c1.678,0,3.109-1.035,3.703-2.5h-7.407C23.391,10.465,24.822,11.5,26.5,11.5z"/>
+<path fill="#FFFFFF" d="M8.5,3.5C6.822,3.5,5.391,4.535,4.797,6h7.407C11.609,4.535,10.178,3.5,8.5,3.5z"/>
+<path fill="#FFFFFF" d="M26.5,3.5c-1.678,0-3.109,1.035-3.703,2.5h7.407C29.609,4.535,28.178,3.5,26.5,3.5z"/>
+<path fill="#FFFFFF" d="M8.5,11.5c1.678,0,3.109-1.035,3.703-2.5H4.797C5.391,10.465,6.822,11.5,8.5,11.5z"/>
+<path fill="#FFFFFF" d="M51,0h-7.156h-1.887H38c-1.654,0-3,1.346-3,3v1.503c-0.21-0.158-0.444-0.285-0.698-0.371
+	C32.982,1.05,29.953-1,26.5-1s-6.482,2.05-7.802,5.132C18.215,4.296,17.8,4.605,17.5,5.005c-0.3-0.4-0.715-0.71-1.198-0.873
+	C14.982,1.05,11.953-1,8.5-1S2.018,1.05,0.698,4.132C-0.288,4.467-1,5.402-1,6.5v2c0,1.098,0.712,2.033,1.698,2.368
+	C2.018,13.95,5.047,16,8.5,16s6.482-2.05,7.802-5.132c0.483-0.164,0.898-0.473,1.198-0.873c0.3,0.4,0.715,0.71,1.198,0.873
+	C20.018,13.95,23.047,16,26.5,16s6.482-2.05,7.802-5.132c0.254-0.086,0.488-0.213,0.698-0.371V12c0,1.654,1.346,3,3,3h7.156h1.887
+	H51c1.654,0,3-1.346,3-3v-2V9V6V5V3C54,1.346,52.654,0,51,0z M16,8.5C16,8.776,15.776,9,15.5,9h-0.681c-0.678,2.865-3.246,5-6.319,5
+	s-5.641-2.135-6.319-5H1.5C1.224,9,1,8.776,1,8.5v-2C1,6.224,1.224,6,1.5,6h0.681C2.859,3.135,5.427,1,8.5,1s5.641,2.135,6.319,5
+	H15.5C15.776,6,16,6.224,16,6.5V8.5z M34,8.5C34,8.776,33.776,9,33.5,9h-0.681c-0.678,2.865-3.246,5-6.319,5s-5.641-2.135-6.319-5
+	H19.5C19.224,9,19,8.776,19,8.5v-2C19,6.224,19.224,6,19.5,6h0.681c0.678-2.865,3.246-5,6.319-5s5.641,2.135,6.319,5H33.5
+	C33.776,6,34,6.224,34,6.5V8.5z M37,3c0-0.552,0.448-1,1-1h3.957l4.799,3H37V3z M37,6h9.381l-6,3H37V6z M38,13c-0.552,0-1-0.448-1-1
+	v-2h3.357l4.799,3H38z M52,12c0,0.552-0.448,1-1,1h-3.957l-4.799-3H52V12z M52,9h-9.381l6-3H52V9z M52,5h-3.357l-4.799-3H51
+	c0.552,0,1,0.448,1,1V5z"/>
+<path fill="#EEA66F" d="M8.5,3.5c1.678,0,3.109,1.035,3.703,2.5h2.616C14.141,3.135,11.573,1,8.5,1S2.859,3.135,2.181,6h2.616
+	C5.391,4.535,6.822,3.5,8.5,3.5z"/>
+<path fill="#EEA66F" d="M8.5,11.5c-1.678,0-3.109-1.035-3.703-2.5H2.181c0.678,2.865,3.246,5,6.319,5s5.641-2.135,6.319-5h-2.616
+	C11.609,10.465,10.178,11.5,8.5,11.5z"/>
+<path fill="#5396C7" d="M15.5,6h-0.681h-2.616H4.797H2.181H1.5C1.224,6,1,6.224,1,6.5v2C1,8.776,1.224,9,1.5,9h0.681h2.616h7.407
+	h2.616H15.5C15.776,9,16,8.776,16,8.5v-2C16,6.224,15.776,6,15.5,6z"/>
+<path fill="#E97474" d="M26.5,11.5c-1.678,0-3.109-1.035-3.703-2.5h-2.616c0.678,2.865,3.246,5,6.319,5s5.641-2.135,6.319-5h-2.616
+	C29.609,10.465,28.178,11.5,26.5,11.5z"/>
+<path fill="#E97474" d="M26.5,3.5c1.678,0,3.109,1.035,3.703,2.5h2.616c-0.678-2.865-3.246-5-6.319-5s-5.641,2.135-6.319,5h2.616
+	C23.391,4.535,24.822,3.5,26.5,3.5z"/>
+<path fill="#5396C7" d="M33.5,6h-0.681h-2.616h-7.407h-2.616H19.5C19.224,6,19,6.224,19,6.5v2C19,8.776,19.224,9,19.5,9h0.681h2.616
+	h7.407h2.616H33.5C33.776,9,34,8.776,34,8.5v-2C34,6.224,33.776,6,33.5,6z"/>
+<path fill="#E97474" d="M47.043,13H51c0.552,0,1-0.448,1-1v-2h-9.756L47.043,13z"/>
+<polygon fill="#E97474" points="46.381,6 37,6 37,9 40.381,9 "/>
+<path fill="#E97474" d="M41.957,2H38c-0.552,0-1,0.448-1,1v2h9.756L41.957,2z"/>
+<path fill="#E97474" d="M37,10v2c0,0.552,0.448,1,1,1h7.156l-4.799-3H37z"/>
+<path fill="#E97474" d="M51,2h-7.156l4.799,3H52V3C52,2.448,51.552,2,51,2z"/>
+<polygon fill="#E97474" points="42.619,9 52,9 52,6 48.619,6 "/>
 </svg>
