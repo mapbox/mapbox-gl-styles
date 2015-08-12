@@ -5,7 +5,7 @@
   "main": "index.json",
   "bin": {},
   "scripts": {
-    "test": "gl-style-validate styles/*-v8.json",
+    "test": "gl-style-validate styles/*-v7.json",
     "migrate": "./migrate.sh",
     "build": "node -e 'require(\"fs\").writeFileSync(\"index.json\", JSON.stringify(require(\"./index.js\"), null, 2))'"
   },
