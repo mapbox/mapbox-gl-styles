@@ -1,52 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   id="svg4148"
-   viewBox="0 0 5.2916664 13.229166"
-   height="50"
-   width="20">
-  <defs
-     id="defs4150" />
-  <metadata
-     id="metadata4153">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     transform="translate(0,-283.77083)"
-     id="layer1">
-    <g
-       transform="translate(-2.3812498,-0.26458333)"
-       id="g6082">
-      <ellipse
-         ry="1.3229098"
-         rx="2.3812499"
-         cy="291.17917"
-         cx="5.0270824"
-         id="ellipse6025"
-         style="opacity:1;fill:#3a3836;fill-opacity:0.23529412;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
-      <path
-         id="path6027"
-         d="m 7.5406244,286.77746 c 2e-6,1.65286 -2.5135411,4.52361 -2.5135411,4.52361 0,0 -2.5135433,-2.87075 -2.5135413,-4.52361 2e-6,-1.44134 1.1253523,-2.60976 2.5135413,-2.60976 1.3881893,0 2.5135401,1.16842 2.5135411,2.60976 z"
-         style="opacity:1;fill:#e97474;fill-opacity:1;stroke:#c83737;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
-      <circle
-         r="0.92604196"
-         cy="286.68127"
-         cx="5.0270824"
-         id="circle6029"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c83737;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="Layer_1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="50px"
+	 viewBox="0 0 20 50" enable-background="new 0 0 20 50" xml:space="preserve">
+<g id="ellipse6025" opacity="0.2353">
+	<ellipse fill="#3A3836" cx="9.964" cy="26.902" rx="8.967" ry="4.982"/>
+</g>
+<g id="path6027">
+	<path fill="#E97474" d="M19.43,10.326c0,6.224-9.465,17.035-9.465,17.035S0.499,16.55,0.499,10.326
+		c0-5.428,4.238-9.828,9.465-9.828S19.43,4.899,19.43,10.326z"/>
+	<path fill="#C83737" d="M9.964,27.858c-0.143,0-0.279-0.063-0.375-0.171C9.197,27.241,0,16.664,0,10.326C0,4.632,4.47,0,9.964,0
+		s9.964,4.632,9.964,10.326c0,6.338-9.197,16.914-9.589,17.361C10.244,27.796,10.107,27.858,9.964,27.858z M9.964,0.997
+		c-4.944,0-8.967,4.185-8.967,9.33c0,5.273,7.223,14.189,8.967,16.265c1.743-2.074,8.967-10.994,8.967-16.265
+		C18.931,5.182,14.908,0.997,9.964,0.997z"/>
+</g>
+<g id="circle6029">
+	<circle fill="#FFFFFF" cx="9.964" cy="9.964" r="3.487"/>
+	<path fill="#C83737" d="M9.964,13.95c-2.197,0-3.985-1.789-3.985-3.986s1.787-3.986,3.985-3.986s3.986,1.789,3.986,3.986
+		S12.161,13.95,9.964,13.95z M9.964,6.974c-1.647,0-2.988,1.34-2.988,2.99s1.34,2.99,2.988,2.99c1.649,0,2.99-1.34,2.99-2.99
+		S11.613,6.974,9.964,6.974z"/>
+</g>
 </svg>
