@@ -37,7 +37,7 @@ styles.forEach(function(style) {
     var json = spritezero.generateLayout(getFiles(style), format);
     spritezero.generateImage(json, function(err, png) {
       if (err) console.log(err);
-      writeToFile(style, format, 'json', json);
+      writeToFile(style, format, 'json', JSON.stringify(json));
       writeToFile(style, format, 'png', png);
     });
   });

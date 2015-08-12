@@ -7,6 +7,7 @@
   "scripts": {
     "test": "gl-style-validate styles/*-v8.json",
     "migrate": "./migrate.sh",
+    "generate_sprites": "node ./generate_sprites.js",
     "build": "node -e 'require(\"fs\").writeFileSync(\"index.json\", JSON.stringify(require(\"./index.js\"), null, 2))'"
   },
   "devDependencies": {
