@@ -1,97 +1,6 @@
 {
   "version": 8,
   "name": "Basic",
-  "constants": {
-    "@name": {
-      "type": "field-template",
-      "value": "{name_en}"
-    },
-    "@sans": {
-      "type": "font-array",
-      "value": [
-        "Open Sans Regular",
-        "Arial Unicode MS Regular"
-      ]
-    },
-    "@sans_md": {
-      "type": "font-array",
-      "value": [
-        "Open Sans Semibold",
-        "Arial Unicode MS Bold"
-      ]
-    },
-    "@sans_bd": {
-      "type": "font-array",
-      "value": [
-        "Open Sans Bold",
-        "Arial Unicode MS Bold"
-      ]
-    },
-    "@land": {
-      "type": "color",
-      "value": "#dedede"
-    },
-    "@water": {
-      "type": "color",
-      "value": "#a0cfdf"
-    },
-    "@park": {
-      "type": "color",
-      "value": "#d2edae"
-    },
-    "@building": {
-      "type": "color",
-      "value": "#d6d6d6"
-    },
-    "@label": {
-      "type": "color",
-      "value": "#666"
-    },
-    "@label-halo": {
-      "type": "color",
-      "value": "rgba(255,255,255,0.75)"
-    },
-    "@road-major": {
-      "type": "color",
-      "value": "#fff"
-    },
-    "@road-minor": {
-      "type": "color",
-      "value": "#efefef"
-    },
-    "@road-major-width": {
-      "type": "number",
-      "value": {
-        "base": 1.4,
-        "stops": [
-          [
-            6,
-            0.5
-          ],
-          [
-            20,
-            30
-          ]
-        ]
-      }
-    },
-    "@road-minor-width": {
-      "type": "number",
-      "value": {
-        "base": 1.55,
-        "stops": [
-          [
-            4,
-            0.25
-          ],
-          [
-            20,
-            30
-          ]
-        ]
-      }
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -105,7 +14,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "@land"
+        "background-color": "#dedede"
       }
     },
     {
@@ -119,7 +28,7 @@
         "park"
       ],
       "paint": {
-        "fill-color": "@park"
+        "fill-color": "#d2edae"
       }
     },
     {
@@ -142,7 +51,7 @@
         ]
       ],
       "paint": {
-        "line-color": "@water",
+        "line-color": "#a0cfdf",
         "line-width": {
           "base": 1.4,
           "stops": [
@@ -164,7 +73,7 @@
       "source": "mapbox",
       "source-layer": "water",
       "paint": {
-        "fill-color": "@water"
+        "fill-color": "#a0cfdf"
       }
     },
     {
@@ -173,7 +82,7 @@
       "source": "mapbox",
       "source-layer": "building",
       "paint": {
-        "fill-color": "@building"
+        "fill-color": "#d6d6d6"
       }
     },
     {
@@ -200,8 +109,20 @@
         ]
       ],
       "paint": {
-        "line-color": "@road-minor",
-        "line-width": "@road-minor-width",
+        "line-color": "#efefef",
+        "line-width": {
+          "base": 1.55,
+          "stops": [
+            [
+              4,
+              0.25
+            ],
+            [
+              20,
+              30
+            ]
+          ]
+        },
         "line-dasharray": [
           0.36,
           0.18
@@ -228,8 +149,20 @@
         ]
       ],
       "paint": {
-        "line-color": "@road-major",
-        "line-width": "@road-major-width",
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              6,
+              0.5
+            ],
+            [
+              20,
+              30
+            ]
+          ]
+        },
         "line-dasharray": [
           0.28,
           0.14
@@ -264,8 +197,20 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@road-minor",
-        "line-width": "@road-minor-width"
+        "line-color": "#efefef",
+        "line-width": {
+          "base": 1.55,
+          "stops": [
+            [
+              4,
+              0.25
+            ],
+            [
+              20,
+              30
+            ]
+          ]
+        }
       }
     },
     {
@@ -292,8 +237,20 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@road-major",
-        "line-width": "@road-major-width"
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              6,
+              0.5
+            ],
+            [
+              20,
+              30
+            ]
+          ]
+        }
       }
     },
     {
@@ -320,7 +277,7 @@
         ]
       ],
       "paint": {
-        "line-color": "@land",
+        "line-color": "#dedede",
         "line-width": {
           "base": 1.6,
           "stops": [
@@ -334,7 +291,19 @@
             ]
           ]
         },
-        "line-gap-width": "@road-minor-width"
+        "line-gap-width": {
+          "base": 1.55,
+          "stops": [
+            [
+              4,
+              0.25
+            ],
+            [
+              20,
+              30
+            ]
+          ]
+        }
       }
     },
     {
@@ -357,7 +326,7 @@
         ]
       ],
       "paint": {
-        "line-color": "@land",
+        "line-color": "#dedede",
         "line-width": {
           "base": 1.4,
           "stops": [
@@ -371,7 +340,19 @@
             ]
           ]
         },
-        "line-gap-width": "@road-major-width"
+        "line-gap-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              6,
+              0.5
+            ],
+            [
+              20,
+              30
+            ]
+          ]
+        }
       }
     },
     {
@@ -402,8 +383,20 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@road-minor",
-        "line-width": "@road-minor-width"
+        "line-color": "#efefef",
+        "line-width": {
+          "base": 1.55,
+          "stops": [
+            [
+              4,
+              0.25
+            ],
+            [
+              20,
+              30
+            ]
+          ]
+        }
       }
     },
     {
@@ -430,8 +423,20 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@road-major",
-        "line-width": "@road-major-width"
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              6,
+              0.5
+            ],
+            [
+              20,
+              30
+            ]
+          ]
+        }
       }
     },
     {
@@ -490,14 +495,17 @@
         "Point"
       ],
       "layout": {
-        "text-field": "@name",
-        "text-font": "@sans",
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
         "text-max-size": 22,
         "text-max-width": 10
       },
       "paint": {
-        "text-color": "@label",
-        "text-halo-color": "@label-halo",
+        "text-color": "#666",
+        "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 1,
         "text-halo-blur": 1,
         "text-size": {
@@ -534,13 +542,16 @@
         ]
       ],
       "layout": {
-        "text-field": "@name",
-        "text-font": "@sans_bd",
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
         "text-max-width": 10
       },
       "paint": {
-        "text-color": "@label",
-        "text-halo-color": "@label-halo",
+        "text-color": "#666",
+        "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 1,
         "text-halo-blur": 1,
         "text-size": {
@@ -581,13 +592,16 @@
         ]
       ],
       "layout": {
-        "text-field": "@name",
-        "text-font": "@sans_md",
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
         "text-max-width": 6
       },
       "paint": {
-        "text-color": "@label",
-        "text-halo-color": "@label-halo",
+        "text-color": "#666",
+        "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 1,
         "text-halo-blur": 1,
         "text-size": {
@@ -625,15 +639,18 @@
       ],
       "layout": {
         "symbol-placement": "line",
-        "text-field": "@name",
-        "text-font": "@sans_md",
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.1,
         "text-max-size": 14
       },
       "paint": {
-        "text-color": "@label",
-        "text-halo-color": "@label-halo",
+        "text-color": "#666",
+        "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 2,
         "text-size": {
           "base": 1.4,
@@ -681,17 +698,20 @@
           0,
           0.5
         ],
-        "text-field": "@name",
-        "text-font": "@sans_md",
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
         "text-max-size": 11,
         "text-max-width": 8,
         "text-anchor": "top"
       },
       "paint": {
         "icon-size": 1,
-        "text-color": "@label",
+        "text-color": "#666",
         "text-halo-width": 1,
-        "text-halo-color": "@label-halo",
+        "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-blur": 1,
         "text-size": 11
       }

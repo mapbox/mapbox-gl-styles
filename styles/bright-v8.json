@@ -1,541 +1,6 @@
 {
   "version": 8,
   "name": "Bright",
-  "constants": {
-    "@name": {
-      "type": "field-template",
-      "value": "{name_en}"
-    },
-    "@sans": {
-      "type": "font-array",
-      "value": [
-        "Open Sans Regular",
-        "Arial Unicode MS Regular"
-      ]
-    },
-    "@sans_it": {
-      "type": "font-array",
-      "value": [
-        "Open Sans Italic",
-        "Arial Unicode MS Regular"
-      ]
-    },
-    "@sans_md": {
-      "type": "font-array",
-      "value": [
-        "Open Sans Semibold",
-        "Arial Unicode MS Bold"
-      ]
-    },
-    "@sans_bd": {
-      "type": "font-array",
-      "value": [
-        "Open Sans Bold",
-        "Arial Unicode MS Bold"
-      ]
-    },
-    "@land": {
-      "type": "color",
-      "value": "#f8f4f0"
-    },
-    "@water": {
-      "type": "color",
-      "value": "#a0c8f0"
-    },
-    "@admin": {
-      "type": "color",
-      "value": "#9e9cab"
-    },
-    "@admin-opacity": {
-      "type": "opacity",
-      "value": 0.5
-    },
-    "@park": {
-      "type": "color",
-      "value": "#d8e8c8"
-    },
-    "@cemetery": {
-      "type": "color",
-      "value": "#e0e4dd"
-    },
-    "@hospital": {
-      "type": "color",
-      "value": "#fde"
-    },
-    "@school": {
-      "type": "color",
-      "value": "#f0e8f8"
-    },
-    "@wood": {
-      "type": "color",
-      "value": "#6a4"
-    },
-    "@building": {
-      "type": "color",
-      "value": "#f2eae2"
-    },
-    "@building_shadow": {
-      "type": "color",
-      "value": "#dfdbd7"
-    },
-    "@building_color_transition": {
-      "type": "color",
-      "value": {
-        "base": 1,
-        "stops": [
-          [
-            15.5,
-            "#f2eae2"
-          ],
-          [
-            16,
-            "#dfdbd7"
-          ]
-        ]
-      }
-    },
-    "@building_opacity": {
-      "type": "opacity",
-      "value": {
-        "base": 1,
-        "stops": [
-          [
-            15,
-            0
-          ],
-          [
-            16,
-            1
-          ]
-        ]
-      }
-    },
-    "@aeroway": {
-      "type": "color",
-      "value": "#f0ede9"
-    },
-    "@motorway": {
-      "type": "color",
-      "value": "#fc8"
-    },
-    "@motorway_casing": {
-      "type": "color",
-      "value": "#e9ac77"
-    },
-    "@motorway_tunnel": {
-      "type": "color",
-      "value": "#ffdaa6"
-    },
-    "@main": {
-      "type": "color",
-      "value": "#fea"
-    },
-    "@main_tunnel": {
-      "type": "color",
-      "value": "#fff4c6"
-    },
-    "@street": {
-      "type": "color",
-      "value": "#fff"
-    },
-    "@street_limited": {
-      "type": "color",
-      "value": "#f3f3f3"
-    },
-    "@street_casing": {
-      "type": "color",
-      "value": "#cfcdca"
-    },
-    "@path": {
-      "type": "color",
-      "value": "#cba"
-    },
-    "@rail": {
-      "type": "color",
-      "value": "#bbb"
-    },
-    "@text": {
-      "type": "color",
-      "value": "#334"
-    },
-    "@text_halo": {
-      "type": "color",
-      "value": "rgba(255,255,255,0.8)"
-    },
-    "@marine_text": {
-      "type": "color",
-      "value": "#74aee9"
-    },
-    "@marine_text_halo": {
-      "type": "color",
-      "value": "rgba(255,255,255,0.7)"
-    },
-    "@poi_text": {
-      "type": "color",
-      "value": "#666"
-    },
-    "@poi_text_halo": {
-      "type": "color",
-      "value": "#ffffff"
-    },
-    "@maki": {
-      "type": "color",
-      "value": "#666"
-    },
-    "@tunnel_line_dasharray": {
-      "type": "dash-array",
-      "value": [
-        0.5,
-        0.25
-      ]
-    },
-    "@motorway_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            6.5,
-            0
-          ],
-          [
-            7,
-            0.5
-          ],
-          [
-            20,
-            18
-          ]
-        ]
-      }
-    },
-    "@motorway_casing_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            5,
-            0.4
-          ],
-          [
-            6,
-            0.6
-          ],
-          [
-            7,
-            1.5
-          ],
-          [
-            20,
-            22
-          ]
-        ]
-      }
-    },
-    "@motorway_link_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            12.5,
-            0
-          ],
-          [
-            13,
-            1.5
-          ],
-          [
-            20,
-            10
-          ]
-        ]
-      }
-    },
-    "@motorway_link_casing_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            12,
-            1
-          ],
-          [
-            13,
-            3
-          ],
-          [
-            20,
-            13
-          ]
-        ]
-      }
-    },
-    "@main_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            6.5,
-            0
-          ],
-          [
-            7,
-            0.5
-          ],
-          [
-            20,
-            14
-          ]
-        ]
-      }
-    },
-    "@main_casing_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            5,
-            0.1
-          ],
-          [
-            6,
-            0.2
-          ],
-          [
-            7,
-            1.5
-          ],
-          [
-            20,
-            18
-          ]
-        ]
-      }
-    },
-    "@street_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            13.5,
-            0
-          ],
-          [
-            14,
-            2.5
-          ],
-          [
-            20,
-            11.5
-          ]
-        ]
-      }
-    },
-    "@street_casing_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            12,
-            0.5
-          ],
-          [
-            13,
-            1
-          ],
-          [
-            14,
-            4
-          ],
-          [
-            20,
-            15
-          ]
-        ]
-      }
-    },
-    "@street_casing_opacity": {
-      "type": "opacity",
-      "value": {
-        "stops": [
-          [
-            12,
-            0
-          ],
-          [
-            12.5,
-            1
-          ]
-        ]
-      }
-    },
-    "@service_casing_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            15,
-            1
-          ],
-          [
-            16,
-            4
-          ],
-          [
-            20,
-            11
-          ]
-        ]
-      }
-    },
-    "@service_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            15.5,
-            0
-          ],
-          [
-            16,
-            2
-          ],
-          [
-            20,
-            7.5
-          ]
-        ]
-      }
-    },
-    "@path_width": {
-      "type": "number",
-      "value": {
-        "base": 1.2,
-        "stops": [
-          [
-            15,
-            1.2
-          ],
-          [
-            20,
-            4
-          ]
-        ]
-      }
-    },
-    "@path_line_dasharray": {
-      "type": "dash-array",
-      "value": [
-        1.5,
-        0.75
-      ]
-    },
-    "@rail_width": {
-      "type": "number",
-      "value": {
-        "base": 1.4,
-        "stops": [
-          [
-            14,
-            0.4
-          ],
-          [
-            15,
-            0.75
-          ],
-          [
-            20,
-            2
-          ]
-        ]
-      }
-    },
-    "@rail_hatch_width": {
-      "type": "number",
-      "value": {
-        "base": 1.4,
-        "stops": [
-          [
-            14.5,
-            0
-          ],
-          [
-            15,
-            3
-          ],
-          [
-            20,
-            8
-          ]
-        ]
-      }
-    },
-    "@rail_hatch_line_dasharray": {
-      "type": "dash-array",
-      "value": [
-        0.2,
-        8
-      ]
-    },
-    "@admin_level_3_width": {
-      "type": "number",
-      "value": {
-        "base": 1,
-        "stops": [
-          [
-            4,
-            0.4
-          ],
-          [
-            5,
-            1
-          ],
-          [
-            12,
-            3
-          ]
-        ]
-      }
-    },
-    "@admin_level_2_width": {
-      "type": "number",
-      "value": {
-        "base": 1,
-        "stops": [
-          [
-            4,
-            1.4
-          ],
-          [
-            5,
-            2
-          ],
-          [
-            12,
-            8
-          ]
-        ]
-      }
-    },
-    "@admin_level_3_dasharray": {
-      "type": "dash-array",
-      "value": [
-        3,
-        1,
-        1,
-        1
-      ]
-    }
-  },
   "sources": {
     "mapbox": {
       "type": "vector",
@@ -549,7 +14,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "@land"
+        "background-color": "#f8f4f0"
       }
     },
     {
@@ -563,7 +28,7 @@
         "park"
       ],
       "paint": {
-        "fill-color": "@park"
+        "fill-color": "#d8e8c8"
       }
     },
     {
@@ -577,7 +42,7 @@
         "cemetery"
       ],
       "paint": {
-        "fill-color": "@cemetery"
+        "fill-color": "#e0e4dd"
       }
     },
     {
@@ -591,7 +56,7 @@
         "hospital"
       ],
       "paint": {
-        "fill-color": "@hospital"
+        "fill-color": "#fde"
       }
     },
     {
@@ -605,7 +70,7 @@
         "school"
       ],
       "paint": {
-        "fill-color": "@school"
+        "fill-color": "#f0e8f8"
       }
     },
     {
@@ -619,7 +84,7 @@
         "wood"
       ],
       "paint": {
-        "fill-color": "@wood",
+        "fill-color": "#6a4",
         "fill-opacity": 0.1
       }
     },
@@ -650,7 +115,7 @@
         "line-cap": "round"
       },
       "paint": {
-        "line-color": "@water",
+        "line-color": "#a0c8f0",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -680,7 +145,7 @@
         "line-cap": "round"
       },
       "paint": {
-        "line-color": "@water",
+        "line-color": "#a0c8f0",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -711,7 +176,7 @@
         "line-cap": "round"
       },
       "paint": {
-        "line-color": "@water",
+        "line-color": "#a0c8f0",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -733,7 +198,7 @@
       "source": "mapbox",
       "source-layer": "water",
       "paint": {
-        "fill-color": "@water"
+        "fill-color": "#a0c8f0"
       }
     },
     {
@@ -773,7 +238,7 @@
         "Polygon"
       ],
       "paint": {
-        "fill-color": "@aeroway",
+        "fill-color": "#f0ede9",
         "fill-opacity": 0.7
       }
     },
@@ -797,7 +262,7 @@
         ]
       ],
       "paint": {
-        "line-color": "@aeroway",
+        "line-color": "#f0ede9",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -833,7 +298,7 @@
         ]
       ],
       "paint": {
-        "line-color": "@aeroway",
+        "line-color": "#f0ede9",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -855,15 +320,39 @@
       "source": "mapbox",
       "source-layer": "building",
       "paint": {
-        "fill-color": "@building_color_transition"
+        "fill-color": {
+          "base": 1,
+          "stops": [
+            [
+              15.5,
+              "#f2eae2"
+            ],
+            [
+              16,
+              "#dfdbd7"
+            ]
+          ]
+        }
       }
     },
     {
       "id": "building_top",
       "ref": "building",
       "paint": {
-        "fill-color": "@building",
-        "fill-opacity": "@building_opacity",
+        "fill-color": "#f2eae2",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [
+              15,
+              0
+            ],
+            [
+              16,
+              1
+            ]
+          ]
+        },
         "fill-translate": {
           "stops": [
             [
@@ -883,7 +372,7 @@
           ],
           "base": 1
         },
-        "fill-outline-color": "@building_shadow"
+        "fill-outline-color": "#dfdbd7"
       }
     },
     {
@@ -900,9 +389,28 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@motorway_casing",
-        "line-dasharray": "@tunnel_line_dasharray",
-        "line-width": "@motorway_link_casing_width"
+        "line-color": "#e9ac77",
+        "line-dasharray": [
+          0.5,
+          0.25
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              20,
+              13
+            ]
+          ]
+        }
       }
     },
     {
@@ -919,9 +427,28 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@street_casing",
-        "line-dasharray": "@tunnel_line_dasharray",
-        "line-width": "@service_casing_width"
+        "line-color": "#cfcdca",
+        "line-dasharray": [
+          0.5,
+          0.25
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15,
+              1
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              20,
+              11
+            ]
+          ]
+        }
       }
     },
     {
@@ -939,10 +466,44 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@street_casing",
-        "line-dasharray": "@tunnel_line_dasharray",
-        "line-width": "@street_casing_width",
-        "line-opacity": "@street_casing_opacity"
+        "line-color": "#cfcdca",
+        "line-dasharray": [
+          0.5,
+          0.25
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              0.5
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [
+              12,
+              0
+            ],
+            [
+              12.5,
+              1
+            ]
+          ]
+        }
       }
     },
     {
@@ -959,9 +520,32 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@motorway_casing",
-        "line-dasharray": "@tunnel_line_dasharray",
-        "line-width": "@main_casing_width"
+        "line-color": "#e9ac77",
+        "line-dasharray": [
+          0.5,
+          0.25
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.1
+            ],
+            [
+              6,
+              0.2
+            ],
+            [
+              7,
+              1.5
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
       }
     },
     {
@@ -978,9 +562,32 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@motorway_casing",
-        "line-dasharray": "@tunnel_line_dasharray",
-        "line-width": "@motorway_casing_width"
+        "line-color": "#e9ac77",
+        "line-dasharray": [
+          0.5,
+          0.25
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.4
+            ],
+            [
+              6,
+              0.6
+            ],
+            [
+              7,
+              1.5
+            ],
+            [
+              20,
+              22
+            ]
+          ]
+        }
       }
     },
     {
@@ -994,49 +601,144 @@
         "path"
       ],
       "paint": {
-        "line-color": "@path",
-        "line-dasharray": "@path_line_dasharray",
-        "line-width": "@path_width"
+        "line-color": "#cba",
+        "line-dasharray": [
+          1.5,
+          0.75
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15,
+              1.2
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
       }
     },
     {
       "id": "tunnel_motorway_link",
       "ref": "tunnel_motorway_link_casing",
       "paint": {
-        "line-color": "@motorway",
-        "line-width": "@motorway_link_width"
+        "line-color": "#fc8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12.5,
+              0
+            ],
+            [
+              13,
+              1.5
+            ],
+            [
+              20,
+              10
+            ]
+          ]
+        }
       }
     },
     {
       "id": "tunnel_service",
       "ref": "tunnel_service_casing",
       "paint": {
-        "line-color": "@street",
-        "line-width": "@service_width"
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15.5,
+              0
+            ],
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              7.5
+            ]
+          ]
+        }
       }
     },
     {
       "id": "tunnel_street",
       "ref": "tunnel_street_casing",
       "paint": {
-        "line-color": "@street",
-        "line-width": "@street_width"
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13.5,
+              0
+            ],
+            [
+              14,
+              2.5
+            ],
+            [
+              20,
+              11.5
+            ]
+          ]
+        }
       }
     },
     {
       "id": "tunnel_main",
       "ref": "tunnel_main_casing",
       "paint": {
-        "line-color": "@main_tunnel",
-        "line-width": "@main_width"
+        "line-color": "#fff4c6",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              6.5,
+              0
+            ],
+            [
+              7,
+              0.5
+            ],
+            [
+              20,
+              14
+            ]
+          ]
+        }
       }
     },
     {
       "id": "tunnel_motorway",
       "ref": "tunnel_motorway_casing",
       "paint": {
-        "line-color": "@motorway_tunnel",
-        "line-width": "@motorway_width"
+        "line-color": "#ffdaa6",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              6.5,
+              0
+            ],
+            [
+              7,
+              0.5
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
       }
     },
     {
@@ -1050,17 +752,52 @@
         "major_rail"
       ],
       "paint": {
-        "line-color": "@rail",
-        "line-width": "@rail_width"
+        "line-color": "#bbb",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              14,
+              0.4
+            ],
+            [
+              15,
+              0.75
+            ],
+            [
+              20,
+              2
+            ]
+          ]
+        }
       }
     },
     {
       "id": "tunnel_major_rail_hatching",
       "ref": "tunnel_major_rail",
       "paint": {
-        "line-color": "@rail",
-        "line-dasharray": "@rail_hatch_line_dasharray",
-        "line-width": "@rail_hatch_width"
+        "line-color": "#bbb",
+        "line-dasharray": [
+          0.2,
+          8
+        ],
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              14.5,
+              0
+            ],
+            [
+              15,
+              3
+            ],
+            [
+              20,
+              8
+            ]
+          ]
+        }
       }
     },
     {
@@ -1079,8 +816,24 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@motorway_casing",
-        "line-width": "@motorway_link_casing_width"
+        "line-color": "#e9ac77",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              20,
+              13
+            ]
+          ]
+        }
       }
     },
     {
@@ -1098,8 +851,24 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@street_casing",
-        "line-width": "@service_casing_width"
+        "line-color": "#cfcdca",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15,
+              1
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              20,
+              11
+            ]
+          ]
+        }
       }
     },
     {
@@ -1126,9 +895,40 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@street_casing",
-        "line-width": "@street_casing_width",
-        "line-opacity": "@street_casing_opacity"
+        "line-color": "#cfcdca",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              0.5
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [
+              12,
+              0
+            ],
+            [
+              12.5,
+              1
+            ]
+          ]
+        }
       }
     },
     {
@@ -1146,8 +946,28 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@motorway_casing",
-        "line-width": "@main_casing_width"
+        "line-color": "#e9ac77",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.1
+            ],
+            [
+              6,
+              0.2
+            ],
+            [
+              7,
+              1.5
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
       }
     },
     {
@@ -1166,8 +986,28 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@motorway_casing",
-        "line-width": "@motorway_casing_width"
+        "line-color": "#e9ac77",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.4
+            ],
+            [
+              6,
+              0.6
+            ],
+            [
+              7,
+              1.5
+            ],
+            [
+              20,
+              22
+            ]
+          ]
+        }
       }
     },
     {
@@ -1181,49 +1021,144 @@
         "path"
       ],
       "paint": {
-        "line-color": "@path",
-        "line-dasharray": "@path_line_dasharray",
-        "line-width": "@path_width"
+        "line-color": "#cba",
+        "line-dasharray": [
+          1.5,
+          0.75
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15,
+              1.2
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
       }
     },
     {
       "id": "road_motorway_link",
       "ref": "road_motorway_link_casing",
       "paint": {
-        "line-color": "@motorway",
-        "line-width": "@motorway_link_width"
+        "line-color": "#fc8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12.5,
+              0
+            ],
+            [
+              13,
+              1.5
+            ],
+            [
+              20,
+              10
+            ]
+          ]
+        }
       }
     },
     {
       "id": "road_service",
       "ref": "road_service_casing",
       "paint": {
-        "line-color": "@street",
-        "line-width": "@service_width"
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15.5,
+              0
+            ],
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              7.5
+            ]
+          ]
+        }
       }
     },
     {
       "id": "road_street",
       "ref": "road_street_casing",
       "paint": {
-        "line-color": "@street",
-        "line-width": "@street_width"
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13.5,
+              0
+            ],
+            [
+              14,
+              2.5
+            ],
+            [
+              20,
+              11.5
+            ]
+          ]
+        }
       }
     },
     {
       "id": "road_main",
       "ref": "road_main_casing",
       "paint": {
-        "line-color": "@main",
-        "line-width": "@main_width"
+        "line-color": "#fea",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              6.5,
+              0
+            ],
+            [
+              7,
+              0.5
+            ],
+            [
+              20,
+              14
+            ]
+          ]
+        }
       }
     },
     {
       "id": "road_motorway",
       "ref": "road_motorway_casing",
       "paint": {
-        "line-color": "@motorway",
-        "line-width": "@motorway_width"
+        "line-color": "#fc8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              6.5,
+              0
+            ],
+            [
+              7,
+              0.5
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
       }
     },
     {
@@ -1237,17 +1172,52 @@
         "major_rail"
       ],
       "paint": {
-        "line-color": "@rail",
-        "line-width": "@rail_width"
+        "line-color": "#bbb",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              14,
+              0.4
+            ],
+            [
+              15,
+              0.75
+            ],
+            [
+              20,
+              2
+            ]
+          ]
+        }
       }
     },
     {
       "id": "road_major_rail_hatching",
       "ref": "road_major_rail",
       "paint": {
-        "line-color": "@rail",
-        "line-dasharray": "@rail_hatch_line_dasharray",
-        "line-width": "@rail_hatch_width"
+        "line-color": "#bbb",
+        "line-dasharray": [
+          0.2,
+          8
+        ],
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              14.5,
+              0
+            ],
+            [
+              15,
+              3
+            ],
+            [
+              20,
+              8
+            ]
+          ]
+        }
       }
     },
     {
@@ -1264,8 +1234,24 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@motorway_casing",
-        "line-width": "@motorway_link_casing_width"
+        "line-color": "#e9ac77",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              20,
+              13
+            ]
+          ]
+        }
       }
     },
     {
@@ -1282,8 +1268,28 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@motorway_casing",
-        "line-width": "@motorway_casing_width"
+        "line-color": "#e9ac77",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.4
+            ],
+            [
+              6,
+              0.6
+            ],
+            [
+              7,
+              1.5
+            ],
+            [
+              20,
+              22
+            ]
+          ]
+        }
       }
     },
     {
@@ -1300,8 +1306,24 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@street_casing",
-        "line-width": "@service_casing_width"
+        "line-color": "#cfcdca",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15,
+              1
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              20,
+              11
+            ]
+          ]
+        }
       }
     },
     {
@@ -1319,9 +1341,40 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@street_casing",
-        "line-width": "@street_casing_width",
-        "line-opacity": "@street_casing_opacity"
+        "line-color": "#cfcdca",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              0.5
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [
+              12,
+              0
+            ],
+            [
+              12.5,
+              1
+            ]
+          ]
+        }
       }
     },
     {
@@ -1338,8 +1391,28 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@motorway_casing",
-        "line-width": "@main_casing_width"
+        "line-color": "#e9ac77",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.1
+            ],
+            [
+              6,
+              0.2
+            ],
+            [
+              7,
+              1.5
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
       }
     },
     {
@@ -1353,49 +1426,144 @@
         "path"
       ],
       "paint": {
-        "line-color": "@path",
-        "line-dasharray": "@path_line_dasharray",
-        "line-width": "@path_width"
+        "line-color": "#cba",
+        "line-dasharray": [
+          1.5,
+          0.75
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15,
+              1.2
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
       }
     },
     {
       "id": "bridge_motorway_link",
       "ref": "bridge_motorway_link_casing",
       "paint": {
-        "line-color": "@motorway",
-        "line-width": "@motorway_link_width"
+        "line-color": "#fc8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12.5,
+              0
+            ],
+            [
+              13,
+              1.5
+            ],
+            [
+              20,
+              10
+            ]
+          ]
+        }
       }
     },
     {
       "id": "bridge_service",
       "ref": "bridge_service_casing",
       "paint": {
-        "line-color": "@street",
-        "line-width": "@service_width"
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15.5,
+              0
+            ],
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              7.5
+            ]
+          ]
+        }
       }
     },
     {
       "id": "bridge_street",
       "ref": "bridge_street_casing",
       "paint": {
-        "line-color": "@street",
-        "line-width": "@street_width"
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13.5,
+              0
+            ],
+            [
+              14,
+              2.5
+            ],
+            [
+              20,
+              11.5
+            ]
+          ]
+        }
       }
     },
     {
       "id": "bridge_main",
       "ref": "bridge_main_casing",
       "paint": {
-        "line-color": "@main",
-        "line-width": "@main_width"
+        "line-color": "#fea",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              6.5,
+              0
+            ],
+            [
+              7,
+              0.5
+            ],
+            [
+              20,
+              14
+            ]
+          ]
+        }
       }
     },
     {
       "id": "bridge_motorway",
       "ref": "bridge_motorway_casing",
       "paint": {
-        "line-color": "@motorway",
-        "line-width": "@motorway_width"
+        "line-color": "#fc8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              6.5,
+              0
+            ],
+            [
+              7,
+              0.5
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
       }
     },
     {
@@ -1409,17 +1577,52 @@
         "major_rail"
       ],
       "paint": {
-        "line-color": "@rail",
-        "line-width": "@rail_width"
+        "line-color": "#bbb",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              14,
+              0.4
+            ],
+            [
+              15,
+              0.75
+            ],
+            [
+              20,
+              2
+            ]
+          ]
+        }
       }
     },
     {
       "id": "bridge_major_rail_hatching",
       "ref": "bridge_major_rail",
       "paint": {
-        "line-color": "@rail",
-        "line-dasharray": "@rail_hatch_line_dasharray",
-        "line-width": "@rail_hatch_width"
+        "line-color": "#bbb",
+        "line-dasharray": [
+          0.2,
+          8
+        ],
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              14.5,
+              0
+            ],
+            [
+              15,
+              3
+            ],
+            [
+              20,
+              8
+            ]
+          ]
+        }
       }
     },
     {
@@ -1444,9 +1647,30 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@admin",
-        "line-dasharray": "@admin_level_3_dasharray",
-        "line-width": "@admin_level_3_width"
+        "line-color": "#9e9cab",
+        "line-dasharray": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              0.4
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ]
+        }
       }
     },
     {
@@ -1477,8 +1701,24 @@
         "line-cap": "round"
       },
       "paint": {
-        "line-color": "@admin",
-        "line-width": "@admin_level_2_width"
+        "line-color": "#9e9cab",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              1.4
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              12,
+              8
+            ]
+          ]
+        }
       }
     },
     {
@@ -1508,12 +1748,28 @@
         "line-cap": "round"
       },
       "paint": {
-        "line-color": "@admin",
+        "line-color": "#9e9cab",
         "line-dasharray": [
           2,
           2
         ],
-        "line-width": "@admin_level_2_width"
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              1.4
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              12,
+              8
+            ]
+          ]
+        }
       }
     },
     {
@@ -1538,10 +1794,31 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "@water",
-        "line-opacity": "@admin-opacity",
-        "line-dasharray": "@admin_level_3_dasharray",
-        "line-width": "@admin_level_3_width"
+        "line-color": "#a0c8f0",
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              0.4
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              12,
+              3
+            ]
+          ]
+        }
       }
     },
     {
@@ -1566,9 +1843,25 @@
         "line-cap": "round"
       },
       "paint": {
-        "line-color": "@water",
-        "line-opacity": "@admin-opacity",
-        "line-width": "@admin_level_2_width"
+        "line-color": "#a0c8f0",
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              1.4
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              12,
+              8
+            ]
+          ]
+        }
       }
     },
     {
@@ -1582,15 +1875,18 @@
         1
       ],
       "layout": {
-        "text-font": "@sans_bd",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
         "text-max-width": 6.25,
         "text-transform": "uppercase",
         "text-max-size": 17
       },
       "paint": {
-        "text-color": "@text",
-        "text-halo-color": "@text_halo",
+        "text-color": "#334",
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2,
         "text-halo-blur": 1,
         "text-size": {
@@ -1618,15 +1914,18 @@
         2
       ],
       "layout": {
-        "text-font": "@sans_bd",
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
         "text-field": "{name_en}",
         "text-max-width": 6.25,
         "text-transform": "uppercase",
         "text-max-size": 17
       },
       "paint": {
-        "text-color": "@text",
-        "text-halo-color": "@text_halo",
+        "text-color": "#334",
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2,
         "text-halo-blur": 1,
         "text-size": {
@@ -1654,15 +1953,18 @@
         3
       ],
       "layout": {
-        "text-font": "@sans_bd",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
         "text-max-width": 6.25,
         "text-transform": "uppercase",
         "text-max-size": 17
       },
       "paint": {
-        "text-color": "@text",
-        "text-halo-color": "@text_halo",
+        "text-color": "#334",
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2,
         "text-halo-blur": 1,
         "text-size": {
@@ -1690,15 +1992,18 @@
         4
       ],
       "layout": {
-        "text-font": "@sans_bd",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
         "text-max-width": 6.25,
         "text-transform": "uppercase",
         "text-max-size": 15
       },
       "paint": {
-        "text-color": "@text",
-        "text-halo-color": "@text_halo",
+        "text-color": "#334",
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2,
         "text-halo-blur": 1,
         "text-size": {
@@ -1734,8 +2039,11 @@
         ]
       ],
       "layout": {
-        "text-font": "@sans_it",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 22,
         "text-max-width": 5,
         "text-letter-spacing": 0.2,
@@ -1747,8 +2055,8 @@
         ]
       },
       "paint": {
-        "text-color": "@marine_text",
-        "text-halo-color": "@marine_text_halo",
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
         "text-halo-width": 0.75,
         "text-halo-blur": 0.75,
         "text-size": {
@@ -1784,15 +2092,18 @@
         ]
       ],
       "layout": {
-        "text-font": "@sans_it",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 14,
         "text-letter-spacing": 0.2,
         "symbol-placement": "line"
       },
       "paint": {
-        "text-color": "@marine_text",
-        "text-halo-color": "@marine_text_halo",
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
         "text-halo-width": 0.75,
         "text-halo-blur": 0.75,
         "text-size": {
@@ -1828,16 +2139,19 @@
         ]
       ],
       "layout": {
-        "text-font": "@sans_it",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 16,
         "text-max-width": 5,
         "text-letter-spacing": 0.2,
         "symbol-placement": "point"
       },
       "paint": {
-        "text-color": "@marine_text",
-        "text-halo-color": "@marine_text_halo",
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
         "text-halo-width": 0.75,
         "text-halo-blur": 0.75,
         "text-size": {
@@ -1873,15 +2187,18 @@
         ]
       ],
       "layout": {
-        "text-font": "@sans_it",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 16,
         "text-letter-spacing": 0.2,
         "symbol-placement": "line"
       },
       "paint": {
-        "text-color": "@marine_text",
-        "text-halo-color": "@marine_text_halo",
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
         "text-halo-width": 0.75,
         "text-halo-blur": 0.75,
         "text-size": {
@@ -1917,16 +2234,19 @@
         ]
       ],
       "layout": {
-        "text-font": "@sans_it",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 14,
         "text-max-width": 5,
         "text-letter-spacing": 0.2,
         "symbol-placement": "point"
       },
       "paint": {
-        "text-color": "@marine_text",
-        "text-halo-color": "@marine_text_halo",
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
         "text-halo-width": 0.75,
         "text-halo-blur": 0.75,
         "text-size": {
@@ -1962,15 +2282,18 @@
         ]
       ],
       "layout": {
-        "text-font": "@sans_it",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 14,
         "text-letter-spacing": 0.2,
         "symbol-placement": "line"
       },
       "paint": {
-        "text-color": "@marine_text",
-        "text-halo-color": "@marine_text_halo",
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
         "text-halo-width": 0.75,
         "text-halo-blur": 0.75,
         "text-size": {
@@ -2006,16 +2329,19 @@
         ]
       ],
       "layout": {
-        "text-font": "@sans_it",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 12,
         "text-max-width": 6,
         "text-letter-spacing": 0.2,
         "symbol-placement": "point"
       },
       "paint": {
-        "text-color": "@marine_text",
-        "text-halo-color": "@marine_text_halo",
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
         "text-halo-width": 0.75,
         "text-halo-blur": 0.75,
         "text-size": {
@@ -2051,15 +2377,18 @@
         ]
       ],
       "layout": {
-        "text-font": "@sans_it",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 12,
         "text-letter-spacing": 0.2,
         "symbol-placement": "line"
       },
       "paint": {
-        "text-color": "@marine_text",
-        "text-halo-color": "@marine_text_halo",
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
         "text-halo-width": 0.75,
         "text-halo-blur": 0.75,
         "text-size": {
@@ -2087,14 +2416,17 @@
         "city"
       ],
       "layout": {
-        "text-font": "@sans_md",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 24,
         "text-max-width": 8
       },
       "paint": {
         "text-color": "#333",
-        "text-halo-color": "@text_halo",
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2,
         "text-size": {
           "base": 1.2,
@@ -2122,14 +2454,17 @@
         "town"
       ],
       "layout": {
-        "text-font": "@sans",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 24,
         "text-max-width": 8
       },
       "paint": {
         "text-color": "#333",
-        "text-halo-color": "@text_halo",
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2,
         "text-size": {
           "base": 1.2,
@@ -2157,14 +2492,17 @@
         "village"
       ],
       "layout": {
-        "text-font": "@sans",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 22,
         "text-max-width": 8
       },
       "paint": {
         "text-color": "#333",
-        "text-halo-color": "@text_halo",
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2,
         "text-size": {
           "base": 1.2,
@@ -2209,7 +2547,10 @@
         "icon-image": "motorway_{reflen}",
         "icon-max-size": 1,
         "text-field": "{ref}",
-        "text-font": "@sans_bd",
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
         "text-max-size": 11,
         "text-rotation-alignment": "viewport",
         "icon-rotation-alignment": "viewport",
@@ -2231,8 +2572,11 @@
         "LineString"
       ],
       "layout": {
-        "text-font": "@sans",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 13,
         "symbol-placement": "line"
       },
@@ -2268,16 +2612,19 @@
         "neighbourhood"
       ],
       "layout": {
-        "text-font": "@sans_bd",
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.1,
-        "text-field": "@name",
+        "text-field": "{name_en}",
         "text-max-size": 14,
         "text-max-width": 9
       },
       "paint": {
         "text-color": "#633",
-        "text-halo-color": "@text_halo",
+        "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2,
         "text-size": {
           "base": 1.2,
@@ -2315,8 +2662,11 @@
       ],
       "layout": {
         "icon-image": "{maki}-12",
-        "text-font": "@sans_md",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 12,
         "text-max-width": 9,
         "text-padding": 2,
@@ -2327,9 +2677,9 @@
         "text-anchor": "top"
       },
       "paint": {
-        "text-color": "@poi_text",
+        "text-color": "#666",
         "text-size": 12,
-        "text-halo-color": "@poi_text_halo",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-halo-blur": 0.5
       }
@@ -2355,8 +2705,11 @@
       ],
       "layout": {
         "icon-image": "{maki}-12",
-        "text-font": "@sans_md",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 12,
         "text-max-width": 9,
         "text-padding": 2,
@@ -2367,9 +2720,9 @@
         "text-anchor": "top"
       },
       "paint": {
-        "text-color": "@poi_text",
+        "text-color": "#666",
         "text-size": 12,
-        "text-halo-color": "@poi_text_halo",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-halo-blur": 0.5
       }
@@ -2395,8 +2748,11 @@
       ],
       "layout": {
         "icon-image": "{maki}-12",
-        "text-font": "@sans_md",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 12,
         "text-max-width": 9,
         "text-padding": 2,
@@ -2407,9 +2763,9 @@
         "text-anchor": "top"
       },
       "paint": {
-        "text-color": "@poi_text",
+        "text-color": "#666",
         "text-size": 12,
-        "text-halo-color": "@poi_text_halo",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-halo-blur": 0.5
       }
@@ -2435,8 +2791,11 @@
       ],
       "layout": {
         "icon-image": "{maki}-12",
-        "text-font": "@sans_md",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 12,
         "text-max-width": 9,
         "text-padding": 2,
@@ -2447,9 +2806,9 @@
         "text-anchor": "top"
       },
       "paint": {
-        "text-color": "@poi_text",
+        "text-color": "#666",
         "text-size": 12,
-        "text-halo-color": "@poi_text_halo",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-halo-blur": 0.5
       }
@@ -2475,8 +2834,11 @@
       ],
       "layout": {
         "icon-image": "{maki}-12",
-        "text-font": "@sans_md",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 12,
         "text-max-width": 9,
         "text-padding": 2,
@@ -2487,9 +2849,9 @@
         "text-anchor": "top"
       },
       "paint": {
-        "text-color": "@poi_text",
+        "text-color": "#666",
         "text-size": 12,
-        "text-halo-color": "@poi_text_halo",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-halo-blur": 0.5
       }
@@ -2505,16 +2867,19 @@
         "Point"
       ],
       "layout": {
-        "text-font": "@sans_it",
-        "text-field": "@name",
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
         "text-max-size": 12,
         "text-max-width": 5
       },
       "paint": {
         "text-size": 12,
-        "text-color": "@marine_text",
+        "text-color": "#74aee9",
         "text-halo-width": 1.5,
-        "text-halo-color": "@marine_text_halo"
+        "text-halo-color": "rgba(255,255,255,0.7)"
       }
     }
   ]
