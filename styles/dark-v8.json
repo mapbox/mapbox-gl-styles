@@ -12,7 +12,7 @@
     }
   },
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/dark",
-  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -1976,230 +1976,383 @@
       }
     },
     {
-      "id": "country-label-lg",
+      "id": "waterway-label",
       "type": "symbol",
       "source": "mapbox",
-      "source-layer": "country_label",
-      "maxzoom": 12,
+      "source-layer": "waterway_label",
+      "minzoom": 12,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "river"
+        ]
+      ],
+      "layout": {
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "text-field": "{name_en}",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              13,
+              12
+            ],
+            [
+              18,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#929292"
+      }
+    },
+    {
+      "id": "road-label-sm",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road_label",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        [
+          "!in",
+          "class",
+          "motorway",
+          "main",
+          "street_limited",
+          "street"
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
+        ]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": "{name_en}",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Bold"
+        ],
+        "text-transform": "none",
+        "text-letter-spacing": 0,
+        "text-padding": 0,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              8
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-color": "#000",
+        "text-halo-width": 2,
+        "text-color": "#929292"
+      }
+    },
+    {
+      "id": "road-label-med",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road_label",
       "filter": [
         "all",
         [
           "in",
+          "class",
+          "street",
+          "street_limited"
+        ]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": "{name_en}",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Bold"
+        ],
+        "text-transform": "none",
+        "text-letter-spacing": 0,
+        "text-padding": 0,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              8
+            ],
+            [
+              20,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-color": "#000",
+        "text-halo-width": 2,
+        "text-color": "#929292"
+      }
+    },
+    {
+      "id": "road-label-large",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road_label",
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "motorway",
+          "main"
+        ]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": "{name_en}",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Bold"
+        ],
+        "text-transform": "none",
+        "text-letter-spacing": 0,
+        "text-padding": 0,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              8
+            ],
+            [
+              20,
+              17
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-halo-color": "#000",
+        "text-halo-width": 2,
+        "text-color": "#929292"
+      }
+    },
+    {
+      "id": "airport-label",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "in",
+          "maki",
+          "airport",
+          "heliport",
+          "rocket"
+        ],
+        [
+          "<=",
           "scalerank",
-          1,
           2
         ]
       ],
       "layout": {
-        "text-field": "{name_en}",
         "text-font": [
           "DIN Offc Pro Medium",
           "Arial Unicode MS Regular"
         ],
-        "text-max-width": 6,
-        "text-size": {
-          "stops": [
-            [
-              1,
-              9
-            ],
-            [
-              5,
-              18
-            ]
-          ],
-          "base": 0.9
-        }
-      },
-      "paint": {
-        "text-color": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "#666"
-            ],
-            [
-              10,
-              "#999"
-            ]
-          ]
-        },
-        "text-halo-color": "#000",
-        "text-halo-width": 1,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "country-label-md",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "country_label",
-      "minzoom": 1,
-      "maxzoom": 8,
-      "filter": [
-        "all",
-        [
-          "in",
-          "scalerank",
-          3,
-          4
-        ]
-      ],
-      "layout": {
-        "text-field": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "{code}"
-            ],
-            [
-              2,
-              "{name_en}"
-            ]
-          ]
-        },
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Regular"
-        ],
-        "text-max-width": 7,
-        "text-size": {
-          "stops": [
-            [
-              2,
-              8
-            ],
-            [
-              7,
-              18
-            ]
-          ],
-          "base": 0.9
-        }
-      },
-      "paint": {
-        "text-color": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "#444"
-            ],
-            [
-              10,
-              "#888"
-            ]
-          ]
-        },
-        "text-halo-color": "#000",
-        "text-halo-width": 1,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "country-label-sm",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "country_label",
-      "minzoom": 1,
-      "maxzoom": 10,
-      "filter": [
-        "all",
-        [
-          ">=",
-          "scalerank",
-          5
-        ]
-      ],
-      "layout": {
-        "text-field": "{name_en}",
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Regular"
-        ],
-        "text-max-width": 7,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              8
-            ],
-            [
-              9,
-              18
-            ]
-          ],
-          "base": 0.9
-        }
-      },
-      "paint": {
-        "text-color": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "#444"
-            ],
-            [
-              10,
-              "#888"
-            ]
-          ]
-        },
-        "text-halo-color": "#000",
-        "text-halo-width": 1,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "state-label-lg",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "state_label",
-      "minzoom": 3,
-      "maxzoom": 7,
-      "filter": [
-        "all",
-        [
-          ">=",
-          "area",
-          80000
-        ]
-      ],
-      "layout": {
-        "text-transform": "uppercase",
         "visibility": "visible",
         "text-field": {
           "base": 1,
           "stops": [
             [
-              0,
-              "{abbr}"
+              10,
+              "{name_en}"
             ],
             [
-              4,
-              "{name_en}"
+              13,
+              ""
             ]
           ]
         },
+        "text-max-width": 9,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              10
+            ],
+            [
+              18,
+              18
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-halo-color": "#000",
+        "text-halo-width": 1,
+        "text-halo-blur": 0
+      }
+    },
+    {
+      "id": "poi-parks-scalerank1",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "scalerank",
+          1
+        ],
+        [
+          "==",
+          "maki",
+          "park"
+        ]
+      ],
+      "layout": {
+        "text-max-width": 8,
+        "visibility": "visible",
+        "text-field": "{name_en}",
         "text-font": [
-          "DIN Offc Pro Bold",
+          "DIN Offc Pro Regular",
           "Arial Unicode MS Regular"
         ],
-        "text-letter-spacing": 0.15,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              10
+            ],
+            [
+              18,
+              14
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#c2c2c2",
+        "text-halo-color": "#000",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "poi-scalerank1",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "!in",
+          "maki",
+          "rail-light",
+          "rail-metro",
+          "rail",
+          "airport",
+          "airfield",
+          "heliport",
+          "rocket",
+          "park",
+          "golf",
+          "cemetary",
+          "zoo",
+          "campsite",
+          "swimming",
+          "dog-park"
+        ],
+        [
+          "<=",
+          "scalerank",
+          1
+        ]
+      ],
+      "layout": {
+        "text-max-width": 8,
+        "visibility": "visible",
+        "text-field": "{name_en}",
+        "text-font": [
+          "DIN Offc Pro Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              10
+            ],
+            [
+              18,
+              14
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#b7b8b7",
+        "text-halo-color": "#000",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "water-label",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "water_label",
+      "minzoom": 5,
+      "maxzoom": 22,
+      "layout": {
+        "text-font": [
+          "DIN Offc Pro Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "visibility": "visible",
+        "text-field": "{name_en}",
         "text-max-width": 7,
         "text-size": {
           "base": 1,
           "stops": [
             [
-              4,
-              9
+              13,
+              12
             ],
             [
-              7,
-              18
+              18,
+              16
             ]
           ]
         }
@@ -2221,433 +2374,23 @@
       }
     },
     {
-      "id": "marine_label_line_1",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "labelrank",
-          1
-        ]
-      ],
-      "layout": {
-        "text-max-width": 15,
-        "visibility": "visible",
-        "symbol-placement": "line",
-        "text-field": "{name_en}",
-        "text-line-height": 1.2,
-        "text-letter-spacing": 0.4,
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              3,
-              25
-            ],
-            [
-              4,
-              30
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-opacity": 0.25
-      }
-    },
-    {
-      "id": "marine_label_line_2",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "labelrank",
-          2
-        ]
-      ],
-      "layout": {
-        "text-max-width": 15,
-        "visibility": "visible",
-        "symbol-placement": "line",
-        "text-field": "{name_en}",
-        "text-line-height": 1.2,
-        "text-letter-spacing": 0,
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              3,
-              14
-            ],
-            [
-              5,
-              24
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-opacity": 0.25
-      }
-    },
-    {
-      "id": "marine_label_line_3",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "labelrank",
-          3
-        ]
-      ],
-      "layout": {
-        "text-max-width": 15,
-        "visibility": "visible",
-        "symbol-placement": "line",
-        "text-field": "{name_en}",
-        "text-line-height": 1.2,
-        "text-letter-spacing": 0,
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              3,
-              13
-            ],
-            [
-              5,
-              18
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-opacity": 0.25
-      }
-    },
-    {
-      "id": "marine_label_line_other",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "in",
-          "labelrank",
-          4,
-          5,
-          6
-        ]
-      ],
-      "layout": {
-        "text-max-width": 15,
-        "visibility": "visible",
-        "symbol-placement": "line",
-        "text-field": "{name_en}",
-        "text-line-height": 1.2,
-        "text-letter-spacing": 0,
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              4,
-              12
-            ],
-            [
-              6,
-              16
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-opacity": 0.25
-      }
-    },
-    {
-      "id": "marine_label_point_1",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "labelrank",
-          1
-        ]
-      ],
-      "layout": {
-        "text-max-width": 4,
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{name_en}",
-        "text-line-height": 1.5,
-        "text-letter-spacing": 0.25,
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              1,
-              12
-            ],
-            [
-              4,
-              30
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-opacity": 0.25
-      }
-    },
-    {
-      "id": "marine_label_point_2",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "labelrank",
-          2
-        ]
-      ],
-      "layout": {
-        "text-max-width": 8,
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{name_en}",
-        "text-line-height": 1.2,
-        "text-letter-spacing": 0,
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              3,
-              14
-            ],
-            [
-              5,
-              24
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-opacity": 0.25
-      }
-    },
-    {
-      "id": "marine_label_point_3",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "labelrank",
-          3
-        ]
-      ],
-      "layout": {
-        "text-max-width": 8,
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{name_en}",
-        "text-line-height": 1.3,
-        "text-letter-spacing": 0.1,
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              3,
-              13
-            ],
-            [
-              5,
-              18
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-opacity": 0.25
-      }
-    },
-    {
-      "id": "marine_label_point_other",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "in",
-          "labelrank",
-          4,
-          5,
-          6
-        ]
-      ],
-      "layout": {
-        "text-max-width": 8,
-        "visibility": "none",
-        "symbol-placement": "point",
-        "text-field": "{name_en}",
-        "text-line-height": 1.2,
-        "text-letter-spacing": 0.1,
-        "text-font": [
-          "DIN Offc Pro Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              4,
-              12
-            ],
-            [
-              6,
-              16
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999"
-      }
-    },
-    {
-      "id": "place_label_city_large_n",
+      "id": "place_label_neighborhood",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "place_label",
-      "maxzoom": 16,
+      "minzoom": 12,
       "filter": [
         "all",
         [
-          "<=",
-          "scalerank",
-          1
+          "==",
+          "$type",
+          "Point"
         ],
         [
           "in",
-          "ldir",
-          "N",
-          "NE",
-          "NW",
-          "W"
-        ],
-        [
-          "==",
           "type",
-          "city"
+          "suburb",
+          "neighbourhood"
         ]
       ],
       "layout": {
@@ -2656,64 +2399,96 @@
           "DIN Offc Pro Bold",
           "Arial Unicode MS Bold"
         ],
-        "text-max-width": 5,
-        "text-transform": "none",
-        "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "bottom"
-            ],
-            [
-              6,
-              "center"
-            ]
-          ]
-        },
-        "text-offset": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              [
-                0,
-                -0.2
-              ]
-            ],
-            [
-              6,
-              [
-                0,
-                0
-              ]
-            ]
-          ]
-        },
-        "symbol-avoid-edges": false,
+        "text-max-width": 7,
+        "text-letter-spacing": 0.1,
+        "text-transform": "uppercase",
         "text-size": {
           "stops": [
             [
-              4,
-              11
+              12,
+              10
             ],
             [
-              10,
-              20
+              16,
+              14
             ]
-          ],
-          "base": 0.9
+          ]
         }
       },
       "paint": {
         "text-color": "#999999",
         "text-halo-color": "#000",
-        "text-halo-width": 1.5,
-        "text-halo-blur": 0
+        "text-halo-width": 1,
+        "text-halo-blur": 1,
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              0
+            ],
+            [
+              12,
+              0.66
+            ],
+            [
+              13,
+              1
+            ]
+          ]
+        }
       }
     },
     {
-      "id": "place_label_city_large_s",
+      "id": "place_label_other",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "place_label",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "in",
+          "type",
+          "town",
+          "village",
+          "hamlet"
+        ]
+      ],
+      "layout": {
+        "text-field": "{name_en}",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Bold"
+        ],
+        "text-max-width": 15,
+        "text-size": {
+          "stops": [
+            [
+              6,
+              10
+            ],
+            [
+              12,
+              13
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-halo-color": "#000",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "place_label_city_small_s",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "place_label",
@@ -2726,27 +2501,26 @@
           "city"
         ],
         [
-          "<=",
+          ">",
           "scalerank",
-          1
+          4
         ],
         [
           "in",
           "ldir",
           "S",
+          "E",
           "SE",
-          "SW",
-          "E"
+          "SW"
         ]
       ],
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "DIN Offc Pro Bold",
+          "DIN Offc Pro Medium",
           "Arial Unicode MS Bold"
         ],
-        "text-max-width": 15,
-        "text-transform": "none",
+        "text-max-width": 10,
         "text-anchor": {
           "base": 1,
           "stops": [
@@ -2782,12 +2556,189 @@
         "text-size": {
           "stops": [
             [
-              4,
+              6,
               11
             ],
             [
-              10,
-              20
+              14,
+              19
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-halo-color": "#000",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 0
+      }
+    },
+    {
+      "id": "place_label_city_small_n",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "place_label",
+      "maxzoom": 16,
+      "filter": [
+        "all",
+        [
+          "==",
+          "type",
+          "city"
+        ],
+        [
+          ">",
+          "scalerank",
+          4
+        ],
+        [
+          "in",
+          "ldir",
+          "N",
+          "W",
+          "NW",
+          "NE"
+        ]
+      ],
+      "layout": {
+        "text-field": "{name_en}",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Bold"
+        ],
+        "text-max-width": 10,
+        "text-anchor": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "bottom"
+            ],
+            [
+              6,
+              "center"
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              [
+                0,
+                -0.2
+              ]
+            ],
+            [
+              6,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-size": {
+          "stops": [
+            [
+              6,
+              11
+            ],
+            [
+              14,
+              19
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-halo-color": "#000",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 0
+      }
+    },
+    {
+      "id": "place_label_city_medium_s",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "place_label",
+      "maxzoom": 16,
+      "filter": [
+        "all",
+        [
+          "==",
+          "type",
+          "city"
+        ],
+        [
+          "<=",
+          "scalerank",
+          4
+        ],
+        [
+          ">",
+          "scalerank",
+          1
+        ],
+        [
+          "in",
+          "ldir",
+          "S",
+          "E",
+          "SE",
+          "SW"
+        ]
+      ],
+      "layout": {
+        "text-field": "{name_en}",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Bold"
+        ],
+        "text-max-width": 10,
+        "text-anchor": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "top"
+            ],
+            [
+              6,
+              "center"
+            ]
+          ]
+        },
+        "text-offset": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              [
+                0,
+                0.1
+              ]
+            ],
+            [
+              6,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-size": {
+          "stops": [
+            [
+              5,
+              11
+            ],
+            [
+              12,
+              19
             ]
           ],
           "base": 0.9
@@ -2893,7 +2844,7 @@
       }
     },
     {
-      "id": "place_label_city_medium_s",
+      "id": "place_label_city_large_s",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "place_label",
@@ -2908,29 +2859,25 @@
         [
           "<=",
           "scalerank",
-          4
-        ],
-        [
-          ">",
-          "scalerank",
           1
         ],
         [
           "in",
           "ldir",
           "S",
-          "E",
           "SE",
-          "SW"
+          "SW",
+          "E"
         ]
       ],
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "DIN Offc Pro Medium",
+          "DIN Offc Pro Bold",
           "Arial Unicode MS Bold"
         ],
-        "text-max-width": 10,
+        "text-max-width": 15,
+        "text-transform": "none",
         "text-anchor": {
           "base": 1,
           "stops": [
@@ -2966,12 +2913,12 @@
         "text-size": {
           "stops": [
             [
-              5,
+              4,
               11
             ],
             [
-              12,
-              19
+              10,
+              20
             ]
           ],
           "base": 0.9
@@ -2985,7 +2932,7 @@
       }
     },
     {
-      "id": "place_label_city_small_n",
+      "id": "place_label_city_large_n",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "place_label",
@@ -2993,31 +2940,32 @@
       "filter": [
         "all",
         [
-          "==",
-          "type",
-          "city"
-        ],
-        [
-          ">",
+          "<=",
           "scalerank",
-          4
+          1
         ],
         [
           "in",
           "ldir",
           "N",
-          "W",
+          "NE",
           "NW",
-          "NE"
+          "W"
+        ],
+        [
+          "==",
+          "type",
+          "city"
         ]
       ],
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "DIN Offc Pro Medium",
+          "DIN Offc Pro Bold",
           "Arial Unicode MS Bold"
         ],
-        "text-max-width": 10,
+        "text-max-width": 5,
+        "text-transform": "none",
         "text-anchor": {
           "base": 1,
           "stops": [
@@ -3050,17 +2998,19 @@
             ]
           ]
         },
+        "symbol-avoid-edges": false,
         "text-size": {
           "stops": [
             [
-              6,
+              4,
               11
             ],
             [
-              14,
-              19
+              10,
+              20
             ]
-          ]
+          ],
+          "base": 0.9
         }
       },
       "paint": {
@@ -3071,230 +3021,455 @@
       }
     },
     {
-      "id": "place_label_city_small_s",
+      "id": "marine_label_point_other",
       "type": "symbol",
       "source": "mapbox",
-      "source-layer": "place_label",
-      "maxzoom": 16,
-      "filter": [
-        "all",
-        [
-          "==",
-          "type",
-          "city"
-        ],
-        [
-          ">",
-          "scalerank",
-          4
-        ],
-        [
-          "in",
-          "ldir",
-          "S",
-          "E",
-          "SE",
-          "SW"
-        ]
-      ],
-      "layout": {
-        "text-field": "{name_en}",
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Bold"
-        ],
-        "text-max-width": 10,
-        "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "top"
-            ],
-            [
-              6,
-              "center"
-            ]
-          ]
-        },
-        "text-offset": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              [
-                0,
-                0.1
-              ]
-            ],
-            [
-              6,
-              [
-                0,
-                0
-              ]
-            ]
-          ]
-        },
-        "text-size": {
-          "stops": [
-            [
-              6,
-              11
-            ],
-            [
-              14,
-              19
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-halo-color": "#000",
-        "text-halo-width": 1.5,
-        "text-halo-blur": 0
-      }
-    },
-    {
-      "id": "place_label_other",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "place_label",
-      "minzoom": 8,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "in",
-          "type",
-          "town",
-          "village",
-          "hamlet"
-        ]
-      ],
-      "layout": {
-        "text-field": "{name_en}",
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Bold"
-        ],
-        "text-max-width": 15,
-        "text-size": {
-          "stops": [
-            [
-              6,
-              10
-            ],
-            [
-              12,
-              13
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-halo-color": "#000",
-        "text-halo-width": 1,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "place_label_neighborhood",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "place_label",
-      "minzoom": 12,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "in",
-          "type",
-          "suburb",
-          "neighbourhood"
-        ]
-      ],
-      "layout": {
-        "text-field": "{name_en}",
-        "text-font": [
-          "DIN Offc Pro Bold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-max-width": 7,
-        "text-letter-spacing": 0.1,
-        "text-transform": "uppercase",
-        "text-size": {
-          "stops": [
-            [
-              12,
-              10
-            ],
-            [
-              16,
-              14
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-halo-color": "#000",
-        "text-halo-width": 1,
-        "text-halo-blur": 1,
-        "text-opacity": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              0
-            ],
-            [
-              12,
-              0.66
-            ],
-            [
-              13,
-              1
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "water-label",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "water_label",
-      "minzoom": 5,
+      "source-layer": "marine_label",
+      "minzoom": 0,
       "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "in",
+          "labelrank",
+          4,
+          5,
+          6
+        ]
+      ],
       "layout": {
+        "text-max-width": 8,
+        "visibility": "none",
+        "symbol-placement": "point",
+        "text-field": "{name_en}",
+        "text-line-height": 1.2,
+        "text-letter-spacing": 0.1,
         "text-font": [
-          "DIN Offc Pro Italic",
+          "DIN Offc Pro Regular",
           "Arial Unicode MS Regular"
         ],
-        "visibility": "visible",
-        "text-field": "{name_en}",
-        "text-max-width": 7,
         "text-size": {
           "base": 1,
           "stops": [
             [
-              13,
+              4,
               12
             ],
             [
-              18,
+              6,
               16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999"
+      }
+    },
+    {
+      "id": "marine_label_point_3",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "==",
+          "labelrank",
+          3
+        ]
+      ],
+      "layout": {
+        "text-max-width": 8,
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-field": "{name_en}",
+        "text-line-height": 1.3,
+        "text-letter-spacing": 0.1,
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              3,
+              13
+            ],
+            [
+              5,
+              18
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-opacity": 0.25
+      }
+    },
+    {
+      "id": "marine_label_point_2",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "==",
+          "labelrank",
+          2
+        ]
+      ],
+      "layout": {
+        "text-max-width": 8,
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-field": "{name_en}",
+        "text-line-height": 1.2,
+        "text-letter-spacing": 0,
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              3,
+              14
+            ],
+            [
+              5,
+              24
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-opacity": 0.25
+      }
+    },
+    {
+      "id": "marine_label_point_1",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "==",
+          "labelrank",
+          1
+        ]
+      ],
+      "layout": {
+        "text-max-width": 4,
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-field": "{name_en}",
+        "text-line-height": 1.5,
+        "text-letter-spacing": 0.25,
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              1,
+              12
+            ],
+            [
+              4,
+              30
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-opacity": 0.25
+      }
+    },
+    {
+      "id": "marine_label_line_other",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "labelrank",
+          4,
+          5,
+          6
+        ]
+      ],
+      "layout": {
+        "text-max-width": 15,
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "text-field": "{name_en}",
+        "text-line-height": 1.2,
+        "text-letter-spacing": 0,
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              12
+            ],
+            [
+              6,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-opacity": 0.25
+      }
+    },
+    {
+      "id": "marine_label_line_3",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "labelrank",
+          3
+        ]
+      ],
+      "layout": {
+        "text-max-width": 15,
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "text-field": "{name_en}",
+        "text-line-height": 1.2,
+        "text-letter-spacing": 0,
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              3,
+              13
+            ],
+            [
+              5,
+              18
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-opacity": 0.25
+      }
+    },
+    {
+      "id": "marine_label_line_2",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "labelrank",
+          2
+        ]
+      ],
+      "layout": {
+        "text-max-width": 15,
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "text-field": "{name_en}",
+        "text-line-height": 1.2,
+        "text-letter-spacing": 0,
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              3,
+              14
+            ],
+            [
+              5,
+              24
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-opacity": 0.25
+      }
+    },
+    {
+      "id": "marine_label_line_1",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "labelrank",
+          1
+        ]
+      ],
+      "layout": {
+        "text-max-width": 15,
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "text-field": "{name_en}",
+        "text-line-height": 1.2,
+        "text-letter-spacing": 0.4,
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              3,
+              25
+            ],
+            [
+              4,
+              30
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#999999",
+        "text-opacity": 0.25
+      }
+    },
+    {
+      "id": "state-label-lg",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "state_label",
+      "minzoom": 3,
+      "maxzoom": 7,
+      "filter": [
+        "all",
+        [
+          ">=",
+          "area",
+          80000
+        ]
+      ],
+      "layout": {
+        "text-transform": "uppercase",
+        "visibility": "visible",
+        "text-field": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "{abbr}"
+            ],
+            [
+              4,
+              "{name_en}"
+            ]
+          ]
+        },
+        "text-font": [
+          "DIN Offc Pro Bold",
+          "Arial Unicode MS Regular"
+        ],
+        "text-letter-spacing": 0.15,
+        "text-max-width": 7,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              9
+            ],
+            [
+              7,
+              18
             ]
           ]
         }
@@ -3316,356 +3491,181 @@
       }
     },
     {
-      "id": "poi-scalerank1",
+      "id": "country-label-sm",
       "type": "symbol",
       "source": "mapbox",
-      "source-layer": "poi_label",
-      "minzoom": 0,
-      "maxzoom": 22,
+      "source-layer": "country_label",
+      "minzoom": 1,
+      "maxzoom": 10,
       "filter": [
         "all",
         [
-          "!in",
-          "maki",
-          "rail-light",
-          "rail-metro",
-          "rail",
-          "airport",
-          "airfield",
-          "heliport",
-          "rocket",
-          "park",
-          "golf",
-          "cemetary",
-          "zoo",
-          "campsite",
-          "swimming",
-          "dog-park"
-        ],
-        [
-          "<=",
+          ">=",
           "scalerank",
-          1
+          5
         ]
       ],
       "layout": {
-        "text-max-width": 8,
-        "visibility": "visible",
         "text-field": "{name_en}",
-        "text-font": [
-          "DIN Offc Pro Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              10
-            ],
-            [
-              18,
-              14
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#b7b8b7",
-        "text-halo-color": "#000",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "poi-parks-scalerank1",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "poi_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "scalerank",
-          1
-        ],
-        [
-          "==",
-          "maki",
-          "park"
-        ]
-      ],
-      "layout": {
-        "text-max-width": 8,
-        "visibility": "visible",
-        "text-field": "{name_en}",
-        "text-font": [
-          "DIN Offc Pro Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              10
-            ],
-            [
-              18,
-              14
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#c2c2c2",
-        "text-halo-color": "#000",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "airport-label",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "poi_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "in",
-          "maki",
-          "airport",
-          "heliport",
-          "rocket"
-        ],
-        [
-          "<=",
-          "scalerank",
-          2
-        ]
-      ],
-      "layout": {
         "text-font": [
           "DIN Offc Pro Medium",
           "Arial Unicode MS Regular"
         ],
-        "visibility": "visible",
+        "text-max-width": 7,
+        "text-size": {
+          "stops": [
+            [
+              3,
+              8
+            ],
+            [
+              9,
+              18
+            ]
+          ],
+          "base": 0.9
+        }
+      },
+      "paint": {
+        "text-color": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "#444"
+            ],
+            [
+              10,
+              "#888"
+            ]
+          ]
+        },
+        "text-halo-color": "#000",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "country-label-md",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "country_label",
+      "minzoom": 1,
+      "maxzoom": 8,
+      "filter": [
+        "all",
+        [
+          "in",
+          "scalerank",
+          3,
+          4
+        ]
+      ],
+      "layout": {
         "text-field": {
           "base": 1,
           "stops": [
             [
-              10,
-              "{name_en}"
+              0,
+              "{code}"
             ],
             [
-              13,
-              ""
+              2,
+              "{name_en}"
             ]
           ]
         },
-        "text-max-width": 9,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              10
-            ],
-            [
-              18,
-              18
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#999999",
-        "text-halo-color": "#000",
-        "text-halo-width": 1,
-        "text-halo-blur": 0
-      }
-    },
-    {
-      "id": "road-label-large",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "road_label",
-      "filter": [
-        "all",
-        [
-          "in",
-          "class",
-          "motorway",
-          "main"
-        ]
-      ],
-      "layout": {
-        "symbol-placement": "line",
-        "text-field": "{name_en}",
         "text-font": [
           "DIN Offc Pro Medium",
-          "Arial Unicode MS Bold"
-        ],
-        "text-transform": "none",
-        "text-letter-spacing": 0,
-        "text-padding": 0,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              8,
-              8
-            ],
-            [
-              20,
-              17
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-halo-color": "#000",
-        "text-halo-width": 2,
-        "text-color": "#929292"
-      }
-    },
-    {
-      "id": "road-label-med",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "road_label",
-      "filter": [
-        "all",
-        [
-          "in",
-          "class",
-          "street",
-          "street_limited"
-        ]
-      ],
-      "layout": {
-        "symbol-placement": "line",
-        "text-field": "{name_en}",
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Bold"
-        ],
-        "text-transform": "none",
-        "text-letter-spacing": 0,
-        "text-padding": 0,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              8,
-              8
-            ],
-            [
-              20,
-              16
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-halo-color": "#000",
-        "text-halo-width": 2,
-        "text-color": "#929292"
-      }
-    },
-    {
-      "id": "road-label-sm",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "road_label",
-      "minzoom": 12,
-      "filter": [
-        "all",
-        [
-          "!in",
-          "class",
-          "motorway",
-          "main",
-          "street_limited",
-          "street"
-        ],
-        [
-          "==",
-          "$type",
-          "LineString"
-        ]
-      ],
-      "layout": {
-        "symbol-placement": "line",
-        "text-field": "{name_en}",
-        "text-font": [
-          "DIN Offc Pro Medium",
-          "Arial Unicode MS Bold"
-        ],
-        "text-transform": "none",
-        "text-letter-spacing": 0,
-        "text-padding": 0,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              8,
-              8
-            ],
-            [
-              20,
-              15
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-halo-color": "#000",
-        "text-halo-width": 2,
-        "text-color": "#929292"
-      }
-    },
-    {
-      "id": "waterway-label",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "waterway_label",
-      "minzoom": 12,
-      "maxzoom": 22,
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "river"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "DIN Offc Pro Italic",
           "Arial Unicode MS Regular"
         ],
-        "visibility": "visible",
-        "symbol-placement": "line",
-        "text-field": "{name_en}",
+        "text-max-width": 7,
         "text-size": {
-          "base": 1,
           "stops": [
             [
-              13,
-              12
+              2,
+              8
             ],
             [
-              18,
-              16
+              7,
+              18
             ]
-          ]
+          ],
+          "base": 0.9
         }
       },
       "paint": {
-        "text-color": "#929292"
+        "text-color": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "#444"
+            ],
+            [
+              10,
+              "#888"
+            ]
+          ]
+        },
+        "text-halo-color": "#000",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "country-label-lg",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "country_label",
+      "maxzoom": 12,
+      "filter": [
+        "all",
+        [
+          "in",
+          "scalerank",
+          1,
+          2
+        ]
+      ],
+      "layout": {
+        "text-field": "{name_en}",
+        "text-font": [
+          "DIN Offc Pro Medium",
+          "Arial Unicode MS Regular"
+        ],
+        "text-max-width": 6,
+        "text-size": {
+          "stops": [
+            [
+              1,
+              9
+            ],
+            [
+              5,
+              18
+            ]
+          ],
+          "base": 0.9
+        }
+      },
+      "paint": {
+        "text-color": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "#666"
+            ],
+            [
+              10,
+              "#999"
+            ]
+          ]
+        },
+        "text-halo-color": "#000",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
       }
     }
   ],

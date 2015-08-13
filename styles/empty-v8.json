@@ -3,6 +3,6 @@
   "name": "Empty",
   "sources": {},
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/sprite",
-  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": []
 }

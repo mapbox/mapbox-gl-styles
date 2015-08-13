@@ -8,7 +8,7 @@
     }
   },
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/sprite",
-  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -484,32 +484,139 @@
       }
     },
     {
-      "id": "country_label",
+      "id": "poi_label",
       "type": "symbol",
       "source": "mapbox",
-      "source-layer": "country_label",
-      "maxzoom": 12,
+      "source-layer": "poi_label",
+      "minzoom": 5,
       "filter": [
-        "==",
-        "$type",
-        "Point"
+        "all",
+        [
+          "==",
+          "scalerank",
+          1
+        ],
+        [
+          "==",
+          "localrank",
+          1
+        ],
+        [
+          "==",
+          "$type",
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-image": "{maki}-12",
+        "text-offset": [
+          0,
+          0.5
+        ],
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-max-width": 8,
+        "text-anchor": "top",
+        "text-size": 11,
+        "icon-size": 1
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "road_major_label",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road_label",
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "motorway",
+          "main"
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
+        ]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.1,
+        "text-size": {
+          "base": 1.4,
+          "stops": [
+            [
+              10,
+              8
+            ],
+            [
+              20,
+              14
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "place_label_other",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "place_label",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "in",
+          "type",
+          "town",
+          "village",
+          "hamlet",
+          "suburb",
+          "neighbourhood"
+        ]
       ],
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
         ],
-        "text-max-width": 10,
+        "text-max-width": 6,
         "text-size": {
           "stops": [
             [
-              3,
-              14
+              6,
+              12
             ],
             [
-              8,
-              22
+              12,
+              16
             ]
           ]
         }
@@ -568,93 +675,32 @@
       }
     },
     {
-      "id": "place_label_other",
+      "id": "country_label",
       "type": "symbol",
       "source": "mapbox",
-      "source-layer": "place_label",
-      "minzoom": 8,
+      "source-layer": "country_label",
+      "maxzoom": 12,
       "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "in",
-          "type",
-          "town",
-          "village",
-          "hamlet",
-          "suburb",
-          "neighbourhood"
-        ]
+        "==",
+        "$type",
+        "Point"
       ],
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
         ],
-        "text-max-width": 6,
+        "text-max-width": 10,
         "text-size": {
           "stops": [
             [
-              6,
-              12
-            ],
-            [
-              12,
-              16
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#666",
-        "text-halo-color": "rgba(255,255,255,0.75)",
-        "text-halo-width": 1,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "road_major_label",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "road_label",
-      "filter": [
-        "all",
-        [
-          "in",
-          "class",
-          "motorway",
-          "main"
-        ],
-        [
-          "==",
-          "$type",
-          "LineString"
-        ]
-      ],
-      "layout": {
-        "symbol-placement": "line",
-        "text-field": "{name_en}",
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-transform": "uppercase",
-        "text-letter-spacing": 0.1,
-        "text-size": {
-          "base": 1.4,
-          "stops": [
-            [
-              10,
-              8
-            ],
-            [
-              20,
+              3,
               14
+            ],
+            [
+              8,
+              22
             ]
           ]
         }
@@ -662,53 +708,7 @@
       "paint": {
         "text-color": "#666",
         "text-halo-color": "rgba(255,255,255,0.75)",
-        "text-halo-width": 2
-      }
-    },
-    {
-      "id": "poi_label",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "poi_label",
-      "minzoom": 5,
-      "filter": [
-        "all",
-        [
-          "==",
-          "scalerank",
-          1
-        ],
-        [
-          "==",
-          "localrank",
-          1
-        ],
-        [
-          "==",
-          "$type",
-          "Point"
-        ]
-      ],
-      "layout": {
-        "icon-image": "{maki}-12",
-        "text-offset": [
-          0,
-          0.5
-        ],
-        "text-field": "{name_en}",
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-max-width": 8,
-        "text-anchor": "top",
-        "text-size": 11,
-        "icon-size": 1
-      },
-      "paint": {
-        "text-color": "#666",
         "text-halo-width": 1,
-        "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-blur": 1
       }
     }

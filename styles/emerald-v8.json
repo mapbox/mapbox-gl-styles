@@ -8,7 +8,7 @@
     }
   },
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/emerald",
-  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -4381,654 +4381,284 @@
       }
     },
     {
-      "id": "country_label_big",
+      "id": "generic_small_labels",
       "type": "symbol",
       "source": "compositedsource",
-      "source-layer": "country_label",
+      "source-layer": "poi_label",
       "minzoom": 0,
       "maxzoom": 22,
       "interactive": true,
       "filter": [
         "all",
         [
-          "<=",
-          "scalerank",
-          2
-        ]
-      ],
-      "layout": {
-        "text-line-height": 1.1,
-        "text-allow-overlap": false,
-        "text-ignore-placement": false,
-        "text-transform": "none",
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
+          "!in",
+          "maki",
+          "rail-light",
+          "rail-metro",
+          "rail",
+          "school",
+          "park",
+          "college",
+          "golf",
+          "station"
         ],
-        "visibility": "visible",
-        "text-offset": [
-          0,
-          0
-        ],
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.05,
-        "text-max-width": 4,
-        "text-size": {
-          "base": 1.1,
-          "stops": [
-            [
-              0,
-              8
-            ],
-            [
-              10,
-              36
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-opacity": 1,
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 2,
-        "text-color": "#2d1617"
-      }
-    },
-    {
-      "id": "country_label_small",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "country_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
         [
-          ">",
+          ">=",
           "scalerank",
-          2
+          3
+        ],
+        [
+          "!in",
+          "type",
+          "Apartments"
         ]
       ],
       "layout": {
-        "text-line-height": 1.1,
+        "text-line-height": 1.05,
         "text-allow-overlap": false,
+        "symbol-avoid-edges": true,
         "text-ignore-placement": false,
-        "text-transform": "none",
+        "text-max-angle": 38,
         "text-font": [
-          "Open Sans Regular",
+          "Open Sans Italic",
           "Arial Unicode MS Regular"
         ],
         "symbol-placement": "point",
+        "text-padding": 8,
         "visibility": "visible",
-        "text-field": "{name_en}",
+        "text-rotation-alignment": "viewport",
+        "text-field": "{name}",
         "text-letter-spacing": 0.05,
-        "text-max-width": 4,
+        "text-max-width": 5,
+        "symbol-spacing": 250,
         "text-size": {
-          "base": 1.2,
           "stops": [
             [
-              0,
-              7
+              8,
+              10
             ],
             [
-              10,
-              36
+              20,
+              20
             ]
-          ]
+          ],
+          "base": 1.5
         }
       },
       "paint": {
-        "text-opacity": 1,
+        "text-color": "rgba(99,93,96,0.842)",
         "text-halo-color": "#F8F4F0",
-        "text-halo-width": 2,
-        "text-color": "#2d1617"
+        "text-halo-width": 1.5
       }
     },
     {
-      "id": "city_label_big",
+      "id": "oneway_arrows_motorway",
       "type": "symbol",
       "source": "compositedsource",
-      "source-layer": "place_label",
-      "minzoom": 0,
+      "source-layer": "road",
+      "minzoom": 16,
       "maxzoom": 22,
       "interactive": true,
       "filter": [
         "all",
         [
           "in",
-          "type",
-          "city"
+          "oneway",
+          1
         ],
         [
-          "<=",
-          "scalerank",
-          2
+          "in",
+          "class",
+          "motorway"
         ]
       ],
       "layout": {
-        "text-line-height": {
-          "base": 1,
-          "stops": [
-            [
-              8,
-              1
-            ],
-            [
-              20,
-              1.3
-            ]
-          ]
-        },
+        "text-line-height": 0,
         "text-allow-overlap": false,
-        "icon-image": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "dot"
-            ],
-            [
-              6,
-              ""
-            ]
-          ]
-        },
+        "icon-image": "oneway_motorway",
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Regular"
         ],
-        "symbol-placement": "point",
+        "symbol-placement": "line",
         "text-padding": 0,
         "visibility": "visible",
-        "text-offset": {
-          "base": 1,
-          "stops": [
-            [
-              5.99,
-              [
-                0,
-                0.25
-              ]
-            ],
-            [
-              6,
-              [
-                0,
-                0
-              ]
-            ]
-          ]
-        },
-        "text-rotation-alignment": "viewport",
-        "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "top"
-            ],
-            [
-              6,
-              "center"
-            ]
-          ]
-        },
-        "text-field": "{name_en}",
+        "text-rotation-alignment": "map",
+        "text-anchor": "top",
+        "text-keep-upright": false,
+        "text-field": "",
         "text-letter-spacing": 0,
-        "text-max-width": 5,
+        "icon-padding": 0,
         "symbol-spacing": 250,
         "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              1.9,
-              10
-            ],
-            [
-              18,
-              40
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#2d1617",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              6,
-              1.75
-            ],
-            [
-              18,
-              2.75
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "city_label_medium",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "place_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "type",
-          "city"
-        ],
-        [
-          "in",
-          "scalerank",
-          3,
-          4
-        ]
-      ],
-      "layout": {
-        "text-line-height": {
           "base": 1,
           "stops": [
             [
               8,
-              1
+              8
             ],
             [
               20,
-              1.3
-            ]
-          ]
-        },
-        "text-allow-overlap": false,
-        "icon-image": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "dot"
-            ],
-            [
-              6,
-              ""
-            ]
-          ]
-        },
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              [
-                "Open Sans Regular",
-                "Arial Unicode MS Regular"
-              ]
-            ],
-            [
-              6,
-              [
-                "Open Sans Semibold",
-                "Arial Unicode MS Regular"
-              ]
-            ]
-          ]
-        },
-        "symbol-placement": "point",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-offset": {
-          "base": 1,
-          "stops": [
-            [
-              5.99,
-              [
-                0,
-                0.25
-              ]
-            ],
-            [
-              6,
-              [
-                0,
-                0
-              ]
-            ]
-          ]
-        },
-        "text-rotation-alignment": "viewport",
-        "text-anchor": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "top"
-            ],
-            [
-              6,
-              "center"
-            ]
-          ]
-        },
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0,
-        "text-max-width": 5,
-        "symbol-spacing": 250,
-        "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              4,
-              10
-            ],
-            [
-              18,
-              40
+              18
             ]
           ]
         }
       },
       "paint": {
-        "text-color": "#2d1617",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              6,
-              1.75
-            ],
-            [
-              18,
-              2.75
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "city_label_small",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "place_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "type",
-          "city"
-        ],
-        [
-          "!in",
-          "scalerank",
-          1,
-          2,
-          3,
-          4
-        ]
-      ],
-      "layout": {
-        "text-line-height": 1.1,
-        "text-allow-overlap": false,
-        "symbol-avoid-edges": true,
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              [
-                "Open Sans Regular",
-                "Arial Unicode MS Regular"
-              ]
-            ],
-            [
-              9,
-              [
-                "Open Sans Semibold",
-                "Arial Unicode MS Regular"
-              ]
-            ]
-          ]
-        },
-        "symbol-placement": "point",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-offset": [
+        "text-color": "#504a4c",
+        "text-halo-color": "#aaa",
+        "text-halo-width": 0,
+        "text-translate": [
           0,
-          0
+          -2
         ],
-        "text-rotation-alignment": "viewport",
-        "text-anchor": "center",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0,
-        "text-max-width": 5,
-        "symbol-spacing": 250,
-        "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              5,
-              10
-            ],
-            [
-              18,
-              30
-            ]
-          ]
-        },
-        "icon-size": 0.8
-      },
-      "paint": {
-        "text-color": "#2d1617",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
-          "base": 1.2,
-          "stops": [
-            [
-              6,
-              1.5
-            ],
-            [
-              20,
-              6
-            ]
-          ]
-        },
-        "icon-opacity": 1,
         "text-opacity": 1
       }
     },
     {
-      "id": "town_label",
+      "id": "oneway_arrows_small",
       "type": "symbol",
       "source": "compositedsource",
-      "source-layer": "place_label",
-      "minzoom": 0,
+      "source-layer": "road",
+      "minzoom": 18,
       "maxzoom": 22,
       "interactive": true,
       "filter": [
         "all",
         [
           "in",
-          "type",
-          "town"
+          "oneway",
+          1
         ],
         [
-          "<=",
-          "localrank",
-          40
+          "in",
+          "class",
+          "street",
+          "street_limited"
         ]
       ],
       "layout": {
         "text-line-height": 1,
-        "text-allow-overlap": false,
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              [
-                "Open Sans Regular",
-                "Arial Unicode MS Regular"
-              ]
-            ],
-            [
-              12,
-              [
-                "Open Sans Semibold",
-                "Arial Unicode MS Regular"
-              ]
-            ]
-          ]
-        },
-        "symbol-placement": "point",
-        "text-padding": 2,
-        "visibility": "visible",
-        "text-offset": [
+        "text-allow-overlap": true,
+        "icon-offset": [
           0,
-          0
+          2.5
         ],
-        "text-rotation-alignment": "viewport",
-        "text-anchor": "center",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0,
-        "text-max-width": 5,
-        "symbol-spacing": 250,
-        "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              8,
-              11
-            ],
-            [
-              18,
-              26
-            ]
-          ]
-        },
-        "icon-size": 0.9
-      },
-      "paint": {
-        "text-color": "#2d1617",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              8,
-              1.5
-            ],
-            [
-              20,
-              3.75
-            ]
-          ]
-        },
-        "text-opacity": 0.8,
-        "icon-opacity": 1
-      }
-    },
-    {
-      "id": "hamlet_village_label",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "place_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "type",
-          "village",
-          "hamlet"
-        ],
-        [
-          "<=",
-          "localrank",
-          30
-        ]
-      ],
-      "layout": {
-        "text-line-height": 1,
-        "text-allow-overlap": false,
+        "icon-image": "oneway_road",
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-font": [
-          "Open Sans Regular",
+          "Open Sans Semibold",
           "Arial Unicode MS Regular"
         ],
-        "symbol-placement": "point",
-        "text-padding": 5,
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-keep-upright": false,
+        "text-field": "",
+        "text-letter-spacing": 0,
+        "icon-padding": 0,
+        "symbol-spacing": 250,
+        "text-size": 8,
+        "icon-size": 1
+      },
+      "paint": {
+        "text-color": "#aaa",
+        "text-halo-color": "#aaa",
+        "text-halo-width": 0,
+        "text-translate": [
+          0,
+          0
+        ],
+        "text-opacity": 1
+      }
+    },
+    {
+      "id": "oneway_arrows_large",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "road",
+      "minzoom": 15,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "oneway",
+          1
+        ],
+        [
+          "in",
+          "class",
+          "main"
+        ],
+        [
+          "!=",
+          "type",
+          "trunk"
+        ]
+      ],
+      "layout": {
+        "text-line-height": 0,
+        "text-allow-overlap": false,
+        "icon-offset": [
+          0,
+          2
+        ],
+        "icon-image": "oneway_road",
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
         "visibility": "visible",
         "text-offset": [
           0,
           0
         ],
-        "text-rotation-alignment": "viewport",
-        "text-anchor": "center",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0,
-        "text-max-width": 5,
+        "text-rotation-alignment": "map",
+        "text-keep-upright": false,
+        "text-field": "",
+        "text-letter-spacing": 0.5,
+        "icon-padding": 0,
         "symbol-spacing": 250,
         "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              24
-            ]
-          ]
-        },
-        "icon-size": 0.9
-      },
-      "paint": {
-        "text-color": "#2d1617",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
           "base": 1,
           "stops": [
             [
               8,
-              2
+              8
             ],
             [
               20,
-              3.75
+              12
             ]
           ]
-        },
-        "text-opacity": 0.7,
-        "icon-opacity": 1
+        }
+      },
+      "paint": {
+        "text-color": "#aaa",
+        "text-halo-color": "#aaa",
+        "text-halo-width": 0,
+        "text-translate": [
+          0,
+          0
+        ],
+        "text-opacity": 0
       }
     },
     {
-      "id": "neighborhood_large_label",
+      "id": "neighborhood_island",
       "type": "symbol",
       "source": "compositedsource",
-      "source-layer": "place_label",
+      "source-layer": "poi_label",
       "minzoom": 0,
       "maxzoom": 18,
       "interactive": true,
@@ -5037,13 +4667,8 @@
         [
           "in",
           "type",
-          "neighbourhood",
-          "suburb"
-        ],
-        [
-          "<=",
-          "localrank",
-          5
+          "Island",
+          "Residential"
         ]
       ],
       "layout": {
@@ -5056,7 +4681,7 @@
             ],
             [
               20,
-              1.4
+              1.75
             ]
           ]
         },
@@ -5071,10 +4696,6 @@
         "symbol-placement": "point",
         "text-padding": 0,
         "visibility": "visible",
-        "text-offset": [
-          0,
-          0
-        ],
         "text-rotation-alignment": "viewport",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.15,
@@ -5113,10 +4734,89 @@
       }
     },
     {
-      "id": "airport_label",
+      "id": "neighborhood_small_label",
       "type": "symbol",
       "source": "compositedsource",
-      "source-layer": "poi_label",
+      "source-layer": "place_label",
+      "minzoom": 0,
+      "maxzoom": 18,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "type",
+          "neighbourhood",
+          "suburb"
+        ]
+      ],
+      "layout": {
+        "text-line-height": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              0.85
+            ],
+            [
+              20,
+              1.75
+            ]
+          ]
+        },
+        "text-allow-overlap": false,
+        "symbol-avoid-edges": false,
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "point",
+        "text-padding": 10,
+        "visibility": "visible",
+        "text-rotation-alignment": "viewport",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.15,
+        "text-max-width": 5,
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              8
+            ],
+            [
+              20,
+              28
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#844",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              16,
+              2.5
+            ],
+            [
+              20,
+              5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "generic_motorway_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "road_label",
       "minzoom": 0,
       "maxzoom": 22,
       "interactive": true,
@@ -5124,21 +4824,107 @@
         "all",
         [
           "in",
-          "maki",
-          "airport",
-          "airfield"
+          "class",
+          "motorway",
+          "motorway_link"
+        ],
+        [
+          "in",
+          "shield",
+          "default"
         ],
         [
           "<=",
-          "scalerank",
-          2
+          "reflen",
+          6
         ]
       ],
       "layout": {
-        "text-optional": true,
-        "text-line-height": 1,
         "text-allow-overlap": false,
-        "icon-image": "airport_icon",
+        "icon-image": "default_{reflen}",
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-transform": "uppercase",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "point",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "viewport",
+        "text-field": "{ref}",
+        "text-letter-spacing": 0.05,
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              10
+            ],
+            [
+              20,
+              12
+            ]
+          ]
+        },
+        "icon-size": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              1
+            ],
+            [
+              20,
+              1.25
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#fff",
+        "icon-halo-width": 0,
+        "text-opacity": 1,
+        "icon-color": "white",
+        "text-halo-color": "#fff",
+        "text-halo-width": 0
+      }
+    },
+    {
+      "id": "us_stateroad_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "road_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "shield",
+          "us-state",
+          "us-state-loop",
+          "us-state-business",
+          "us-state-toll",
+          "us-state-truck"
+        ],
+        [
+          "in",
+          "class",
+          "motorway"
+        ],
+        [
+          "<=",
+          "reflen",
+          3
+        ]
+      ],
+      "layout": {
+        "text-allow-overlap": false,
+        "icon-image": "us_state_{reflen}",
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-font": [
@@ -5146,7 +4932,264 @@
           "Arial Unicode MS Regular"
         ],
         "symbol-placement": "point",
-        "text-padding": 5,
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "viewport",
+        "text-field": "{ref}",
+        "text-letter-spacing": 0,
+        "icon-padding": 0,
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        },
+        "icon-size": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              0.7
+            ],
+            [
+              20,
+              1
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#666",
+        "icon-halo-color": "rgba(0, 0, 0, 1)",
+        "icon-halo-width": 1,
+        "text-opacity": 1,
+        "icon-color": "white",
+        "text-halo-color": "#fff",
+        "text-halo-width": 0
+      }
+    },
+    {
+      "id": "us_highway_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "road_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "shield",
+          "us-highway",
+          "us-highway-alternate",
+          "us-highway-business",
+          "us-highway-duplex"
+        ],
+        [
+          "<=",
+          "reflen",
+          3
+        ]
+      ],
+      "layout": {
+        "text-allow-overlap": false,
+        "icon-image": "us_highway_{reflen}",
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "point",
+        "text-padding": 2,
+        "visibility": "visible",
+        "text-rotation-alignment": "viewport",
+        "text-field": "{ref}",
+        "text-letter-spacing": 0,
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              17
+            ]
+          ]
+        },
+        "icon-size": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              0.6
+            ],
+            [
+              20,
+              1
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#666",
+        "icon-halo-color": "rgba(0, 0, 0, 1)",
+        "icon-halo-width": 1,
+        "text-opacity": 1,
+        "icon-color": "white",
+        "text-halo-color": "#fff",
+        "text-halo-width": 0
+      }
+    },
+    {
+      "id": "us_interstate_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "road_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "shield",
+          "us-interstate",
+          "us-interstate-alternate",
+          "us-interstate-business",
+          "us-interstate-duplex"
+        ],
+        [
+          "<=",
+          "reflen",
+          3
+        ]
+      ],
+      "layout": {
+        "text-line-height": 1.4,
+        "text-allow-overlap": false,
+        "icon-offset": [
+          0,
+          -2.25
+        ],
+        "icon-image": "interstate_{reflen}",
+        "icon-rotation-alignment": "viewport",
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "icon-keep-upright": true,
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 2,
+        "visibility": "visible",
+        "text-rotation-alignment": "viewport",
+        "text-anchor": "center",
+        "text-field": "{ref}",
+        "text-letter-spacing": 0,
+        "icon-padding": 0,
+        "symbol-spacing": 2000,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              6,
+              8
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        },
+        "icon-size": {
+          "base": 1,
+          "stops": [
+            [
+              6,
+              0.3
+            ],
+            [
+              20,
+              0.9
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#fff",
+        "icon-halo-color": "white",
+        "icon-halo-width": 4,
+        "text-opacity": 1,
+        "text-halo-color": "#fff",
+        "text-halo-width": 0
+      }
+    },
+    {
+      "id": "small_maki_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "poi_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "any",
+        [
+          "in",
+          "maki",
+          "school",
+          "museum",
+          "library",
+          "monument",
+          "hospital",
+          "fire-station",
+          "religious-christian",
+          "religious-muslim",
+          "religious-jewish",
+          "post",
+          "embassy",
+          "police",
+          "prison",
+          "college",
+          "harbor",
+          "airport",
+          "airfield"
+        ],
+        [
+          "in",
+          "type",
+          "Military",
+          "Government"
+        ]
+      ],
+      "layout": {
+        "text-optional": true,
+        "text-line-height": 1,
+        "text-allow-overlap": false,
+        "icon-image": "{maki}_icon",
+        "symbol-avoid-edges": true,
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "point",
+        "text-padding": 6,
         "visibility": "visible",
         "text-offset": [
           0,
@@ -5154,21 +5197,9 @@
         ],
         "text-rotation-alignment": "viewport",
         "text-anchor": "top",
-        "text-field": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              "{ref}"
-            ],
-            [
-              11,
-              "{name}"
-            ]
-          ]
-        },
-        "text-letter-spacing": 0,
-        "text-max-width": 12,
+        "text-field": "{name}",
+        "text-letter-spacing": 0.01,
+        "text-max-width": 10,
         "symbol-spacing": 250,
         "text-size": {
           "stops": [
@@ -5185,9 +5216,641 @@
         }
       },
       "paint": {
-        "text-color": "#666",
+        "text-color": "#504a4c",
         "text-halo-color": "#F8F4F0",
-        "text-halo-width": 1
+        "text-halo-width": {
+          "base": 1.5,
+          "stops": [
+            [
+              11,
+              2
+            ],
+            [
+              20,
+              3.75
+            ]
+          ]
+        },
+        "icon-opacity": 1
+      }
+    },
+    {
+      "id": "road-label-small",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "road_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "path",
+          "service",
+          "street_limited"
+        ],
+        [
+          "in",
+          "$type",
+          "LineString"
+        ]
+      ],
+      "layout": {
+        "text-ignore-placement": false,
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.05,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              8
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#785655",
+        "text-halo-color": "#fff",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              3.75
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "road-label-medium",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "road_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "street"
+        ]
+      ],
+      "layout": {
+        "text-max-angle": 20,
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.05,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              8
+            ],
+            [
+              20,
+              20
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#785655",
+        "text-halo-color": "#fff",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              3.75
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "road-label-large",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "road_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "main",
+          "motorway_link"
+        ],
+        [
+          "<=",
+          "localrank",
+          4
+        ]
+      ],
+      "layout": {
+        "text-allow-overlap": false,
+        "text-ignore-placement": false,
+        "text-max-angle": 20,
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.05,
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              9
+            ],
+            [
+              20,
+              20
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#785655",
+        "text-halo-color": "#fff",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              3.75
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "park_small_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "poi_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "any",
+        [
+          "in",
+          "maki",
+          "park",
+          "golf",
+          "zoo",
+          "cemetery"
+        ]
+      ],
+      "layout": {
+        "text-optional": true,
+        "text-line-height": 1,
+        "text-allow-overlap": false,
+        "icon-image": "{maki}_icon",
+        "symbol-avoid-edges": false,
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "point",
+        "text-padding": 6,
+        "visibility": "visible",
+        "text-offset": [
+          0,
+          0.9
+        ],
+        "text-rotation-alignment": "viewport",
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-letter-spacing": 0,
+        "text-max-width": 8,
+        "symbol-spacing": 250,
+        "text-size": {
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "base": 1.5
+        }
+      },
+      "paint": {
+        "text-color": "rgba(9,43,9,1.000)",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 2,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "generic_big_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "poi_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "!in",
+          "maki",
+          "rail-light",
+          "rail-metro",
+          "rail",
+          "school",
+          "park",
+          "cemetery",
+          "college",
+          "golf",
+          "hospital",
+          "zoo",
+          "museum",
+          "post",
+          "harbor",
+          "monument",
+          "airport",
+          "airfield",
+          "prison"
+        ],
+        [
+          "<=",
+          "scalerank",
+          2
+        ],
+        [
+          "!in",
+          "type",
+          "Island",
+          "Wetland",
+          "Garden",
+          "Military",
+          "Government",
+          "Residential"
+        ]
+      ],
+      "layout": {
+        "text-line-height": 1,
+        "text-allow-overlap": false,
+        "icon-image": "generic_icon",
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-transform": "none",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "point",
+        "text-padding": 5,
+        "visibility": "visible",
+        "text-offset": [
+          0,
+          1
+        ],
+        "text-rotation-alignment": "viewport",
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-letter-spacing": 0.02,
+        "text-max-width": 10,
+        "symbol-spacing": 250,
+        "text-size": {
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "base": 1.5
+        }
+      },
+      "paint": {
+        "text-color": "#504a4c",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 1.5
+      }
+    },
+    {
+      "id": "generic_rail_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "poi_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "maki",
+          "rail"
+        ],
+        [
+          "!in",
+          "network",
+          "rer",
+          "moscow-metro",
+          "london-overground",
+          "london-underground",
+          "dlr",
+          "national-rail",
+          "s-bahn",
+          "s-bahn.u-bahn",
+          "u-bahn",
+          "transilien",
+          "london-overground.london-underground",
+          "dlr.london-overground.london-underground.national-rail",
+          "dlr.london-underground",
+          "dlr.london-underground.national-rail",
+          "metro",
+          "london-overground.london-underground.national-rail",
+          "london-overground.national-rail",
+          "national-rail",
+          "wiener-linien",
+          "washington-metro",
+          "london-underground.national-rail",
+          "metro"
+        ]
+      ],
+      "layout": {
+        "text-optional": false,
+        "text-line-height": 1,
+        "text-allow-overlap": false,
+        "icon-offset": [
+          0,
+          0
+        ],
+        "icon-image": "generic-rail",
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-transform": "none",
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "icon-allow-overlap": false,
+        "symbol-placement": "point",
+        "text-justify": "center",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-offset": [
+          0,
+          1
+        ],
+        "icon-optional": false,
+        "text-rotation-alignment": "viewport",
+        "text-anchor": "top",
+        "text-field": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              ""
+            ],
+            [
+              14,
+              "{name_en}"
+            ]
+          ]
+        },
+        "text-letter-spacing": 0,
+        "icon-padding": 0,
+        "text-max-width": 5.2,
+        "icon-ignore-placement": false,
+        "symbol-spacing": 250,
+        "text-size": {
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "base": 1.5
+        }
+      },
+      "paint": {
+        "text-color": "#333",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              3
+            ]
+          ]
+        },
+        "icon-halo-width": 4,
+        "icon-halo-color": "#fff",
+        "text-opacity": 1,
+        "text-translate": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "generic_metro_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "poi_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "maki",
+          "rail-light",
+          "rail-metro"
+        ],
+        [
+          "!in",
+          "network",
+          "rer",
+          "moscow-metro",
+          "london-overground",
+          "london-underground",
+          "dlr",
+          "national-rail",
+          "s-bahn",
+          "s-bahn.u-bahn",
+          "u-bahn",
+          "transilien",
+          "london-overground.london-underground",
+          "dlr.london-overground.london-underground.national-rail",
+          "dlr.london-underground",
+          "dlr.london-underground.national-rail",
+          "metro",
+          "london-overground.london-underground.national-rail",
+          "london-overground.national-rail",
+          "national-rail",
+          "wiener-linien",
+          "washington-metro",
+          "london-underground.national-rail",
+          "metro"
+        ]
+      ],
+      "layout": {
+        "text-optional": false,
+        "text-line-height": 1,
+        "text-allow-overlap": false,
+        "icon-offset": [
+          0,
+          0
+        ],
+        "icon-image": "generic-metro",
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-transform": "none",
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "icon-allow-overlap": false,
+        "symbol-placement": "point",
+        "text-justify": "center",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-offset": [
+          0,
+          0.9
+        ],
+        "icon-optional": false,
+        "text-rotation-alignment": "viewport",
+        "text-anchor": "top",
+        "text-field": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              ""
+            ],
+            [
+              14,
+              "{name_en}"
+            ]
+          ]
+        },
+        "text-letter-spacing": 0,
+        "icon-padding": 0,
+        "text-max-width": 5.2,
+        "icon-ignore-placement": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              true
+            ],
+            [
+              13,
+              false
+            ]
+          ]
+        },
+        "symbol-spacing": 250,
+        "text-size": {
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "base": 1.5
+        }
+      },
+      "paint": {
+        "text-color": "#333",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              3
+            ]
+          ]
+        },
+        "icon-halo-width": 4,
+        "icon-halo-color": "#fff",
+        "text-opacity": 1,
+        "text-translate": [
+          0,
+          0
+        ]
       }
     },
     {
@@ -5334,7 +5997,7 @@
       }
     },
     {
-      "id": "generic_metro_label",
+      "id": "airport_label",
       "type": "symbol",
       "source": "compositedsource",
       "source-layer": "poi_label",
@@ -5346,314 +6009,22 @@
         [
           "in",
           "maki",
-          "rail-light",
-          "rail-metro"
-        ],
-        [
-          "!in",
-          "network",
-          "rer",
-          "moscow-metro",
-          "london-overground",
-          "london-underground",
-          "dlr",
-          "national-rail",
-          "s-bahn",
-          "s-bahn.u-bahn",
-          "u-bahn",
-          "transilien",
-          "london-overground.london-underground",
-          "dlr.london-overground.london-underground.national-rail",
-          "dlr.london-underground",
-          "dlr.london-underground.national-rail",
-          "metro",
-          "london-overground.london-underground.national-rail",
-          "london-overground.national-rail",
-          "national-rail",
-          "wiener-linien",
-          "washington-metro",
-          "london-underground.national-rail",
-          "metro"
-        ]
-      ],
-      "layout": {
-        "text-optional": false,
-        "text-line-height": 1,
-        "text-allow-overlap": false,
-        "icon-offset": [
-          0,
-          0
-        ],
-        "icon-image": "generic-metro",
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-transform": "none",
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "icon-allow-overlap": false,
-        "symbol-placement": "point",
-        "text-justify": "center",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-offset": [
-          0,
-          0.9
-        ],
-        "icon-optional": false,
-        "text-rotation-alignment": "viewport",
-        "text-anchor": "top",
-        "text-field": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              ""
-            ],
-            [
-              14,
-              "{name_en}"
-            ]
-          ]
-        },
-        "text-letter-spacing": 0,
-        "icon-padding": 0,
-        "text-max-width": 5.2,
-        "icon-ignore-placement": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              true
-            ],
-            [
-              13,
-              false
-            ]
-          ]
-        },
-        "symbol-spacing": 250,
-        "text-size": {
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              20
-            ]
-          ],
-          "base": 1.5
-        }
-      },
-      "paint": {
-        "text-color": "#333",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              2
-            ],
-            [
-              20,
-              3
-            ]
-          ]
-        },
-        "icon-halo-width": 4,
-        "icon-halo-color": "#fff",
-        "text-opacity": 1,
-        "text-translate": [
-          0,
-          0
-        ]
-      }
-    },
-    {
-      "id": "generic_rail_label",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "poi_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "maki",
-          "rail"
-        ],
-        [
-          "!in",
-          "network",
-          "rer",
-          "moscow-metro",
-          "london-overground",
-          "london-underground",
-          "dlr",
-          "national-rail",
-          "s-bahn",
-          "s-bahn.u-bahn",
-          "u-bahn",
-          "transilien",
-          "london-overground.london-underground",
-          "dlr.london-overground.london-underground.national-rail",
-          "dlr.london-underground",
-          "dlr.london-underground.national-rail",
-          "metro",
-          "london-overground.london-underground.national-rail",
-          "london-overground.national-rail",
-          "national-rail",
-          "wiener-linien",
-          "washington-metro",
-          "london-underground.national-rail",
-          "metro"
-        ]
-      ],
-      "layout": {
-        "text-optional": false,
-        "text-line-height": 1,
-        "text-allow-overlap": false,
-        "icon-offset": [
-          0,
-          0
-        ],
-        "icon-image": "generic-rail",
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-transform": "none",
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "icon-allow-overlap": false,
-        "symbol-placement": "point",
-        "text-justify": "center",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-offset": [
-          0,
-          1
-        ],
-        "icon-optional": false,
-        "text-rotation-alignment": "viewport",
-        "text-anchor": "top",
-        "text-field": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              ""
-            ],
-            [
-              14,
-              "{name_en}"
-            ]
-          ]
-        },
-        "text-letter-spacing": 0,
-        "icon-padding": 0,
-        "text-max-width": 5.2,
-        "icon-ignore-placement": false,
-        "symbol-spacing": 250,
-        "text-size": {
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              20
-            ]
-          ],
-          "base": 1.5
-        }
-      },
-      "paint": {
-        "text-color": "#333",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              2
-            ],
-            [
-              20,
-              3
-            ]
-          ]
-        },
-        "icon-halo-width": 4,
-        "icon-halo-color": "#fff",
-        "text-opacity": 1,
-        "text-translate": [
-          0,
-          0
-        ]
-      }
-    },
-    {
-      "id": "generic_big_label",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "poi_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "!in",
-          "maki",
-          "rail-light",
-          "rail-metro",
-          "rail",
-          "school",
-          "park",
-          "cemetery",
-          "college",
-          "golf",
-          "hospital",
-          "zoo",
-          "museum",
-          "post",
-          "harbor",
-          "monument",
           "airport",
-          "airfield",
-          "prison"
+          "airfield"
         ],
         [
           "<=",
           "scalerank",
           2
-        ],
-        [
-          "!in",
-          "type",
-          "Island",
-          "Wetland",
-          "Garden",
-          "Military",
-          "Government",
-          "Residential"
         ]
       ],
       "layout": {
+        "text-optional": true,
         "text-line-height": 1,
         "text-allow-overlap": false,
-        "icon-image": "generic_icon",
+        "icon-image": "airport_icon",
         "text-ignore-placement": false,
         "text-max-angle": 38,
-        "text-transform": "none",
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Regular"
@@ -5663,518 +6034,27 @@
         "visibility": "visible",
         "text-offset": [
           0,
-          1
-        ],
-        "text-rotation-alignment": "viewport",
-        "text-anchor": "top",
-        "text-field": "{name}",
-        "text-letter-spacing": 0.02,
-        "text-max-width": 10,
-        "symbol-spacing": 250,
-        "text-size": {
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              20
-            ]
-          ],
-          "base": 1.5
-        }
-      },
-      "paint": {
-        "text-color": "#504a4c",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 1.5
-      }
-    },
-    {
-      "id": "park_small_label",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "poi_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "any",
-        [
-          "in",
-          "maki",
-          "park",
-          "golf",
-          "zoo",
-          "cemetery"
-        ]
-      ],
-      "layout": {
-        "text-optional": true,
-        "text-line-height": 1,
-        "text-allow-overlap": false,
-        "icon-image": "{maki}_icon",
-        "symbol-avoid-edges": false,
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "point",
-        "text-padding": 6,
-        "visibility": "visible",
-        "text-offset": [
-          0,
           0.9
         ],
         "text-rotation-alignment": "viewport",
         "text-anchor": "top",
-        "text-field": "{name}",
-        "text-letter-spacing": 0,
-        "text-max-width": 8,
-        "symbol-spacing": 250,
-        "text-size": {
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              20
-            ]
-          ],
-          "base": 1.5
-        }
-      },
-      "paint": {
-        "text-color": "rgba(9,43,9,1.000)",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": 2,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "road-label-large",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "class",
-          "main",
-          "motorway_link"
-        ],
-        [
-          "<=",
-          "localrank",
-          4
-        ]
-      ],
-      "layout": {
-        "text-allow-overlap": false,
-        "text-ignore-placement": false,
-        "text-max-angle": 20,
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.05,
-        "symbol-spacing": 250,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              8,
-              9
-            ],
-            [
-              20,
-              20
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#785655",
-        "text-halo-color": "#fff",
-        "text-halo-width": {
+        "text-field": {
           "base": 1,
           "stops": [
             [
-              16,
-              2
+              0,
+              "{ref}"
             ],
-            [
-              20,
-              3.75
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "road-label-medium",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "class",
-          "street"
-        ]
-      ],
-      "layout": {
-        "text-max-angle": 20,
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.05,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              8,
-              8
-            ],
-            [
-              20,
-              20
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#785655",
-        "text-halo-color": "#fff",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              2
-            ],
-            [
-              20,
-              3.75
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "road-label-small",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "class",
-          "path",
-          "service",
-          "street_limited"
-        ],
-        [
-          "in",
-          "$type",
-          "LineString"
-        ]
-      ],
-      "layout": {
-        "text-ignore-placement": false,
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.05,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              8,
-              8
-            ],
-            [
-              20,
-              15
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#785655",
-        "text-halo-color": "#fff",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              2
-            ],
-            [
-              20,
-              3.75
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "small_maki_label",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "poi_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "any",
-        [
-          "in",
-          "maki",
-          "school",
-          "museum",
-          "library",
-          "monument",
-          "hospital",
-          "fire-station",
-          "religious-christian",
-          "religious-muslim",
-          "religious-jewish",
-          "post",
-          "embassy",
-          "police",
-          "prison",
-          "college",
-          "harbor",
-          "airport",
-          "airfield"
-        ],
-        [
-          "in",
-          "type",
-          "Military",
-          "Government"
-        ]
-      ],
-      "layout": {
-        "text-optional": true,
-        "text-line-height": 1,
-        "text-allow-overlap": false,
-        "icon-image": "{maki}_icon",
-        "symbol-avoid-edges": true,
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "point",
-        "text-padding": 6,
-        "visibility": "visible",
-        "text-offset": [
-          0,
-          0.9
-        ],
-        "text-rotation-alignment": "viewport",
-        "text-anchor": "top",
-        "text-field": "{name}",
-        "text-letter-spacing": 0.01,
-        "text-max-width": 10,
-        "symbol-spacing": 250,
-        "text-size": {
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              20
-            ]
-          ],
-          "base": 1.5
-        }
-      },
-      "paint": {
-        "text-color": "#504a4c",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
-          "base": 1.5,
-          "stops": [
             [
               11,
-              2
-            ],
-            [
-              20,
-              3.75
+              "{name}"
             ]
           ]
         },
-        "icon-opacity": 1
-      }
-    },
-    {
-      "id": "us_interstate_label",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "shield",
-          "us-interstate",
-          "us-interstate-alternate",
-          "us-interstate-business",
-          "us-interstate-duplex"
-        ],
-        [
-          "<=",
-          "reflen",
-          3
-        ]
-      ],
-      "layout": {
-        "text-line-height": 1.4,
-        "text-allow-overlap": false,
-        "icon-offset": [
-          0,
-          -2.25
-        ],
-        "icon-image": "interstate_{reflen}",
-        "icon-rotation-alignment": "viewport",
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "icon-keep-upright": true,
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 2,
-        "visibility": "visible",
-        "text-rotation-alignment": "viewport",
-        "text-anchor": "center",
-        "text-field": "{ref}",
         "text-letter-spacing": 0,
-        "icon-padding": 0,
-        "symbol-spacing": 2000,
-        "text-size": {
-          "base": 1.05,
-          "stops": [
-            [
-              6,
-              8
-            ],
-            [
-              20,
-              15
-            ]
-          ]
-        },
-        "icon-size": {
-          "base": 1,
-          "stops": [
-            [
-              6,
-              0.3
-            ],
-            [
-              20,
-              0.9
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#fff",
-        "icon-halo-color": "white",
-        "icon-halo-width": 4,
-        "text-opacity": 1,
-        "text-halo-color": "#fff",
-        "text-halo-width": 0
-      }
-    },
-    {
-      "id": "us_highway_label",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "shield",
-          "us-highway",
-          "us-highway-alternate",
-          "us-highway-business",
-          "us-highway-duplex"
-        ],
-        [
-          "<=",
-          "reflen",
-          3
-        ]
-      ],
-      "layout": {
-        "text-allow-overlap": false,
-        "icon-image": "us_highway_{reflen}",
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "point",
-        "text-padding": 2,
-        "visibility": "visible",
-        "text-rotation-alignment": "viewport",
-        "text-field": "{ref}",
-        "text-letter-spacing": 0,
+        "text-max-width": 12,
         "symbol-spacing": 250,
         "text-size": {
-          "base": 1,
           "stops": [
             [
               8,
@@ -6182,200 +6062,20 @@
             ],
             [
               20,
-              17
+              20
             ]
-          ]
-        },
-        "icon-size": {
-          "base": 1,
-          "stops": [
-            [
-              8,
-              0.6
-            ],
-            [
-              20,
-              1
-            ]
-          ]
+          ],
+          "base": 1.5
         }
       },
       "paint": {
         "text-color": "#666",
-        "icon-halo-color": "rgba(0, 0, 0, 1)",
-        "icon-halo-width": 1,
-        "text-opacity": 1,
-        "icon-color": "white",
-        "text-halo-color": "#fff",
-        "text-halo-width": 0
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 1
       }
     },
     {
-      "id": "us_stateroad_label",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "shield",
-          "us-state",
-          "us-state-loop",
-          "us-state-business",
-          "us-state-toll",
-          "us-state-truck"
-        ],
-        [
-          "in",
-          "class",
-          "motorway"
-        ],
-        [
-          "<=",
-          "reflen",
-          3
-        ]
-      ],
-      "layout": {
-        "text-allow-overlap": false,
-        "icon-image": "us_state_{reflen}",
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "point",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "viewport",
-        "text-field": "{ref}",
-        "text-letter-spacing": 0,
-        "icon-padding": 0,
-        "symbol-spacing": 250,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              8,
-              10
-            ],
-            [
-              20,
-              15
-            ]
-          ]
-        },
-        "icon-size": {
-          "base": 1,
-          "stops": [
-            [
-              8,
-              0.7
-            ],
-            [
-              20,
-              1
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#666",
-        "icon-halo-color": "rgba(0, 0, 0, 1)",
-        "icon-halo-width": 1,
-        "text-opacity": 1,
-        "icon-color": "white",
-        "text-halo-color": "#fff",
-        "text-halo-width": 0
-      }
-    },
-    {
-      "id": "generic_motorway_label",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road_label",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "class",
-          "motorway",
-          "motorway_link"
-        ],
-        [
-          "in",
-          "shield",
-          "default"
-        ],
-        [
-          "<=",
-          "reflen",
-          6
-        ]
-      ],
-      "layout": {
-        "text-allow-overlap": false,
-        "icon-image": "default_{reflen}",
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-transform": "uppercase",
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "point",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "viewport",
-        "text-field": "{ref}",
-        "text-letter-spacing": 0.05,
-        "symbol-spacing": 250,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              10
-            ],
-            [
-              20,
-              12
-            ]
-          ]
-        },
-        "icon-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              1
-            ],
-            [
-              20,
-              1.25
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#fff",
-        "icon-halo-width": 0,
-        "text-opacity": 1,
-        "icon-color": "white",
-        "text-halo-color": "#fff",
-        "text-halo-width": 0
-      }
-    },
-    {
-      "id": "neighborhood_small_label",
+      "id": "neighborhood_large_label",
       "type": "symbol",
       "source": "compositedsource",
       "source-layer": "place_label",
@@ -6389,6 +6089,11 @@
           "type",
           "neighbourhood",
           "suburb"
+        ],
+        [
+          "<=",
+          "localrank",
+          5
         ]
       ],
       "layout": {
@@ -6401,7 +6106,7 @@
             ],
             [
               20,
-              1.75
+              1.4
             ]
           ]
         },
@@ -6414,379 +6119,95 @@
           "Arial Unicode MS Regular"
         ],
         "symbol-placement": "point",
-        "text-padding": 10,
-        "visibility": "visible",
-        "text-rotation-alignment": "viewport",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.15,
-        "text-max-width": 5,
-        "symbol-spacing": 250,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              8
-            ],
-            [
-              20,
-              28
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#844",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              2.5
-            ],
-            [
-              20,
-              5
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "neighborhood_island",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "poi_label",
-      "minzoom": 0,
-      "maxzoom": 18,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "type",
-          "Island",
-          "Residential"
-        ]
-      ],
-      "layout": {
-        "text-line-height": {
-          "base": 1,
-          "stops": [
-            [
-              8,
-              0.85
-            ],
-            [
-              20,
-              1.75
-            ]
-          ]
-        },
-        "text-allow-overlap": false,
-        "symbol-avoid-edges": false,
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": [
-          "Open Sans Italic",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "point",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "viewport",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.15,
-        "text-max-width": 5,
-        "symbol-spacing": 250,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              8
-            ],
-            [
-              20,
-              28
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#844",
-        "text-halo-color": "#F8F4F0",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              16,
-              2.5
-            ],
-            [
-              20,
-              5
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "oneway_arrows_large",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road",
-      "minzoom": 15,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "oneway",
-          1
-        ],
-        [
-          "in",
-          "class",
-          "main"
-        ],
-        [
-          "!=",
-          "type",
-          "trunk"
-        ]
-      ],
-      "layout": {
-        "text-line-height": 0,
-        "text-allow-overlap": false,
-        "icon-offset": [
-          0,
-          2
-        ],
-        "icon-image": "oneway_road",
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
         "text-padding": 0,
         "visibility": "visible",
         "text-offset": [
           0,
           0
         ],
-        "text-rotation-alignment": "map",
-        "text-keep-upright": false,
-        "text-field": "",
-        "text-letter-spacing": 0.5,
-        "icon-padding": 0,
+        "text-rotation-alignment": "viewport",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.15,
+        "text-max-width": 5,
         "symbol-spacing": 250,
         "text-size": {
           "base": 1,
           "stops": [
             [
-              8,
+              10,
               8
             ],
             [
               20,
-              12
+              28
             ]
           ]
         }
       },
       "paint": {
-        "text-color": "#aaa",
-        "text-halo-color": "#aaa",
-        "text-halo-width": 0,
-        "text-translate": [
-          0,
-          0
-        ],
-        "text-opacity": 0
-      }
-    },
-    {
-      "id": "oneway_arrows_small",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road",
-      "minzoom": 18,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "oneway",
-          1
-        ],
-        [
-          "in",
-          "class",
-          "street",
-          "street_limited"
-        ]
-      ],
-      "layout": {
-        "text-line-height": 1,
-        "text-allow-overlap": true,
-        "icon-offset": [
-          0,
-          2.5
-        ],
-        "icon-image": "oneway_road",
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-keep-upright": false,
-        "text-field": "",
-        "text-letter-spacing": 0,
-        "icon-padding": 0,
-        "symbol-spacing": 250,
-        "text-size": 8,
-        "icon-size": 1
-      },
-      "paint": {
-        "text-color": "#aaa",
-        "text-halo-color": "#aaa",
-        "text-halo-width": 0,
-        "text-translate": [
-          0,
-          0
-        ],
-        "text-opacity": 1
-      }
-    },
-    {
-      "id": "oneway_arrows_motorway",
-      "type": "symbol",
-      "source": "compositedsource",
-      "source-layer": "road",
-      "minzoom": 16,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "oneway",
-          1
-        ],
-        [
-          "in",
-          "class",
-          "motorway"
-        ]
-      ],
-      "layout": {
-        "text-line-height": 0,
-        "text-allow-overlap": false,
-        "icon-image": "oneway_motorway",
-        "text-ignore-placement": false,
-        "text-max-angle": 38,
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Regular"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-anchor": "top",
-        "text-keep-upright": false,
-        "text-field": "",
-        "text-letter-spacing": 0,
-        "icon-padding": 0,
-        "symbol-spacing": 250,
-        "text-size": {
+        "text-color": "#844",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": {
           "base": 1,
           "stops": [
             [
-              8,
-              8
+              16,
+              2.5
             ],
             [
               20,
-              18
+              5
             ]
           ]
         }
-      },
-      "paint": {
-        "text-color": "#504a4c",
-        "text-halo-color": "#aaa",
-        "text-halo-width": 0,
-        "text-translate": [
-          0,
-          -2
-        ],
-        "text-opacity": 1
       }
     },
     {
-      "id": "generic_small_labels",
+      "id": "hamlet_village_label",
       "type": "symbol",
       "source": "compositedsource",
-      "source-layer": "poi_label",
+      "source-layer": "place_label",
       "minzoom": 0,
       "maxzoom": 22,
       "interactive": true,
       "filter": [
         "all",
         [
-          "!in",
-          "maki",
-          "rail-light",
-          "rail-metro",
-          "rail",
-          "school",
-          "park",
-          "college",
-          "golf",
-          "station"
-        ],
-        [
-          ">=",
-          "scalerank",
-          3
-        ],
-        [
-          "!in",
+          "in",
           "type",
-          "Apartments"
+          "village",
+          "hamlet"
+        ],
+        [
+          "<=",
+          "localrank",
+          30
         ]
       ],
       "layout": {
-        "text-line-height": 1.05,
+        "text-line-height": 1,
         "text-allow-overlap": false,
-        "symbol-avoid-edges": true,
         "text-ignore-placement": false,
         "text-max-angle": 38,
         "text-font": [
-          "Open Sans Italic",
+          "Open Sans Regular",
           "Arial Unicode MS Regular"
         ],
         "symbol-placement": "point",
-        "text-padding": 8,
+        "text-padding": 5,
         "visibility": "visible",
+        "text-offset": [
+          0,
+          0
+        ],
         "text-rotation-alignment": "viewport",
-        "text-field": "{name}",
-        "text-letter-spacing": 0.05,
+        "text-anchor": "center",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0,
         "text-max-width": 5,
         "symbol-spacing": 250,
         "text-size": {
+          "base": 1.05,
           "stops": [
             [
               8,
@@ -6794,16 +6215,595 @@
             ],
             [
               20,
-              20
+              24
             ]
-          ],
-          "base": 1.5
+          ]
+        },
+        "icon-size": 0.9
+      },
+      "paint": {
+        "text-color": "#2d1617",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              2
+            ],
+            [
+              20,
+              3.75
+            ]
+          ]
+        },
+        "text-opacity": 0.7,
+        "icon-opacity": 1
+      }
+    },
+    {
+      "id": "town_label",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "place_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "type",
+          "town"
+        ],
+        [
+          "<=",
+          "localrank",
+          40
+        ]
+      ],
+      "layout": {
+        "text-line-height": 1,
+        "text-allow-overlap": false,
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-font": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              [
+                "Open Sans Regular",
+                "Arial Unicode MS Regular"
+              ]
+            ],
+            [
+              12,
+              [
+                "Open Sans Semibold",
+                "Arial Unicode MS Regular"
+              ]
+            ]
+          ]
+        },
+        "symbol-placement": "point",
+        "text-padding": 2,
+        "visibility": "visible",
+        "text-offset": [
+          0,
+          0
+        ],
+        "text-rotation-alignment": "viewport",
+        "text-anchor": "center",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0,
+        "text-max-width": 5,
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              8,
+              11
+            ],
+            [
+              18,
+              26
+            ]
+          ]
+        },
+        "icon-size": 0.9
+      },
+      "paint": {
+        "text-color": "#2d1617",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              1.5
+            ],
+            [
+              20,
+              3.75
+            ]
+          ]
+        },
+        "text-opacity": 0.8,
+        "icon-opacity": 1
+      }
+    },
+    {
+      "id": "city_label_small",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "place_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "type",
+          "city"
+        ],
+        [
+          "!in",
+          "scalerank",
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "layout": {
+        "text-line-height": 1.1,
+        "text-allow-overlap": false,
+        "symbol-avoid-edges": true,
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-font": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              [
+                "Open Sans Regular",
+                "Arial Unicode MS Regular"
+              ]
+            ],
+            [
+              9,
+              [
+                "Open Sans Semibold",
+                "Arial Unicode MS Regular"
+              ]
+            ]
+          ]
+        },
+        "symbol-placement": "point",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-offset": [
+          0,
+          0
+        ],
+        "text-rotation-alignment": "viewport",
+        "text-anchor": "center",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0,
+        "text-max-width": 5,
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              5,
+              10
+            ],
+            [
+              18,
+              30
+            ]
+          ]
+        },
+        "icon-size": 0.8
+      },
+      "paint": {
+        "text-color": "#2d1617",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              6,
+              1.5
+            ],
+            [
+              20,
+              6
+            ]
+          ]
+        },
+        "icon-opacity": 1,
+        "text-opacity": 1
+      }
+    },
+    {
+      "id": "city_label_medium",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "place_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "type",
+          "city"
+        ],
+        [
+          "in",
+          "scalerank",
+          3,
+          4
+        ]
+      ],
+      "layout": {
+        "text-line-height": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              1
+            ],
+            [
+              20,
+              1.3
+            ]
+          ]
+        },
+        "text-allow-overlap": false,
+        "icon-image": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "dot"
+            ],
+            [
+              6,
+              ""
+            ]
+          ]
+        },
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-font": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              [
+                "Open Sans Regular",
+                "Arial Unicode MS Regular"
+              ]
+            ],
+            [
+              6,
+              [
+                "Open Sans Semibold",
+                "Arial Unicode MS Regular"
+              ]
+            ]
+          ]
+        },
+        "symbol-placement": "point",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-offset": {
+          "base": 1,
+          "stops": [
+            [
+              5.99,
+              [
+                0,
+                0.25
+              ]
+            ],
+            [
+              6,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-rotation-alignment": "viewport",
+        "text-anchor": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "top"
+            ],
+            [
+              6,
+              "center"
+            ]
+          ]
+        },
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0,
+        "text-max-width": 5,
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              4,
+              10
+            ],
+            [
+              18,
+              40
+            ]
+          ]
         }
       },
       "paint": {
-        "text-color": "rgba(99,93,96,0.842)",
+        "text-color": "#2d1617",
         "text-halo-color": "#F8F4F0",
-        "text-halo-width": 1.5
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              6,
+              1.75
+            ],
+            [
+              18,
+              2.75
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "city_label_big",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "place_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "in",
+          "type",
+          "city"
+        ],
+        [
+          "<=",
+          "scalerank",
+          2
+        ]
+      ],
+      "layout": {
+        "text-line-height": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              1
+            ],
+            [
+              20,
+              1.3
+            ]
+          ]
+        },
+        "text-allow-overlap": false,
+        "icon-image": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "dot"
+            ],
+            [
+              6,
+              ""
+            ]
+          ]
+        },
+        "text-ignore-placement": false,
+        "text-max-angle": 38,
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "point",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-offset": {
+          "base": 1,
+          "stops": [
+            [
+              5.99,
+              [
+                0,
+                0.25
+              ]
+            ],
+            [
+              6,
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "text-rotation-alignment": "viewport",
+        "text-anchor": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              "top"
+            ],
+            [
+              6,
+              "center"
+            ]
+          ]
+        },
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0,
+        "text-max-width": 5,
+        "symbol-spacing": 250,
+        "text-size": {
+          "base": 1.05,
+          "stops": [
+            [
+              1.9,
+              10
+            ],
+            [
+              18,
+              40
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#2d1617",
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              6,
+              1.75
+            ],
+            [
+              18,
+              2.75
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "country_label_small",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "country_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          ">",
+          "scalerank",
+          2
+        ]
+      ],
+      "layout": {
+        "text-line-height": 1.1,
+        "text-allow-overlap": false,
+        "text-ignore-placement": false,
+        "text-transform": "none",
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "symbol-placement": "point",
+        "visibility": "visible",
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.05,
+        "text-max-width": 4,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              0,
+              7
+            ],
+            [
+              10,
+              36
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-opacity": 1,
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 2,
+        "text-color": "#2d1617"
+      }
+    },
+    {
+      "id": "country_label_big",
+      "type": "symbol",
+      "source": "compositedsource",
+      "source-layer": "country_label",
+      "minzoom": 0,
+      "maxzoom": 22,
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "<=",
+          "scalerank",
+          2
+        ]
+      ],
+      "layout": {
+        "text-line-height": 1.1,
+        "text-allow-overlap": false,
+        "text-ignore-placement": false,
+        "text-transform": "none",
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "visibility": "visible",
+        "text-offset": [
+          0,
+          0
+        ],
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.05,
+        "text-max-width": 4,
+        "text-size": {
+          "base": 1.1,
+          "stops": [
+            [
+              0,
+              8
+            ],
+            [
+              10,
+              36
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-opacity": 1,
+        "text-halo-color": "#F8F4F0",
+        "text-halo-width": 2,
+        "text-color": "#2d1617"
       }
     }
   ],

@@ -8,7 +8,7 @@
     }
   },
   "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
-  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -1865,811 +1865,36 @@
       }
     },
     {
-      "id": "country_label_1",
+      "id": "water_label",
       "type": "symbol",
       "source": "mapbox",
-      "source-layer": "country_label",
-      "filter": [
-        "==",
-        "scalerank",
-        1
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Bold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 6.25,
-        "text-transform": "uppercase",
-        "text-size": {
-          "stops": [
-            [
-              2,
-              13
-            ],
-            [
-              4,
-              17
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#334",
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 2,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "country_label_2",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "country_label",
-      "filter": [
-        "==",
-        "scalerank",
-        2
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Bold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 6.25,
-        "text-transform": "uppercase",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              13
-            ],
-            [
-              5,
-              17
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#334",
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 2,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "country_label_3",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "country_label",
-      "filter": [
-        "==",
-        "scalerank",
-        3
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Bold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 6.25,
-        "text-transform": "uppercase",
-        "text-size": {
-          "stops": [
-            [
-              4,
-              13
-            ],
-            [
-              7,
-              17
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#334",
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 2,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "country_label_4",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "country_label",
-      "filter": [
-        ">=",
-        "scalerank",
-        4
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Bold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 6.25,
-        "text-transform": "uppercase",
-        "text-size": {
-          "stops": [
-            [
-              5,
-              13
-            ],
-            [
-              6,
-              15
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#334",
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 2,
-        "text-halo-blur": 1
-      }
-    },
-    {
-      "id": "marine_label_point_1",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "labelrank",
-          1
-        ],
-        [
-          "==",
-          "$type",
-          "Point"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Italic",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 5,
-        "text-letter-spacing": 0.2,
-        "text-line-height": 1.6,
-        "symbol-placement": "point",
-        "text-offset": [
-          0,
-          2.4
-        ],
-        "text-size": {
-          "stops": [
-            [
-              3,
-              18
-            ],
-            [
-              4,
-              22
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 0.75,
-        "text-halo-blur": 0.75
-      }
-    },
-    {
-      "id": "marine_label_line_1",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "labelrank",
-          1
-        ],
-        [
-          "==",
-          "$type",
-          "LineString"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Italic",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.2,
-        "symbol-placement": "line",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              18
-            ],
-            [
-              4,
-              22
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 0.75,
-        "text-halo-blur": 0.75
-      }
-    },
-    {
-      "id": "marine_label_point_2",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "labelrank",
-          2
-        ],
-        [
-          "==",
-          "$type",
-          "Point"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Italic",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 5,
-        "text-letter-spacing": 0.2,
-        "symbol-placement": "point",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              14
-            ],
-            [
-              4,
-              16
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 0.75,
-        "text-halo-blur": 0.75
-      }
-    },
-    {
-      "id": "marine_label_line_2",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "labelrank",
-          2
-        ],
-        [
-          "==",
-          "$type",
-          "LineString"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Italic",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.2,
-        "symbol-placement": "line",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              14
-            ],
-            [
-              4,
-              16
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 0.75,
-        "text-halo-blur": 0.75
-      }
-    },
-    {
-      "id": "marine_label_3",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "labelrank",
-          3
-        ],
-        [
-          "==",
-          "$type",
-          "Point"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Italic",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 5,
-        "text-letter-spacing": 0.2,
-        "symbol-placement": "point",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              11
-            ],
-            [
-              4,
-              14
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 0.75,
-        "text-halo-blur": 0.75
-      }
-    },
-    {
-      "id": "marine_label_line_3",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "labelrank",
-          3
-        ],
-        [
-          "==",
-          "$type",
-          "LineString"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Italic",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.2,
-        "symbol-placement": "line",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              11
-            ],
-            [
-              4,
-              14
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 0.75,
-        "text-halo-blur": 0.75
-      }
-    },
-    {
-      "id": "marine_label_4",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          ">=",
-          "labelrank",
-          4
-        ],
-        [
-          "==",
-          "$type",
-          "Point"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Italic",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 6,
-        "text-letter-spacing": 0.2,
-        "symbol-placement": "point",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              11
-            ],
-            [
-              4,
-              12
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 0.75,
-        "text-halo-blur": 0.75
-      }
-    },
-    {
-      "id": "marine_label_line_4",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "filter": [
-        "all",
-        [
-          ">=",
-          "labelrank",
-          4
-        ],
-        [
-          "==",
-          "$type",
-          "LineString"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Italic",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.2,
-        "symbol-placement": "line",
-        "text-size": {
-          "stops": [
-            [
-              3,
-              11
-            ],
-            [
-              4,
-              12
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 0.75,
-        "text-halo-blur": 0.75
-      }
-    },
-    {
-      "id": "place_label_city",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "place_label",
-      "filter": [
-        "==",
-        "type",
-        "city"
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 8,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              7,
-              14
-            ],
-            [
-              11,
-              24
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#333",
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
-      }
-    },
-    {
-      "id": "place_label_town",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "place_label",
-      "filter": [
-        "==",
-        "type",
-        "town"
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 8,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              10,
-              14
-            ],
-            [
-              15,
-              24
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#333",
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
-      }
-    },
-    {
-      "id": "place_label_village",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "place_label",
-      "filter": [
-        "==",
-        "type",
-        "village"
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 8,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              10,
-              12
-            ],
-            [
-              15,
-              22
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#333",
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
-      }
-    },
-    {
-      "id": "road_label_highway_shields",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "road_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "motorway"
-        ],
-        [
-          "in",
-          "reflen",
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ]
-      ],
-      "layout": {
-        "symbol-placement": "line",
-        "icon-image": "motorway_{reflen}",
-        "text-field": "{ref}",
-        "text-font": [
-          "Open Sans Bold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-rotation-alignment": "viewport",
-        "icon-rotation-alignment": "viewport",
-        "symbol-spacing": 500,
-        "text-size": 11
-      },
-      "paint": {
-        "text-color": "#765"
-      }
-    },
-    {
-      "id": "road_label",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "road_label",
+      "source-layer": "water_label",
       "filter": [
         "==",
         "$type",
-        "LineString"
+        "Point"
       ],
       "layout": {
         "text-font": [
-          "Open Sans Regular",
+          "Open Sans Italic",
           "Arial Unicode MS Regular"
         ],
         "text-field": "{name_en}",
-        "symbol-placement": "line",
-        "text-size": {
-          "stops": [
-            [
-              13,
-              12
-            ],
-            [
-              14,
-              13
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#765",
-        "text-halo-color": "#fff",
-        "text-halo-width": 1,
-        "text-halo-blur": 0.5
-      }
-    },
-    {
-      "id": "place_label_other",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "place_label",
-      "filter": [
-        "in",
-        "type",
-        "hamlet",
-        "suburb",
-        "neighbourhood"
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Bold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-transform": "uppercase",
-        "text-letter-spacing": 0.1,
-        "text-field": "{name_en}",
-        "text-max-width": 9,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [
-              12,
-              10
-            ],
-            [
-              15,
-              14
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "#633",
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
-      }
-    },
-    {
-      "id": "poi_label_1",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "poi_label",
-      "minzoom": 13,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "scalerank",
-          1
-        ]
-      ],
-      "layout": {
-        "icon-image": "{maki}-12",
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 9,
-        "text-padding": 2,
-        "text-offset": [
-          0,
-          0.6
-        ],
-        "text-anchor": "top",
+        "text-max-width": 5,
         "text-size": 12
       },
       "paint": {
-        "text-color": "#666",
-        "text-halo-color": "#ffffff",
-        "text-halo-width": 1,
-        "text-halo-blur": 0.5
+        "text-color": "#74aee9",
+        "text-halo-width": 1.5,
+        "text-halo-color": "rgba(255,255,255,0.7)"
       }
     },
     {
-      "id": "poi_label_2",
+      "id": "poi_label_other",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
-      "minzoom": 14,
+      "minzoom": 17,
       "filter": [
         "all",
         [
@@ -2678,51 +1903,9 @@
           "Point"
         ],
         [
-          "==",
+          ">=",
           "scalerank",
-          2
-        ]
-      ],
-      "layout": {
-        "icon-image": "{maki}-12",
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
-        ],
-        "text-field": "{name_en}",
-        "text-max-width": 9,
-        "text-padding": 2,
-        "text-offset": [
-          0,
-          0.6
-        ],
-        "text-anchor": "top",
-        "text-size": 12
-      },
-      "paint": {
-        "text-color": "#666",
-        "text-halo-color": "#ffffff",
-        "text-halo-width": 1,
-        "text-halo-blur": 0.5
-      }
-    },
-    {
-      "id": "poi_label_3",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "poi_label",
-      "minzoom": 15,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "scalerank",
-          3
+          5
         ]
       ],
       "layout": {
@@ -2791,11 +1974,11 @@
       }
     },
     {
-      "id": "poi_label_other",
+      "id": "poi_label_3",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
-      "minzoom": 17,
+      "minzoom": 15,
       "filter": [
         "all",
         [
@@ -2804,9 +1987,9 @@
           "Point"
         ],
         [
-          ">=",
+          "==",
           "scalerank",
-          5
+          3
         ]
       ],
       "layout": {
@@ -2833,14 +2016,474 @@
       }
     },
     {
-      "id": "water_label",
+      "id": "poi_label_2",
       "type": "symbol",
       "source": "mapbox",
-      "source-layer": "water_label",
+      "source-layer": "poi_label",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "==",
+          "scalerank",
+          2
+        ]
+      ],
+      "layout": {
+        "icon-image": "{maki}-12",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 9,
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "text-anchor": "top",
+        "text-size": 12
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.5
+      }
+    },
+    {
+      "id": "poi_label_1",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "poi_label",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "==",
+          "scalerank",
+          1
+        ]
+      ],
+      "layout": {
+        "icon-image": "{maki}-12",
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 9,
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "text-anchor": "top",
+        "text-size": 12
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.5
+      }
+    },
+    {
+      "id": "place_label_other",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "place_label",
+      "filter": [
+        "in",
+        "type",
+        "hamlet",
+        "suburb",
+        "neighbourhood"
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.1,
+        "text-field": "{name_en}",
+        "text-max-width": 9,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              10
+            ],
+            [
+              15,
+              14
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#633",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "road_label",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road_label",
       "filter": [
         "==",
         "$type",
-        "Point"
+        "LineString"
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "symbol-placement": "line",
+        "text-size": {
+          "stops": [
+            [
+              13,
+              12
+            ],
+            [
+              14,
+              13
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#765",
+        "text-halo-color": "#fff",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.5
+      }
+    },
+    {
+      "id": "road_label_highway_shields",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "road_label",
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "in",
+          "reflen",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "icon-image": "motorway_{reflen}",
+        "text-field": "{ref}",
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-rotation-alignment": "viewport",
+        "icon-rotation-alignment": "viewport",
+        "symbol-spacing": 500,
+        "text-size": 11
+      },
+      "paint": {
+        "text-color": "#765"
+      }
+    },
+    {
+      "id": "place_label_village",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "place_label",
+      "filter": [
+        "==",
+        "type",
+        "village"
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              10,
+              12
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#333",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "place_label_town",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "place_label",
+      "filter": [
+        "==",
+        "type",
+        "town"
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              10,
+              14
+            ],
+            [
+              15,
+              24
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#333",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "place_label_city",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "place_label",
+      "filter": [
+        "==",
+        "type",
+        "city"
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Semibold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [
+              7,
+              14
+            ],
+            [
+              11,
+              24
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#333",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "marine_label_line_4",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "filter": [
+        "all",
+        [
+          ">=",
+          "labelrank",
+          4
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
+        ]
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.2,
+        "symbol-placement": "line",
+        "text-size": {
+          "stops": [
+            [
+              3,
+              11
+            ],
+            [
+              4,
+              12
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75
+      }
+    },
+    {
+      "id": "marine_label_4",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "filter": [
+        "all",
+        [
+          ">=",
+          "labelrank",
+          4
+        ],
+        [
+          "==",
+          "$type",
+          "Point"
+        ]
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 6,
+        "text-letter-spacing": 0.2,
+        "symbol-placement": "point",
+        "text-size": {
+          "stops": [
+            [
+              3,
+              11
+            ],
+            [
+              4,
+              12
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75
+      }
+    },
+    {
+      "id": "marine_label_line_3",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "filter": [
+        "all",
+        [
+          "==",
+          "labelrank",
+          3
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
+        ]
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.2,
+        "symbol-placement": "line",
+        "text-size": {
+          "stops": [
+            [
+              3,
+              11
+            ],
+            [
+              4,
+              14
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75
+      }
+    },
+    {
+      "id": "marine_label_3",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "filter": [
+        "all",
+        [
+          "==",
+          "labelrank",
+          3
+        ],
+        [
+          "==",
+          "$type",
+          "Point"
+        ]
       ],
       "layout": {
         "text-font": [
@@ -2849,12 +2492,369 @@
         ],
         "text-field": "{name_en}",
         "text-max-width": 5,
-        "text-size": 12
+        "text-letter-spacing": 0.2,
+        "symbol-placement": "point",
+        "text-size": {
+          "stops": [
+            [
+              3,
+              11
+            ],
+            [
+              4,
+              14
+            ]
+          ]
+        }
       },
       "paint": {
         "text-color": "#74aee9",
-        "text-halo-width": 1.5,
-        "text-halo-color": "rgba(255,255,255,0.7)"
+        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75
+      }
+    },
+    {
+      "id": "marine_label_line_2",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "filter": [
+        "all",
+        [
+          "==",
+          "labelrank",
+          2
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
+        ]
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.2,
+        "symbol-placement": "line",
+        "text-size": {
+          "stops": [
+            [
+              3,
+              14
+            ],
+            [
+              4,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75
+      }
+    },
+    {
+      "id": "marine_label_point_2",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "filter": [
+        "all",
+        [
+          "==",
+          "labelrank",
+          2
+        ],
+        [
+          "==",
+          "$type",
+          "Point"
+        ]
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 5,
+        "text-letter-spacing": 0.2,
+        "symbol-placement": "point",
+        "text-size": {
+          "stops": [
+            [
+              3,
+              14
+            ],
+            [
+              4,
+              16
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75
+      }
+    },
+    {
+      "id": "marine_label_line_1",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "filter": [
+        "all",
+        [
+          "==",
+          "labelrank",
+          1
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
+        ]
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "text-letter-spacing": 0.2,
+        "symbol-placement": "line",
+        "text-size": {
+          "stops": [
+            [
+              3,
+              18
+            ],
+            [
+              4,
+              22
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75
+      }
+    },
+    {
+      "id": "marine_label_point_1",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "filter": [
+        "all",
+        [
+          "==",
+          "labelrank",
+          1
+        ],
+        [
+          "==",
+          "$type",
+          "Point"
+        ]
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 5,
+        "text-letter-spacing": 0.2,
+        "text-line-height": 1.6,
+        "symbol-placement": "point",
+        "text-offset": [
+          0,
+          2.4
+        ],
+        "text-size": {
+          "stops": [
+            [
+              3,
+              18
+            ],
+            [
+              4,
+              22
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#74aee9",
+        "text-halo-color": "rgba(255,255,255,0.7)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75
+      }
+    },
+    {
+      "id": "country_label_4",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "country_label",
+      "filter": [
+        ">=",
+        "scalerank",
+        4
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 6.25,
+        "text-transform": "uppercase",
+        "text-size": {
+          "stops": [
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              15
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#334",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 2,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "country_label_3",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "country_label",
+      "filter": [
+        "==",
+        "scalerank",
+        3
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 6.25,
+        "text-transform": "uppercase",
+        "text-size": {
+          "stops": [
+            [
+              4,
+              13
+            ],
+            [
+              7,
+              17
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#334",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 2,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "country_label_2",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "country_label",
+      "filter": [
+        "==",
+        "scalerank",
+        2
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 6.25,
+        "text-transform": "uppercase",
+        "text-size": {
+          "stops": [
+            [
+              3,
+              13
+            ],
+            [
+              5,
+              17
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#334",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 2,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "country_label_1",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "country_label",
+      "filter": [
+        "==",
+        "scalerank",
+        1
+      ],
+      "layout": {
+        "text-font": [
+          "Open Sans Bold",
+          "Arial Unicode MS Bold"
+        ],
+        "text-field": "{name_en}",
+        "text-max-width": 6.25,
+        "text-transform": "uppercase",
+        "text-size": {
+          "stops": [
+            [
+              2,
+              13
+            ],
+            [
+              4,
+              17
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#334",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 2,
+        "text-halo-blur": 1
       }
     }
   ]
