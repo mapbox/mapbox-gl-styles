@@ -9,6 +9,7 @@ var styles = [
   'mapbox.dark-v7',
   'mapbox.bright-v7',
   'mapbox.basic-v7',
+  'mapbox.bright-v7',
   'mapbox.empty-v7'
 ];
 
