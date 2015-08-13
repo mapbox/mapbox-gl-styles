@@ -34,11 +34,22 @@ function writeToFile(style, format, type, file) {
 
 styles.forEach(function(style) {
   [1, 2].forEach(function(format) {
-    var json = spritezero.generateLayout(getFiles(style), format);
-    spritezero.generateImage(json, function(err, png) {
+    var layout = spritezero.generateLayout(getFiles(style), format);
+    spritezero.generateImage(layout, function(err, png) {
       if (err) console.log(err);
-      writeToFile(style, format, 'json', JSON.stringify(json));
+      var json = {};
+      layout.items.forEach(function(item) {
+        json[item.id] = {
+          width: item.width,
+          height: item.height,
+          x: item.x,
+          y: item.y,
+          sdf: false,
+          pixelRatio: 1
+        };
+      });
       writeToFile(style, format, 'png', png);
+      writeToFile(style, format, 'json', JSON.stringify(json, null, 2));
     });
   });
 });
