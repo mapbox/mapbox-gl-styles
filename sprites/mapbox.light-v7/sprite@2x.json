@@ -5,7 +5,7 @@
     "x": 0,
     "y": 0,
     "sdf": false,
-    "pixelRatio": 1
+    "pixelRatio": 2
   },
   "secondary_marker": {
     "width": 40,
@@ -13,6 +13,6 @@
     "x": 40,
     "y": 0,
     "sdf": false,
-    "pixelRatio": 1
+    "pixelRatio": 2
   }
 }

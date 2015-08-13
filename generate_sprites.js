@@ -45,7 +45,7 @@ styles.forEach(function(style) {
           x: item.x,
           y: item.y,
           sdf: false,
-          pixelRatio: 1
+          pixelRatio: format
         };
       });
       writeToFile(style, format, 'png', png);
