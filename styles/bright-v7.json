@@ -119,7 +119,7 @@
       "url": "mapbox://mapbox.mapbox-streets-v6"
     }
   },
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
+  "sprite": "../sprites/mapbox.bright-v7/sprite",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",

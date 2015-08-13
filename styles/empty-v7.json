@@ -3,7 +3,7 @@
   "name": "Empty",
   "constants": {},
   "sources": {},
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/sprite",
+  "sprite": "../sprites/mapbox.empty-v7/sprite",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": []
 }

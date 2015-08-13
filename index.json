@@ -48,7 +48,7 @@
         "url": "mapbox://mapbox.mapbox-streets-v6"
       }
     },
-    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/sprite",
+    "sprite": "../sprites/mapbox.basic-v7/sprite",
     "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -1016,7 +1016,7 @@
         "url": "mapbox://mapbox.mapbox-streets-v6"
       }
     },
-    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
+    "sprite": "../sprites/mapbox.bright-v7/sprite",
     "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -3237,7 +3237,7 @@
         "type": "vector"
       }
     },
-    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/dark",
+    "sprite": "../sprites/mapbox.dark-v7/sprite",
     "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -12695,7 +12695,7 @@
     "name": "Empty",
     "constants": {},
     "sources": {},
-    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/sprite",
+    "sprite": "../sprites/mapbox.empty-v7/sprite",
     "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
     "layers": []
   },
@@ -12943,7 +12943,7 @@
         "type": "vector"
       }
     },
-    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/light",
+    "sprite": "../sprites/mapbox.light-v7/sprite",
     "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -16757,7 +16757,7 @@
         "type": "vector"
       }
     },
-    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/mapbox-streets",
+    "sprite": "../sprites/mapbox.streets-v7/sprite",
     "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
     "layers": [
       {
