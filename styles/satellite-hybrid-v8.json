@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "satellite-v7",
+  "name": "satellite-v8",
   "sources": {
     "mapbox": {
       "url": "mapbox://mapbox.mapbox-streets-v6",
