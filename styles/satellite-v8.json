@@ -1,5 +1,6 @@
 {
   "version": 8,
+  "name": "Satellite",
   "sources": {
     "mapbox": {
       "type": "raster",
