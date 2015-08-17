@@ -1,6 +1,6 @@
 {
   "name": "mapbox-gl-styles",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "mapbox gl example styles",
   "main": "index.json",
   "bin": {},
