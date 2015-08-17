@@ -12,7 +12,6 @@
       "tileSize": 256
     }
   },
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
   "glyphs": "mapbox://fonts/peterqliu/{fontstack}/{range}.pbf",
   "layers": [
     {
