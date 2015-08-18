@@ -8,6 +8,7 @@
         "url": "mapbox://mapbox.mapbox-streets-v6"
       }
     },
+    "sprite": "mapbox://sprites/mapbox/basic-v8",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -723,6 +724,7 @@
         "url": "mapbox://mapbox.mapbox-streets-v6"
       }
     },
+    "sprite": "mapbox://sprites/mapbox/bright-v8",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -3587,6 +3589,7 @@
         "type": "vector"
       }
     },
+    "sprite": "mapbox://sprites/mapbox/dark-v8",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -7258,7 +7261,7 @@
         "type": "vector"
       }
     },
-    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/emerald",
+    "sprite": "mapbox://sprites/mapbox/emerald-v8",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -14066,8 +14069,9 @@
   "empty": {
     "version": 8,
     "name": "Empty",
+    "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+    "sprite": "mapbox://sprites/mapbox/empty-v8",
     "sources": {},
-    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": []
   },
   "light": {
@@ -14083,6 +14087,7 @@
         "type": "vector"
       }
     },
+    "sprite": "mapbox://sprites/mapbox/light-v8",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -17825,6 +17830,7 @@
         "type": "vector"
       }
     },
+    "sprite": "mapbox://sprites/mapbox/streets-v8",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
       {
@@ -26763,8 +26769,8 @@
         "tileSize": 256
       }
     },
-    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
-    "glyphs": "mapbox://fonts/peterqliu/{fontstack}/{range}.pbf",
+    "sprite": "mapbox://sprites/mapbox/satellite-hybrid-v8",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
       {
         "id": "background",
