@@ -11,6 +11,7 @@
       "type": "vector"
     }
   },
+  "sprite": "mapbox://sprites/mapbox.light-v8",
   "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {

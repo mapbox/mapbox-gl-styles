@@ -7,6 +7,7 @@
       "type": "vector"
     }
   },
+  "sprite": "mapbox://sprites/mapbox.streets-v8",
   "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {

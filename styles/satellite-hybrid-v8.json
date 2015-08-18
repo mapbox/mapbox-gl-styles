@@ -12,6 +12,7 @@
       "tileSize": 256
     }
   },
+  "sprite": "mapbox://sprites/mapbox.satellite-hybrid-v8",
   "glyphs": "mapbox://fonts/peterqliu/{fontstack}/{range}.pbf",
   "layers": [
     {
