@@ -2,7 +2,7 @@
   "version": 8,
   "name": "Empty",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
-  "sprite": "mapbox://sprites/mapbox.empty-v8",
+  "sprite": "mapbox://sprites/mapbox/empty-v8",
   "sources": {},
   "layers": []
 }
