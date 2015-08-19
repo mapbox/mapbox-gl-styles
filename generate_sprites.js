@@ -11,6 +11,7 @@ var styles = [
   'mapbox.basic-v8',
   'mapbox.bright-v8',
   'mapbox.empty-v8',
+  'mapbox.emerald-v8',
   'mapbox.satellite-hybrid-v8'
 ];
 
