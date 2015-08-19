@@ -4,15 +4,15 @@ var fs = require('fs'),
   spritezero = require('spritezero');
 
 var styles = [
-  'mapbox.streets-v8',
-  'mapbox.light-v8',
-  'mapbox.dark-v8',
-  'mapbox.bright-v8',
-  'mapbox.basic-v8',
-  'mapbox.bright-v8',
-  'mapbox.empty-v8',
-  'mapbox.emerald-v8',
-  'mapbox.satellite-hybrid-v8'
+
+  'streets-v8',
+  'light-v8',
+  'dark-v8',
+  'bright-v8',
+  'basic-v8',
+  'bright-v8',
+  'empty-v8',
+  'satellite-hybrid-v8'
 ];
 
 function getFiles(style) {

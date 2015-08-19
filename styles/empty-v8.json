@@ -1,7 +1,8 @@
 {
   "version": 8,
   "name": "Empty",
+  "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
+  "sprite": "mapbox://sprites/mapbox/empty-v8",
   "sources": {},
-  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": []
 }

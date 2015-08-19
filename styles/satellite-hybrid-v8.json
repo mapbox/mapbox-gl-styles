@@ -12,7 +12,8 @@
       "tileSize": 256
     }
   },
-  "glyphs": "mapbox://fonts/peterqliu/{fontstack}/{range}.pbf",
+  "sprite": "mapbox://sprites/mapbox/satellite-hybrid-v8",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
