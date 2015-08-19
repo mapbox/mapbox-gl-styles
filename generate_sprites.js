@@ -4,6 +4,7 @@ var fs = require('fs'),
   spritezero = require('spritezero');
 
 var styles = [
+
   'streets-v8',
   'light-v8',
   'dark-v8',
@@ -11,7 +12,8 @@ var styles = [
   'basic-v8',
   'bright-v8',
   'empty-v8',
-  'satellite-hybrid-v8'
+  'satellite-hybrid-v8',
+  'emerald-v8'
 ];
 
 function getFiles(style) {
