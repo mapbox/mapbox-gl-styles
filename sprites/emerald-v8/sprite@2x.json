@@ -1,0 +1,37 @@
+{
+  "generic_icon": {
+    "width": 36,
+    "height": 36,
+    "x": 0,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "harbor_icon": {
+    "width": 36,
+    "height": 36,
+    "x": 36,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "religious-christian_icon": {
+    "width": 36,
+    "height": 36,
+    "x": 0,
+    "y": 36,
+    "pixelRatio": 2
+  },
+  "religious-jewish_icon": {
+    "width": 36,
+    "height": 36,
+    "x": 36,
+    "y": 36,
+    "pixelRatio": 2
+  },
+  "religious-muslim_icon": {
+    "width": 36,
+    "height": 36,
+    "x": 72,
+    "y": 0,
+    "pixelRatio": 2
+  }
+}
