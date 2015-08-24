@@ -1,6 +1,7 @@
+
 {
   "version": 8,
-  "name": "satellite-hybrid-v8",
+  "name": "Satellite (hybrid)",
   "sources": {
     "mapbox": {
       "url": "mapbox://mapbox.mapbox-streets-v6",
@@ -12,8 +13,8 @@
       "tileSize": 256
     }
   },
-  "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/bright",
-  "glyphs": "mapbox://fonts/peterqliu/{fontstack}/{range}.pbf",
+  "sprite": "mapbox://sprites/mapbox/satellite-hybrid-v8",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -157,7 +158,6 @@
           ]
         },
         "text-padding": 0,
-        "text-allow-overlap": true,
         "text-size": {
           "stops": [
             [
@@ -360,67 +360,12 @@
           "base": 1,
           "stops": [
             [
-              12,
+              8,
               1
             ],
             [
-              20,
-              12
-            ]
-          ]
-        }
-      },
-      "metadata": {}
-    },
-    {
-      "id": "motorway_bridge",
-      "type": "line",
-      "source": "mapbox",
-      "source-layer": "bridge",
-      "minzoom": 5,
-      "maxzoom": 22,
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "in",
-          "$type",
-          "Polygon",
-          "LineString",
-          "Point"
-        ],
-        [
-          "==",
-          "class",
-          "motorway"
-        ]
-      ],
-      "layout": {},
-      "paint": {
-        "line-opacity": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              0
-            ],
-            [
-              20,
-              0.5
-            ]
-          ]
-        },
-        "line-color": "white",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              12,
-              1
-            ],
-            [
-              20,
-              12
+              11,
+              2
             ]
           ]
         }
@@ -469,15 +414,15 @@
           ]
         },
         "line-width": {
-          "base": 1.5,
+          "base": 1,
           "stops": [
             [
               12,
               1
             ],
             [
-              20,
-              15
+              16,
+              2
             ]
           ]
         }
@@ -502,10 +447,9 @@
           "Point"
         ],
         [
-          "in",
+          "==",
           "class",
-          "street",
-          "street_limited"
+          "street"
         ]
       ],
       "layout": {},
@@ -513,15 +457,15 @@
         "line-color": "#fff",
         "line-opacity": 0.25,
         "line-width": {
-          "base": 1.5,
+          "base": 1,
           "stops": [
             [
               12,
               1
             ],
             [
-              20,
-              12
+              16,
+              2
             ]
           ]
         }
@@ -601,6 +545,154 @@
       "metadata": {}
     },
     {
+      "id": "marine_label_large",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "==",
+          "labelrank",
+          1
+        ]
+      ],
+      "layout": {
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Semibold Italic",
+          "Arial Unicode MS Bold"
+        ],
+        "text-letter-spacing": 0.4,
+        "text-line-height": 1.8,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              0,
+              12
+            ],
+            [
+              16,
+              20
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "aqua",
+        "text-opacity": 0.4
+      },
+      "paint.temp": {
+        "text-opacity": 0
+      },
+      "metadata": {}
+    },
+    {
+      "id": "marine_label_medium",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "interactive": true,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "in",
+          "labelrank",
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "layout": {
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Semibold Italic",
+          "Arial Unicode MS Bold"
+        ],
+        "text-letter-spacing": 0.3,
+        "text-line-height": 1.5,
+        "text-max-width": 6,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              3,
+              15
+            ],
+            [
+              8,
+              20
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "aqua",
+        "text-opacity": 0.4
+      },
+      "paint.temp": {
+        "text-opacity": 0
+      },
+      "metadata": {}
+    },
+    {
+      "id": "marine_label_small",
+      "type": "symbol",
+      "source": "mapbox",
+      "source-layer": "marine_label",
+      "interactive": true,
+      "filter": [
+        "==",
+        "$type",
+        "Point"
+      ],
+      "layout": {
+        "text-field": "{name_en}",
+        "text-font": [
+          "Open Sans Semibold Italic",
+          "Arial Unicode MS Bold"
+        ],
+        "text-max-width": 20,
+        "text-letter-spacing": 0.2,
+        "text-line-height": 1.8,
+        "visibility": "none",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              3,
+              12
+            ],
+            [
+              8,
+              18
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "aqua",
+        "text-opacity": 0.3
+      },
+      "paint.temp": {
+        "text-opacity": 0
+      },
+      "metadata": {}
+    },
+    {
       "id": "admin_level_maritime",
       "type": "line",
       "source": "mapbox",
@@ -656,204 +748,6 @@
       "metadata": {}
     },
     {
-      "id": "marine_label_small",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "interactive": true,
-      "filter": [
-        "==",
-        "$type",
-        "Point"
-      ],
-      "layout": {
-        "text-field": "{name_en}",
-        "text-font": [
-          "Open Sans Semibold Italic",
-          "Arial Unicode MS Bold"
-        ],
-        "text-max-width": 20,
-        "text-letter-spacing": 0.2,
-        "text-line-height": 1.8,
-        "visibility": "visible",
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              3,
-              12
-            ],
-            [
-              8,
-              18
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "aqua",
-        "text-opacity": 0.3
-      },
-      "paint.temp": {
-        "text-opacity": 0
-      },
-      "metadata": {}
-    },
-    {
-      "id": "marine_label_medium",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "in",
-          "labelrank",
-          2,
-          3,
-          4,
-          5
-        ]
-      ],
-      "layout": {
-        "text-field": "{name_en}",
-        "text-font": [
-          "Open Sans Semibold Italic",
-          "Arial Unicode MS Bold"
-        ],
-        "text-letter-spacing": 0.3,
-        "text-line-height": 1.5,
-        "text-max-width": 6,
-        "visibility": "visible",
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              3,
-              15
-            ],
-            [
-              8,
-              20
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "aqua",
-        "text-opacity": 0.4
-      },
-      "paint.temp": {
-        "text-opacity": 0
-      },
-      "metadata": {}
-    },
-    {
-      "id": "marine_label_large",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "marine_label",
-      "interactive": true,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "labelrank",
-          1
-        ]
-      ],
-      "layout": {
-        "text-field": "{name_en}",
-        "text-font": [
-          "Open Sans Semibold Italic",
-          "Arial Unicode MS Bold"
-        ],
-        "text-letter-spacing": 0.25,
-        "text-line-height": 1.8,
-        "text-max-width": 10,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              12
-            ],
-            [
-              16,
-              20
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "aqua",
-        "text-opacity": 0.4
-      },
-      "paint.temp": {
-        "text-opacity": 0
-      },
-      "metadata": {}
-    },
-    {
-      "id": "street_label",
-      "type": "symbol",
-      "source": "mapbox",
-      "source-layer": "road_label",
-      "minzoom": 0,
-      "interactive": true,
-      "filter": [
-        "==",
-        "$type",
-        "LineString"
-      ],
-      "layout": {
-        "text-transform": "uppercase",
-        "text-font": [
-          "Open Sans Semibold",
-          "Arial Unicode MS Bold"
-        ],
-        "symbol-placement": "line",
-        "text-padding": 0,
-        "visibility": "visible",
-        "text-field": "{name_en}",
-        "text-letter-spacing": 0.1,
-        "text-size": {
-          "stops": [
-            [
-              12,
-              10
-            ],
-            [
-              20,
-              18
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-opacity": 1,
-        "text-color": "white",
-        "text-halo-color": "black",
-        "text-halo-width": 1.25,
-        "text-halo-blur": 1
-      },
-      "paint.temp": {
-        "text-opacity": 0
-      },
-      "metadata": {}
-    },
-    {
       "id": "highway_shields",
       "type": "symbol",
       "source": "mapbox",
@@ -877,39 +771,23 @@
             "motorway"
           ],
           [
-            "<=",
+            ">=",
             "reflen",
-            6
+            1
           ]
         ]
       ],
       "layout": {
-        "icon-image": "motorway_{reflen}",
-        "symbol-avoid-edges": false,
-        "text-transform": "uppercase",
         "text-font": [
           "Open Sans Semibold",
           "Arial Unicode MS Bold"
         ],
-        "symbol-placement": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              "point"
-            ],
-            [
-              20,
-              "line"
-            ]
-          ]
-        },
-        "text-padding": 0,
-        "visibility": "visible",
         "text-field": "{ref}",
+        "symbol-placement": "point",
+        "text-transform": "uppercase",
         "text-letter-spacing": 0,
-        "icon-padding": 2,
-        "symbol-spacing": 2000,
+        "text-padding": 0,
+        "icon-image": "motorway_{reflen}",
         "text-size": {
           "stops": [
             [
@@ -953,49 +831,46 @@
       "metadata": {}
     },
     {
-      "id": "poi_label_all",
+      "id": "street_label",
       "type": "symbol",
       "source": "mapbox",
-      "source-layer": "poi_label",
-      "minzoom": 16,
+      "source-layer": "road_label",
+      "minzoom": 0,
       "interactive": true,
       "filter": [
-        "in",
+        "==",
         "$type",
-        "Polygon",
-        "LineString",
-        "Point"
+        "LineString"
       ],
       "layout": {
-        "text-field": "{name}",
-        "text-padding": 30,
         "text-font": [
-          "Open Sans Semibold Italic",
+          "Open Sans Semibold",
           "Arial Unicode MS Bold"
         ],
-        "text-max-width": 6,
-        "text-anchor": "center",
-        "visibility": "visible",
+        "text-field": "{name_en}",
+        "symbol-placement": "line",
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.1,
+        "text-padding": 0,
         "text-size": {
           "stops": [
             [
-              13,
-              12
+              12,
+              10
             ],
             [
-              16,
-              14
+              20,
+              18
             ]
           ]
-        },
-        "icon-size": 3.5
+        }
       },
       "paint": {
-        "text-color": "black",
-        "text-halo-color": "white",
-        "text-halo-width": 1.5,
-        "icon-color": "#fff",
-        "text-opacity": 0.9
+        "text-opacity": 1,
+        "text-color": "white",
+        "text-halo-color": "black",
+        "text-halo-width": 1.25,
+        "text-halo-blur": 1
       },
       "paint.temp": {
         "text-opacity": 0
@@ -1003,7 +878,7 @@
       "metadata": {}
     },
     {
-      "id": "poi_label_large",
+      "id": "poi_label",
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
@@ -1049,23 +924,11 @@
         "icon-size": 3.5
       },
       "paint": {
-        "text-color": "black",
-        "text-halo-color": "white",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              13,
-              1.25
-            ],
-            [
-              20,
-              2.5
-            ]
-          ]
-        },
+        "text-color": "white",
+        "text-halo-color": "#333",
+        "text-halo-width": 1.5,
         "icon-color": "#fff",
-        "text-opacity": 1
+        "text-opacity": 0.9
       },
       "paint.temp": {
         "text-opacity": 0
@@ -1097,7 +960,7 @@
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "Open Sans Semibold Italic",
+          "Open Sans Italic",
           "Arial Unicode MS Bold"
         ],
         "text-max-width": 6.5,
@@ -1134,7 +997,7 @@
             ]
           ]
         },
-        "text-halo-blur": 0.25,
+        "text-halo-blur": 0.5,
         "text-opacity": 0.9
       },
       "paint.temp": {
@@ -1169,7 +1032,6 @@
         ],
         "text-max-width": 18,
         "text-padding": 40,
-        "visibility": "visible",
         "text-size": {
           "base": 1,
           "stops": [
@@ -1240,7 +1102,7 @@
           "base": 1,
           "stops": [
             [
-              6,
+              8,
               10
             ],
             [
@@ -1253,19 +1115,7 @@
       "paint": {
         "text-color": "white",
         "text-halo-color": "rgba(0,0,0,0.75)",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              6,
-              1
-            ],
-            [
-              18,
-              2.5
-            ]
-          ]
-        },
+        "text-halo-width": 1.5,
         "text-opacity": 0.9
       },
       "paint.temp": {
@@ -1310,7 +1160,7 @@
         ],
         "text-padding": 1,
         "visibility": "visible",
-        "text-anchor": "center",
+        "text-anchor": "top",
         "text-field": "{name_en}",
         "text-letter-spacing": 0.05,
         "text-max-width": 5,
@@ -1340,19 +1190,7 @@
         ],
         "icon-color": "#fff",
         "text-halo-color": "rgba(0,0,0,0.75)",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [
-              6,
-              1.5
-            ],
-            [
-              18,
-              3
-            ]
-          ]
-        }
+        "text-halo-width": 1.5
       },
       "paint.temp": {
         "text-opacity": 0
@@ -1403,7 +1241,7 @@
           "base": 1,
           "stops": [
             [
-              4,
+              6,
               13
             ],
             [
@@ -1532,7 +1370,7 @@
       },
       "paint": {
         "text-color": "black",
-        "text-opacity": 0.6
+        "text-opacity": 0.4
       },
       "paint.temp": {
         "text-opacity": 0
@@ -1542,7 +1380,7 @@
   ],
   "created": "2015-07-08T20:34:55.977Z",
   "id": "peterqliu.de035f8c",
-  "modified": "2015-08-24T22:55:25.727Z",
+  "modified": "2015-08-15T00:34:39.689Z",
   "owner": "peterqliu",
   "draft": false
 }
