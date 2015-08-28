@@ -18,6 +18,18 @@ var styles = [
     'bright-v8',
     'basic-v8',
     'empty-v8',
+    'satellite-v8',
+    'satellite-hybrid-v8',
+    'emerald-v8'
+];
+
+var spriteStyles = [
+    'streets-v8',
+    'light-v8',
+    'dark-v8',
+    'bright-v8',
+    'basic-v8',
+    'empty-v8',
     'satellite-hybrid-v8',
     'emerald-v8'
 ];
@@ -30,7 +42,7 @@ styles.forEach(function(style) {
     }
 });
 
-styles.forEach(function(style){
+spriteStyles.forEach(function(style){
     if (style.indexOf('v8') > -1) {
         module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
             .map(function(im) {
