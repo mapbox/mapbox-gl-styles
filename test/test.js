@@ -28,6 +28,12 @@ test('.styles', function(t) {
         t.equal(styles.length, Object.keys(mapboxGL.styles).length, 'Check that all styles were hit');
         t.end();
     });
+    t.test('should not return a style', function(t){
+        var fake = mapboxGL.styles['foobar'];
+        t.equal(fake, undefined);
+        t.end();
+    });
+    t.end();
 });
 
 test('.sprites', function(t) {
@@ -40,4 +46,10 @@ test('.sprites', function(t) {
         });
         t.end();
     });
+    t.test('should not return a sprite', function(t){
+        var fake = mapboxGL.sprites['foobar'];
+        t.equal(fake, undefined);
+        t.end();
+    });
+    t.end();
 });
