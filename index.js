@@ -17,7 +17,6 @@ var styles = [
     'dark-v8',
     'bright-v8',
     'basic-v8',
-    'bright-v8',
     'empty-v8',
     'satellite-hybrid-v8',
     'emerald-v8'
@@ -32,11 +31,13 @@ styles.forEach(function(style) {
 });
 
 styles.forEach(function(style){
-    module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
-        .map(function(im) {
-             return {
-                svg: fs.readFileSync(im),
-                id: path.basename(im).replace('.svg', '')
-            }
-        });
+    if (style.indexOf('v8') > -1) {
+        module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
+            .map(function(im) {
+                 return {
+                    svg: fs.readFileSync(im),
+                    id: path.basename(im).replace('.svg', '')
+                }
+            });
+    }
 });
