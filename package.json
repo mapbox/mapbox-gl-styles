@@ -1,6 +1,6 @@
 {
   "name": "mapbox-gl-styles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "mapbox gl example styles",
   "main": "index.js",
   "bin": {},
@@ -11,9 +11,11 @@
     "build": "node -e 'require(\"fs\").writeFileSync(\"index.json\", JSON.stringify(require(\"./index.js\"), null, 2))'"
   },
   "devDependencies": {
-    "glob": "^5.0.14",
     "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#8555318440c9bb3fba0f151b33b906b84dda0fe2",
     "tape": "^4.2.0"
+  },
+  "dependencies": {
+    "glob": "^5.0.14"
   },
   "license": "ISC"
 }
