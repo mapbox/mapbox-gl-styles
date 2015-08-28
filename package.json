@@ -2,7 +2,7 @@
   "name": "mapbox-gl-styles",
   "version": "0.0.11",
   "description": "mapbox gl example styles",
-  "main": "index.json",
+  "main": "index.js",
   "bin": {},
   "scripts": {
     "test": "gl-style-validate styles/*-v8.json",
@@ -12,8 +12,10 @@
   },
   "devDependencies": {
     "glob": "^5.0.14",
-    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#8555318440c9bb3fba0f151b33b906b84dda0fe2",
-    "spritezero": "^2.2.0"
+    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#8555318440c9bb3fba0f151b33b906b84dda0fe2"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^5.0.14"
+  }
 }
