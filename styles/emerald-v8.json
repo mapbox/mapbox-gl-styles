@@ -1,13 +1,13 @@
 {
     "version": 8,
-    "name": "Emerald-v8",
+    "name": "emerald-v8",
     "sources": {
         "compositedsource": {
             "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6",
             "type": "vector"
         }
     },
-  "sprite": "mapbox://sprites/mapbox/emerald-v8",
+    "sprite": "mapbox://sprites/mapbox/emerald-v8",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
         {
@@ -22,11 +22,11 @@
                 "background-color": "#F4efe8",
                 "background-opacity": 1
             },
-            "interactive": true,
+            "interactive": false,
             "metadata": {}
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -58,7 +58,7 @@
             "source-layer": "landcover"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -90,7 +90,7 @@
             "source-layer": "landcover"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -122,7 +122,7 @@
             "source-layer": "landcover"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -154,7 +154,7 @@
             "source-layer": "landcover"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -186,7 +186,7 @@
             "source-layer": "landcover"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 4,
             "layout": {
                 "visibility": "visible"
@@ -234,7 +234,7 @@
             }
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -267,7 +267,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -311,7 +311,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -356,7 +356,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -401,7 +401,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 12,
             "layout": {
                 "visibility": "visible"
@@ -459,7 +459,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 12,
             "layout": {
                 "visibility": "visible"
@@ -517,7 +517,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -562,7 +562,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -616,7 +616,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -649,7 +649,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {},
             "metadata": {},
@@ -679,7 +679,7 @@
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -723,12 +723,12 @@
                         ]
                     ]
                 },
-                "fill-pattern": "background"
+                "fill-pattern": "backgroun"
             },
             "source-layer": "landuse"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -772,7 +772,7 @@
             "source-layer": "hillshade"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -816,7 +816,7 @@
             "source-layer": "hillshade"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -860,7 +860,7 @@
             "source-layer": "hillshade"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -904,7 +904,7 @@
             "source-layer": "hillshade"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -948,7 +948,7 @@
             "source-layer": "hillshade"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -980,7 +980,7 @@
             "source-layer": "hillshade"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "line-cap": "butt"
@@ -1023,7 +1023,7 @@
             "source-layer": "aeroway"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "line-cap": "butt"
@@ -1066,7 +1066,7 @@
             "source-layer": "aeroway"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 2,
             "layout": {
                 "visibility": "visible"
@@ -1097,7 +1097,7 @@
             "source-layer": "water"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -1114,7 +1114,7 @@
             "source-layer": "water"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1144,7 +1144,7 @@
             "source-layer": "waterway"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -1175,7 +1175,7 @@
             "source-layer": "barrier_line"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -1192,7 +1192,7 @@
             "source-layer": "building"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "metadata": {},
             "id": "building_rooves",
             "paint": {
@@ -1233,7 +1233,7 @@
             "ref": "building_walls"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
@@ -1282,7 +1282,7 @@
             "source-layer": "building"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1341,7 +1341,7 @@
             "source-layer": "admin"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1405,7 +1405,7 @@
             "source-layer": "admin"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1475,7 +1475,7 @@
             "source-layer": "admin"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 3,
             "layout": {
                 "text-size": {
@@ -1540,7 +1540,7 @@
             "source-layer": "state_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1599,7 +1599,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1670,7 +1670,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1743,7 +1743,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1819,7 +1819,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1894,7 +1894,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -1969,7 +1969,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2023,7 +2023,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "line-cap": "round",
@@ -2077,7 +2077,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2128,7 +2128,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2202,7 +2202,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2286,7 +2286,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2353,7 +2353,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2423,7 +2423,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2477,7 +2477,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2531,7 +2531,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2599,7 +2599,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2669,7 +2669,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2739,7 +2739,7 @@
             "source-layer": "tunnel"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2799,7 +2799,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2863,7 +2863,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -2932,7 +2932,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -3011,7 +3011,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -3081,7 +3081,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -3166,7 +3166,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -3237,7 +3237,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -3307,7 +3307,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -3370,7 +3370,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "line-cap": "round",
@@ -3424,7 +3424,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "metadata": {},
             "id": "service",
             "paint": {
@@ -3450,7 +3450,7 @@
             "ref": "service_case"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "metadata": {},
             "id": "street",
             "paint": {
@@ -3493,7 +3493,7 @@
             "ref": "street_case"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "metadata": {},
             "id": "tertiary_misc",
             "paint": {
@@ -3543,7 +3543,7 @@
             "ref": "tertiary_misc_case"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "metadata": {},
             "id": "secondary",
             "paint": {
@@ -3578,7 +3578,7 @@
             "ref": "secondary_case"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "metadata": {},
             "id": "primary",
             "paint": {
@@ -3616,7 +3616,7 @@
             "ref": "primary_case"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -3684,7 +3684,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -3734,7 +3734,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -3785,7 +3785,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "metadata": {},
             "id": "motorway_link",
             "paint": {
@@ -3823,7 +3823,7 @@
             "ref": "motorway_link_case"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "metadata": {},
             "id": "motorway",
             "paint": {
@@ -3874,7 +3874,7 @@
             "ref": "motorway_case"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": {
@@ -3947,7 +3947,7 @@
             "source-layer": "waterway_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": {
@@ -4020,7 +4020,7 @@
             "source-layer": "marine_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": {
@@ -4091,7 +4091,7 @@
             "source-layer": "marine_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": {
@@ -4162,7 +4162,7 @@
             "source-layer": "marine_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -4228,7 +4228,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -4298,7 +4298,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -4383,7 +4383,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -4466,7 +4466,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -4536,7 +4536,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -4599,7 +4599,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "line-cap": "round",
@@ -4653,7 +4653,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "metadata": {},
             "id": "bridge_service",
             "paint": {
@@ -4679,7 +4679,7 @@
             "ref": "bridge_service_case"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -4745,7 +4745,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -4829,7 +4829,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 11,
             "layout": {
                 "visibility": "visible",
@@ -4896,7 +4896,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -4966,7 +4966,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -5025,7 +5025,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -5075,7 +5075,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -5126,7 +5126,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -5188,7 +5188,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -5239,7 +5239,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -5301,7 +5301,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -5361,7 +5361,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible",
@@ -5425,7 +5425,7 @@
             "source-layer": "bridge"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 16,
             "layout": {
                 "text-line-height": 0,
@@ -5502,7 +5502,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 18,
             "layout": {
                 "text-line-height": 1,
@@ -5572,7 +5572,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 15,
             "layout": {
                 "text-line-height": 0,
@@ -5661,7 +5661,7 @@
             "source-layer": "road"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": {
@@ -5747,7 +5747,7 @@
             "source-layer": "poi_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": {
@@ -5846,7 +5846,7 @@
             "source-layer": "place_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-size": {
@@ -5937,7 +5937,7 @@
             "source-layer": "road_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-size": {
@@ -6032,7 +6032,7 @@
             "source-layer": "road_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-size": {
@@ -6120,7 +6120,7 @@
             "source-layer": "road_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": 1.4,
@@ -6216,7 +6216,7 @@
             "source-layer": "road_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-optional": true,
@@ -6323,7 +6323,7 @@
             "source-layer": "poi_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-size": {
@@ -6392,7 +6392,7 @@
             "source-layer": "road_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-size": {
@@ -6473,7 +6473,7 @@
             "source-layer": "road_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-size": {
@@ -6565,7 +6565,7 @@
             "source-layer": "road_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-optional": true,
@@ -6638,7 +6638,7 @@
             "source-layer": "poi_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": 1,
@@ -6740,7 +6740,7 @@
             "source-layer": "poi_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-optional": false,
@@ -6878,7 +6878,7 @@
             "source-layer": "poi_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-optional": false,
@@ -7029,7 +7029,7 @@
             "source-layer": "poi_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-optional": false,
@@ -7183,7 +7183,7 @@
             "source-layer": "poi_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-optional": true,
@@ -7272,7 +7272,7 @@
             "source-layer": "poi_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": {
@@ -7358,7 +7358,7 @@
             "source-layer": "place_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": 1,
@@ -7448,7 +7448,7 @@
             "source-layer": "place_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": 1,
@@ -7552,7 +7552,7 @@
             "source-layer": "place_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": {
@@ -7690,7 +7690,7 @@
             "source-layer": "place_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": {
@@ -7844,7 +7844,7 @@
             "source-layer": "place_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": 1.1,
@@ -7953,7 +7953,7 @@
             "source-layer": "place_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": 1.1,
@@ -8012,7 +8012,7 @@
             "source-layer": "country_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": 1.1,
@@ -8074,7 +8074,7 @@
             "source-layer": "country_label"
         },
         {
-            "interactive": true,
+            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "text-line-height": 1.05,
@@ -8156,9 +8156,9 @@
             "source-layer": "poi_label"
         }
     ],
-    "created": "2015-08-27T19:48:27.449Z",
-    "id": "d0a578a5",
-    "modified": "2015-09-04T23:22:03.444Z",
+    "created": "2015-09-07T19:35:20.035Z",
+    "id": "bdf4e3e8",
+    "modified": "2015-09-07T19:35:20.035Z",
     "owner": "peterqliu",
     "draft": false
 }
