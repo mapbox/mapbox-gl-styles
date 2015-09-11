@@ -4,5 +4,13 @@
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "sprite": "mapbox://sprites/mapbox/empty-v8",
   "sources": {},
-  "layers": []
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(0,0,0,0)"
+      }
+    }
+  ]
 }
