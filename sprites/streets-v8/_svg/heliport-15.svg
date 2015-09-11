@@ -6,9 +6,9 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    id="svg2"
-   width="24"
-   height="24"
-   viewBox="0 0 24 24"
+   width="23"
+   height="23"
+   viewBox="0 0 23 23"
    version="1.1">
   <metadata
      id="metadata14">
@@ -27,8 +27,8 @@
      id="rect4"
      ry="3"
      rx="3"
-     height="24"
-     width="24"
+     height="23"
+     width="23"
      y="0"
      x="0"
      style="fill:#ffffff;stroke:none;" />
@@ -36,14 +36,14 @@
      id="rect6"
      ry="2"
      rx="2"
-     height="20"
-     width="20"
-     y="2"
-     x="2"
+     height="21"
+     width="21"
+     y="1"
+     x="1"
      style="fill:#9c8ea4;stroke:none;" />
   <g
      id="g8"
-     transform="translate(4.5,4)">
+     transform="translate(4,4)">
       <defs     id="defs4621" />  <metadata     id="metadata4624">    <rdf:RDF>      <cc:Work         rdf:about="">        <dc:format>image/svg+xml</dc:format>        <dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />        <dc:title />      </cc:Work>    </rdf:RDF>  </metadata>  <path     id="path10415"     transform="scale(0.88235293)"     d="M 4 2 C 2.9999999 2 2.9999999 3 4 3 L 8 3 L 8 4 C 7.7230001 4 7.5 4.2230001 7.5 4.5 L 7.5 5 L 5 5 L 3.9707031 5 L 3.9316406 5 C 3.7040624 4.1200631 2.9122041 3.5010658 2 3.5 C 0.89543042 3.5 0 4.3954304 0 5.5 C 0 6.6045696 0.89543042 7.5 2 7.5 C 2.3722464 7.4990244 2.7368339 7.3941807 3.0527344 7.1972656 L 5.5 10.5 C 6.5073676 11.950492 8.3181817 12 9 12 L 14 12 C 14 12 15 12 15 11 L 15 10.005859 C 15 9.2734378 14.873989 8.8739884 14.5 8.5 L 11.5 5.5 C 11.5 5.5 10.908384 5 10.226562 5 L 9.5 5 L 9.5 4.5 C 9.5 4.2230001 9.2769999 4 9 4 L 9 3 L 13 3 C 14 3 14 2 13 2 L 4 2 z M 2 4.5 C 2.5522847 4.5 2.9999999 4.9477153 3 5.5 C 2.9999999 6.0522848 2.5522847 6.4999999 2 6.5 C 1.4477151 6.4999999 1.0000001 6.0522848 1 5.5 C 1.0000001 4.9477153 1.4477151 4.5 2 4.5 z M 10 6 C 10.5 6 10.789561 6.323094 11 6.5 L 13.5 9 L 10 9 C 10 9 9 9.0000001 9 8 L 9 7 C 9 7 9.0000002 6.0000001 10 6 z "     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>
