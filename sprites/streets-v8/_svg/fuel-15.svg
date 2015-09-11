@@ -6,9 +6,9 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    id="svg2"
-   width="24"
-   height="24"
-   viewBox="0 0 24 24"
+   width="23"
+   height="23"
+   viewBox="0 0 23 23"
    version="1.1">
   <metadata
      id="metadata14">
@@ -25,17 +25,17 @@
      id="defs12" />
   <ellipse
      id="ellipse4"
-     ry="12"
-     rx="12"
-     cy="12"
-     cx="12"
+     ry="11.5"
+     rx="11.5"
+     cy="11.5"
+     cx="11.5"
      style="fill:#ffffff;stroke:none;" />
   <ellipse
      id="ellipse6"
-     ry="10"
-     rx="10"
-     cy="12"
-     cx="12"
+     ry="10.5"
+     rx="10.5"
+     cy="11.5"
+     cx="11.5"
      style="fill:#a9a199;stroke:none;" />
   <g
      id="g8"

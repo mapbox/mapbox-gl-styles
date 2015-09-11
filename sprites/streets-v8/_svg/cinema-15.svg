@@ -6,9 +6,9 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    id="svg2"
-   width="24"
-   height="24"
-   viewBox="0 0 24 24"
+   width="23"
+   height="23"
+   viewBox="0 0 23 23"
    version="1.1">
   <metadata
      id="metadata14">
@@ -25,21 +25,21 @@
      id="defs12" />
   <ellipse
      id="ellipse4"
-     ry="12"
-     rx="12"
-     cy="12"
-     cx="12"
+     ry="11.5"
+     rx="11.5"
+     cy="11.5"
+     cx="11.5"
      style="fill:#ffffff;stroke:none;" />
   <ellipse
      id="ellipse6"
-     ry="10"
-     rx="10"
-     cy="12"
-     cx="12"
+     ry="10.5"
+     rx="10.5"
+     cy="11.5"
+     cx="11.5"
      style="fill:#a9a199;stroke:none;" />
   <g
      id="g8"
-     transform="translate(4.5,5)">
+     transform="translate(4,4)">
       <defs     id="defs4621" />  <metadata     id="metadata4624">    <rdf:RDF>      <cc:Work         rdf:about="">        <dc:format>image/svg+xml</dc:format>        <dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />        <dc:title />      </cc:Work>    </rdf:RDF>  </metadata>  <path     id="rect4952"     d="M 3.75 1.5 A 2.75 2.75 0 0 0 1 4.25 A 2.75 2.75 0 0 0 2.5 6.6972656 L 2.5 7 L 2 7 L 0.5 7 C 0.22300002 7 0 7.223 0 7.5 L 0 8.0175781 C 7.4014868e-17 8.2945781 0.22300002 8.5175781 0.5 8.5175781 L 1 8.5175781 L 1 12 C 1 12.554 1.446 13 2 13 L 10 13 C 10.554 13 11 12.554 11 12 L 11 9.5 L 13 10 L 13.5 11 L 15 11 L 15 7 L 13.5 7 L 13 8 L 11 8.5 L 11 8 C 11 7.5346933 10.678986 7.1634482 10.25 7.0507812 L 10.25 6.8105469 A 2.75 2.75 0 0 0 12 4.25 A 2.75 2.75 0 0 0 9.25 1.5 A 2.75 2.75 0 0 0 6.5 4.25 A 2.75 2.75 0 0 0 8 6.6972656 L 8 7 L 6.5 7 L 5 7 L 5 6.6992188 A 2.75 2.75 0 0 0 6.5 4.25 A 2.75 2.75 0 0 0 3.75 1.5 z M 3.75 3.5 A 0.75000048 0.75000048 0 0 1 4.5 4.25 A 0.75000048 0.75000048 0 0 1 3.75 5 A 0.75000048 0.75000048 0 0 1 3 4.25 A 0.75000048 0.75000048 0 0 1 3.75 3.5 z M 9.25 3.5 A 0.75000048 0.75000048 0 0 1 10 4.25 A 0.75000048 0.75000048 0 0 1 9.25 5 A 0.75000048 0.75000048 0 0 1 8.5 4.25 A 0.75000048 0.75000048 0 0 1 9.25 3.5 z M 3.5 8 L 8.5 8 C 8.777 8 9 8.223 9 8.5 C 9 8.777 8.777 9 8.5 9 L 3.5 9 C 3.223 9 3 8.777 3 8.5 C 3 8.223 3.223 8 3.5 8 z "     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
   </g>
 </svg>
