@@ -8,7 +8,7 @@
         }
     },
     "sprite": "mapbox://sprites/mapbox/emerald-v8",
-    "glyphs": "mapbox://fonts/peterqliu/{fontstack}/{range}.pbf",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",
