@@ -86,7 +86,7 @@
             "paint": {
                 "fill-color": "#6a4",
                 "fill-opacity": 0.1
-            }  
+            }
         },
         {
             "layout": {
@@ -2813,10 +2813,5 @@
             },
             "source-layer": "country_label"
         }
-    ],
-    "created": "2015-09-10T22:41:51.494Z",
-    "id": "ed135c28",
-    "modified": "2015-09-11T18:41:44.206Z",
-    "owner": "staging-nicki",
-    "draft": false
+    ]
 }

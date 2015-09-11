@@ -8529,10 +8529,5 @@
             },
             "source-layer": "country_label"
         }
-    ],
-    "created": "2015-09-08T17:17:42.034Z",
-    "id": "09f998db",
-    "modified": "2015-09-10T22:05:36.990Z",
-    "owner": "staging-nicki",
-    "draft": false
+    ]
 }

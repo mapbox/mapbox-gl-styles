@@ -21,8 +21,7 @@
       "interactive": true,
       "paint": {
         "background-color": "rgb(4,7,14)"
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "satellite",
@@ -47,8 +46,7 @@
             ]
           ]
         }
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "country_label_small",
@@ -112,8 +110,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "country_label_medium",
@@ -179,8 +176,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "country_label_large",
@@ -244,8 +240,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "province_border",
@@ -314,8 +309,7 @@
       },
       "paint.temp": {
         "line-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "motorway",
@@ -369,8 +363,7 @@
             ]
           ]
         }
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "motorway_bridge",
@@ -424,8 +417,7 @@
             ]
           ]
         }
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "road_main",
@@ -481,8 +473,7 @@
             ]
           ]
         }
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "road_street",
@@ -525,8 +516,7 @@
             ]
           ]
         }
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "country_border",
@@ -597,8 +587,7 @@
       },
       "paint.temp": {
         "line-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "admin_level_maritime",
@@ -652,8 +641,7 @@
       },
       "paint.temp": {
         "line-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "marine_label_small",
@@ -696,8 +684,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "marine_label_medium",
@@ -751,8 +738,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "marine_label_large",
@@ -802,8 +788,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "street_label",
@@ -850,8 +835,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "highway_shields",
@@ -949,8 +933,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "poi_label_all",
@@ -999,8 +982,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "poi_label_large",
@@ -1069,8 +1051,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "place_label_neighbourhood_hamlet",
@@ -1139,8 +1120,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "place_label_town",
@@ -1192,8 +1172,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "place_label_city_small",
@@ -1270,8 +1249,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "place_label_city_medium",
@@ -1356,8 +1334,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "place_label_city_big",
@@ -1454,8 +1431,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     },
     {
       "id": "state_label",
@@ -1536,9 +1512,7 @@
       },
       "paint.temp": {
         "text-opacity": 0
-      },
-      "metadata": {}
+      }
     }
-  ],
-  "draft": false
+  ]
 }
