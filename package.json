@@ -7,7 +7,6 @@
   "scripts": {
     "test": "tape test/test.js",
     "migrate": "./migrate.sh",
-    "generate_sprites": "node ./generate_sprites.js && npm run build",
     "build": "node -e 'require(\"fs\").writeFileSync(\"index.json\", JSON.stringify(require(\"./index.js\"), null, 2))'"
   },
   "devDependencies": {

@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
-	 id="svg4764" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="subway-11.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 id="svg4764" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" sodipodi:docname="subway-11.svg" inkscape:version="0.91+devel+osxmenu r12911" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px"
 	 viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
-<sodipodi:namedview  id="base" inkscape:zoom="12.973872" fit-margin-left="0" showguides="false" inkscape:cx="-6.4730329" showgrid="true" inkscape:cy="6.7113709" fit-margin-top="0" bordercolor="#666666" borderopacity="1.0" pagecolor="#ffffff" fit-margin-right="0" inkscape:snap-bbox="true" inkscape:current-layer="layer1" inkscape:pageopacity="0.0" inkscape:window-y="23" inkscape:window-x="960" inkscape:window-width="959" inkscape:object-paths="false" inkscape:document-units="px" fit-margin-bottom="0" inkscape:bbox-nodes="true" inkscape:pageshadow="2" inkscape:guide-bbox="true" inkscape:window-height="1025" inkscape:window-maximized="0" inkscape:object-nodes="true">
+<sodipodi:namedview  fit-margin-bottom="0" inkscape:window-width="959" inkscape:window-height="1025" fit-margin-right="0" inkscape:window-x="960" inkscape:bbox-nodes="true" inkscape:snap-bbox="true" inkscape:object-nodes="true" inkscape:object-paths="false" inkscape:pageopacity="0.0" inkscape:guide-bbox="true" inkscape:document-units="px" inkscape:pageshadow="2" inkscape:current-layer="layer1" inkscape:window-y="23" inkscape:window-maximized="0" showgrid="true" pagecolor="#ffffff" bordercolor="#666666" id="base" showguides="false" inkscape:cy="6.7113709" inkscape:zoom="12.973872" borderopacity="1.0" inkscape:cx="-6.4730329" fit-margin-left="0" fit-margin-top="0">
 	
-		<inkscape:grid  color="#ff00ff" type="xygrid" opacity="0.1254902" id="grid4772" visible="true" empopacity="0.25098039" empspacing="2" empcolor="#ff00ff" originy="-4.0000841" originx="-4.0000342" enabled="true" snapvisiblegridlinesonly="true">
+		<inkscape:grid  type="xygrid" color="#ff00ff" snapvisiblegridlinesonly="true" opacity="0.1254902" empspacing="2" id="grid4772" empopacity="0.25098039" originy="-4.0000841" empcolor="#ff00ff" enabled="true" visible="true" originx="-4.0000342">
 		</inkscape:grid>
-	<sodipodi:guide  id="guide4789" orientation="0,1" position="1.5001241,11.49988"></sodipodi:guide>
-	<sodipodi:guide  id="guide4791" orientation="1,0" position="11.500125,9.4998797"></sodipodi:guide>
-	<sodipodi:guide  id="guide4793" orientation="0,1" position="9.5001236,-0.50012053"></sodipodi:guide>
-	<sodipodi:guide  id="guide4795" orientation="1,0" position="-0.49987585,8.4998797"></sodipodi:guide>
-	<sodipodi:guide  id="guide4797" orientation="0,1" position="4.5001241,10.49988"></sodipodi:guide>
-	<sodipodi:guide  id="guide4799" orientation="1,0" position="10.500125,6.4998797"></sodipodi:guide>
-	<sodipodi:guide  id="guide4801" orientation="0,1" position="8.5001236,1.4998794"></sodipodi:guide>
-	<sodipodi:guide  id="guide4803" orientation="1,0" position="1.5001241,4.4998795"></sodipodi:guide>
+	<sodipodi:guide  orientation="0,1" id="guide4789" position="1.5001241,11.49988"></sodipodi:guide>
+	<sodipodi:guide  orientation="1,0" id="guide4791" position="11.500125,9.4998797"></sodipodi:guide>
+	<sodipodi:guide  orientation="0,1" id="guide4793" position="9.5001236,-0.50012053"></sodipodi:guide>
+	<sodipodi:guide  orientation="1,0" id="guide4795" position="-0.49987585,8.4998797"></sodipodi:guide>
+	<sodipodi:guide  orientation="0,1" id="guide4797" position="4.5001241,10.49988"></sodipodi:guide>
+	<sodipodi:guide  orientation="1,0" id="guide4799" position="10.500125,6.4998797"></sodipodi:guide>
+	<sodipodi:guide  orientation="0,1" id="guide4801" position="8.5001236,1.4998794"></sodipodi:guide>
+	<sodipodi:guide  orientation="1,0" id="guide4803" position="1.5001241,4.4998795"></sodipodi:guide>
 </sodipodi:namedview>
 <g>
-	<path fill="#FFFFFF" d="M14,0H3C1.346,0,0,1.346,0,3v11c0,1.654,1.346,3,3,3h11c1.654,0,3-1.346,3-3V3C17,1.346,15.654,0,14,0z
-		 M16,14c0,1.105-0.895,2-2,2H3c-1.105,0-2-0.895-2-2V3c0-1.105,0.895-2,2-2h11c1.105,0,2,0.895,2,2V14z"/>
-	<path fill="#9C8EA4" d="M8.75,8h-0.5C8.111,8,8,8.112,8,8.25S8.111,8.5,8.25,8.5h0.5C8.888,8.5,9,8.389,9,8.25S8.888,8,8.75,8z"/>
+	<path fill="#FFFFFF" d="M14,0H3C1.3,0,0,1.3,0,3v11c0,1.7,1.3,3,3,3h11c1.7,0,3-1.3,3-3V3C17,1.3,15.7,0,14,0z M16,14
+		c0,1.1-0.9,2-2,2H3c-1.1,0-2-0.9-2-2V3c0-1.1,0.9-2,2-2h11c1.1,0,2,0.9,2,2V14z"/>
+	<path fill="#9C8EA4" d="M8.8,8H8.2C8.1,8,8,8.1,8,8.2s0.1,0.2,0.2,0.2h0.5C8.9,8.5,9,8.4,9,8.2S8.9,8,8.8,8z"/>
 	<polygon fill="#9C8EA4" points="10,4 7,4 6.5,7 10.5,7 	"/>
 	<circle fill="#9C8EA4" cx="6.5" cy="8.5" r="0.5"/>
-	<path fill="#9C8EA4" d="M14,1H3C1.895,1,1,1.896,1,3v11c0,1.105,0.895,2,2,2h11c1.105,0,2-0.895,2-2V3C16,1.896,15.104,1,14,1z
-		 M10.5,14l-0.334-1H6.834L6.5,14H5l1-3h1.5l-0.334,1h2.668L9.5,11H11l1,3H10.5z M12,9c0,1-1,1-1,1H6c0,0-1,0.024-1-1V8l1-4.5
-		C6,3.5,6,3,6.5,3h4C11,3,11,3.5,11,3.5L12,8V9z"/>
+	<path fill="#9C8EA4" d="M14,1H3C1.9,1,1,1.9,1,3v11c0,1.1,0.9,2,2,2h11c1.1,0,2-0.9,2-2V3C16,1.9,15.1,1,14,1z M10.5,14l-0.3-1H6.8
+		l-0.3,1H5l1-3h1.5l-0.3,1h2.7l-0.3-1H11l1,3H10.5z M12,9c0,1-1,1-1,1H6c0,0-1,0-1-1V8l1-4.5C6,3.5,6,3,6.5,3h4C11,3,11,3.5,11,3.5
+		L12,8V9z"/>
 	<circle fill="#9C8EA4" cx="10.5" cy="8.5" r="0.5"/>
-	<path fill="#FFFFFF" d="M10.5,3h-4C6,3,6,3.5,6,3.5L5,8v1c0,1.024,1,1,1,1h5c0,0,1,0,1-1V8l-1-4.5C11,3.5,11,3,10.5,3z M7,4h3
-		l0.5,3h-4L7,4z M6.5,9C6.224,9,6,8.776,6,8.5S6.224,8,6.5,8C6.776,8,7,8.224,7,8.5S6.776,9,6.5,9z M8.75,8.5h-0.5
-		C8.111,8.5,8,8.389,8,8.25S8.111,8,8.25,8h0.5C8.888,8,9,8.112,9,8.25S8.888,8.5,8.75,8.5z M10.5,9C10.224,9,10,8.776,10,8.5
-		S10.224,8,10.5,8C10.776,8,11,8.224,11,8.5S10.776,9,10.5,9z"/>
-	<polygon fill="#FFFFFF" points="9.5,11 9.834,12 7.166,12 7.5,11 6,11 5,14 6.5,14 6.834,13 10.166,13 10.5,14 12,14 11,11 	"/>
+	<path fill="#FFFFFF" d="M10.5,3h-4C6,3,6,3.5,6,3.5L5,8v1c0,1,1,1,1,1h5c0,0,1,0,1-1V8l-1-4.5C11,3.5,11,3,10.5,3z M7,4h3l0.5,3h-4
+		L7,4z M6.5,9C6.2,9,6,8.8,6,8.5S6.2,8,6.5,8S7,8.2,7,8.5S6.8,9,6.5,9z M8.8,8.5H8.2C8.1,8.5,8,8.4,8,8.2S8.1,8,8.2,8h0.5
+		C8.9,8,9,8.1,9,8.2S8.9,8.5,8.8,8.5z M10.5,9C10.2,9,10,8.8,10,8.5S10.2,8,10.5,8S11,8.2,11,8.5S10.8,9,10.5,9z"/>
+	<polygon fill="#FFFFFF" points="9.5,11 9.8,12 7.2,12 7.5,11 6,11 5,14 6.5,14 6.8,13 10.2,13 10.5,14 12,14 11,11 	"/>
 </g>
 </svg>
