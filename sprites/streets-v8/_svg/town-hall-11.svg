@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
 	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
 	 viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
-<ellipse id="ellipse4" fill="#FFFFFF" cx="9.5" cy="9.5" rx="9.5" ry="9.5"/>
-<ellipse id="ellipse6" fill="#A9A199" cx="9.5" cy="9.5" rx="8.5" ry="8.5"/>
-<g id="g8" transform="translate(4,4)">
-	<path id="path6818" fill="#FFFFFF" d="M5.5,0L1,2v1h9V2L5.5,0z M2,4v4L1,9v1h9V9L9,8V4H8.5h-6H2z M3,5h1v3H3V5z M5,5h1v3H5V5z M7,5
-		h1v3H7V5z"/>
-	<path id="path6850" fill="#FFFFFF" d="M85.5,0.5l-4,1.5v1h8V2L85.5,0.5z M82.5,4H82v4l-0.5,1v1h8V9L89,8V4h-0.5H82.5z"/>
-	<path id="path6852" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" d="M83.5,8.5v-3l2,2l2-2v3"/>
+<g>
+	<path fill="#FFFFFF" d="M9.5,0C4.253,0,0,4.253,0,9.5S4.253,19,9.5,19S19,14.747,19,9.5S14.747,0,9.5,0z M9.5,18
+		C4.806,18,1,14.194,1,9.5S4.806,1,9.5,1S18,4.806,18,9.5S14.194,18,9.5,18z"/>
+	<rect x="9" y="9" fill="#A9A199" width="1" height="3"/>
+	<rect x="7" y="9" fill="#A9A199" width="1" height="3"/>
+	<rect x="11" y="9" fill="#A9A199" width="1" height="3"/>
+	<path fill="#A9A199" d="M9.5,1C4.806,1,1,4.806,1,9.5S4.806,18,9.5,18S18,14.194,18,9.5S14.194,1,9.5,1z M14,14H5v-1l1-1V8h0.5h6
+		H13v4l1,1V14z M14,7H5V6l4.5-2L14,6V7z"/>
+	<path fill="#FFFFFF" d="M13,8h-0.5h-6H6v4l-1,1v1h9v-1l-1-1V8z M8,12H7V9h1V12z M10,12H9V9h1V12z M12,12h-1V9h1V12z"/>
+	<polygon fill="#FFFFFF" points="5,6 5,7 14,7 14,6 9.5,4 	"/>
 </g>
 </svg>
