@@ -1,49 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   id="svg2"
-   width="19"
-   height="19"
-   viewBox="0 0 19 19"
-   version="1.1">
-  <metadata
-     id="metadata14">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs12" />
-  <rect
-     id="rect4"
-     ry="3"
-     rx="3"
-     height="19"
-     width="19"
-     y="0"
-     x="0"
-     style="fill:#ffffff;stroke:none;" />
-  <rect
-     id="rect6"
-     ry="1"
-     rx="1"
-     height="17"
-     width="17"
-     y="1"
-     x="1"
-     style="fill:#9c8ea4;stroke:none;" />
-  <g
-     id="g8"
-     transform="translate(4,4)">
-    <metadata     id="metadata8"><rdf:RDF><cc:Work         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs     id="defs6" /><path     id="path14245"     d="M 4,0 C 3.5,0 3.5,0.5 3.5,0.5 3.5,0.5 3.5,1 4,1 L 5,1 5,1.9707031 4,2 C 4,2 3,2 3,3 L 3,6 C 3,8 5,8 5,8 L 6,8 C 6,8 8,8 8,6 L 8,3 C 8,2 7,2 7,2 L 6,2 6,1 7,1 C 7.5,1 7.5,0.5 7.5,0.5 7.5,0.5 7.5,0 7,0 Z M 5.5,3 7,3.5 7,5 5.5,5 4,5 4,3.5 Z m 0,3 C 5.777,6 6,6.223 6,6.5 6,6.777 5.777,7 5.5,7 5.223,7 5,6.777 5,6.5 5,6.223 5.223,6 5.5,6 Z M 2.833984,8.5 2,11 3.5,11 3.833984,10 7.166016,10 7.5,11 9,11 8.166016,8.5 6.667969,8.5 6.833984,9 4.166016,9 4.332031,8.5 Z"     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
+	 viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+<path id="rect4" fill="#FFFFFF" d="M3,0h13c1.7,0,3,1.3,3,3v13c0,1.7-1.3,3-3,3H3c-1.7,0-3-1.3-3-3V3C0,1.3,1.3,0,3,0z"/>
+<path id="rect6" fill="#9C8EA4" d="M2,1h15c0.6,0,1,0.4,1,1v15c0,0.6-0.4,1-1,1H2c-0.6,0-1-0.4-1-1V2C1,1.4,1.4,1,2,1z"/>
+<g id="g8" transform="translate(4,4)">
+	<path id="path14245" fill="#FFFFFF" d="M4,0C3.5,0,3.5,0.5,3.5,0.5S3.5,1,4,1h1v1L4,2c0,0-1,0-1,1v3c0,2,2,2,2,2h1c0,0,2,0,2-2V3
+		c0-1-1-1-1-1H6V1h1c0.5,0,0.5-0.5,0.5-0.5S7.5,0,7,0H4z M5.5,3L7,3.5V5H5.5H4V3.5L5.5,3z M5.5,6C5.8,6,6,6.2,6,6.5S5.8,7,5.5,7
+		S5,6.8,5,6.5S5.2,6,5.5,6z M2.8,8.5L2,11h1.5l0.3-1h3.3l0.3,1H9L8.2,8.5H6.7L6.8,9H4.2l0.2-0.5H2.8z"/>
+</g>
 </svg>

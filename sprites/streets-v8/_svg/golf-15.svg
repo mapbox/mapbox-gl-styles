@@ -1,45 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   id="svg2"
-   width="23"
-   height="23"
-   viewBox="0 0 23 23"
-   version="1.1">
-  <metadata
-     id="metadata14">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs12" />
-  <ellipse
-     id="ellipse4"
-     ry="11.5"
-     rx="11.5"
-     cy="11.5"
-     cx="11.5"
-     style="fill:#ffffff;stroke:none;" />
-  <ellipse
-     id="ellipse6"
-     ry="10.5"
-     rx="10.5"
-     cy="11.5"
-     cx="11.5"
-     style="fill:#7e9a4c;stroke:none;" />
-  <g
-     id="g8"
-     transform="translate(4.5,4)">
-      <defs     id="defs4621" />  <metadata     id="metadata4624">    <rdf:RDF>      <cc:Work         rdf:about="">        <dc:format>image/svg+xml</dc:format>        <dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />        <dc:title />      </cc:Work>    </rdf:RDF>  </metadata>  <path     id="path11758"     d="m 3.3272306,1.0242337 -0.125255,0.3044658 -0.224072,0.5478029 c -0.023,0.056111 -0.03131,0.137127 -0.03131,0.2022851 -2.34e-4,0.3173179 0.256557,0.57488 0.573874,0.5755975 0.252694,-8.91e-5 0.475735,-0.1650969 0.549747,-0.4067096 5.78e-4,-0.00115 0.0011,-0.00229 0.0018,-0.00345 l 0.19502,-0.4795195 4.9339385,2.0232077 -3.4656485,2.3885569 c -0.332044,0.2288988 -0.387985,0.6068748 -0.249885,0.9409466 l 0.804802,1.892234 -1.156365,3.4346279 c -0.154198,0.462593 0.208083,0.780257 0.572151,0.791015 0.235125,0.007 0.470841,-0.111394 0.570427,-0.410157 l 1.223576,-3.5604312 0.120634,0.2843523 0,3.0847879 c 0,0 -1.26e-4,0.601448 0.6014474,0.601448 0.601575,0 0.601448,-0.601448 0.601448,-0.601448 l 0,-2.9279638 C 8.823584,9.5648205 8.80692,9.4003684 8.74601,9.2698755 L 7.5000306,6.2919347 9.9178851,4.6237362 C 10.119292,4.484894 10.293575,4.3185849 10.293575,4.0739889 c 0,-0.2654177 -0.139974,-0.4683609 -0.3343299,-0.5480238 L 3.6160046,0.92598978 c 0,0 -0.212734,-0.0871958 -0.288743,0.0982439 z m 1.52571,2.505178 c -0.730965,0 -1.323529,0.5925645 -1.323529,1.3235294 0,0.730966 0.592564,1.3235294 1.323529,1.3235294 0.730966,0 1.32353,-0.5925634 1.32353,-1.3235294 0,-0.7309649 -0.592564,-1.3235294 -1.32353,-1.3235294 z"     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.32197142;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="23px"
+	 viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+<ellipse id="ellipse4" fill="#FFFFFF" cx="11.5" cy="11.5" rx="11.5" ry="11.5"/>
+<ellipse id="ellipse6" fill="#7E9A4C" cx="11.5" cy="11.5" rx="10.5" ry="10.5"/>
+<g id="g8" transform="translate(4.5,4)">
+	<path id="path11758" fill="#FFFFFF" d="M3.3,1L3.2,1.3L3,1.9C3,2,3,2,3,2.1c0,0.3,0.3,0.6,0.6,0.6s0.5-0.2,0.5-0.4l0,0l0.2-0.5
+		l4.9,2L5.7,6.2C5.4,6.4,5.3,6.8,5.5,7.1L6.3,9l-1.2,3.4c-0.2,0.5,0.2,0.8,0.6,0.8c0.2,0,0.5-0.1,0.6-0.4l1.2-3.6l0.1,0.3v3.1
+		c0,0,0,0.6,0.6,0.6s0.6-0.6,0.6-0.6V9.7c0-0.1,0-0.3-0.1-0.4l-1.2-3l2.4-1.7c0.2-0.1,0.4-0.3,0.4-0.5c0-0.3-0.1-0.5-0.3-0.5
+		L3.6,0.9C3.6,0.9,3.4,0.8,3.3,1L3.3,1z M4.9,3.5c-0.7,0-1.3,0.6-1.3,1.3s0.6,1.3,1.3,1.3s1.3-0.6,1.3-1.3S5.6,3.5,4.9,3.5z"/>
+</g>
 </svg>

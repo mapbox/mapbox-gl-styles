@@ -1,45 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   id="svg2"
-   width="19"
-   height="19"
-   viewBox="0 0 19 19"
-   version="1.1">
-  <metadata
-     id="metadata14">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs12" />
-  <ellipse
-     id="ellipse4"
-     ry="9.5"
-     rx="9.5"
-     cy="9.5"
-     cx="9.5"
-     style="fill:#ffffff;stroke:none;" />
-  <ellipse
-     id="ellipse6"
-     rx="8.5"
-     ry="8.5"
-     cy="9.5"
-     cx="9.5"
-     style="fill:#a9a199;stroke:none;" />
-  <g
-     id="g8"
-     transform="translate(4,4)">
-    <metadata     id="metadata27"><rdf:RDF><cc:Work         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs     id="defs25" /><path     id="path8522-6-8"     d="M 2.5 1 C 2.5 1 1.75 1 1.5 2 L 1 4 C 1 4 0 4.5 0 5.5 L 0 8 C 0 8 0 9 1 9 L 1 9.5 C 1 10 1.5 10 1.5 10 L 2.5 10 C 2.5 10 3 10 3 9.5 L 3 9 L 8 9 L 8 9.5 C 8 10 8.5 10 8.5 10 L 9.5 10 C 9.5 10 10 10 10 9.5 L 10 9 C 11 9 11 8 11 8 L 11 5.5 C 11 4.5 10 4 10 4 L 9.5 2 C 9.244114 0.97645611 8.5 1 8.5 1 L 2.5 1 z M 2.5 2 L 8.5 2 L 8.75 3 C 9.0074763 4.0299052 8 4 8 4 L 3 4 C 3 4 1.9967854 4.0128585 2.25 3 L 2.5 2 z M 2 6 A 1 1 0 0 1 3 7 A 1 1 0 0 1 2 8 A 1 1 0 0 1 1 7 A 1 1 0 0 1 2 6 z M 9 6 A 1 1 0 0 1 10 7 A 1 1 0 0 1 9 8 A 1 1 0 0 1 8 7 A 1 1 0 0 1 9 6 z "     style="fill:#ffffff;fill-opacity:1" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
+	 viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+<ellipse id="ellipse4" fill="#FFFFFF" cx="9.5" cy="9.5" rx="9.5" ry="9.5"/>
+<ellipse id="ellipse6" fill="#A9A199" cx="9.5" cy="9.5" rx="8.5" ry="8.5"/>
+<g id="g8" transform="translate(4,4)">
+	<path id="path8522-6-8" fill="#FFFFFF" d="M2.5,1c0,0-0.8,0-1,1L1,4c0,0-1,0.5-1,1.5V8c0,0,0,1,1,1v0.5C1,10,1.5,10,1.5,10h1
+		c0,0,0.5,0,0.5-0.5V9h5v0.5C8,10,8.5,10,8.5,10h1c0,0,0.5,0,0.5-0.5V9c1,0,1-1,1-1V5.5c0-1-1-1.5-1-1.5L9.5,2c-0.3-1-1-1-1-1H2.5z
+		 M2.5,2h6l0.2,1C9,4,8,4,8,4H3c0,0-1,0-0.8-1L2.5,2z M2,6c0.6,0,1,0.4,1,1S2.6,8,2,8S1,7.6,1,7S1.4,6,2,6z M9,6c0.6,0,1,0.4,1,1
+		S9.6,8,9,8S8,7.6,8,7S8.4,6,9,6z"/>
+</g>
 </svg>

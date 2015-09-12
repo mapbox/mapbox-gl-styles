@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
-	 id="svg4764" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="entrance-11.svg" inkscape:version="0.91+devel+osxmenu r12911"
+	 id="svg4764" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" sodipodi:docname="entrance-11.svg" inkscape:version="0.91+devel+osxmenu r12911" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px"
-	 viewBox="-1 -1 15 15" enable-background="new -1 -1 15 15" xml:space="preserve">
-<sodipodi:namedview  inkscape:snap-intersection-paths="true" id="base" inkscape:zoom="32" fit-margin-left="0" showguides="false" inkscape:cx="5.8942879" showgrid="true" inkscape:cy="5.6427801" fit-margin-top="0" bordercolor="#666666" borderopacity="1.0" pagecolor="#ffffff" inkscape:bbox-paths="true" fit-margin-right="0" inkscape:snap-bbox="true" inkscape:current-layer="layer1" inkscape:pageopacity="0.0" inkscape:window-y="23" inkscape:window-x="0" inkscape:window-width="1280" inkscape:snap-grids="true" inkscape:object-paths="true" inkscape:document-units="px" inkscape:snap-to-guides="false" fit-margin-bottom="0" inkscape:bbox-nodes="true" inkscape:snap-smooth-nodes="true" inkscape:pageshadow="2" inkscape:guide-bbox="true" inkscape:window-height="755" inkscape:window-maximized="0" inkscape:object-nodes="true" inkscape:snap-bbox-edge-midpoints="true">
+	 viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+<sodipodi:namedview  fit-margin-bottom="0" inkscape:window-width="1280" inkscape:window-height="755" fit-margin-right="0" inkscape:snap-bbox-edge-midpoints="true" inkscape:snap-intersection-paths="true" inkscape:window-x="0" inkscape:snap-smooth-nodes="true" inkscape:bbox-nodes="true" inkscape:snap-bbox="true" inkscape:object-nodes="true" inkscape:object-paths="true" inkscape:pageopacity="0.0" inkscape:guide-bbox="true" inkscape:snap-grids="true" inkscape:document-units="px" inkscape:pageshadow="2" inkscape:current-layer="layer1" inkscape:snap-to-guides="false" inkscape:window-y="23" inkscape:bbox-paths="true" inkscape:window-maximized="0" showgrid="true" pagecolor="#ffffff" bordercolor="#666666" id="base" showguides="false" inkscape:cy="5.6427801" inkscape:zoom="32" borderopacity="1.0" inkscape:cx="5.8942879" fit-margin-left="0" fit-margin-top="0">
 	
-		<inkscape:grid  color="#ff0000" type="xygrid" opacity="0.1254902" id="grid4772" visible="true" empopacity="0.25098039" empspacing="2" empcolor="#0000ff" originy="-6.0000005" spacingy="0.5" originx="24.000002" enabled="true" spacingx="0.5" snapvisiblegridlinesonly="true">
+		<inkscape:grid  type="xygrid" color="#ff0000" snapvisiblegridlinesonly="true" spacingy="0.5" spacingx="0.5" opacity="0.1254902" empspacing="2" id="grid4772" empopacity="0.25098039" originy="-6.0000005" empcolor="#0000ff" enabled="true" visible="true" originx="24.000002">
 		</inkscape:grid>
-	<sodipodi:guide  id="guide4789" orientation="0,1" position="28.000003,8.0000003"></sodipodi:guide>
-	<sodipodi:guide  id="guide4791" orientation="1,0" position="38.000003,6.0000002"></sodipodi:guide>
-	<sodipodi:guide  id="guide4793" orientation="0,1" position="36.000003,-4.0000004"></sodipodi:guide>
-	<sodipodi:guide  id="guide4795" orientation="1,0" position="26.000002,5.0000002"></sodipodi:guide>
-	<sodipodi:guide  id="guide4797" orientation="0,1" position="31.000003,7.0000002"></sodipodi:guide>
-	<sodipodi:guide  id="guide4799" orientation="1,0" position="37.000003,2.9999999"></sodipodi:guide>
-	<sodipodi:guide  id="guide4801" orientation="0,1" position="35.000003,-2.0000003"></sodipodi:guide>
-	<sodipodi:guide  id="guide4803" orientation="1,0" position="28.000003,0.99999981"></sodipodi:guide>
+	<sodipodi:guide  orientation="0,1" id="guide4789" position="28.000003,8.0000003"></sodipodi:guide>
+	<sodipodi:guide  orientation="1,0" id="guide4791" position="38.000003,6.0000002"></sodipodi:guide>
+	<sodipodi:guide  orientation="0,1" id="guide4793" position="36.000003,-4.0000004"></sodipodi:guide>
+	<sodipodi:guide  orientation="1,0" id="guide4795" position="26.000002,5.0000002"></sodipodi:guide>
+	<sodipodi:guide  orientation="0,1" id="guide4797" position="31.000003,7.0000002"></sodipodi:guide>
+	<sodipodi:guide  orientation="1,0" id="guide4799" position="37.000003,2.9999999"></sodipodi:guide>
+	<sodipodi:guide  orientation="0,1" id="guide4801" position="35.000003,-2.0000003"></sodipodi:guide>
+	<sodipodi:guide  orientation="1,0" id="guide4803" position="28.000003,0.99999981"></sodipodi:guide>
 </sodipodi:namedview>
 <g>
-	<path fill="#FFFFFF" d="M12-1H1c-1.103,0-2,0.897-2,2v11c0,1.103,0.897,2,2,2h11c1.103,0,2-0.897,2-2V1C14-0.103,13.103-1,12-1z
-		 M13,12c0,0.552-0.448,1-1,1H1c-0.552,0-1-0.448-1-1V1c0-0.552,0.448-1,1-1h11c0.552,0,1,0.448,1,1V12z"/>
-	<path fill="#9A8EA4" d="M12,0H1C0.448,0,0,0.448,0,1v11c0,0.552,0.448,1,1,1h11c0.552,0,1-0.448,1-1V1C13,0.448,12.552,0,12,0z
-		 M11,10c0,0,0,1-1,1l-2,0H3c-1,0-1-1-1-1V3c0-1,1-1,1-1h1c1,0,1,1,1,1v2l2,0c1,0,1,1,1,1v2l2,0c0,0,1,0,1,1V10z"/>
-	<path fill="#FFFFFF" d="M10,8L8,8V6c0,0,0-1-1-1L5,5V3c0,0,0-1-1-1H3c0,0-1,0-1,1v7c0,0,0,1,1,1h5l2,0c1,0,1-1,1-1V9
-		C11,8,10,8,10,8z"/>
+	<path fill="#FFFFFF" d="M12-1H1c-1.1,0-2,0.9-2,2v11c0,1.1,0.9,2,2,2h11c1.1,0,2-0.9,2-2V1C14-0.1,13.1-1,12-1z M13,12
+		c0,0.6-0.4,1-1,1H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h11c0.6,0,1,0.4,1,1V12z"/>
+	<path fill="#9A8EA4" d="M12,0H1C0.4,0,0,0.4,0,1v11c0,0.6,0.4,1,1,1h11c0.6,0,1-0.4,1-1V1C13,0.4,12.6,0,12,0z M11,10c0,0,0,1-1,1
+		H8H3c-1,0-1-1-1-1V3c0-1,1-1,1-1h1c1,0,1,1,1,1v2h2c1,0,1,1,1,1v2h2c0,0,1,0,1,1V10z"/>
+	<path fill="#FFFFFF" d="M10,8H8V6c0,0,0-1-1-1H5V3c0,0,0-1-1-1H3c0,0-1,0-1,1v7c0,0,0,1,1,1h5h2c1,0,1-1,1-1V9C11,8,10,8,10,8z"/>
 </g>
 </svg>

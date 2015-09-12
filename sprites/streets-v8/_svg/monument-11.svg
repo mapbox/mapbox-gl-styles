@@ -1,45 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   id="svg2"
-   width="19"
-   height="19"
-   viewBox="0 0 19 19"
-   version="1.1">
-  <metadata
-     id="metadata14">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs12" />
-  <ellipse
-     id="ellipse4"
-     ry="9.5"
-     rx="9.5"
-     cy="9.5"
-     cx="9.5"
-     style="fill:#ffffff;stroke:none;" />
-  <ellipse
-     id="ellipse6"
-     rx="8.5"
-     ry="8.5"
-     cy="9.5"
-     cx="9.5"
-     style="fill:#a9a199;stroke:none;" />
-  <g
-     id="g8"
-     transform="translate(4,4)">
-    <path d="M 5.5 0 L 4 2 L 4 6.5 L 7 6.5 L 7 2 L 5.5 0 z M 3 7 L 2 8 L 2 11 L 9 11 L 9 8 L 8 7 L 3 7 z M 4 8.5 L 7 8.5 L 7 9 L 4 9 L 4 8.5 z M 4 9.5 L 7 9.5 L 7 10 L 4 10 L 4 9.5 z "     style="fill:#ffffff;fill-opacity:1" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
+	 viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+<ellipse id="ellipse4" fill="#FFFFFF" cx="9.5" cy="9.5" rx="9.5" ry="9.5"/>
+<ellipse id="ellipse6" fill="#A9A199" cx="9.5" cy="9.5" rx="8.5" ry="8.5"/>
+<g id="g8" transform="translate(4,4)">
+	<path fill="#FFFFFF" d="M5.5,0L4,2v4.5h3V2L5.5,0z M3,7L2,8v3h7V8L8,7H3z M4,8.5h3V9H4V8.5z M4,9.5h3V10H4V9.5z"/>
+</g>
 </svg>
