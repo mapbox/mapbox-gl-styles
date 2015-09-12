@@ -1,36 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   viewBox="0 0 32 22.000001"
-   version="1.1"
-   id="svg3844"
-   height="22"
-   width="32">
-  <defs
-     id="defs3846" />
-  <metadata
-     id="metadata3849">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     transform="translate(-299,-896.36217)"
-     id="layer1">
-    <path
-       id="path3799-7"
-       d="m 305.95831,898.86216 -6.45835,3.06452 c 0.64584,0.61292 2.58334,1.83873 1.29167,4.29035 -1.29167,2.45162 -1.93749,6.12905 0.64584,8.58067 3.22918,3.06454 12.27086,0.61291 13.56253,3.06454 1.29167,-2.45163 10.33337,0 13.56254,-3.06454 2.58334,-2.45162 1.93749,-6.12905 0.64583,-8.58067 -1.29167,-2.45162 0.64583,-3.67743 1.29166,-4.29035 l -6.45834,-3.06452 c 0,0 -1.9375,1.83871 -4.52085,1.83871 -2.58333,0 -4.52084,-1.83871 -4.52084,-1.83871 0,0 -1.9375,1.83871 -4.52084,1.83871 -2.58334,0 -4.52085,-1.83871 -4.52085,-1.83871 z"
-       clip-path="none"
-       style="color:#3a3836;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#3a3836;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;marker:none;enable-background:accumulate" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg3844" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="22px"
+	 viewBox="0 0 32 22" enable-background="new 0 0 32 22" xml:space="preserve">
+<g id="layer1" transform="translate(-299,-896.36217)">
+	<path id="path3799-7" fill="#FFFFFF" stroke="#3A3836" stroke-linecap="round" stroke-linejoin="round" d="M306,898.9l-6.5,3.1
+		c0.6,0.6,2.6,1.8,1.3,4.3c-1.3,2.5-1.9,6.1,0.6,8.6c3.2,3.1,12.3,0.6,13.6,3.1c1.3-2.5,10.3,0,13.6-3.1c2.6-2.5,1.9-6.1,0.6-8.6
+		c-1.3-2.5,0.6-3.7,1.3-4.3l-6.5-3.1c0,0-1.9,1.8-4.5,1.8s-4.5-1.8-4.5-1.8s-1.9,1.8-4.5,1.8S306,898.9,306,898.9z"/>
+</g>
 </svg>
