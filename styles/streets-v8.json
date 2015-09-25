@@ -8495,17 +8495,10 @@
             },
             "maxzoom": 7,
             "filter": [
-                "all",
-                [
-                    "==",
-                    "oneway",
-                    1
-                ],
-                [
-                    "==",
-                    "type",
-                    "trunk"
-                ]
+                "in",
+                "scalerank",
+                1,
+                2
             ],
             "type": "symbol",
             "source": "composite",
