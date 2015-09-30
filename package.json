@@ -6,8 +6,7 @@
   "bin": {},
   "scripts": {
     "test": "tape test/test.js",
-    "migrate": "./migrate.sh",
-    "build": "node -e 'require(\"fs\").writeFileSync(\"index.json\", JSON.stringify(require(\"./index.js\"), null, 2))'"
+    "migrate": "./migrate.sh"
   },
   "devDependencies": {
     "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#8555318440c9bb3fba0f151b33b906b84dda0fe2",
