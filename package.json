@@ -9,7 +9,7 @@
     "migrate": "./migrate.sh"
   },
   "devDependencies": {
-    "mapbox-gl-style-spec": "git+https://github.com/mapbox/mapbox-gl-style-spec#8555318440c9bb3fba0f151b33b906b84dda0fe2",
+    "mapbox-gl-style-spec": "^8.1.0",
     "tape": "^4.2.0"
   },
   "dependencies": {
