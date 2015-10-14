@@ -181,53 +181,6 @@
         },
         {
             "interactive": false,
-            "minzoom": 4,
-            "layout": {
-                "visibility": "visible"
-            },
-            "maxzoom": 22,
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "$type",
-                    "Polygon",
-                    "LineString",
-                    "Point"
-                ],
-                [
-                    "in",
-                    "class",
-                    "snow",
-                    "scrub",
-                    "grass",
-                    "crop",
-                    "wood"
-                ]
-            ],
-            "type": "fill",
-            "source": "compositedsource",
-            "id": "landcover_noise",
-            "paint": {
-                "fill-color": "#fefffc",
-                "fill-opacity": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            4,
-                            0
-                        ],
-                        [
-                            6,
-                            1
-                        ]
-                    ]
-                },
-                "fill-pattern": "background"
-            }
-        },
-        {
-            "interactive": false,
             "minzoom": 0,
             "layout": {
                 "visibility": "visible"
