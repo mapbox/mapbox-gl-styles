@@ -1,34 +1,6 @@
 {
   "version": 8,
   "name": "Basic",
-  "metadata": {
-    "mapbox:groups": {
-      "1444843826332.9893": {
-        "name": "Labels",
-        "collapsed": true
-      },
-      "1444844202137.1497": {
-        "name": "Admin",
-        "collapsed": true
-      },
-      "1444844260967.675": {
-        "name": "Transportation",
-        "collapsed": true
-      },
-      "1444844326608.618": {
-        "name": "Water",
-        "collapsed": true
-      },
-      "1444844333334.9595": {
-        "name": "Landuse",
-        "collapsed": true
-      },
-      "1444844345261.6885": {
-        "name": "Building",
-        "collapsed": true
-      }
-    }
-  },
   "sources": {
     "mapbox": {
       "url": "mapbox://mapbox.mapbox-streets-v6",
@@ -57,9 +29,6 @@
       ],
       "paint": {
         "fill-color": "#d2edae"
-      },
-      "metadata": {
-        "mapbox:group": "1444844333334.9595"
       }
     },
     {
@@ -96,9 +65,6 @@
             ]
           ]
         }
-      },
-      "metadata": {
-        "mapbox:group": "1444844326608.618"
       }
     },
     {
@@ -108,9 +74,6 @@
       "source-layer": "water",
       "paint": {
         "fill-color": "#a0cfdf"
-      },
-      "metadata": {
-        "mapbox:group": "1444844326608.618"
       }
     },
     {
@@ -120,9 +83,6 @@
       "source-layer": "building",
       "paint": {
         "fill-color": "#d6d6d6"
-      },
-      "metadata": {
-        "mapbox:group": "1444844345261.6885"
       }
     },
     {
@@ -167,9 +127,6 @@
           0.36,
           0.18
         ]
-      },
-      "metadata": {
-        "mapbox:group": "1444844260967.675"
       }
     },
     {
@@ -210,9 +167,6 @@
           0.28,
           0.14
         ]
-      },
-      "metadata": {
-        "mapbox:group": "1444844260967.675"
       }
     },
     {
@@ -257,9 +211,6 @@
             ]
           ]
         }
-      },
-      "metadata": {
-        "mapbox:group": "1444844260967.675"
       }
     },
     {
@@ -300,9 +251,6 @@
             ]
           ]
         }
-      },
-      "metadata": {
-        "mapbox:group": "1444844260967.675"
       }
     },
     {
@@ -356,9 +304,6 @@
             ]
           ]
         }
-      },
-      "metadata": {
-        "mapbox:group": "1444844260967.675"
       }
     },
     {
@@ -408,9 +353,6 @@
             ]
           ]
         }
-      },
-      "metadata": {
-        "mapbox:group": "1444844260967.675"
       }
     },
     {
@@ -455,9 +397,6 @@
             ]
           ]
         }
-      },
-      "metadata": {
-        "mapbox:group": "1444844260967.675"
       }
     },
     {
@@ -498,9 +437,6 @@
             ]
           ]
         }
-      },
-      "metadata": {
-        "mapbox:group": "1444844260967.675"
       }
     },
     {
@@ -548,9 +484,6 @@
             ]
           ]
         }
-      },
-      "metadata": {
-        "mapbox:group": "1444844202137.1497"
       }
     },
     {
@@ -600,9 +533,6 @@
         "text-halo-width": 1,
         "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-blur": 1
-      },
-      "metadata": {
-        "mapbox:group": "1444843826332.9893"
       }
     },
     {
@@ -651,9 +581,6 @@
         "text-color": "#666",
         "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 2
-      },
-      "metadata": {
-        "mapbox:group": "1444843826332.9893"
       }
     },
     {
@@ -703,9 +630,6 @@
         "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 1,
         "text-halo-blur": 1
-      },
-      "metadata": {
-        "mapbox:group": "1444843826332.9893"
       }
     },
     {
@@ -751,9 +675,6 @@
         "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 1,
         "text-halo-blur": 1
-      },
-      "metadata": {
-        "mapbox:group": "1444843826332.9893"
       }
     },
     {
@@ -791,9 +712,6 @@
         "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 1,
         "text-halo-blur": 1
-      },
-      "metadata": {
-        "mapbox:group": "1444843826332.9893"
       }
     }
   ]
