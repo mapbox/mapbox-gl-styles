@@ -38,11 +38,11 @@
     }
   },
   "sources": {
-    "mapbox://mapbox.mapbox-streets-v6": {
+    "mapbox": {
       "url": "mapbox://mapbox.mapbox-streets-v6",
       "type": "vector"
     },
-    "mapbox://mapbox.satellite": {
+    "satellite": {
       "url": "mapbox://mapbox.satellite",
       "type": "raster",
       "tileSize": 256
@@ -61,13 +61,31 @@
     {
       "id": "satellite",
       "type": "raster",
-      "source": "mapbox://mapbox.satellite",
-      "source-layer": "mapbox_satellite_full"
+      "source": "satellite",
+      "source-layer": "mapbox_satellite_full",
+      "paint.temp": {
+        "raster-fade-duration": 100
+      },
+      "paint.contours": {
+        "raster-opacity": {
+          "base": 1,
+          "stops": [
+            [
+              11,
+              1
+            ],
+            [
+              12,
+              0.5
+            ]
+          ]
+        }
+      }
     },
     {
       "id": "country_label_small",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "country_label",
       "filter": [
         "all",
@@ -123,6 +141,9 @@
         "text-halo-color": "black",
         "text-halo-width": 0
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856567853.8965"
       }
@@ -130,7 +151,7 @@
     {
       "id": "country_label_medium",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "country_label",
       "filter": [
         "all",
@@ -188,6 +209,9 @@
         "text-halo-color": "black",
         "text-halo-width": 0
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856567853.8965"
       }
@@ -195,7 +219,7 @@
     {
       "id": "country_label_large",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "country_label",
       "filter": [
         "all",
@@ -251,6 +275,9 @@
         "text-halo-color": "black",
         "text-halo-width": 0
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856567853.8965"
       }
@@ -258,7 +285,7 @@
     {
       "id": "motorway",
       "type": "line",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "road",
       "filter": [
         "==",
@@ -303,7 +330,7 @@
     {
       "id": "motorway_bridge",
       "type": "line",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "bridge",
       "filter": [
         "==",
@@ -348,7 +375,7 @@
     {
       "id": "road_main",
       "type": "line",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "road",
       "filter": [
         "==",
@@ -395,7 +422,7 @@
     {
       "id": "road_street",
       "type": "line",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "road",
       "filter": [
         "in",
@@ -429,7 +456,7 @@
     {
       "id": "province_border",
       "type": "line",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "admin",
       "filter": [
         "all",
@@ -480,6 +507,9 @@
           ]
         }
       },
+      "paint.temp": {
+        "line-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444857009211.682"
       }
@@ -487,7 +517,7 @@
     {
       "id": "country_border",
       "type": "line",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "admin",
       "filter": [
         "all",
@@ -540,6 +570,9 @@
           ]
         }
       },
+      "paint.temp": {
+        "line-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444857009211.682"
       }
@@ -547,7 +580,7 @@
     {
       "id": "admin_level_maritime",
       "type": "line",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "admin",
       "filter": [
         "==",
@@ -583,6 +616,9 @@
           ]
         }
       },
+      "paint.temp": {
+        "line-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444857009211.682"
       }
@@ -590,7 +626,7 @@
     {
       "id": "marine_label_small",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "marine_label",
       "filter": [
         "==",
@@ -625,6 +661,9 @@
         "text-color": "aqua",
         "text-opacity": 0.3
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856991019.1448"
       }
@@ -632,7 +671,7 @@
     {
       "id": "marine_label_medium",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "marine_label",
       "filter": [
         "all",
@@ -678,6 +717,9 @@
         "text-color": "aqua",
         "text-opacity": 0.4
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856991019.1448"
       }
@@ -685,7 +727,7 @@
     {
       "id": "marine_label_large",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "marine_label",
       "filter": [
         "all",
@@ -727,6 +769,9 @@
         "text-color": "aqua",
         "text-opacity": 0.4
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856991019.1448"
       }
@@ -734,7 +779,7 @@
     {
       "id": "street_label",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "road_label",
       "filter": [
         "==",
@@ -772,6 +817,9 @@
         "text-halo-width": 1.25,
         "text-halo-blur": 1
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856962845.698"
       }
@@ -779,7 +827,7 @@
     {
       "id": "highway_shields",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "road_label",
       "filter": [
         "all",
@@ -858,6 +906,9 @@
         "text-halo-width": 0,
         "text-halo-blur": 0
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856962845.698"
       }
@@ -865,7 +916,7 @@
     {
       "id": "poi_label_all",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "poi_label",
       "minzoom": 16,
       "layout": {
@@ -899,6 +950,9 @@
         "icon-color": "#fff",
         "text-opacity": 0.9
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856955689.293"
       }
@@ -906,7 +960,7 @@
     {
       "id": "poi_label_large",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "poi_label",
       "filter": [
         "<=",
@@ -957,6 +1011,9 @@
         "icon-color": "#fff",
         "text-opacity": 1
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856955689.293"
       }
@@ -964,7 +1021,7 @@
     {
       "id": "place_label_neighbourhood_hamlet",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "place_label",
       "filter": [
         "all",
@@ -1025,6 +1082,9 @@
         "text-halo-blur": 0.25,
         "text-opacity": 0.9
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856935386.6565"
       }
@@ -1032,7 +1092,7 @@
     {
       "id": "place_label_town",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "place_label",
       "filter": [
         "all",
@@ -1076,6 +1136,9 @@
         "text-halo-width": 1.25,
         "text-opacity": 0.9
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856935386.6565"
       }
@@ -1083,7 +1146,7 @@
     {
       "id": "place_label_city_small",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "place_label",
       "filter": [
         "all",
@@ -1152,6 +1215,9 @@
         },
         "text-opacity": 0.9
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856935386.6565"
       }
@@ -1159,7 +1225,7 @@
     {
       "id": "place_label_city_medium",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "place_label",
       "filter": [
         "all",
@@ -1236,6 +1302,9 @@
           ]
         }
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856935386.6565"
       }
@@ -1243,7 +1312,7 @@
     {
       "id": "place_label_city_big",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "place_label",
       "filter": [
         "all",
@@ -1332,6 +1401,9 @@
           ]
         }
       },
+      "paint.temp": {
+        "text-opacity": 0
+      },
       "metadata": {
         "mapbox:group": "1444856935386.6565"
       }
@@ -1339,7 +1411,7 @@
     {
       "id": "state_label",
       "type": "symbol",
-      "source": "mapbox://mapbox.mapbox-streets-v6",
+      "source": "mapbox",
       "source-layer": "state_label",
       "filter": [
         "==",
@@ -1411,6 +1483,9 @@
       "paint": {
         "text-color": "black",
         "text-opacity": 0.6
+      },
+      "paint.temp": {
+        "text-opacity": 0
       },
       "metadata": {
         "mapbox:group": "1444856939874.5793"

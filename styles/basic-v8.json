@@ -605,6 +605,7 @@
           "neighbourhood"
         ]
       ],
+      "minzoom": 8,
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
@@ -650,6 +651,7 @@
           "city"
         ]
       ],
+      "maxzoom": 16,
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
@@ -687,6 +689,7 @@
         "$type",
         "Point"
       ],
+      "maxzoom": 12,
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
