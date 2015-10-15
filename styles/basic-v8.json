@@ -3,8 +3,8 @@
   "name": "Basic",
   "sources": {
     "mapbox": {
-      "url": "mapbox://mapbox.mapbox-streets-v6",
-      "type": "vector"
+      "type": "vector",
+      "url": "mapbox://mapbox.mapbox-streets-v6"
     }
   },
   "sprite": "mapbox://sprites/mapbox/basic-v8",
@@ -177,11 +177,6 @@
       "filter": [
         "all",
         [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
           "in",
           "class",
           "motorway_link",
@@ -190,6 +185,11 @@
           "service",
           "driveway",
           "path"
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
         ]
       ],
       "layout": {
@@ -314,15 +314,15 @@
       "filter": [
         "all",
         [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
           "in",
           "class",
           "motorway",
           "main"
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
         ]
       ],
       "paint": {
@@ -407,15 +407,15 @@
       "filter": [
         "all",
         [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
           "in",
           "class",
           "motorway",
           "main"
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
         ]
       ],
       "layout": {
@@ -447,22 +447,19 @@
       "filter": [
         "all",
         [
+          "<=",
+          "admin_level",
+          2
+        ],
+        [
+          "==",
+          "maritime",
+          0
+        ],
+        [
           "==",
           "$type",
           "LineString"
-        ],
-        [
-          "all",
-          [
-            "<=",
-            "admin_level",
-            2
-          ],
-          [
-            "==",
-            "maritime",
-            0
-          ]
         ]
       ],
       "layout": {
@@ -491,25 +488,23 @@
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "poi_label",
+      "minzoom": 5,
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "Point"
+          "scalerank",
+          1
         ],
         [
-          "all",
-          [
-            "==",
-            "scalerank",
-            1
-          ],
-          [
-            "==",
-            "localrank",
-            1
-          ]
+          "==",
+          "localrank",
+          1
+        ],
+        [
+          "==",
+          "$type",
+          "Point"
         ]
       ],
       "layout": {
@@ -543,15 +538,15 @@
       "filter": [
         "all",
         [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
           "in",
           "class",
           "motorway",
           "main"
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
         ]
       ],
       "layout": {
@@ -588,6 +583,7 @@
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "place_label",
+      "minzoom": 8,
       "filter": [
         "all",
         [
@@ -605,7 +601,6 @@
           "neighbourhood"
         ]
       ],
-      "minzoom": 8,
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
@@ -638,6 +633,7 @@
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "place_label",
+      "maxzoom": 16,
       "filter": [
         "all",
         [
@@ -651,7 +647,6 @@
           "city"
         ]
       ],
-      "maxzoom": 16,
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
@@ -684,12 +679,12 @@
       "type": "symbol",
       "source": "mapbox",
       "source-layer": "country_label",
+      "maxzoom": 12,
       "filter": [
         "==",
         "$type",
         "Point"
       ],
-      "maxzoom": 12,
       "layout": {
         "text-field": "{name_en}",
         "text-font": [

@@ -1,80 +1,8 @@
 {
     "version": 8,
-    "name": "Emerald",
-    "metadata": {
-        "mapbox:groups": {
-            "1444858470265.9292": {
-                "name": "Barriers",
-                "collapsed": true
-            },
-            "1444858143444.556": {
-                "name": "Tunnels",
-                "collapsed": true
-            },
-            "1444858181796.6055": {
-                "name": "Hillshades",
-                "collapsed": true
-            },
-            "1444857916000.3777": {
-                "name": "Place labels",
-                "collapsed": true
-            },
-            "1444858096986.3894": {
-                "name": "Marine labels",
-                "collapsed": true
-            },
-            "1444858163779.7869": {
-                "name": "Landuses",
-                "collapsed": true
-            },
-            "1444858262202.7446": {
-                "name": "State labels",
-                "collapsed": true
-            },
-            "1444858128913.9963": {
-                "name": "Roads",
-                "collapsed": true
-            },
-            "1444858082697.2502": {
-                "name": "Bridge labels",
-                "collapsed": true
-            },
-            "1444858269512.7246": {
-                "name": "Admin boundaries",
-                "collapsed": true
-            },
-            "1444858171723.1826": {
-                "name": "Landcovers",
-                "collapsed": true
-            },
-            "1444858346799.9988": {
-                "name": "POI/One-way labels",
-                "collapsed": true
-            },
-            "1444858398532.1323": {
-                "name": "Country labels",
-                "collapsed": true
-            },
-            "1444858496690.794": {
-                "name": "Road labels",
-                "collapsed": true
-            },
-            "1444858200762.7805": {
-                "name": "Water",
-                "collapsed": true
-            },
-            "1444858216876.1328": {
-                "name": "Buildings",
-                "collapsed": true
-            },
-            "1444858189651.4805": {
-                "name": "Aeroways",
-                "collapsed": true
-            }
-        }
-    },
+    "name": "emerald-v8",
     "sources": {
-        "mapbox": {
+        "compositedsource": {
             "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6",
             "type": "vector"
         }
@@ -85,132 +13,197 @@
         {
             "id": "background",
             "type": "background",
+            "minzoom": 0,
+            "maxzoom": 22,
             "layout": {
                 "visibility": "visible"
             },
             "paint": {
                 "background-color": "#F4efe8",
                 "background-opacity": 1
-            }
+            },
+            "interactive": false
         },
         {
-            "id": "landcover_wood",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landcover",
-            "filter": [
-                "==",
-                "class",
-                "wood"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "wood"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "landcover_wood",
             "paint": {
                 "fill-color": "#d4e2c6",
                 "fill-opacity": 0.5
             },
-            "metadata": {
-                "mapbox:group": "1444858171723.1826"
-            }
+            "source-layer": "landcover"
         },
         {
-            "id": "landcover_scrub",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landcover",
-            "filter": [
-                "==",
-                "class",
-                "scrub"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "scrub"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "landcover_scrub",
             "paint": {
                 "fill-color": "#e0e8cd",
                 "fill-opacity": 0.5
             },
-            "metadata": {
-                "mapbox:group": "1444858171723.1826"
-            }
+            "source-layer": "landcover"
         },
         {
-            "id": "landcover_grass",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landcover",
-            "filter": [
-                "==",
-                "class",
-                "grass"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "grass"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "landcover_grass",
             "paint": {
                 "fill-color": "#e7ebd1",
                 "fill-opacity": 0.5
             },
-            "metadata": {
-                "mapbox:group": "1444858171723.1826"
-            }
+            "source-layer": "landcover"
         },
         {
-            "id": "landcover_crop",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landcover",
-            "filter": [
-                "==",
-                "class",
-                "crop"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "crop"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "landcover_crop",
             "paint": {
                 "fill-color": "#eeeed4",
                 "fill-opacity": 0.5
             },
-            "metadata": {
-                "mapbox:group": "1444858171723.1826"
-            }
+            "source-layer": "landcover"
         },
         {
-            "id": "landcover_snow",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landcover",
-            "filter": [
-                "==",
-                "class",
-                "snow"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "snow"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "landcover_snow",
             "paint": {
                 "fill-color": "#fefffc",
                 "fill-opacity": 0.75
             },
-            "metadata": {
-                "mapbox:group": "1444858171723.1826"
-            }
+            "source-layer": "landcover"
         },
         {
-            "id": "wood",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "==",
-                "class",
-                "wood"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "wood"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "wood",
             "paint": {
                 "fill-color": "#6a4",
                 "fill-opacity": {
@@ -227,24 +220,33 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "school",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "==",
-                "class",
-                "school"
-            ],
-            "maxzoom": 20,
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 20,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "school"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "school",
             "paint": {
                 "fill-color": "#ece8ee",
                 "fill-outline-color": {
@@ -262,24 +264,33 @@
                 },
                 "fill-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "hospital",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "==",
-                "class",
-                "hospital"
-            ],
-            "maxzoom": 20,
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 20,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "hospital"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "hospital",
             "paint": {
                 "fill-color": "#f8e7e4",
                 "fill-outline-color": {
@@ -297,24 +308,33 @@
                 },
                 "fill-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "hospital_pattern",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "==",
-                "class",
-                "hospital"
-            ],
+            "interactive": false,
             "minzoom": 12,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "hospital"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "hospital_pattern",
             "paint": {
                 "fill-color": "#c7c3e7",
                 "fill-outline-color": {
@@ -345,24 +365,33 @@
                 },
                 "fill-pattern": "hospital_striped"
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "school_pattern",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "==",
-                "class",
-                "school"
-            ],
+            "interactive": false,
             "minzoom": 12,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "school"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "school_pattern",
             "paint": {
                 "fill-color": "#c7c3e7",
                 "fill-outline-color": {
@@ -393,23 +422,33 @@
                 },
                 "fill-pattern": "school_striped"
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "park",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "==",
-                "class",
-                "park"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "park"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "park",
             "paint": {
                 "fill-color": "rgba(230,235,204,1)",
                 "fill-opacity": {
@@ -427,32 +466,42 @@
                 },
                 "fill-outline-color": "#d2e4c7"
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "pitch",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "any",
-                [
-                    "in",
-                    "class",
-                    "pitch",
-                    "gras"
-                ],
-                [
-                    "==",
-                    "type",
-                    "golf_course"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "any",
+                    [
+                        "in",
+                        "class",
+                        "pitch",
+                        "gras"
+                    ],
+                    [
+                        "==",
+                        "type",
+                        "golf_course"
+                    ]
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "pitch",
             "paint": {
                 "fill-color": "rgba(210,222,191,1)",
                 "fill-opacity": 1,
@@ -470,91 +519,131 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "cemetery",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "in",
-                "class",
-                "cemetery",
-                "grass",
-                "agriculture"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "in",
+                    "class",
+                    "cemetery",
+                    "grass",
+                    "agriculture"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "cemetery",
             "paint": {
                 "fill-color": "rgba(222,227,191,1)"
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "airport",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "==",
-                "class",
-                "industrial"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {},
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "industrial"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "airport",
             "paint": {
                 "fill-color": "#dfd3d5",
                 "fill-opacity": 0.25
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "sand",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "==",
-                "class",
-                "sand"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "sand"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "sand",
             "paint": {
                 "fill-color": "#f1f0d2",
                 "fill-opacity": 1,
                 "fill-pattern": "sand_noise"
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
-            "id": "grass_noise",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "landuse",
-            "filter": [
-                "in",
-                "class",
-                "cemetery",
-                "sand",
-                "pitch",
-                "wood",
-                "park",
-                "industrial"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "in",
+                    "class",
+                    "cemetery",
+                    "sand",
+                    "pitch",
+                    "wood",
+                    "park",
+                    "industrial"
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "grass_noise",
             "paint": {
                 "fill-opacity": {
                     "base": 1,
@@ -570,24 +659,33 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858163779.7869"
-            }
+            "source-layer": "landuse"
         },
         {
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible"
+            },
+            "maxzoom": 15,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "level",
+                    56
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
             "id": "shadow_uber",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "hillshade",
-            "filter": [
-                "==",
-                "level",
-                56
-            ],
-            "maxzoom": 15,
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
                 "fill-opacity": {
                     "base": 1,
@@ -604,24 +702,33 @@
                 },
                 "fill-color": "#2d1617"
             },
-            "metadata": {
-                "mapbox:group": "1444858181796.6055"
-            }
+            "source-layer": "hillshade"
         },
         {
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible"
+            },
+            "maxzoom": 15,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "level",
+                    67
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
             "id": "shadow_strong",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "hillshade",
-            "filter": [
-                "==",
-                "level",
-                67
-            ],
-            "maxzoom": 15,
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
                 "fill-opacity": {
                     "base": 1,
@@ -638,24 +745,33 @@
                 },
                 "fill-color": "#2d1617"
             },
-            "metadata": {
-                "mapbox:group": "1444858181796.6055"
-            }
+            "source-layer": "hillshade"
         },
         {
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible"
+            },
+            "maxzoom": 15,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "level",
+                    78
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
             "id": "shadow_medium",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "hillshade",
-            "filter": [
-                "==",
-                "level",
-                78
-            ],
-            "maxzoom": 15,
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
                 "fill-opacity": {
                     "base": 1,
@@ -672,24 +788,33 @@
                 },
                 "fill-color": "#2d1617"
             },
-            "metadata": {
-                "mapbox:group": "1444858181796.6055"
-            }
+            "source-layer": "hillshade"
         },
         {
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible"
+            },
+            "maxzoom": 15,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "level",
+                    89
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
             "id": "shadow_weak",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "hillshade",
-            "filter": [
-                "==",
-                "level",
-                89
-            ],
-            "maxzoom": 15,
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
                 "fill-opacity": {
                     "base": 1,
@@ -706,24 +831,33 @@
                 },
                 "fill-color": "#2d1617"
             },
-            "metadata": {
-                "mapbox:group": "1444858181796.6055"
-            }
+            "source-layer": "hillshade"
         },
         {
-            "id": "highlight_weak",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "hillshade",
-            "filter": [
-                "==",
-                "level",
-                90
-            ],
-            "maxzoom": 15,
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 15,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "level",
+                    90
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "highlight_weak",
             "paint": {
                 "fill-opacity": {
                     "base": 1,
@@ -740,36 +874,46 @@
                 },
                 "fill-color": "#fff"
             },
-            "metadata": {
-                "mapbox:group": "1444858181796.6055"
-            }
+            "source-layer": "hillshade"
         },
         {
-            "id": "highlight_medium",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "hillshade",
-            "filter": [
-                "==",
-                "level",
-                94
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "level",
+                    94
+                ]
+            ],
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "highlight_medium",
             "paint": {
                 "fill-color": "#fff",
                 "fill-opacity": 0.2
             },
-            "metadata": {
-                "mapbox:group": "1444858181796.6055"
-            }
+            "source-layer": "hillshade"
         },
         {
-            "id": "airport_runway",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "aeroway",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "line-cap": "butt"
+            },
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
@@ -783,9 +927,9 @@
                     "runway"
                 ]
             ],
-            "layout": {
-                "line-cap": "butt"
-            },
+            "type": "line",
+            "source": "compositedsource",
+            "id": "airport_runway",
             "paint": {
                 "line-width": {
                     "base": 1.5,
@@ -803,15 +947,15 @@
                 "line-opacity": 1,
                 "line-color": "#dfd3d5"
             },
-            "metadata": {
-                "mapbox:group": "1444858189651.4805"
-            }
+            "source-layer": "aeroway"
         },
         {
-            "id": "airport_taxiway",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "aeroway",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "line-cap": "butt"
+            },
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
@@ -825,9 +969,9 @@
                     "taxiway"
                 ]
             ],
-            "layout": {
-                "line-cap": "butt"
-            },
+            "type": "line",
+            "source": "compositedsource",
+            "id": "airport_taxiway",
             "paint": {
                 "line-width": {
                     "base": 1.25,
@@ -845,19 +989,18 @@
                 "line-opacity": 1,
                 "line-color": "#dfd3d5"
             },
-            "metadata": {
-                "mapbox:group": "1444858189651.4805"
-            }
+            "source-layer": "aeroway"
         },
         {
-            "id": "water_edge",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "water",
+            "interactive": false,
             "minzoom": 2,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "type": "line",
+            "source": "compositedsource",
+            "id": "water_edge",
             "paint": {
                 "line-color": "rgba(42,99,119,1.000)",
                 "line-opacity": 1,
@@ -876,35 +1019,35 @@
                 },
                 "line-blur": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858200762.7805"
-            }
+            "source-layer": "water"
         },
         {
-            "id": "water",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "water",
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "water",
             "paint": {
                 "fill-color": "rgba(195,224,224,1)",
                 "fill-outline-color": "#cadcea"
             },
-            "metadata": {
-                "mapbox:group": "1444858200762.7805"
-            }
+            "source-layer": "water"
         },
         {
-            "id": "waterway",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "waterway",
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round"
             },
+            "maxzoom": 22,
+            "type": "line",
+            "source": "compositedsource",
+            "id": "waterway",
             "paint": {
                 "line-color": "#c3e0df",
                 "line-width": {
@@ -921,15 +1064,15 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858200762.7805"
-            }
+            "source-layer": "waterway"
         },
         {
-            "id": "barrier_land",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "barrier_line",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
@@ -944,34 +1087,33 @@
                     "cliff"
                 ]
             ],
-            "layout": {
-                "visibility": "visible"
-            },
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "barrier_land",
             "paint": {
                 "fill-color": "#F8F4F0",
                 "fill-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858470265.9292"
-            }
+            "source-layer": "barrier_line"
         },
         {
-            "id": "building_walls",
-            "type": "fill",
-            "source": "mapbox",
-            "source-layer": "building",
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "type": "fill",
+            "source": "compositedsource",
+            "id": "building_walls",
             "paint": {
                 "fill-color": "#cfc4c3",
                 "fill-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858216876.1328"
-            }
+            "source-layer": "building"
         },
         {
+            "interactive": false,
             "id": "building_rooves",
             "paint": {
                 "fill-color": {
@@ -1008,18 +1150,18 @@
                 },
                 "fill-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858216876.1328"
-            }
+            "ref": "building_walls"
         },
         {
-            "id": "building_roof_edges",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "building",
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible"
             },
+            "maxzoom": 22,
+            "type": "line",
+            "source": "compositedsource",
+            "id": "building_roof_edges",
             "paint": {
                 "line-color": "#cfc4c3",
                 "line-width": 0.75,
@@ -1056,37 +1198,47 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858216876.1328"
-            }
+            "source-layer": "building"
         },
         {
-            "id": "country_border",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "admin",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "admin_level",
-                    2
-                ],
-                [
-                    "==",
-                    "maritime",
-                    0
-                ],
-                [
-                    "==",
-                    "disputed",
-                    0
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "admin_level",
+                        2
+                    ],
+                    [
+                        "==",
+                        "maritime",
+                        0
+                    ],
+                    [
+                        "==",
+                        "disputed",
+                        0
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "country_border",
             "paint": {
                 "line-color": "#293804",
                 "line-opacity": 0.5,
@@ -1104,37 +1256,47 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858269512.7246"
-            }
+            "source-layer": "admin"
         },
         {
-            "id": "country_border_disputed",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "admin",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "admin_level",
-                    2
-                ],
-                [
-                    "==",
-                    "maritime",
-                    0
-                ],
-                [
-                    "==",
-                    "disputed",
-                    1
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "admin_level",
+                        2
+                    ],
+                    [
+                        "==",
+                        "maritime",
+                        0
+                    ],
+                    [
+                        "==",
+                        "disputed",
+                        1
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "country_border_disputed",
             "paint": {
                 "line-color": "#293804",
                 "line-opacity": 0.5,
@@ -1157,32 +1319,42 @@
                     2
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858269512.7246"
-            }
+            "source-layer": "admin"
         },
         {
-            "id": "state_border",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "admin",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "admin_level",
-                    4
-                ],
-                [
-                    "==",
-                    "maritime",
-                    0
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "admin_level",
+                        4
+                    ],
+                    [
+                        "==",
+                        "maritime",
+                        0
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "state_border",
             "paint": {
                 "line-color": "#99a472",
                 "line-opacity": {
@@ -1216,15 +1388,10 @@
                     1
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858269512.7246"
-            }
+            "source-layer": "admin"
         },
         {
-            "id": "state-label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "state_label",
+            "interactive": false,
             "minzoom": 3,
             "layout": {
                 "text-size": {
@@ -1265,6 +1432,10 @@
                 "text-letter-spacing": 0.15,
                 "text-max-width": 4
             },
+            "maxzoom": 22,
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "state-label",
             "paint": {
                 "text-opacity": {
                     "base": 1,
@@ -1281,33 +1452,43 @@
                 },
                 "text-color": "#425807"
             },
-            "metadata": {
-                "mapbox:group": "1444858262202.7446"
-            }
+            "source-layer": "state_label"
         },
         {
-            "id": "tunnel_path",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "class",
-                    "path"
-                ],
-                [
-                    "!=",
-                    "type",
-                    "construction"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "class",
+                        "path"
+                    ],
+                    [
+                        "!=",
+                        "type",
+                        "construction"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_path",
             "paint": {
                 "line-color": "#a0aaa0",
                 "line-width": {
@@ -1341,25 +1522,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_service_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "==",
-                "class",
-                "service"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "square",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "service"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_service_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -1401,15 +1592,17 @@
                 ],
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_street_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "square",
+                "line-join": "round"
+            },
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
@@ -1432,11 +1625,9 @@
                     ]
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "square",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_street_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -1473,35 +1664,45 @@
                     0.5
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_tertiary_misc_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "!in",
-                    "type",
-                    "primary",
-                    "secondary",
-                    "trunk"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "square",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "!in",
+                        "type",
+                        "primary",
+                        "secondary",
+                        "trunk"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_tertiary_misc_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -1538,33 +1739,43 @@
                     0.5
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_secondary_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "secondary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "square",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "secondary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_secondary_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -1602,33 +1813,43 @@
                     0.5
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_primary_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "primary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "square",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "primary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_primary_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -1666,25 +1887,35 @@
                     0.5
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_trunk_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "==",
-                "type",
-                "trunk"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "square",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "type",
+                    "trunk"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_trunk_case",
             "paint": {
                 "line-color": "#dba866",
                 "line-width": {
@@ -1709,24 +1940,34 @@
                     0.5
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "construction_tunnel",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "==",
-                "type",
-                "construction"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "type",
+                    "construction"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "construction_tunnel",
             "paint": {
                 "line-width": {
                     "base": 1,
@@ -1752,26 +1993,36 @@
                     0
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_service",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "==",
-                "class",
-                "service"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-miter-limit": 2,
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "service"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_service",
             "paint": {
                 "line-color": "#fff",
                 "line-width": {
@@ -1792,15 +2043,17 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_street",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "butt",
+                "line-join": "round"
+            },
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
@@ -1823,11 +2076,9 @@
                     ]
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "butt",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_street",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -1865,35 +2116,45 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_tertiary_misc",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "!in",
-                    "type",
-                    "primary",
-                    "secondary",
-                    "trunk"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "!in",
+                        "type",
+                        "primary",
+                        "secondary",
+                        "trunk"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_tertiary_misc",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -1938,33 +2199,43 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_secondary",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "secondary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "secondary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_secondary",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -1994,33 +2265,43 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_primary",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "primary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "primary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_primary",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -2053,25 +2334,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_motorway_link_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "==",
-                "class",
-                "motorway_link"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "square",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "motorway_link"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_motorway_link_case",
             "paint": {
                 "line-color": "rgba(208,100,42,1.000)",
                 "line-width": {
@@ -2096,25 +2387,35 @@
                     0.5
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_motorway_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "==",
-                "class",
-                "motorway"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "square",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "motorway"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_motorway_case",
             "paint": {
                 "line-color": "rgba(208,100,42,1.000)",
                 "line-width": {
@@ -2139,33 +2440,43 @@
                     0.5
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_trunk",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "trunk"
-                ],
-                [
-                    "!=",
-                    "type",
-                    "construction"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "trunk"
+                    ],
+                    [
+                        "!=",
+                        "type",
+                        "construction"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_trunk",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -2196,33 +2507,43 @@
                 "line-gap-width": 0,
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_motorway_link",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "class",
-                    "motorway_link"
-                ],
-                [
-                    "!=",
-                    "type",
-                    "construction"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "class",
+                        "motorway_link"
+                    ],
+                    [
+                        "!=",
+                        "type",
+                        "construction"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_motorway_link",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -2255,33 +2576,43 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "tunnel_motorway",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "tunnel",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "class",
-                    "motorway"
-                ],
-                [
-                    "!=",
-                    "type",
-                    "construction"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "class",
+                        "motorway"
+                    ],
+                    [
+                        "!=",
+                        "type",
+                        "construction"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tunnel_motorway",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -2314,26 +2645,36 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858143444.556"
-            }
+            "source-layer": "tunnel"
         },
         {
-            "id": "railroad",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "in",
-                "class",
-                "major_rail",
-                "minor_rail"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "in",
+                    "class",
+                    "major_rail",
+                    "minor_rail"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "railroad",
             "paint": {
                 "line-color": "rgba(196,172,167,1)",
                 "line-width": {
@@ -2363,26 +2704,36 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "railroad_hashes",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "in",
-                "class",
-                "major_rail",
-                "minor_rail"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "in",
+                    "class",
+                    "major_rail",
+                    "minor_rail"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "railroad_hashes",
             "paint": {
                 "line-color": "rgba(196,172,167,1)",
                 "line-width": {
@@ -2416,15 +2767,17 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "path",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
@@ -2446,11 +2799,9 @@
                     ]
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "compositedsource",
+            "id": "path",
             "paint": {
                 "line-color": "#a0aaa0",
                 "line-width": {
@@ -2484,25 +2835,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "service_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "==",
-                "class",
-                "service"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "service"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "service_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -2552,15 +2913,17 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "street_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
@@ -2583,11 +2946,9 @@
                     ]
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "compositedsource",
+            "id": "street_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -2621,35 +2982,45 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "tertiary_misc_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "all",
-                [
-                    "!in",
-                    "type",
-                    "primary",
-                    "secondary",
-                    "trunk"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "!in",
+                        "type",
+                        "primary",
+                        "secondary",
+                        "trunk"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "tertiary_misc_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -2695,33 +3066,43 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "secondary_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "secondary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "secondary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "secondary_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -2755,33 +3136,43 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "primary_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "primary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "primary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "primary_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -2814,25 +3205,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "trunk_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "==",
-                "type",
-                "trunk"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "type",
+                    "trunk"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "trunk_case",
             "paint": {
                 "line-color": "#dba866",
                 "line-width": {
@@ -2866,24 +3267,34 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "construction_road",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "==",
-                "type",
-                "construction"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "type",
+                    "construction"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "construction_road",
             "paint": {
                 "line-width": {
                     "base": 1,
@@ -2909,11 +3320,10 @@
                     0
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
+            "interactive": false,
             "id": "service",
             "paint": {
                 "line-color": "#fff",
@@ -2935,11 +3345,10 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "ref": "service_case"
         },
         {
+            "interactive": false,
             "id": "street",
             "paint": {
                 "line-color": {
@@ -2978,11 +3387,10 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "ref": "street_case"
         },
         {
+            "interactive": false,
             "id": "tertiary_misc",
             "paint": {
                 "line-color": {
@@ -3028,11 +3436,10 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "ref": "tertiary_misc_case"
         },
         {
+            "interactive": false,
             "id": "secondary",
             "paint": {
                 "line-color": {
@@ -3063,11 +3470,10 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "ref": "secondary_case"
         },
         {
+            "interactive": false,
             "id": "primary",
             "paint": {
                 "line-color": {
@@ -3101,33 +3507,43 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "ref": "primary_case"
         },
         {
-            "id": "trunk",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "trunk"
-                ],
-                [
-                    "!=",
-                    "type",
-                    "construction"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "trunk"
+                    ],
+                    [
+                        "!=",
+                        "type",
+                        "construction"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "trunk",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -3158,25 +3574,35 @@
                 "line-gap-width": 0,
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "motorway_link_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "==",
-                "class",
-                "motorway_link"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "motorway_link"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "motorway_link_case",
             "paint": {
                 "line-color": "rgba(208,100,42,1.000)",
                 "line-width": {
@@ -3197,25 +3623,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "motorway_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "==",
-                "class",
-                "motorway"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "motorway"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "motorway_case",
             "paint": {
                 "line-color": "rgba(208,100,42,1.000)",
                 "line-width": {
@@ -3237,11 +3673,10 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "source-layer": "road"
         },
         {
+            "interactive": false,
             "id": "motorway_link",
             "paint": {
                 "line-color": {
@@ -3275,11 +3710,10 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "ref": "motorway_link_case"
         },
         {
+            "interactive": false,
             "id": "motorway",
             "paint": {
                 "line-color": {
@@ -3326,20 +3760,11 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858128913.9963"
-            }
+            "ref": "motorway_case"
         },
         {
-            "id": "river_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "waterway_label",
-            "filter": [
-                "==",
-                "type",
-                "river"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": {
                     "base": 1,
@@ -3383,25 +3808,35 @@
                 "text-letter-spacing": 0.3,
                 "text-max-width": 5
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "type",
+                    "river"
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "river_label",
             "paint": {
                 "text-color": "#568eb3",
                 "text-halo-color": "#F8F4F0",
                 "text-halo-width": 0
             },
-            "metadata": {
-                "mapbox:group": "1444858096986.3894"
-            }
+            "source-layer": "waterway_label"
         },
         {
-            "id": "marine_label_big",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "marine_label",
-            "filter": [
-                "<=",
-                "labelrank",
-                1
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": {
                     "base": 1,
@@ -3445,33 +3880,35 @@
                 "text-letter-spacing": 0.3,
                 "text-max-width": 5
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "<=",
+                    "labelrank",
+                    1
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "marine_label_big",
             "paint": {
                 "text-color": "#568eb3",
                 "text-halo-color": "#F8F4F0",
                 "text-halo-width": 0
             },
-            "metadata": {
-                "mapbox:group": "1444858096986.3894"
-            }
+            "source-layer": "marine_label"
         },
         {
-            "id": "marine_label_medium_linear",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "marine_label",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "$type",
-                    "LineString"
-                ],
-                [
-                    ">",
-                    "labelrank",
-                    2
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": {
                     "base": 1,
@@ -3515,26 +3952,13 @@
                 "text-letter-spacing": 0.2,
                 "text-max-width": 7.5
             },
-            "paint": {
-                "text-color": "#568eb3",
-                "text-halo-color": "#F8F4F0",
-                "text-halo-width": 0
-            },
-            "metadata": {
-                "mapbox:group": "1444858096986.3894"
-            }
-        },
-        {
-            "id": "marine_label_medium_point",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "marine_label",
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
                     "==",
                     "$type",
-                    "Point"
+                    "LineString"
                 ],
                 [
                     ">",
@@ -3542,6 +3966,19 @@
                     2
                 ]
             ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "marine_label_medium_linear",
+            "paint": {
+                "text-color": "#568eb3",
+                "text-halo-color": "#F8F4F0",
+                "text-halo-width": 0
+            },
+            "source-layer": "marine_label"
+        },
+        {
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": {
                     "base": 1,
@@ -3585,30 +4022,57 @@
                 "text-letter-spacing": 0.2,
                 "text-max-width": 7.5
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    ">",
+                    "labelrank",
+                    2
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "marine_label_medium_point",
             "paint": {
                 "text-color": "#568eb3",
                 "text-halo-color": "#F8F4F0",
                 "text-halo-width": 0
             },
-            "metadata": {
-                "mapbox:group": "1444858096986.3894"
-            }
+            "source-layer": "marine_label"
         },
         {
-            "id": "bridge_service_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "class",
-                "service"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "service"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_service_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -3645,15 +4109,17 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_street_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "butt",
+                "line-join": "round"
+            },
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
@@ -3676,11 +4142,9 @@
                     ]
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "butt",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_street_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -3714,35 +4178,45 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_tertiary_misc_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "all",
-                [
-                    "!in",
-                    "type",
-                    "primary",
-                    "secondary",
-                    "trunk"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "!in",
+                        "type",
+                        "primary",
+                        "secondary",
+                        "trunk"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_tertiary_misc_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -3788,33 +4262,43 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_secondary_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "secondary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "secondary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_secondary_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -3860,33 +4344,43 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_primary_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "primary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "primary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_primary_case",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -3919,25 +4413,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_trunk_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "type",
-                "trunk"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "type",
+                    "trunk"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_trunk_case",
             "paint": {
                 "line-color": "#dba866",
                 "line-width": {
@@ -3971,24 +4475,34 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "construction_bridge",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "type",
-                "construction"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "type",
+                    "construction"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "construction_bridge",
             "paint": {
                 "line-width": {
                     "base": 1,
@@ -4014,11 +4528,10 @@
                     0
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
+            "interactive": false,
             "id": "bridge_service",
             "paint": {
                 "line-color": "#fff",
@@ -4040,15 +4553,17 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "ref": "bridge_service_case"
         },
         {
-            "id": "bridge_street",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "maxzoom": 22,
             "filter": [
                 "all",
                 [
@@ -4063,11 +4578,9 @@
                     "street_limited"
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_street",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -4105,35 +4618,45 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_tertiary_misc",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "all",
-                [
-                    "!in",
-                    "type",
-                    "primary",
-                    "secondary",
-                    "trunk"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "!in",
+                        "type",
+                        "primary",
+                        "secondary",
+                        "trunk"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_tertiary_misc",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -4178,34 +4701,43 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_secondary",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "secondary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
             "minzoom": 11,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "secondary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_secondary",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -4235,33 +4767,43 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_primary",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "primary"
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "primary"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ]
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_primary",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -4294,25 +4836,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_trunk",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "type",
-                "trunk"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "type",
+                    "trunk"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_trunk",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -4342,25 +4894,35 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_motorway_link_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "class",
-                "motorway_link"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "motorway_link"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_motorway_link_case",
             "paint": {
                 "line-color": "rgba(208,100,42,1.000)",
                 "line-width": {
@@ -4381,25 +4943,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_motorway_case",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "class",
-                "motorway"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "motorway"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_motorway_case",
             "paint": {
                 "line-color": "rgba(208,100,42,1.000)",
                 "line-width": {
@@ -4421,25 +4993,35 @@
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_motorway_link",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "class",
-                "motorway_link"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "motorway_link"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_motorway_link",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -4472,25 +5054,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_path",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "class",
-                "path"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "path"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_path",
             "paint": {
                 "line-color": "#a0aaa0",
                 "line-width": {
@@ -4524,25 +5116,35 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_motorway",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "class",
-                "motorway"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "motorway"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_motorway",
             "paint": {
                 "line-color": {
                     "base": 1,
@@ -4588,26 +5190,36 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_railroad",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "in",
-                "class",
-                "major_rail",
-                "minor_rail"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "in",
+                    "class",
+                    "major_rail",
+                    "minor_rail"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_railroad",
             "paint": {
                 "line-color": "rgba(196,172,167,1)",
                 "line-width": {
@@ -4637,26 +5249,36 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge_railroad_hashes",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "bridge",
-            "filter": [
-                "in",
-                "class",
-                "major_rail",
-                "minor_rail"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
                 "line-join": "round"
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "in",
+                    "class",
+                    "major_rail",
+                    "minor_rail"
+                ]
+            ],
+            "type": "line",
+            "source": "compositedsource",
+            "id": "bridge_railroad_hashes",
             "paint": {
                 "line-color": "rgba(196,172,167,1)",
                 "line-width": {
@@ -4690,20 +5312,11 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858082697.2502"
-            }
+            "source-layer": "bridge"
         },
         {
-            "id": "country_label_small",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "country_label",
-            "filter": [
-                ">",
-                "scalerank",
-                2
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": 1.1,
                 "text-size": {
@@ -4732,26 +5345,36 @@
                 "text-letter-spacing": 0.05,
                 "text-max-width": 4
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    ">",
+                    "scalerank",
+                    2
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "country_label_small",
             "paint": {
                 "text-opacity": 1,
                 "text-halo-color": "#F4efe8",
                 "text-halo-width": 2,
                 "text-color": "#2d1617"
             },
-            "metadata": {
-                "mapbox:group": "1444858398532.1323"
-            }
+            "source-layer": "country_label"
         },
         {
-            "id": "country_label_big",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "country_label",
-            "filter": [
-                "<=",
-                "scalerank",
-                2
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": 1.1,
                 "text-size": {
@@ -4783,46 +5406,36 @@
                 "text-letter-spacing": 0.05,
                 "text-max-width": 4
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "<=",
+                    "scalerank",
+                    2
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "country_label_big",
             "paint": {
                 "text-opacity": 1,
                 "text-halo-color": "#F4efe8",
                 "text-halo-width": 2,
                 "text-color": "#2d1617"
             },
-            "metadata": {
-                "mapbox:group": "1444858398532.1323"
-            }
+            "source-layer": "country_label"
         },
         {
-            "id": "generic_small_labels",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "poi_label",
-            "filter": [
-                "all",
-                [
-                    "!in",
-                    "maki",
-                    "rail-light",
-                    "rail-metro",
-                    "rail",
-                    "school",
-                    "park",
-                    "college",
-                    "golf",
-                    "station"
-                ],
-                [
-                    ">=",
-                    "scalerank",
-                    3
-                ],
-                [
-                    "!=",
-                    "type",
-                    "Apartments"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": 1.05,
                 "text-size": {
@@ -4855,33 +5468,54 @@
                 "text-letter-spacing": 0.05,
                 "text-max-width": 5
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "!in",
+                        "maki",
+                        "rail-light",
+                        "rail-metro",
+                        "rail",
+                        "school",
+                        "park",
+                        "college",
+                        "golf",
+                        "station"
+                    ],
+                    [
+                        ">=",
+                        "scalerank",
+                        3
+                    ],
+                    [
+                        "!=",
+                        "type",
+                        "Apartments"
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "generic_small_labels",
             "paint": {
                 "text-color": "rgba(99,93,96,0.842)",
                 "text-halo-color": "#F5F0e9",
                 "text-halo-width": 1.5
             },
-            "metadata": {
-                "mapbox:group": "1444858346799.9988"
-            }
+            "source-layer": "poi_label"
         },
         {
-            "id": "oneway_arrows_motorway",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "oneway",
-                    1
-                ],
-                [
-                    "==",
-                    "class",
-                    "motorway"
-                ]
-            ],
+            "interactive": false,
             "minzoom": 16,
             "layout": {
                 "text-line-height": 0,
@@ -4923,6 +5557,33 @@
                 "icon-padding": 0,
                 "icon-ignore-placement": true
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "oneway",
+                        1
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "motorway"
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "oneway_arrows_motorway",
             "paint": {
                 "text-color": "#504a4c",
                 "text-halo-color": "#aaa",
@@ -4933,29 +5594,10 @@
                 ],
                 "text-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858346799.9988"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "oneway_arrows_small",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "oneway",
-                    1
-                ],
-                [
-                    "in",
-                    "class",
-                    "street",
-                    "street_limited"
-                ]
-            ],
+            "interactive": false,
             "minzoom": 18,
             "layout": {
                 "text-line-height": 1,
@@ -4985,6 +5627,34 @@
                 "icon-padding": 0,
                 "icon-ignore-placement": true
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "oneway",
+                        1
+                    ],
+                    [
+                        "in",
+                        "class",
+                        "street",
+                        "street_limited"
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "oneway_arrows_small",
             "paint": {
                 "text-color": "#aaa",
                 "text-halo-color": "#aaa",
@@ -4995,33 +5665,10 @@
                 ],
                 "text-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858346799.9988"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "oneway_arrows_large",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "oneway",
-                    1
-                ],
-                [
-                    "==",
-                    "class",
-                    "main"
-                ],
-                [
-                    "!=",
-                    "type",
-                    "trunk"
-                ]
-            ],
+            "interactive": false,
             "minzoom": 15,
             "layout": {
                 "text-line-height": 0,
@@ -5079,6 +5726,38 @@
                 "icon-padding": 0,
                 "icon-ignore-placement": true
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "oneway",
+                        1
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "main"
+                    ],
+                    [
+                        "!=",
+                        "type",
+                        "trunk"
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "oneway_arrows_large",
             "paint": {
                 "text-color": "#aaa",
                 "text-halo-color": "#aaa",
@@ -5089,21 +5768,11 @@
                 ],
                 "text-opacity": 0
             },
-            "metadata": {
-                "mapbox:group": "1444858346799.9988"
-            }
+            "source-layer": "road"
         },
         {
-            "id": "neighborhood_island",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "poi_label",
-            "filter": [
-                "==",
-                "type",
-                "Island"
-            ],
-            "maxzoom": 18,
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": {
                     "base": 1,
@@ -5160,6 +5829,25 @@
                 },
                 "text-max-width": 5
             },
+            "maxzoom": 18,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "type",
+                    "Island"
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "neighborhood_island",
             "paint": {
                 "text-color": "#844",
                 "text-halo-color": "#F4efe8",
@@ -5177,45 +5865,108 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858346799.9988"
-            }
+            "source-layer": "poi_label"
         },
         {
-            "id": "small_maki_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "poi_label",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "text-line-height": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            1.1
+                        ],
+                        [
+                            20,
+                            1.75
+                        ]
+                    ]
+                },
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            12,
+                            12
+                        ],
+                        [
+                            20,
+                            28
+                        ]
+                    ]
+                },
+                "text-allow-overlap": false,
+                "symbol-avoid-edges": false,
+                "text-ignore-placement": false,
+                "text-max-angle": 38,
+                "symbol-spacing": 250,
+                "text-font": [
+                    "Open Sans Italic",
+                    "Arial Unicode MS Regular"
+                ],
+                "symbol-placement": "point",
+                "text-padding": 10,
+                "visibility": "visible",
+                "text-rotation-alignment": "viewport",
+                "text-field": "{name_en}",
+                "text-letter-spacing": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            10,
+                            0.05
+                        ],
+                        [
+                            12,
+                            0.15
+                        ]
+                    ]
+                },
+                "text-max-width": 5
+            },
+            "maxzoom": 18,
             "filter": [
-                "any",
+                "all",
                 [
                     "in",
-                    "maki",
-                    "school",
-                    "museum",
-                    "library",
-                    "monument",
-                    "hospital",
-                    "fire-station",
-                    "religious-christian",
-                    "religious-muslim",
-                    "religious-jewish",
-                    "post",
-                    "embassy",
-                    "police",
-                    "prison",
-                    "college",
-                    "harbor",
-                    "airport",
-                    "airfield"
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
                 ],
                 [
-                    "in",
+                    "==",
                     "type",
-                    "Military",
-                    "Government"
+                    "suburb"
                 ]
             ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "neighborhood_small_label",
+            "paint": {
+                "text-color": "#844",
+                "text-halo-color": "#F4efe8",
+                "text-halo-width": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            12,
+                            1.5
+                        ],
+                        [
+                            20,
+                            5
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "place_label"
+        },
+        {
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-optional": true,
                 "text-line-height": 1,
@@ -5255,6 +6006,50 @@
                 "text-letter-spacing": 0.01,
                 "text-max-width": 10
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "any",
+                    [
+                        "in",
+                        "maki",
+                        "school",
+                        "museum",
+                        "library",
+                        "monument",
+                        "hospital",
+                        "fire-station",
+                        "religious-christian",
+                        "religious-muslim",
+                        "religious-jewish",
+                        "post",
+                        "embassy",
+                        "police",
+                        "prison",
+                        "college",
+                        "harbor",
+                        "airport",
+                        "airfield"
+                    ],
+                    [
+                        "in",
+                        "type",
+                        "Military",
+                        "Government"
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "small_maki_label",
             "paint": {
                 "text-color": "#504a4c",
                 "text-halo-color": "#F8F4F0",
@@ -5273,23 +6068,11 @@
                 },
                 "icon-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858346799.9988"
-            }
+            "source-layer": "poi_label"
         },
         {
-            "id": "park_small_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "poi_label",
-            "filter": [
-                "in",
-                "maki",
-                "park",
-                "golf",
-                "zoo",
-                "cemetery"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-optional": true,
                 "text-line-height": 1,
@@ -5329,35 +6112,39 @@
                 "text-letter-spacing": 0,
                 "text-max-width": 8
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "in",
+                    "maki",
+                    "park",
+                    "golf",
+                    "zoo",
+                    "cemetery"
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "park_small_label",
             "paint": {
                 "text-color": "rgba(9,43,9,1.000)",
                 "text-halo-color": "#F4efe8",
                 "text-halo-width": 2,
                 "text-halo-blur": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858346799.9988"
-            }
+            "source-layer": "poi_label"
         },
         {
-            "id": "airport_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "poi_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "maki",
-                    "airport",
-                    "airfield"
-                ],
-                [
-                    "<=",
-                    "scalerank",
-                    2
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-optional": true,
                 "text-line-height": 1,
@@ -5408,35 +6195,44 @@
                 "text-letter-spacing": 0,
                 "text-max-width": 12
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "in",
+                        "maki",
+                        "airport",
+                        "airfield"
+                    ],
+                    [
+                        "<=",
+                        "scalerank",
+                        2
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "airport_label",
             "paint": {
                 "text-color": "#666",
                 "text-halo-color": "#F4efe8",
                 "text-halo-width": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858346799.9988"
-            }
+            "source-layer": "poi_label"
         },
         {
-            "id": "road-label-small",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road_label",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "$type",
-                    "LineString"
-                ],
-                [
-                    "in",
-                    "class",
-                    "path",
-                    "service",
-                    "street_limited"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-size": {
                     "base": 1.2,
@@ -5464,6 +6260,25 @@
                 "text-field": "{name_en}",
                 "text-letter-spacing": 0.05
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "LineString"
+                ],
+                [
+                    "in",
+                    "class",
+                    "path",
+                    "service",
+                    "street_limited"
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "road-label-small",
             "paint": {
                 "text-color": "#785655",
                 "text-halo-color": "#F8F4F0",
@@ -5481,20 +6296,11 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "road_label"
         },
         {
-            "id": "road-label-medium",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road_label",
-            "filter": [
-                "==",
-                "class",
-                "street"
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-size": {
                     "base": 1.2,
@@ -5522,6 +6328,25 @@
                 "text-field": "{name_en}",
                 "text-letter-spacing": 0.05
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "class",
+                    "street"
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "road-label-medium",
             "paint": {
                 "text-color": "#785655",
                 "text-halo-color": {
@@ -5551,29 +6376,11 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "road_label"
         },
         {
-            "id": "road-label-large",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "class",
-                    "main",
-                    "motorway_link"
-                ],
-                [
-                    "<=",
-                    "localrank",
-                    4
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-size": {
                     "base": 1.2,
@@ -5603,6 +6410,34 @@
                 "text-field": "{name_en}",
                 "text-letter-spacing": 0.05
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "in",
+                        "class",
+                        "main",
+                        "motorway_link"
+                    ],
+                    [
+                        "<=",
+                        "localrank",
+                        4
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "road-label-large",
             "paint": {
                 "text-color": "#785655",
                 "text-halo-color": {
@@ -5632,54 +6467,121 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "road_label"
         },
         {
-            "id": "generic_big_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "poi_label",
+            "interactive": false,
+            "minzoom": 0,
+            "layout": {
+                "text-line-height": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            1.1
+                        ],
+                        [
+                            20,
+                            1.75
+                        ]
+                    ]
+                },
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            12,
+                            12
+                        ],
+                        [
+                            20,
+                            28
+                        ]
+                    ]
+                },
+                "text-allow-overlap": false,
+                "symbol-avoid-edges": false,
+                "text-ignore-placement": false,
+                "text-max-angle": 38,
+                "symbol-spacing": 250,
+                "text-font": [
+                    "Open Sans Italic",
+                    "Arial Unicode MS Regular"
+                ],
+                "symbol-placement": "point",
+                "text-padding": 0,
+                "visibility": "visible",
+                "text-offset": [
+                    0,
+                    0
+                ],
+                "text-rotation-alignment": "viewport",
+                "text-field": "{name_en}",
+                "text-letter-spacing": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            10,
+                            0.05
+                        ],
+                        [
+                            12,
+                            0.15
+                        ]
+                    ]
+                },
+                "text-max-width": 5
+            },
+            "maxzoom": 18,
             "filter": [
                 "all",
                 [
-                    "!in",
-                    "maki",
-                    "rail-light",
-                    "rail-metro",
-                    "rail",
-                    "school",
-                    "park",
-                    "cemetery",
-                    "college",
-                    "golf",
-                    "hospital",
-                    "zoo",
-                    "museum",
-                    "post",
-                    "harbor",
-                    "monument",
-                    "airport",
-                    "airfield",
-                    "prison"
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
                 ],
                 [
-                    "<=",
-                    "scalerank",
-                    2
-                ],
-                [
-                    "!in",
-                    "type",
-                    "Island",
-                    "Wetland",
-                    "Garden",
-                    "Military",
-                    "Government",
-                    "Residential"
+                    "all",
+                    [
+                        "in",
+                        "type",
+                        "neighbourhood",
+                        "suburb"
+                    ],
+                    [
+                        "<=",
+                        "localrank",
+                        5
+                    ]
                 ]
             ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "neighborhood_large_label",
+            "paint": {
+                "text-color": "#844",
+                "text-halo-color": "#F4efe8",
+                "text-halo-width": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            12,
+                            1.5
+                        ],
+                        [
+                            20,
+                            5
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "place_label"
+        },
+        {
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": 1,
                 "text-size": {
@@ -5718,39 +6620,69 @@
                 "text-letter-spacing": 0.02,
                 "text-max-width": 10
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "!in",
+                        "maki",
+                        "rail-light",
+                        "rail-metro",
+                        "rail",
+                        "school",
+                        "park",
+                        "cemetery",
+                        "college",
+                        "golf",
+                        "hospital",
+                        "zoo",
+                        "museum",
+                        "post",
+                        "harbor",
+                        "monument",
+                        "airport",
+                        "airfield",
+                        "prison"
+                    ],
+                    [
+                        "<=",
+                        "scalerank",
+                        2
+                    ],
+                    [
+                        "!in",
+                        "type",
+                        "Island",
+                        "Wetland",
+                        "Garden",
+                        "Military",
+                        "Government",
+                        "Residential"
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "generic_big_label",
             "paint": {
                 "text-color": "#504a4c",
                 "text-halo-color": "#F4efe8",
                 "text-halo-width": 1.5
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "poi_label"
         },
         {
-            "id": "generic_motorway_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "class",
-                    "motorway",
-                    "motorway_link"
-                ],
-                [
-                    "==",
-                    "shield",
-                    "default"
-                ],
-                [
-                    "<=",
-                    "reflen",
-                    6
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-size": {
                     "base": 1,
@@ -5795,6 +6727,39 @@
                 "text-field": "{ref}",
                 "text-letter-spacing": 0.05
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "in",
+                        "class",
+                        "motorway",
+                        "motorway_link"
+                    ],
+                    [
+                        "==",
+                        "shield",
+                        "default"
+                    ],
+                    [
+                        "<=",
+                        "reflen",
+                        6
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "generic_motorway_label",
             "paint": {
                 "text-color": "#fff",
                 "icon-halo-width": 0,
@@ -5803,37 +6768,11 @@
                 "text-halo-color": "#fff",
                 "text-halo-width": 0
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "road_label"
         },
         {
-            "id": "us_stateroad_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "shield",
-                    "us-state",
-                    "us-state-loop",
-                    "us-state-business",
-                    "us-state-toll",
-                    "us-state-truck"
-                ],
-                [
-                    "==",
-                    "class",
-                    "motorway"
-                ],
-                [
-                    "<=",
-                    "reflen",
-                    3
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-size": {
                     "base": 1,
@@ -5878,6 +6817,42 @@
                 "text-letter-spacing": 0,
                 "icon-padding": 0
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "in",
+                        "shield",
+                        "us-state",
+                        "us-state-loop",
+                        "us-state-business",
+                        "us-state-toll",
+                        "us-state-truck"
+                    ],
+                    [
+                        "==",
+                        "class",
+                        "motorway"
+                    ],
+                    [
+                        "<=",
+                        "reflen",
+                        3
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "us_stateroad_label",
             "paint": {
                 "text-color": "#997373",
                 "icon-halo-color": "rgba(0, 0, 0, 1)",
@@ -5887,31 +6862,11 @@
                 "text-halo-color": "#fff",
                 "text-halo-width": 0
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "road_label"
         },
         {
-            "id": "us_highway_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "shield",
-                    "us-highway",
-                    "us-highway-alternate",
-                    "us-highway-business",
-                    "us-highway-duplex"
-                ],
-                [
-                    "<=",
-                    "reflen",
-                    3
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-size": {
                     "base": 1,
@@ -5955,6 +6910,36 @@
                 "text-field": "{ref}",
                 "text-letter-spacing": 0
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "in",
+                        "shield",
+                        "us-highway",
+                        "us-highway-alternate",
+                        "us-highway-business",
+                        "us-highway-duplex"
+                    ],
+                    [
+                        "<=",
+                        "reflen",
+                        3
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "us_highway_label",
             "paint": {
                 "text-color": "#997373",
                 "icon-halo-color": "rgba(0, 0, 0, 1)",
@@ -5965,31 +6950,11 @@
                 "text-halo-width": 0,
                 "icon-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "road_label"
         },
         {
-            "id": "us_interstate_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "road_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "shield",
-                    "us-interstate",
-                    "us-interstate-alternate",
-                    "us-interstate-business",
-                    "us-interstate-duplex"
-                ],
-                [
-                    "<=",
-                    "reflen",
-                    3
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": 1.4,
                 "text-size": {
@@ -6042,6 +7007,36 @@
                 "icon-padding": 0,
                 "text-max-width": 0
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "in",
+                        "shield",
+                        "us-interstate",
+                        "us-interstate-alternate",
+                        "us-interstate-business",
+                        "us-interstate-duplex"
+                    ],
+                    [
+                        "<=",
+                        "reflen",
+                        3
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "us_interstate_label",
             "paint": {
                 "text-color": "white",
                 "icon-halo-color": "white",
@@ -6051,49 +7046,11 @@
                 "text-halo-width": 0,
                 "icon-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "road_label"
         },
         {
-            "id": "generic_rail_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "poi_label",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "maki",
-                    "rail"
-                ],
-                [
-                    "!in",
-                    "network",
-                    "rer",
-                    "moscow-metro",
-                    "london-overground",
-                    "london-underground",
-                    "dlr",
-                    "national-rail",
-                    "s-bahn",
-                    "s-bahn.u-bahn",
-                    "u-bahn",
-                    "transilien",
-                    "london-overground.london-underground",
-                    "dlr.london-overground.london-underground.national-rail",
-                    "dlr.london-underground",
-                    "dlr.london-underground.national-rail",
-                    "metro",
-                    "london-overground.london-underground.national-rail",
-                    "london-overground.national-rail",
-                    "national-rail",
-                    "wiener-linien",
-                    "washington-metro",
-                    "london-underground.national-rail",
-                    "metro"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-optional": false,
                 "text-line-height": 1,
@@ -6154,6 +7111,54 @@
                 "text-max-width": 5.2,
                 "icon-ignore-placement": false
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "maki",
+                        "rail"
+                    ],
+                    [
+                        "!in",
+                        "network",
+                        "rer",
+                        "moscow-metro",
+                        "london-overground",
+                        "london-underground",
+                        "dlr",
+                        "national-rail",
+                        "s-bahn",
+                        "s-bahn.u-bahn",
+                        "u-bahn",
+                        "transilien",
+                        "london-overground.london-underground",
+                        "dlr.london-overground.london-underground.national-rail",
+                        "dlr.london-underground",
+                        "dlr.london-underground.national-rail",
+                        "metro",
+                        "london-overground.london-underground.national-rail",
+                        "london-overground.national-rail",
+                        "national-rail",
+                        "wiener-linien",
+                        "washington-metro",
+                        "london-underground.national-rail",
+                        "metro"
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "generic_rail_label",
             "paint": {
                 "text-color": "#4a0e11",
                 "text-halo-color": "#F4efe8",
@@ -6178,50 +7183,11 @@
                     0
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "poi_label"
         },
         {
-            "id": "generic_metro_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "poi_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "maki",
-                    "rail-light",
-                    "rail-metro"
-                ],
-                [
-                    "!in",
-                    "network",
-                    "rer",
-                    "moscow-metro",
-                    "london-overground",
-                    "london-underground",
-                    "dlr",
-                    "national-rail",
-                    "s-bahn",
-                    "s-bahn.u-bahn",
-                    "u-bahn",
-                    "transilien",
-                    "london-overground.london-underground",
-                    "dlr.london-overground.london-underground.national-rail",
-                    "dlr.london-underground",
-                    "dlr.london-underground.national-rail",
-                    "metro",
-                    "london-overground.london-underground.national-rail",
-                    "london-overground.national-rail",
-                    "national-rail",
-                    "wiener-linien",
-                    "washington-metro",
-                    "london-underground.national-rail",
-                    "metro"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-optional": false,
                 "text-line-height": 1,
@@ -6294,6 +7260,55 @@
                     ]
                 }
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "in",
+                        "maki",
+                        "rail-light",
+                        "rail-metro"
+                    ],
+                    [
+                        "!in",
+                        "network",
+                        "rer",
+                        "moscow-metro",
+                        "london-overground",
+                        "london-underground",
+                        "dlr",
+                        "national-rail",
+                        "s-bahn",
+                        "s-bahn.u-bahn",
+                        "u-bahn",
+                        "transilien",
+                        "london-overground.london-underground",
+                        "dlr.london-overground.london-underground.national-rail",
+                        "dlr.london-underground",
+                        "dlr.london-underground.national-rail",
+                        "metro",
+                        "london-overground.london-underground.national-rail",
+                        "london-overground.national-rail",
+                        "national-rail",
+                        "wiener-linien",
+                        "washington-metro",
+                        "london-underground.national-rail",
+                        "metro"
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "generic_metro_label",
             "paint": {
                 "text-color": "#4a0e11",
                 "text-halo-color": "#F4efe8",
@@ -6318,51 +7333,11 @@
                     0
                 ]
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "poi_label"
         },
         {
-            "id": "networked_rail_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "poi_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "maki",
-                    "rail-light",
-                    "rail-metro",
-                    "rail"
-                ],
-                [
-                    "in",
-                    "network",
-                    "rer",
-                    "moscow-metro",
-                    "london-overground",
-                    "london-underground",
-                    "dlr",
-                    "national-rail",
-                    "s-bahn",
-                    "s-bahn.u-bahn",
-                    "u-bahn",
-                    "transilien",
-                    "london-overground.london-underground",
-                    "dlr.london-overground.london-underground.national-rail",
-                    "dlr.london-underground",
-                    "dlr.london-underground.national-rail",
-                    "metro",
-                    "london-overground.london-underground.national-rail",
-                    "london-overground.national-rail",
-                    "national-rail",
-                    "wiener-linien",
-                    "washington-metro",
-                    "london-underground.national-rail",
-                    "metro"
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-optional": false,
                 "text-line-height": 1,
@@ -6436,6 +7411,56 @@
                     ]
                 }
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "in",
+                        "maki",
+                        "rail-light",
+                        "rail-metro",
+                        "rail"
+                    ],
+                    [
+                        "in",
+                        "network",
+                        "rer",
+                        "moscow-metro",
+                        "london-overground",
+                        "london-underground",
+                        "dlr",
+                        "national-rail",
+                        "s-bahn",
+                        "s-bahn.u-bahn",
+                        "u-bahn",
+                        "transilien",
+                        "london-overground.london-underground",
+                        "dlr.london-overground.london-underground.national-rail",
+                        "dlr.london-underground",
+                        "dlr.london-underground.national-rail",
+                        "metro",
+                        "london-overground.london-underground.national-rail",
+                        "london-overground.national-rail",
+                        "national-rail",
+                        "wiener-linien",
+                        "washington-metro",
+                        "london-underground.national-rail",
+                        "metro"
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "networked_rail_label",
             "paint": {
                 "text-color": "#4a0e11",
                 "icon-halo-color": "#fff",
@@ -6461,218 +7486,11 @@
                 },
                 "icon-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444858496690.794"
-            }
+            "source-layer": "poi_label"
         },
         {
-            "id": "neighborhood_small_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "place_label",
-            "filter": [
-                "==",
-                "type",
-                "suburb"
-            ],
-            "maxzoom": 18,
-            "layout": {
-                "text-line-height": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            8,
-                            1.1
-                        ],
-                        [
-                            20,
-                            1.75
-                        ]
-                    ]
-                },
-                "text-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            12,
-                            12
-                        ],
-                        [
-                            20,
-                            28
-                        ]
-                    ]
-                },
-                "text-allow-overlap": false,
-                "symbol-avoid-edges": false,
-                "text-ignore-placement": false,
-                "text-max-angle": 38,
-                "symbol-spacing": 250,
-                "text-font": [
-                    "Open Sans Italic",
-                    "Arial Unicode MS Regular"
-                ],
-                "symbol-placement": "point",
-                "text-padding": 10,
-                "visibility": "visible",
-                "text-rotation-alignment": "viewport",
-                "text-field": "{name_en}",
-                "text-letter-spacing": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            10,
-                            0.05
-                        ],
-                        [
-                            12,
-                            0.15
-                        ]
-                    ]
-                },
-                "text-max-width": 5
-            },
-            "paint": {
-                "text-color": "#844",
-                "text-halo-color": "#F4efe8",
-                "text-halo-width": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            12,
-                            1.5
-                        ],
-                        [
-                            20,
-                            5
-                        ]
-                    ]
-                }
-            },
-            "metadata": {
-                "mapbox:group": "1444857916000.3777"
-            }
-        },
-        {
-            "id": "neighborhood_large_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "place_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "type",
-                    "neighbourhood",
-                    "suburb"
-                ],
-                [
-                    "<=",
-                    "localrank",
-                    5
-                ]
-            ],
-            "maxzoom": 18,
-            "layout": {
-                "text-line-height": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            8,
-                            1.1
-                        ],
-                        [
-                            20,
-                            1.75
-                        ]
-                    ]
-                },
-                "text-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            12,
-                            12
-                        ],
-                        [
-                            20,
-                            28
-                        ]
-                    ]
-                },
-                "text-allow-overlap": false,
-                "symbol-avoid-edges": false,
-                "text-ignore-placement": false,
-                "text-max-angle": 38,
-                "symbol-spacing": 250,
-                "text-font": [
-                    "Open Sans Italic",
-                    "Arial Unicode MS Regular"
-                ],
-                "symbol-placement": "point",
-                "text-padding": 0,
-                "visibility": "visible",
-                "text-offset": [
-                    0,
-                    0
-                ],
-                "text-rotation-alignment": "viewport",
-                "text-field": "{name_en}",
-                "text-letter-spacing": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            10,
-                            0.05
-                        ],
-                        [
-                            12,
-                            0.15
-                        ]
-                    ]
-                },
-                "text-max-width": 5
-            },
-            "paint": {
-                "text-color": "#844",
-                "text-halo-color": "#F4efe8",
-                "text-halo-width": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            12,
-                            1.5
-                        ],
-                        [
-                            20,
-                            5
-                        ]
-                    ]
-                }
-            },
-            "metadata": {
-                "mapbox:group": "1444857916000.3777"
-            }
-        },
-        {
-            "id": "hamlet_village_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "place_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "type",
-                    "village",
-                    "hamlet"
-                ],
-                [
-                    "<=",
-                    "localrank",
-                    30
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": {
                     "base": 1,
@@ -6722,6 +7540,34 @@
                 "text-letter-spacing": 0,
                 "text-max-width": 5
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "in",
+                        "type",
+                        "village",
+                        "hamlet"
+                    ],
+                    [
+                        "<=",
+                        "localrank",
+                        30
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "hamlet_village_label",
             "paint": {
                 "text-color": "rgba(74,14,17,1)",
                 "text-halo-color": "#F4efe8",
@@ -6741,28 +7587,11 @@
                 "text-opacity": 1,
                 "icon-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444857916000.3777"
-            }
+            "source-layer": "place_label"
         },
         {
-            "id": "town_label",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "place_label",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "town"
-                ],
-                [
-                    "<=",
-                    "localrank",
-                    40
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": {
                     "base": 1,
@@ -6812,6 +7641,33 @@
                 "text-letter-spacing": 0,
                 "text-max-width": 5
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "town"
+                    ],
+                    [
+                        "<=",
+                        "localrank",
+                        40
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "town_label",
             "paint": {
                 "text-color": "rgba(74,14,17,1)",
                 "text-halo-color": "#F4efe8",
@@ -6831,32 +7687,11 @@
                 "text-opacity": 1,
                 "icon-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444857916000.3777"
-            }
+            "source-layer": "place_label"
         },
         {
-            "id": "city_label_small",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "place_label",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "city"
-                ],
-                [
-                    "!in",
-                    "scalerank",
-                    1,
-                    2,
-                    3,
-                    4,
-                    0
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": 1.1,
                 "text-size": {
@@ -6910,6 +7745,37 @@
                 "text-letter-spacing": 0,
                 "text-max-width": 5
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "city"
+                    ],
+                    [
+                        "!in",
+                        "scalerank",
+                        1,
+                        2,
+                        3,
+                        4,
+                        0
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "city_label_small",
             "paint": {
                 "text-color": "rgba(74,14,17,1)",
                 "text-halo-color": "#F4efe8",
@@ -6928,29 +7794,11 @@
                 },
                 "icon-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444857916000.3777"
-            }
+            "source-layer": "place_label"
         },
         {
-            "id": "city_label_medium",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "place_label",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "city"
-                ],
-                [
-                    "in",
-                    "scalerank",
-                    3,
-                    4
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": {
                     "base": 1,
@@ -7055,6 +7903,34 @@
                 "text-letter-spacing": 0,
                 "text-max-width": 5
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "city"
+                    ],
+                    [
+                        "in",
+                        "scalerank",
+                        3,
+                        4
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "city_label_medium",
             "paint": {
                 "text-color": "rgba(74,14,17,1)",
                 "text-halo-color": "#F4efe8",
@@ -7072,28 +7948,11 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444857916000.3777"
-            }
+            "source-layer": "place_label"
         },
         {
-            "id": "city_label_big",
-            "type": "symbol",
-            "source": "mapbox",
-            "source-layer": "place_label",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "city"
-                ],
-                [
-                    "<=",
-                    "scalerank",
-                    2
-                ]
-            ],
+            "interactive": false,
+            "minzoom": 0,
             "layout": {
                 "text-line-height": {
                     "base": 1,
@@ -7184,6 +8043,33 @@
                 "icon-padding": 0,
                 "text-max-width": 5
             },
+            "maxzoom": 22,
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "$type",
+                    "Polygon",
+                    "LineString",
+                    "Point"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "type",
+                        "city"
+                    ],
+                    [
+                        "<=",
+                        "scalerank",
+                        2
+                    ]
+                ]
+            ],
+            "type": "symbol",
+            "source": "compositedsource",
+            "id": "city_label_big",
             "paint": {
                 "text-color": "rgba(74,14,17,1)",
                 "text-halo-color": "#F4efe8",
@@ -7201,9 +8087,7 @@
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444857916000.3777"
-            }
+            "source-layer": "place_label"
         }
     ]
 }
