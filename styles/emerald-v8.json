@@ -5740,6 +5740,7 @@
                 ],
                 "icon-image": "interstate_{reflen}",
                 "icon-rotation-alignment": "viewport",
+                "text-rotation-alignment": "viewport",
                 "icon-keep-upright": true,
                 "text-font": [
                     "Open Sans Bold",
