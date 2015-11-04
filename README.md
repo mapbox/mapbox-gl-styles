@@ -63,4 +63,16 @@ mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds
 
 ### Android
 
-TBA
+```xml
+<com.mapbox.mapboxsdk.views.MapView
+    android:id="@+id/mapView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:style_url="mapbox://styles/mapbox/streets-v8"
+ />
+```
+
+```java
+MapView mMapView = new MapView(context, "Access Token");
+mMapView.setStyleUrl(Style.MAPBOX_STREETS);
+```
