@@ -5678,9 +5678,11 @@
             "source": "composite",
             "source-layer": "contour",
             "filter": [
-                "!=",
+                "!in",
                 "index",
-                5
+                -1,
+                5,
+                10
             ],
             "minzoom": 14,
             "layout": {
@@ -5702,7 +5704,8 @@
             "filter": [
                 "==",
                 "index",
-                5
+                5,
+                10
             ],
             "minzoom": 14,
             "layout": {
@@ -5749,7 +5752,8 @@
             "filter": [
                 "==",
                 "index",
-                5
+                5,
+                10
             ],
             "minzoom": 14,
             "layout": {
