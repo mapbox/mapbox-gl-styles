@@ -61,7 +61,7 @@
             },
             "1452795558545.7424": {
                 "name": "Landcovers",
-                "collapsed": true
+                "collapsed": false
             },
             "1452801914168.9634": {
                 "name": "Roads",
@@ -82,10 +82,10 @@
         }
     },
     "center": [
-        -96.9799332736727,
-        38.77556388261905
+        -104.68073549520065,
+        42.35582416531179
     ],
-    "zoom": 3.9674686909488783,
+    "zoom": 3.2967520685790617,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -1605,7 +1605,7 @@
                 [
                     "<=",
                     "scalerank",
-                    "2"
+                    2
                 ]
             ],
             "type": "symbol",
@@ -1617,6 +1617,7 @@
             "source-layer": "poi_label"
         },
         {
+            "interactive": true,
             "layout": {},
             "metadata": {
                 "mapbox:group": "1452802437505.3735"
@@ -1624,14 +1625,13 @@
             "filter": [
                 "<=",
                 "scalerank",
-                "3"
+                3
             ],
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "poi-label",
             "paint": {},
-            "source-layer": "poi_label",
-            "interactive": true
+            "source-layer": "poi_label"
         },
         {
             "layout": {},
@@ -1648,7 +1648,8 @@
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802409375.9248"
@@ -1662,13 +1663,16 @@
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "place-label-neighborhood",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(255,0,0,1)"
+            },
             "source-layer": "place_label"
         },
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802409375.9248"
@@ -1683,13 +1687,16 @@
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "place-label-other",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(255,0,0,1)"
+            },
             "source-layer": "place_label"
         },
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802409375.9248"
@@ -1704,7 +1711,7 @@
                 [
                     ">",
                     "scalerank",
-                    "4"
+                    4
                 ],
                 [
                     "in",
@@ -1718,13 +1725,16 @@
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "place-label-city-small-s",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(255,0,0,1)"
+            },
             "source-layer": "place_label"
         },
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802409375.9248"
@@ -1739,7 +1749,7 @@
                 [
                     ">",
                     "scalerank",
-                    "4"
+                    4
                 ],
                 [
                     "in",
@@ -1753,13 +1763,16 @@
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "place-label-city-small-n",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(255,0,0,1)"
+            },
             "source-layer": "place_label"
         },
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802409375.9248"
@@ -1774,7 +1787,7 @@
                 [
                     "<=",
                     "scalerank",
-                    "4"
+                    4
                 ],
                 [
                     "in",
@@ -1788,13 +1801,16 @@
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "place-label-city-med-s",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(255,0,0,1)"
+            },
             "source-layer": "place_label"
         },
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802409375.9248"
@@ -1809,7 +1825,7 @@
                 [
                     "<=",
                     "scalerank",
-                    "4"
+                    4
                 ],
                 [
                     "in",
@@ -1823,13 +1839,16 @@
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "place-label-city-med-n",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(255,0,0,1)"
+            },
             "source-layer": "place_label"
         },
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802409375.9248"
@@ -1840,11 +1859,6 @@
                     "==",
                     "type",
                     "city"
-                ],
-                [
-                    "<=",
-                    "scalerank",
-                    "1"
                 ],
                 [
                     "in",
@@ -1858,13 +1872,16 @@
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "place-label-city-large-s",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(255,0,0,1)"
+            },
             "source-layer": "place_label"
         },
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802409375.9248"
@@ -1879,7 +1896,7 @@
                 [
                     "<=",
                     "scalerank",
-                    "1"
+                    1
                 ],
                 [
                     "in",
@@ -1893,7 +1910,9 @@
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "place-label-city-large-n",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(255,0,0,1)"
+            },
             "source-layer": "place_label"
         },
         {
@@ -2130,7 +2149,8 @@
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802367919.328"
@@ -2138,18 +2158,21 @@
             "filter": [
                 ">=",
                 "scalerank",
-                "5"
+                5
             ],
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "country-label",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(196,61,61,1)"
+            },
             "source-layer": "country_label"
         },
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802367919.328"
@@ -2159,24 +2182,27 @@
                 [
                     "<=",
                     "scalerank",
-                    "4"
+                    4
                 ],
                 [
                     ">",
                     "scalerank",
-                    "2"
+                    2
                 ]
             ],
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "country-label copy",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(196,61,61,1)"
+            },
             "source-layer": "country_label"
         },
         {
             "interactive": true,
             "layout": {
-                "visibility": "visible"
+                "visibility": "visible",
+                "text-field": "{name}"
             },
             "metadata": {
                 "mapbox:group": "1452802367919.328"
@@ -2184,18 +2210,20 @@
             "filter": [
                 "<=",
                 "scalerank",
-                "2"
+                2
             ],
             "type": "symbol",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "country-label copy 1",
-            "paint": {},
+            "paint": {
+                "text-color": "rgba(196,61,61,1)"
+            },
             "source-layer": "country_label"
         }
     ],
     "created": "2016-01-14T18:05:15.243Z",
     "id": "cijekgoid00gh9mlv2y90yjo9",
-    "modified": "2016-01-15T01:42:48.157Z",
+    "modified": "2016-01-15T02:29:12.616Z",
     "owner": "xrwang88",
     "draft": false
 }
