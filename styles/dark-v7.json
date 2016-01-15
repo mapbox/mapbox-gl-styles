@@ -1520,7 +1520,7 @@
     "source-layer": "poi_label",
     "minzoom": 0,
     "maxzoom": 22,
-    "filter": ["all", ["!in", "maki", "rail-light", "rail-metro", "rail", "airport", "airfield", "heliport", "rocket", "park", "golf", "cemetary", "zoo", "campsite", "swimming", "dog-park"], ["<=", "scalerank", 1]],
+    "filter": ["all", ["!in", "maki", "rail-light", "rail-metro", "rail", "airport", "airfield", "heliport", "rocket", "park", "golf", "cemetery", "zoo", "campsite", "swimming", "dog-park"], ["<=", "scalerank", 1]],
     "layout": {
       "text-max-width": 8,
       "visibility": "visible",
