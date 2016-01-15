@@ -133,19 +133,8 @@
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "landcover_snow",
             "paint": {
-                "fill-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            0,
-                            "#000000"
-                        ],
-                        [
-                            22,
-                            "#000000"
-                        ]
-                    ]
-                }
+              "fill-color": "#000",
+              "fill-opacity": 0.5
             },
             "source-layer": "landcover"
         },
@@ -166,19 +155,8 @@
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "landcover_crop",
             "paint": {
-                "fill-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            0,
-                            "#000000"
-                        ],
-                        [
-                            22,
-                            "#000000"
-                        ]
-                    ]
-                }
+              "fill-color": "#131313",
+              "fill-opacity": 0.5
             },
             "source-layer": "landcover"
         },
@@ -199,19 +177,8 @@
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "landcover_grass",
             "paint": {
-                "fill-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            0,
-                            "#000000"
-                        ],
-                        [
-                            22,
-                            "#000000"
-                        ]
-                    ]
-                }
+              "fill-color": "#1a1a1a",
+              "fill-opacity": 0.5
             },
             "source-layer": "landcover"
         },
@@ -232,19 +199,8 @@
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "landcover_scrub",
             "paint": {
-                "fill-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            0,
-                            "#000000"
-                        ],
-                        [
-                            22,
-                            "#000000"
-                        ]
-                    ]
-                }
+              "fill-color": "#1c1c1c",
+              "fill-opacity": 0.5
             },
             "source-layer": "landcover"
         },
@@ -265,19 +221,8 @@
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "landcover_wood",
             "paint": {
-                "fill-color": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            0,
-                            "#000000"
-                        ],
-                        [
-                            22,
-                            "#000000"
-                        ]
-                    ]
-                }
+              "fill-color": "#232323",
+              "fill-opacity": 0.5
             },
             "source-layer": "landcover"
         },
@@ -297,7 +242,10 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "landuse_industrial",
-            "paint": {},
+            "paint": {
+              "fill-color": "#000",
+              "fill-opacity": 0.5
+            },
             "source-layer": "landuse"
         },
         {
@@ -316,7 +264,9 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "landuse_park",
-            "paint": {},
+            "paint": {
+              "fill-color": "#1b1b1b"
+            },
             "source-layer": "landuse"
         },
         {
@@ -335,7 +285,9 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "landuse_wood",
-            "paint": {},
+            "paint": {
+              "fill-color": "#1f1f1f"
+            },
             "source-layer": "landuse"
         },
         {
@@ -354,7 +306,22 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "hillshade_highlight_bright",
-            "paint": {},
+            "paint": {
+              "fill-color": "#000",
+              "fill-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    15,
+                    0.15
+                  ],
+                  [
+                    17,
+                    0.05
+                  ]
+                ]
+              }
+            },
             "source-layer": "hillshade"
         },
         {
@@ -373,7 +340,22 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "hillshade_highlight_med",
-            "paint": {},
+            "paint": {
+              "fill-color": "#000",
+              "fill-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    15,
+                    0.15
+                  ],
+                  [
+                    17,
+                    0.05
+                  ]
+                ]
+              }
+            },
             "source-layer": "hillshade"
         },
         {
@@ -392,7 +374,22 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "hillshade_shadow_faint",
-            "paint": {},
+            "paint": {
+              "fill-color": "#999999",
+              "fill-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    14,
+                    0.06
+                  ],
+                  [
+                    17,
+                    0.01
+                  ]
+                ]
+              }
+            },
             "source-layer": "hillshade"
         },
         {
@@ -411,7 +408,22 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "hillshade_shadow_med",
-            "paint": {},
+            "paint": {
+              "fill-color": "#999999",
+              "fill-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    14,
+                    0.06
+                  ],
+                  [
+                    17,
+                    0.01
+                  ]
+                ]
+              }
+            },
             "source-layer": "hillshade"
         },
         {
@@ -430,7 +442,22 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "hillshade_shadow_dark",
-            "paint": {},
+            "paint": {
+              "fill-color": "#888888",
+              "fill-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    14,
+                    0.06
+                  ],
+                  [
+                    17,
+                    0.01
+                  ]
+                ]
+              }
+            },
             "source-layer": "hillshade"
         },
         {
@@ -449,7 +476,22 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-terrain-v2",
             "id": "hillshade_shadow_extreme",
-            "paint": {},
+            "paint": {
+              "fill-color": "#999",
+              "fill-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    14,
+                    0.06
+                  ],
+                  [
+                    17,
+                    0.01
+                  ]
+                ]
+              }
+            },
             "source-layer": "hillshade"
         },
         {
@@ -464,7 +506,24 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "building",
-            "paint": {},
+            "paint": {
+              "fill-outline-color": "#444444",
+              "fill-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    15,
+                    0
+                  ],
+                  [
+                    16.5,
+                    1
+                  ]
+                ]
+              },
+              "fill-antialias": true,
+              "fill-color": "#383838"
+            },
             "source-layer": "building"
         },
         {
@@ -499,7 +558,22 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "waterway_stream",
-            "paint": {},
+            "paint": {
+              "line-color": "#2c2c2c",
+              "line-width": {
+                "base": 1,
+                "stops": [
+                  [
+                    6,
+                    0.25
+                  ],
+                  [
+                    20,
+                    6
+                  ]
+                ]
+              }
+            },
             "source-layer": "waterway"
         },
         {
