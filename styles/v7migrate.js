@@ -51,11 +51,14 @@ var layers = inputStyle.layers;
 
 layers.forEach (function(layer){
 	console.log(layer.id);
-	if (layer.id === "tunnel_minor"){
+	if (layer["source-layer"] === "tunnel"){
 		layer.filter = newTunnelMinorFilter;
 	}
 	if (layer.id == "tunnel_major"){
 		layer.filter = newTunnelMajorFilter;
+	}
+	if (layer["source-layer"] === "road" && layer["filter"][2].indexOf("street") != -1){
+	layer.filter = "bloop";
 	}
 });
 
