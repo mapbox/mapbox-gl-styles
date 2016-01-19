@@ -178,24 +178,7 @@
       "type": "line",
       "source": "mapbox",
       "source-layer": "road",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "in",
-          "class",
-          "motorway_link",
-          "street",
-          "street_limited",
-          "service",
-          "driveway",
-          "path"
-        ]
-      ],
+      "filter": "bloop",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
