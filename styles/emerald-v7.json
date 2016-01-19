@@ -1108,7 +1108,7 @@
       "source": "compositedsource",
       "source-layer": "hillshade",
       "minzoom": 0,
-      "maxzoom": 22,
+      "maxzoom": 15,
       "interactive": true,
       "filter": [
         "all",
