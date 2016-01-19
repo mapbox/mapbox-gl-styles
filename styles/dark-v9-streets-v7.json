@@ -108,7 +108,7 @@
         {
             "type": "background",
             "paint": {
-                "background-color": "rgba(255,255,255,1)"
+                "background-color": "#111"
             },
             "layout": {
                 "visibility": "visible"
@@ -541,7 +541,22 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "waterway",
-            "paint": {},
+            "paint": {
+              "line-color": "#2c2c2c",
+              "line-width": {
+                "base": 1,
+                "stops": [
+                  [
+                    6,
+                    0.25
+                  ],
+                  [
+                    20,
+                    6
+                  ]
+                ]
+              }
+            },
             "source-layer": "waterway"
         },
         {
@@ -564,12 +579,12 @@
                 "base": 1,
                 "stops": [
                   [
-                    6,
-                    0.25
+                    13,
+                    0.75
                   ],
                   [
                     20,
-                    6
+                    4
                   ]
                 ]
               }
@@ -583,7 +598,9 @@
             "type": "fill",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "water",
-            "paint": {},
+            "paint": {
+              "fill-color": "#2c2c2c"
+            },
             "source-layer": "water",
             "interactive": true,
             "metadata": {
@@ -604,7 +621,35 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "aeroway-runway",
-            "paint": {},
+            "paint": {
+              "line-width": {
+                "base": 1.15,
+                "stops": [
+                  [
+                    11,
+                    3
+                  ],
+                  [
+                    20,
+                    32
+                  ]
+                ]
+              },
+              "line-color": "#000",
+              "line-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    9,
+                    0.5
+                  ],
+                  [
+                    11,
+                    1
+                  ]
+                ]
+              }
+            },
             "source-layer": "aeroway"
         },
         {
@@ -621,7 +666,26 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "aeroway-taxiway",
-            "paint": {},
+            "paint": {
+              "line-width": {
+                "base": 1.15,
+                "stops": [
+                  [
+                    10,
+                    0.25
+                  ],
+                  [
+                    11,
+                    1
+                  ],
+                  [
+                    20,
+                    8
+                  ]
+                ]
+              },
+              "line-color": "#3c3c3c"
+            },
             "source-layer": "aeroway"
         },
         {
@@ -652,7 +716,26 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "tunnel_minor",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.55,
+                "stops": [
+                  [
+                    4,
+                    0.25
+                  ],
+                  [
+                    20,
+                    20
+                  ]
+                ]
+              },
+              "line-dasharray": [
+                0.36,
+                0.18
+              ]
+            },
             "source-layer": "road"
         },
         {
@@ -681,7 +764,26 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "tunnel_major",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.4,
+                "stops": [
+                  [
+                    6,
+                    0.5
+                  ],
+                  [
+                    20,
+                    30
+                  ]
+                ]
+              },
+              "line-dasharray": [
+                0.28,
+                0.14
+              ]
+            },
             "source-layer": "road"
         },
         {
@@ -707,7 +809,26 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_motorway_link",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    12.5,
+                    0.5
+                  ],
+                  [
+                    14,
+                    2
+                  ],
+                  [
+                    18,
+                    18
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -733,7 +854,35 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_motorway",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    5,
+                    0.75
+                  ],
+                  [
+                    18,
+                    32
+                  ]
+                ]
+              },
+              "line-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    5,
+                    0
+                  ],
+                  [
+                    5.5,
+                    1
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -759,7 +908,23 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_trunk",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    5,
+                    0.75
+                  ],
+                  [
+                    18,
+                    32
+                  ]
+                ]
+              },
+              "line-opacity": 1
+            },
             "source-layer": "road"
         },
         {
@@ -785,7 +950,35 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_primary",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    6,
+                    0.5
+                  ],
+                  [
+                    18,
+                    26
+                  ]
+                ]
+              },
+              "line-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    5,
+                    0
+                  ],
+                  [
+                    5.5,
+                    1
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -811,7 +1004,35 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_secondary",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    6,
+                    0.5
+                  ],
+                  [
+                    18,
+                    26
+                  ]
+                ]
+              },
+              "line-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    5,
+                    0
+                  ],
+                  [
+                    5.5,
+                    1
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -837,7 +1058,35 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_tertiary",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    6,
+                    0.5
+                  ],
+                  [
+                    18,
+                    26
+                  ]
+                ]
+              },
+              "line-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    5,
+                    0
+                  ],
+                  [
+                    5.5,
+                    1
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -889,7 +1138,27 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_street",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    12.5,
+                    0.3
+                  ],
+                  [
+                    14,
+                    2
+                  ],
+                  [
+                    18,
+                    18
+                  ]
+                ]
+              },
+              "line-opacity": 1
+            },
             "source-layer": "road"
         },
         {
@@ -915,7 +1184,26 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_street_limited",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    12.5,
+                    0.5
+                  ],
+                  [
+                    14,
+                    2
+                  ],
+                  [
+                    18,
+                    18
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -941,7 +1229,26 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_pedestrian",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    12.5,
+                    0.5
+                  ],
+                  [
+                    14,
+                    2
+                  ],
+                  [
+                    18,
+                    18
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -967,7 +1274,22 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_track",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1,
+                "stops": [
+                  [
+                    14,
+                    0.5
+                  ],
+                  [
+                    18,
+                    12
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -993,7 +1315,22 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_service",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1,
+                "stops": [
+                  [
+                    14,
+                    0.5
+                  ],
+                  [
+                    18,
+                    12
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -1019,7 +1356,22 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_path",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1,
+                "stops": [
+                  [
+                    15,
+                    1
+                  ],
+                  [
+                    18,
+                    4
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -1072,7 +1424,29 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "road_rail",
-            "paint": {},
+            "minzoom": 13,
+            "layout": {
+              "line-cap": "round",
+              "line-join": "round",
+              "visibility": "visible"
+            },
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    14,
+                    0.5
+                  ],
+                  [
+                    20,
+                    1
+                  ]
+                ]
+              },
+              "line-opacity": 1
+            },
             "source-layer": "road"
         },
         {
@@ -1081,7 +1455,23 @@
                 "mapbox:group": "1452801914168.9634"
             },
             "id": "road_rail_tracks",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    14,
+                    4
+                  ],
+                  [
+                    20,
+                    8
+                  ]
+                ]
+              },
+              "line-opacity": 1
+            },
             "ref": "road_rail"
         },
         {
@@ -1106,7 +1496,27 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "bridge_motorway",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1,
+                "stops": [
+                  [
+                    3,
+                    0.5
+                  ],
+                  [
+                    9,
+                    1.25
+                  ],
+                  [
+                    20,
+                    10
+                  ]
+                ]
+              },
+              "line-opacity": 1
+            },
             "source-layer": "road"
         },
         {
@@ -1131,8 +1541,27 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "bridge_trunk",
-            "paint": {},
-            "source-layer": "road"
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1,
+                "stops": [
+                  [
+                    3,
+                    0.5
+                  ],
+                  [
+                    9,
+                    1.25
+                  ],
+                  [
+                    20,
+                    10
+                  ]
+                ]
+              },
+              "line-opacity": 1
+            },            "source-layer": "road"
         },
         {
             "interactive": true,
@@ -1156,7 +1585,35 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "bridge_tertiary",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    6,
+                    0.5
+                  ],
+                  [
+                    18,
+                    26
+                  ]
+                ]
+              },
+              "line-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    5,
+                    0
+                  ],
+                  [
+                    5.5,
+                    1
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -1181,7 +1638,35 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "bridge_primary",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    6,
+                    0.5
+                  ],
+                  [
+                    18,
+                    26
+                  ]
+                ]
+              },
+              "line-opacity": {
+                "base": 1,
+                "stops": [
+                  [
+                    5,
+                    0
+                  ],
+                  [
+                    5.5,
+                    1
+                  ]
+                ]
+              }
+            },
             "source-layer": "road"
         },
         {
@@ -1231,7 +1716,27 @@
             "type": "line",
             "source": "mapbox://mapbox.mapbox-streets-v7",
             "id": "bridge_street",
-            "paint": {},
+            "paint": {
+              "line-color": "#484848",
+              "line-width": {
+                "base": 1.5,
+                "stops": [
+                  [
+                    12.5,
+                    0.5
+                  ],
+                  [
+                    14,
+                    2
+                  ],
+                  [
+                    18,
+                    18
+                  ]
+                ]
+              },
+              "line-opacity": 1
+            },
             "source-layer": "road"
         },
         {
