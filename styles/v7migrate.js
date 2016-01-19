@@ -57,8 +57,8 @@ layers.forEach (function(layer){
 	if (layer.id == "tunnel_major"){
 		layer.filter = newTunnelMajorFilter;
 	}
-	if (layer["source-layer"] === "road" && layer["filter"][2].indexOf("street") != -1){
-	layer.filter = "bloop";
+	if (layer["source-layer"] === "bridge" && layer["filter"][2].indexOf("street") != -1){
+	layer.filter = "blooaop";
 	}
 });
 
