@@ -89,7 +89,7 @@
       "id": "tunnel_minor",
       "type": "line",
       "source": "mapbox",
-      "source-layer": "tunnel",
+      "source-layer": "road",
       "filter": [
         "all",
         [
@@ -100,7 +100,13 @@
         [
           "in",
           "class",
-          "motorway"
+          "motorway_link",
+          "street",
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track"
         ]
       ],
       "paint": {
@@ -128,7 +134,7 @@
       "id": "tunnel_major",
       "type": "line",
       "source": "mapbox",
-      "source-layer": "tunnel",
+      "source-layer": "road",
       "filter": [
         "all",
         [
@@ -139,7 +145,10 @@
         [
           "in",
           "class",
-          "motorway"
+          "trunk",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "paint": {
@@ -213,18 +222,12 @@
       "source": "mapbox",
       "source-layer": "road",
       "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "in",
-          "class",
-          "motorway",
-          "main"
-        ]
+        "in",
+        "class",
+        "trunk",
+        "primary",
+        "secondary",
+        "tertiary"
       ],
       "layout": {
         "line-cap": "round",
@@ -256,13 +259,18 @@
         "all",
         [
           "==",
-          "structure",
-          "bridge"
+          "$type",
+          "LineString"
         ],
         [
           "in",
           "class",
-          "motorway"
+          "motorway_link",
+          "street",
+          "street_limited",
+          "service",
+          "driveway",
+          "path"
         ]
       ],
       "paint": {
@@ -304,13 +312,14 @@
         "all",
         [
           "==",
-          "structure",
-          "bridge"
+          "$type",
+          "LineString"
         ],
         [
           "in",
           "class",
-          "motorway"
+          "motorway",
+          "main"
         ]
       ],
       "paint": {
@@ -352,13 +361,18 @@
         "all",
         [
           "==",
-          "structure",
-          "bridge"
+          "$type",
+          "LineString"
         ],
         [
           "in",
           "class",
-          "motorway"
+          "motorway_link",
+          "street",
+          "street_limited",
+          "service",
+          "driveway",
+          "path"
         ]
       ],
       "layout": {
@@ -391,13 +405,14 @@
         "all",
         [
           "==",
-          "structure",
-          "bridge"
+          "$type",
+          "LineString"
         ],
         [
           "in",
           "class",
-          "motorway"
+          "motorway",
+          "main"
         ]
       ],
       "layout": {
