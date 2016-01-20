@@ -49,22 +49,58 @@ var newTunnelMajorFilter = [
 inputStyle.sources.mapbox.url = "mapbox://mapbox.mapbox-streets-v7";
 var layers = inputStyle.layers;
 
+
+function searchNested(filterarray, key) {
+  if (filterarray.indexOf(key) != -1) {
+    return true;
+  }
+  else {
+    for (var i=0; i<filterarray.length; i++){
+      var filtervalue = filterarray[i];
+      if (Array.isArray(filtervalue)) {
+        console.log(filtervalue);
+        var diditmatch = searchNested(filtervalue, key);
+        if (diditmatch === true) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+}
+
+
+
+
+
+
 layers.forEach (function(layer){
 	console.log(layer.id);
-	if (layer["source-layer"] === "tunnel"){
-		layer.filter = newTunnelMinorFilter;
-	}
-	if (layer.id == "tunnel_major"){
-		layer.filter = newTunnelMajorFilter;
-	}
-	if (layer["source-layer"] === "bridge" && layer["filter"][2].indexOf("street") != -1){
-	layer.filter = "blooaop";
-	}
+  var filterarray = layer.filter;
+  console.log(filterarray);
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "street") && searchNested(filterarray,"==")){
+      layer.filter = newTunnelMinorFilter;
+    }
+
+// 	if (layer["source-layer"] === "tunnel" && layer["filter"][2].
+// 	if (layer["source-layer"] === "bridge" && layer["filter"].indexOf("street") != -1){
+// 	layer.filter = [
+//                 "all",
+//                 [
+//                     "!in",
+//                     "structure",
+//                     "tunnel",
+//                     "bridge"
+//                 ],
+//                 [
+//                     "==",
+//                     "class",
+//                     "street"
+//                 ]
+//             ];
+// 	}
 });
 
-// layers.each do |layer|
-//   layer.filter = 'adsfafsd'
-// end
 
 
 var outputStyle = JSON.stringify(inputStyle, null, 2);
