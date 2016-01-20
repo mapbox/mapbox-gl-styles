@@ -7,7 +7,7 @@ console.log(files);
 
 var inStyle = fs.readFileSync(inputFile, 'utf8');
 var inputStyle = JSON.parse(inStyle);
-
+//Tunnels
 var newTunnelMinorFilter = [
 	"all",
 	[
@@ -46,7 +46,216 @@ var newTunnelMajorFilter = [
   ]
 ];
 
-inputStyle.sources.mapbox.url = "mapbox://mapbox.mapbox-streets-v7";
+var newTunnelServiceFilter = [
+  "in",
+  "class",
+  "service",
+  "driveway",
+  "track"
+];
+
+var newTunnelServiceFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "tunnel"
+  ],
+  [
+    "in",
+    "class",
+    "service",
+    "driveway",
+    "track"
+  ]
+];
+
+var newTunnelMainFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "tunnel"
+  ],
+  [
+    "in",
+    "class",
+    "trunk",
+    "primary",
+    "secondary",
+    "tertiary"
+  ]
+];
+
+var newTunnelMotorwayFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "tunnel"
+  ],
+  [
+    "in",
+    "class",
+    "motorway"
+  ]
+];
+
+var newTunnelMotorwayLinkFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "tunnel"
+  ],
+  [
+    "in",
+    "class",
+    "motorway"
+  ]
+];
+
+var newTunnelRailFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "tunnel"
+  ],
+  [
+    "in",
+    "class",
+    "major_rail",
+    "minor_rail"
+  ]
+];
+
+
+// Bridges
+var newBridgeMinorFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "bridge"
+  ],
+  [
+    "in",
+    "class",
+    "motorway_link",
+    "street",
+    "street_limited",
+    "service",
+    "path",
+    "pedestrian",
+    "track"
+  ]
+];
+
+var newBridgeMajorFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "bridge"
+  ],
+  [
+    "in",
+    "class",
+    "motorway",
+    "trunk",
+    "primary",
+    "secondary",
+    "tertiary"
+  ]
+];
+
+var newBridgeServiceFilter = [
+  "in",
+  "class",
+  "service",
+  "driveway",
+  "track"
+];
+
+var newBridgeServiceFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "bridge"
+  ],
+  [
+    "in",
+    "class",
+    "service",
+    "driveway",
+    "track"
+  ]
+];
+
+var newBridgeMainFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "bridge"
+  ],
+  [
+    "in",
+    "class",
+    "trunk",
+    "primary",
+    "secondary",
+    "tertiary"
+  ]
+];
+
+var newBridgeMotorwayFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "bridge"
+  ],
+  [
+    "in",
+    "class",
+    "motorway"
+  ]
+];
+
+var newBridgeMotorwayLinkFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "bridge"
+  ],
+  [
+    "in",
+    "class",
+    "motorway"
+  ]
+];
+
+var newBridgeRailFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "bridge"
+  ],
+  [
+    "in",
+    "class",
+    "major_rail",
+    "minor_rail"
+  ]
+];
+
+
+// inputStyle.sources.["mapbox://mapbox.mapbox-streets-v6"].url = "mapbox://mapbox.mapbox-streets-v7";
 var layers = inputStyle.layers;
 
 
@@ -81,6 +290,55 @@ layers.forEach (function(layer){
     if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "street") && searchNested(filterarray,"==")){
       layer.filter = newTunnelMinorFilter;
     }
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "street_limited") && searchNested(filterarray,"==")){
+      layer.filter = newTunnelMinorFilter;
+    }
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "driveway") && searchNested(filterarray,"service") && searchNested(filterarray,"in")){
+      layer.filter = newTunnelServiceFilter;
+    }
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "main") && searchNested(filterarray,"==")){
+      layer.filter = newTunnelMainFilter;
+    }
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "motorway") && searchNested(filterarray,"==")){
+      layer.filter = newTunnelMotorwayFilter;
+    }
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "motorway_link") && searchNested(filterarray,"==")){
+      layer.filter = newTunnelMotorwayLinkFilter;
+    }
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "motorway_link") && searchNested(filterarray,"==")){
+      layer.filter = newTunnelMotorwayLinkFilter;
+    }
+
+    //bridge
+
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "street") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMinorFilter;
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "street_limited") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMinorFilter;
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "driveway") && searchNested(filterarray,"service") && searchNested(filterarray,"in")){
+      layer.filter = newBridgeServiceFilter;
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "main") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMainFilter;
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "motorway") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMotorwayFilter;
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "motorway_link") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMotorwayLinkFilter;
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "motorway_link") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMotorwayLinkFilter;
+    }
+
+    //roads
+
+
+});
+
+
 
 // 	if (layer["source-layer"] === "tunnel" && layer["filter"][2].
 // 	if (layer["source-layer"] === "bridge" && layer["filter"].indexOf("street") != -1){
@@ -99,13 +357,12 @@ layers.forEach (function(layer){
 //                 ]
 //             ];
 // 	}
-});
 
 
 
 var outputStyle = JSON.stringify(inputStyle, null, 2);
 fs.writeFileSync(outputFile, outputStyle,'utf8');
 
-console.log(inputStyle.sources.mapbox.url);
+// console.log(inputStyle.sources.mapbox.url);
 
 
