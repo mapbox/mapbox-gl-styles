@@ -3866,18 +3866,24 @@
       "id": "bridge-street_limited-polygon",
       "type": "fill",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "Polygon"
+          "structure",
+          "bridge"
         ],
         [
-          "==",
+          "in",
           "class",
-          "street_limited"
+          "street",
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track",
+          "link"
         ]
       ],
       "layout": {
@@ -4017,18 +4023,24 @@
       "id": "bridge-street-low",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "LineString"
+          "structure",
+          "bridge"
         ],
         [
-          "==",
+          "in",
           "class",
-          "street"
+          "street",
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track",
+          "link"
         ]
       ],
       "minzoom": 11,
@@ -4085,18 +4097,24 @@
       "id": "bridge-street_limited-low",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "LineString"
+          "structure",
+          "bridge"
         ],
         [
-          "==",
+          "in",
           "class",
-          "street_limited"
+          "street",
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track",
+          "link"
         ]
       ],
       "minzoom": 11,
@@ -4153,11 +4171,19 @@
       "id": "bridge-motorway_link-case",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "==",
-        "class",
-        "motorway_link"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "motorway_link"
+        ]
       ],
       "minzoom": 12,
       "layout": {
@@ -4207,12 +4233,21 @@
       "id": "bridge-service-driveway-case",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "in",
-        "class",
-        "service",
-        "driveway"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "service",
+          "driveway",
+          "track"
+        ]
       ],
       "minzoom": 15,
       "layout": {
@@ -4257,26 +4292,24 @@
       "id": "bridge-street_limited-case",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "LineString"
+          "structure",
+          "bridge"
         ],
         [
-          "all",
-          [
-            "==",
-            "class",
-            "street_limited"
-          ],
-          [
-            "!=",
-            "type",
-            "construction"
-          ]
+          "in",
+          "class",
+          "street",
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track",
+          "link"
         ]
       ],
       "minzoom": 14,
@@ -4326,11 +4359,25 @@
       "id": "bridge-street-case",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "==",
-        "class",
-        "street"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "street",
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track",
+          "link"
+        ]
       ],
       "minzoom": 14,
       "layout": {
@@ -4379,18 +4426,21 @@
       "id": "bridge-main-case",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "class",
-          "main"
+          "structure",
+          "bridge"
         ],
         [
-          "!=",
-          "type",
-          "trunk"
+          "in",
+          "class",
+          "trunk",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "minzoom": 8,
@@ -4444,25 +4494,24 @@
       "id": "bridge-oneway-arrows-other",
       "type": "symbol",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "oneway",
-          1
+          "structure",
+          "bridge"
         ],
         [
           "in",
           "class",
-          "main",
           "street",
-          "street_limited"
-        ],
-        [
-          "!=",
-          "type",
-          "trunk"
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track",
+          "link"
         ]
       ],
       "minzoom": 15,
@@ -4496,18 +4545,18 @@
       "id": "bridge-motorway-trunk-case",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "any",
+        "all",
         [
           "==",
-          "class",
-          "motorway"
+          "structure",
+          "bridge"
         ],
         [
-          "==",
-          "type",
-          "trunk"
+          "in",
+          "class",
+          "motorway"
         ]
       ],
       "layout": {
@@ -4552,11 +4601,19 @@
       "id": "bridge-motorway_link",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "==",
-        "class",
-        "motorway_link"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "motorway_link"
+        ]
       ],
       "minzoom": 10,
       "layout": {
@@ -4592,12 +4649,21 @@
       "id": "bridge-service-driveway",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "in",
-        "class",
-        "service",
-        "driveway"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "service",
+          "driveway",
+          "track"
+        ]
       ],
       "minzoom": 15,
       "layout": {
@@ -4629,26 +4695,24 @@
       "id": "bridge-construction",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "LineString"
+          "structure",
+          "bridge"
         ],
         [
-          "all",
-          [
-            "==",
-            "class",
-            "street_limited"
-          ],
-          [
-            "==",
-            "type",
-            "construction"
-          ]
+          "in",
+          "class",
+          "street",
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track",
+          "link"
         ]
       ],
       "minzoom": 14,
@@ -4738,26 +4802,24 @@
       "id": "bridge-street_limited",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "LineString"
+          "structure",
+          "bridge"
         ],
         [
-          "all",
-          [
-            "==",
-            "class",
-            "street_limited"
-          ],
-          [
-            "!=",
-            "type",
-            "construction"
-          ]
+          "in",
+          "class",
+          "street",
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track",
+          "link"
         ]
       ],
       "minzoom": 11,
@@ -4807,11 +4869,25 @@
       "id": "bridge-street",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "==",
-        "class",
-        "street"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "street",
+          "street_limited",
+          "service",
+          "path",
+          "pedestrian",
+          "track",
+          "link"
+        ]
       ],
       "minzoom": 11,
       "layout": {
@@ -4860,18 +4936,21 @@
       "id": "bridge-main",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "class",
-          "main"
+          "structure",
+          "bridge"
         ],
         [
-          "!=",
-          "type",
-          "trunk"
+          "in",
+          "class",
+          "trunk",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "layout": {
@@ -4920,18 +4999,21 @@
       "id": "bridge-trunk",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "class",
-          "main"
+          "structure",
+          "bridge"
         ],
         [
-          "==",
-          "type",
-          "trunk"
+          "in",
+          "class",
+          "trunk",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "layout": {
@@ -5007,11 +5089,19 @@
       "id": "bridge-motorway",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "==",
-        "class",
-        "motorway"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "motorway"
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -5175,19 +5265,18 @@
       "id": "bridge-oneway-arrows-motorway",
       "type": "symbol",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "oneway",
-          1
+          "structure",
+          "bridge"
         ],
         [
           "in",
           "class",
-          "motorway",
-          "motorway_link"
+          "motorway"
         ]
       ],
       "minzoom": 15,
