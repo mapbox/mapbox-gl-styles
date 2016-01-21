@@ -142,17 +142,17 @@ var newBridgeMinorFilter = [
   [
     "in",
     "class",
-    "motorway_link",
     "street",
     "street_limited",
     "service",
     "path",
     "pedestrian",
-    "track"
+    "track",
+    "link"
   ]
 ];
 
-var newBridgeMajorFilter = [
+var newBridgeMotorwayFilter = [
   "all",
   [
     "==",
@@ -163,19 +163,7 @@ var newBridgeMajorFilter = [
     "in",
     "class",
     "motorway",
-    "trunk",
-    "primary",
-    "secondary",
-    "tertiary"
   ]
-];
-
-var newBridgeServiceFilter = [
-  "in",
-  "class",
-  "service",
-  "driveway",
-  "track"
 ];
 
 var newBridgeServiceFilter = [
@@ -235,7 +223,7 @@ var newBridgeMotorwayLinkFilter = [
   [
     "in",
     "class",
-    "motorway"
+    "motorway_link"
   ]
 ];
 
@@ -343,46 +331,44 @@ layers.forEach (function(layer){
 
     //bridge
 
-    // if (layer["source-layer"]==="bridge" && searchNested(filterarray, "street") && searchNested(filterarray,"==")){
-    //   layer.filter = newBridgeMinorFilter;
-    //   layer["source-layer"] = "road";
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "street") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMinorFilter;
+      layer["source-layer"] = "road";
 
-    // }
-    // if (layer["source-layer"]==="bridge" && searchNested(filterarray, "street_limited") && searchNested(filterarray,"==")){
-    //   layer.filter = newBridgeMinorFilter;
-    //   layer["source-layer"] = "road";
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "street_limited") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMinorFilter;
+      layer["source-layer"] = "road";
 
-    // }
-    // if (layer["source-layer"]==="bridge" && searchNested(filterarray, "driveway") && searchNested(filterarray,"service") && searchNested(filterarray,"in")){
-    //   layer.filter = newBridgeServiceFilter;
-    //   layer["source-layer"] = "road";
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "driveway") && searchNested(filterarray,"service") && searchNested(filterarray,"in")){
+      layer.filter = newBridgeServiceFilter;
+      layer["source-layer"] = "road";
 
-    // }
-    // if (layer["source-layer"]==="bridge" && searchNested(filterarray,"main") && searchNested(filterarray,"==")){
-    //   layer.filter = newBridgeMainFilter;
-    //   layer["source-layer"] = "road";
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray,"main") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMainFilter;
+      layer["source-layer"] = "road";
 
-    // }
-    // if (layer["source-layer"]==="bridge" && searchNested(filterarray, "motorway") && searchNested(filterarray,"==")){
-    //   layer.filter = newBridgeMotorwayFilter;
-    //   layer["source-layer"] = "road";
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "motorway") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMotorwayFilter;
+      layer["source-layer"] = "road";
 
-    // }
-    // if (layer["source-layer"]==="bridge" && searchNested(filterarray, "motorway_link") && searchNested(filterarray,"==")){
-    //   layer.filter = newBridgeMotorwayLinkFilter;
-    //   layer["source-layer"] = "road";
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "motorway_link") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMotorwayLinkFilter;
+      layer["source-layer"] = "road";
 
-    // }
-    // if (layer["source-layer"]==="bridge" && searchNested(filterarray, "motorway_link") && searchNested(filterarray,"==")){
-    //   layer.filter = newBridgeMotorwayLinkFilter;
-    //   layer["source-layer"] = "road";
-
-    // }
-
-
-
-
-
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "motorway_link") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeMotorwayLinkFilter;
+      layer["source-layer"] = "road";
+    }
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "major_rail") && searchNested(filterarray,"==")){
+      layer.filter = newBridgeRailFilter;
+      layer["source-layer"] = "road";
+    }
 
 });
 
