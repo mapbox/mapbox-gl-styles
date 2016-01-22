@@ -19,7 +19,7 @@ function match(filterarray, key) {
     for (var i=0; i<filterarray.length; i++){
       var filtervalue = filterarray[i];
       if (Array.isArray(filtervalue)) {
-        console.log(filtervalue);
+        // console.log(filtervalue);
         var diditmatch = match(filtervalue, key);
         if (diditmatch === true) {
           return true;
@@ -44,3 +44,10 @@ console.log("");
 console.log("should find z in hell array and return true: " + match(filterarray666, key));
 
 
+console.log("");
+if (match(filterarray1,'v') && match(filterarray1,"b") && match(filterarray1,"a") && match(filterarray1,'v')){
+  console.log ("BOOOOOOP");
+}
+else {
+  console.log("didnt find it");
+}

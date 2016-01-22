@@ -3,7 +3,7 @@
   "name": "Basic",
   "sources": {
     "mapbox": {
-      "url": "mapbox://mapbox.mapbox-streets-v7",
+      "url": "mapbox://mapbox.mapbox-streets-v6",
       "type": "vector"
     }
   },
@@ -254,23 +254,24 @@
       "id": "bridge_minor_case",
       "type": "line",
       "source": "mapbox",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "LineString"
+          "structure",
+          "bridge"
         ],
         [
           "in",
           "class",
-          "motorway_link",
           "street",
           "street_limited",
           "service",
-          "driveway",
-          "path"
+          "path",
+          "pedestrian",
+          "track",
+          "link"
         ]
       ],
       "paint": {
@@ -307,19 +308,21 @@
       "id": "bridge_major_case",
       "type": "line",
       "source": "mapbox",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "LineString"
+          "structure",
+          "bridge"
         ],
         [
           "in",
           "class",
-          "motorway",
-          "main"
+          "trunk",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "paint": {
@@ -356,23 +359,24 @@
       "id": "bridge_minor",
       "type": "line",
       "source": "mapbox",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "LineString"
+          "structure",
+          "bridge"
         ],
         [
           "in",
           "class",
-          "motorway_link",
           "street",
           "street_limited",
           "service",
-          "driveway",
-          "path"
+          "path",
+          "pedestrian",
+          "track",
+          "link"
         ]
       ],
       "layout": {
@@ -400,19 +404,21 @@
       "id": "bridge_major",
       "type": "line",
       "source": "mapbox",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
         "all",
         [
           "==",
-          "$type",
-          "LineString"
+          "structure",
+          "bridge"
         ],
         [
           "in",
           "class",
-          "motorway",
-          "main"
+          "trunk",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "layout": {
