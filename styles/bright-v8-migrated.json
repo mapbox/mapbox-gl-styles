@@ -1148,7 +1148,7 @@
       "source": "mapbox",
       "source-layer": "road",
       "filter": [
-        "==",
+        "in",
         "class",
         "primary",
         "secondary",
@@ -1235,9 +1235,9 @@
       "source": "mapbox",
       "source-layer": "road",
       "filter": [
-        "==",
+        "in",
         "class",
-        "path",
+        "path"
       ],
       "paint": {
         "line-color": "#cba",
@@ -1888,7 +1888,7 @@
         [
           "in",
           "class",
-          "major_rail",
+          "major_rail"
         ]
       ],
       "paint": {
