@@ -392,6 +392,24 @@ var newRoadOneWayFilter = [
                 ]
             ];
 
+            var newRoadMajorFilter = [
+              "all",
+              [
+                "==",
+                "$type",
+                "LineString"
+              ],
+              [
+                "in",
+                "class",
+                "motorway",
+                "trunk",
+                "primary",
+                "secondary",
+                "tertiary"
+              ]
+            ];
+
 // inputStyle.sources.["mapbox://mapbox.mapbox-streets-v6"].url = "mapbox://mapbox.mapbox-streets-v7";
 var layers = inputStyle.layers;
 
@@ -426,6 +444,10 @@ layers.forEach (function(layer){
 
     if ((layer["source-layer"]==="road" && searchNested(filterarray, "!=")) && searchNested(filterarray,"main")){
       layer.filter = newMainRoadFilter;
+    }
+
+    if (layer["source-layer"]==="road" && searchNested(filterarray,"main") && searchNested(filterarray,"motorway") && layer["id"].indexOf("road_major")){
+      layer.filter = newRoadMajorFilter;
     }
 
     if (layer["source-layer"]==="road" && layer["id"].indexOf("trunk")>-1 && !(searchNested(filterarray,"oneway")) ){
@@ -553,5 +575,3 @@ var outputStyle = JSON.stringify(inputStyle, null, 2);
 fs.writeFileSync(outputFile, outputStyle,'utf8');
 
 // console.log(inputStyle.sources.mapbox.url);
-
-
