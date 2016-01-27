@@ -4055,17 +4055,17 @@
                 "mapbox:group": "1444855799204.86"
             },
             "filter": [
-                "all",
-                [
-                    "==",
-                    "$type",
-                    "LineString"
-                ],
-                [
-                    "==",
-                    "class",
-                    "street"
-                ]
+              "all",
+              [
+                "==",
+                "structure",
+                "bridge"
+              ],
+              [
+                "in",
+                "class",
+                "street"
+              ]
             ],
             "type": "line",
             "source": "composite",
@@ -4390,9 +4390,17 @@
                 "mapbox:group": "1444855799204.86"
             },
             "filter": [
+              "all",
+              [
                 "==",
+                "structure",
+                "bridge"
+              ],
+              [
+                "in",
                 "class",
                 "street"
+              ]
             ],
             "type": "line",
             "source": "composite",
@@ -4864,9 +4872,17 @@
                 "mapbox:group": "1444855799204.86"
             },
             "filter": [
+              "all",
+              [
                 "==",
+                "structure",
+                "bridge"
+              ],
+              [
+                "in",
                 "class",
                 "street"
+              ]
             ],
             "type": "line",
             "source": "composite",
