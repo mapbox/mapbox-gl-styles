@@ -1733,7 +1733,7 @@
       }
     },
     {
-      "id": "bridge-rail-tracks_copy",
+      "id": "bridge-aerialway",
       "type": "line",
       "source": "mapbox",
       "source-layer": "bridge",
@@ -1845,7 +1845,7 @@
         [
           "==",
           "disputed",
-          2
+          0
         ]
       ],
       "layout": {
