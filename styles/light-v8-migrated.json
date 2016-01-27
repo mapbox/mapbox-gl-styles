@@ -705,9 +705,14 @@
           "tunnel"
         ],
         [
-          "==",
+          "in",
           "class",
-          "street_limited"
+          "motorway_link",
+          "street",
+          "street_limited",
+          "service",
+          "driveway",
+          "path"
         ]
       ],
       "paint": {
@@ -749,7 +754,10 @@
         [
           "in",
           "class",
-          "motorway"
+          "motorway",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "paint": {
@@ -1054,9 +1062,11 @@
           "LineString"
         ],
         [
-          "==",
+          "in",
           "class",
-          "main"
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "layout": {
@@ -1535,9 +1545,17 @@
       "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "bridge",
       "filter": [
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
         "==",
         "class",
         "street"
+        ]
       ],
       "minzoom": 14,
       "layout": {
@@ -1583,9 +1601,15 @@
           "bridge"
         ],
         [
-          "==",
+          "!=",
           "type",
           "trunk"
+        ],
+        [
+          "in",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "layout": {
@@ -1817,7 +1841,7 @@
       }
     },
     {
-      "id": "bridge-rail-tracks_copy",
+      "id": "bridge-aerialway",
       "type": "line",
       "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
@@ -1937,7 +1961,7 @@
         [
           "==",
           "disputed",
-          2
+          0
         ]
       ],
       "layout": {
@@ -2228,7 +2252,9 @@
           "!in",
           "class",
           "motorway",
-          "main",
+          "primary",
+          "secondary",
+          "tertiary",
           "street_limited",
           "street"
         ]
@@ -2320,7 +2346,9 @@
         "in",
         "class",
         "motorway",
-        "main"
+        "primary",
+        "secondary",
+        "tertiary"
       ],
       "layout": {
         "symbol-placement": "line",
