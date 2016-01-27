@@ -62,7 +62,7 @@
     }
   },
   "sources": {
-    "mapbox://mapbox.mapbox-streets-v7": {
+    "mapbox": {
       "url": "mapbox://mapbox.mapbox-streets-v7",
       "type": "vector"
     }
@@ -534,11 +534,19 @@
       "id": "tunnel_service_casing",
       "type": "line",
       "source": "mapbox",
-      "source-layer": "tunnel",
+      "source-layer": "road",
       "filter": [
+        "all",
+        [
+          "==",
+          "structure",
+          "tunnel"
+        ],
+        [
         "==",
         "class",
         "service"
+        ]
       ],
       "layout": {
         "line-join": "round"
@@ -577,10 +585,16 @@
       "source": "mapbox",
       "source-layer": "tunnel",
       "filter": [
-        "in",
+        "all",
+        [
+          "==",
+          "structure",
+          "tunnel"
+        ],
+        ["in",
         "class",
         "street",
-        "street_limited"
+        "street_limited"]
       ],
       "layout": {
         "line-join": "round"
@@ -635,9 +649,19 @@
       "source": "mapbox",
       "source-layer": "tunnel",
       "filter": [
-        "==",
+        "all",
+        [
+          "==",
+          "structure",
+          "tunnel"
+        ],
+        [
+        "in",
         "class",
-        "main"
+        "primary",
+        "secondary",
+        "tertiary"
+        ]
       ],
       "layout": {
         "line-join": "round"
@@ -1126,7 +1150,9 @@
       "filter": [
         "==",
         "class",
-        "main"
+        "primary",
+        "secondary",
+        "tertiary"
       ],
       "layout": {
         "line-cap": "round",
@@ -1211,7 +1237,7 @@
       "filter": [
         "==",
         "class",
-        "path"
+        "path",
       ],
       "paint": {
         "line-color": "#cba",
@@ -1537,9 +1563,16 @@
       "source": "mapbox",
       "source-layer": "bridge",
       "filter": [
-        "==",
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        ["==",
         "class",
         "service"
+        ]
       ],
       "layout": {
         "line-join": "round"
@@ -1856,7 +1889,6 @@
           "in",
           "class",
           "major_rail",
-          "minor_rail"
         ]
       ],
       "paint": {
