@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Mapbox Streets",
+  "name": "Streets",
   "metadata": {
     "mapbox:groups": {
       "1444934828655.3389": {
@@ -135,11 +135,11 @@
   },
   "sources": {
     "composite": {
-      "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v7",
+      "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6",
       "type": "vector"
     }
   },
-  "sprite": "mapbox://sprites/mapbox/streets-v8",
+  "sprite": "mapbox://sprites/xrwang88/cijn885kr00i98wlxjr8i0oqa",
   "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -9150,5 +9150,10 @@
       "source-layer": "country_label",
       "interactive": true
     }
-  ]
+  ],
+  "created": "2016-01-20T19:32:37.668Z",
+  "id": "cijn885kr00i98wlxjr8i0oqa",
+  "modified": "2016-01-20T19:32:37.668Z",
+  "owner": "xrwang88",
+  "draft": false
 }

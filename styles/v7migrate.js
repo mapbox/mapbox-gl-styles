@@ -167,6 +167,10 @@ var newBridgeMinorFilter = [
 ];
 
 var newBridgeMotorwayFilter = [
+    "track"
+];
+
+var newBridgeMajorFilter = [
   "all",
   [
     "==",
@@ -177,6 +181,11 @@ var newBridgeMotorwayFilter = [
     "in",
     "class",
     "motorway",
+
+    "trunk",
+    "primary",
+    "secondary",
+    "tertiary"
   ]
 ];
 
@@ -269,6 +278,7 @@ var newBridgeTrunkFilter = [
     "trunk"
   ]
 ];
+
 
 
 var newMainRoadFilter= [
@@ -381,6 +391,7 @@ layers.forEach (function(layer){
       layer.filter = newRoadOneWayFilter;
     }
 
+
     //tunnels
     if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "street") && searchNested(filterarray,"==")){
       layer.filter = newTunnelMinorFilter;
@@ -398,6 +409,7 @@ layers.forEach (function(layer){
 
     }
     if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "main") && searchNested(filterarray,"==")&& searchNested("!=")){
+
       layer.filter = newTunnelMainFilter;
       layer["source-layer"] = "road";
 
@@ -469,26 +481,6 @@ layers.forEach (function(layer){
     }
 
 });
-
-
-
-// 	if (layer["source-layer"] === "tunnel" && layer["filter"][2].
-// 	if (layer["source-layer"] === "bridge" && layer["filter"].indexOf("street") != -1){
-// 	layer.filter = [
-//                 "all",
-//                 [
-//                     "!in",
-//                     "structure",
-//                     "tunnel",
-//                     "bridge"
-//                 ],
-//                 [
-//                     "==",
-//                     "class",
-//                     "street"
-//                 ]
-//             ];
-// 	}
 
 
 

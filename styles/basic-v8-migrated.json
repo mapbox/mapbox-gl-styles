@@ -145,10 +145,7 @@
         [
           "in",
           "class",
-          "trunk",
-          "primary",
-          "secondary",
-          "tertiary"
+          "motorway"
         ]
       ],
       "paint": {
@@ -222,12 +219,18 @@
       "source": "mapbox",
       "source-layer": "road",
       "filter": [
-        "in",
-        "class",
-        "trunk",
-        "primary",
-        "secondary",
-        "tertiary"
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "class",
+          "motorway",
+          "main"
+        ]
       ],
       "layout": {
         "line-cap": "round",
@@ -319,10 +322,7 @@
         [
           "in",
           "class",
-          "trunk",
-          "primary",
-          "secondary",
-          "tertiary"
+          "motorway"
         ]
       ],
       "paint": {
@@ -415,10 +415,7 @@
         [
           "in",
           "class",
-          "trunk",
-          "primary",
-          "secondary",
-          "tertiary"
+          "motorway"
         ]
       ],
       "layout": {
