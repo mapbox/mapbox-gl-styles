@@ -78,7 +78,7 @@
     }
   },
   "sources": {
-    "mapbox://mapbox.mapbox-streets-v7": {
+    "mapbox": {
       "url": "mapbox://mapbox.mapbox-streets-v7",
       "type": "vector"
     },
@@ -657,9 +657,14 @@
           "tunnel"
         ],
         [
-          "==",
+          "in",
           "class",
-          "street_limited"
+          "motorway_link",
+          "street",
+          "street_limited",
+          "service",
+          "driveway",
+          "path"
         ]
       ],
       "paint": {
@@ -701,7 +706,10 @@
         [
           "in",
           "class",
-          "motorway"
+          "motorway",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "paint": {
@@ -1000,9 +1008,11 @@
           "LineString"
         ],
         [
-          "==",
+          "in",
           "class",
-          "main"
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "layout": {
@@ -1436,12 +1446,7 @@
           "in",
           "class",
           "street",
-          "street_limited",
-          "service",
-          "path",
-          "pedestrian",
-          "track",
-          "link"
+          "street_limited"
         ]
       ],
       "minzoom": 14,
@@ -1481,9 +1486,17 @@
       "source": "mapbox",
       "source-layer": "bridge",
       "filter": [
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
         "==",
         "class",
         "street"
+        ]
       ],
       "minzoom": 14,
       "layout": {
@@ -1529,9 +1542,15 @@
           "bridge"
         ],
         [
-          "==",
+          "!=",
           "type",
           "trunk"
+        ],
+        [
+          "in",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "layout": {
@@ -1763,7 +1782,7 @@
       }
     },
     {
-      "id": "bridge-rail-tracks_copy",
+      "id": "bridge-aerialway",
       "type": "line",
       "source": "mapbox",
       "source-layer": "road",
@@ -1883,7 +1902,7 @@
         [
           "==",
           "disputed",
-          2
+          0
         ]
       ],
       "layout": {
@@ -2105,7 +2124,9 @@
           "!in",
           "class",
           "motorway",
-          "main",
+          "primary",
+          "secondary",
+          "tertiary",
           "street_limited",
           "street"
         ]
@@ -2197,7 +2218,9 @@
         "in",
         "class",
         "motorway",
-        "main"
+        "primary",
+        "secondary",
+        "tertiary"
       ],
       "layout": {
         "symbol-placement": "line",
