@@ -339,6 +339,20 @@ var newBridgeTrunkFilter = [
   ]
 ];
 
+var newBridgeAerialwayFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "bridge"
+  ],
+  [
+    "==",
+    "class",
+    "aerialway"
+  ]
+];
+
 
 
 var newMainRoadFilter= [
@@ -401,34 +415,7 @@ function searchNested(filterarray, key) {
   }
 }
 
-var existingRoadMain = [
-                "all",
-                [
-                    "==",
-                    "class",
-                    "main"
-                ],
-                [
-                    "!=",
-                    "type",
-                    "trunk"
-                ]
-            ];
 
-
-var existingRoadTrunk = [
-                "all",
-                [
-                    "==",
-                    "class",
-                    "main"
-                ],
-                [
-                    "==",
-                    "type",
-                    "trunk"
-                ]
-            ];
 
 layers.forEach (function(layer){
 	// console.log(layer.id);
@@ -507,8 +494,10 @@ layers.forEach (function(layer){
 
     //bridge
 
-    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "street") && searchNested(filterarray,"==")){
-      layer.filter = newBridgeMinorFilter;
+
+
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "aerialway")){
+      layer.filter = newBridgeAerialwayFilter;
       layer["source-layer"] = "road";
 
     }
@@ -541,11 +530,11 @@ layers.forEach (function(layer){
       layer.filter = newBridgeMotorwayLinkFilter;
       layer["source-layer"] = "road";
     }
-    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "major_rail") && searchNested(filterarray,"==")){
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "major_rail")){
       layer.filter = newBridgeRailFilter;
       layer["source-layer"] = "road";
     }
-    
+
     if (layer["source-layer"]==="bridge" && searchNested(filterarray, "trunk") && searchNested(filterarray,"==")){
       layer.filter = newBridgeTrunkFilter;
       layer["source-layer"] = "road";

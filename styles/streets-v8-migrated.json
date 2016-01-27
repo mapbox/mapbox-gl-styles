@@ -3976,11 +3976,19 @@
       "id": "bridge-path-bg",
       "type": "line",
       "source": "composite",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "==",
-        "class",
-        "path"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "path"
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -4110,19 +4118,13 @@
         "all",
         [
           "==",
-          "structure",
-          "bridge"
+          "$type",
+          "LineString"
         ],
         [
-          "in",
+          "==",
           "class",
-          "street",
-          "street_limited",
-          "service",
-          "path",
-          "pedestrian",
-          "track",
-          "link"
+          "street"
         ]
       ],
       "type": "line",
@@ -4168,7 +4170,7 @@
           ]
         }
       },
-      "source-layer": "road",
+      "source-layer": "bridge",
       "interactive": true
     },
     {
@@ -4448,23 +4450,9 @@
         "mapbox:group": "1444855799204.86"
       },
       "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "in",
-          "class",
-          "street",
-          "street_limited",
-          "service",
-          "path",
-          "pedestrian",
-          "track",
-          "link"
-        ]
+        "==",
+        "class",
+        "street"
       ],
       "type": "line",
       "source": "composite",
@@ -4502,7 +4490,7 @@
           ]
         }
       },
-      "source-layer": "road",
+      "source-layer": "bridge",
       "interactive": true
     },
     {
@@ -4963,23 +4951,9 @@
         "mapbox:group": "1444855799204.86"
       },
       "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "in",
-          "class",
-          "street",
-          "street_limited",
-          "service",
-          "path",
-          "pedestrian",
-          "track",
-          "link"
-        ]
+        "==",
+        "class",
+        "street"
       ],
       "type": "line",
       "source": "composite",
@@ -5017,7 +4991,7 @@
           ]
         }
       },
-      "source-layer": "road",
+      "source-layer": "bridge",
       "interactive": true
     },
     {
@@ -5224,10 +5198,18 @@
         "mapbox:group": "1444855799204.86"
       },
       "filter": [
-        "in",
-        "class",
-        "major_rail",
-        "minor_rail"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "major_rail",
+          "minor_rail"
+        ]
       ],
       "type": "line",
       "source": "composite",
@@ -5259,7 +5241,7 @@
           ]
         }
       },
-      "source-layer": "bridge",
+      "source-layer": "road",
       "interactive": true
     },
     {
@@ -5324,9 +5306,17 @@
         "mapbox:group": "1444855799204.86"
       },
       "filter": [
-        "==",
-        "class",
-        "aerialway"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "==",
+          "class",
+          "aerialway"
+        ]
       ],
       "type": "line",
       "source": "composite",
@@ -5347,7 +5337,7 @@
           ]
         }
       },
-      "source-layer": "bridge",
+      "source-layer": "road",
       "interactive": true
     },
     {
