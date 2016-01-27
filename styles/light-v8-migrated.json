@@ -705,15 +705,9 @@
           "tunnel"
         ],
         [
-          "in",
+          "==",
           "class",
-          "motorway_link",
-          "street",
-          "street_limited",
-          "service",
-          "path",
-          "pedestrian",
-          "track"
+          "street_limited"
         ]
       ],
       "paint": {
@@ -755,10 +749,7 @@
         [
           "in",
           "class",
-          "trunk",
-          "primary",
-          "secondary",
-          "tertiary"
+          "motorway"
         ]
       ],
       "paint": {
@@ -1056,12 +1047,17 @@
       "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
-        "in",
-        "class",
-        "trunk",
-        "primary",
-        "secondary",
-        "tertiary"
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "class",
+          "main"
+        ]
       ],
       "layout": {
         "line-cap": "round",
@@ -1107,12 +1103,9 @@
       "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
-        "in",
-        "class",
-        "trunk",
-        "primary",
-        "secondary",
-        "tertiary"
+        "==",
+        "type",
+        "trunk"
       ],
       "layout": {
         "line-cap": "round",
@@ -1279,13 +1272,13 @@
         [
           "in",
           "class",
-          "motorway_link",
           "street",
           "street_limited",
           "service",
           "path",
           "pedestrian",
-          "track"
+          "track",
+          "link"
         ]
       ],
       "paint": {
@@ -1325,11 +1318,19 @@
       "id": "bridge-path",
       "type": "line",
       "source": "mapbox://mapbox.mapbox-streets-v7",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "==",
-        "class",
-        "path"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "path"
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -1371,13 +1372,13 @@
         [
           "in",
           "class",
-          "motorway_link",
           "street",
           "street_limited",
           "service",
           "path",
           "pedestrian",
-          "track"
+          "track",
+          "link"
         ]
       ],
       "minzoom": 11,
@@ -1439,7 +1440,7 @@
         [
           "in",
           "class",
-          "motorway"
+          "motorway_link"
         ]
       ],
       "minzoom": 10,
@@ -1488,13 +1489,13 @@
         [
           "in",
           "class",
-          "motorway_link",
           "street",
           "street_limited",
           "service",
           "path",
           "pedestrian",
-          "track"
+          "track",
+          "link"
         ]
       ],
       "minzoom": 14,
@@ -1532,25 +1533,11 @@
       "id": "bridge-street",
       "type": "line",
       "source": "mapbox://mapbox.mapbox-streets-v7",
-      "source-layer": "road",
+      "source-layer": "bridge",
       "filter": [
-        "all",
-        [
-          "==",
-          "structure",
-          "bridge"
-        ],
-        [
-          "in",
-          "class",
-          "motorway_link",
-          "street",
-          "street_limited",
-          "service",
-          "path",
-          "pedestrian",
-          "track"
-        ]
+        "==",
+        "class",
+        "street"
       ],
       "minzoom": 14,
       "layout": {
@@ -1596,12 +1583,9 @@
           "bridge"
         ],
         [
-          "in",
-          "class",
-          "trunk",
-          "primary",
-          "secondary",
-          "tertiary"
+          "==",
+          "type",
+          "trunk"
         ]
       ],
       "layout": {
@@ -1655,12 +1639,9 @@
           "bridge"
         ],
         [
-          "in",
-          "class",
-          "trunk",
-          "primary",
-          "secondary",
-          "tertiary"
+          "==",
+          "type",
+          "trunk"
         ]
       ],
       "layout": {
@@ -1745,12 +1726,20 @@
       "id": "bridge-rail",
       "type": "line",
       "source": "mapbox://mapbox.mapbox-streets-v7",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "in",
-        "class",
-        "major_rail",
-        "minor_rail"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "major_rail",
+          "minor_rail"
+        ]
       ],
       "minzoom": 13,
       "layout": {
@@ -1784,12 +1773,20 @@
       "id": "bridge-rail-tracks",
       "type": "line",
       "source": "mapbox://mapbox.mapbox-streets-v7",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "in",
-        "class",
-        "major_rail",
-        "minor_rail"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "major_rail",
+          "minor_rail"
+        ]
       ],
       "minzoom": 14,
       "layout": {
@@ -1823,11 +1820,19 @@
       "id": "bridge-rail-tracks_copy",
       "type": "line",
       "source": "mapbox://mapbox.mapbox-streets-v7",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "==",
-        "class",
-        "aerialway"
+        "all",
+        [
+          "==",
+          "structure",
+          "bridge"
+        ],
+        [
+          "==",
+          "class",
+          "aerialway"
+        ]
       ],
       "minzoom": 14,
       "layout": {
@@ -2482,7 +2487,7 @@
           "rocket",
           "park",
           "golf",
-          "cemetary",
+          "cemetery",
           "zoo",
           "campsite",
           "swimming",

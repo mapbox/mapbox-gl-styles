@@ -2,8 +2,8 @@
   "version": 8,
   "name": "Basic",
   "sources": {
-    "mapbox": {
-      "url": "mapbox://mapbox.mapbox-streets-v6",
+    "mapbox://mapbox.mapbox-streets-v7": {
+      "url": "mapbox://mapbox.mapbox-streets-v7",
       "type": "vector"
     }
   },
@@ -20,7 +20,7 @@
     {
       "id": "landuse_park",
       "type": "fill",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "landuse",
       "filter": [
         "==",
@@ -34,7 +34,7 @@
     {
       "id": "waterway",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "waterway",
       "filter": [
         "all",
@@ -70,7 +70,7 @@
     {
       "id": "water",
       "type": "fill",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "water",
       "paint": {
         "fill-color": "#a0cfdf"
@@ -79,7 +79,7 @@
     {
       "id": "building",
       "type": "fill",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "building",
       "paint": {
         "fill-color": "#d6d6d6"
@@ -88,7 +88,7 @@
     {
       "id": "tunnel_minor",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
         "all",
@@ -98,15 +98,9 @@
           "tunnel"
         ],
         [
-          "in",
+          "==",
           "class",
-          "motorway_link",
-          "street",
-          "street_limited",
-          "service",
-          "path",
-          "pedestrian",
-          "track"
+          "street_limited"
         ]
       ],
       "paint": {
@@ -133,7 +127,7 @@
     {
       "id": "tunnel_major",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
         "all",
@@ -172,7 +166,7 @@
     {
       "id": "road_minor",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
         "all",
@@ -216,7 +210,7 @@
     {
       "id": "road_major",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
         "all",
@@ -256,7 +250,7 @@
     {
       "id": "bridge_minor_case",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
         "all",
@@ -310,7 +304,7 @@
     {
       "id": "bridge_major_case",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
         "all",
@@ -358,7 +352,7 @@
     {
       "id": "bridge_minor",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
         "all",
@@ -403,7 +397,7 @@
     {
       "id": "bridge_major",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road",
       "filter": [
         "all",
@@ -442,7 +436,7 @@
     {
       "id": "admin_country",
       "type": "line",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "admin",
       "filter": [
         "all",
@@ -489,7 +483,7 @@
     {
       "id": "poi_label",
       "type": "symbol",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "poi_label",
       "filter": [
         "all",
@@ -539,7 +533,7 @@
     {
       "id": "road_major_label",
       "type": "symbol",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "road_label",
       "filter": [
         "all",
@@ -587,7 +581,7 @@
     {
       "id": "place_label_other",
       "type": "symbol",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "place_label",
       "filter": [
         "all",
@@ -637,7 +631,7 @@
     {
       "id": "place_label_city",
       "type": "symbol",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "place_label",
       "filter": [
         "all",
@@ -683,7 +677,7 @@
     {
       "id": "country_label",
       "type": "symbol",
-      "source": "mapbox",
+      "source": "mapbox://mapbox.mapbox-streets-v7",
       "source-layer": "country_label",
       "filter": [
         "==",
