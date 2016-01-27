@@ -89,7 +89,7 @@
             },
             "1444855799204.86": {
                 "name": "Bridges",
-                "collapsed": true
+                "collapsed": false
             },
             "1444856087950.3635": {
                 "name": "Marine labels",
@@ -134,8 +134,8 @@
         }
     },
     "center": [
-        -71.08960253069455,
-        42.37157791767166
+        -71.09292596292889,
+        42.370814837289174
     ],
     "zoom": 16.171723146780913,
     "bearing": 0,
@@ -146,8 +146,8 @@
             "type": "vector"
         }
     },
-    "sprite": "mapbox://sprites/mapbox/streets-v8",
-    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "sprite": "mapbox://sprites/xrwang88/cijx30pp200bc3slwi6gp02hl",
+    "glyphs": "mapbox://fonts/xrwang88/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",
@@ -1734,9 +1734,35 @@
         },
         {
             "interactive": true,
+            "minzoom": 11,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
             "metadata": {
                 "mapbox:group": "1444855769305.6016"
             },
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "structure",
+                    "tunnel"
+                ],
+                [
+                    "in",
+                    "class",
+                    "motorway_link",
+                    "street_limited",
+                    "service",
+                    "path",
+                    "pedestrian",
+                    "track"
+                ]
+            ],
+            "type": "line",
+            "source": "composite",
             "id": "tunnel-street-case",
             "paint": {
                 "line-width": {
@@ -1788,7 +1814,7 @@
                     ]
                 }
             },
-            "ref": "tunnel-street-low"
+            "source-layer": "road"
         },
         {
             "interactive": true,
@@ -1808,9 +1834,11 @@
                     "tunnel"
                 ],
                 [
-                    "==",
-                    "type",
-                    "trunk"
+                    "in",
+                    "class",
+                    "primary",
+                    "secondary",
+                    "tertiary"
                 ]
             ],
             "type": "line",
@@ -1857,9 +1885,29 @@
         },
         {
             "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
             "metadata": {
                 "mapbox:group": "1444855769305.6016"
             },
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "structure",
+                    "tunnel"
+                ],
+                [
+                    "==",
+                    "type",
+                    "trunk"
+                ]
+            ],
+            "type": "line",
+            "source": "composite",
             "id": "tunnel-trunk-case",
             "paint": {
                 "line-width": {
@@ -1895,7 +1943,7 @@
                     3
                 ]
             },
-            "ref": "tunnel-main-case"
+            "source-layer": "road"
         },
         {
             "interactive": true,
@@ -2305,7 +2353,7 @@
                 },
                 "line-color": "#f2de9e"
             },
-            "ref": "tunnel-main-case"
+            "ref": "tunnel-trunk-case"
         },
         {
             "interactive": true,
@@ -2344,6 +2392,11 @@
                     "==",
                     "type",
                     "trunk"
+                ],
+                [
+                    "==",
+                    "oneway",
+                    "true"
                 ]
             ],
             "type": "symbol",
@@ -3738,17 +3791,9 @@
                     "LineString"
                 ],
                 [
-                    "all",
-                    [
-                        "==",
-                        "class",
-                        "street_limited"
-                    ],
-                    [
-                        "==",
-                        "type",
-                        "construction"
-                    ]
+                    "==",
+                    "type",
+                    "construction"
                 ]
             ],
             "type": "line",
@@ -4055,17 +4100,17 @@
                 "mapbox:group": "1444855799204.86"
             },
             "filter": [
-              "all",
-              [
-                "==",
-                "structure",
-                "bridge"
-              ],
-              [
-                "in",
-                "class",
-                "street"
-              ]
+                "all",
+                [
+                    "==",
+                    "structure",
+                    "bridge"
+                ],
+                [
+                    "==",
+                    "class",
+                    "street"
+                ]
             ],
             "type": "line",
             "source": "composite",
@@ -4110,7 +4155,7 @@
                     ]
                 }
             },
-            "source-layer": "bridge"
+            "source-layer": "road"
         },
         {
             "interactive": true,
@@ -4331,7 +4376,6 @@
                 [
                     "in",
                     "class",
-                    "street",
                     "street_limited",
                     "service",
                     "path",
@@ -4380,7 +4424,7 @@
         },
         {
             "interactive": true,
-            "minzoom": 14,
+            "minzoom": 11,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "butt",
@@ -4390,17 +4434,17 @@
                 "mapbox:group": "1444855799204.86"
             },
             "filter": [
-              "all",
-              [
-                "==",
-                "structure",
-                "bridge"
-              ],
-              [
-                "in",
-                "class",
-                "street"
-              ]
+                "all",
+                [
+                    "==",
+                    "structure",
+                    "bridge"
+                ],
+                [
+                    "==",
+                    "class",
+                    "street"
+                ]
             ],
             "type": "line",
             "source": "composite",
@@ -4420,25 +4464,21 @@
                     ]
                 },
                 "line-color": "#d9d3c9",
-                "line-gap-width": {
-                    "base": 1.5,
+                "line-opacity": {
+                    "base": 1,
                     "stops": [
                         [
-                            13,
+                            13.99,
                             0
                         ],
                         [
                             14,
-                            2
-                        ],
-                        [
-                            18,
-                            18
+                            1
                         ]
                     ]
                 }
             },
-            "source-layer": "bridge"
+            "source-layer": "road"
         },
         {
             "interactive": true,
@@ -4459,9 +4499,11 @@
                     "bridge"
                 ],
                 [
-                    "==",
-                    "type",
-                    "trunk"
+                    "in",
+                    "class",
+                    "primary",
+                    "secondary",
+                    "tertiary"
                 ]
             ],
             "type": "line",
@@ -4550,6 +4592,11 @@
                     "pedestrian",
                     "track",
                     "link"
+                ],
+                [
+                    "==",
+                    "oneway",
+                    "true"
                 ]
             ],
             "type": "symbol",
@@ -4739,6 +4786,11 @@
                     "pedestrian",
                     "track",
                     "link"
+                ],
+                [
+                    "==",
+                    "class",
+                    "construction"
                 ]
             ],
             "type": "line",
@@ -4821,9 +4873,35 @@
         },
         {
             "interactive": true,
+            "minzoom": 11,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
             "metadata": {
                 "mapbox:group": "1444855799204.86"
             },
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "structure",
+                    "bridge"
+                ],
+                [
+                    "in",
+                    "class",
+                    "street_limited",
+                    "service",
+                    "path",
+                    "pedestrian",
+                    "track",
+                    "link"
+                ]
+            ],
+            "type": "line",
+            "source": "composite",
             "id": "bridge-street_limited",
             "paint": {
                 "line-width": {
@@ -4858,34 +4936,13 @@
                     ]
                 }
             },
-            "ref": "bridge-street_limited-low"
+            "source-layer": "road"
         },
         {
             "interactive": true,
-            "minzoom": 11,
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
             "metadata": {
                 "mapbox:group": "1444855799204.86"
             },
-            "filter": [
-              "all",
-              [
-                "==",
-                "structure",
-                "bridge"
-              ],
-              [
-                "in",
-                "class",
-                "street"
-              ]
-            ],
-            "type": "line",
-            "source": "composite",
             "id": "bridge-street",
             "paint": {
                 "line-width": {
@@ -4920,7 +4977,7 @@
                     ]
                 }
             },
-            "source-layer": "bridge"
+            "ref": "bridge-street-low"
         },
         {
             "interactive": true,
@@ -4940,9 +4997,11 @@
                     "bridge"
                 ],
                 [
-                    "==",
+                    "in",
                     "type",
-                    "trunk"
+                    "primary",
+                    "secondary",
+                    "tertiary"
                 ]
             ],
             "type": "line",
@@ -4985,9 +5044,29 @@
         },
         {
             "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
             "metadata": {
                 "mapbox:group": "1444855799204.86"
             },
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "structure",
+                    "bridge"
+                ],
+                [
+                    "==",
+                    "type",
+                    "trunk"
+                ]
+            ],
+            "type": "line",
+            "source": "composite",
             "id": "bridge-trunk",
             "paint": {
                 "line-width": {
@@ -5005,7 +5084,7 @@
                 },
                 "line-color": "#f2cf60"
             },
-            "ref": "bridge-main"
+            "source-layer": "road"
         },
         {
             "interactive": true,
@@ -5044,6 +5123,11 @@
                     "==",
                     "type",
                     "trunk"
+                ],
+                [
+                    "==",
+                    "oneway",
+                    "true"
                 ]
             ],
             "type": "symbol",
@@ -5285,6 +5369,11 @@
                     "==",
                     "class",
                     "motorway"
+                ],
+                [
+                    "==",
+                    "oneway",
+                    "true"
                 ]
             ],
             "type": "symbol",
@@ -9035,9 +9124,9 @@
             "source-layer": "country_label"
         }
     ],
-    "created": "2016-01-20T19:10:46.138Z",
-    "id": "cijn7g1lt00hp93lys3tzf4j7",
-    "modified": "2016-01-27T16:41:13.452Z",
+    "created": "2016-01-27T17:04:34.157Z",
+    "id": "cijx30pp200bc3slwi6gp02hl",
+    "modified": "2016-01-27T17:15:06.556Z",
     "owner": "xrwang88",
     "draft": false
 }
