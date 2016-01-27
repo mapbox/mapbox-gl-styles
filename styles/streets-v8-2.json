@@ -139,7 +139,7 @@
             "type": "vector"
         }
     },
-    "sprite": "mapbox://sprites/xrwang88/cijn885kr00i98wlxjr8i0oqa",
+    "sprite": "mapbox://sprites/mapbox/streets-v8",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
         {

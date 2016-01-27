@@ -8,6 +8,35 @@ console.log(files);
 var inStyle = fs.readFileSync(inputFile, 'utf8');
 var inputStyle = JSON.parse(inStyle);
 //Tunnels
+var newTunnelPathFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "tunnel"
+  ],
+  [
+    "in",
+    "class",
+    "path"
+  ]
+];
+
+var newTunnelSLtdFilter= [
+  "all",
+  [
+    "==",
+    "structure",
+    "tunnel"
+  ],
+  [
+    "==",
+    "class",
+    "street_limited"
+  ]
+];
+
+
 var newTunnelMinorFilter = [
 	"all",
 	[
@@ -135,7 +164,7 @@ var newTunnelTrunkFilter = [
   [
     "==",
     "structure",
-    "bridge"
+    "tunnel"
   ],
   [
     "==",
@@ -144,6 +173,23 @@ var newTunnelTrunkFilter = [
   ]
 ];
 
+var newTunnelLtdPoly =[
+                "all",
+                [
+                 "==",
+                 "structure",
+                 "tunnel"],
+                [
+                    "==",
+                    "$type",
+                    "Polygon"
+                ],
+                [
+                    "==",
+                    "class",
+                    "street_limited"
+                ]
+            ];
 
 // Bridges
 var newBridgeMinorFilter = [
@@ -219,6 +265,20 @@ var newBridgeMainFilter = [
     "primary",
     "secondary",
     "tertiary"
+  ]
+];
+
+var newBridgePathFilter = [
+  "all",
+  [
+    "==",
+    "structure",
+    "bridge"
+  ],
+  [
+    "in",
+    "class",
+    "path"
   ]
 ];
 
@@ -393,15 +453,25 @@ layers.forEach (function(layer){
 
 
     //tunnels
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "street_limited") && searchNested(filterarray,"==") && layer["id"].indexOf("street_limited")){
+      layer.filter = newTunnelSLtdFilter;
+      layer["source-layer"] = "road";
+    }
     if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "street") && searchNested(filterarray,"==")){
       layer.filter = newTunnelMinorFilter;
       layer["source-layer"] = "road";
-
     }
-    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "street_limited") && searchNested(filterarray,"==")){
-      layer.filter = newTunnelMinorFilter;
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "path") && searchNested(filterarray,"==") && layer["id"].indexOf("path")){
+      layer.filter = newTunnelPathFilter;
       layer["source-layer"] = "road";
-
+    }
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "major_rail")){
+      layer.filter = newTunnelRailFilter;
+      layer["source-layer"] = "road";
+    }
+    if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "street_limited") && searchNested(filterarray,"==")&& searchNested(filterarray,"Polygon")){
+      layer.filter = newTunnelLtdPoly;
+      layer["source-layer"] = "road";
     }
     if (layer["source-layer"]==="tunnel" && searchNested(filterarray, "driveway") && searchNested(filterarray,"service") && searchNested(filterarray,"in")){
       layer.filter = newTunnelServiceFilter;
@@ -475,8 +545,14 @@ layers.forEach (function(layer){
       layer.filter = newBridgeRailFilter;
       layer["source-layer"] = "road";
     }
+    
     if (layer["source-layer"]==="bridge" && searchNested(filterarray, "trunk") && searchNested(filterarray,"==")){
       layer.filter = newBridgeTrunkFilter;
+      layer["source-layer"] = "road";
+    }
+
+    if (layer["source-layer"]==="bridge" && searchNested(filterarray, "path") && searchNested(filterarray,"==") && layer["id"].indexOf("path")){
+      layer.filter = newBridgePathFilter;
       layer["source-layer"] = "road";
     }
 
