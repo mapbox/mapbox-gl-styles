@@ -98,9 +98,14 @@
           "tunnel"
         ],
         [
-          "==",
+          "in",
           "class",
-          "street_limited"
+          "motorway_link",
+          "street",
+          "street_limited",
+          "service",
+          "driveway",
+          "path"
         ]
       ],
       "paint": {
@@ -139,7 +144,10 @@
         [
           "in",
           "class",
-          "motorway"
+          "motorway",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "paint": {
@@ -223,7 +231,9 @@
           "in",
           "class",
           "motorway",
-          "main"
+          "primary",
+          "tertiary",
+          "secondary"
         ]
       ],
       "layout": {
@@ -316,7 +326,10 @@
         [
           "in",
           "class",
-          "motorway"
+          "motorway",
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "paint": {
@@ -409,7 +422,9 @@
         [
           "in",
           "class",
-          "motorway"
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "layout": {
@@ -546,7 +561,9 @@
           "in",
           "class",
           "motorway",
-          "main"
+          "primary",
+          "secondary",
+          "tertiary"
         ]
       ],
       "layout": {
