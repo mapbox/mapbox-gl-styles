@@ -1787,7 +1787,7 @@
       }
     },
     {
-      "id": "bridge-rail-tracks_copy",
+      "id": "bridge-aerialway",
       "type": "line",
       "source": "mapbox://mapbox.mapbox-streets-v6",
       "source-layer": "bridge",
@@ -1885,22 +1885,17 @@
       "source": "mapbox://mapbox.mapbox-streets-v6",
       "source-layer": "admin",
       "filter": [
-        "all",
-        [
-          "==",
-          "admin_level",
-          2
-        ],
-        [
-          "==",
-          "maritime",
-          0
-        ],
-        [
-          "==",
-          "disputed",
-          2
-        ]
+          "all",
+          [
+              "==",
+              "admin_level",
+              2
+          ],
+          [
+              "==",
+              "maritime",
+              0
+          ]
       ],
       "layout": {
         "visibility": "visible",
@@ -1945,17 +1940,22 @@
       "source": "mapbox://mapbox.mapbox-streets-v6",
       "source-layer": "admin",
       "filter": [
-        "all",
-        [
-          ">=",
-          "admin_level",
-          3
-        ],
-        [
-          "==",
-          "maritime",
-          0
-        ]
+          "all",
+          [
+              ">=",
+              "admin_level",
+              3
+          ],
+          [
+              "==",
+              "maritime",
+              0
+          ],
+          [
+              "==",
+              "disputed",
+              0
+          ]
       ],
       "layout": {
         "visibility": "visible",
@@ -2065,6 +2065,61 @@
         "mapbox:group": "1444850820682.8682"
       }
     },
+    {
+          "interactive": true,
+          "minzoom": 1,
+          "layout": {
+              "visibility": "visible",
+              "line-join": "round",
+              "line-cap": "round"
+          },
+          "metadata": {
+              "mapbox:group": "1444850820682.8682"
+          },
+          "filter": [
+              "all",
+              [
+                  "==",
+                  "admin_level",
+                  2
+              ],
+              [
+                  "==",
+                  "maritime",
+                  0
+              ],
+              [
+                  "==",
+                  "disputed",
+                  1
+              ]
+          ],
+          "type": "line",
+          "source": "mapbox://mapbox.mapbox-streets-v6",
+          "id": "admin-disputed",
+          "paint": {
+              "line-color": "#c0c0c0",
+              "line-opacity": 1,
+              "line-width": {
+                  "base": 1,
+                  "stops": [
+                      [
+                          3,
+                          0.5
+                      ],
+                      [
+                          10,
+                          2
+                      ]
+                  ]
+              },
+              "line-dasharray": [
+                  1,
+                  1.5
+              ]
+          },
+          "source-layer": "admin"
+      },
     {
       "id": "interstate-motorway_shields",
       "type": "symbol",
