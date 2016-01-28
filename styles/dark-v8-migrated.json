@@ -1888,22 +1888,17 @@
       "source": "mapbox",
       "source-layer": "admin",
       "filter": [
-        "all",
-        [
-          "==",
-          "admin_level",
-          2
-        ],
-        [
-          "==",
-          "maritime",
-          0
-        ],
-        [
-          "==",
-          "disputed",
-          0
-        ]
+          "all",
+          [
+              "==",
+              "admin_level",
+              2
+          ],
+          [
+              "==",
+              "maritime",
+              0
+          ]
       ],
       "layout": {
         "visibility": "visible",
@@ -1957,6 +1952,11 @@
         [
           "==",
           "maritime",
+          0
+        ],
+        [
+          "==",
+          "disputed",
           0
         ]
       ],
@@ -2068,6 +2068,61 @@
         "mapbox:group": "1444855797854.0842"
       }
     },
+    {
+    "interactive": true,
+    "minzoom": 1,
+    "layout": {
+        "visibility": "visible",
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "metadata": {
+        "mapbox:group": "1444855797854.0842"
+    },
+    "filter": [
+        "all",
+        [
+            "==",
+            "admin_level",
+            2
+        ],
+        [
+            "==",
+            "maritime",
+            0
+        ],
+        [
+            "==",
+            "disputed",
+            1
+        ]
+    ],
+    "type": "line",
+    "source": "mapbox",
+    "id": "admin-disputed",
+    "paint": {
+        "line-color": "#5f5f5f",
+        "line-opacity": 1,
+        "line-width": {
+            "base": 1,
+            "stops": [
+                [
+                    3,
+                    0.5
+                ],
+                [
+                    10,
+                    2
+                ]
+            ]
+        },
+        "line-dasharray": [
+            1,
+            1.5
+        ]
+    },
+    "source-layer": "admin"
+},
     {
       "id": "waterway-label",
       "type": "symbol",
