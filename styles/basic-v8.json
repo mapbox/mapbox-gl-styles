@@ -1,13 +1,6 @@
 {
     "version": 8,
-    "name": "Basic v7",
-    "center": [
-        -156.3241514425011,
-        20.688929843081468
-    ],
-    "zoom": 13.055726209615132,
-    "bearing": 0,
-    "pitch": 0,
+    "name": "Basic",
     "sources": {
         "mapbox": {
             "url": "mapbox://mapbox.mapbox-streets-v7",
