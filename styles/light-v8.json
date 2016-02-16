@@ -2536,7 +2536,8 @@
                 "secondary",
                 "tertiary",
                 "street_limited",
-                "street"
+                "street",
+                "ferry"
             ]
         ],
         "type": "symbol",
@@ -2649,19 +2650,7 @@
                 "Arial Unicode MS Regular"
             ],
             "visibility": "visible",
-            "text-field": {
-                "base": 1,
-                "stops": [
-                    [
-                        12,
-                        ""
-                    ],
-                    [
-                        13,
-                        "{name_en}"
-                    ]
-                ]
-            },
+            "text-field": "{name_en}",
             "text-max-width": 9,
             "text-size": {
                 "base": 1,
@@ -2680,12 +2669,6 @@
         "metadata": {
             "mapbox:group": "1444850775955.1606"
         },
-        "filter": [
-            "in",
-            "maki",
-            "heliport",
-            "rocket"
-        ],
         "type": "symbol",
         "source": "mapbox://mapbox.mapbox-streets-v7",
         "id": "airport-label",
@@ -2695,7 +2678,7 @@
             "text-halo-width": 1,
             "text-halo-blur": 0
         },
-        "source-layer": "poi_label"
+        "source-layer": "airport_label"
     },
     {
         "interactive": true,
