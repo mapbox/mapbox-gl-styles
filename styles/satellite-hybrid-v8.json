@@ -39,7 +39,7 @@
   },
   "sources": {
     "mapbox": {
-      "url": "mapbox://mapbox.mapbox-streets-v6",
+      "url": "mapbox://mapbox.mapbox-streets-v7",
       "type": "vector"
     },
     "satellite": {
@@ -288,9 +288,10 @@
       "source": "mapbox",
       "source-layer": "road",
       "filter": [
-        "==",
+        "in",
         "class",
-        "motorway"
+        "motorway",
+        "motorway_link"
       ],
       "minzoom": 5,
       "paint": {
@@ -330,11 +331,20 @@
       "id": "motorway_bridge",
       "type": "line",
       "source": "mapbox",
-      "source-layer": "bridge",
+      "source-layer": "road",
       "filter": [
-        "==",
-        "class",
-        "motorway"
+          "all",
+          [
+              "==",
+              "structure",
+              "bridge"
+          ],
+          [
+              "in",
+              "class",
+              "motorway_link",
+              "motorway"
+          ]
       ],
       "minzoom": 5,
       "paint": {
@@ -376,9 +386,12 @@
       "source": "mapbox",
       "source-layer": "road",
       "filter": [
-        "==",
+        "in",
         "class",
-        "main"
+        "trunk",
+        "primary",
+        "secondary",
+        "tertiary"
       ],
       "minzoom": 8,
       "layout": {
@@ -779,10 +792,10 @@
       "source": "mapbox",
       "source-layer": "road_label",
       "filter": [
-        "==",
-        "$type",
-        "LineString"
-      ],
+          "!=",
+          "class",
+          "motorway"
+        ],
       "layout": {
         "text-transform": "uppercase",
         "text-font": [
