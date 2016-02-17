@@ -3443,6 +3443,52 @@
             "source-layer": "poi_label"
         },
         {
+            "interactive": true,
+            "minzoom": 13,
+            "layout": {
+                "icon-image": "{maki}-12",
+                "text-font": [
+                    "Open Sans Semibold",
+                    "Arial Unicode MS Bold"
+                ],
+                "text-field": "{name_en}",
+                "text-max-width": 9,
+                "text-padding": 2,
+                "text-offset": [
+                    0,
+                    0.6
+                ],
+                "text-anchor": "top",
+                "text-size": 12
+            },
+            "metadata": {
+                "mapbox:group": "1444849297111.495"
+            },
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "Point"
+                ],
+                [
+                    "==",
+                    "scalerank",
+                    1
+                ]
+            ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "airport-label",
+            "paint": {
+                "text-color": "#666",
+                "text-halo-color": "#ffffff",
+                "text-halo-width": 1,
+                "text-halo-blur": 0.5
+            },
+            "source-layer": "airport_label"
+        },
+        {
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
