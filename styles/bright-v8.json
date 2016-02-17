@@ -621,7 +621,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "tunnel-street-casing",
+            "id": "tunnel_street_casing",
             "paint": {
                 "line-color": "#cfcdca",
                 "line-width": {
@@ -684,7 +684,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "tunnel-primary-casing",
+            "id": "tunnel_primary_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -716,7 +716,7 @@
             "metadata": {
                 "mapbox:group": "1444849354174.1904"
             },
-            "id": "tunnel-primary-link-casing",
+            "id": "tunnel_primary_link_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -741,7 +741,7 @@
                     ]
                 }
             },
-            "ref": "tunnel-primary-casing"
+            "ref": "tunnel_primary_casing"
         },
         {
             "interactive": true,
@@ -767,7 +767,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "tunnel-secondary-tertiary-casing",
+            "id": "tunnel_secondary_tertiary_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -799,7 +799,7 @@
             "metadata": {
                 "mapbox:group": "1444849354174.1904"
             },
-            "id": "tunnel-secondary-tertiary-link-casing",
+            "id": "tunnel_secondary_tertiary_link_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -824,7 +824,7 @@
                     ]
                 }
             },
-            "ref": "tunnel-secondary-tertiary-casing"
+            "ref": "tunnel_secondary_tertiary_casing"
         },
         {
             "interactive": true,
@@ -985,7 +985,7 @@
             "metadata": {
                 "mapbox:group": "1444849354174.1904"
             },
-            "id": "tunnel-street",
+            "id": "tunnel_street",
             "paint": {
                 "line-color": "#fff",
                 "line-width": {
@@ -1007,7 +1007,7 @@
                 },
                 "line-opacity": 1
             },
-            "ref": "tunnel-street-casing"
+            "ref": "tunnel_street_casing"
         },
         {
             "interactive": true,
@@ -1034,7 +1034,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "tunnel-primary",
+            "id": "tunnel_primary",
             "paint": {
                 "line-color": "#fff4c6",
                 "line-width": {
@@ -1080,7 +1080,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "tunnel-primary-link",
+            "id": "tunnel_primary_link",
             "paint": {
                 "line-color": "#fff4c6",
                 "line-width": {
@@ -1108,7 +1108,7 @@
             "metadata": {
                 "mapbox:group": "1444849354174.1904"
             },
-            "id": "tunnel-secondary-tertiary",
+            "id": "tunnel_secondary_tertiary",
             "paint": {
                 "line-color": "#fff4c6",
                 "line-width": {
@@ -1129,7 +1129,7 @@
                     ]
                 }
             },
-            "ref": "tunnel-secondary-tertiary-casing"
+            "ref": "tunnel_secondary_tertiary_casing"
         },
         {
             "interactive": true,
@@ -1155,7 +1155,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "tunnel-secondary-tertiary-link",
+            "id": "tunnel_secondary_tertiary_link",
             "paint": {
                 "line-color": "#fff4c6",
                 "line-width": {
@@ -2268,7 +2268,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge-service-casing",
+            "id": "bridge_service_casing",
             "paint": {
                 "line-color": "#cfcdca",
                 "line-width": {
@@ -2314,7 +2314,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge-street-casing",
+            "id": "bridge_street_casing",
             "paint": {
                 "line-color": "#cfcdca",
                 "line-width": {
@@ -2377,7 +2377,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge-primary-casing",
+            "id": "bridge_primary_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -2427,7 +2427,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge-primary-link-casing",
+            "id": "bridge_primary_link_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -2478,7 +2478,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge-secondary-tertiary-casing",
+            "id": "bridge_secondary_tertiary_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -2529,7 +2529,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge-secondary-tertiary-link-casing",
+            "id": "bridge_secondary_tertiary_link_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -2561,7 +2561,7 @@
             "metadata": {
                 "mapbox:group": "1444849334699.1902"
             },
-            "id": "bridge-street",
+            "id": "bridge_street",
             "paint": {
                 "line-color": "#fff",
                 "line-width": {
@@ -2594,14 +2594,14 @@
                     ]
                 }
             },
-            "ref": "bridge-street-casing"
+            "ref": "bridge_street_casing"
         },
         {
             "interactive": true,
             "metadata": {
                 "mapbox:group": "1444849334699.1902"
             },
-            "id": "bridge-primary",
+            "id": "bridge_primary",
             "paint": {
                 "line-color": "#fea",
                 "line-width": {
@@ -2622,7 +2622,7 @@
                     ]
                 }
             },
-            "ref": "bridge-primary-casing"
+            "ref": "bridge_primary_casing"
         },
         {
             "interactive": true,
@@ -2647,7 +2647,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge-primary-link",
+            "id": "bridge_primary_link",
             "paint": {
                 "line-color": "#fea",
                 "line-width": {
@@ -2675,7 +2675,7 @@
             "metadata": {
                 "mapbox:group": "1444849334699.1902"
             },
-            "id": "bridge-secondary-tertiary",
+            "id": "bridge_secondary_tertiary",
             "paint": {
                 "line-color": "#fea",
                 "line-width": {
@@ -2696,7 +2696,7 @@
                     ]
                 }
             },
-            "ref": "bridge-secondary-tertiary-casing"
+            "ref": "bridge_secondary_tertiary_casing"
         },
         {
             "interactive": true,
@@ -2721,7 +2721,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge-secondary-tertiary-link",
+            "id": "bridge_secondary_tertiary_link",
             "paint": {
                 "line-color": "#fea",
                 "line-width": {
@@ -2820,7 +2820,7 @@
             "metadata": {
                 "mapbox:group": "1444849334699.1902"
             },
-            "id": "bridge-service-copy",
+            "id": "bridge_service_copy",
             "paint": {
                 "line-color": "#fc8",
                 "line-width": {
@@ -2848,7 +2848,7 @@
             "metadata": {
                 "mapbox:group": "1444849334699.1902"
             },
-            "id": "bridge-service",
+            "id": "bridge_service",
             "paint": {
                 "line-color": "#fff",
                 "line-width": {
@@ -2869,7 +2869,7 @@
                     ]
                 }
             },
-            "ref": "bridge-service-casing"
+            "ref": "bridge_service_casing"
         },
         {
             "interactive": true,
