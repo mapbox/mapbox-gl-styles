@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
-	 viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
-<ellipse id="ellipse4" fill="#FFFFFF" cx="9.5" cy="9.5" rx="9.5" ry="9.5"/>
-<ellipse id="ellipse6" fill="#A9A199" cx="9.5" cy="9.5" rx="8.5" ry="8.5"/>
-<g id="g8" transform="translate(4,4)">
-	<path id="path17" fill="#FFFFFF" d="M8.5,3V1.3L7.9,0.8H3.1L2.5,1.3V3H1L0.4,3.6v5.8L1,10h9l0.6-0.6V3.6L10,3H8.5z M4,2h3v1H4V2z
-		 M2.5,4H4v5H2.5 M7,9V4h1.5v5H7z"/>
-	<path id="path19" display="none" fill="#FFFFFF" d="M0,0v-2h-4v2h-3v6H3V0H0z M-3-1h2v1h-2V-1z M-5,1h1v4h-1 M1,5H0V1h1V5z"/>
-	<path id="path21" display="none" fill="#FFFFFF" d="M0,0h-2v-1c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v1h-2c-0.6,0-1,0.4-1,1v4
-		c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1V1C1,0.4,0.6,0,0,0z M-6,5h-1V1h1V5z M-3,0h-2v-1h2V0z M-1,5h-1V1h1V5z"/>
-</g>
-</svg>
+<svg viewBox="-4 -4 19 19" width="19" height="19" data-reactid=".0.1.1.$suitcase-11=1svg78.0.0"><rect x="-3" y="-3" rx="8.5" ry="8.5" width="17" height="17" stroke="#fff" style="stroke-linejoin:round;stroke-miterlimit:4px;" fill="#fff" stroke-width="2" data-reactid=".0.1.1.$suitcase-11=1svg78.0.0.0"></rect><rect x="-3" y="-3" width="17" height="17" rx="8.5" ry="8.5" fill="#7f7874" data-reactid=".0.1.1.$suitcase-11=1svg78.0.0.1"></rect><path fill="#fff" d="M 8,3 8,1.5779816 7.360092,1 3.639908,1 3,1.7477064 3,3 1.5,3 1,3.5 1,9.5 1.5,10 9.5,10 10,9.5 10,3.5 9.5,3 Z M 4,2 7,2 7,3 4,3 Z" data-reactid=".0.1.1.$suitcase-11=1svg78.0.0.3:$suitcase-11=1svg-0-fill"></path></svg>

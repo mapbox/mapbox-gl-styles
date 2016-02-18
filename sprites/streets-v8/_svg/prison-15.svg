@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="23px"
-	 viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-<ellipse id="ellipse4" fill="#FFFFFF" cx="11.5" cy="11.5" rx="11.5" ry="11.5"/>
-<ellipse id="ellipse6" fill="#A9A199" cx="11.5" cy="11.5" rx="10.5" ry="10.5"/>
-<g id="g8" transform="translate(4,4)">
-	<path id="rect3607" fill="#FFFFFF" d="M3.5,1v13H12V1H3.5z M9.5,2H11v3.5H9.5V2z M4.5,2.1H6V7H4.5V2.1z M7,2.1h1.5V7H7V2.1z
-		 M10.2,6.5c0.4,0,0.8,0.3,0.8,0.8S10.7,8,10.2,8l0,0C9.8,8,9.5,7.7,9.5,7.2l0,0C9.5,6.8,9.8,6.5,10.2,6.5z M7,8h1.5v5H7V8z
-		 M4.5,8.2H6V13H4.5V8.2z M9.5,9H11v4H9.5V9z"/>
-</g>
-</svg>
+<svg viewBox="-4 -4 23 23" width="23" height="23" data-reactid=".0.1.1.$prison-15=1svg67.0.0"><rect x="-3" y="-3" rx="10.5" ry="10.5" width="21" height="21" stroke="#fff" style="stroke-linejoin:round;stroke-miterlimit:4px;" fill="#fff" stroke-width="2" data-reactid=".0.1.1.$prison-15=1svg67.0.0.0"></rect><rect x="-3" y="-3" width="21" height="21" rx="10.5" ry="10.5" fill="#7f7874" data-reactid=".0.1.1.$prison-15=1svg67.0.0.1"></rect><path fill="#fff" d="M 3.5 1 L 3.5 14 L 12 14 L 12 1 L 3.5 1 z M 9.5 2 L 11 2 L 11 5.5 L 9.5 5.5 L 9.5 2 z M 4.5 2.0546875 L 6 2.0546875 L 6 7 L 4.5 7 L 4.5 2.0546875 z M 7 2.0546875 L 8.5 2.0546875 L 8.5 7 L 7 7 L 7 2.0546875 z M 10.25 6.5 A 0.75 0.75 0 0 1 11 7.25 A 0.75 0.75 0 0 1 10.25 8 A 0.75 0.75 0 0 1 9.5 7.25 A 0.75 0.75 0 0 1 10.25 6.5 z M 7 8 L 8.4726562 8 L 8.5 13 L 7.0273438 13 L 7 8 z M 4.5 8.1660156 L 6 8.1660156 L 6 13 L 4.5 13 L 4.5 8.1660156 z M 9.5 9 L 11 9 L 11 13 L 9.5 13 L 9.5 9 z " data-reactid=".0.1.1.$prison-15=1svg67.0.0.3:$prison-15=1svg-0-fill"></path></svg>

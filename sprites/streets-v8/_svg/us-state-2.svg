@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <title>us-state</title>
+  <g>
+    <path d="M10,19.5A9.5,9.5,0,1,1,19.5,10,9.51,9.51,0,0,1,10,19.5Z" fill="#fff"/>
+    <path d="M10,1a9,9,0,1,1-9,9,9,9,0,0,1,9-9m0-1A10,10,0,1,0,20,10,10,10,0,0,0,10,0h0Z" fill="#3a3836"/>
+  </g>
+</svg>

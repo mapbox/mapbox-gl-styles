@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
-	 viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
-<ellipse id="ellipse4" fill="#FFFFFF" cx="9.5" cy="9.5" rx="9.5" ry="9.5"/>
-<ellipse id="ellipse6" fill="#7E9A4C" cx="9.5" cy="9.5" rx="8.5" ry="8.5"/>
-<g id="g8" transform="translate(4,4)">
-	<path id="path11685" fill="#FFFFFF" d="M4,0.6C3.5,1.2,4.3,1.8,4.7,1.3l0.5-0.5l2.3,1.4L3.3,4.5C3,4.7,3,4.9,3.1,5.2L4,7.5l-1,2.8
-		C2.9,10.7,3.2,11,3.5,11c0.2,0,0.4-0.1,0.5-0.3l0.9-2.8l0.9-0.3L6,8.1v2.4c0,0,0,0.5,0.5,0.5S7,10.5,7,10.5V8.1C7,8,7,7.9,6.9,7.8
-		L5.7,4.4L8.2,3c0.2-0.1,0.3-0.3,0.3-0.5S8.3,2.1,8,1.9L4.9,0.1C4.7,0,4.6,0,4.6,0.1L4,0.6z M3,2C2.4,2,2,2.4,2,3s0.4,1,1,1
-		s1-0.4,1-1S3.6,2,3,2z"/>
-</g>
-</svg>
+<svg viewBox="-4 -4 19 19" width="19" height="19" data-reactid=".0.1.1.$golf-11=1svg6.0.0"><rect x="-3" y="-3" rx="8.5" ry="8.5" width="17" height="17" stroke="#fff" style="stroke-linejoin:round;stroke-miterlimit:4px;" fill="#fff" stroke-width="2" data-reactid=".0.1.1.$golf-11=1svg6.0.0.0"></rect><rect x="-3" y="-3" width="17" height="17" rx="8.5" ry="8.5" fill="#6b7f33" data-reactid=".0.1.1.$golf-11=1svg6.0.0.1"></rect><path fill="#fff" d="M 4.049211,0.63796995 C 3.5323218,1.1813711 4.2728721,1.8129967 4.7284317,1.3132113 L 5.223769,0.76978657 7.556319,2.1634411 3.30631,4.5 C 3.01258,4.6614861 2.964798,4.940665 3.07241,5.22118 l 0.88865,2.31647 -0.93553,2.804627 c -0.12816,0.384478 0.17194,0.648771 0.47453,0.657712 0.19542,0.0058 0.3919,-0.093 0.47467,-0.341313 L 4.89463,7.895065 5.74813,7.611868 6,8.117241 6,10.5 c 0,0 0,0.499989 0.49999,0.499989 0.49999,0 0.49999,-0.499989 0.49999,-0.499989 l 0,-2.382759 C 7,8 6.989266,7.861838 6.935769,7.754771 L 5.654568,4.4150219 8.207335,3.0115689 C 8.394175,2.9313889 8.49746,2.7580753 8.49746,2.5000958 8.49746,2.2741635 8.2797696,2.0870913 8.0410827,1.9444806 L 4.904732,0.07057267 c -0.1594857,-0.09528959 -0.2749168,-0.04298684 -0.32256,0.0071 z M 3.00002,2.0001718 c -0.55227,0 -0.99998,0.447705 -0.99998,0.999978 0,0.552273 0.44771,0.999978 0.99998,0.999978 C 3.55229,4.0001278 4,3.5524228 4,3.0001498 4,2.4478768 3.55229,2.0001718 3.00002,2.0001718 Z" data-reactid=".0.1.1.$golf-11=1svg6.0.0.3:$golf-11=1svg-0-fill"></path></svg>

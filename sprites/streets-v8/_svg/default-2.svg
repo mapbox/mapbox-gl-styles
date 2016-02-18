@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14">
+  <title>default</title>
+  <g>
+    <rect x="0.5" y="0.5" width="19" height="13" rx="2.5" ry="2.5" fill="#fff"/>
+    <path d="M17,1a2,2,0,0,1,2,2v8a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V3A2,2,0,0,1,3,1H17m0-1H3A3,3,0,0,0,0,3v8a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3h0Z" fill="#3a3836"/>
+  </g>
+</svg>

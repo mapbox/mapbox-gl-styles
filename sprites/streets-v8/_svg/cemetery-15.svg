@@ -1,14 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="23px"
-	 viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-<ellipse id="ellipse4" fill="#FFFFFF" cx="11.5" cy="11.5" rx="11.5" ry="11.5"/>
-<ellipse id="ellipse6" fill="#7E9A4C" cx="11.5" cy="11.5" rx="10.5" ry="10.5"/>
-<g id="g8" transform="translate(5,5)">
-	<path id="rect12479-9-1-9" fill="#FFFFFF" d="M6.2,0.9c-1.8,0-3.5,0.9-3.5,4.4v3.5h7.9V5.3c0-3-1.8-4.4-3.5-4.4L6.2,0.9z M4.4,4.4
-		h4.4v0.4H4.4V4.4z M4.4,5.3h4.4v0.4H4.4V5.3z M2.6,9.7C2.6,11,2.2,11,2.2,11v1.3H11V11c0,0-0.4,0-0.4-1.3H2.6z"/>
-</g>
-</svg>
+<svg viewBox="-296 189 23 23" width="23" height="23" data-reactid=".0.1.1.$cemetery-15=1svg3.0.0"><rect x="-295" y="190" rx="10.5" ry="10.5" width="21" height="21" stroke="#fff" style="stroke-linejoin:round;stroke-miterlimit:4px;" fill="#fff" stroke-width="2" data-reactid=".0.1.1.$cemetery-15=1svg3.0.0.0"></rect><rect x="-295" y="190" width="21" height="21" rx="10.5" ry="10.5" fill="#6b7f33" data-reactid=".0.1.1.$cemetery-15=1svg3.0.0.1"></rect><path fill="#fff" d="M-285,194
+	c-2,0-4,1-4,5v4h9v-4c0-3.4-2-5-4-5H-285z M-287,198h5v0.5h-5V198z M-287,199h5v0.5h-5V199z M-289,204c0,1.5-0.5,1.5-0.5,1.5v1.5h10
+	v-1.5c0,0-0.5,0-0.5-1.5H-289z" data-reactid=".0.1.1.$cemetery-15=1svg3.0.0.3:$cemetery-15=1svg-0-fill"></path></svg>

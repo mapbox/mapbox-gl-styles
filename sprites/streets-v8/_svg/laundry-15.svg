@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="23px"
-	 viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-<ellipse id="ellipse4" fill="#FFFFFF" cx="11.5" cy="11.5" rx="11.5" ry="11.5"/>
-<ellipse id="ellipse6" fill="#A9A199" cx="11.5" cy="11.5" rx="10.5" ry="10.5"/>
-<g id="g8" transform="translate(5,4.5)">
-	<path id="path3291-2" fill="#FFFFFF" d="M11.5,0.8H6.2L4,3.5H1.8v8.8h9.7V0.8z M6.6,1.8h1.3v1.3H6.6V1.8z M8.8,1.8h1.3v1.3H8.8V1.8
-		z M6.6,4.4c1.9,0,3.5,1.6,3.5,3.5s-1.6,3.5-3.5,3.5S3.1,9.9,3.1,7.9S4.7,4.4,6.6,4.4z M4,7.9c0,1.5,1.2,2.6,2.6,2.6
-		s2.6-1.2,2.6-2.6C7.8,7.9,6.2,7.9,4,7.9z"/>
-</g>
-</svg>
+<svg viewBox="-4 -4 23 23" width="23" height="23" data-reactid=".0.1.1.$laundry-15=1svg47.0.0"><rect x="-3" y="-3" rx="10.5" ry="10.5" width="21" height="21" stroke="#fff" style="stroke-linejoin:round;stroke-miterlimit:4px;" fill="#fff" stroke-width="2" data-reactid=".0.1.1.$laundry-15=1svg47.0.0.0"></rect><rect x="-3" y="-3" width="21" height="21" rx="10.5" ry="10.5" fill="#7f7874" data-reactid=".0.1.1.$laundry-15=1svg47.0.0.1"></rect><path fill="#fff" d="m 8,1.0000001 -2,2 -3,0 c 0,0 -1,0 -1,1 L 2,13 c 0,1 1,1 1,1 l 9,0 c 0,0 1,0 1,-1 L 13,2.0000001 c 0,-1.0000001 -1,-1 -1,-1 l -4,0 z m 0.5,1 2,0 c 0.277,0 0.5,0.223 0.5,0.5 0,0.277 -0.223,0.5 -0.5,0.5 l -2,0 c -0.277,0 -0.5,-0.223 -0.5,-0.5 0,-0.277 0.223,-0.5 0.5,-0.5 z m -1,4 c 1.6568543,0 3,1.3431458 3,2.9999999 0,1.656854 -1.3431457,3 -3,3 -1.6568543,0 -3,-1.343146 -3,-3 0,-1.6568541 1.3431457,-2.9999999 3,-2.9999999 z" data-reactid=".0.1.1.$laundry-15=1svg47.0.0.3:$laundry-15=1svg-0-fill"></path></svg>
