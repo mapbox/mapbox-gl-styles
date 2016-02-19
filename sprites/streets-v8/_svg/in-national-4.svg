@@ -1,32 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px"
-	 height="22px" viewBox="0 0 28 22" enable-background="new 0 0 28 22" xml:space="preserve">
-<g id="shields">
-	<g id="path4616_6_">
-		<path fill="#F0CA64" d="M13.9,21.5c-0.5-0.1-13.4-2.2-13.4-12V3c0-0.3,0.2-0.5,0.5-0.5h26c0.3,0,0.5,0.2,0.5,0.5v6.5
-			c0.1,8.1-11.2,11.6-13.4,12C14.1,21.5,14,21.5,13.9,21.5C14,21.5,13.9,21.5,13.9,21.5z"/>
-		<path fill="#3A3836" d="M27,3v6.5c0.1,7.6-10.4,11.1-13,11.5C11.3,20.6,1,17.9,1,9.5V3H27 M27,2H1C0.4,2,0,2.4,0,3v6.5
-			c0,3.9,2.1,7.2,6,9.6c2.7,1.6,5.9,2.6,7.9,2.9c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2,0c1.5-0.3,4.9-1.3,7.9-3.2
-			c3.9-2.5,6-5.7,5.9-9.3L28,3C28,2.4,27.6,2,27,2L27,2z"/>
-	</g>
-	<rect y="2" fill="#F0CA64" width="28" height="2"/>
-	<path id="path4616_8_" fill="#F0CA64" stroke="#3A3836" stroke-linejoin="round" d="M28,2.5h-5h-6c-1.1,0-2.2-0.8-3-1.5
-		c-0.8,0.8-1.9,1.5-3,1.5H5H0"/>
-	<rect y="2.7" fill="#3A3836" width="1" height="2"/>
-	<rect x="27" y="2.7" fill="#3A3836" width="1" height="2"/>
-</g>
-<g id="ref" display="none">
-	<rect x="-1" y="7.8" display="inline" fill="none" width="30" height="6.5"/>
-	<text transform="matrix(1 0 0 1 4.119 14.1634)" display="inline" fill="#3A3836" font-family="'DINOffcPro-Bold'" font-size="9">200D</text>
-</g>
-<g id="ref_outlines" display="none">
-	<g display="inline">
-		<path fill="#3A3836" d="M7.4,14.2h-1l-1.2-3.9L4,14.2h-1L1.2,7.8h1.3l1,4l1.2-4h0.9l1.2,4l1-4h1.3L7.4,14.2z"/>
-		<path fill="#3A3836" d="M15.4,14.2h-1l-1.2-3.9L12,14.2h-1L9.2,7.8h1.3l1,4l1.2-4h0.9l1.2,4l1-4h1.3L15.4,14.2z"/>
-		<path fill="#3A3836" d="M21.2,13.3v0.9H20v-0.9h-2.6v-1.1l2.2-4.4h1.3l-2.2,4.4H20V11h1.1v1.2h0.6v1.1H21.2z"/>
-		<path fill="#3A3836" d="M26,13.3v0.9h-1.1v-0.9h-2.6v-1.1l2.2-4.4h1.3l-2.2,4.4h1.3V11H26v1.2h0.6v1.1H26z"/>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+  <title>in-national</title>
+  <g>
+    <path d="M12,21.5C9.88,21.5.5,17.49,0.5,13V3A0.5,0.5,0,0,1,1,2.5H9c0.85,0,1.91-1,2.63-1.84A0.5,0.5,0,0,1,12,.5h0a0.5,0.5,0,0,1,.37.16c0.89,1,1.76,1.84,2.63,1.84h8a0.5,0.5,0,0,1,.5.5V13C23.5,17.49,14.12,21.5,12,21.5Z" fill="#f0ca64"/>
+    <path d="M12,1c1,1,1.92,2,3,2h8V13c0,4-9,8-11,8S1,17,1,13V3H9c1,0,2.08-1,3-2m0-1h0a1,1,0,0,0-.74.32C10,1.71,9.33,2,9,2H1A1,1,0,0,0,0,3V13c0,4.83,9.72,9,12,9s12-4.13,12-9V3a1,1,0,0,0-1-1H15c-0.67,0-1.48-.83-2.26-1.68A1,1,0,0,0,12,0h0Z" fill="#3a3836"/>
+  </g>
 </svg>

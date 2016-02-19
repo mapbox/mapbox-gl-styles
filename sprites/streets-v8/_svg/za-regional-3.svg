@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="14" viewBox="0 0 26 14">
+  <title>za-regional-za-metropolitan</title>
+  <g>
+    <rect x="0.54" y="0.59" width="25" height="13" rx="2.5" ry="2.5" fill="#393"/>
+    <path d="M23,1.09a2,2,0,0,1,2,2v8a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2v-8a2,2,0,0,1,2-2H23m0-1H3a3,3,0,0,0-3,3v8a3,3,0,0,0,3,3H23a3,3,0,0,0,3-3v-8a3,3,0,0,0-3-3h0Z" fill="#fff"/>
+  </g>
+</svg>
