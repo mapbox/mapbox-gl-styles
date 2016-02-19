@@ -1,7 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="14" viewBox="0 0 32 14">
-  <title>hr-county</title>
-  <g>
-    <rect x="1" y="1" width="31" height="13" rx="2.5" ry="2.5" fill="#f0ca64"/>
-    <path d="M29,1a2,2,0,0,1,2,2.09v8A1.89,1.89,0,0,1,29,13H3a2,2,0,0,1-2-1.91v-8A2.12,2.12,0,0,1,3,1H29m0-1H3A3.12,3.12,0,0,0,0,3.09v8A3,3,0,0,0,3,14H29a2.89,2.89,0,0,0,3-2.91v-8A3,3,0,0,0,29,0h0Z" fill="#3a3836"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="14px" viewBox="0 0 32 14" enable-background="new 0 0 32 14" xml:space="preserve">
+<title>hr-county</title>
+<g>
+	<path fill="#F0CA64" d="M3,0.5h26c1.4,0,2.5,1.1,2.5,2.5v8c0,1.4-1.1,2.5-2.5,2.5H3c-1.4,0-2.5-1.1-2.5-2.5V3
+		C0.5,1.6,1.6,0.5,3,0.5z"/>
+	<path fill="#3A3836" d="M29,1c1.1,0,2,0.9,2,2c0,0,0,0.1,0,0.1v8c0,1-0.8,1.9-1.9,1.9c0,0-0.1,0-0.1,0H3c-1.1,0-2-0.8-2-1.9v-8
+		C1,2,1.9,1.1,3,1H29 M29,0H3C1.3,0.1,0,1.4,0,3.1v8C0,12.7,1.4,14,3,14h26c1.6,0.1,2.9-1.2,3-2.8c0,0,0-0.1,0-0.1v-8
+		C32,1.4,30.7,0.1,29,0C29.1,0,29,0,29,0L29,0z"/>
+</g>
 </svg>
