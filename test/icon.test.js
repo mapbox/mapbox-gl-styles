@@ -1,8 +1,7 @@
 var test = require('tape');
 var fs = require('fs');
-var code = require('string_decoder');
 var neatCSV = require('neat-csv');
-
+// https://github.com/sindresorhus/neat-csv
 
 test('icons exist', function(assert) {
   neatCSV(fs.readFileSync('streets_v7.csv', 'utf8'), function(err, data) {
