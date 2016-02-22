@@ -45,14 +45,14 @@ e-road-4.svg,,,,,state
 fi-main-2.svg,,,,,state
 fi-regional-3.svg,,,,,state
 fi-trunk-2.svg,,,,,state
-gb-national-rail,national-rail,,,,
-gb-national-rail.london-dlr,dlr.national-rail,,,,
-gb-national-rail.london-dlr.london-overground.london-underground,dlr.london-overground.london-underground.national-rail,,,,
-gb-national-rail.london-dlr.london-underground,dlr.london-underground.national-rail,,,,
-gb-national-rail.london-overground,london-overground.national-rail,,,,
-gb-national-rail.london-overground.london-underground,london-overground.london-underground.national-rail,,,,
-gb-national-rail.london-underground,london-underground.national-rail,,,,
-london-dlr.london-underground,dlr.london-underground ,,,,
+gb-national-rail,national-rail,,,,rail
+gb-national-rail.london-dlr,dlr.national-rail,,,,rail
+gb-national-rail.london-dlr.london-overground.london-underground,dlr.london-overground.london-underground.national-rail,,,,rail
+gb-national-rail.london-dlr.london-underground,dlr.london-underground.national-rail,,,,rail
+gb-national-rail.london-overground,london-overground.national-rail,,,,rail
+gb-national-rail.london-overground.london-underground,london-overground.london-underground.national-rail,,,,rail
+gb-national-rail.london-underground,london-underground.national-rail,,,,rail
+london-dlr.london-underground,dlr.london-underground ,,,,rail
 gb-national-rail.london-dlr.london-overground.london-tfl-rail.london-underground.svg,,,,,rail
 gb-national-rail.london-overground.london-tfl-rail.london-underground.svg,,,,,rail
 gb-national-rail.london-tfl-rail.london-overground.svg,,,,,rail
