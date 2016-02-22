@@ -3479,7 +3479,7 @@
         "interactive": true,
         "layout": {
             "text-max-width": 8,
-            "visibility": "none",
+            "visibility": "visible",
             "symbol-placement": "point",
             "text-field": "{name_en}",
             "text-line-height": 1.2,
