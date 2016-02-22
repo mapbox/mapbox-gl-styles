@@ -13,8 +13,7 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
-    "glob": "^5.0.14",
-    "neat-csv": "^1.1.0"
+    "glob": "^5.0.14"
   },
   "license": "ISC"
 }
