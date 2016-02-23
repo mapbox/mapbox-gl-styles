@@ -2927,9 +2927,10 @@
                     "path"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "line",
@@ -3213,9 +3214,10 @@
                     "track"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ],
                 [
                     "!=",
@@ -3384,9 +3386,10 @@
                     "tertiary"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "line",
@@ -3458,9 +3461,10 @@
                     "primary"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "line",
@@ -3529,9 +3533,10 @@
                     "motorway_link"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "line",
@@ -3599,9 +3604,10 @@
             "filter": [
                 "all",
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ],
                 [
                     "==",
@@ -3679,9 +3685,10 @@
                     "trunk"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "line",
@@ -3749,9 +3756,10 @@
                     "motorway"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "line",
@@ -3929,9 +3937,10 @@
                     "path"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "line",
@@ -4131,9 +4140,10 @@
                     "track"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ],
                 [
                     "!=",
@@ -4390,9 +4400,10 @@
                     "street_limited"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "symbol",
@@ -4464,9 +4475,10 @@
                     "trunk"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "symbol",
@@ -4544,9 +4556,10 @@
                     "minor_rail"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "line",
@@ -4674,9 +4687,10 @@
                     "trunk"
                 ],
                 [
-                    "==",
+                    "!in",
                     "structure",
-                    "none"
+                    "bridge",
+                    "tunnel"
                 ]
             ],
             "type": "symbol",
