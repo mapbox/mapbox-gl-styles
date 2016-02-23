@@ -249,9 +249,10 @@
                         "link"
                     ],
                     [
-                        "==",
+                        "in",
                         "structure",
-                        "none"
+                        "none",
+                        "ford"
                     ]
                 ]
             ],
@@ -301,9 +302,10 @@
                         "trunk"
                     ],
                     [
-                        "==",
+                        "in",
                         "structure",
-                        "none"
+                        "none",
+                        "ford"
                     ]
                 ]
             ],
