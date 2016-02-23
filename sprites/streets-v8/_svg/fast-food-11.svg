@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
-	 viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
-<ellipse id="ellipse4" fill="#FFFFFF" cx="9.5" cy="9.5" rx="9.5" ry="9.5"/>
-<ellipse id="ellipse6" fill="#AB9483" cx="9.5" cy="9.5" rx="8.5" ry="8.5"/>
-<g id="g8" transform="translate(4,4)">
-	<path id="rect3335-7" fill="#FFFFFF" d="M4.5,1h2c0,0,4,0,4,2.5V5h-10V3.5C0.5,1,4.5,1,4.5,1z"/>
-	<path id="rect3353" fill="#FFFFFF" d="M0.5,6h10C10.8,6,11,6.2,11,6.5l0,0C11,6.8,10.8,7,10.5,7h-10C0.2,7,0,6.8,0,6.5l0,0
-		C0,6.2,0.2,6,0.5,6z"/>
-	<path id="rect7177" fill="#FFFFFF" d="M1,8h9c0.3,0,0.5,0.2,0.5,0.5v1c0,0.3-0.2,0.5-0.5,0.5H1c-0.3,0-0.5-0.2-0.5-0.5v-1
-		C0.5,8.2,0.7,8,1,8z"/>
-</g>
-</svg>
+<svg viewBox="-298 191 19 19" width="19" height="19" data-reactid=".0.1.1.$fast-food-11=1svg6.0.0"><rect x="-297" y="192" rx="8.5" ry="8.5" width="17" height="17" stroke="#fff" style="stroke-linejoin:round;stroke-miterlimit:4px;" fill="#fff" stroke-width="2" data-reactid=".0.1.1.$fast-food-11=1svg6.0.0.0"></rect><rect x="-297" y="192" width="17" height="17" rx="8.5" ry="8.5" fill="#a57453" data-reactid=".0.1.1.$fast-food-11=1svg6.0.0.1"></rect><path fill="#fff" d="M-283.5,198.5c0-2.5-4-2.5-4-2.5h-2c0,0-4,0-4,2.5v1.5h10V198.5z" data-reactid=".0.1.1.$fast-food-11=1svg6.0.0.3:$fast-food-11=1svg-0-fill"></path><path fill="#fff" d="M-283.5,201h-10c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5h10c0.3,0,0.5-0.2,0.5-0.5S-283.2,201-283.5,201z" data-reactid=".0.1.1.$fast-food-11=1svg6.0.0.3:$fast-food-11=1svg-1-fill"></path><path fill="#fff" d="M-284,203h-9c-0.3,0-0.5,0.2-0.5,0.5v1c0,0.3,0.2,0.5,0.5,0.5h9c0.3,0,0.5-0.2,0.5-0.5v-1C-283.5,203.2-283.7,203-284,203z" data-reactid=".0.1.1.$fast-food-11=1svg6.0.0.3:$fast-food-11=1svg-2-fill"></path></svg>

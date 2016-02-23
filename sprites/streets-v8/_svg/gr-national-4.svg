@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="14" viewBox="0 0 32 14">
+  <title>gr-national</title>
+  <g>
+    <rect x="0.5" y="0.5" width="31" height="13" rx="2.5" ry="2.5" fill="#0f58c5"/>
+    <path d="M29,1a2,2,0,0,1,2,2v8a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V3A2,2,0,0,1,3,1H29m0-1H3A3,3,0,0,0,0,3v8a3,3,0,0,0,3,3H29a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3h0Z" fill="#fff"/>
+  </g>
+</svg>

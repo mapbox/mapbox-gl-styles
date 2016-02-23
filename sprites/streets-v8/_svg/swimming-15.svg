@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="23px"
-	 viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-<ellipse id="ellipse4" fill="#FFFFFF" cx="11.5" cy="11.5" rx="11.5" ry="11.5"/>
-<ellipse id="ellipse6" fill="#A9A199" cx="11.5" cy="11.5" rx="10.5" ry="10.5"/>
-<g id="g8" transform="translate(4,4)">
-	<path id="path16388" fill="#FFFFFF" d="M10.1,2C10,2,9.7,2.1,9.7,2.1L6.4,3.8C5.9,4,5.7,4.7,6,5.1l1,1.4l-4,2L5,10l2.5-1.5L10,10
-		l1-1L8,5l2.6-1.5c0.5-0.3,0.4-0.7,0.4-1C11,2.3,10.6,2,10.1,2z M7.5,10L5,11.5L2.5,10L0,11.5V13l2.5-1.5L5,13l2.5-1.5L10,13l2-1.5
-		l3,1.5v-1.5L12,10l-2,1.5L7.5,10z"/>
-	<circle id="path3338" fill="#FFFFFF" cx="12.2" cy="6.8" r="1.8"/>
-</g>
-</svg>
+<svg viewBox="-4 -4 23 23" width="23" height="23" data-reactid=".0.1.1.$swimming-15=1svg81.0.0"><rect x="-3" y="-3" rx="10.5" ry="10.5" width="21" height="21" stroke="#fff" style="stroke-linejoin:round;stroke-miterlimit:4px;" fill="#fff" stroke-width="2" data-reactid=".0.1.1.$swimming-15=1svg81.0.0.0"></rect><rect x="-3" y="-3" width="21" height="21" rx="10.5" ry="10.5" fill="#7f7874" data-reactid=".0.1.1.$swimming-15=1svg81.0.0.1"></rect><path fill="#fff" d="m 10.111329,2.0000002 c -0.1124706,0 -0.4355466,0.146484 -0.4355466,0.146484 L 6.353516,3.8261722 c -0.44239,0.176206 -0.617743,0.881963 -0.351563,1.234375 l 0.970704,1.408203 -3.970704,2.029297 1.998047,1.5 2.501953,-1.5 2.5,1.5 1.001954,-1.001954 -3,-4 2.55664,-1.529296 c 0.52862,-0.266183 0.44336,-0.70452 0.44336,-0.970704 -0.004,-0.209946 -0.360208,-0.496093 -0.892578,-0.496093 z m 2.140624,3 c -0.967259,0 -1.751953,0.782742 -1.751953,1.75 0,0.967259 0.784693,1.751953 1.751953,1.751953 0.967261,0 1.75,-0.784694 1.75,-1.751953 0,-0.967258 -0.782739,-1.75 -1.75,-1.75 z M 2.5,10 0,11.5 0,13.000001 2.5,11.5 5,13.000001 7.501953,11.5 l 2.5,1.500001 L 12,11.5 15,13.000001 15,11.5 12,10 10.001953,11.5 7.501953,10 5,11.5 2.5,10 Z" data-reactid=".0.1.1.$swimming-15=1svg81.0.0.3:$swimming-15=1svg-0-fill"></path></svg>
