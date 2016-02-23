@@ -235,16 +235,24 @@
                     "LineString"
                 ],
                 [
-                    "in",
-                    "class",
-                    "motorway_link",
-                    "street",
-                    "street_limited",
-                    "service",
-                    "track",
-                    "pedestrian",
-                    "path",
-                    "link"
+                    "all",
+                    [
+                        "in",
+                        "class",
+                        "motorway_link",
+                        "street",
+                        "street_limited",
+                        "service",
+                        "track",
+                        "pedestrian",
+                        "path",
+                        "link"
+                    ],
+                    [
+                        "==",
+                        "structure",
+                        "none"
+                    ]
                 ]
             ],
             "type": "line",
@@ -282,13 +290,21 @@
                     "LineString"
                 ],
                 [
-                    "in",
-                    "class",
-                    "motorway",
-                    "primary",
-                    "secondary",
-                    "tertiary",
-                    "trunk"
+                    "all",
+                    [
+                        "in",
+                        "class",
+                        "motorway",
+                        "primary",
+                        "secondary",
+                        "tertiary",
+                        "trunk"
+                    ],
+                    [
+                        "==",
+                        "structure",
+                        "none"
+                    ]
                 ]
             ],
             "type": "line",
