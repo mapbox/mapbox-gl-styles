@@ -1,6 +1,6 @@
 {
     "version": 8,
-    "name": "Streets Streets",
+    "name": "Mapbox Streets",
     "metadata": {
         "mapbox:groups": {
             "1444934828655.3389": {
@@ -133,13 +133,6 @@
             }
         }
     },
-    "center": [
-        -344.76155961876924,
-        44.87597678988217
-    ],
-    "zoom": 8.016081031479189,
-    "bearing": 0,
-    "pitch": 0,
     "sources": {
         "composite": {
             "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v7",
@@ -3042,126 +3035,6 @@
                         ]
                     ]
                 }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "visibility": "none",
-                "line-cap": "round",
-                "line-join": "round"
-            },
-            "metadata": {
-                "mapbox:group": "1444855786460.0557"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "class",
-                    "path"
-                ],
-                [
-                    "==",
-                    "structure",
-                    "none"
-                ]
-            ],
-            "type": "line",
-            "source": "composite",
-            "id": "road-path copy",
-            "paint": {
-                "line-width": {
-                    "base": 1.5,
-                    "stops": [
-                        [
-                            15,
-                            1
-                        ],
-                        [
-                            18,
-                            4
-                        ]
-                    ]
-                },
-                "line-color": "#fff",
-                "line-dasharray": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            15,
-                            [
-                                0.1,
-                                1.25
-                            ]
-                        ],
-                        [
-                            16,
-                            [
-                                0.1,
-                                1.6
-                            ]
-                        ],
-                        [
-                            17,
-                            [
-                                0.1,
-                                1.45
-                            ]
-                        ],
-                        [
-                            18,
-                            [
-                                0.1,
-                                1.3
-                            ]
-                        ]
-                    ]
-                },
-                "line-opacity": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            15,
-                            0
-                        ],
-                        [
-                            15.25,
-                            1
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "visibility": "none"
-            },
-            "metadata": {
-                "mapbox:group": "1444855786460.0557"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "$type",
-                    "Polygon"
-                ],
-                [
-                    "==",
-                    "class",
-                    "pedestrian"
-                ]
-            ],
-            "type": "fill",
-            "source": "composite",
-            "id": "pedestrian-polygons",
-            "paint": {
-                "fill-color": "#fff",
-                "fill-outline-color": "#d9d3c9"
             },
             "source-layer": "road"
         },
@@ -7153,9 +7026,10 @@
                 "mapbox:group": "1444933837268.9458"
             },
             "filter": [
-                "!=",
+                "!in",
                 "index",
-                5
+                5,
+                10
             ],
             "type": "line",
             "source": "composite",
@@ -7176,9 +7050,10 @@
                 "mapbox:group": "1444933837268.9458"
             },
             "filter": [
-                "==",
+                "in",
                 "index",
-                5
+                5,
+                10
             ],
             "type": "line",
             "source": "composite",
@@ -7231,9 +7106,10 @@
                 "text-size": 9.5
             },
             "filter": [
-                "==",
+                "in",
                 "index",
-                5
+                5,
+                10
             ],
             "type": "symbol",
             "source": "composite",
