@@ -5,11 +5,11 @@
         "mapbox:groups": {
             "1444849364238.8171": {
                 "name": "Buildings",
-                "collapsed": false
+                "collapsed": true
             },
             "1444849354174.1904": {
                 "name": "Tunnels",
-                "collapsed": false
+                "collapsed": true
             },
             "1444849320558.5054": {
                 "name": "Water labels",
@@ -37,10 +37,14 @@
             },
             "1444849345966.4436": {
                 "name": "Roads",
-                "collapsed": false
+                "collapsed": true
             },
             "1444849307123.581": {
-                "name": "Admin labels",
+                "name": "Admin  lines",
+                "collapsed": true
+            },
+            "1456163609504.0715": {
+                "name": "Road labels",
                 "collapsed": true
             },
             "1444849272561.29": {
@@ -53,7 +57,7 @@
             },
             "1444849334699.1902": {
                 "name": "Bridges",
-                "collapsed": false
+                "collapsed": true
             },
             "1444849297111.495": {
                 "name": "POI labels",
@@ -75,6 +79,25 @@
             "type": "background",
             "paint": {
                 "background-color": "#f8f4f0"
+            },
+            "interactive": true
+        },
+        {
+            "id": "landuse_overlay_national_park",
+            "type": "fill",
+            "source": "mapbox",
+            "source-layer": "landuse_overlay",
+            "filter": [
+                "==",
+                "class",
+                "national_park"
+            ],
+            "paint": {
+                "fill-color": "#d8e8c8",
+                "fill-opacity": 0.75
+            },
+            "metadata": {
+                "mapbox:group": "1444849388993.3071"
             },
             "interactive": true
         },
@@ -501,7 +524,8 @@
         {
             "interactive": true,
             "layout": {
-                "line-join": "round"
+                "line-join": "round",
+                "visibility": "visible"
             },
             "metadata": {
                 "mapbox:group": "1444849354174.1904"
@@ -540,11 +564,16 @@
                             3
                         ],
                         [
+                            14,
+                            4
+                        ],
+                        [
                             20,
-                            13
+                            15
                         ]
                     ]
-                }
+                },
+                "line-opacity": 1
             },
             "source-layer": "road"
         },
@@ -564,14 +593,15 @@
                     "tunnel"
                 ],
                 [
-                    "==",
+                    "in",
                     "class",
-                    "service"
+                    "service",
+                    "track"
                 ]
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "tunnel_service_casing",
+            "id": "tunnel_service_track_casing",
             "paint": {
                 "line-color": "#cfcdca",
                 "line-dasharray": [
@@ -616,7 +646,59 @@
                 [
                     "==",
                     "class",
-                    "street"
+                    "link"
+                ]
+            ],
+            "type": "line",
+            "source": "mapbox",
+            "id": "tunnel_link_casing",
+            "paint": {
+                "line-color": "#e9ac77",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            12,
+                            1
+                        ],
+                        [
+                            13,
+                            3
+                        ],
+                        [
+                            14,
+                            4
+                        ],
+                        [
+                            20,
+                            15
+                        ]
+                    ]
+                },
+                "line-opacity": 1
+            },
+            "source-layer": "road"
+        },
+        {
+            "interactive": true,
+            "layout": {
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1444849354174.1904"
+            },
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "structure",
+                    "tunnel"
+                ],
+                [
+                    "in",
+                    "class",
+                    "street",
+                    "street_limited"
                 ]
             ],
             "type": "line",
@@ -678,70 +760,31 @@
                 [
                     "in",
                     "class",
-                    "primary",
-                    "trunk"
+                    "secondary",
+                    "tertiary"
                 ]
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "tunnel_primary_casing",
+            "id": "tunnel_secondary_tertiary_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
                     "base": 1.2,
                     "stops": [
                         [
-                            5,
-                            0.1
-                        ],
-                        [
-                            6,
-                            0.2
-                        ],
-                        [
-                            7,
+                            8,
                             1.5
                         ],
                         [
                             20,
-                            18
+                            17
                         ]
                     ]
-                }
+                },
+                "line-opacity": 1
             },
             "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "metadata": {
-                "mapbox:group": "1444849354174.1904"
-            },
-            "id": "tunnel_primary_link_casing",
-            "paint": {
-                "line-color": "#e9ac77",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            5,
-                            0.1
-                        ],
-                        [
-                            6,
-                            0.2
-                        ],
-                        [
-                            7,
-                            1.5
-                        ],
-                        [
-                            20,
-                            18
-                        ]
-                    ]
-                }
-            },
-            "ref": "tunnel_primary_casing"
         },
         {
             "interactive": true,
@@ -761,13 +804,13 @@
                 [
                     "in",
                     "class",
-                    "tertiary",
-                    "secondary"
+                    "trunk",
+                    "primary"
                 ]
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "tunnel_secondary_tertiary_casing",
+            "id": "tunnel_trunk_primary_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -775,11 +818,11 @@
                     "stops": [
                         [
                             5,
-                            0.1
+                            0.4
                         ],
                         [
                             6,
-                            0.2
+                            0.6
                         ],
                         [
                             7,
@@ -787,44 +830,12 @@
                         ],
                         [
                             20,
-                            11
+                            22
                         ]
                     ]
                 }
             },
             "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "metadata": {
-                "mapbox:group": "1444849354174.1904"
-            },
-            "id": "tunnel_secondary_tertiary_link_casing",
-            "paint": {
-                "line-color": "#e9ac77",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            5,
-                            0.1
-                        ],
-                        [
-                            6,
-                            0.2
-                        ],
-                        [
-                            7,
-                            1.5
-                        ],
-                        [
-                            20,
-                            11
-                        ]
-                    ]
-                }
-            },
-            "ref": "tunnel_secondary_tertiary_casing"
         },
         {
             "interactive": true,
@@ -882,7 +893,7 @@
             "source-layer": "road"
         },
         {
-            "id": "tunnel_path",
+            "id": "tunnel_path_pedestrian",
             "type": "line",
             "source": "mapbox",
             "source-layer": "road",
@@ -890,13 +901,22 @@
                 "all",
                 [
                     "==",
-                    "structure",
-                    "tunnel"
+                    "$type",
+                    "LineString"
                 ],
                 [
-                    "==",
-                    "class",
-                    "path"
+                    "all",
+                    [
+                        "==",
+                        "structure",
+                        "tunnel"
+                    ],
+                    [
+                        "in",
+                        "class",
+                        "path",
+                        "pedestrian"
+                    ]
                 ]
             ],
             "paint": {
@@ -944,8 +964,12 @@
                             1.5
                         ],
                         [
+                            14,
+                            2.5
+                        ],
+                        [
                             20,
-                            10
+                            11.5
                         ]
                     ]
                 }
@@ -957,7 +981,7 @@
             "metadata": {
                 "mapbox:group": "1444849354174.1904"
             },
-            "id": "tunnel_service",
+            "id": "tunnel_service_track",
             "paint": {
                 "line-color": "#fff",
                 "line-width": {
@@ -978,7 +1002,39 @@
                     ]
                 }
             },
-            "ref": "tunnel_service_casing"
+            "ref": "tunnel_service_track_casing"
+        },
+        {
+            "interactive": true,
+            "metadata": {
+                "mapbox:group": "1444849354174.1904"
+            },
+            "id": "tunnel_link",
+            "paint": {
+                "line-color": "#fff4c6",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            12.5,
+                            0
+                        ],
+                        [
+                            13,
+                            1.5
+                        ],
+                        [
+                            14,
+                            2.5
+                        ],
+                        [
+                            20,
+                            11.5
+                        ]
+                    ]
+                }
+            },
+            "ref": "tunnel_link_casing"
         },
         {
             "interactive": true,
@@ -1011,100 +1067,6 @@
         },
         {
             "interactive": true,
-            "layout": {
-                "line-join": "round"
-            },
-            "metadata": {
-                "mapbox:group": "1444849354174.1904"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "structure",
-                    "tunnel"
-                ],
-                [
-                    "in",
-                    "class",
-                    "primary",
-                    "tertiary",
-                    "secondary"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "tunnel_primary",
-            "paint": {
-                "line-color": "#fff4c6",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            6.5,
-                            0
-                        ],
-                        [
-                            7,
-                            0.5
-                        ],
-                        [
-                            20,
-                            14
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "line-join": "round"
-            },
-            "metadata": {
-                "mapbox:group": "1444849354174.1904"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "structure",
-                    "tunnel"
-                ],
-                [
-                    "==",
-                    "type",
-                    "primary_link"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "tunnel_primary_link",
-            "paint": {
-                "line-color": "#fff4c6",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            6.5,
-                            0
-                        ],
-                        [
-                            7,
-                            0.5
-                        ],
-                        [
-                            20,
-                            14
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
             "metadata": {
                 "mapbox:group": "1444849354174.1904"
             },
@@ -1133,29 +1095,10 @@
         },
         {
             "interactive": true,
-            "layout": {
-                "line-join": "round"
-            },
             "metadata": {
                 "mapbox:group": "1444849354174.1904"
             },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "structure",
-                    "tunnel"
-                ],
-                [
-                    "in",
-                    "type",
-                    "secondary_link",
-                    "tertiary_link"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "tunnel_secondary_tertiary_link",
+            "id": "tunnel_trunk_primary",
             "paint": {
                 "line-color": "#fff4c6",
                 "line-width": {
@@ -1171,36 +1114,18 @@
                         ],
                         [
                             20,
-                            10
+                            18
                         ]
                     ]
                 }
             },
-            "source-layer": "road"
+            "ref": "tunnel_trunk_primary_casing"
         },
         {
             "interactive": true,
-            "layout": {
-                "line-join": "round"
-            },
             "metadata": {
                 "mapbox:group": "1444849354174.1904"
             },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "structure",
-                    "tunnel"
-                ],
-                [
-                    "==",
-                    "class",
-                    "motorway"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
             "id": "tunnel_motorway",
             "paint": {
                 "line-color": "#ffdaa6",
@@ -1222,7 +1147,7 @@
                     ]
                 }
             },
-            "source-layer": "road"
+            "ref": "tunnel_motorway_casing"
         },
         {
             "id": "tunnel_major_rail",
@@ -1341,11 +1266,16 @@
                             3
                         ],
                         [
+                            14,
+                            4
+                        ],
+                        [
                             20,
-                            13
+                            15
                         ]
                     ]
-                }
+                },
+                "line-opacity": 1
             },
             "source-layer": "road"
         },
@@ -1361,9 +1291,10 @@
             "filter": [
                 "all",
                 [
-                    "==",
+                    "in",
                     "class",
-                    "service"
+                    "service",
+                    "track"
                 ],
                 [
                     "!in",
@@ -1374,7 +1305,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "road_service_casing",
+            "id": "road_service_track_casing",
             "paint": {
                 "line-color": "#cfcdca",
                 "line-width": {
@@ -1399,60 +1330,7 @@
         },
         {
             "interactive": true,
-            "layout": {
-                "line-cap": "round",
-                "line-join": "round",
-                "visibility": "visible"
-            },
-            "metadata": {
-                "mapbox:group": "1444849345966.4436"
-            },
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "class",
-                    "primary",
-                    "trunk"
-                ],
-                [
-                    "!in",
-                    "structure",
-                    "bridge",
-                    "tunnel"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "road_primary_casing",
-            "paint": {
-                "line-color": "#e9ac77",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            5,
-                            0.1
-                        ],
-                        [
-                            6,
-                            0.2
-                        ],
-                        [
-                            7,
-                            1.5
-                        ],
-                        [
-                            20,
-                            18
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
+            "minzoom": 13,
             "layout": {
                 "line-cap": "round",
                 "line-join": "round",
@@ -1465,8 +1343,8 @@
                 "all",
                 [
                     "==",
-                    "type",
-                    "primary_link"
+                    "class",
+                    "link"
                 ],
                 [
                     "!in",
@@ -1477,30 +1355,31 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "road_primary_link_casing",
+            "id": "road_link_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
                     "base": 1.2,
                     "stops": [
                         [
-                            5,
-                            0.1
+                            12,
+                            1
                         ],
                         [
-                            6,
-                            0.2
+                            13,
+                            3
                         ],
                         [
-                            7,
-                            1.5
+                            14,
+                            4
                         ],
                         [
                             20,
-                            18
+                            15
                         ]
                     ]
-                }
+                },
+                "line-opacity": 1
             },
             "source-layer": "road"
         },
@@ -1611,20 +1490,12 @@
                     "base": 1.2,
                     "stops": [
                         [
-                            5,
-                            0.1
-                        ],
-                        [
-                            6,
-                            0.2
-                        ],
-                        [
-                            7,
+                            8,
                             1.5
                         ],
                         [
                             20,
-                            11
+                            17
                         ]
                     ]
                 },
@@ -1646,9 +1517,9 @@
                 "all",
                 [
                     "in",
-                    "type",
-                    "secondary_link",
-                    "tertiary_link"
+                    "class",
+                    "trunk",
+                    "primary"
                 ],
                 [
                     "!in",
@@ -1659,7 +1530,7 @@
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "road_secondary_tertiary_link_casing",
+            "id": "road_trunk_primary_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -1667,11 +1538,11 @@
                     "stops": [
                         [
                             5,
-                            0.1
+                            0.4
                         ],
                         [
                             6,
-                            0.2
+                            0.6
                         ],
                         [
                             7,
@@ -1679,7 +1550,7 @@
                         ],
                         [
                             20,
-                            11
+                            22
                         ]
                     ]
                 },
@@ -1692,7 +1563,8 @@
             "minzoom": 5,
             "layout": {
                 "line-cap": "round",
-                "line-join": "round"
+                "line-join": "round",
+                "visibility": "visible"
             },
             "metadata": {
                 "mapbox:group": "1444849345966.4436"
@@ -1741,7 +1613,7 @@
             "source-layer": "road"
         },
         {
-            "id": "road_path",
+            "id": "road_path_pedestrian",
             "type": "line",
             "source": "mapbox",
             "source-layer": "road",
@@ -1749,14 +1621,23 @@
                 "all",
                 [
                     "==",
-                    "class",
-                    "path"
+                    "$type",
+                    "LineString"
                 ],
                 [
-                    "!in",
-                    "structure",
-                    "bridge",
-                    "tunnel"
+                    "all",
+                    [
+                        "in",
+                        "class",
+                        "path",
+                        "pedestrian"
+                    ],
+                    [
+                        "!in",
+                        "structure",
+                        "bridge",
+                        "tunnel"
+                    ]
                 ]
             ],
             "paint": {
@@ -1804,8 +1685,12 @@
                             1.5
                         ],
                         [
+                            14,
+                            2.5
+                        ],
+                        [
                             20,
-                            10
+                            11.5
                         ]
                     ]
                 }
@@ -1817,7 +1702,7 @@
             "metadata": {
                 "mapbox:group": "1444849345966.4436"
             },
-            "id": "road_service",
+            "id": "road_service_track",
             "paint": {
                 "line-color": "#fff",
                 "line-width": {
@@ -1838,7 +1723,39 @@
                     ]
                 }
             },
-            "ref": "road_service_casing"
+            "ref": "road_service_track_casing"
+        },
+        {
+            "interactive": true,
+            "metadata": {
+                "mapbox:group": "1444849345966.4436"
+            },
+            "id": "road_link",
+            "paint": {
+                "line-color": "#fea",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            12.5,
+                            0
+                        ],
+                        [
+                            13,
+                            1.5
+                        ],
+                        [
+                            14,
+                            2.5
+                        ],
+                        [
+                            20,
+                            11.5
+                        ]
+                    ]
+                }
+            },
+            "ref": "road_link_casing"
         },
         {
             "interactive": true,
@@ -1864,124 +1781,16 @@
                             11.5
                         ]
                     ]
-                }
+                },
+                "line-opacity": 1
             },
             "ref": "road_street_casing"
         },
         {
             "interactive": true,
-            "layout": {
-                "line-cap": "round",
-                "line-join": "round"
-            },
             "metadata": {
                 "mapbox:group": "1444849345966.4436"
             },
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "class",
-                    "primary",
-                    "trunk"
-                ],
-                [
-                    "!in",
-                    "structure",
-                    "bridge",
-                    "tunnel"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "road_primary",
-            "paint": {
-                "line-color": "#fea",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            6.5,
-                            0
-                        ],
-                        [
-                            7,
-                            0.5
-                        ],
-                        [
-                            20,
-                            14
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "line-cap": "round",
-                "line-join": "round"
-            },
-            "metadata": {
-                "mapbox:group": "1444849345966.4436"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "type",
-                    "primary_link"
-                ],
-                [
-                    "!in",
-                    "structure",
-                    "bridge",
-                    "tunnel"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "road_primary_link",
-            "paint": {
-                "line-color": "#fea",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            6.5,
-                            0
-                        ],
-                        [
-                            7,
-                            0.5
-                        ],
-                        [
-                            20,
-                            14
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "line-cap": "round",
-                "line-join": "round"
-            },
-            "metadata": {
-                "mapbox:group": "1444849345966.4436"
-            },
-            "filter": [
-                "in",
-                "class",
-                "secondary",
-                "tertiary"
-            ],
-            "type": "line",
-            "source": "mapbox",
             "id": "road_secondary_tertiary",
             "paint": {
                 "line-color": "#fea",
@@ -1993,36 +1802,24 @@
                             0
                         ],
                         [
-                            7,
+                            8,
                             0.5
                         ],
                         [
                             20,
-                            10
+                            13
                         ]
                     ]
                 }
             },
-            "source-layer": "road"
+            "ref": "road_secondary_tertiary_casing"
         },
         {
             "interactive": true,
-            "layout": {
-                "line-cap": "round",
-                "line-join": "round"
-            },
             "metadata": {
                 "mapbox:group": "1444849345966.4436"
             },
-            "filter": [
-                "in",
-                "type",
-                "tertiary_link",
-                "secondary_link"
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "road_secondary_tertiary_link",
+            "id": "road_trunk_primary",
             "paint": {
                 "line-color": "#fea",
                 "line-width": {
@@ -2038,12 +1835,12 @@
                         ],
                         [
                             20,
-                            10
+                            18
                         ]
                     ]
                 }
             },
-            "source-layer": "road"
+            "ref": "road_trunk_primary_casing"
         },
         {
             "interactive": true,
@@ -2080,17 +1877,17 @@
             "source-layer": "road",
             "filter": [
                 "all",
-              [
-                  "==",
-                  "class",
-                  "major_rail"
-              ],
-              [
-                  "!in",
-                  "structure",
-                  "bridge",
-                  "tunnel"
-              ]
+                [
+                    "==",
+                    "class",
+                    "major_rail"
+                ],
+                [
+                    "!in",
+                    "structure",
+                    "bridge",
+                    "tunnel"
+                ]
             ],
             "paint": {
                 "line-color": "#bbb",
@@ -2187,11 +1984,16 @@
                             3
                         ],
                         [
+                            14,
+                            4
+                        ],
+                        [
                             20,
-                            13
+                            15
                         ]
                     ]
-                }
+                },
+                "line-opacity": 1
             },
             "source-layer": "road"
         },
@@ -2211,64 +2013,15 @@
                     "bridge"
                 ],
                 [
-                    "==",
+                    "in",
                     "class",
-                    "motorway"
+                    "service",
+                    "track"
                 ]
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge_motorway_casing",
-            "paint": {
-                "line-color": "#e9ac77",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            5,
-                            0.4
-                        ],
-                        [
-                            6,
-                            0.6
-                        ],
-                        [
-                            7,
-                            1.5
-                        ],
-                        [
-                            20,
-                            22
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "line-join": "round"
-            },
-            "metadata": {
-                "mapbox:group": "1444849334699.1902"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "structure",
-                    "bridge"
-                ],
-                [
-                    "==",
-                    "class",
-                    "service"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "bridge_service_casing",
+            "id": "bridge_service_track_casing",
             "paint": {
                 "line-color": "#cfcdca",
                 "line-width": {
@@ -2309,7 +2062,59 @@
                 [
                     "==",
                     "class",
-                    "street"
+                    "link"
+                ]
+            ],
+            "type": "line",
+            "source": "mapbox",
+            "id": "bridge_link_casing",
+            "paint": {
+                "line-color": "#e9ac77",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            12,
+                            1
+                        ],
+                        [
+                            13,
+                            3
+                        ],
+                        [
+                            14,
+                            4
+                        ],
+                        [
+                            20,
+                            15
+                        ]
+                    ]
+                },
+                "line-opacity": 1
+            },
+            "source-layer": "road"
+        },
+        {
+            "interactive": true,
+            "layout": {
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1444849334699.1902"
+            },
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "structure",
+                    "bridge"
+                ],
+                [
+                    "in",
+                    "class",
+                    "street",
+                    "street_limited"
                 ]
             ],
             "type": "line",
@@ -2371,109 +2176,8 @@
                 [
                     "in",
                     "class",
-                    "primary",
-                    "trunk"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "bridge_primary_casing",
-            "paint": {
-                "line-color": "#e9ac77",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            5,
-                            0.1
-                        ],
-                        [
-                            6,
-                            0.2
-                        ],
-                        [
-                            7,
-                            1.5
-                        ],
-                        [
-                            20,
-                            18
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "line-join": "round"
-            },
-            "metadata": {
-                "mapbox:group": "1444849334699.1902"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "structure",
-                    "bridge"
-                ],
-                [
-                    "==",
-                    "class",
-                    "primary_link"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "bridge_primary_link_casing",
-            "paint": {
-                "line-color": "#e9ac77",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            5,
-                            0.1
-                        ],
-                        [
-                            6,
-                            0.2
-                        ],
-                        [
-                            7,
-                            1.5
-                        ],
-                        [
-                            20,
-                            18
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "line-join": "round"
-            },
-            "metadata": {
-                "mapbox:group": "1444849334699.1902"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "structure",
-                    "bridge"
-                ],
-                [
-                    "in",
-                    "class",
-                    "tertiary",
-                    "secondary"
+                    "secondary",
+                    "tertiary"
                 ]
             ],
             "type": "line",
@@ -2485,23 +2189,16 @@
                     "base": 1.2,
                     "stops": [
                         [
-                            5,
-                            0.1
-                        ],
-                        [
-                            6,
-                            0.2
-                        ],
-                        [
-                            7,
+                            8,
                             1.5
                         ],
                         [
                             20,
-                            11
+                            17
                         ]
                     ]
-                }
+                },
+                "line-opacity": 1
             },
             "source-layer": "road"
         },
@@ -2523,13 +2220,13 @@
                 [
                     "in",
                     "class",
-                    "tertiary_link",
-                    "secondary_link"
+                    "trunk",
+                    "primary"
                 ]
             ],
             "type": "line",
             "source": "mapbox",
-            "id": "bridge_secondary_tertiary_link_casing",
+            "id": "bridge_trunk_primary_casing",
             "paint": {
                 "line-color": "#e9ac77",
                 "line-width": {
@@ -2537,11 +2234,11 @@
                     "stops": [
                         [
                             5,
-                            0.1
+                            0.4
                         ],
                         [
                             6,
-                            0.2
+                            0.6
                         ],
                         [
                             7,
@@ -2549,80 +2246,12 @@
                         ],
                         [
                             20,
-                            11
+                            22
                         ]
                     ]
                 }
             },
             "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "metadata": {
-                "mapbox:group": "1444849334699.1902"
-            },
-            "id": "bridge_street",
-            "paint": {
-                "line-color": "#fff",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            13.5,
-                            0
-                        ],
-                        [
-                            14,
-                            2.5
-                        ],
-                        [
-                            20,
-                            11.5
-                        ]
-                    ]
-                },
-                "line-opacity": {
-                    "stops": [
-                        [
-                            12,
-                            0
-                        ],
-                        [
-                            12.5,
-                            1
-                        ]
-                    ]
-                }
-            },
-            "ref": "bridge_street_casing"
-        },
-        {
-            "interactive": true,
-            "metadata": {
-                "mapbox:group": "1444849334699.1902"
-            },
-            "id": "bridge_primary",
-            "paint": {
-                "line-color": "#fea",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            6.5,
-                            0
-                        ],
-                        [
-                            7,
-                            0.5
-                        ],
-                        [
-                            20,
-                            14
-                        ]
-                    ]
-                }
-            },
-            "ref": "bridge_primary_casing"
         },
         {
             "interactive": true,
@@ -2632,123 +2261,6 @@
             "metadata": {
                 "mapbox:group": "1444849334699.1902"
             },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "structure",
-                    "bridge"
-                ],
-                [
-                    "==",
-                    "type",
-                    "primary_link"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "bridge_primary_link",
-            "paint": {
-                "line-color": "#fea",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            6.5,
-                            0
-                        ],
-                        [
-                            7,
-                            0.5
-                        ],
-                        [
-                            20,
-                            14
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "interactive": true,
-            "metadata": {
-                "mapbox:group": "1444849334699.1902"
-            },
-            "id": "bridge_secondary_tertiary",
-            "paint": {
-                "line-color": "#fea",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            6.5,
-                            0
-                        ],
-                        [
-                            7,
-                            0.5
-                        ],
-                        [
-                            20,
-                            10
-                        ]
-                    ]
-                }
-            },
-            "ref": "bridge_secondary_tertiary_casing"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "line-join": "round"
-            },
-            "metadata": {
-                "mapbox:group": "1444849334699.1902"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "structure",
-                    "bridge"
-                ],
-                [
-                    "==",
-                    "type",
-                    "tertiary_link"
-                ]
-            ],
-            "type": "line",
-            "source": "mapbox",
-            "id": "bridge_secondary_tertiary_link",
-            "paint": {
-                "line-color": "#fea",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            6.5,
-                            0
-                        ],
-                        [
-                            7,
-                            0.5
-                        ],
-                        [
-                            20,
-                            10
-                        ]
-                    ]
-                }
-            },
-            "source-layer": "road"
-        },
-        {
-            "id": "bridge_path",
-            "type": "line",
-            "source": "mapbox",
-            "source-layer": "road",
             "filter": [
                 "all",
                 [
@@ -2759,7 +2271,63 @@
                 [
                     "==",
                     "class",
-                    "path"
+                    "motorway"
+                ]
+            ],
+            "type": "line",
+            "source": "mapbox",
+            "id": "bridge_motorway_casing",
+            "paint": {
+                "line-color": "#e9ac77",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0.4
+                        ],
+                        [
+                            6,
+                            0.6
+                        ],
+                        [
+                            7,
+                            1.5
+                        ],
+                        [
+                            20,
+                            22
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "road"
+        },
+        {
+            "id": "bridge_path_pedestrian",
+            "type": "line",
+            "source": "mapbox",
+            "source-layer": "road",
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "LineString"
+                ],
+                [
+                    "all",
+                    [
+                        "==",
+                        "structure",
+                        "bridge"
+                    ],
+                    [
+                        "in",
+                        "class",
+                        "path",
+                        "pedestrian"
+                    ]
                 ]
             ],
             "paint": {
@@ -2807,8 +2375,12 @@
                             1.5
                         ],
                         [
+                            14,
+                            2.5
+                        ],
+                        [
                             20,
-                            10
+                            11.5
                         ]
                     ]
                 }
@@ -2820,35 +2392,7 @@
             "metadata": {
                 "mapbox:group": "1444849334699.1902"
             },
-            "id": "bridge_service_copy",
-            "paint": {
-                "line-color": "#fc8",
-                "line-width": {
-                    "base": 1.2,
-                    "stops": [
-                        [
-                            12.5,
-                            0
-                        ],
-                        [
-                            13,
-                            1.5
-                        ],
-                        [
-                            20,
-                            10
-                        ]
-                    ]
-                }
-            },
-            "ref": "bridge_motorway_link_casing"
-        },
-        {
-            "interactive": true,
-            "metadata": {
-                "mapbox:group": "1444849334699.1902"
-            },
-            "id": "bridge_service",
+            "id": "bridge_service_track",
             "paint": {
                 "line-color": "#fff",
                 "line-width": {
@@ -2869,7 +2413,124 @@
                     ]
                 }
             },
-            "ref": "bridge_service_casing"
+            "ref": "bridge_service_track_casing"
+        },
+        {
+            "interactive": true,
+            "metadata": {
+                "mapbox:group": "1444849334699.1902"
+            },
+            "id": "bridge_link",
+            "paint": {
+                "line-color": "#fea",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            12.5,
+                            0
+                        ],
+                        [
+                            13,
+                            1.5
+                        ],
+                        [
+                            14,
+                            2.5
+                        ],
+                        [
+                            20,
+                            11.5
+                        ]
+                    ]
+                }
+            },
+            "ref": "bridge_link_casing"
+        },
+        {
+            "interactive": true,
+            "metadata": {
+                "mapbox:group": "1444849334699.1902"
+            },
+            "id": "bridge_street",
+            "paint": {
+                "line-color": "#fff",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            13.5,
+                            0
+                        ],
+                        [
+                            14,
+                            2.5
+                        ],
+                        [
+                            20,
+                            11.5
+                        ]
+                    ]
+                },
+                "line-opacity": 1
+            },
+            "ref": "bridge_street_casing"
+        },
+        {
+            "interactive": true,
+            "metadata": {
+                "mapbox:group": "1444849334699.1902"
+            },
+            "id": "bridge_secondary_tertiary",
+            "paint": {
+                "line-color": "#fea",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            6.5,
+                            0
+                        ],
+                        [
+                            7,
+                            0.5
+                        ],
+                        [
+                            20,
+                            10
+                        ]
+                    ]
+                }
+            },
+            "ref": "bridge_secondary_tertiary_casing"
+        },
+        {
+            "interactive": true,
+            "metadata": {
+                "mapbox:group": "1444849334699.1902"
+            },
+            "id": "bridge_trunk_primary",
+            "paint": {
+                "line-color": "#fea",
+                "line-width": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            6.5,
+                            0
+                        ],
+                        [
+                            7,
+                            0.5
+                        ],
+                        [
+                            20,
+                            18
+                        ]
+                    ]
+                }
+            },
+            "ref": "bridge_trunk_primary_casing"
         },
         {
             "interactive": true,
@@ -3266,7 +2927,7 @@
             "interactive": true,
             "minzoom": 16,
             "layout": {
-                "icon-image": "{maki}-12",
+                "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Bold"
@@ -3312,7 +2973,7 @@
             "interactive": true,
             "minzoom": 15,
             "layout": {
-                "icon-image": "{maki}-12",
+                "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Bold"
@@ -3358,7 +3019,7 @@
             "interactive": true,
             "minzoom": 14,
             "layout": {
-                "icon-image": "{maki}-12",
+                "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Bold"
@@ -3401,10 +3062,43 @@
             "source-layer": "poi_label"
         },
         {
+            "layout": {
+                "text-size": 12,
+                "icon-image": "{maki}-11",
+                "text-font": [
+                    "Open Sans Semibold",
+                    "Arial Unicode MS Bold"
+                ],
+                "text-padding": 2,
+                "visibility": "visible",
+                "text-offset": [
+                    0,
+                    0.6
+                ],
+                "text-anchor": "top",
+                "text-field": "{name_en}",
+                "text-max-width": 9
+            },
+            "metadata": {
+                "mapbox:group": "1444849297111.495"
+            },
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "rail_station_label",
+            "paint": {
+                "text-color": "#666",
+                "text-halo-color": "#ffffff",
+                "text-halo-width": 1,
+                "text-halo-blur": 0.5
+            },
+            "source-layer": "rail_station_label",
+            "interactive": true
+        },
+        {
             "interactive": true,
             "minzoom": 13,
             "layout": {
-                "icon-image": "{maki}-12",
+                "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Bold"
@@ -3448,9 +3142,9 @@
         },
         {
             "interactive": true,
-            "minzoom": 13,
+            "minzoom": 11,
             "layout": {
-                "icon-image": "{maki}-12",
+                "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Bold"
@@ -3476,14 +3170,16 @@
                     "Point"
                 ],
                 [
-                    "==",
+                    "in",
                     "scalerank",
-                    1
+                    1,
+                    2,
+                    3
                 ]
             ],
             "type": "symbol",
             "source": "mapbox",
-            "id": "airport-label",
+            "id": "airport_label",
             "paint": {
                 "text-color": "#666",
                 "text-halo-color": "#ffffff",
@@ -3493,6 +3189,7 @@
             "source-layer": "airport_label"
         },
         {
+            "interactive": true,
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
@@ -3515,59 +3212,64 @@
                 "symbol-placement": "line"
             },
             "metadata": {
-                "mapbox:group": "1454630373407.0955"
+                "mapbox:group": "1456163609504.0715"
             },
-            "type": "symbol",
-            "source": "mapbox",
-            "id": "road-label",
             "filter": [
                 "!=",
                 "class",
                 "ferry"
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "road_label",
             "paint": {
                 "text-color": "#765",
                 "text-halo-width": 1,
                 "text-halo-blur": 0.5
             },
-            "source-layer": "road_label",
-            "interactive": true
+            "source-layer": "road_label"
         },
         {
+            "interactive": true,
+            "minzoom": 8,
             "layout": {
                 "text-field": "{ref}",
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Regular"
+                    "Arial Unicode MS Bold"
                 ],
                 "text-size": 11,
-                "icon-image": "motorway_{reflen}",
-                "symbol-placement": "line",
+                "icon-image": "motorway-{reflen}",
+                "symbol-placement": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            10,
+                            "point"
+                        ],
+                        [
+                            11,
+                            "line"
+                        ]
+                    ]
+                },
                 "symbol-spacing": 500,
-                "text-rotation-alignment": "viewport"
+                "text-rotation-alignment": "viewport",
+                "icon-rotation-alignment": "viewport"
             },
             "metadata": {
-                "mapbox:group": "1454630373407.0955"
+                "mapbox:group": "1456163609504.0715"
             },
             "filter": [
-                "all",
-                [
-                    "==",
-                    "class",
-                    "motorway"
-                ],
-                [
-                    "<=",
-                    "reflen",
-                    6
-                ]
+                "<=",
+                "reflen",
+                6
             ],
             "type": "symbol",
             "source": "mapbox",
-            "id": "road-label-highway-shield",
+            "id": "road_label_highway_shield",
             "paint": {},
-            "source-layer": "road_label",
-            "interactive": true
+            "source-layer": "road_label"
         },
         {
             "interactive": true,
@@ -3602,7 +3304,9 @@
                 "type",
                 "hamlet",
                 "suburb",
-                "neighbourhood"
+                "neighbourhood",
+                "island",
+                "islet"
             ],
             "type": "symbol",
             "source": "mapbox",
@@ -3930,7 +3634,7 @@
             ],
             "type": "symbol",
             "source": "mapbox",
-            "id": "marine_label_3",
+            "id": "marine_label_point_3",
             "paint": {
                 "text-color": "#74aee9",
                 "text-halo-color": "rgba(255,255,255,0.7)",
@@ -4159,8 +3863,8 @@
                 "text-size": {
                     "stops": [
                         [
-                            5,
-                            13
+                            4,
+                            11
                         ],
                         [
                             6,
@@ -4201,8 +3905,8 @@
                 "text-size": {
                     "stops": [
                         [
-                            4,
-                            13
+                            3,
+                            11
                         ],
                         [
                             7,
@@ -4243,8 +3947,8 @@
                 "text-size": {
                     "stops": [
                         [
-                            3,
-                            13
+                            2,
+                            11
                         ],
                         [
                             5,
@@ -4285,8 +3989,8 @@
                 "text-size": {
                     "stops": [
                         [
-                            2,
-                            13
+                            1,
+                            11
                         ],
                         [
                             4,
