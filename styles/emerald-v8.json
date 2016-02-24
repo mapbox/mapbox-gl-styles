@@ -79,7 +79,7 @@
             "type": "vector"
         }
     },
-    "sprite": "https://www.mapbox.com/mapbox-gl-styles/sprites/emerald",
+    "sprite": "mapbox://sprites/mapbox/emerald-v8",
     "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
     "layers": [
         {
