@@ -32,6 +32,7 @@ var spriteStyles = [
     'emerald-v8'
 ];
 
+
 // check that all v7 styles exist
 test('.styles', function(t) {
     t.test('should return all styles', function(t){
@@ -70,29 +71,34 @@ test('.sprites', function(t) {
     t.end();
 });
 
-
 // check that sprites are properly named
 test('.sprite', function(t) {
     t.test('should return properly referenced spritesheets', function(t){
         Object.keys(mapboxGL.styles).forEach(function(stylesv8){
+          var version = mapboxGL.styles[stylesv8].version;
+          if (version==8) {
             t.equal(mapboxGL.styles[stylesv8].sprite, 'mapbox://sprites/mapbox/'+stylesv8, 'References mapbox spritesheet');
+          }
         });
         t.end();
     });
     t.test('should not return a personal spritesheet', function(t){
-        var fake = mapboxGL.styles.sprite;
+        var fake = mapboxGL.styles.name;
         t.equal(fake, undefined);
         t.end();
     });
     t.end();
 });
 
-
 // check that fonts are properly named
 test('.glyphs', function(t) {
     t.test('should return properly referenced spritesheets', function(t){
         Object.keys(mapboxGL.styles).forEach(function(stylesv8){
-            t.equal(mapboxGL.styles[stylesv8].glyphs, 'mapbox://fontstack/{fontstack}/{range}.pbf', 'References mapbox glyphs');
+          var version = mapboxGL.styles[stylesv8].version;
+          if (version==8) {
+            var name = mapboxGL.styles[stylesv8].name;
+            t.equal(mapboxGL.styles[stylesv8].glyphs, 'mapbox://fonts/mapbox/{fontstack}/{range}.pbf', 'References mapbox glyphs for '+name);
+          }
         });
         t.end();
     });
