@@ -1,6 +1,6 @@
 {
     "version": 8,
-    "name": "Emerald-v8",
+    "name": "Emerald",
     "metadata": {
         "mapbox:groups": {
             "1444858470265.9292": {
@@ -73,21 +73,14 @@
             }
         }
     },
-    "center": [
-        -122.67912505714617,
-        45.52669280188053
-    ],
-    "zoom": 13.622745852571093,
-    "bearing": 0,
-    "pitch": 0,
     "sources": {
         "mapbox": {
             "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v7",
             "type": "vector"
         }
     },
-    "sprite": "mapbox://sprites/peterqliu/cij3dz8t1002y8xknvbukdu8n",
-    "glyphs": "mapbox://fonts/peterqliu/{fontstack}/{range}.pbf",
+    "sprite": "mapbox://sprites/mapbox/emerald-v8",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",
@@ -6728,10 +6721,5 @@
             },
             "source-layer": "place_label"
         }
-    ],
-    "created": "2016-01-06T22:18:16.117Z",
-    "id": "cij3dz8t1002y8xknvbukdu8n",
-    "modified": "2016-02-22T20:56:43.183Z",
-    "owner": "peterqliu",
-    "draft": false
+    ]
 }
