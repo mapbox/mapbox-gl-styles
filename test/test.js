@@ -34,14 +34,14 @@ var spriteStyles = [
 
 
 // check that all v7 styles exist
-test('.styles', function(t) {
+test('.styles v7 and v8', function(t) {
     t.test('should return all styles', function(t){
         Object.keys(mapboxGL.styles).forEach(function(style){
             t.ok(mapboxGL.styles[style].version, 'Check for version');
             t.ok(mapboxGL.styles[style].name, 'Check for version');
             t.ok(mapboxGL.styles[style].layers, 'Check for layers');
         });
-        t.equal(stylesv7.length+stylesv8.length, Object.keys(mapboxGL.styles).length, 'Check that all styles were hit');
+        t.equal(stylesv7.length + stylesv8.length, Object.keys(mapboxGL.styles).length, 'Check that all styles were hit');
         t.end();
     });
     t.test('should not return a style', function(t){
@@ -53,7 +53,7 @@ test('.styles', function(t) {
 });
 
 // check that all sprites exist
-test('.sprites', function(t) {
+test('.sprites v7 and v8', function(t) {
     t.test('should return all styles', function(t){
         Object.keys(mapboxGL.sprites).forEach(function(sprite){
             t.ok(sprite.indexOf('v8') > -1);
@@ -72,13 +72,13 @@ test('.sprites', function(t) {
 });
 
 // check that sprites are properly named
-test('.sprite', function(t) {
+test('.spritesheet v8', function(t) {
     t.test('should return properly referenced spritesheets', function(t){
         Object.keys(mapboxGL.styles).forEach(function(stylesv8){
           var version = mapboxGL.styles[stylesv8].version;
           var name = mapboxGL.styles[stylesv8].name;
           if (version==8 && name!='Empty') {
-            t.equal(mapboxGL.styles[stylesv8].sprite, 'mapbox://sprites/mapbox/'+stylesv8, 'References mapbox spritesheet');
+            t.equal(mapboxGL.styles[stylesv8].sprite, 'mapbox://sprites/mapbox/' + stylesv8, 'References mapbox spritesheet');
           }
         });
         t.end();
@@ -92,13 +92,13 @@ test('.sprite', function(t) {
 });
 
 // check that fonts are properly named
-test('.glyphs', function(t) {
+test('.glyphs v8', function(t) {
     t.test('should return properly referenced spritesheets', function(t){
         Object.keys(mapboxGL.styles).forEach(function(stylesv8){
           var version = mapboxGL.styles[stylesv8].version;
           if (version==8) {
             var name = mapboxGL.styles[stylesv8].name;
-            t.equal(mapboxGL.styles[stylesv8].glyphs, 'mapbox://fonts/mapbox/{fontstack}/{range}.pbf', 'References mapbox glyphs for '+name);
+            t.equal(mapboxGL.styles[stylesv8].glyphs, 'mapbox://fonts/mapbox/{fontstack}/{range}.pbf', 'References mapbox glyphs for ' + name);
           }
         });
         t.end();
