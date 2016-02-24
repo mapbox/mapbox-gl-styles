@@ -76,7 +76,8 @@ test('.sprite', function(t) {
     t.test('should return properly referenced spritesheets', function(t){
         Object.keys(mapboxGL.styles).forEach(function(stylesv8){
           var version = mapboxGL.styles[stylesv8].version;
-          if (version==8) {
+          var name = mapboxGL.styles[stylesv8].name;
+          if (version==8 && name!='Empty') {
             t.equal(mapboxGL.styles[stylesv8].sprite, 'mapbox://sprites/mapbox/'+stylesv8, 'References mapbox spritesheet');
           }
         });
