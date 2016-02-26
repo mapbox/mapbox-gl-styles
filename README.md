@@ -2,41 +2,60 @@
 
 This repository contains prebuilt Mapbox GL styles for use in Mapbox GL JS or the Mapbox Mobile SDKs and as a starting point for custom maps built with [Mapbox Studio](https://www.mapbox.com/mapbox-studio/).
 
+
+## Versioning
+
+A __breaking__ release (__x__.0.0) can include any of the following changes to styles:
+
+- Any change to existing stylesheet JSON
+- Any change to existing stylesheet sprite
+
+A __feature__ release (0.__x__.0) can include any of the following changes:
+
+- New style
+- Updates to everything except existing style JSON files: README, tests, or migration scripts
+
+A __fix__ release (0.0.__x__) can include any of the following changes:
+
+- Fix an invalid stylesheet or bad test.
+
+## Styles
+
 The following styles are provided:
 
-### Basic (`basic-v8`)
+#### Basic (`basic-v8`)
 
 Simple and flexible starting template.
 
-### Bright (`bright-v8`)
+#### Bright (`bright-v8`)
 
 Template for complex custom basemaps.
 
-### Streets (`streets-v8`)
+#### Streets (`streets-v8`)
 
 A complete basemap, perfect for incorporating your own data.
 
-### Light (`light-v8`)
+#### Light (`light-v8`)
 
 Subtle light backdrop for data visualizations.
 
-### Dark (`dark-v8`)
+#### Dark (`dark-v8`)
 
 Subtle dark backdrop for data visualizations.
 
-### Emerald (`emerald-v8`)
+#### Emerald (`emerald-v8`)
 
 A versatile style, with emphasis on road networks and public transit.
 
-### Satellite (`satellite-v8`)
+#### Satellite (`satellite-v8`)
 
 A beautiful global satellite and aerial imagery layer.
 
-### Satellite Streets (`satellite-hybrid-v8`)
+#### Satellite Streets (`satellite-hybrid-v8`)
 
 Global satellite and aerial imagery with unobtrusive labels.
 
-### Empty (`empty-v8`)
+#### Empty (`empty-v8`)
 
 A blank slate. Build your own map from the ground up.
 
