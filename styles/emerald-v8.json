@@ -643,9 +643,22 @@
                 "level",
                 94
             ],
+            "maxzoom": 15,
             "paint": {
                 "fill-color": "#fff",
-                "fill-opacity": 0.2
+                "fill-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            14,
+                            0.2
+                        ],
+                        [
+                            15,
+                            0
+                        ]
+                    ]
+                }
             },
             "metadata": {
                 "mapbox:group": "1444858181796.6055"
