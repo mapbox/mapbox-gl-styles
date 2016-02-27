@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="176.77365"
+   height="176.77135"
+   id="svg15676"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="Oslo T-bane Logo.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs15678">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective15684" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2432572"
+     inkscape:cx="266.55124"
+     inkscape:cy="109.6314"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="968"
+     inkscape:window-x="0"
+     inkscape:window-y="22" />
+  <metadata
+     id="metadata15681">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-337.32573,-348.96455)">
+    <g
+       id="g2382">
+      <path
+         id="path4884"
+         style="fill:#1f408e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 425.71457,525.7359 C 474.52693,525.7359 514.09938,486.16412 514.09938,437.35118 C 514.09938,388.53691 474.52693,348.96455 425.71457,348.96455 C 376.90163,348.96455 337.32573,388.53691 337.32573,437.35118 C 337.32573,486.16412 376.90163,525.7359 425.71457,525.7359 z" />
+      <path
+         id="path4886"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 425.71457,511.28357 C 466.54416,511.28357 499.6482,478.18135 499.6482,437.35118 C 499.6482,396.51738 466.54416,363.41736 425.71457,363.41736 C 384.8844,363.41736 351.78036,396.51738 351.78036,437.35118 C 351.78036,478.18135 384.8844,511.28357 425.71457,511.28357 z" />
+      <path
+         id="path4888"
+         style="fill:#1f408e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 465.44771,395.11066 L 385.98085,395.11066 L 385.98085,408.87677 L 416.73877,408.87677 L 416.73877,495.48476 L 434.68979,495.48476 L 434.68979,408.87677 L 465.44771,408.87677 L 465.44771,395.11066 z" />
+    </g>
+  </g>
+</svg>
