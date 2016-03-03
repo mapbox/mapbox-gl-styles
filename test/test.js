@@ -204,12 +204,13 @@ test('.glyphs v8', function(t) {
     t.end();
 });
 
+
 // checks all maki icons against list of expected
 test('.maki v8', function(t) {
   mapboxGL.spriteStyles.forEach(function(style) {
     // checks string to see if it does contain -v8 and is not in empty-v8
     if (style.indexOf('-v8') === -1 && style !== 'empty-v8') return;
-    fs.readdir('./sprites/' + style + '/_svg', function(err, files){
+    fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
         // console.log(files);
         maki.forEach(function(name){
@@ -218,27 +219,20 @@ test('.maki v8', function(t) {
           t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' +style);
         });
     });
-  })
-    t.end();
+  });
+  t.end();
 });
 
 
 // checks all rail icons against list of expected
 test('.rail v8', function(t) {
-  mapboxGL.spriteStyles.forEach(function(style) {
-    // checks string to see if it does contain -v8 and is not in empty-v8
-    if (style.indexOf('-v8') === -1 && style !== 'empty-v8') return;
-    fs.readdir('./sprites/' + style + '/_svg', function(err, files){
-      if (err) t.fail(err);
-        console.log(files);
-        maki.forEach(function(name){
-          // boolean to see if the value is not false on an array
-          var hasNames = (files.indexOf(name + '-11.svg') !== -1) && (files.indexOf(name + '-15.svg') !== -1);
-          t.ok(hasNames, name + ' in ' +style);
-        });
-    });
-  })
-    t.end();
+  mapboxGL.spriteStyles.forEach(function(style, i) {
+    console.log(style + ' has: ');
+    // pass variable for arrays
+    var layers = mapboxGL.styles[style].layers[i]['source-layer'];
+    console.log(layers);
+  });
+  t.end();
 });
 
 
