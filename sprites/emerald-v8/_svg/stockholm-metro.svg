@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="450" height="450"><circle cx="225" cy="225" r="200" style="fill:#fff;stroke:#000080;stroke-width:10"/><path d="m 227,152 0,196 m -85,-196 167,0" style="stroke:#000080;stroke-width:74;stroke-linecap:square"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg15676" inkscape:version="0.46" sodipodi:docname="Oslo T-bane Logo.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:version="0.32" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 176.8 176.8"
+	 enable-background="new 0 0 176.8 176.8" xml:space="preserve">
+<defs>
+	
+	
+		<inkscape:perspective  inkscape:persp3d-origin="372.04724 : 350.78739 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 526.18109 : 1" sodipodi:type="inkscape:persp3d" inkscape:vp_z="744.09448 : 526.18109 : 1" id="perspective15684">
+		</inkscape:perspective>
+</defs>
+<sodipodi:namedview  inkscape:window-x="0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:document-units="px" inkscape:window-width="1280" inkscape:window-height="968" inkscape:current-layer="layer1" inkscape:window-y="22" borderopacity="1.0" inkscape:cx="266.55124" pagecolor="#ffffff" showgrid="false" bordercolor="#666666" inkscape:cy="109.6314" inkscape:zoom="1.2432572" id="base">
+	</sodipodi:namedview>
+<g id="layer1" transform="translate(-337.32573,-348.96455)" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+	<g id="g2382">
+		<path id="path4884" fill="#46819B" d="M425.7,525.7c48.8,0,88.4-39.6,88.4-88.4c0-48.8-39.6-88.4-88.4-88.4
+			c-48.8,0-88.4,39.6-88.4,88.4C337.3,486.2,376.9,525.7,425.7,525.7z"/>
+		<path id="path4886" fill="#FFFFFF" d="M425.7,511.3c40.8,0,73.9-33.1,73.9-73.9c0-40.8-33.1-73.9-73.9-73.9
+			c-40.8,0-73.9,33.1-73.9,73.9C351.8,478.2,384.9,511.3,425.7,511.3z"/>
+		<path id="path4888" fill="#46819B" d="M465.4,395.1H386v13.8h30.8v86.6h18v-86.6h30.8V395.1z"/>
+	</g>
+</g>
+</svg>
