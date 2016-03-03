@@ -201,50 +201,39 @@ test('.maki v8 - checks all maki icons against list of expected maki icons', fun
         t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
         t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
       });
-    });
     if (i === styles.length - 1) {
       t.end();
     }
+    });
   });
 });
 
 
 
-// checks all rail icons against list of expected
-test('.rail v8', function(t) {
-  var styles = mapboxGL.spriteStyles;
-  styles.forEach(function(style, i) {
+// checks all `network rail icons against list of expected
+test('.rail v8 (network) - checks all network rail icons against list of expected', function(t) {
+  var styleNetworks = []; // an array to hold the styles that have ^^
+  mapboxGL.spriteStyles.forEach(function(style, i) {
     var totalLayers = mapboxGL.styles[style].layers;
-    var totalSourceLayers = 0;
     for(i=0; i < totalLayers.length; i++) {
       var sourceLayer = mapboxGL.styles[style].layers[i]['source-layer'];
-      if(sourceLayer === 'rail_station_label') {
-        totalSourceLayers = totalSourceLayers + 1;
-        // network if condition
-        if(mapboxGL.styles[style].layers[i].layout['icon-image'] == '{network}') {
-          fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-            if (err) t.fail(err);
-            railNetwork.forEach(function(name) {
-              t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-            });
-          });
-        } // end network if
-        // maki if condition
-        else if(mapboxGL.styles[style].layers[i].layout['icon-image'] == '{maki}') {
-          fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-            if (err) t.fail(err);
-            railMaki.forEach(function(name) {
-              t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-            });
-          });
-        } // end maki if
-      } // end sourceLayer if
-    } // end for loop
-    if (i === styles.length - 1) {
-      t.end();
+      if(sourceLayer === 'rail_station_label' && mapboxGL.styles[style].layers[i].layout['icon-image'] == '{network}') {
+        styleNetworks.push(style);
+      }
     }
   });
-});
+  styleNetworks.forEach(function(style, i) {
+    fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
+      if (err) t.fail(err);
+      railNetwork.forEach(function(name) {
+        t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+      });
+      if (i === styleNetworks.length - 1) {
+        t.end();
+      }
+    });
+  });
+}); // end test
 
 
 
