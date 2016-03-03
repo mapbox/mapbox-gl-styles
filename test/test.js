@@ -192,60 +192,59 @@ test('.glyphs v8', function(t) {
 
 
 // checks all maki icons against list of expected
-test('.maki v8', function(t) {
-  t.test('checks all maki icons against list of expected maki icons', function(t) {
-    mapboxGL.spriteStyles.forEach(function(style) {
-      if (style.indexOf('-v8') === -1 && style !== 'empty-v8') return;
-      fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-        if (err) t.fail(err);
-        maki.forEach(function(name) {
-          // boolean to see if the value is not false on an array
-          t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' +style);
-          t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' +style);
-        });
+test('.maki v8 - checks all maki icons against list of expected maki icons', function(t) {
+  var styles = mapboxGL.spriteStyles;
+  styles.forEach(function(style, i) {
+    fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
+      if (err) t.fail(err);
+      maki.forEach(function(name) {
+        t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+        t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
       });
     });
-    t.end();
+    if (i === styles.length - 1) {
+      t.end();
+    }
   });
-  t.end();
 });
+
 
 
 // checks all rail icons against list of expected
 test('.rail v8', function(t) {
-  t.test('checks all rail icons for against either network or maki icon list', function(t) {
-    mapboxGL.spriteStyles.forEach(function(style, i) {
-      // pass variable for arrays
-      var totalLayers = mapboxGL.styles[style].layers;
-      var totalSourceLayers = 0;
-      for(i=0; i < totalLayers.length; i++) {
-        var sourceLayer = mapboxGL.styles[style].layers[i]['source-layer'];
-        if(sourceLayer === 'rail_station_label') {
-          totalSourceLayers = totalSourceLayers + 1;
-          // network if condition
-          if(mapboxGL.styles[style].layers[i].layout['icon-image'] == '{network}') {
-            fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-              if (err) t.fail(err);
-              railNetwork.forEach(function(name) {
-                t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-              });
+  var styles = mapboxGL.spriteStyles;
+  styles.forEach(function(style, i) {
+    var totalLayers = mapboxGL.styles[style].layers;
+    var totalSourceLayers = 0;
+    for(i=0; i < totalLayers.length; i++) {
+      var sourceLayer = mapboxGL.styles[style].layers[i]['source-layer'];
+      if(sourceLayer === 'rail_station_label') {
+        totalSourceLayers = totalSourceLayers + 1;
+        // network if condition
+        if(mapboxGL.styles[style].layers[i].layout['icon-image'] == '{network}') {
+          fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
+            if (err) t.fail(err);
+            railNetwork.forEach(function(name) {
+              t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
             });
-          } // end network if
-          // maki if condition
-          else if(mapboxGL.styles[style].layers[i].layout['icon-image'] == '{maki}') {
-            fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-              if (err) t.fail(err);
-              railMaki.forEach(function(name) {
-                t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-              });
+          });
+        } // end network if
+        // maki if condition
+        else if(mapboxGL.styles[style].layers[i].layout['icon-image'] == '{maki}') {
+          fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
+            if (err) t.fail(err);
+            railMaki.forEach(function(name) {
+              t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
             });
-          } // end maki if
-        } // end sourceLayer if
-      } // end for loop
-    });
-    t.end();
+          });
+        } // end maki if
+      } // end sourceLayer if
+    } // end for loop
+    if (i === styles.length - 1) {
+      t.end();
+    }
   });
-  t.end();
 });
+
 
 
