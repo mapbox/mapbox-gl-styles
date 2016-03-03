@@ -1,7 +1,6 @@
 var test = require('tape');
 var mapboxGL = require('../index');
 var fs = require('fs');
-
 var maki = [
   'airfield',
   'alcohol-shop',
@@ -74,6 +73,79 @@ var maki = [
   'volcano',
   'zoo'
 ];
+var rail = [
+  'airfield',
+  'alcohol-shop',
+  'amusement-park',
+  'aquarium',
+  'art-gallery',
+  'attraction',
+  'bakery',
+  'bank',
+  'bar',
+  'beer',
+  'bicycle',
+  'bicycle-share',
+  'bus',
+  'cafe',
+  'car',
+  'campsite',
+  'castle',
+  'cemetery',
+  'cinema',
+  'clothing-store',
+  'college',
+  'dentist',
+  'doctor',
+  'dog-park',
+  'drinking-water',
+  'embassy',
+  'entrance',
+  'fast-food',
+  'ferry',
+  'fire-station',
+  'fuel',
+  'garden',
+  'golf',
+  'grocery',
+  'harbor',
+  'heliport',
+  'hospital',
+  'ice-cream',
+  'information',
+  'laundry',
+  'library',
+  'lodging',
+  'monument',
+  'mountain',
+  'museum',
+  'music',
+  'park',
+  'pharmacy',
+  'picnic-site',
+  'place-of-worship',
+  'playground',
+  'police',
+  'post',
+  'prison',
+  'religious-christian',
+  'religious-jewish',
+  'religious-muslim',
+  'restaurant',
+  'rocket',
+  'school',
+  'shop',
+  'stadium',
+  'swimming',
+  'suitcase',
+  'theatre',
+  'toilet',
+  'town-hall',
+  'veterinary',
+  'volcano',
+  'zoo'
+];
+
 
 // check that all v7 styles exist
 test('.styles v7 and v8', function(t) {
@@ -135,12 +207,30 @@ test('.glyphs v8', function(t) {
 // checks all maki icons against list of expected
 test('.maki v8', function(t) {
   mapboxGL.spriteStyles.forEach(function(style) {
-    // checks string to see if the value exists
+    // checks string to see if it does contain -v8 and is not in empty-v8
     if (style.indexOf('-v8') === -1 && style !== 'empty-v8') return;
-    // console.log(style);
     fs.readdir('./sprites/' + style + '/_svg', function(err, files){
       if (err) t.fail(err);
         // console.log(files);
+        maki.forEach(function(name){
+          // boolean to see if the value is not false on an array
+          t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' +style);
+          t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' +style);
+        });
+    });
+  })
+    t.end();
+});
+
+
+// checks all rail icons against list of expected
+test('.rail v8', function(t) {
+  mapboxGL.spriteStyles.forEach(function(style) {
+    // checks string to see if it does contain -v8 and is not in empty-v8
+    if (style.indexOf('-v8') === -1 && style !== 'empty-v8') return;
+    fs.readdir('./sprites/' + style + '/_svg', function(err, files){
+      if (err) t.fail(err);
+        console.log(files);
         maki.forEach(function(name){
           // boolean to see if the value is not false on an array
           var hasNames = (files.indexOf(name + '-11.svg') !== -1) && (files.indexOf(name + '-15.svg') !== -1);
@@ -150,4 +240,5 @@ test('.maki v8', function(t) {
   })
     t.end();
 });
+
 
