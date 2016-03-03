@@ -74,76 +74,58 @@ var maki = [
   'zoo'
 ];
 var rail = [
-  'airfield',
-  'alcohol-shop',
-  'amusement-park',
-  'aquarium',
-  'art-gallery',
-  'attraction',
-  'bakery',
-  'bank',
-  'bar',
-  'beer',
-  'bicycle',
-  'bicycle-share',
-  'bus',
-  'cafe',
-  'car',
-  'campsite',
-  'castle',
-  'cemetery',
-  'cinema',
-  'clothing-store',
-  'college',
-  'dentist',
-  'doctor',
-  'dog-park',
-  'drinking-water',
-  'embassy',
-  'entrance',
-  'fast-food',
-  'ferry',
-  'fire-station',
-  'fuel',
-  'garden',
-  'golf',
-  'grocery',
-  'harbor',
-  'heliport',
-  'hospital',
-  'ice-cream',
-  'information',
-  'laundry',
-  'library',
-  'lodging',
-  'monument',
-  'mountain',
-  'museum',
-  'music',
-  'park',
-  'pharmacy',
-  'picnic-site',
-  'place-of-worship',
-  'playground',
-  'police',
-  'post',
-  'prison',
-  'religious-christian',
-  'religious-jewish',
-  'religious-muslim',
-  'restaurant',
-  'rocket',
-  'school',
-  'shop',
-  'stadium',
-  'swimming',
-  'suitcase',
-  'theatre',
-  'toilet',
-  'town-hall',
-  'veterinary',
-  'volcano',
-  'zoo'
+  'barcelona-metro',
+  'boston-t',
+  'chongqing-rail-transit',
+  'de-s-bahn',
+  'de-s-bahn.de-u-bahn',
+  'de-u-bahn',
+  'delhi-metro',
+  'gb-national-rail',
+  'gb-national-rail.london-dlr',
+  'gb-national-rail.london-dlr.london-overground.london-tfl-rail.london-underground',
+  'gb-national-rail.london-dlr.london-overground.london-underground',
+  'gb-national-rail.london-dlr.london-underground',
+  'gb-national-rail.london-overground',
+  'gb-national-rail.london-overground.london-tfl-rail.london-underground',
+  'gb-national-rail.london-overground.london-underground',
+  'gb-national-rail.london-tfl-rail',
+  'gb-national-rail.london-tfl-rail.london-overground',
+  'gb-national-rail.london-tfl-rail.london-underground',
+  'gb-national-rail.london-underground',
+  'hong-kong-mtr',
+  'kiev-metro',
+  'london-dlr',
+  'london-dlr.london-tfl-rail',
+  'london-dlr.london-tfl-rail.london-underground',
+  'london-dlr.london-underground',
+  'london-overground',
+  'london-overground.london-tfl-rail',
+  'london-overground.london-tfl-rail.london-underground',
+  'london-overground.london-underground',
+  'london-tfl-rail',
+  'london-tfl-rail.london-underground',
+  'london-underground',
+  'madrid-metro',
+  'mexico-city-metro',
+  'milan-metro',
+  'moscow-metro',
+  'new-york-subway',
+  'osaka-subway',
+  'oslo-metro',
+  'paris-metro',
+  'paris-metro.paris-rer',
+  'paris-rer',
+  'paris-rer.paris-transilien',
+  'paris-transilien',
+  'philadelphia-septa',
+  'san-francisco-bart',
+  'singapore-mrt',
+  'stockholm-metro',
+  'taipei-metro',
+  'tokyo-metro',
+  'vienna-u-bahn',
+  'washington-metro'
 ];
 
 
@@ -204,7 +186,6 @@ test('.glyphs v8', function(t) {
     t.end();
 });
 
-
 // checks all maki icons against list of expected
 test('.maki v8', function(t) {
   mapboxGL.spriteStyles.forEach(function(style) {
@@ -227,10 +208,25 @@ test('.maki v8', function(t) {
 // checks all rail icons against list of expected
 test('.rail v8', function(t) {
   mapboxGL.spriteStyles.forEach(function(style, i) {
-    console.log(style + ' has: ');
     // pass variable for arrays
-    var layers = mapboxGL.styles[style].layers[i]['source-layer'];
-    console.log(layers);
+    var totalLayers = mapboxGL.styles[style].layers;
+    var totalSourceLayers = 0;
+    for(i=0; i < totalLayers.length; i++) {
+      var sourceLayer = mapboxGL.styles[style].layers[i]['source-layer'];
+      if(sourceLayer === 'rail_station_label') {
+        totalSourceLayers = totalSourceLayers + 1;
+        if(mapboxGL.styles[style].layers[i].layout['icon-image'] == '{network}') {
+          console.log(style + ' has: ' + totalSourceLayers + ' rail and has network icon');
+          fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
+          if (err) t.fail(err);
+            rail.forEach(function(name){
+              // boolean to see if the value is not false on an array
+              t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+            });
+          });
+        }
+      }
+    }
   });
   t.end();
 });
