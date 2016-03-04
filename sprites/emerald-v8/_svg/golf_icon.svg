@@ -2,23 +2,23 @@
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+	 width="50px" height="50px" viewBox="125 95 50 50" enable-background="new 125 95 50 50" xml:space="preserve">
 <g>
-	<path fill="#F8F4F0" d="M25,5.5c10.8,0,19.5,8.7,19.5,19.5S35.8,44.5,25,44.5S5.5,35.8,5.5,25S14.2,5.5,25,5.5"/>
+	<path fill="#F8F4F0" d="M150,110c5.5,0,10,4.5,10,10s-4.5,10-10,10s-10-4.5-10-10S144.5,110,150,110"/>
 </g>
 <g opacity="0.6">
-	<path fill="#446B52" d="M25,5.6c10.7,0,19.4,8.7,19.4,19.4S35.7,44.4,25,44.4S5.6,35.7,5.6,25S14.3,5.6,25,5.6"/>
+	<path fill="#446B52" d="M150,110c5.5,0,10,4.5,10,10s-4.5,10-10,10s-10-4.5-10-10S144.5,110,150,110"/>
 </g>
 <g>
-	<path fill="#FFFFFF" d="M25.4,33.6c-1,0-1.5-0.1-1.5-0.1c-0.8-0.2-1.2,0.3-1,1.1l0.8,5.1c0.1,0.8,0.8,1.4,1.5,1.4h0.3
-		c0.8,0,1.5-0.6,1.5-1.4l0.8-5.1c0.2-0.7-0.3-1.2-1-1.1C26.9,33.5,26.4,33.6,25.4,33.6z"/>
-	<circle fill="#FFFFFF" cx="25.4" cy="20.9" r="9.9"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="21.1" cy="17.8" r="1.4"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="21.1" cy="24" r="1.4"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="29.6" cy="17.8" r="1.4"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="29.6" cy="24" r="1.4"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="25.4" cy="20.9" r="1.9"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="25.4" cy="26.5" r="1.4"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="25.4" cy="15.2" r="1.4"/>
+	<path fill="#FFFFFF" d="M150.2,124.4c-0.5,0-0.8,0-0.8,0c-0.4-0.1-0.6,0.1-0.5,0.6l0.4,2.6c0,0.4,0.4,0.7,0.8,0.7h0.1
+		c0.4,0,0.8-0.3,0.8-0.7l0.4-2.6c0.1-0.4-0.1-0.6-0.5-0.6C151,124.4,150.7,124.4,150.2,124.4z"/>
+	<circle fill="#FFFFFF" cx="150.2" cy="117.9" r="5.1"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="148" cy="116.3" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="148" cy="119.5" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="152.4" cy="116.3" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="152.4" cy="119.5" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="150.2" cy="117.9" r="1"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="150.2" cy="120.8" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="150.2" cy="115" r="0.7"/>
 </g>
 </svg>

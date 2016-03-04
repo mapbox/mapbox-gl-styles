@@ -3,8 +3,8 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
 	 id="svg15676" inkscape:version="0.46" sodipodi:docname="Oslo T-bane Logo.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:version="0.32" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 176.8 176.8"
-	 enable-background="new 0 0 176.8 176.8" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 240"
+	 enable-background="new 0 0 300 240" xml:space="preserve">
 <defs>
 	
 	
@@ -15,11 +15,11 @@
 	</sodipodi:namedview>
 <g id="layer1" transform="translate(-337.32573,-348.96455)" inkscape:groupmode="layer" inkscape:label="Ebene 1">
 	<g id="g2382">
-		<path id="path4884" fill="#46819B" d="M425.7,525.7c48.8,0,88.4-39.6,88.4-88.4c0-48.8-39.6-88.4-88.4-88.4
-			c-48.8,0-88.4,39.6-88.4,88.4C337.3,486.2,376.9,525.7,425.7,525.7z"/>
-		<path id="path4886" fill="#FFFFFF" d="M425.7,511.3c40.8,0,73.9-33.1,73.9-73.9c0-40.8-33.1-73.9-73.9-73.9
-			c-40.8,0-73.9,33.1-73.9,73.9C351.8,478.2,384.9,511.3,425.7,511.3z"/>
-		<path id="path4888" fill="#46819B" d="M465.4,395.1H386v13.8h30.8v86.6h18v-86.6h30.8V395.1z"/>
+		<path id="path4884" fill="#46819B" d="M487.3,493.9c13.8,0,25-11.2,25-25s-11.2-25-25-25s-25,11.2-25,25
+			C462.3,482.7,473.5,493.9,487.3,493.9z"/>
+		<path id="path4886" fill="#FFFFFF" d="M487.3,489.8c11.5,0,20.9-9.4,20.9-20.9c0-11.5-9.4-20.9-20.9-20.9
+			c-11.5,0-20.9,9.4-20.9,20.9C466.4,480.4,475.8,489.8,487.3,489.8z"/>
+		<path id="path4888" fill="#46819B" d="M498.5,456.9h-22.5v3.9h8.7v24.5h5.1v-24.5h8.7L498.5,456.9L498.5,456.9z"/>
 	</g>
 </g>
 </svg>
