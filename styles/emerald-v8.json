@@ -86,8 +86,8 @@
             "type": "vector"
         }
     },
-    "sprite": "mapbox://sprites/peterqliu/cil4alte500149jm1ijm7j3hc",
-    "glyphs": "mapbox://fonts/peterqliu/{fontstack}/{range}.pbf",
+    "sprite": "mapbox://sprites/mapbox/emerald-v8",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",
