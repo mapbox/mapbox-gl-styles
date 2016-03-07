@@ -136,6 +136,140 @@ var railMaki = [
   'rail-light',
   'entrance'
 ];
+var shields = [
+'at-expressway-2.svg',
+'at-expressway-3.svg',
+'at-motorway-2.svg',
+'at-motorway-3.svg',
+'at-state-b-2.svg',
+'at-state-b-3.svg',
+'bg-motorway-2.svg',
+'bg-national-2.svg',
+'br-federal-3.svg',
+'br-state-2.svg',
+'br-state-3.svg',
+'ch-main-2.svg',
+'ch-main-3.svg',
+'ch-motorway-2.svg',
+'ch-motorway-3.svg',
+'ch-motorway-4.svg',
+'cz-expressway-2.svg',
+'cz-expressway-3.svg',
+'cz-motorway-2.svg',
+'cz-road-2.svg',
+'cz-road-3.svg',
+'de-federal-2.svg',
+'de-federal-3.svg',
+'de-federal-4.svg',
+'de-motorway-2.svg',
+'de-motorway-3.svg',
+'default-2.svg',
+'default-3.svg',
+'default-4.svg',
+'default-5.svg',
+'default-6.svg',
+'dk-primary-2.svg',
+'dk-secondary-3.svg',
+'e-road-2.svg',
+'e-road-3.svg',
+'e-road-4.svg',
+'fi-main-2.svg',
+'fi-regional-3.svg',
+'fi-trunk-2.svg',
+'gr-motorway-2.svg',
+'gr-motorway-3.svg',
+'gr-motorway-4.svg',
+'gr-national-2.svg',
+'gr-national-3.svg',
+'gr-national-4.svg',
+'hr-county-4.svg',
+'hr-motorway-3.svg',
+'hr-motorway-4.svg',
+'hr-state-2.svg',
+'hr-state-3.svg',
+'hu-main-2.svg',
+'hu-main-3.svg',
+'hu-main-4.svg',
+'hu-main-5.svg',
+'hu-motorway-2.svg',
+'hu-motorway-3.svg',
+'in-national-2.svg',
+'in-national-3.svg',
+'in-national-4.svg',
+'in-state-2.svg',
+'in-state-3.svg',
+'mx-federal-2.svg',
+'mx-federal-3.svg',
+'mx-federal-4.svg',
+'mx-state-2.svg',
+'mx-state-3.svg',
+'mx-state-4.svg',
+'nz-state-2.svg',
+'nz-state-3.svg',
+'pe-national-2.svg',
+'pe-national-3.svg',
+'pe-regional-3.svg',
+'pl-expressway-2.svg',
+'pl-expressway-3.svg',
+'pl-motorway-2.svg',
+'pl-motorway-3.svg',
+'pl-national-2.svg',
+'pl-voivodeship-3.svg',
+'ro-communal-2.svg',
+'ro-communal-3.svg',
+'ro-communal-4.svg',
+'ro-communal-5.svg',
+'ro-communal-6.svg',
+'ro-county-3.svg',
+'ro-county-4.svg',
+'ro-motorway-2.svg',
+'ro-motorway-3.svg',
+'ro-national-2.svg',
+'ro-national-3.svg',
+'rs-motorway-3.svg',
+'rs-state-1b-2.svg',
+'rs-state-2a-3.svg',
+'rs-state-2b-3.svg',
+'se-main-2.svg',
+'se-main-3.svg',
+'si-expressway-3.svg',
+'si-main-2.svg',
+'si-main-3.svg',
+'si-motorway-2.svg',
+'singapore-mrt.svg',
+'sk-highway-2.svg',
+'sk-road-2.svg',
+'sk-road-3.svg',
+'sk-road-4.svg',
+'sk-road-5.svg',
+'us-highway-2.svg',
+'us-highway-3.svg',
+'us-highway-4.svg',
+'us-highway-alternate-2.svg',
+'us-highway-alternate-3.svg',
+'us-highway-business-2.svg',
+'us-highway-business-3.svg',
+'us-highway-bypass-2.svg',
+'us-highway-bypass-3.svg',
+'us-highway-duplex-3.svg',
+'us-highway-duplex-4.svg',
+'us-highway-duplex-5.svg',
+'us-highway-truck-2.svg',
+'us-highway-truck-3.svg',
+'us-interstate-2.svg',
+'us-interstate-3.svg',
+'us-interstate-business-2.svg',
+'us-interstate-business-3.svg',
+'us-interstate-duplex-4.svg',
+'us-interstate-duplex-5.svg',
+'us-state-2.svg',
+'us-state-3.svg',
+'us-state-4.svg',
+'za-metropolitan-2.svg',
+'za-national-2.svg',
+'za-provincial-2.svg',
+'za-regional-3.svg'
+];
 
 // check that all v7 styles exist
 test('.styles v7 and v8', function(t) {
@@ -194,7 +328,6 @@ test('.glyphs v8', function(t) {
   t.end();
 });
 
-
 // checks all maki icons against list of expected
 test('.maki v8 - checks all maki icons against list of expected maki icons', function(t) {
   var styles = mapboxGL.spriteStyles;
@@ -211,7 +344,6 @@ test('.maki v8 - checks all maki icons against list of expected maki icons', fun
     });
   });
 });
-
 
 // checks all `network` rail icons against list of expected
 test('.rail v8 (network) - checks all network rail icons against list of expected', function(t) {
@@ -238,7 +370,6 @@ test('.rail v8 (network) - checks all network rail icons against list of expecte
   });
 });
 
-
 // checks all `maki` rail icons against list of expected
 var styleMaki = [];
 var styleValue = [];
@@ -253,7 +384,6 @@ mapboxGL.spriteStyles.forEach(function(style, i) {
     }
   }
 });
-
 for(var i=0; i < styleMaki.length - 1; i++) {
   test('.rail v8 (maki) - checks all maki rail icons against list of expected', function(t) {
       styleMaki.forEach(function(style, i) {
@@ -276,5 +406,27 @@ for(var i=0; i < styleMaki.length - 1; i++) {
   });
 }
 
-
-
+// checks all highway shields against list of expected
+test('.shields v8 - checks all highway shields against list of expected', function(t) {
+  var highwayShields = [];
+  mapboxGL.spriteStyles.forEach(function(style, i) {
+    var totalLayers = mapboxGL.styles[style].layers;
+    for(i=0; i < totalLayers.length; i++) {
+      var sourceLayer = mapboxGL.styles[style].layers[i]['source-layer'];
+      if(sourceLayer === 'road_label' && mapboxGL.styles[style].layers[i].layout['icon-image'] == '{shield}-{reflen}') {
+        highwayShields.push(style);
+      }
+    }
+  });
+  highwayShields.forEach(function(style, i) {
+    fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
+      if (err) t.fail(err);
+      shields.forEach(function(name) {
+        t.ok(files.indexOf(name) !== -1, name + ' in ' + style);
+      });
+      if (i === highwayShields.length - 1) {
+        t.end();
+      }
+    });
+  });
+});
