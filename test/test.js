@@ -385,24 +385,24 @@ mapboxGL.spriteStyles.forEach(function(style, i) {
   }
 });
 for(var i=0; i < styleMaki.length - 1; i++) {
-  test('.rail v8 (maki) - checks all maki rail icons against list of expected', function(t) {
-      styleMaki.forEach(function(style, i) {
-        fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-          if (err) t.fail(err);
-          railMaki.forEach(function(name) {
-            if(styleValue[i] === '{maki}-11') {
-              t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
-            }
-            if(styleValue[i] === '{maki}-15') {
-              t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-            }
-            if(styleValue[i] === '{maki}') {
-              t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-            }
-          });
+  styleMaki.forEach(function(style, i) {
+    test('.rail v8 (maki) - checks all maki rail icons against list of expected', function(t) {
+      fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
+        if (err) t.fail(err);
+        railMaki.forEach(function(name) {
+          if(styleValue[i] === '{maki}-11') {
+            t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+          }
+          if(styleValue[i] === '{maki}-15') {
+            t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
+          }
+          if(styleValue[i] === '{maki}') {
+            t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+          }
         });
+        t.end();
       });
-      t.end();
+    });
   });
 }
 
