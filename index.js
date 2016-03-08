@@ -33,9 +33,7 @@ var spriteStyles = [
     'emerald-v8'*/
 ];
 
-
 module.exports.spriteStyles = spriteStyles;
-
 
 styles.forEach(function(style) {
     if(style.split('.')[1]) {
