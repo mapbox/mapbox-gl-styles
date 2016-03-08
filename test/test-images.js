@@ -42,7 +42,7 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
     } // end for all layers loop
   });
   imageName.forEach(function(image, l) {
-    console.log('find the ' + image + ' inside of style: ' + styleName[l]);
+    // console.log('find the ' + image + ' inside of style: ' + styleName[l]);
     fs.readdir('./sprites/' + styleName[l] + '/_svg', function(err, files) {
       if (err) t.fail(err);
       if(image !== '{maki}-11' && image !== '{maki}-15' && image !== '{shield}-{reflen}' && image !== '{network}') { // don't search for maki, sheild, or rail icons
