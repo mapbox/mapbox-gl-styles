@@ -29,9 +29,13 @@ var spriteStyles = [
     'dark-v8',
     'bright-v8',
     'basic-v8',
-    'satellite-hybrid-v8',
-    'emerald-v8'
+    'satellite-hybrid-v8'/*,
+    'emerald-v8'*/
 ];
+
+
+module.exports.spriteStyles = spriteStyles;
+
 
 styles.forEach(function(style) {
     if(style.split('.')[1]) {
