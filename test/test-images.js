@@ -22,13 +22,20 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
           imageName.push(mapboxGL.styles[style].layers[j].paint['line-pattern']);
           styleName.push(style);
       }
-      if(mapboxGL.styles[style].layers[j].layout['icon-image'] !== -1) { // if this is set in the style
-        // pull all string values set in this object, because they could be anything
-        Object.keys(mapboxGL.styles[style].layers[j].layout['icon-image']).forEach(function (key) {
-          var val = mapboxGL.styles[style].layers[j].layout['icon-image'][key];
-          console.log(val);
-        });
+      // pull all string values set in this object, because they could be anything
+      if(mapboxGL.styles[style].layers[j].layout['icon-image'] !== undefined) {
+        console.log(mapboxGL.styles[style].layers[j].layout['icon-image']);
       }
+      /*if(mapboxGL.styles[style].layers[j].layout['icon-image'] !== undefined) { // if this is set in the style
+        var value = mapboxGL.styles[style].layers[j].layout['icon-image'];
+        // check which type array or object is set in this style
+        if(typeof value === 'string') {
+          Object.keys(value).forEach(function (key) {
+          var val = value[key];
+          console.log(val);
+        })
+        }
+      }*/
     }
   });
   t.end();
