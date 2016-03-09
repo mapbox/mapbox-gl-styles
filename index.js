@@ -33,6 +33,8 @@ var spriteStyles = [
     'emerald-v8'
 ];
 
+module.exports.spriteStyles = spriteStyles;
+
 styles.forEach(function(style) {
     if(style.split('.')[1]) {
         module.exports.styles[style] = require('./styles/' + style.split('.')[1]);
