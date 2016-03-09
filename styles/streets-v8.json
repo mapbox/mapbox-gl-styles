@@ -4432,7 +4432,32 @@
                         ]
                     ]
                 },
-                "line-color": "#f2cf60"
+                "line-color": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            5.9,
+                            "#fff"
+                        ],
+                        [
+                            6,
+                            "#f2cf60"
+                        ]
+                    ]
+                },
+                "line-opacity": {
+                    "base": 1.2,
+                    "stops": [
+                        [
+                            5,
+                            0
+                        ],
+                        [
+                            5.5,
+                            1
+                        ]
+                    ]
+                }
             },
             "ref": "road-trunk-case"
         },
