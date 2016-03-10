@@ -366,10 +366,16 @@ test('.maki v8 - checks all maki icons against list of expected maki icons', fun
   styles.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
-      maki.forEach(function(name) {
-        t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
-        t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-      });
+      if(style === 'emerald-v8') {
+         emeraldMaki.forEach(function(name) {
+          t.ok(files.indexOf(name + '_icon.svg') !== -1, name + '_icon.svg' + ' in ' + style);
+        });
+      } else {
+          maki.forEach(function(name) {
+            t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+            t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
+          });
+      }
       if (i === styles.length - 1) {
         t.end();
       }
@@ -417,9 +423,15 @@ test('.shields v8 - checks all highway shields against list of expected', functi
   highwayShields.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
-      shields.forEach(function(name) {
-        t.ok(files.indexOf(name) !== -1, name + ' in ' + style);
-      });
+      if(style === 'emerald-v8') {
+        emeralShields.forEach(function(name) {
+          t.ok(files.indexOf(name) !== -1, name + ' in ' + style);
+        });
+      } else {
+        shields.forEach(function(name) {
+          t.ok(files.indexOf(name) !== -1, name + ' in ' + style);
+        });
+      }
       if (i === highwayShields.length - 1) {
         t.end();
       }
@@ -457,7 +469,6 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
                 style: style,
                 image: value
               };
-              t.pass('Check that style: ' + style + ' has ' + value + ' present in _svg folder.');
             }
           } else {
               imageName.push(value);
@@ -466,7 +477,7 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
         } else {
           Object.keys(value).forEach(function (key) {
             var val = value[key];
-            for(k=0; k < val.length; k++) {
+            for(k=1; k < val.length; k++) {
               if(typeof val === 'object') {
                 imageName.push(val[k][1]);
                 styleName.push(style);
@@ -474,6 +485,10 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
             }
           });
         }
+        for(u=1; u < styleName.length; u++) {
+          console.log(styleName[u] + ' should contain ' + imageName[u]);
+        }
+        
       } // end pull string values if stmt
     } // end for all layers loop
   });
