@@ -144,7 +144,30 @@ var emeralShields = [
 'us-highway-4.svg',
 'interstate_2.svg',
 'interstate_3.svg',
-]
+];
+var emeraldMaki = [
+'school',
+'museum',
+'library',
+'monument',
+'hospital',
+'fire-station',
+'religious-christian',
+'religious-muslim',
+'religious-jewish',
+'post',
+'embassy',
+'police',
+'prison',
+'college',
+'harbor',
+'airport',
+'airfield',
+'park',
+'golf',
+'zoo',
+'cemetery'
+];
 var shields = [
 'at-expressway-2.svg',
 'at-expressway-3.svg',
