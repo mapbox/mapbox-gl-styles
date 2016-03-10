@@ -2,6 +2,7 @@
   "version": 8,
   "name": "Dark",
   "metadata": {
+    "mapbox:autocomposite": true,
     "mapbox:groups": {
       "1444855829844.9736": {
         "name": "Aeroways",

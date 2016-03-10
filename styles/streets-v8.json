@@ -2,6 +2,7 @@
     "version": 8,
     "name": "Mapbox Streets",
     "metadata": {
+        "mapbox:autocomposite": true,
         "mapbox:groups": {
             "1444934828655.3389": {
                 "name": "Aeroways",
