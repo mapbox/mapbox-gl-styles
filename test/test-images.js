@@ -28,15 +28,16 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
         if(typeof value === 'string') {
           if(value.includes('{maki}') || value.includes('{reflen}')) { // does this include the maki or reflen tokens
             if(value !== '{maki}-11' && value !== '{maki}-15' && value !== '{maki}' && value !== '') {
-              // console.log(style + ' is using ' + value);
               imageObject = {
                 style: style,
                 image: value
               };
+              t.pass('Check that style: ' + style + ' has ' + value + ' present in _svg folder.');
             }
-          }
-            imageName.push(value);
-            styleName.push(style);
+          } else {
+              imageName.push(value);
+              styleName.push(style);
+            }
         } else {
           Object.keys(value).forEach(function (key) {
             var val = value[key];
@@ -48,7 +49,6 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
             }
           });
         }
-        console.log(imageObject);
       } // end pull string values if stmt
     } // end for all layers loop
   });
