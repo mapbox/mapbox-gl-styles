@@ -2,6 +2,7 @@
     "version": 8,
     "name": "Satellite Streets",
     "metadata": {
+        "mapbox:autocomposite": true,
         "mapbox:groups": {
             "1444856567853.8965": {
                 "name": "Country labels",
