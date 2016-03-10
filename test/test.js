@@ -130,6 +130,21 @@ var railNetwork = [
   'vienna-u-bahn',
   'washington-metro'
 ];
+var emeralShields = [
+'default_2.svg',
+'default_3.svg',
+'default_4.svg',
+'default_5.svg',
+'default_6.svg',
+'us-state-2.svg',
+'us-state-3.svg',
+'us-state-4.svg',
+'us-highway-2.svg',
+'us-highway-3.svg',
+'us-highway-4.svg',
+'interstate_2.svg',
+'interstate_3.svg',
+]
 var shields = [
 'at-expressway-2.svg',
 'at-expressway-3.svg',
