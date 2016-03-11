@@ -4,9 +4,7 @@ var fs = require('fs');
 
 // checks all layers that use an image, stores images names, checks for images in proper style folders
 test('.all-image-test v8 - checks all layers that use an image, stores images names, checks for images in proper style folders', function(t) {
-  /*
-  Collect each style id and each styles coors. icons into an array of objects
-  */
+  // Collect each style id and each styles coors. icons into an array of objects
   var stylesWithImages = [];
   mapboxGL.spriteStyles.forEach(function(style, i) {
     var totalLayers = mapboxGL.styles[style].layers;
