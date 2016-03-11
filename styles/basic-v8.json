@@ -1,6 +1,9 @@
 {
     "version": 8,
     "name": "Basic",
+    "metadata": {
+        "mapbox:autocomposite": true
+    },
     "sources": {
         "mapbox": {
             "url": "mapbox://mapbox.mapbox-streets-v7",
