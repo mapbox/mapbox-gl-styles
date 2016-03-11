@@ -130,6 +130,63 @@ var railNetwork = [
   'vienna-u-bahn',
   'washington-metro'
 ];
+var railNetworkEmerald = [
+  'barcelona-metro',
+  'boston-t',
+  'chongqing-rail-transit',
+  'de-s-bahn',
+  'de-s-bahn.de-u-bahn',
+  'de-u-bahn',
+  'delhi-metro',
+  'gb-national-rail',
+  'gb-national-rail.london-dlr',
+  'gb-national-rail.london-dlr.london-overground.london-tfl-rail.london-underground',
+  'gb-national-rail.london-dlr.london-overground.london-underground',
+  'gb-national-rail.london-dlr.london-underground',
+  'gb-national-rail.london-overground',
+  'gb-national-rail.london-overground.london-tfl-rail.london-underground',
+  'gb-national-rail.london-overground.london-underground',
+  'gb-national-rail.london-tfl-rail',
+  'gb-national-rail.london-tfl-rail.london-overground',
+  'gb-national-rail.london-tfl-rail.london-underground',
+  'gb-national-rail.london-underground',
+  'hong-kong-mtr',
+  'kiev-metro',
+  'london-dlr',
+  'london-dlr.london-tfl-rail',
+  'london-dlr.london-tfl-rail.london-underground',
+  'london-dlr.london-underground',
+  'london-overground',
+  'london-overground.london-tfl-rail',
+  'london-overground.london-tfl-rail.london-underground',
+  'london-overground.london-underground',
+  'london-tfl-rail',
+  'london-tfl-rail.london-underground',
+  'london-underground',
+  'madrid-metro',
+  'mexico-city-metro',
+  'milan-metro',
+  'moscow-metro',
+  'new-york-subway',
+  'osaka-subway',
+  'oslo-metro',
+  'paris-metro',
+  'paris-metro.paris-rer',
+  'paris-rer',
+  'paris-rer.paris-transilien',
+  'paris-transilien',
+  'philadelphia-septa',
+  'rail',
+  'rail_metro',
+  'rail_light',
+  'san-francisco-bart',
+  'singapore-mrt',
+  'stockholm-metro',
+  'taipei-metro',
+  'tokyo-metro',
+  'vienna-u-bahn',
+  'washington-metro'
+];
 var emeralShields = [
 'default_2.svg',
 'default_3.svg',
@@ -302,6 +359,18 @@ var shields = [
 'za-provincial-2.svg',
 'za-regional-3.svg'
 ];
+var railMaki = [
+  'rail',
+  'rail-metro',
+  'rail-light',
+  'entrance'
+];
+var railMakiEmerald = [
+  'rail',
+  'rail_metro',
+  'rail_light',
+  'entrance'
+];
 
 // check that all v7 styles exist
 test('.styles v7 and v8', function(t) {
@@ -383,6 +452,61 @@ test('.maki v8 - checks all maki icons against list of expected maki icons', fun
   });
 });
 
+// checks all `maki` rail icons against list of expected
+var styleMaki = [];
+var styleValue = [];
+mapboxGL.spriteStyles.forEach(function(style, i) {
+  var totalLayers = mapboxGL.styles[style].layers;
+  for(var i=0; i < totalLayers.length; i++) {
+    var sourceLayer = mapboxGL.styles[style].layers[i]['source-layer'];
+    if(sourceLayer === 'rail_station_label' && mapboxGL.styles[style].layers[i].layout['icon-image'] !== '{network}') {
+      var iconImage =  mapboxGL.styles[style].layers[i].layout['icon-image'];
+      styleMaki.push(style);
+      styleValue.push(mapboxGL.styles[style].layers[i].layout['icon-image']);
+    }
+  }
+});
+test('.rail v8 (maki) - checks all maki rail icons against list of expected', function(t) {
+  for(var i=0; i < styleMaki.length - 1; i++) {
+    styleMaki.forEach(function(style, j) {
+      fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
+        if (err) t.fail(err);
+          if(style === 'emerald-v8') {
+            railMakiEmerald.forEach(function(name, k) {
+              if(styleValue[j] === '{maki}-11') {
+                t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+              }
+              if(styleValue[j] === '{maki}-15') {
+                t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
+              }
+              if(styleValue[j] === '{maki}') {
+                t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+              }
+            });
+            if(j === styleMaki.length - 1) {
+              t.end();
+            }
+        } else {
+            railMaki.forEach(function(name, k) {
+              if(styleValue[j] === '{maki}-11') {
+                t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+              }
+              if(styleValue[j] === '{maki}-15') {
+                t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
+              }
+              if(styleValue[j] === '{maki}') {
+                t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+              }
+            });
+            if(j === styleMaki.length - 1) {
+              t.end();
+            }
+          }
+      });
+    });
+  }
+});
+
 // checks all `network` rail icons against list of expected
 test('.rail v8 (network) - checks all network rail icons against list of expected', function(t) {
   var styleNetworks = []; // an array to hold the styles that have ^^
@@ -398,9 +522,15 @@ test('.rail v8 (network) - checks all network rail icons against list of expecte
   styleNetworks.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
-      railNetwork.forEach(function(name) {
-        t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-      });
+      if(style === 'emerald-v8') {
+        railNetworkEmerald.forEach(function(name) {
+          t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+        });
+      } else {
+          railNetwork.forEach(function(name) {
+            t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+          });
+        }
       if (i === styleNetworks.length - 1) {
         t.end();
       }
@@ -436,5 +566,63 @@ test('.shields v8 - checks all highway shields against list of expected', functi
         t.end();
       }
     });
+  });
+});
+
+// checks all layers that use an image, stores images names, checks for images in proper style folders
+test('.all-image-test v8 - checks all layers that use an image, stores images names, checks for images in proper style folders', function(t) {
+  // Collect each style id and each styles coors. icons into an array of objects
+  var stylesWithImages = [];
+  mapboxGL.spriteStyles.forEach(function(style, i) {
+    var totalLayers = mapboxGL.styles[style].layers;
+    var image = [];
+    for(j=1; j < totalLayers.length; j++) {
+      var sourceLayer = mapboxGL.styles[style].layers[j]['source-layer'];
+      var layerType = mapboxGL.styles[style].layers[j].type;
+      if(layerType === 'background' && mapboxGL.styles[style].layers[j].paint['background-pattern'] !== undefined) {
+        image.push(mapboxGL.styles[style].layers[j].paint['background-pattern']);
+      } else if(layerType === 'line' && mapboxGL.styles[style].layers[j].paint['line-pattern'] !== undefined) {
+          image.push(mapboxGL.styles[style].layers[j].paint['line-pattern']);
+        }
+      // pull all string values set in this object, because they could be anything
+      if(mapboxGL.styles[style].layers[j].layout !== undefined && mapboxGL.styles[style].layers[j].layout['icon-image'] !== undefined) {
+        var value = mapboxGL.styles[style].layers[j].layout['icon-image'];
+        if(typeof value === 'string') {
+          if(value.indexOf('}') === -1 && value.indexOf('{') === -1 && value.length) {
+            image.push(value);
+            console.log(value);
+          }
+        } else {
+            Object.keys(value).forEach(function (key) {
+              var val = value[key];
+              for(k=1; k < val.length; k++) {
+                if(typeof val === 'object') {
+                  var theImage = val[k][1];
+                  if(theImage.indexOf('}') === -1 && theImage.indexOf('{') === -1 && theImage.length) {
+                    // everything that does not include }
+                    image.push(theImage);
+                  }
+                }
+              }
+            });
+          }
+        } // end sting if */
+    } // end for loop in each layer
+      stylesWithImages.push({
+        style: style,
+        images: image
+      });
+  }); // end forEach
+  // loop thru check images
+  stylesWithImages.forEach(function(styleWithImages, i) {
+    fs.readdir('./sprites/' + styleWithImages.style + '/_svg', function(err, files) {
+      if (err) t.fail(err);
+      for(l=0; l < styleWithImages.images.length; l++) {
+        t.ok(files.indexOf(styleWithImages.images[l] + '.svg') !== -1, styleWithImages.images[l] + '.svg' + ' in ' + styleWithImages.style);
+      }
+      if (i === stylesWithImages.length - 1) {
+        t.end();
+      }
+    })
   });
 });
