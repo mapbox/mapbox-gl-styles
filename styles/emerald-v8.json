@@ -2,6 +2,7 @@
     "version": 8,
     "name": "Emerald",
     "metadata": {
+        "mapbox:autocomposite": true,
         "mapbox:groups": {
             "1444858470265.9292": {
                 "name": "Barriers",

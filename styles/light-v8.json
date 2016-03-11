@@ -2,6 +2,7 @@
     "version": 8,
     "name": "Light",
     "metadata": {
+        "mapbox:autocomposite": true,
         "mapbox:groups": {
             "1444850762048.5845": {
                 "name": "Water labels",
