@@ -1,8 +1,7 @@
 {
     "version": 8,
-    "name": "Emerald",
+    "name": "Emerald-v8.1",
     "metadata": {
-        "mapbox:autocomposite": true,
         "mapbox:groups": {
             "1444858470265.9292": {
                 "name": "Barriers",
@@ -14,7 +13,7 @@
             },
             "1444858181796.6055": {
                 "name": "Hillshades",
-                "collapsed": true
+                "collapsed": false
             },
             "1444857916000.3777": {
                 "name": "Place labels",
@@ -74,6 +73,13 @@
             }
         }
     },
+    "center": [
+        -77.03721606170454,
+        38.902146304823845
+    ],
+    "zoom": 14.68895969316788,
+    "bearing": 0,
+    "pitch": 0,
     "sources": {
         "mapbox": {
             "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v7",
@@ -116,7 +122,7 @@
                     "stops": [
                         [
                             10,
-                            0.25
+                            0.5
                         ],
                         [
                             14,
@@ -205,6 +211,27 @@
                 "fill-color": "#e7ebd1"
             },
             "source-layer": "landuse"
+        },
+        {
+            "interactive": true,
+            "layout": {
+                "visibility": "visible"
+            },
+            "metadata": {
+                "mapbox:group": "1444858163779.7869"
+            },
+            "filter": [
+                "==",
+                "class",
+                "national_park"
+            ],
+            "type": "fill",
+            "source": "mapbox",
+            "id": "national_park",
+            "paint": {
+                "fill-color": "#e7ebd1"
+            },
+            "source-layer": "landuse_overlay"
         },
         {
             "interactive": true,
@@ -470,7 +497,7 @@
                         ]
                     ]
                 },
-                "fill-pattern": "sand-noise"
+                "fill-pattern": "grass-noise"
             },
             "source-layer": "landuse"
         },
@@ -494,7 +521,7 @@
                     "stops": [
                         [
                             10,
-                            0.07
+                            0.1
                         ],
                         [
                             15,
@@ -521,19 +548,7 @@
             "source": "mapbox",
             "id": "shadow_strong",
             "paint": {
-                "fill-opacity": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            10,
-                            0.07
-                        ],
-                        [
-                            15,
-                            0
-                        ]
-                    ]
-                },
+                "fill-opacity": 0.1,
                 "fill-color": "#2d1617"
             },
             "source-layer": "hillshade"
@@ -691,7 +706,7 @@
                         ]
                     ]
                 },
-                "line-opacity": 1,
+                "line-opacity": 0.8,
                 "line-color": "#d0d1cf"
             },
             "source-layer": "aeroway"
@@ -734,7 +749,7 @@
                         ]
                     ]
                 },
-                "line-opacity": 1,
+                "line-opacity": 0.8,
                 "line-color": "hsl(82, 2%, 82%)"
             },
             "source-layer": "aeroway"
@@ -1180,7 +1195,7 @@
             "source": "mapbox",
             "id": "tunnel_path",
             "paint": {
-                "line-color": "#a0aaa0",
+                "line-color": "hsla(24, 1%, 38%, 0.52)",
                 "line-width": {
                     "base": 1.25,
                     "stops": [
@@ -2255,7 +2270,7 @@
             "source": "mapbox",
             "id": "path",
             "paint": {
-                "line-color": "#a0aaa0",
+                "line-color": "hsla(24, 1%, 38%, 0.53)",
                 "line-width": {
                     "base": 1.25,
                     "stops": [
@@ -4081,7 +4096,7 @@
             "source": "mapbox",
             "id": "bridge_path",
             "paint": {
-                "line-color": "#a0aaa0",
+                "line-color": "hsla(24, 1%, 38%, 0.52)",
                 "line-width": {
                     "base": 1.25,
                     "stops": [
@@ -4613,7 +4628,7 @@
                     0,
                     2.5
                 ],
-                "icon-image": "oneway_motorway",
+                "icon-image": "oneway_motorway_icon",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Regular"
@@ -4669,7 +4684,7 @@
                     0,
                     2.5
                 ],
-                "icon-image": "oneway_road",
+                "icon-image": "oneway_road_icon",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Regular"
@@ -4735,7 +4750,7 @@
                     0,
                     0
                 ],
-                "icon-image": "oneway-road",
+                "icon-image": "oneway_road",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Regular"
@@ -4873,6 +4888,7 @@
                         ]
                     ]
                 },
+                "text-allow-overlap": false,
                 "text-ignore-placement": false,
                 "text-max-angle": 20,
                 "text-font": [
@@ -5076,12 +5092,16 @@
                         ]
                     ]
                 },
-                "icon-image": "us-state-{reflen}",
+                "icon-image": "us_state_{reflen}",
+                "icon-rotation-alignment": "viewport",
                 "text-font": [
                     "Open Sans Bold",
                     "Arial Unicode MS Regular"
                 ],
+                "symbol-placement": "line",
                 "text-padding": 0,
+                "visibility": "visible",
+                "text-rotation-alignment": "viewport",
                 "icon-size": {
                     "base": 1,
                     "stops": [
@@ -5096,8 +5116,7 @@
                     ]
                 },
                 "text-field": "{ref}",
-                "icon-padding": 0,
-                "visibility": "visible"
+                "icon-padding": 0
             },
             "metadata": {
                 "mapbox:group": "1444858496690.794"
@@ -5128,7 +5147,7 @@
             "source": "mapbox",
             "id": "us_stateroad_label",
             "paint": {
-                "text-color": "hsl(12, 4%, 53%)",
+                "text-color": "hsl(7, 4%, 60%)",
                 "icon-color": "white",
                 "text-halo-color": "#fff",
                 "text-halo-width": 0
@@ -5151,11 +5170,15 @@
                         ]
                     ]
                 },
-                "icon-image": "us-highway-{reflen}",
+                "icon-image": "us_highway_{reflen}",
+                "icon-rotation-alignment": "viewport",
                 "text-font": [
                     "Open Sans Bold",
                     "Arial Unicode MS Regular"
                 ],
+                "symbol-placement": "line",
+                "visibility": "visible",
+                "text-rotation-alignment": "viewport",
                 "icon-size": {
                     "base": 1,
                     "stops": [
@@ -5170,8 +5193,7 @@
                     ]
                 },
                 "text-field": "{ref}",
-                "text-letter-spacing": 0.02,
-                "visibility": "visible"
+                "text-letter-spacing": 0.02
             },
             "metadata": {
                 "mapbox:group": "1444858496690.794"
@@ -5196,7 +5218,7 @@
             "source": "mapbox",
             "id": "us_highway_label",
             "paint": {
-                "text-color": "hsl(12, 4%, 53%)",
+                "text-color": "hsl(7, 4%, 60%)",
                 "icon-color": "white",
                 "text-halo-color": "#fff",
                 "text-halo-width": 0,
@@ -5314,7 +5336,19 @@
                     0,
                     0
                 ],
-                "icon-size": 0.4,
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            0.2
+                        ],
+                        [
+                            20,
+                            0.4
+                        ]
+                    ]
+                },
                 "text-anchor": "left",
                 "text-field": "{name}",
                 "text-letter-spacing": 0.05,
@@ -5338,14 +5372,9 @@
                     "station"
                 ],
                 [
-                    ">=",
+                    "==",
                     "scalerank",
-                    3
-                ],
-                [
-                    "!=",
-                    "type",
-                    "Apartments"
+                    4
                 ]
             ],
             "type": "symbol",
@@ -5360,87 +5389,6 @@
                 ],
                 "icon-opacity": 0.6,
                 "text-halo-width": 2
-            },
-            "source-layer": "poi_label"
-        },
-        {
-            "interactive": true,
-            "layout": {
-                "text-line-height": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            8,
-                            1.1
-                        ],
-                        [
-                            20,
-                            1.75
-                        ]
-                    ]
-                },
-                "text-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            12,
-                            12
-                        ],
-                        [
-                            20,
-                            28
-                        ]
-                    ]
-                },
-                "text-font": [
-                    "Open Sans Italic",
-                    "Arial Unicode MS Regular"
-                ],
-                "text-padding": 0,
-                "text-field": "{name_en}",
-                "text-letter-spacing": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            10,
-                            0.05
-                        ],
-                        [
-                            12,
-                            0.15
-                        ]
-                    ]
-                },
-                "text-max-width": 5
-            },
-            "metadata": {
-                "mapbox:group": "1444858346799.9988"
-            },
-            "maxzoom": 18,
-            "filter": [
-                "==",
-                "type",
-                "Island"
-            ],
-            "type": "symbol",
-            "source": "mapbox",
-            "id": "neighborhood_island",
-            "paint": {
-                "text-color": "#844",
-                "text-halo-color": "#f8f6f0",
-                "text-halo-width": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            12,
-                            1.5
-                        ],
-                        [
-                            20,
-                            5
-                        ]
-                    ]
-                }
             },
             "source-layer": "poi_label"
         },
@@ -5462,10 +5410,10 @@
                     ],
                     "base": 1.5
                 },
-                "icon-image": "{maki}-icon",
+                "icon-image": "{maki}_icon",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans Regular",
                     "Arial Unicode MS Regular"
                 ],
                 "text-padding": 2,
@@ -5478,11 +5426,11 @@
                     "stops": [
                         [
                             8,
-                            0.25
+                            0.5
                         ],
                         [
                             18,
-                            0.5
+                            1
                         ]
                     ]
                 },
@@ -5515,7 +5463,8 @@
                     "college",
                     "harbor",
                     "airport",
-                    "airfield"
+                    "airfield",
+                    ""
                 ],
                 [
                     "in",
@@ -5565,7 +5514,7 @@
                     ],
                     "base": 1.5
                 },
-                "icon-image": "{maki}-icon",
+                "icon-image": "{maki}_icon",
                 "text-font": [
                     "Open Sans Regular",
                     "Arial Unicode MS Regular"
@@ -5581,11 +5530,11 @@
                     "stops": [
                         [
                             8,
-                            0.25
+                            0.6
                         ],
                         [
                             18,
-                            0.5
+                            1
                         ]
                     ]
                 },
@@ -5606,9 +5555,9 @@
             ],
             "type": "symbol",
             "source": "mapbox",
-            "id": "park_small_label",
+            "id": "park_label",
             "paint": {
-                "text-color": "rgba(116,100,85,1)",
+                "text-color": "hsl(107, 20%, 34%)",
                 "text-halo-color": "#f8f6f0",
                 "text-halo-width": 2,
                 "text-halo-blur": 1
@@ -5644,6 +5593,19 @@
                     0,
                     0.9
                 ],
+                "icon-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            8,
+                            0.5
+                        ],
+                        [
+                            18,
+                            1
+                        ]
+                    ]
+                },
                 "text-anchor": "top",
                 "text-field": {
                     "base": 1,
@@ -5691,7 +5653,7 @@
                     ],
                     "base": 1.5
                 },
-                "icon-image": "generic-icon",
+                "icon-image": "marker_icon",
                 "text-transform": "none",
                 "text-font": [
                     "Open Sans Semibold",
@@ -5707,11 +5669,11 @@
                     "stops": [
                         [
                             8,
-                            0.25
+                            0.5
                         ],
                         [
                             18,
-                            0.5
+                            1
                         ]
                     ]
                 },
@@ -5802,7 +5764,7 @@
                             ]
                         ],
                         [
-                            15,
+                            17,
                             [
                                 "Open Sans Semibold",
                                 "Arial Unicode MS Regular"
@@ -5838,7 +5800,7 @@
                             ""
                         ],
                         [
-                            14,
+                            15,
                             "{name_en}"
                         ]
                     ]
@@ -5859,6 +5821,9 @@
                         ]
                     ]
                 }
+            },
+            "metadata": {
+                "mapbox:group": "1444858346799.9988"
             },
             "filter": [
                 "in",
@@ -5898,7 +5863,7 @@
                     "stops": [
                         [
                             8,
-                            10
+                            12
                         ],
                         [
                             20,
@@ -5908,7 +5873,7 @@
                     "base": 1.5
                 },
                 "icon-image": "{network}",
-                "symbol-avoid-edges": true,
+                "symbol-avoid-edges": false,
                 "text-transform": "none",
                 "text-font": {
                     "base": 1,
@@ -5921,7 +5886,7 @@
                             ]
                         ],
                         [
-                            15,
+                            17,
                             [
                                 "Open Sans Semibold",
                                 "Arial Unicode MS Regular"
@@ -5956,8 +5921,8 @@
                             ""
                         ],
                         [
-                            14,
-                            "{name}"
+                            15,
+                            "{name_en}"
                         ]
                     ]
                 },
@@ -5969,7 +5934,7 @@
                     "stops": [
                         [
                             0,
-                            false
+                            true
                         ],
                         [
                             13,
@@ -5977,6 +5942,9 @@
                         ]
                     ]
                 }
+            },
+            "metadata": {
+                "mapbox:group": "1444858346799.9988"
             },
             "filter": [
                 "all",
@@ -5990,28 +5958,26 @@
                 [
                     "in",
                     "network",
-                    "rer",
+                    "paris-rer",
                     "moscow-metro",
                     "london-overground",
                     "london-underground",
                     "london-dlr",
-                    "national-rail",
-                    "s-bahn",
-                    "s-bahn.u-bahn",
-                    "u-bahn",
-                    "transilien",
+                    "gb-national-rail",
+                    "de-s-bahn",
+                    "de-s-bahn.de-u-bahn",
+                    "de-u-bahn",
+                    "paris-transilien",
                     "london-overground.london-underground",
-                    "dlr.london-overground.london-underground.national-rail",
-                    "dlr.london-underground",
-                    "dlr.london-underground.national-rail",
+                    "gb-national-rail.london-dlr.london-overground.london-underground",
+                    "london-dlr.london-underground",
+                    "gb-national-rail.london-dlr.london-underground",
                     "paris-metro",
                     "london-overground.london-underground.national-rail",
                     "london-overground.national-rail",
-                    "gb-national-rail",
-                    "wiener-linien",
+                    "vienna-u-bahn",
                     "washington-metro",
                     "london-underground.national-rail",
-                    "metro",
                     "san-francisco-bart",
                     "hong-kong-mtr",
                     "philadelphia-septa",
@@ -6025,9 +5991,24 @@
                     "mexico-city-metro",
                     "tokyo-metro",
                     "new-york-subway",
-                    "chicago-l",
                     "chongqing-rail-transit",
-                    "taipei-metro"
+                    "taipei-metro",
+                    "kiev-metro",
+                    "gb-national-rail.london-underground",
+                    "gb-national-rail.london-dlr.london-overground.london-tfl-rail.london-underground",
+                    "london-tfl-rail",
+                    "gb-national-rail.london-overground.london-underground",
+                    "gb-national-rail.london-overground",
+                    "oslo-metro",
+                    "stockholm-metro",
+                    "gb-national-rail.london-tfl-rail.london-overground",
+                    "gb-national-rail.london-tfl-rail.london-underground",
+                    "london-dlr.london-tfl-rail.london-underground",
+                    "london-dlr.london-tfl-rail",
+                    "london-overground.london-tfl-rail.london-underground",
+                    "london-overground.london-tfl-rail",
+                    "london-tfl-rail.london-underground",
+                    "paris-metro.paris-rer"
                 ]
             ],
             "type": "symbol",
@@ -6722,5 +6703,10 @@
             },
             "source-layer": "place_label"
         }
-    ]
+    ],
+    "created": "2016-02-26T22:51:01.608Z",
+    "id": "cil4alte500149jm1ijm7j3hc",
+    "modified": "2016-03-11T21:11:32.934Z",
+    "owner": "peterqliu",
+    "draft": false
 }

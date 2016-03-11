@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="Layer_1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<path fill="#F8F6F0" d="M44.4,50H5.6C2.5,50,0,47.5,0,44.4V5.6C0,2.5,2.5,0,5.6,0h30.6C44.4,0,50,8.3,50,13.9v30.6
+	C50,47.5,47.5,50,44.4,50z"/>
+<g id="XMLID_1_" opacity="0.7" enable-background="new    ">
+	<g>
+		<path fill="#FF9701" d="M32,21.1V43h-3.9V20.9c0-1-0.2-2-0.6-2.8h2.5l0,0C31.7,18,32,19.6,32,21.1z"/>
+		<path fill="#FF9701" d="M22.9,20.9V43H18V20.9c0-1-0.2-2-0.6-2.8h1.5C20.7,18,22.9,19.3,22.9,20.9z"/>
+		<path fill="#FF9701" d="M12.9,20.9V43H7V18h2.8C11.6,18,12.9,19.3,12.9,20.9z"/>
+	</g>
+	<g>
+	</g>
+</g>
+<path opacity="0.7" fill="#FF9701" enable-background="new    " d="M43,43h-5.9V20.1c0-3.9-3.1-7.2-7.2-7.2H7V7h22.9
+	C37.1,7,43,12.9,43,20.1V43z"/>
+</svg>
