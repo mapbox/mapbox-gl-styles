@@ -130,6 +130,63 @@ var railNetwork = [
   'vienna-u-bahn',
   'washington-metro'
 ];
+var railNetworkEmerald = [
+  'barcelona-metro',
+  'boston-t',
+  'chongqing-rail-transit',
+  'de-s-bahn',
+  'de-s-bahn.de-u-bahn',
+  'de-u-bahn',
+  'delhi-metro',
+  'gb-national-rail',
+  'gb-national-rail.london-dlr',
+  'gb-national-rail.london-dlr.london-overground.london-tfl-rail.london-underground',
+  'gb-national-rail.london-dlr.london-overground.london-underground',
+  'gb-national-rail.london-dlr.london-underground',
+  'gb-national-rail.london-overground',
+  'gb-national-rail.london-overground.london-tfl-rail.london-underground',
+  'gb-national-rail.london-overground.london-underground',
+  'gb-national-rail.london-tfl-rail',
+  'gb-national-rail.london-tfl-rail.london-overground',
+  'gb-national-rail.london-tfl-rail.london-underground',
+  'gb-national-rail.london-underground',
+  'hong-kong-mtr',
+  'kiev-metro',
+  'london-dlr',
+  'london-dlr.london-tfl-rail',
+  'london-dlr.london-tfl-rail.london-underground',
+  'london-dlr.london-underground',
+  'london-overground',
+  'london-overground.london-tfl-rail',
+  'london-overground.london-tfl-rail.london-underground',
+  'london-overground.london-underground',
+  'london-tfl-rail',
+  'london-tfl-rail.london-underground',
+  'london-underground',
+  'madrid-metro',
+  'mexico-city-metro',
+  'milan-metro',
+  'moscow-metro',
+  'new-york-subway',
+  'osaka-subway',
+  'oslo-metro',
+  'paris-metro',
+  'paris-metro.paris-rer',
+  'paris-rer',
+  'paris-rer.paris-transilien',
+  'paris-transilien',
+  'philadelphia-septa',
+  'rail',
+  'rail_metro',
+  'rail_light',
+  'san-francisco-bart',
+  'singapore-mrt',
+  'stockholm-metro',
+  'taipei-metro',
+  'tokyo-metro',
+  'vienna-u-bahn',
+  'washington-metro'
+];
 var emeralShields = [
 'default_2.svg',
 'default_3.svg',
@@ -308,6 +365,12 @@ var railMaki = [
   'rail-light',
   'entrance'
 ];
+var railMakiEmerald = [
+  'rail',
+  'rail_metro',
+  'rail_light',
+  'entrance'
+];
 
 // check that all v7 styles exist
 test('.styles v7 and v8', function(t) {
@@ -403,29 +466,46 @@ mapboxGL.spriteStyles.forEach(function(style, i) {
     }
   }
 });
-for(var i=0; i < styleMaki.length; i++) {
-  test('.rail v8 (maki) - checks all maki rail icons against list of expected', function(t) {
+test('.rail v8 (maki) - checks all maki rail icons against list of expected', function(t) {
+  for(var i=0; i < styleMaki.length - 1; i++) {
     styleMaki.forEach(function(style, j) {
       fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
         if (err) t.fail(err);
-        railMaki.forEach(function(name, k) {
-          if(styleValue[j] === '{maki}-11') {
-            t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+          if(style === 'emerald-v8') {
+            railMakiEmerald.forEach(function(name, k) {
+              if(styleValue[j] === '{maki}-11') {
+                t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+              }
+              if(styleValue[j] === '{maki}-15') {
+                t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
+              }
+              if(styleValue[j] === '{maki}') {
+                t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+              }
+            });
+            if(j === styleMaki.length - 1) {
+              t.end();
+            }
+        } else {
+            railMaki.forEach(function(name, k) {
+              if(styleValue[j] === '{maki}-11') {
+                t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+              }
+              if(styleValue[j] === '{maki}-15') {
+                t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
+              }
+              if(styleValue[j] === '{maki}') {
+                t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+              }
+            });
+            if(j === styleMaki.length - 1) {
+              t.end();
+            }
           }
-          if(styleValue[j] === '{maki}-15') {
-            t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-          }
-          if(styleValue[j] === '{maki}') {
-            t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-          }
-        });
-        if(i === styleMaki.length) {
-          t.end();
-        }
       });
     });
-  });
-}
+  }
+});
 
 // checks all `network` rail icons against list of expected
 test('.rail v8 (network) - checks all network rail icons against list of expected', function(t) {
@@ -442,13 +522,15 @@ test('.rail v8 (network) - checks all network rail icons against list of expecte
   styleNetworks.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
-      railNetwork.forEach(function(name) {
-        if(name === 'entrance' && style == 'emerald-v8') {
-          // ignore
-        } else {
+      if(style === 'emerald-v8') {
+        railNetworkEmerald.forEach(function(name) {
+          t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+        });
+      } else {
+          railNetwork.forEach(function(name) {
             t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-          }
-      });
+          });
+        }
       if (i === styleNetworks.length - 1) {
         t.end();
       }
