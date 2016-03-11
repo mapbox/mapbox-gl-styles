@@ -6,9 +6,9 @@
   - 100% coverage of custom transit icons
   - Remove blank POI's
   - Add national park land
-- Fix regression in low zoom trunk road styling in streets-v8 style
-- Add `entrance-11.svg` and `entrance-15.svg` to bright-v8 style
-- Update satellite-hybrid-8 style's icon sprites based on [maki-2](https://github.com/mapbox/maki-2)
+- streets-v8 style: fix regression in low zoom trunk road styling
+- bright-v8 style: Add `entrance-11.svg` and `entrance-15.svg`
+- satellite-hybrid-v8 style: update icon sprites based on [maki-2](https://github.com/mapbox/maki-2)
 
 ## v1.2.7
 
