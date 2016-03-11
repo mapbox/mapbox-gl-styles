@@ -367,9 +367,8 @@ var railMaki = [
 ];
 var railMakiEmerald = [
   'rail',
-  'rail_metro',
-  'rail_light',
-  'entrance'
+  'rail-metro',
+  'rail-light'
 ];
 
 // check that all v7 styles exist
