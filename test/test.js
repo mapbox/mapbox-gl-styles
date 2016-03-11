@@ -130,6 +130,44 @@ var railNetwork = [
   'vienna-u-bahn',
   'washington-metro'
 ];
+var emeralShields = [
+'default_2.svg',
+'default_3.svg',
+'default_4.svg',
+'default_5.svg',
+'default_6.svg',
+'us-state-2.svg',
+'us-state-3.svg',
+'us-state-4.svg',
+'us-highway-2.svg',
+'us-highway-3.svg',
+'us-highway-4.svg',
+'interstate_2.svg',
+'interstate_3.svg',
+];
+var emeraldMaki = [
+'school',
+'museum',
+'library',
+'monument',
+'hospital',
+'fire-station',
+'religious-christian',
+'religious-muslim',
+'religious-jewish',
+'post',
+'embassy',
+'police',
+'prison',
+'college',
+'harbor',
+'airport',
+'airfield',
+'park',
+'golf',
+'zoo',
+'cemetery'
+];
 var shields = [
 'at-expressway-2.svg',
 'at-expressway-3.svg',
@@ -264,12 +302,6 @@ var shields = [
 'za-provincial-2.svg',
 'za-regional-3.svg'
 ];
-var railMaki = [
-  'rail',
-  'rail-metro',
-  'rail-light',
-  'entrance'
-];
 
 // check that all v7 styles exist
 test('.styles v7 and v8', function(t) {
@@ -334,54 +366,22 @@ test('.maki v8 - checks all maki icons against list of expected maki icons', fun
   styles.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
-      maki.forEach(function(name) {
-        t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
-        t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-      });
+      if(style === 'emerald-v8') {
+         emeraldMaki.forEach(function(name) {
+          t.ok(files.indexOf(name + '_icon.svg') !== -1, name + '_icon.svg' + ' in ' + style);
+        });
+      } else {
+          maki.forEach(function(name) {
+            t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+            t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
+          });
+      }
       if (i === styles.length - 1) {
         t.end();
       }
     });
   });
 });
-
-// checks all `maki` rail icons against list of expected
-var styleMaki = [];
-var styleValue = [];
-mapboxGL.spriteStyles.forEach(function(style, i) {
-  var totalLayers = mapboxGL.styles[style].layers;
-  for(var i=0; i < totalLayers.length; i++) {
-    var sourceLayer = mapboxGL.styles[style].layers[i]['source-layer'];
-    if(sourceLayer === 'rail_station_label' && mapboxGL.styles[style].layers[i].layout['icon-image'] !== '{network}') {
-      var iconImage =  mapboxGL.styles[style].layers[i].layout['icon-image'];
-      styleMaki.push(style);
-      styleValue.push(mapboxGL.styles[style].layers[i].layout['icon-image']);
-    }
-  }
-});
-for(var i=0; i < styleMaki.length; i++) {
-  test('.rail v8 (maki) - checks all maki rail icons against list of expected', function(t) {
-    styleMaki.forEach(function(style, j) {
-      fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-        if (err) t.fail(err);
-        railMaki.forEach(function(name, k) {
-          if(styleValue[j] === '{maki}-11') {
-            t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
-          }
-          if(styleValue[j] === '{maki}-15') {
-            t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-          }
-          if(styleValue[j] === '{maki}') {
-            t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-          }
-        });
-        if(i === styleMaki.length) {
-          t.end();
-        }
-      });
-    });
-  });
-}
 
 // checks all `network` rail icons against list of expected
 test('.rail v8 (network) - checks all network rail icons against list of expected', function(t) {
@@ -423,9 +423,15 @@ test('.shields v8 - checks all highway shields against list of expected', functi
   highwayShields.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
-      shields.forEach(function(name) {
-        t.ok(files.indexOf(name) !== -1, name + ' in ' + style);
-      });
+      if(style === 'emerald-v8') {
+        emeralShields.forEach(function(name) {
+          t.ok(files.indexOf(name) !== -1, name + ' in ' + style);
+        });
+      } else {
+        shields.forEach(function(name) {
+          t.ok(files.indexOf(name) !== -1, name + ' in ' + style);
+        });
+      }
       if (i === highwayShields.length - 1) {
         t.end();
       }
