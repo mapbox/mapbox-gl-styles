@@ -588,8 +588,9 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
       if(mapboxGL.styles[style].layers[j].layout !== undefined && mapboxGL.styles[style].layers[j].layout['icon-image'] !== undefined) {
         var value = mapboxGL.styles[style].layers[j].layout['icon-image'];
         if(typeof value === 'string') {
-          if(value.indexOf('}') !== -1 && value.indexOf('{') !== -1 && value.length) {
+          if(value.indexOf('}') === -1 && value.indexOf('{') === -1 && value.length) {
             image.push(value);
+            console.log(value);
           }
         } else {
             Object.keys(value).forEach(function (key) {
@@ -597,7 +598,8 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
               for(k=1; k < val.length; k++) {
                 if(typeof val === 'object') {
                   var theImage = val[k][1];
-                  if(theImage.indexOf('}') !== -1 && theImage.indexOf('{') !== -1 && theImage.length) {
+                  if(theImage.indexOf('}') === -1 && theImage.indexOf('{') === -1 && theImage.length) {
+                    // everything that does not include }
                     image.push(theImage);
                   }
                 }
