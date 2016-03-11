@@ -1,3 +1,7 @@
+## v1.2.9
+
+- Fix for emerald-v8 style owner setting
+
 ## v1.2.8
 
 - In all styles, set `autocomposite` to `true` for additional vector tiles added.
