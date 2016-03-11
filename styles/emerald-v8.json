@@ -1,8 +1,7 @@
 {
     "version": 8,
-    "name": "Emerald-v8",
+    "name": "Emerald-v8.1",
     "metadata": {
-        "mapbox:autocomposite": true,
         "mapbox:groups": {
             "1444858470265.9292": {
                 "name": "Barriers",
@@ -75,10 +74,10 @@
         }
     },
     "center": [
-        -122.43887802039052,
-        37.73587032668533
+        -77.03721606170454,
+        38.902146304823845
     ],
-    "zoom": 15.09527071373287,
+    "zoom": 14.68895969316788,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -4629,7 +4628,7 @@
                     0,
                     2.5
                 ],
-                "icon-image": "oneway_motorway",
+                "icon-image": "oneway_motorway_icon",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Regular"
@@ -4685,7 +4684,7 @@
                     0,
                     2.5
                 ],
-                "icon-image": "oneway_road",
+                "icon-image": "oneway_road_icon",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Regular"
@@ -4751,7 +4750,7 @@
                     0,
                     0
                 ],
-                "icon-image": "oneway-road",
+                "icon-image": "oneway_road",
                 "text-font": [
                     "Open Sans Semibold",
                     "Arial Unicode MS Regular"
@@ -5464,7 +5463,8 @@
                     "college",
                     "harbor",
                     "airport",
-                    "airfield"
+                    "airfield",
+                    ""
                 ],
                 [
                     "in",
@@ -6706,7 +6706,7 @@
     ],
     "created": "2016-02-26T22:51:01.608Z",
     "id": "cil4alte500149jm1ijm7j3hc",
-    "modified": "2016-03-05T00:23:45.500Z",
+    "modified": "2016-03-11T21:11:32.934Z",
     "owner": "peterqliu",
     "draft": false
 }
