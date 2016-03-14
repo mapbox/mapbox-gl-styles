@@ -6,10 +6,10 @@
 
 - In all styles, set `autocomposite` to `true` for additional vector tiles added.
 - emerald-v8 style
-  - Resize all maki icons to 100%
   - 100% coverage of custom transit icons
-  - Remove blank POI's
-  - Add national park land
+  - Stylistically lump primary roads with trunk roads
+  - Strengthened hillshade at lower zooms
+  - Small tweaks to colors
 - streets-v8 style: fix regression in low zoom trunk road styling
 - bright-v8 style: Add `entrance-11.svg` and `entrance-15.svg`
 - satellite-hybrid-v8 style: update icon sprites based on [maki-2](https://github.com/mapbox/maki-2)
