@@ -5,19 +5,24 @@ This repository contains prebuilt Mapbox GL styles for use in Mapbox GL JS or th
 
 ## Versioning
 
-A __breaking__ release (__x__.0.0) can include any of the following changes to styles:
+A __breaking__ release (__x__.0.0) is one that
 
-- Any change to existing stylesheet JSON
-- Any change to existing stylesheet sprite
+- changes  the style's `version` field
+- removes or renames an icon
+- removes or changes a `glyphs` URL
+- removes or changes a source
+- removes, renames, or changes the semantic meaning of a layer
 
-A __feature__ release (0.__x__.0) can include any of the following changes:
+A __feature__ release (0.__x__.0) has no breaking changes and
 
-- New style
-- Updates to everything except existing style JSON files: README, tests, or migration scripts
+- makes any non-breaking change to existing stylesheet JSON
+- makes any non-breaking change to existing stylesheet sprite
+- adds a new style
+- makes changes to files other than styles and sprites (README, tests, or migration scripts)
 
-A __fix__ release (0.0.__x__) can include any of the following changes:
+A __fix__ release (0.0.__x__) is one that has no feature-release changes and
 
-- Fix an invalid stylesheet or bad test.
+- fixes an invalid stylesheet or bad test 
 
 ## Styles
 
