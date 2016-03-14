@@ -11,14 +11,15 @@ A __breaking__ release (__x__.0.0) is one that
 - removes or renames an icon
 - removes or changes a `glyphs` URL
 - removes or changes a source
-- removes, renames, or changes the semantic meaning of a layer
+- removes or renames a style layer
+- changes the semantic meaning of a layer
 
-A __feature__ release (0.__x__.0) has no breaking changes and
+A __feature__ release (0.__x__.0) has no breaking-release changes and
 
-- makes any non-breaking change to existing styles
-- makes any non-breaking change to existing sprites
+- makes any non-breaking change to styles
+- makes any non-breaking change to sprites
 - adds a new style
-- makes changes to files other than styles and sprites (README, tests, or migration scripts)
+- adds a new icon
 
 A __fix__ release (0.0.__x__) is one that has no feature-release changes and
 
