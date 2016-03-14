@@ -15,8 +15,8 @@ A __breaking__ release (__x__.0.0) is one that
 
 A __feature__ release (0.__x__.0) has no breaking changes and
 
-- makes any non-breaking change to existing stylesheet JSON
-- makes any non-breaking change to existing stylesheet sprite
+- makes any non-breaking change to existing styles
+- makes any non-breaking change to existing sprites
 - adds a new style
 - makes changes to files other than styles and sprites (README, tests, or migration scripts)
 
