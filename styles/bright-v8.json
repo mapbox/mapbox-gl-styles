@@ -3240,7 +3240,7 @@
                     "Arial Unicode MS Bold"
                 ],
                 "text-size": 11,
-                "icon-image": "motorway-{reflen}",
+                "icon-image": "motorway_{reflen}",
                 "symbol-placement": {
                     "base": 1,
                     "stops": [
