@@ -73,13 +73,6 @@
             }
         }
     },
-    "center": [
-        -77.03721606170454,
-        38.902146304823845
-    ],
-    "zoom": 14.68895969316788,
-    "bearing": 0,
-    "pitch": 0,
     "sources": {
         "mapbox": {
             "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v7",
