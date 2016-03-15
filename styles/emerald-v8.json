@@ -338,8 +338,7 @@
             "id": "sand",
             "paint": {
                 "fill-color": "#f1f0d2",
-                "fill-opacity": 1,
-                "fill-pattern": "sand_noise"
+                "fill-opacity": 1
             },
             "source-layer": "landuse"
         },
