@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 300 240" enable-background="new 0 0 300 240" xml:space="preserve">
+	 viewBox="0 0 76.6 60" enable-background="new 0 0 76.6 60" xml:space="preserve">
 <g>
-	<path fill="#AAA3A2" d="M267.9,215c0,16.9-17,30-38.3,30s-38.3-13.1-38.3-30s17-30,38.3-30S267.9,198.1,267.9,215"/>
-	<path fill="#FFFFFF" d="M229.6,188.8c-19.1,0-34.7,11.8-34.7,26.2s15.5,26.2,34.7,26.2s34.7-11.8,34.7-26.2
-		S248.8,188.8,229.6,188.8z"/>
+	<path fill="#AAA3A2" d="M76.6,30c0,16.9-17,30-38.3,30S0,46.9,0,30S17,0,38.3,0S76.6,13.1,76.6,30"/>
+	<path fill="#FFFFFF" d="M38.3,3.8C19.2,3.8,3.6,15.6,3.6,30s15.5,26.2,34.7,26.2S73,44.4,73,30S57.5,3.8,38.3,3.8z"/>
 </g>
 </svg>
