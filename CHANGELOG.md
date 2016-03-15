@@ -1,3 +1,9 @@
+## v1.2.10
+
+- bright-v8 style: Add motorway icons
+- satellite-hybrid-v8 style: update json to reference `motorway_{reflen}`
+
+
 ## v1.2.9
 
 - Fix for emerald-v8 style owner setting
