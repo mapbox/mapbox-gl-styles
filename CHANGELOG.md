@@ -2,7 +2,10 @@
 
 - bright-v8 style: Add motorway icons
 - satellite-hybrid-v8 style: update json to reference `motorway_{reflen}`
-
+- emerald-v8:
+  - resize icons
+  - remove texture pattern from sand
+  - remove center/zoom/bearing/pitch
 
 ## v1.2.9
 

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="50px" height="50px" viewBox="125 95 50 50" enable-background="new 125 95 50 50" xml:space="preserve">
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
 <g>
-	<path fill="#F8F4F0" d="M150,110c5.5,0,10,4.5,10,10s-4.5,10-10,10s-10-4.5-10-10S144.5,110,150,110"/>
+	<path fill="#F8F4F0" d="M10,0c5.5,0,10,4.5,10,10s-4.5,10-10,10S0,15.5,0,10S4.5,0,10,0"/>
 </g>
 <g opacity="0.6">
-	<path fill="#446B52" d="M150,110c5.5,0,10,4.5,10,10s-4.5,10-10,10s-10-4.5-10-10S144.5,110,150,110"/>
+	<path fill="#446B52" d="M10,0c5.5,0,10,4.5,10,10s-4.5,10-10,10S0,15.5,0,10S4.5,0,10,0"/>
 </g>
 <g>
-	<path fill="#FFFFFF" d="M150.2,124.4c-0.5,0-0.8,0-0.8,0c-0.4-0.1-0.6,0.1-0.5,0.6l0.4,2.6c0,0.4,0.4,0.7,0.8,0.7h0.1
-		c0.4,0,0.8-0.3,0.8-0.7l0.4-2.6c0.1-0.4-0.1-0.6-0.5-0.6C151,124.4,150.7,124.4,150.2,124.4z"/>
-	<circle fill="#FFFFFF" cx="150.2" cy="117.9" r="5.1"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="148" cy="116.3" r="0.7"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="148" cy="119.5" r="0.7"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="152.4" cy="116.3" r="0.7"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="152.4" cy="119.5" r="0.7"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="150.2" cy="117.9" r="1"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="150.2" cy="120.8" r="0.7"/>
-	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="150.2" cy="115" r="0.7"/>
+	<path fill="#FFFFFF" d="M10.2,14.4c-0.5,0-0.8,0-0.8,0C9,14.3,8.8,14.5,8.9,15l0.4,2.6c0,0.4,0.4,0.7,0.8,0.7h0.1
+		c0.4,0,0.8-0.3,0.8-0.7l0.4-2.6c0.1-0.4-0.1-0.6-0.5-0.6C11,14.4,10.7,14.4,10.2,14.4z"/>
+	<circle fill="#FFFFFF" cx="10.2" cy="7.9" r="5.1"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="8" cy="6.3" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="8" cy="9.5" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="12.4" cy="6.3" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="12.4" cy="9.5" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="10.2" cy="7.9" r="1"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="10.2" cy="10.8" r="0.7"/>
+	<circle opacity="0.6" fill="#446B52" enable-background="new    " cx="10.2" cy="5" r="0.7"/>
 </g>
 </svg>

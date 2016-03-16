@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="64.1px" height="50px" viewBox="-23.1 -17 64.1 50" enable-background="new -23.1 -17 64.1 50" xml:space="preserve">
-<path fill="#F8F4F0" d="M-14-15h46c3.6,0,6.6,2.9,6.6,6.6v32.9c0,3.6-2.9,6.6-6.6,6.6h-46c-3.6,0-6.6-2.9-6.6-6.6V-8.4
-	C-20.6-12.1-17.6-15-14-15"/>
-<path opacity="0.7" fill="#F02A10" enable-background="new    " d="M-10.7-8.4h39.4C30.5-8.4,32-7,32-5.1v26.3
-	c0,1.8-1.5,3.3-3.3,3.3h-39.4c-1.8,0-3.3-1.5-3.3-3.3V-5.1C-14-7-12.5-8.4-10.7-8.4"/>
-<rect x="-14" y="0.6" fill="#F8F4F0" width="46" height="4.1"/>
-<rect x="-14" y="11.3" fill="#F8F4F0" width="46" height="4.1"/>
-<polygon fill="#F8F4F0" points="-2.5,-8.4 12.3,3.1 -2.5,12.9 12.3,24.4 20.5,24.4 5.7,12.9 20.5,3.1 5.7,-8.4 "/>
+	 viewBox="0 0 32.11 25" enable-background="new 0 0 32.11 25" xml:space="preserve">
+<path fill="#F8F4F0" d="M3.59,0h24.94c1.95,0,3.58,1.57,3.58,3.58v17.84c0,1.95-1.57,3.58-3.58,3.58H3.58C1.63,25,0,23.43,0,21.42
+	V3.58C0.01,1.57,1.64,0,3.59,0"/>
+<path opacity="0.7" fill="#F02A10" enable-background="new    " d="M5.38,3.58h21.37c0.98,0,1.79,0.76,1.79,1.79v14.26
+	c0,0.98-0.81,1.79-1.79,1.79H5.38c-0.98,0-1.79-0.81-1.79-1.79V5.37C3.59,4.34,4.4,3.58,5.38,3.58"/>
+<rect x="3.59" y="8.46" fill="#F8F4F0" width="24.95" height="2.22"/>
+<rect x="3.59" y="14.26" fill="#F8F4F0" width="24.95" height="2.22"/>
+<polygon fill="#F8F4F0" points="9.83,3.58 17.85,9.82 9.83,15.13 17.85,21.37 22.3,21.37 14.27,15.13 22.3,9.82 14.27,3.58 "/>
 </svg>
