@@ -14,9 +14,6 @@
   "glyphs":"mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers":[
     {
-      "metadata":{
-        "label":"national_parks"
-      },
       "filter":[
         "==",
         "class",
@@ -26,9 +23,6 @@
       "source-layer":"landuse_overlay"
     },
     {
-      "metadata":{
-        "label":"parks"
-      },
       "filter":[
         "==",
         "class",
@@ -38,9 +32,6 @@
       "source-layer":"landuse"
     },
     {
-      "metadata":{
-        "label":"tunnels"
-      },
       "filter":[
         "==",
         "structure",
@@ -52,9 +43,6 @@
       "source-layer":"road"
     },
     {
-      "metadata":{
-        "label":"roads"
-      },
       "filter":[
         "!in",
         "structure",
@@ -67,9 +55,6 @@
       "source-layer":"road"
     },
     {
-      "metadata":{
-        "label":"bridges"
-      },
       "filter":[
         "==",
         "structure",
@@ -81,9 +66,6 @@
       "source-layer":"road"
     },
     {
-      "metadata":{
-        "label":"rail"
-      },
       "filter":[
         "all",
         [
@@ -105,9 +87,6 @@
       "source-layer":"road"
     },
     {
-      "metadata":{
-        "label":"boundaries"
-      },
       "filter":[
         "all",
         [
@@ -127,9 +106,6 @@
       "source-layer":"admin"
     },
     {
-      "metadata":{
-        "label":"disputed"
-      },
       "minzoom":1,
       "filter":[
         "all",
@@ -150,9 +126,6 @@
       "source-layer":"admin"
     },
     {
-      "metadata":{
-        "label":"shields-dark"
-      },
       "filter":[
         "all",
         [
@@ -211,9 +184,6 @@
       "source-layer":"road_label"
     },
     {
-      "metadata":{
-        "label":"shields-light"
-      },
       "filter":[
         "all",
         [
@@ -272,9 +242,6 @@
       "source-layer":"road_label"
     },
     {
-      "metadata":{
-        "label":"town"
-      },
       "filter":[
         "==",
         "type",
@@ -286,9 +253,6 @@
       "source-layer":"place_label"
     },
     {
-      "metadata":{
-        "label":"city"
-      },
       "filter":[
         "==",
         "type",

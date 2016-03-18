@@ -12,12 +12,11 @@ var fs = require('fs');
   var hasTown = false;
   var count = 0;
   model.layers.forEach(function(layer) {
-    var label = layer.metadata.label;
-    if(label==='town' || label==='city') {
-      if(label=='city') {
-        delete layer.metadata;
-        console.log(layer);
-      }
+    var label = layer.id;
+    if(label==='place-town' || label==='place city') {
+       if(label=='place city') {
+         console.log(layer);
+       }
     }
   });
 //});
