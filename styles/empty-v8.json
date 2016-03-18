@@ -1,6 +1,9 @@
 {
   "version": 8,
   "name": "Empty",
+  "metadata": {
+    "mapbox:autocomposite": true
+  },
   "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "sources": {},
   "layers": [

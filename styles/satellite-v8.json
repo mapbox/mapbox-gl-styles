@@ -1,6 +1,9 @@
 {
   "version": 8,
   "name": "Satellite",
+  "metadata": {
+    "mapbox:autocomposite": true
+  },
   "sources": {
     "mapbox": {
       "type": "raster",
