@@ -14,7 +14,8 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
-    "glob": "^5.0.14"
+    "glob": "^5.0.14",
+    "underscore-node": "^0.1.2"
   },
   "license": "ISC"
 }

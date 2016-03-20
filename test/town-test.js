@@ -1,51 +1,25 @@
+var _ = require('underscore-node');
+var model = require('../model-empty-style.json');
 var test = require('tape');
 var mapboxGL = require('../index');
 
 test('check that towns are not styled without cities', function(t) {
   mapboxGL.spriteStyles.forEach(function(styleName) {
     var style = require('../styles/' + styleName + '.json');
-    var hasTown = false;
+    var hasTown;
+    var hasCity;
     style.layers.forEach(function(layer) {
       if(layer['source-layer'] === 'place_label') {
-        if(layer.filter[0] === '==') {
-          if(layer.filter.indexOf('type') > -1 && layer.filter.indexOf('town') > -1) {
-            hasTown = true;
-          }
-        }
-        if(layer.filter[0] === 'all') {
-          layer.filter.forEach(function(e) {
-            if(e.indexOf('type') > -1 && e.indexOf('town') > -1) {
-              hasTown = true;
-            }
-          });
-        }
+        // find where this filter is matched within all the styles
+        hasTown = _.findWhere(model.layers, {id: 'place town'});
+        // console.log(style.name + ' ' + hasTown.filter);
+        hasCity = _.findWhere(model.layers, {id: 'place city'});
+        // console.log(style.name + ' ' + hasCity.filter);
       }
     });
-
-    if(!hasTown) return;
-    var hasCity = false;
-
-    style.layers.forEach(function(layer) {
-      if(layer['source-layer'] === 'place_label') {
-        if(layer.filter[0] === '==') {
-          if(layer.filter.indexOf('type') > -1 && layer.filter.indexOf('city') > -1) {
-            hasCity = true;
-          }
-        }
-        if(layer.filter[0] === 'all') {
-          layer.filter.forEach(function(e) {
-            if(e.indexOf('type') > -1 && e.indexOf('city') > -1) {
-              hasCity = true;
-            }
-          });
-        }
-      }
-    });
-
-    if(hasTown) {
-      t.equal(hasCity, true, styleName + ' - this has town and has city');
+    if(hasTown !== undefined) {
+      t.assert(hasCity, styleName + ' - this has town and has city');
     }
   });
   t.end();
 });
-

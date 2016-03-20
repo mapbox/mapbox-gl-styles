@@ -249,7 +249,7 @@
       ],
       "type":"symbol",
 
-      "id":"place-town",
+      "id":"place town",
       "source-layer":"place_label"
     },
     {
