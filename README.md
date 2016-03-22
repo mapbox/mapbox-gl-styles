@@ -65,7 +65,7 @@ Global satellite and aerial imagery with unobtrusive labels.
 
 A blank slate. Build your own map from the ground up.
 
-## Usage
+## Standard icons and glyphs
 
 List of standard icons and glyphs available in each style, except Emerald:
 
@@ -76,10 +76,9 @@ List of standard icons and glyphs available in each style, except Emerald:
 
 List of Emerald's standard icons and glyphs available:
 
-- [Maki](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L238-L262)
-- [Highway shields](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L222-L236)
-- [Rail network icons](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L167-L220)
-- [Rail maki icons](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L406-L410)
+- [Emerald's Maki](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L238-L262)
+- [Emerald's Rail network icons](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L167-L220)
+- [Emerald's Rail maki icons](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L406-L410)
 
 
 
