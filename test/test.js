@@ -180,6 +180,7 @@ test('.shields v8 - checks all highway shields against list of expected', functi
       }
     }
   });
+          console.log('RETURN SHIELDS ' + highwayShields);
   highwayShields.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);

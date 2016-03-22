@@ -409,48 +409,6 @@ var railMakiEmerald = [
   'rail-light'
 ];
 
-var emeraldShields = [
-  'default_2.svg',
-  'default_3.svg',
-  'default_4.svg',
-  'default_5.svg',
-  'default_6.svg',
-  'us-state-2.svg',
-  'us-state-3.svg',
-  'us-state-4.svg',
-  'us-highway-2.svg',
-  'us-highway-3.svg',
-  'us-highway-4.svg',
-  'interstate_2.svg',
-  'interstate_3.svg',
-];
-
-var emeraldMaki = [
-  'school',
-  'museum',
-  'library',
-  'monument',
-  'hospital',
-  'fire-station',
-  'religious-christian',
-  'religious-muslim',
-  'religious-jewish',
-  'oneway_road',
-  'oneway_motorway',
-  'post',
-  'embassy',
-  'police',
-  'prison',
-  'college',
-  'harbor',
-  'airport',
-  'airfield',
-  'park',
-  'golf',
-  'zoo',
-  'cemetery'
-];
-
 
 
 module.exports.spriteStyles = spriteStyles;
@@ -462,8 +420,6 @@ module.exports.emeraldMaki = emeraldMaki;
 module.exports.shields = shields;
 module.exports.railMaki = railMaki;
 module.exports.railMakiEmerald = railMakiEmerald;
-module.exports.emeraldShields = emeraldShields;
-module.exports.emeraldMaki = emeraldMaki;
 
 styles.forEach(function(style) {
     if(style.split('.')[1]) {
