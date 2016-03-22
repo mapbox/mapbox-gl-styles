@@ -67,6 +67,24 @@ A blank slate. Build your own map from the ground up.
 
 ## Usage
 
+List of standard icons and glyphs available in each style, except Emerald:
+
+- [Maki](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L36-L106)
+- [Highway shields](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L264-L397)
+- [Rail network icons](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L108-L165)
+- [Rail maki icons](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L399-L404)
+
+List of Emerald's standard icons and glyphs available:
+
+- [Maki](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L238-L262)
+- [Highway shields](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L222-L236)
+- [Rail network icons](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L167-L220)
+- [Rail maki icons](https://github.com/mapbox/mapbox-gl-styles/blob/glyphdoc/index.js#L406-L410)
+
+
+
+## Usage
+
 The preferred way to use these styles in Mapbox GL JS or the Mapbox Mobile SDKs is via a `mapbox://` URL.
 
 ### JS
