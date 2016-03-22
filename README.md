@@ -80,7 +80,7 @@ List of Emerald's standard icons available:
 - [Emerald's Rail network icons](https://github.com/mapbox/mapbox-gl-styles/blob/master/index.js#L167-L220)
 - [Emerald's Rail maki icons](https://github.com/mapbox/mapbox-gl-styles/blob/master/index.js#L406-L410)
 
-Each icon reference must includes either `-11.svg` or `-15.svg` behind the name.
+When you use an icon in a style, you must specify the icon's size as a suffix to its name. Supported size suffixes are `-11` and `-15`, representing an 11px and a 15px square respectively. For example, a 15px airfield icon would be specified as `"icon-image": "airfield-15"`.  
 
 ## Usage
 
