@@ -37,4 +37,3 @@ test('compare values in model and style with the same id', function(t) {
     }
   });
   t.end();
-});
