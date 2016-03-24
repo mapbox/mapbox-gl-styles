@@ -49,24 +49,55 @@ layerTesting.group.forEach(function(testLayer) {
     // find the first layer we are checking for
     style.layers.forEach(function(layer) {
       if(layer.id === hasLayer) {
-        // compare the filter values
-        match = model.layers.filter(function(model_layer) {
-          return model_layer.id === layer.id;
-        })[0];
-        console.log('The style has ' + layer.id);
+        // does this have a ref layer?
+        if(match && match.ref) {
+          console.log('  TEST ' + match.ref);
+          match = model.layers.filter(function(model_layer) {
+            return model_layer.key === layer.id;
+          })[0];
+        } else {
+          // compare the filter values
+          match = model.layers.filter(function(model_layer) {
+            return model_layer.id === layer.id;
+          })[0];
+        }
+        // now verify the layers have matching filter values
+        if(match) {
+          var keys = Object.keys(match);
+          keys.forEach(function(key) {
+            //t.same(match[key], layer[key], 'This layer passes.');
+          });
+          console.log('The style has ' + layer.id);
+        }
       }
     });
 
-    // check if this layer has the 2nd layer we are checking for
-    style.layers.forEach(function(layer) {
-      if(layer.id === checkLayer) {
+  // now check we have the 2nd layer we are looking for
+  style.layers.forEach(function(layer) {
+    if(layer.id === checkLayer) {
+      // does this have a ref layer?
+      if(check && check.ref) {
+        check = model.layers.filter(function(model_layer) {
+          return model_layer.key === layer.id;
+        })[0];
+      } else {
+      // if we have a match, save the value
         check = model.layers.filter(function(model_layer) {
           return model_layer.id === layer.id;
         })[0];
+      }
+      // now verify the layers have matching filter values
+      if(check) {
+        var keys = Object.keys(check);
+        keys.forEach(function(key) {
+          //t.same(check[key], layer[key], 'This layer passes.');
+        });
         console.log('This style also has ' + layer.id);
       }
-    });
+    }
+  });
 
+    // if there is no match, then tell me
     if(match === undefined) {
       console.log('There is no layer called ' + hasLayer);
     }
