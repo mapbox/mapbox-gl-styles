@@ -22,8 +22,8 @@ var layerTesting = {
       checkLayer: 'road-primary_link'
     },
     {
-      hasLayer: 'road-secondary',
-      checkLayer: 'road-secondary_link'
+      hasLayer: 'road-secondary-tertiary',
+      checkLayer: 'road-secondary-tertiary_link'
     },
     {
       hasLayer: 'road-trunk',
@@ -31,7 +31,7 @@ var layerTesting = {
     },
     {
       hasLayer: 'place-town',
-      checkLayer: 'place-city'
+      checkLayer: 'place city'
     }
   ]
 };
