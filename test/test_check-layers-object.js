@@ -49,18 +49,14 @@ layerTesting.group.forEach(function(testLayer) {
     // find the first layer we are checking for
     style.layers.forEach(function(layer) {
       if(layer.id === hasLayer) {
-        // does this have a ref layer?
-        if(match && match.ref) {
-          console.log('  TEST ' + match.ref);
           match = model.layers.filter(function(model_layer) {
-            return model_layer.key === layer.id;
+            // does this have a ref layer?
+            if(layer.ref) {
+              return model_layer.key === layer.id;
+            } else {
+              return model_layer.id === layer.id; // if we have a match, save the value
+            }
           })[0];
-        } else {
-          // compare the filter values
-          match = model.layers.filter(function(model_layer) {
-            return model_layer.id === layer.id;
-          })[0];
-        }
         // now verify the layers have matching filter values
         if(match) {
           var keys = Object.keys(match);
@@ -75,18 +71,14 @@ layerTesting.group.forEach(function(testLayer) {
   // now check we have the 2nd layer we are looking for
   style.layers.forEach(function(layer) {
     if(layer.id === checkLayer) {
-      // does this have a ref layer?
-      if(check && check.ref) {
-          console.log('  TEST ' + check.ref);
         check = model.layers.filter(function(model_layer) {
-          return model_layer.key === layer.id;
+          // does this have a ref layer?
+          if(check && check.ref) {
+            return model_layer.key === layer.id;
+          } else {
+            return model_layer.id === layer.id; // if we have a match, save the value
+          }
         })[0];
-      } else {
-      // if we have a match, save the value
-        check = model.layers.filter(function(model_layer) {
-          return model_layer.id === layer.id;
-        })[0];
-      }
       // now verify the layers have matching filter values
       if(check) {
         var keys = Object.keys(check);
@@ -99,15 +91,11 @@ layerTesting.group.forEach(function(testLayer) {
   });
 
     // if there is no match, then tell me
-    console.log('MATCH: ' + match);
     if(match === undefined) {
       console.log('There is no layer called ' + hasLayer);
-      console.log(' ');
     }
-    console.log('CHECK: ' + check);
     if(check === undefined) {
       console.log('There is no layer called ' + checkLayer);
-      console.log(' ');
     }
   }
 
