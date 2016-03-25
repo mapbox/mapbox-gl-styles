@@ -1,6 +1,6 @@
 var _ = require('underscore-node');
 var test = require('tape');
-var model = require('../model-streets-style.json');
+var model = require('../model-style.json');
 // pass in json files
 var style = require('../styles/streets-v8.json');
 
@@ -38,7 +38,7 @@ var layerTesting = {
 
 // pass in layers to test
 layerTesting.group.forEach(function(testLayer) {
-
+  console.log(' ');
   console.log('do we have ' + testLayer.hasLayer + ' or ' + testLayer.checkLayer + '???');
 
   // the function that does the work -- loop thru every layer in the style!
@@ -77,6 +77,7 @@ layerTesting.group.forEach(function(testLayer) {
     if(layer.id === checkLayer) {
       // does this have a ref layer?
       if(check && check.ref) {
+          console.log('  TEST ' + check.ref);
         check = model.layers.filter(function(model_layer) {
           return model_layer.key === layer.id;
         })[0];
@@ -98,11 +99,15 @@ layerTesting.group.forEach(function(testLayer) {
   });
 
     // if there is no match, then tell me
+    console.log('MATCH: ' + match);
     if(match === undefined) {
       console.log('There is no layer called ' + hasLayer);
+      console.log(' ');
     }
+    console.log('CHECK: ' + check);
     if(check === undefined) {
       console.log('There is no layer called ' + checkLayer);
+      console.log(' ');
     }
   }
 

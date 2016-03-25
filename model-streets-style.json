@@ -253,7 +253,7 @@
         "city"
       ],
       "type":"symbol",
-      "id":"place city",
+      "id":"place-city",
       "source-layer":"place_label"
     },
     {
@@ -453,6 +453,32 @@
         "source": "composite",
         "id": "road-trunk-case",
         "source-layer": "road"
+      },
+      {
+        "filter": [
+          "all",
+          [
+            "<=",
+            "scalerank",
+            2
+          ],
+          [
+            "==",
+            "type",
+            "city"
+          ],
+          [
+            "in",
+            "ldir",
+            "S",
+            "SE",
+            "SW",
+            "E"
+          ]
+        ],
+        "source": "composite",
+        "id": "place-city-lg-s",
+        "source-layer": "place_label"
       }
   ]
 }
