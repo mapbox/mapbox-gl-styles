@@ -1,0 +1,28 @@
+{
+  "group": [
+    {
+      "hasLayer": "parks",
+      "checkLayer": "national_park"
+    },
+    {
+      "hasLayer": "road-motorway",
+      "checkLayer": "road-motorway_link"
+    },
+    {
+      "hasLayer": "road-primary",
+      "checkLayer": "road-primary_link"
+    },
+    {
+      "hasLayer": "road-secondary-tertiary",
+      "checkLayer": "road-secondary-tertiary_link"
+    },
+    {
+      "hasLayer": "road-trunk",
+      "checkLayer": "road-trunk_link"
+    },
+    {
+      "hasLayer": "place-town",
+      "checkLayer": "place city"
+    }
+  ]
+}
