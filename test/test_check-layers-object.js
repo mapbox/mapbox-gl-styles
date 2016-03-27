@@ -2,23 +2,46 @@ var _ = require('underscore-node');
 var test = require('tape');
 // pass in objects
 var model = require('../model-style.json');
-var style = require('../styles/streets-v8.json');
+var mapboxGL = require('../index');
 var compareLayers = require('../layer-test-object.json');
 
 test('check if layer ___ exists, layer ____ also exists', function(assert) {
-  var modelIndexbyID = _.indexBy(model.layers, 'id'); // sort model layers by it's id (so we can search it)
-  var styleIndexbyID = _.indexBy(style.layers, 'id'); // sort style layers by id
+  mapboxGL.checkStyles.forEach(function(styles) {
+    var style = require('../styles/' + styles + '.json');
+    console.log('');
+    console.log(style.name);
+    var modelIndexbyID = _.indexBy(model.layers, 'id'); // sort model layers by it's id (so we can search it)
+    var styleIndexbyID = _.indexBy(style.layers, 'id'); // sort style layers by id
+    // loop thru all the group layers and compare
+    compareLayers[style.name].forEach(function(testLayer) {
+      var modelID = modelIndexbyID[testLayer.hasLayer];
+      var styleID = styleIndexbyID[testLayer.hasLayer];
+      if(styleID === undefined || modelID === undefined) {
+        // can you tell the error what to see for ok vs. not ok?
+        assert.error(!undefined, 'check that layer id: ' + testLayer.hasLayer + ' exists in ' + style.name);
+      } else {
+        // check if the model has a ref to check
+        if(styleID.ref) {
+          modelID = modelIndexbyID[styleID.ref].filter;
+          styleID = styleIndexbyID[styleID.ref].filter;
+        }
+        assert.deepEqual(modelID.filter, styleID.filter, 'has ' + testLayer.hasLayer + ', check for ' + testLayer.checkLayer);
 
-  // loop thru all the group layers and compare
-  compareLayers.group.forEach(function(testLayer) {
-    var model = modelIndexbyID[testLayer.hasLayer];
-    var style = styleIndexbyID[testLayer.hasLayer];
-    // check if the model has a ref to check
-    if(model.ref) {
-      model = modelIndexbyID[model.ref].filter;
-      style = styleIndexbyID[style.ref].filter;
-    }
-    assert.deepEqual(model.filter, style.filter, 'do these filters match');
+        // loop thru all the group layers and compare
+        var modelIDCheck = modelIndexbyID[testLayer.checkLayer];
+        var styleIDCheck = styleIndexbyID[testLayer.checkLayer];
+        // check if the model has a ref to check
+        if(styleIDCheck === undefined || modelIDCheck === undefined) {
+          assert.error(!undefined, 'check that layer id: ' + testLayer.checkLayer + ' exists in ' + style.name);
+        } else {
+          if(styleIDCheck.ref) {
+            modelIDCheck = modelIndexbyID[styleIDCheck.ref].filter;
+            styleIDCheck = styleIndexbyID[styleIDCheck.ref].filter;
+          }
+          assert.deepEqual(modelIDCheck.filter, styleIDCheck.filter, 'has both ' + testLayer.checkLayer + ' and  ' + testLayer.hasLayer);
+        }
+      }
+    });
   });
   // end assertion
   assert.end();
