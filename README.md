@@ -65,6 +65,23 @@ Global satellite and aerial imagery with unobtrusive labels.
 
 A blank slate. Build your own map from the ground up.
 
+## Standard icons
+
+List of standard icons available in each style, except Emerald:
+
+- [Maki](https://github.com/mapbox/mapbox-gl-styles/blob/master/index.js#L36-L106)
+- [Highway shields](https://github.com/mapbox/mapbox-gl-styles/blob/master/index.js#L264-L397)
+- [Rail network icons](https://github.com/mapbox/mapbox-gl-styles/blob/master/index.js#L108-L165)
+- [Rail maki icons](https://github.com/mapbox/mapbox-gl-styles/blob/master/index.js#L399-L404)
+
+List of Emerald's standard icons available:
+
+- [Emerald's Maki](https://github.com/mapbox/mapbox-gl-styles/blob/master/index.js#L238-L262)
+- [Emerald's Rail network icons](https://github.com/mapbox/mapbox-gl-styles/blob/master/index.js#L167-L220)
+- [Emerald's Rail maki icons](https://github.com/mapbox/mapbox-gl-styles/blob/master/index.js#L406-L410)
+
+When you use an icon in a style, you must specify the icon's size as a suffix to its name. Supported size suffixes are `-11` and `-15`, representing an 11px and a 15px square respectively. For example, a 15px airfield icon would be specified as `"icon-image": "airfield-15"`.  
+
 ## Usage
 
 The preferred way to use these styles in Mapbox GL JS or the Mapbox Mobile SDKs is via a `mapbox://` URL.
