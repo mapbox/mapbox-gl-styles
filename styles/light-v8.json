@@ -1301,15 +1301,15 @@
             "filter": [
                 "all",
                 [
+                    "==",
+                    "class",
+                    "trunk"
+                ],
+                [
                     "!in",
                     "structure",
                     "bridge",
                     "tunnel"
-                ],
-                [
-                    "==",
-                    "class",
-                    "trunk"
                 ]
             ],
             "type": "line",

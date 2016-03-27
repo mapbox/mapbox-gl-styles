@@ -30,11 +30,18 @@ var spriteStyles = [
   'bright-v8',
   'basic-v8',
   'satellite-hybrid-v8',
-  'emerald-v8',
-  'outdoors-v8'
+  'emerald-v8'
+];
+
+var checkStyles = [
+  'streets-v8',
+  'light-v8',
+  'dark-v8',
+  'satellite-hybrid-v8'
 ];
 
 module.exports.spriteStyles = spriteStyles;
+module.exports.checkStyles = checkStyles;
 
 styles.forEach(function(style) {
   if(style.split('.')[1]) {

@@ -1,12 +1,8 @@
 {
-  "group": [
+  "Mapbox Streets": [
     {
       "hasLayer": "parks",
       "checkLayer": "national_park"
-    },
-    {
-      "hasLayer": "road-motorway",
-      "checkLayer": "road-motorway_link"
     },
     {
       "hasLayer": "road-primary",
@@ -17,12 +13,66 @@
       "checkLayer": "road-secondary-tertiary_link"
     },
     {
-      "hasLayer": "road-trunk",
-      "checkLayer": "road-trunk_link"
+      "hasLayer": "place-town",
+      "checkLayer": "place-city-lg-s"
     },
     {
-      "hasLayer": "place-town",
-      "checkLayer": "place city"
+      "hasLayer": "road-motorway_ref",
+      "checkLayer": "road-motorway_link_ref"
+    },
+    {
+      "hasLayer": "road-trunk_ref",
+      "checkLayer": "road-trunk_link_ref"
+    }
+  ],
+  "Light": [
+    {
+      "hasLayer": "landuse_park",
+      "checkLayer": "landuse_overlay_national_park"
+    },
+    {
+      "hasLayer": "place_label_other",
+      "checkLayer": "place_label_city_large_s"
+    },
+    {
+      "hasLayer": "road-motorway",
+      "checkLayer": "road-motorway_link"
+    },
+    {
+      "hasLayer": "road-trunk",
+      "checkLayer": "road-trunk_link"
+    }
+  ],
+  "Dark": [
+    {
+      "hasLayer": "landuse_park",
+      "checkLayer": "landuse_overlay_national_park"
+    },
+    {
+      "hasLayer": "place_label_other",
+      "checkLayer": "place_label_city_large_s"
+    },
+    {
+      "hasLayer": "road-motorway",
+      "checkLayer": "road-motorway_link"
+    },
+    {
+      "hasLayer": "road-trunk",
+      "checkLayer": "road-trunk_link"
+    }
+  ],
+  "Satellite Streets": [
+    {
+      "hasLayer": "place_label_town",
+      "checkLayer": "place_label_city_big"
+    },
+    {
+      "hasLayer": "motorway",
+      "checkLayer": "street"
+    },
+    {
+      "hasLayer": "main",
+      "checkLayer": "road-trunk_link"
     }
   ]
 }

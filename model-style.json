@@ -315,7 +315,7 @@
       "id": "bridge-rail"
     },
     {
-      "id": "road-motorway",
+      "id": "road-motorway_ref",
       "ref": "road-motorway-case"
     },
     {
@@ -364,7 +364,7 @@
       "source-layer": "road"
       },
       {
-        "id": "road-motorway_link",
+        "id": "road-motorway_link_ref",
         "ref": "road-motorway_link-case"
       },
       {
@@ -409,7 +409,7 @@
         "source-layer": "road"
       },
       {
-        "id": "road-trunk_link",
+        "id": "road-trunk_link_ref",
         "ref": "road-trunk_link-case"
       },
       {
@@ -431,7 +431,7 @@
         "source-layer": "road"
       },
       {
-        "id": "road-trunk",
+        "id": "road-trunk_ref",
         "ref": "road-trunk-case"
       },
       {
@@ -476,8 +476,32 @@
             "E"
           ]
         ],
-        "source": "composite",
         "id": "place-city-lg-s",
+        "source-layer": "place_label"
+      },
+      {
+        "filter": [
+          "all",
+          [
+            "==",
+            "type",
+            "city"
+          ],
+          [
+            "<=",
+            "scalerank",
+            1
+          ],
+          [
+            "in",
+            "ldir",
+            "S",
+            "SE",
+            "SW",
+            "E"
+          ]
+        ],
+        "id": "place_label_city_large_s",
         "source-layer": "place_label"
       },
       {
@@ -544,23 +568,6 @@
           "source-layer": "place_label"
         },
     {
-      "id": "place_label_town",
-      "source-layer": "place_label",
-      "filter": [
-        "all",
-        [
-          "==",
-          "type",
-          "town"
-        ],
-        [
-          "==",
-          "$type",
-          "Point"
-        ]
-      ]
-    },
-    {
       "id": "place_label_city_l",
       "type": "symbol",
       "source": "mapbox",
@@ -583,6 +590,192 @@
           "Point"
         ]
       ]
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+        "all",
+        [
+          "in",
+          "type",
+          "town",
+          "village",
+          "hamlet",
+          "island",
+          "islet",
+          "archipelago"
+        ],
+        [
+          "in",
+          "scalerank",
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+          ]
+        ]
+      ],
+      "id": "place_label_other",
+      "source-layer": "place_label"
+    },
+    {
+      "filter": [
+        "==",
+        "class",
+        "park"
+      ],
+      "id": "landuse_park",
+      "source-layer": "landuse"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "!in",
+          "structure",
+          "bridge",
+          "tunnel"
+        ]
+      ],
+      "id": "road-motorway",
+      "source-layer": "road"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway_link"
+        ],
+        [
+          "!in",
+          "structure",
+          "bridge",
+          "tunnel"
+        ]
+      ],
+      "id": "road-motorway_link",
+      "source-layer": "road"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "trunk"
+        ],
+        [
+          "!in",
+          "structure",
+          "bridge",
+          "tunnel"
+        ]
+      ],
+    "id": "road-trunk",
+    "source-layer": "road"
+    },
+    {
+      "filter": [
+        "==",
+        "class",
+        "national_park"
+      ],
+      "id": "landuse_overlay_national_park",
+      "source-layer": "landuse_overlay"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "==",
+          "type",
+          "town"
+        ]
+      ],
+      "id": "place_label_town",
+      "source-layer": "place_label"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "all",
+          [
+              "==",
+              "type",
+              "city"
+          ],
+          [
+              "in",
+              "scalerank",
+              0,
+              1
+            ]
+          ]
+      ],
+      "id": "place_label_city_big",
+      "source-layer": "place_label"
+    },
+    {
+      "filter": [
+        "==",
+        "class",
+        "motorway"
+      ],
+      "id": "motorway",
+      "source-layer": "road"
+    },
+    {
+      "filter": [
+        "in",
+        "class",
+        "street",
+        "street_limited",
+        "link",
+        "motorway_link"
+      ],
+      "id": "street",
+      "source-layer": "road"
+    },
+    {
+      "filter": [
+        "in",
+        "class",
+        "trunk",
+        "primary",
+        "secondary",
+        "tertiary"
+      ],
+      "id": "main",
+      "source-layer": "road"
     }
   ]
 }
