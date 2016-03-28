@@ -6,13 +6,12 @@ var mapboxGL = require('../index');
 var compareLayers = require('../layer-test-object.json');
 
 mapboxGL.checkStyles.forEach(function(styles) {
-  test('check if layer ___ exists, layer ____ also exists', function(assert) {
-    var style = require('../styles/' + styles + '.json');
-    console.log(style.name);
-    var modelIndexbyID = _.indexBy(model.layers, 'id'); // sort model layers by it's id (so we can search it)
-    var styleIndexbyID = _.indexBy(style.layers, 'id'); // sort style layers by id
-    // loop thru all the group layers and compare
-    compareLayers[style.name].forEach(function(testLayer) {
+  var style = require('../styles/' + styles + '.json');
+  var modelIndexbyID = _.indexBy(model.layers, 'id'); // sort model layers by it's id (so we can search it)
+  var styleIndexbyID = _.indexBy(style.layers, 'id'); // sort style layers by id
+  // loop thru all the group layers and compare
+  compareLayers[style.name].forEach(function(testLayer) {
+    test('### Check layer dependencies in: ' + style.name, function(assert) {
       var modelID = modelIndexbyID[testLayer.hasLayer];
       var styleID = styleIndexbyID[testLayer.hasLayer];
       if(styleID === undefined || modelID === undefined) {
@@ -24,7 +23,7 @@ mapboxGL.checkStyles.forEach(function(styles) {
           modelID = modelIndexbyID[styleID.ref].filter;
           styleID = styleIndexbyID[styleID.ref].filter;
         }
-        assert.deepEqual(modelID.filter, styleID.filter, 'has ' + testLayer.hasLayer + ', check for ' + testLayer.checkLayer);
+        assert.deepEqual(modelID.filter, styleID.filter, 'has ' + testLayer.hasLayer + ', must have ' + testLayer.checkLayer);
         // find the check layer based on the layer name passed in checkLayer
         var modelIDCheck = modelIndexbyID[testLayer.checkLayer];
         var styleIDCheck = styleIndexbyID[testLayer.checkLayer];
@@ -39,8 +38,8 @@ mapboxGL.checkStyles.forEach(function(styles) {
           assert.deepEqual(modelIDCheck.filter, styleIDCheck.filter, 'has both ' + testLayer.checkLayer + ' and  ' + testLayer.hasLayer);
         }
       }
+      // end assertion
+      assert.end();
     });
-    // end assertion
-    assert.end();
   });
 });
