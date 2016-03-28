@@ -5,10 +5,9 @@ var model = require('../model-style.json');
 var mapboxGL = require('../index');
 var compareLayers = require('../layer-test-object.json');
 
-test('check if layer ___ exists, layer ____ also exists', function(assert) {
-  mapboxGL.checkStyles.forEach(function(styles) {
+mapboxGL.checkStyles.forEach(function(styles) {
+  test('check if layer ___ exists, layer ____ also exists', function(assert) {
     var style = require('../styles/' + styles + '.json');
-    console.log('');
     console.log(style.name);
     var modelIndexbyID = _.indexBy(model.layers, 'id'); // sort model layers by it's id (so we can search it)
     var styleIndexbyID = _.indexBy(style.layers, 'id'); // sort style layers by id
@@ -18,7 +17,7 @@ test('check if layer ___ exists, layer ____ also exists', function(assert) {
       var styleID = styleIndexbyID[testLayer.hasLayer];
       if(styleID === undefined || modelID === undefined) {
         // can you tell the error what to see for ok vs. not ok?
-        assert.error(!undefined, 'check that layer id: ' + testLayer.hasLayer + ' exists in ' + style.name);
+        assert.fail('check that layer id: ' + testLayer.hasLayer + ' exists in ' + style.name);
       } else {
         // check if the model has a ref to check
         if(styleID.ref) {
@@ -26,13 +25,12 @@ test('check if layer ___ exists, layer ____ also exists', function(assert) {
           styleID = styleIndexbyID[styleID.ref].filter;
         }
         assert.deepEqual(modelID.filter, styleID.filter, 'has ' + testLayer.hasLayer + ', check for ' + testLayer.checkLayer);
-
-        // loop thru all the group layers and compare
+        // find the check layer based on the layer name passed in checkLayer
         var modelIDCheck = modelIndexbyID[testLayer.checkLayer];
         var styleIDCheck = styleIndexbyID[testLayer.checkLayer];
         // check if the model has a ref to check
         if(styleIDCheck === undefined || modelIDCheck === undefined) {
-          assert.error(!undefined, 'check that layer id: ' + testLayer.checkLayer + ' exists in ' + style.name);
+          assert.fail('check that layer id: ' + testLayer.checkLayer + ' exists in ' + style.name);
         } else {
           if(styleIDCheck.ref) {
             modelIDCheck = modelIndexbyID[styleIDCheck.ref].filter;
@@ -42,7 +40,7 @@ test('check if layer ___ exists, layer ____ also exists', function(assert) {
         }
       }
     });
+    // end assertion
+    assert.end();
   });
-  // end assertion
-  assert.end();
 });
