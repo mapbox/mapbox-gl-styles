@@ -1,11 +1,9 @@
 var _ = require('underscore-node');
 var test = require('tape');
-// pass in objects
-// var model = require('../model-style.json');
-var mapboxGL = require('../index');
+var mapboxGL = require('../../index');
 
 mapboxGL.checkStyles.forEach(function(styles) {
-  var style = require('../styles/' + styles + '.json');
+  var style = require('../../styles/' + styles + '.json');
   var foundBridge = false;
   var foundTunnel = false;
   var includeFord = true;

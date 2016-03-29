@@ -1,12 +1,12 @@
 var _ = require('underscore-node');
 var test = require('tape');
 // pass in objects
-var model = require('../model-style.json');
-var mapboxGL = require('../index');
-var compareLayers = require('../layer-test-object.json');
+var model = require('../core_model-style.json');
+var mapboxGL = require('../../index');
+var compareLayers = require('../core_layer-compare.json');
 
 mapboxGL.checkStyles.forEach(function(styles) {
-  var style = require('../styles/' + styles + '.json');
+  var style = require('../../styles/' + styles + '.json');
   var modelIndexbyID = _.indexBy(model.layers, 'id'); // sort model layers by it's id (so we can search it)
   var styleIndexbyID = _.indexBy(style.layers, 'id'); // sort style layers by id
   // loop thru all the group layers and compare
