@@ -8,7 +8,7 @@ mapboxGL.checkStyles.forEach(function(styles) {
   var style = require('../styles/' + styles + '.json');
   var foundBridge = false;
   var foundTunnel = false;
-  var foundFord = false;
+  var includeFord = true;
   test('### Check for mandatory layer styling in : ' + style.name, function(assert) {
     // loop thru all the layers
     style.layers.forEach(function(testLayer) {
@@ -24,11 +24,15 @@ mapboxGL.checkStyles.forEach(function(styles) {
         } if(flatArray[inList-1] !== '!in' && flatArray[inList-1] == '==' && flatArray[inList+1] == 'tunnel' || flatArray[inList+2] == 'tunnel') {
           // if it's not '!in' is == and bridge is either next or after next, it must be bridge
           foundTunnel = true;
+        } // check that ford is not excluded
+        if(flatArray[inList-1] === '!in' && flatArray[inList-1] !== '==' && flatArray[inList+1] === 'ford' || flatArray[inList+2] == 'ford' || flatArray[inList+2] == 'ford') {
+          includeFord = false;
         }
       }
     }); // end layer loop
-    assert.ok(foundBridge,'Looking for bridge styling...');
-    assert.ok(foundTunnel,'Looking for tunnel styling...');
+    assert.ok(foundBridge,'Check bridge styling.');
+    assert.ok(foundTunnel,'Check tunnel styling.');
+    assert.ok(includeFord,'Check ford styling.');
     assert.end();
   }); // end test
 }); // end style loop
