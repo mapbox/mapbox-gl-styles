@@ -9,6 +9,7 @@ mapboxGL.checkStyles.forEach(function(styles) {
   var foundBridge = false;
   var foundTunnel = false;
   var includeFord = true;
+  var hasDisputed = false;
   test('### Check for mandatory layer styling in : ' + style.name, function(assert) {
     // loop thru all the layers
     style.layers.forEach(function(testLayer) {
@@ -29,10 +30,21 @@ mapboxGL.checkStyles.forEach(function(styles) {
           includeFord = false;
         }
       }
+      // check for disputed styling
+      var hasEquals = _.contains(flatArray, '==');
+      var hasAdmin = _.contains(flatArray, 'admin_level');
+      if(hasEquals && hasAdmin) {
+        var inList = _.indexOf(flatArray, 'disputed');
+        if(flatArray[inList-1] === '==' && flatArray[inList+1] === 1) {
+          console.log(flatArray);
+          hasDisputed = true;
+        }
+      }
     }); // end layer loop
     assert.ok(foundBridge,'Check bridge styling.');
     assert.ok(foundTunnel,'Check tunnel styling.');
     assert.ok(includeFord,'Check ford styling.');
+    assert.ok(hasDisputed,'Check disputed boundary styling.');
     assert.end();
   }); // end test
 }); // end style loop
