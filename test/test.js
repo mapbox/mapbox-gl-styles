@@ -2,6 +2,7 @@ var test = require('tape');
 var mapboxGL = require('../index');
 var fs = require('fs');
 
+
 // check that all v7 styles exist
 test('.styles v7 and v8', function(t) {
   t.test('should return all styles', function(t) {
@@ -66,14 +67,14 @@ test('.maki v8 - checks all maki icons against list of expected maki icons', fun
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
       if(style === 'emerald-v8') {
-         mapboxGL.emeraldMaki.forEach(function(name) {
+        mapboxGL.emeraldMaki.forEach(function(name) {
           t.ok(files.indexOf(name + '_icon.svg') !== -1, name + '_icon.svg' + ' in ' + style);
         });
       } else {
-          mapboxGL.maki.forEach(function(name) {
-            t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
-            t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-          });
+        mapboxGL.maki.forEach(function(name) {
+          t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+          t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
+        });
       }
       if (i === styles.length - 1) {
         t.end();
@@ -116,7 +117,7 @@ test('.rail v8 (maki) - checks all maki rail icons against list of expected', fu
             if(j === styleMaki.length - 1) {
               t.end();
             }
-        } else {
+          } else {
             mapboxGL.railMaki.forEach(function(name, k) {
               if(styleValue[j] === '{maki}-11') {
                 t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
@@ -157,10 +158,10 @@ test('.rail v8 (network) - checks all network rail icons against list of expecte
           t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
         });
       } else {
-          mapboxGL.railNetwork.forEach(function(name) {
-            t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-          });
-        }
+        mapboxGL.railNetwork.forEach(function(name) {
+          t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
+        });
+      }
       if (i === styleNetworks.length - 1) {
         t.end();
       }
@@ -180,7 +181,7 @@ test('.shields v8 - checks all highway shields against list of expected', functi
       }
     }
   });
-          console.log('RETURN SHIELDS ' + highwayShields);
+
   highwayShields.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
@@ -207,14 +208,14 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
   mapboxGL.spriteStyles.forEach(function(style, i) {
     var totalLayers = mapboxGL.styles[style].layers;
     var image = [];
-    for(j=1; j < totalLayers.length; j++) {
+    for(var j=1; j < totalLayers.length; j++) {
       var sourceLayer = mapboxGL.styles[style].layers[j]['source-layer'];
       var layerType = mapboxGL.styles[style].layers[j].type;
       if(layerType === 'background' && mapboxGL.styles[style].layers[j].paint['background-pattern'] !== undefined) {
         image.push(mapboxGL.styles[style].layers[j].paint['background-pattern']);
       } else if(layerType === 'line' && mapboxGL.styles[style].layers[j].paint['line-pattern'] !== undefined) {
-          image.push(mapboxGL.styles[style].layers[j].paint['line-pattern']);
-        }
+        image.push(mapboxGL.styles[style].layers[j].paint['line-pattern']);
+      }
       // pull all string values set in this object, because they could be anything
       if(mapboxGL.styles[style].layers[j].layout !== undefined && mapboxGL.styles[style].layers[j].layout['icon-image'] !== undefined) {
         var value = mapboxGL.styles[style].layers[j].layout['icon-image'];
@@ -223,31 +224,31 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
             image.push(value);
           }
         } else {
-            Object.keys(value).forEach(function (key) {
-              var val = value[key];
-              for(k=1; k < val.length; k++) {
-                if(typeof val === 'object') {
-                  var theImage = val[k][1];
-                  if(theImage.indexOf('}') === -1 && theImage.indexOf('{') === -1 && theImage.length) {
-                    // everything that does not include }
-                    image.push(theImage);
-                  }
+          Object.keys(value).forEach(function (key) {
+            var val = value[key];
+            for(var k=1; k < val.length; k++) {
+              if(typeof val === 'object') {
+                var theImage = val[k][1];
+                if(theImage.indexOf('}') === -1 && theImage.indexOf('{') === -1 && theImage.length) {
+                  // everything that does not include }
+                  image.push(theImage);
                 }
               }
-            });
-          }
-        } // end sting if */
+            }
+          });
+        }
+      } // end sting if */
     } // end for loop in each layer
-      stylesWithImages.push({
-        style: style,
-        images: image
-      });
+    stylesWithImages.push({
+      style: style,
+      images: image
+    });
   }); // end forEach
   // loop thru check images
   stylesWithImages.forEach(function(styleWithImages, i) {
     fs.readdir('./sprites/' + styleWithImages.style + '/_svg', function(err, files) {
       if (err) t.fail(err);
-      for(l=0; l < styleWithImages.images.length; l++) {
+      for(var l=0; l < styleWithImages.images.length; l++) {
         t.ok(files.indexOf(styleWithImages.images[l] + '.svg') !== -1, styleWithImages.images[l] + '.svg' + ' in ' + styleWithImages.style);
       }
       if (i === stylesWithImages.length - 1) {

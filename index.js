@@ -33,6 +33,13 @@ var spriteStyles = [
   'emerald-v8'
 ];
 
+var checkStyles = [
+  'streets-v8',
+  'light-v8',
+  'dark-v8',
+  'satellite-hybrid-v8'
+];
+
 var maki = [
   'airfield',
   'alcohol-shop',
@@ -412,6 +419,7 @@ var railMakiEmerald = [
 
 
 module.exports.spriteStyles = spriteStyles;
+module.exports.checkStyles = checkStyles;
 module.exports.maki = maki;
 module.exports.railNetwork = railNetwork;
 module.exports.railNetworkEmerald = railNetworkEmerald;
@@ -422,21 +430,21 @@ module.exports.railMaki = railMaki;
 module.exports.railMakiEmerald = railMakiEmerald;
 
 styles.forEach(function(style) {
-    if(style.split('.')[1]) {
-        module.exports.styles[style] = require('./styles/' + style.split('.')[1]);
-    } else {
-        module.exports.styles[style] = require('./styles/' + style);
-    }
+  if(style.split('.')[1]) {
+    module.exports.styles[style] = require('./styles/' + style.split('.')[1]);
+  } else {
+    module.exports.styles[style] = require('./styles/' + style);
+  }
 });
 
-spriteStyles.forEach(function(style){
-    if (style.indexOf('v8') > -1) {
-        module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
-            .map(function(im) {
-                 return {
-                    svg: fs.readFileSync(im),
-                    id: path.basename(im).replace('.svg', '')
-                };
-            });
-    }
+spriteStyles.forEach(function(style) {
+  if (style.indexOf('v8') > -1) {
+    module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
+     .map(function(im) {
+       return {
+         svg: fs.readFileSync(im),
+         id: path.basename(im).replace('.svg', '')
+       };
+     });
+  }
 });

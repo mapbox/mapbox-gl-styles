@@ -4016,7 +4016,7 @@
             "metadata": {
                 "mapbox:group": "1444855786460.0557"
             },
-            "id": "road-trunk_link",
+            "id": "road-trunk_link_ref",
             "paint": {
                 "line-width": {
                     "base": 1.5,
@@ -4045,7 +4045,7 @@
             "metadata": {
                 "mapbox:group": "1444855786460.0557"
             },
-            "id": "road-motorway_link",
+            "id": "road-motorway_link_ref",
             "paint": {
                 "line-width": {
                     "base": 1.5,
@@ -4418,7 +4418,7 @@
             "metadata": {
                 "mapbox:group": "1444855786460.0557"
             },
-            "id": "road-trunk",
+            "id": "road-trunk_ref",
             "paint": {
                 "line-width": {
                     "base": 1.5,
@@ -4518,7 +4518,7 @@
             "metadata": {
                 "mapbox:group": "1444855786460.0557"
             },
-            "id": "road-motorway",
+            "id": "road-motorway_ref",
             "paint": {
                 "line-width": {
                     "base": 1.5,
