@@ -1,3 +1,14 @@
+/*
+This test checks that 'hasLayer' data value is styled in a GL core style, that the required data is also styled,
+the 'checkLayer'. These values are stored in 'test/core_layer-compare.json' in an array of objects
+for each GL core style based on their naming conventions.
+
+Test looks for specific layer 'id' contained in style's .json file, then checks that layer's 'filter'
+values against expected layer filter from '/test/core_model-style.json'. First it checks the
+'hasLayer' value is included in the style.json then it checks that the 'checkLayer' value is included.
+If either are not included it returns an error.
+*/
+
 var _ = require('underscore-node');
 var test = require('tape');
 // pass in objects

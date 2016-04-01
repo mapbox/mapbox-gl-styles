@@ -1,3 +1,14 @@
+/*
+This test checks to make sure bridge, tunnel, and disputed boundaries are styled in each style's .json.
+It specifically checks that '==' and 'structure' values are set in the data filter, and then checks
+the order of the array to ensure that the style is including either 'bridge' or 'tunnel'. For 'ford'
+value, the test checks that the style is not excluding 'ford' values in it's filter.
+
+The disputed styling test confirms that '==' and 'admin_level' are included in data 'fitler',
+then checks that index of the 'disputed' value sets '==' before it and '1' after it. Indicating that
+disputed boundaries are styled in the filter.
+*/
+
 var _ = require('underscore-node');
 var test = require('tape');
 var mapboxGL = require('../../index');
