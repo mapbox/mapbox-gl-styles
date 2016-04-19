@@ -21,11 +21,6 @@ fs.readFile(inputFile, encoding='utf8', function(err, data){
 	input.sprite = "mapbox://sprites/mapbox/"+styleName;
 	input.glyphs = "mapbox://fonts/mapbox/{fontstack}/{range}.pbf";
 
-	//remove layer interactivity
-	input.layers.forEach(function(layer){
-		delete layer.interactive
-	})
-
 	//name output file after style title
 	fs.writeFileSync(styleName+'.json', JSON.stringify(input, null, 2))
 })
