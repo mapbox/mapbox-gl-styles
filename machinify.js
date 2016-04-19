@@ -27,5 +27,5 @@ fs.readFile(inputFile, encoding='utf8', function(err, data){
 	})
 
 	//name output file after style title
-	fs.writeFileSync(styleName+'.json', JSON.stringify(input))
+	fs.writeFileSync(styleName+'.json', JSON.stringify(input, null, 2))
 })
