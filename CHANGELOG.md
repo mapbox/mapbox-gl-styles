@@ -1,3 +1,9 @@
+## v2.2.10
+
+- Remove deprecated styles: Emerald, Outdoors, Pencil
+- Remove private styles: Streets, Light, Dark
+- Update sprites
+
 ## v1.2.10
 
 - bright-v8 style: Add motorway icons

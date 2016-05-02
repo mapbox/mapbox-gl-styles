@@ -65,16 +65,10 @@ test('.maki v8 - checks all maki icons against list of expected maki icons', fun
   styles.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
       if (err) t.fail(err);
-      if(style === 'emerald-v8') {
-         mapboxGL.emeraldMaki.forEach(function(name) {
-          t.ok(files.indexOf(name + '_icon.svg') !== -1, name + '_icon.svg' + ' in ' + style);
-        });
-      } else {
-          mapboxGL.maki.forEach(function(name) {
-            t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
-            t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-          });
-      }
+      mapboxGL.maki.forEach(function(name) {
+        t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
+        t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
+      });
       if (i === styles.length - 1) {
         t.end();
       }
@@ -87,117 +81,14 @@ var styleMaki = [];
 var styleValue = [];
 mapboxGL.spriteStyles.forEach(function(style, i) {
   var totalLayers = mapboxGL.styles[style].layers;
-  for(var j=0; j < totalLayers.length; j++) {
+  for (var j = 0; j < totalLayers.length; j++) {
     var sourceLayer = mapboxGL.styles[style].layers[j]['source-layer'];
-    if(sourceLayer === 'rail_station_label' && mapboxGL.styles[style].layers[j].layout['icon-image'] !== '{network}') {
+    if (sourceLayer === 'rail_station_label' && mapboxGL.styles[style].layers[j].layout['icon-image'] !== '{network}') {
       var iconImage =  mapboxGL.styles[style].layers[j].layout['icon-image'];
       styleMaki.push(style);
       styleValue.push(mapboxGL.styles[style].layers[j].layout['icon-image']);
     }
   }
-});
-test('.rail v8 (maki) - checks all maki rail icons against list of expected', function(t) {
-  for(var i=0; i < styleMaki.length - 1; i++) {
-    styleMaki.forEach(function(style, j) {
-      fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-        if (err) t.fail(err);
-          if(style === 'emerald-v8') {
-            mapboxGL.railMakiEmerald.forEach(function(name, k) {
-              if(styleValue[j] === '{maki}-11') {
-                t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
-              }
-              if(styleValue[j] === '{maki}-15') {
-                t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-              }
-              if(styleValue[j] === '{maki}') {
-                t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-              }
-            });
-            if(j === styleMaki.length - 1) {
-              t.end();
-            }
-        } else {
-            mapboxGL.railMaki.forEach(function(name, k) {
-              if(styleValue[j] === '{maki}-11') {
-                t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
-              }
-              if(styleValue[j] === '{maki}-15') {
-                t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-              }
-              if(styleValue[j] === '{maki}') {
-                t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-              }
-            });
-            if(j === styleMaki.length - 1) {
-              t.end();
-            }
-          }
-      });
-    });
-  }
-});
-
-// checks all `network` rail icons against list of expected
-test('.rail v8 (network) - checks all network rail icons against list of expected', function(t) {
-  var styleNetworks = []; // an array to hold the styles that have ^^
-  mapboxGL.spriteStyles.forEach(function(style, i) {
-    var totalLayers = mapboxGL.styles[style].layers;
-    for(i=0; i < totalLayers.length; i++) {
-      var sourceLayer = mapboxGL.styles[style].layers[i]['source-layer'];
-      if(sourceLayer === 'rail_station_label' && mapboxGL.styles[style].layers[i].layout['icon-image'] == '{network}') {
-        styleNetworks.push(style);
-      }
-    }
-  });
-  styleNetworks.forEach(function(style, i) {
-    fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-      if (err) t.fail(err);
-      if(style === 'emerald-v8') {
-        mapboxGL.railNetworkEmerald.forEach(function(name) {
-          t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-        });
-      } else {
-          mapboxGL.railNetwork.forEach(function(name) {
-            t.ok(files.indexOf(name + '.svg') !== -1, name + '.svg' + ' in ' + style);
-          });
-        }
-      if (i === styleNetworks.length - 1) {
-        t.end();
-      }
-    });
-  });
-});
-
-// checks all highway shields against list of expected
-test('.shields v8 - checks all highway shields against list of expected', function(t) {
-  var highwayShields = [];
-  mapboxGL.spriteStyles.forEach(function(style, i) {
-    var totalLayers = mapboxGL.styles[style].layers;
-    for(i=0; i < totalLayers.length; i++) {
-      var sourceLayer = mapboxGL.styles[style].layers[i]['source-layer'];
-      if(sourceLayer === 'road_label' && mapboxGL.styles[style].layers[i].layout['icon-image'] == '{shield}-{reflen}') {
-        highwayShields.push(style);
-      }
-    }
-  });
-          console.log('RETURN SHIELDS ' + highwayShields);
-  highwayShields.forEach(function(style, i) {
-    fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-      if (err) t.fail(err);
-      if(style === 'emerald-v8') {
-        mapboxGL.emeraldShields.forEach(function(name) {
-          t.ok(files.indexOf(name) !== -1, name + ' in ' + style);
-        });
-      } else {
-        mapboxGL.shields.forEach(function(name) {
-          t.ok(files.indexOf(name) !== -1, name + ' in ' + style);
-        });
-      }
-      if (i === highwayShields.length - 1) {
-        t.end();
-      }
-    });
-  });
 });
 
 // checks all layers that use an image, stores images names, checks for images in proper style folders
@@ -207,7 +98,7 @@ test('.all-image-test v8 - checks all layers that use an image, stores images na
   mapboxGL.spriteStyles.forEach(function(style, i) {
     var totalLayers = mapboxGL.styles[style].layers;
     var image = [];
-    for(j=1; j < totalLayers.length; j++) {
+    for (var j = 1; j < totalLayers.length; j++) {
       var sourceLayer = mapboxGL.styles[style].layers[j]['source-layer'];
       var layerType = mapboxGL.styles[style].layers[j].type;
       if(layerType === 'background' && mapboxGL.styles[style].layers[j].paint['background-pattern'] !== undefined) {
