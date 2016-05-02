@@ -34,11 +34,22 @@ test('.sprite names', function(t) {
     Object.keys(mapboxGL.styles).forEach(function(s) {
       var version = mapboxGL.styles[s].version;
       var name = mapboxGL.styles[s].name;
-      if (version === 8 && name !== 'Empty') {
+      if (version >= 8 && name !== 'Empty') {
         t.equal(mapboxGL.styles[s].sprite, 'mapbox://sprites/mapbox/' + s, 'References mapbox sprites');
       }
     });
     t.end();
+  });
+  t.end();
+});
+
+// Metadata
+test('.metadata', function(t) {
+  Object.keys(mapboxGL.styles).forEach(function(s) {
+    if (s.indexOf('-v9') !== -1) {
+      t.equal(mapboxGL.styles[s].metadata['mapbox:type'], 'template', 'Type metadata for ' + mapboxGL.styles[s].name);
+      t.equal(mapboxGL.styles[s].metadata['mapbox:autocomposite'], true, 'autocomposite metadata for ' + mapboxGL.styles[s].name);
+    }
   });
   t.end();
 });
@@ -48,7 +59,7 @@ test('.glyphs', function(t) {
   t.test('should return properly referenced fontstacks', function(t) {
     Object.keys(mapboxGL.styles).forEach(function(s) {
       var version = mapboxGL.styles[s].version;
-      if (version > 8) {
+      if (version >= 8) {
         var name = mapboxGL.styles[s].name;
         t.equal(mapboxGL.styles[s].glyphs, 'mapbox://fonts/mapbox/{fontstack}/{range}.pbf', 'References mapbox glyphs for ' + name);
       }

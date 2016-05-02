@@ -3,6 +3,7 @@
     "name": "Bright",
     "metadata": {
         "mapbox:autocomposite": true,
+        "mapbox:type": "template",
         "mapbox:groups": {
             "1444849364238.8171": {
                 "name": "Buildings",
