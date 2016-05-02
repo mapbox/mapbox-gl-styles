@@ -5,32 +5,26 @@ module.exports.styles = {};
 module.exports.sprites = {};
 
 var styles = [
-  'mapbox.dark-v7',
-  'mapbox.light-v7',
-  'mapbox.emerald-v7',
-  'mapbox.streets-v7',
   'mapbox.bright-v7',
   'mapbox.empty-v7',
   'mapbox.basic-v7',
-  'streets-v8',
-  'light-v8',
-  'dark-v8',
   'bright-v8',
   'basic-v8',
   'empty-v8',
   'satellite-v8',
-  'satellite-hybrid-v8',
-  'emerald-v8'
+  'bright-v9',
+  'basic-v9',
+  'empty-v9',
+  'satellite-v9'
+
 ];
 
 var spriteStyles = [
-  'streets-v8',
-  'light-v8',
-  'dark-v8',
   'bright-v8',
   'basic-v8',
-  'satellite-hybrid-v8',
-  'emerald-v8'
+  'bright-v9',
+  'basic-v9',
+  'satellite-v9'
 ];
 
 var maki = [
@@ -162,103 +156,6 @@ var railNetwork = [
   'tokyo-metro',
   'vienna-u-bahn',
   'washington-metro'
-];
-
-var railNetworkEmerald = [
-  'barcelona-metro',
-  'boston-t',
-  'chongqing-rail-transit',
-  'de-s-bahn',
-  'de-s-bahn.de-u-bahn',
-  'de-u-bahn',
-  'delhi-metro',
-  'gb-national-rail',
-  'gb-national-rail.london-dlr',
-  'gb-national-rail.london-dlr.london-overground.london-tfl-rail.london-underground',
-  'gb-national-rail.london-dlr.london-overground.london-underground',
-  'gb-national-rail.london-dlr.london-underground',
-  'gb-national-rail.london-overground',
-  'gb-national-rail.london-overground.london-tfl-rail.london-underground',
-  'gb-national-rail.london-overground.london-underground',
-  'gb-national-rail.london-tfl-rail',
-  'gb-national-rail.london-tfl-rail.london-overground',
-  'gb-national-rail.london-tfl-rail.london-underground',
-  'gb-national-rail.london-underground',
-  'hong-kong-mtr',
-  'kiev-metro',
-  'london-dlr',
-  'london-dlr.london-tfl-rail',
-  'london-dlr.london-tfl-rail.london-underground',
-  'london-dlr.london-underground',
-  'london-overground',
-  'london-overground.london-tfl-rail',
-  'london-overground.london-tfl-rail.london-underground',
-  'london-overground.london-underground',
-  'london-tfl-rail',
-  'london-tfl-rail.london-underground',
-  'london-underground',
-  'madrid-metro',
-  'mexico-city-metro',
-  'milan-metro',
-  'moscow-metro',
-  'new-york-subway',
-  'osaka-subway',
-  'oslo-metro',
-  'paris-metro',
-  'paris-metro.paris-rer',
-  'paris-rer',
-  'paris-rer.paris-transilien',
-  'paris-transilien',
-  'philadelphia-septa',
-  'san-francisco-bart',
-  'singapore-mrt',
-  'stockholm-metro',
-  'taipei-metro',
-  'tokyo-metro',
-  'vienna-u-bahn',
-  'washington-metro'
-];
-
-var emeraldShields = [
-  'default_2.svg',
-  'default_3.svg',
-  'default_4.svg',
-  'default_5.svg',
-  'default_6.svg',
-  'us-state-2.svg',
-  'us-state-3.svg',
-  'us-state-4.svg',
-  'us-highway-2.svg',
-  'us-highway-3.svg',
-  'us-highway-4.svg',
-  'interstate_2.svg',
-  'interstate_3.svg'
-];
-
-var emeraldMaki = [
-  'school',
-  'museum',
-  'library',
-  'monument',
-  'hospital',
-  'fire-station',
-  'religious-christian',
-  'religious-muslim',
-  'religious-jewish',
-  'oneway_road',
-  'oneway_motorway',
-  'post',
-  'embassy',
-  'police',
-  'prison',
-  'college',
-  'harbor',
-  'airport',
-  'airfield',
-  'park',
-  'golf',
-  'zoo',
-  'cemetery'
 ];
 
 var shields = [
@@ -403,23 +300,11 @@ var railMaki = [
   'entrance'
 ];
 
-var railMakiEmerald = [
-  'rail',
-  'rail-metro',
-  'rail-light'
-];
-
-
-
 module.exports.spriteStyles = spriteStyles;
 module.exports.maki = maki;
 module.exports.railNetwork = railNetwork;
-module.exports.railNetworkEmerald = railNetworkEmerald;
-module.exports.emeraldShields = emeraldShields;
-module.exports.emeraldMaki = emeraldMaki;
 module.exports.shields = shields;
 module.exports.railMaki = railMaki;
-module.exports.railMakiEmerald = railMakiEmerald;
 
 styles.forEach(function(style) {
     if(style.split('.')[1]) {
@@ -430,13 +315,13 @@ styles.forEach(function(style) {
 });
 
 spriteStyles.forEach(function(style){
-    if (style.indexOf('v8') > -1) {
-        module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
-            .map(function(im) {
-                 return {
-                    svg: fs.readFileSync(im),
-                    id: path.basename(im).replace('.svg', '')
-                };
-            });
+    if (style.indexOf('v8') > -1 || style.indexOf('v9') > -1) {
+      module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
+        .map(function(im) {
+           return {
+            svg: fs.readFileSync(im),
+            id: path.basename(im).replace('.svg', '')
+          };
+        });
     }
 });
