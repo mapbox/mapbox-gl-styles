@@ -47,7 +47,8 @@ test('.sprite names', function(t) {
 test('.metadata', function(t) {
   Object.keys(mapboxGL.styles).forEach(function(s) {
     if (s.indexOf('-v9') !== -1) {
-      t.equal(mapboxGL.styles[s].metadata['mapbox:type'], 'template', 'Type metadata for ' + mapboxGL.styles[s].name);
+      var metadataAssertion = mapboxGL.styles[s].name.indexOf('Satellite') !== -1 ? 'default' : 'template';
+      t.equal(mapboxGL.styles[s].metadata['mapbox:type'], metadataAssertion, 'Type metadata for ' + mapboxGL.styles[s].name);
       t.equal(mapboxGL.styles[s].metadata['mapbox:autocomposite'], true, 'autocomposite metadata for ' + mapboxGL.styles[s].name);
     }
   });
