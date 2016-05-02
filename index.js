@@ -5,32 +5,18 @@ module.exports.styles = {};
 module.exports.sprites = {};
 
 var styles = [
-  'mapbox.dark-v7',
-  'mapbox.light-v7',
-  'mapbox.emerald-v7',
-  'mapbox.streets-v7',
   'mapbox.bright-v7',
   'mapbox.empty-v7',
   'mapbox.basic-v7',
-  'streets-v8',
-  'light-v8',
-  'dark-v8',
   'bright-v8',
   'basic-v8',
   'empty-v8',
-  'satellite-v8',
-  'satellite-hybrid-v8',
-  'emerald-v8'
+  'satellite-v8'
 ];
 
 var spriteStyles = [
-  'streets-v8',
-  'light-v8',
-  'dark-v8',
   'bright-v8',
-  'basic-v8',
-  'satellite-hybrid-v8',
-  'emerald-v8'
+  'basic-v8'
 ];
 
 var maki = [
