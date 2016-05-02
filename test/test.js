@@ -3,7 +3,7 @@ var mapboxGL = require('../index');
 var fs = require('fs');
 
 // check that all v7 styles exist
-test('.styles v7 and v8', function(t) {
+test('.styles', function(t) {
   t.test('should return all styles', function(t) {
     Object.keys(mapboxGL.styles).forEach(function(style) {
       t.ok(mapboxGL.styles[style].version, 'Check for version');
@@ -16,10 +16,9 @@ test('.styles v7 and v8', function(t) {
 });
 
 // check that all sprites exist
-test('.sprites v8', function(t) {
-  t.test('should return all v8 sprites', function(t) {
+test('.sprites', function(t) {
+  t.test('should return all sprites', function(t) {
     Object.keys(mapboxGL.sprites).forEach(function(sprite) {
-      t.ok(sprite.indexOf('v8') > -1);
       t.ok(mapboxGL.sprites[sprite].length > 0);
       t.ok(mapboxGL.sprites[sprite][0].id);
       t.equal(typeof mapboxGL.sprites[sprite][0].svg, 'object');
@@ -30,13 +29,13 @@ test('.sprites v8', function(t) {
 });
 
 // check that sprites are properly named
-test('.sprite names v8', function(t) {
-  t.test('should return properly referenced sprites in v8', function(t) {
-    Object.keys(mapboxGL.styles).forEach(function(stylesv8) {
-      var version = mapboxGL.styles[stylesv8].version;
-      var name = mapboxGL.styles[stylesv8].name;
+test('.sprite names', function(t) {
+  t.test('should return properly referenced sprites in', function(t) {
+    Object.keys(mapboxGL.styles).forEach(function(s) {
+      var version = mapboxGL.styles[s].version;
+      var name = mapboxGL.styles[s].name;
       if (version === 8 && name !== 'Empty') {
-        t.equal(mapboxGL.styles[stylesv8].sprite, 'mapbox://sprites/mapbox/' + stylesv8, 'References mapbox sprites');
+        t.equal(mapboxGL.styles[s].sprite, 'mapbox://sprites/mapbox/' + s, 'References mapbox sprites');
       }
     });
     t.end();
@@ -45,13 +44,13 @@ test('.sprite names v8', function(t) {
 });
 
 // check that fonts are properly named
-test('.glyphs v8', function(t) {
-  t.test('should return properly referenced fontstacks in v8', function(t) {
-    Object.keys(mapboxGL.styles).forEach(function(stylesv8) {
-      var version = mapboxGL.styles[stylesv8].version;
-      if (version === 8) {
-        var name = mapboxGL.styles[stylesv8].name;
-        t.equal(mapboxGL.styles[stylesv8].glyphs, 'mapbox://fonts/mapbox/{fontstack}/{range}.pbf', 'References mapbox glyphs for ' + name);
+test('.glyphs', function(t) {
+  t.test('should return properly referenced fontstacks', function(t) {
+    Object.keys(mapboxGL.styles).forEach(function(s) {
+      var version = mapboxGL.styles[s].version;
+      if (version > 8) {
+        var name = mapboxGL.styles[s].name;
+        t.equal(mapboxGL.styles[s].glyphs, 'mapbox://fonts/mapbox/{fontstack}/{range}.pbf', 'References mapbox glyphs for ' + name);
       }
     });
     t.end();
@@ -60,7 +59,7 @@ test('.glyphs v8', function(t) {
 });
 
 // checks all maki icons against list of expected
-test('.maki v8 - checks all maki icons against list of expected maki icons', function(t) {
+test('.maki - checks all maki icons against list of expected maki icons', function(t) {
   var styles = mapboxGL.spriteStyles;
   styles.forEach(function(style, i) {
     fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
@@ -92,7 +91,7 @@ mapboxGL.spriteStyles.forEach(function(style, i) {
 });
 
 // checks all layers that use an image, stores images names, checks for images in proper style folders
-test('.all-image-test v8 - checks all layers that use an image, stores images names, checks for images in proper style folders', function(t) {
+test('.all-image-test - checks all layers that use an image, stores images names, checks for images in proper style folders', function(t) {
   // Collect each style id and each styles coors. icons into an array of objects
   var stylesWithImages = [];
   mapboxGL.spriteStyles.forEach(function(style, i) {

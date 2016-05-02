@@ -11,12 +11,20 @@ var styles = [
   'bright-v8',
   'basic-v8',
   'empty-v8',
-  'satellite-v8'
+  'satellite-v8',
+  'bright-v9',
+  'basic-v9',
+  'empty-v9',
+  'satellite-v9'
+
 ];
 
 var spriteStyles = [
   'bright-v8',
-  'basic-v8'
+  'basic-v8',
+  'bright-v9',
+  'basic-v9',
+  'satellite-v9'
 ];
 
 var maki = [
@@ -307,13 +315,13 @@ styles.forEach(function(style) {
 });
 
 spriteStyles.forEach(function(style){
-    if (style.indexOf('v8') > -1) {
-        module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
-            .map(function(im) {
-                 return {
-                    svg: fs.readFileSync(im),
-                    id: path.basename(im).replace('.svg', '')
-                };
-            });
+    if (style.indexOf('v8') > -1 || style.indexOf('v9') > -1) {
+      module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
+        .map(function(im) {
+           return {
+            svg: fs.readFileSync(im),
+            id: path.basename(im).replace('.svg', '')
+          };
+        });
     }
 });
