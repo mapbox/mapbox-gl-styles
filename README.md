@@ -2,7 +2,7 @@
 
 This repository contains prebuilt Mapbox GL styles for use in Mapbox GL JS or the Mapbox Mobile SDKs and as a starting point for custom maps built with [Mapbox Studio](https://www.mapbox.com/mapbox-studio/).
 
-If you're looking for Mapbox Streets, Mapbox Dark, Mapbox Light, or Mapbox Outdoors, see https://www.mapbox.com/maps//
+If you're looking for Mapbox Streets, Mapbox Dark, Mapbox Light, or Mapbox Outdoors, see https://www.mapbox.com/maps/
 
 ## Versioning
 
