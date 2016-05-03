@@ -1,4 +1,4 @@
-## v2.2.10
+## v2.0.0
 
 - Remove deprecated styles: Emerald, Outdoors, Pencil
 - Remove private styles: Streets, Light, Dark
