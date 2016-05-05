@@ -15,5 +15,5 @@
   "dependencies": {
     "glob": "^5.0.14"
   },
-  "license": "ISC"
+  "license": "BSD-3-Clause"
 }
