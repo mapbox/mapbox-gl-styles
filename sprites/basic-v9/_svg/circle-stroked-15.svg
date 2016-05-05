@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 22 22" width="22" height="22"><title>circle-stroked-15.svg</title><path d="M7.5,0C11.6422,0,15,3.3578,15,7.5S11.6422,15,7.5,15
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" height="21" width="21"><title>circle-stroked-15.svg</title><rect fill="none" x="0" y="0" width="21" height="21"></rect><path fill="rgba(255,255,255,0.25)" transform="translate(3 3)" d="M7.5,0C11.6422,0,15,3.3578,15,7.5S11.6422,15,7.5,15
 	S0,11.6422,0,7.5S3.3578,0,7.5,0z M7.5,1.6666c-3.2217,0-5.8333,2.6117-5.8333,5.8334S4.2783,13.3334,7.5,13.3334
-	s5.8333-2.6117,5.8333-5.8334S10.7217,1.6666,7.5,1.6666z" style="stroke-linejoin:round;stroke-miterlimit:4px;" fill="rgba(255,255,255,0.25)" stroke="rgba(255,255,255,0.25)" stroke-width="2"></path><path fill="#444444" d="M7.5,0C11.6422,0,15,3.3578,15,7.5S11.6422,15,7.5,15
+	s5.8333-2.6117,5.8333-5.8334S10.7217,1.6666,7.5,1.6666z" style="stroke-linejoin:round;stroke-miterlimit:4px;" stroke="rgba(255,255,255,0.25)" stroke-width="2"></path><path fill="#444444" transform="translate(3 3)" d="M7.5,0C11.6422,0,15,3.3578,15,7.5S11.6422,15,7.5,15
 	S0,11.6422,0,7.5S3.3578,0,7.5,0z M7.5,1.6666c-3.2217,0-5.8333,2.6117-5.8333,5.8334S4.2783,13.3334,7.5,13.3334
 	s5.8333-2.6117,5.8333-5.8334S10.7217,1.6666,7.5,1.6666z"></path></svg>
