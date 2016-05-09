@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 22 22" width="22" height="22"><title>airport-15.svg</title><path d="M15,6.8182L15,8.5l-6.5-1
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" height="21" width="21"><title>airport-15.svg</title><rect fill="none" x="0" y="0" width="21" height="21"></rect><path fill="rgba(255,255,255,0.25)" transform="translate(3 3)" d="M15,6.8182L15,8.5l-6.5-1
 	l-0.3182,4.7727L11,14v1l-3.5-0.6818L4,15v-1l2.8182-1.7273L6.5,7.5L0,8.5V6.8182L6.5,4.5v-3c0,0,0-1.5,1-1.5s1,1.5,1,1.5v2.8182
-	L15,6.8182z" style="stroke-linejoin:round;stroke-miterlimit:4px;" fill="rgba(255,255,255,0.25)" stroke="rgba(255,255,255,0.25)" stroke-width="2"></path><path fill="#444444" d="M15,6.8182L15,8.5l-6.5-1
+	L15,6.8182z" style="stroke-linejoin:round;stroke-miterlimit:4px;" stroke="rgba(255,255,255,0.25)" stroke-width="2"></path><path fill="#444444" transform="translate(3 3)" d="M15,6.8182L15,8.5l-6.5-1
 	l-0.3182,4.7727L11,14v1l-3.5-0.6818L4,15v-1l2.8182-1.7273L6.5,7.5L0,8.5V6.8182L6.5,4.5v-3c0,0,0-1.5,1-1.5s1,1.5,1,1.5v2.8182
 	L15,6.8182z"></path></svg>
