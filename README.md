@@ -48,7 +48,7 @@ A blank slate. Build your own map from the ground up.
 
 ## Standard icons
 
-All styles (except Empty) include a standard set of [Maki](https://github.com/mapbox/maki) icons.
+All styles (except Empty) include a standard set of [Maki](https://github.com/mapbox/maki) icons:
 
 <table>
 <tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airfield-11.svg"></td><td><code>airfield-11</code><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airfield-15.svg"></td><td><code>airfield-15</code></tr>
