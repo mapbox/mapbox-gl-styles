@@ -48,170 +48,89 @@ A blank slate. Build your own map from the ground up.
 
 ## Standard icons
 
-All styles except Empty include [these sprite images](https://github.com/mapbox/maki/blob/master/layouts/streets.json) from the Maki project.
+All styles (except Empty) include a standard set of [Maki](https://github.com/mapbox/maki) icons.
 
-When you use an icon in a style, you must specify the icons size as a suffix to its name. Supported size suffixes are `-11` and `-15`, representing an 11px and a 15px square respectively. For example, a 15px airfield icon would be specified as `"icon-image": "airfield-15"`.
-
-|    | icon name |
-|--- | --------- |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airfield-11.svg"> | `airfield-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airfield-15.svg"> | `airfield-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airport-11.svg"> | `airport-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airport-15.svg"> | `airport-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/alcohol-shop-11.svg"> | `alcohol-shop-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/alcohol-shop-15.svg"> | `alcohol-shop-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/amusement-park-11.svg"> | `amusement-park-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/amusement-park-15.svg"> | `amusement-park-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/aquarium-11.svg"> | `aquarium-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/aquarium-15.svg"> | `aquarium-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/art-gallery-11.svg"> | `art-gallery-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/art-gallery-15.svg"> | `art-gallery-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/attraction-11.svg"> | `attraction-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/attraction-15.svg"> | `attraction-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bakery-11.svg"> | `bakery-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bakery-15.svg"> | `bakery-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bank-11.svg"> | `bank-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bank-15.svg"> | `bank-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bar-11.svg"> | `bar-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bar-15.svg"> | `bar-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/beer-11.svg"> | `beer-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/beer-15.svg"> | `beer-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bicycle-11.svg"> | `bicycle-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bicycle-15.svg"> | `bicycle-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bicycle-share-11.svg"> | `bicycle-share-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bicycle-share-15.svg"> | `bicycle-share-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bus-11.svg"> | `bus-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bus-15.svg"> | `bus-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cafe-11.svg"> | `cafe-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cafe-15.svg"> | `cafe-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/campsite-11.svg"> | `campsite-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/campsite-15.svg"> | `campsite-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/car-11.svg"> | `car-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/car-15.svg"> | `car-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/castle-11.svg"> | `castle-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/castle-15.svg"> | `castle-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cemetery-11.svg"> | `cemetery-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cemetery-15.svg"> | `cemetery-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cinema-11.svg"> | `cinema-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cinema-15.svg"> | `cinema-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/circle-11.svg"> | `circle-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/circle-15.svg"> | `circle-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/circle-stroked-11.svg"> | `circle-stroked-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/circle-stroked-15.svg"> | `circle-stroked-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/clothing-store-11.svg"> | `clothing-store-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/clothing-store-15.svg"> | `clothing-store-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/college-11.svg"> | `college-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/college-15.svg"> | `college-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/dentist-11.svg"> | `dentist-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/dentist-15.svg"> | `dentist-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/doctor-11.svg"> | `doctor-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/doctor-15.svg"> | `doctor-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/dog-park-11.svg"> | `dog-park-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/dog-park-15.svg"> | `dog-park-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/drinking-water-11.svg"> | `drinking-water-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/drinking-water-15.svg"> | `drinking-water-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/embassy-11.svg"> | `embassy-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/embassy-15.svg"> | `embassy-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/entrance-11.svg"> | `entrance-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/entrance-15.svg"> | `entrance-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fast-food-11.svg"> | `fast-food-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fast-food-15.svg"> | `fast-food-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/ferry-11.svg"> | `ferry-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/ferry-15.svg"> | `ferry-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fire-station-11.svg"> | `fire-station-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fire-station-15.svg"> | `fire-station-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fuel-11.svg"> | `fuel-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fuel-15.svg"> | `fuel-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/garden-11.svg"> | `garden-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/garden-15.svg"> | `garden-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/golf-11.svg"> | `golf-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/golf-15.svg"> | `golf-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/grocery-11.svg"> | `grocery-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/grocery-15.svg"> | `grocery-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/harbor-11.svg"> | `harbor-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/harbor-15.svg"> | `harbor-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/heliport-11.svg"> | `heliport-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/heliport-15.svg"> | `heliport-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/hospital-11.svg"> | `hospital-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/hospital-15.svg"> | `hospital-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/ice-cream-11.svg"> | `ice-cream-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/ice-cream-15.svg"> | `ice-cream-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/information-11.svg"> | `information-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/information-15.svg"> | `information-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/laundry-11.svg"> | `laundry-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/laundry-15.svg"> | `laundry-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/library-11.svg"> | `library-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/library-15.svg"> | `library-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/lodging-11.svg"> | `lodging-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/lodging-15.svg"> | `lodging-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/monument-11.svg"> | `monument-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/monument-15.svg"> | `monument-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/mountain-11.svg"> | `mountain-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/mountain-15.svg"> | `mountain-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/museum-11.svg"> | `museum-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/museum-15.svg"> | `museum-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/music-11.svg"> | `music-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/music-15.svg"> | `music-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/park-11.svg"> | `park-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/park-15.svg"> | `park-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/pharmacy-11.svg"> | `pharmacy-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/pharmacy-15.svg"> | `pharmacy-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/picnic-site-11.svg"> | `picnic-site-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/picnic-site-15.svg"> | `picnic-site-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/place-of-worship-11.svg"> | `place-of-worship-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/place-of-worship-15.svg"> | `place-of-worship-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/playground-11.svg"> | `playground-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/playground-15.svg"> | `playground-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/police-11.svg"> | `police-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/police-15.svg"> | `police-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/post-11.svg"> | `post-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/post-15.svg"> | `post-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/prison-11.svg"> | `prison-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/prison-15.svg"> | `prison-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-11.svg"> | `rail-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-15.svg"> | `rail-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-light-11.svg"> | `rail-light-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-light-15.svg"> | `rail-light-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-metro-11.svg"> | `rail-metro-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-metro-15.svg"> | `rail-metro-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-christian-11.svg"> | `religious-christian-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-christian-15.svg"> | `religious-christian-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-jewish-11.svg"> | `religious-jewish-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-jewish-15.svg"> | `religious-jewish-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-muslim-11.svg"> | `religious-muslim-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-muslim-15.svg"> | `religious-muslim-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/restaurant-11.svg"> | `restaurant-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/restaurant-15.svg"> | `restaurant-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rocket-11.svg"> | `rocket-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rocket-15.svg"> | `rocket-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/school-11.svg"> | `school-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/school-15.svg"> | `school-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/shop-11.svg"> | `shop-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/shop-15.svg"> | `shop-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/stadium-11.svg"> | `stadium-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/stadium-15.svg"> | `stadium-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/star-11.svg"> | `star-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/star-15.svg"> | `star-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/suitcase-11.svg"> | `suitcase-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/suitcase-15.svg"> | `suitcase-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/swimming-11.svg"> | `swimming-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/swimming-15.svg"> | `swimming-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/theatre-11.svg"> | `theatre-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/theatre-15.svg"> | `theatre-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/toilet-11.svg"> | `toilet-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/toilet-15.svg"> | `toilet-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/town-hall-11.svg"> | `town-hall-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/town-hall-15.svg"> | `town-hall-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/triangle-11.svg"> | `triangle-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/triangle-15.svg"> | `triangle-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/triangle-stroked-11.svg"> | `triangle-stroked-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/triangle-stroked-15.svg"> | `triangle-stroked-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/veterinary-11.svg"> | `veterinary-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/veterinary-15.svg"> | `veterinary-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/volcano-11.svg"> | `volcano-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/volcano-15.svg"> | `volcano-15` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/zoo-11.svg"> | `zoo-11` |
-| <img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/zoo-15.svg"> | `zoo-15` |
+<table>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airfield-11.svg"></td><td>`airfield-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airfield-15.svg"></td><td>`airfield-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airport-11.svg"></td><td>`airport-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/airport-15.svg"></td><td>`airport-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/alcohol-shop-11.svg"></td><td>`alcohol-shop-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/alcohol-shop-15.svg"></td><td>`alcohol-shop-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/amusement-park-11.svg"></td><td>`amusement-park-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/amusement-park-15.svg"></td><td>`amusement-park-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/aquarium-11.svg"></td><td>`aquarium-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/aquarium-15.svg"></td><td>`aquarium-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/art-gallery-11.svg"></td><td>`art-gallery-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/art-gallery-15.svg"></td><td>`art-gallery-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/attraction-11.svg"></td><td>`attraction-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/attraction-15.svg"></td><td>`attraction-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bakery-11.svg"></td><td>`bakery-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bakery-15.svg"></td><td>`bakery-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bank-11.svg"></td><td>`bank-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bank-15.svg"></td><td>`bank-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bar-11.svg"></td><td>`bar-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bar-15.svg"></td><td>`bar-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/beer-11.svg"></td><td>`beer-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/beer-15.svg"></td><td>`beer-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bicycle-11.svg"></td><td>`bicycle-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bicycle-15.svg"></td><td>`bicycle-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bicycle-share-11.svg"></td><td>`bicycle-share-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bicycle-share-15.svg"></td><td>`bicycle-share-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bus-11.svg"></td><td>`bus-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/bus-15.svg"></td><td>`bus-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cafe-11.svg"></td><td>`cafe-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cafe-15.svg"></td><td>`cafe-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/campsite-11.svg"></td><td>`campsite-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/campsite-15.svg"></td><td>`campsite-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/car-11.svg"></td><td>`car-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/car-15.svg"></td><td>`car-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/castle-11.svg"></td><td>`castle-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/castle-15.svg"></td><td>`castle-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cemetery-11.svg"></td><td>`cemetery-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cemetery-15.svg"></td><td>`cemetery-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cinema-11.svg"></td><td>`cinema-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/cinema-15.svg"></td><td>`cinema-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/circle-11.svg"></td><td>`circle-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/circle-15.svg"></td><td>`circle-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/circle-stroked-11.svg"></td><td>`circle-stroked-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/circle-stroked-15.svg"></td><td>`circle-stroked-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/clothing-store-11.svg"></td><td>`clothing-store-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/clothing-store-15.svg"></td><td>`clothing-store-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/college-11.svg"></td><td>`college-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/college-15.svg"></td><td>`college-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/dentist-11.svg"></td><td>`dentist-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/dentist-15.svg"></td><td>`dentist-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/doctor-11.svg"></td><td>`doctor-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/doctor-15.svg"></td><td>`doctor-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/dog-park-11.svg"></td><td>`dog-park-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/dog-park-15.svg"></td><td>`dog-park-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/drinking-water-11.svg"></td><td>`drinking-water-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/drinking-water-15.svg"></td><td>`drinking-water-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/embassy-11.svg"></td><td>`embassy-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/embassy-15.svg"></td><td>`embassy-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/entrance-11.svg"></td><td>`entrance-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/entrance-15.svg"></td><td>`entrance-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fast-food-11.svg"></td><td>`fast-food-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fast-food-15.svg"></td><td>`fast-food-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/ferry-11.svg"></td><td>`ferry-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/ferry-15.svg"></td><td>`ferry-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fire-station-11.svg"></td><td>`fire-station-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fire-station-15.svg"></td><td>`fire-station-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fuel-11.svg"></td><td>`fuel-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/fuel-15.svg"></td><td>`fuel-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/garden-11.svg"></td><td>`garden-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/garden-15.svg"></td><td>`garden-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/golf-11.svg"></td><td>`golf-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/golf-15.svg"></td><td>`golf-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/grocery-11.svg"></td><td>`grocery-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/grocery-15.svg"></td><td>`grocery-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/harbor-11.svg"></td><td>`harbor-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/harbor-15.svg"></td><td>`harbor-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/heliport-11.svg"></td><td>`heliport-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/heliport-15.svg"></td><td>`heliport-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/hospital-11.svg"></td><td>`hospital-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/hospital-15.svg"></td><td>`hospital-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/ice-cream-11.svg"></td><td>`ice-cream-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/ice-cream-15.svg"></td><td>`ice-cream-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/information-11.svg"></td><td>`information-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/information-15.svg"></td><td>`information-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/laundry-11.svg"></td><td>`laundry-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/laundry-15.svg"></td><td>`laundry-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/library-11.svg"></td><td>`library-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/library-15.svg"></td><td>`library-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/lodging-11.svg"></td><td>`lodging-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/lodging-15.svg"></td><td>`lodging-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/monument-11.svg"></td><td>`monument-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/monument-15.svg"></td><td>`monument-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/mountain-11.svg"></td><td>`mountain-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/mountain-15.svg"></td><td>`mountain-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/museum-11.svg"></td><td>`museum-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/museum-15.svg"></td><td>`museum-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/music-11.svg"></td><td>`music-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/music-15.svg"></td><td>`music-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/park-11.svg"></td><td>`park-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/park-15.svg"></td><td>`park-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/pharmacy-11.svg"></td><td>`pharmacy-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/pharmacy-15.svg"></td><td>`pharmacy-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/picnic-site-11.svg"></td><td>`picnic-site-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/picnic-site-15.svg"></td><td>`picnic-site-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/place-of-worship-11.svg"></td><td>`place-of-worship-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/place-of-worship-15.svg"></td><td>`place-of-worship-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/playground-11.svg"></td><td>`playground-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/playground-15.svg"></td><td>`playground-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/police-11.svg"></td><td>`police-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/police-15.svg"></td><td>`police-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/post-11.svg"></td><td>`post-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/post-15.svg"></td><td>`post-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/prison-11.svg"></td><td>`prison-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/prison-15.svg"></td><td>`prison-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-11.svg"></td><td>`rail-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-15.svg"></td><td>`rail-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-light-11.svg"></td><td>`rail-light-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-light-15.svg"></td><td>`rail-light-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-metro-11.svg"></td><td>`rail-metro-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rail-metro-15.svg"></td><td>`rail-metro-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-christian-11.svg"></td><td>`religious-christian-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-christian-15.svg"></td><td>`religious-christian-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-jewish-11.svg"></td><td>`religious-jewish-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-jewish-15.svg"></td><td>`religious-jewish-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-muslim-11.svg"></td><td>`religious-muslim-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/religious-muslim-15.svg"></td><td>`religious-muslim-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/restaurant-11.svg"></td><td>`restaurant-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/restaurant-15.svg"></td><td>`restaurant-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rocket-11.svg"></td><td>`rocket-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/rocket-15.svg"></td><td>`rocket-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/school-11.svg"></td><td>`school-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/school-15.svg"></td><td>`school-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/shop-11.svg"></td><td>`shop-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/shop-15.svg"></td><td>`shop-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/stadium-11.svg"></td><td>`stadium-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/stadium-15.svg"></td><td>`stadium-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/star-11.svg"></td><td>`star-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/star-15.svg"></td><td>`star-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/suitcase-11.svg"></td><td>`suitcase-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/suitcase-15.svg"></td><td>`suitcase-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/swimming-11.svg"></td><td>`swimming-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/swimming-15.svg"></td><td>`swimming-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/theatre-11.svg"></td><td>`theatre-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/theatre-15.svg"></td><td>`theatre-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/toilet-11.svg"></td><td>`toilet-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/toilet-15.svg"></td><td>`toilet-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/town-hall-11.svg"></td><td>`town-hall-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/town-hall-15.svg"></td><td>`town-hall-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/triangle-11.svg"></td><td>`triangle-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/triangle-15.svg"></td><td>`triangle-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/triangle-stroked-11.svg"></td><td>`triangle-stroked-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/triangle-stroked-15.svg"></td><td>`triangle-stroked-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/veterinary-11.svg"></td><td>`veterinary-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/veterinary-15.svg"></td><td>`veterinary-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/volcano-11.svg"></td><td>`volcano-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/volcano-15.svg"></td><td>`volcano-15`</td></tr>
+<tr><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/zoo-11.svg"></td><td>`zoo-11`</td><td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/zoo-15.svg"></td><td>`zoo-15`</td></tr>
+</table>
 
 ## Usage
 
