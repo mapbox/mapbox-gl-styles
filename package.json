@@ -9,6 +9,7 @@
     "migrate": "./migrate.sh"
   },
   "devDependencies": {
+    "maki": "^2.0.5",
     "mapbox-gl-style-spec": "^8.1.0",
     "tape": "^4.2.0"
   },
