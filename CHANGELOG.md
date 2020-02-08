@@ -1,3 +1,7 @@
+## v2.1.0
+
+- Add default center & zoom to latest styles
+
 ## v2.0.0
 
 - Remove deprecated styles: Emerald, Outdoors, Pencil
