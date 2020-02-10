@@ -1,7 +1,12 @@
 {
-  "name": "mapbox-gl-styles",
-  "version": "2.0.2",
+  "name": "@mapbox/mapbox-gl-styles",
+  "version": "2.1.0",
   "description": "mapbox gl example styles",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapbox/mapbox-gl-styles.git"
+  },
+  "homepage": "https://github.com/mapbox/mapbox-gl-styles/#readme",
   "main": "index.js",
   "bin": {},
   "scripts": {
