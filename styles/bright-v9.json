@@ -74,10 +74,10 @@
         }
     },
     "center": [
-        -118.2518,
-        50.8476
+        0,
+        0
     ],
-    "zoom": 15,
+    "zoom": 3,
     "sprite": "mapbox://sprites/mapbox/bright-v9",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
