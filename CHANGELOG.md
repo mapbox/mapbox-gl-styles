@@ -1,3 +1,7 @@
+## v2.1.1
+
+- Fix incorrect default center & zoom for `bright-v9`
+
 ## v2.1.0
 
 - Add default center & zoom to latest styles
