@@ -1,4 +1,4 @@
-[![Travis](https://api.travis-ci.org/mapbox/mapbox-gl-styles.svg?branch=mb-pages)](https://travis-ci.org/mapbox/mapbox-gl-styles/builds)
+[![Travis](https://travis-ci.com/mapbox/mapbox-gl-styles.svg?branch=mb-pages)](https://travis-ci.com/mapbox/mapbox-gl-styles/builds)
 
 This repository contains prebuilt Mapbox GL styles for use in Mapbox GL JS or the Mapbox Mobile SDKs and as a starting point for custom maps built with [Mapbox Studio](https://www.mapbox.com/mapbox-studio/).
 
