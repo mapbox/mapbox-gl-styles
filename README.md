@@ -148,7 +148,7 @@ The preferred way to use these styles in Mapbox GL JS or the Mapbox Mobile SDKs 
 
 ### JS
 
-```
+```js
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v8'
@@ -158,7 +158,7 @@ var map = new mapboxgl.Map({
 
 ### iOS
 
-```
+```objective-c
 mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds
                                    styleURL:[NSURL URLWithString:@"mapbox://styles/mapbox/satellite-v8"]];
 ```
