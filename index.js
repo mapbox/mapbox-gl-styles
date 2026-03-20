@@ -1,5 +1,5 @@
 var fs = require('fs');
-var glob = require('glob');
+var { globSync } = require('tinyglobby');
 var path = require('path');
 module.exports.styles = {};
 module.exports.sprites = {};
@@ -316,7 +316,7 @@ styles.forEach(function(style) {
 
 spriteStyles.forEach(function(style){
     if (style.indexOf('v8') > -1 || style.indexOf('v9') > -1) {
-      module.exports.sprites[style] = glob.sync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
+      module.exports.sprites[style] = globSync(path.resolve(path.join(__dirname, 'sprites', style, '_svg', '*.svg')))
         .map(function(im) {
            return {
             svg: fs.readFileSync(im),
