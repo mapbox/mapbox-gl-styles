@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/mapbox-gl-styles",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "mapbox gl example styles",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
-    "glob": "^5.0.14"
+    "tinyglobby": "^0.2.15"
   },
   "license": "BSD-3-Clause"
 }
