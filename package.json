@@ -9,10 +9,14 @@
   "homepage": "https://github.com/mapbox/mapbox-gl-styles/#readme",
   "main": "index.js",
   "type": "module",
+  "files": [
+    "index.js",
+    "styles",
+    "sprites"
+  ],
   "scripts": {
     "lint": "eslint .",
-    "test": "eslint . && node --test test/test.js",
-    "migrate": "./migrate.sh"
+    "test": "eslint . && node --test test/test.js"
   },
   "devDependencies": {
     "eslint": "^9.0.0",
