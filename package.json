@@ -8,18 +8,17 @@
   },
   "homepage": "https://github.com/mapbox/mapbox-gl-styles/#readme",
   "main": "index.js",
-  "bin": {},
+  "type": "module",
   "scripts": {
-    "test": "tape test/test.js",
+    "lint": "eslint .",
+    "test": "eslint . && node --test test/test.js",
     "migrate": "./migrate.sh"
   },
   "devDependencies": {
-    "maki": "^2.0.5",
-    "mapbox-gl-style-spec": "^8.1.0",
-    "tape": "^4.2.0"
-  },
-  "dependencies": {
-    "tinyglobby": "^0.2.15"
+    "eslint": "^9.0.0",
+    "eslint-config-mourner": "^5.0.0",
+    "maki": "^2.1.0",
+    "mapbox-gl-style-spec": "^8.11.0"
   },
   "license": "BSD-3-Clause"
 }

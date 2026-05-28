@@ -1,23 +1,18 @@
-var icons = require('maki/layouts/streets');
+import icons from 'maki/layouts/streets.js';
 
-console.log('<table>')
-for (var i in icons) {
-    console.log(
-        '<tr>',
-            `<th colspan="4">${i}</th>`,
-        '</tr>'
-    );
+const base = 'https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg';
 
-    for (var j in icons[i]) {
-        var icon = icons[i][j];
-        console.log(
-            '<tr>',
-                `<td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/${icon}-11.svg"></td>`,
-                `<td><code>${icon}-11</code></td>`,
-                `<td><img src="https://cdn.rawgit.com/mapbox/mapbox-gl-styles/master/sprites/bright-v9/_svg/${icon}-15.svg"></td>`,
-                `<td><code>${icon}-15</code></td>`,
-            '</tr>'
-        );
+console.log('<table>');
+for (const [category, list] of Object.entries(icons)) {
+    console.log(`<tr><th colspan="4">${category}</th></tr>`);
+    for (const icon of list) {
+        console.log(`\
+<tr>
+    <td><img src="${base}/${icon}-11.svg"></td>
+    <td><code>${icon}-11</code></td>
+    <td><img src="${base}/${icon}-15.svg"></td>
+    <td><code>${icon}-15</code></td>
+</tr>`);
     }
 }
-console.log('</table>')
+console.log('</table>');

@@ -1,160 +1,95 @@
-var test = require('tape');
-var mapboxGL = require('../index');
-var fs = require('fs');
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {styles, sprites, spriteStyles, maki} from '../index.js';
 
-// check that all v7 styles exist
-test('.styles', function(t) {
-  t.test('should return all styles', function(t) {
-    Object.keys(mapboxGL.styles).forEach(function(style) {
-      t.ok(mapboxGL.styles[style].version, 'Check for version');
-      t.ok(mapboxGL.styles[style].name, 'Check for version');
-      t.ok(mapboxGL.styles[style].layers, 'Check for layers');
-    });
-    t.end();
-  });
-  t.end();
-});
-
-// check that all sprites exist
-test('.sprites', function(t) {
-  t.test('should return all sprites', function(t) {
-    Object.keys(mapboxGL.sprites).forEach(function(sprite) {
-      t.ok(mapboxGL.sprites[sprite].length > 0);
-      t.ok(mapboxGL.sprites[sprite][0].id);
-      t.equal(typeof mapboxGL.sprites[sprite][0].svg, 'object');
-    });
-    t.end();
-  });
-  t.end();
-});
-
-// check that sprites are properly named
-test('.sprite names', function(t) {
-  t.test('should return properly referenced sprites in', function(t) {
-    Object.keys(mapboxGL.styles).forEach(function(s) {
-      var version = mapboxGL.styles[s].version;
-      var name = mapboxGL.styles[s].name;
-      if (version >= 8 && name !== 'Empty') {
-        t.equal(mapboxGL.styles[s].sprite, 'mapbox://sprites/mapbox/' + s, 'References mapbox sprites');
-      }
-    });
-    t.end();
-  });
-  t.end();
-});
-
-// Metadata
-test('.metadata', function(t) {
-  Object.keys(mapboxGL.styles).forEach(function(s) {
-    if (s.indexOf('-v9') !== -1) {
-      var metadataAssertion = mapboxGL.styles[s].name.indexOf('Satellite') !== -1 ? 'default' : 'template';
-      t.equal(mapboxGL.styles[s].metadata['mapbox:type'], metadataAssertion, 'Type metadata for ' + mapboxGL.styles[s].name);
-      t.equal(mapboxGL.styles[s].metadata['mapbox:autocomposite'], true, 'autocomposite metadata for ' + mapboxGL.styles[s].name);
+test('.styles - all styles have version, name, and layers', () => {
+    for (const style of Object.values(styles)) {
+        assert.ok(style.version, 'Check for version');
+        assert.ok(style.name, 'Check for name');
+        assert.ok(style.layers, 'Check for layers');
     }
-  });
-  t.end();
 });
 
-// check that fonts are properly named
-test('.glyphs', function(t) {
-  t.test('should return properly referenced fontstacks', function(t) {
-    Object.keys(mapboxGL.styles).forEach(function(s) {
-      var version = mapboxGL.styles[s].version;
-      if (version >= 8) {
-        var name = mapboxGL.styles[s].name;
-        t.equal(mapboxGL.styles[s].glyphs, 'mapbox://fonts/mapbox/{fontstack}/{range}.pbf', 'References mapbox glyphs for ' + name);
-      }
-    });
-    t.end();
-  });
-  t.end();
-});
-
-// checks all maki icons against list of expected
-test('.maki - checks all maki icons against list of expected maki icons', function(t) {
-  var styles = mapboxGL.spriteStyles;
-  styles.forEach(function(style, i) {
-    fs.readdir('./sprites/' + style + '/_svg', function(err, files) {
-      if (err) t.fail(err);
-      mapboxGL.maki.forEach(function(name) {
-        t.ok(files.indexOf(name + '-11.svg') !== -1, name + '-11.svg' + ' in ' + style);
-        t.ok(files.indexOf(name + '-15.svg') !== -1, name + '-15.svg' + ' in ' + style);
-      });
-      if (i === styles.length - 1) {
-        t.end();
-      }
-    });
-  });
-});
-
-// checks all `maki` rail icons against list of expected
-var styleMaki = [];
-var styleValue = [];
-mapboxGL.spriteStyles.forEach(function(style, i) {
-  var totalLayers = mapboxGL.styles[style].layers;
-  for (var j = 0; j < totalLayers.length; j++) {
-    var sourceLayer = mapboxGL.styles[style].layers[j]['source-layer'];
-    if (sourceLayer === 'rail_station_label' && mapboxGL.styles[style].layers[j].layout['icon-image'] !== '{network}') {
-      var iconImage =  mapboxGL.styles[style].layers[j].layout['icon-image'];
-      styleMaki.push(style);
-      styleValue.push(mapboxGL.styles[style].layers[j].layout['icon-image']);
+test('.sprites - all sprites are populated', () => {
+    for (const sprite of Object.values(sprites)) {
+        assert.ok(sprite.length > 0);
+        assert.ok(sprite[0].id);
+        assert.equal(typeof sprite[0].svg, 'object');
     }
-  }
 });
 
-// checks all layers that use an image, stores images names, checks for images in proper style folders
-test('.all-image-test - checks all layers that use an image, stores images names, checks for images in proper style folders', function(t) {
-  // Collect each style id and each styles coors. icons into an array of objects
-  var stylesWithImages = [];
-  mapboxGL.spriteStyles.forEach(function(style, i) {
-    var totalLayers = mapboxGL.styles[style].layers;
-    var image = [];
-    for (var j = 1; j < totalLayers.length; j++) {
-      var sourceLayer = mapboxGL.styles[style].layers[j]['source-layer'];
-      var layerType = mapboxGL.styles[style].layers[j].type;
-      if(layerType === 'background' && mapboxGL.styles[style].layers[j].paint['background-pattern'] !== undefined) {
-        image.push(mapboxGL.styles[style].layers[j].paint['background-pattern']);
-      } else if(layerType === 'line' && mapboxGL.styles[style].layers[j].paint['line-pattern'] !== undefined) {
-          image.push(mapboxGL.styles[style].layers[j].paint['line-pattern']);
+test('.sprite names - properly referenced sprites', () => {
+    for (const [id, style] of Object.entries(styles)) {
+        if (style.version >= 8 && style.name !== 'Empty') {
+            assert.equal(style.sprite, `mapbox://sprites/mapbox/${id}`, 'References mapbox sprites');
         }
-      // pull all string values set in this object, because they could be anything
-      if(mapboxGL.styles[style].layers[j].layout !== undefined && mapboxGL.styles[style].layers[j].layout['icon-image'] !== undefined) {
-        var value = mapboxGL.styles[style].layers[j].layout['icon-image'];
-        if(typeof value === 'string') {
-          if(value.indexOf('}') === -1 && value.indexOf('{') === -1 && value.length) {
-            image.push(value);
-          }
-        } else {
-            Object.keys(value).forEach(function (key) {
-              var val = value[key];
-              for(k=1; k < val.length; k++) {
-                if(typeof val === 'object') {
-                  var theImage = val[k][1];
-                  if(theImage.indexOf('}') === -1 && theImage.indexOf('{') === -1 && theImage.length) {
-                    // everything that does not include }
-                    image.push(theImage);
-                  }
+    }
+});
+
+test('.metadata', () => {
+    for (const [id, style] of Object.entries(styles)) {
+        if (!id.includes('-v9')) continue;
+        const expected = style.name.includes('Satellite') ? 'default' : 'template';
+        assert.equal(style.metadata['mapbox:type'], expected, `Type metadata for ${style.name}`);
+        assert.equal(style.metadata['mapbox:autocomposite'], true, `autocomposite metadata for ${style.name}`);
+    }
+});
+
+test('.glyphs - properly referenced fontstacks', () => {
+    for (const style of Object.values(styles)) {
+        if (style.version >= 8) {
+            assert.equal(style.glyphs, 'mapbox://fonts/mapbox/{fontstack}/{range}.pbf', `References mapbox glyphs for ${style.name}`);
+        }
+    }
+});
+
+test('.maki - all maki icons present in each sprite style', () => {
+    for (const style of spriteStyles) {
+        const files = new Set(fs.readdirSync(`./sprites/${style}/_svg`));
+        for (const name of maki) {
+            assert.ok(files.has(`${name}-11.svg`), `${name}-11.svg in ${style}`);
+            assert.ok(files.has(`${name}-15.svg`), `${name}-15.svg in ${style}`);
+        }
+    }
+});
+
+const isLiteral = s => typeof s === 'string' && s.length > 0 && !s.includes('{') && !s.includes('}');
+
+test('.all-image-test - layers referencing images have matching svgs in style folder', () => {
+    for (const style of spriteStyles) {
+        const layers = styles[style].layers;
+        const images = [];
+
+        for (let j = 1; j < layers.length; j++) {
+            const layer = layers[j];
+            const {type, paint = {}, layout = {}} = layer;
+
+            if (type === 'background' && paint['background-pattern'] !== undefined) {
+                images.push(paint['background-pattern']);
+            } else if (type === 'line' && paint['line-pattern'] !== undefined) {
+                images.push(paint['line-pattern']);
+            }
+
+            const value = layout['icon-image'];
+            if (value === undefined) continue;
+
+            if (typeof value === 'string') {
+                if (isLiteral(value)) images.push(value);
+            } else {
+                for (const val of Object.values(value)) {
+                    if (typeof val !== 'object') continue;
+                    for (let k = 1; k < val.length; k++) {
+                        const img = val[k][1];
+                        if (isLiteral(img)) images.push(img);
+                    }
                 }
-              }
-            });
-          }
-        } // end sting if */
-    } // end for loop in each layer
-      stylesWithImages.push({
-        style: style,
-        images: image
-      });
-  }); // end forEach
-  // loop thru check images
-  stylesWithImages.forEach(function(styleWithImages, i) {
-    fs.readdir('./sprites/' + styleWithImages.style + '/_svg', function(err, files) {
-      if (err) t.fail(err);
-      for(l=0; l < styleWithImages.images.length; l++) {
-        t.ok(files.indexOf(styleWithImages.images[l] + '.svg') !== -1, styleWithImages.images[l] + '.svg' + ' in ' + styleWithImages.style);
-      }
-      if (i === stylesWithImages.length - 1) {
-        t.end();
-      }
-    });
-  });
+            }
+        }
+
+        const files = new Set(fs.readdirSync(`./sprites/${style}/_svg`));
+        for (const img of images) {
+            assert.ok(files.has(`${img}.svg`), `${img}.svg in ${style}`);
+        }
+    }
 });
